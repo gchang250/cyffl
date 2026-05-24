@@ -13,7 +13,7 @@ const howItWorks = [
   {
     step: "01",
     title: "Reach out",
-    description: "Email us with your name, grade level, and what kind of support you're looking for.",
+    description: "Fill out the tutoring request form with your name, grade level, and what kind of support you're looking for.",
   },
   {
     step: "02",
@@ -42,10 +42,10 @@ export default function TutoringPage() {
               with school French, grammar, speaking, or building confidence.
             </p>
             <a
-              href="mailto:canadianyouthffl@gmail.com?subject=Tutoring%20Request"
+              href="https://docs.google.com/forms/d/1kUwPvzvQglWGs0Gk11eeVJNoIxc4na1RqmSEAUfjsxc/viewform"
               className="mt-8 inline-block rounded-full bg-[#2563EB] px-7 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]"
             >
-              Request tutoring
+              Request a tutor
             </a>
           </div>
 

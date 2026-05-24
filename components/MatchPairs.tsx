@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useEffect } from "react";
 
 interface Pair {
   left: string;
@@ -14,8 +14,12 @@ export default function MatchPairs({
   pairs: Pair[];
   title?: string;
 }) {
-  const shuffledRight = useMemo(() => {
-    return [...pairs].map((p) => p.right).sort(() => Math.random() - 0.5);
+  const [shuffledRight, setShuffledRight] = useState<string[]>(
+    pairs.map((p) => p.right)
+  );
+
+  useEffect(() => {
+    setShuffledRight([...pairs].map((p) => p.right).sort(() => Math.random() - 0.5));
   }, [pairs]);
 
   const [selectedLeft, setSelectedLeft] = useState<number | null>(null);

@@ -22,6 +22,7 @@ const roles = [
 ];
 
 const requirements = [
+  "At least 13 years old",
   "Strong conversational or written French",
   "Comfortable communicating with students",
   "Reliable and responsible",
@@ -65,10 +66,10 @@ export default function VolunteerPage() {
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <a
-                href="mailto:canadianyouthffl@gmail.com?subject=Volunteer%20Application"
+                href="https://docs.google.com/forms/d/1QJOBFTuc0_pKFZeTnEapvB7ANERUBy9MAyzpvhNErl4/viewform"
                 className="rounded-full bg-[#D62828] px-7 py-3 text-center text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#B91C1C]"
               >
-                Apply by Email
+                Apply now
               </a>
 
               <Link
@@ -198,16 +199,16 @@ export default function VolunteerPage() {
               </h2>
 
               <p className="mt-4 max-w-2xl leading-7 text-white/70">
-                Send us an email introducing yourself, your French background,
-                and the role you are interested in. We will be in touch.
+                Fill out the application form — it only takes a few minutes. We'll
+                be in touch once we've reviewed it.
               </p>
             </div>
 
             <a
-              href="mailto:canadianyouthffl@gmail.com?subject=Volunteer%20Application"
+              href="https://docs.google.com/forms/d/1QJOBFTuc0_pKFZeTnEapvB7ANERUBy9MAyzpvhNErl4/viewform"
               className="rounded-full bg-[#D62828] px-7 py-3 text-center text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#B91C1C]"
             >
-              Email Us to Apply
+              Apply now
             </a>
           </div>
         </div>
