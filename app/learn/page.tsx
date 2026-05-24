@@ -8,9 +8,9 @@ const courses = [
     statusColor: "bg-[#F0FDF4] text-[#16A34A]",
     href: "/learn/french-foundations",
     description:
-      "Start from zero. Greetings, introductions, pronouns, essential verbs, numbers, family vocabulary, and how to express what you like.",
-    units: ["Greetings & intros", "Être & avoir", "Numbers & days", "Likes & dislikes"],
-    lessonCount: "11 lessons",
+      "Start from zero. Greetings, introductions, essential verbs, numbers, adjectives, and daily life — with a unit test after every unit.",
+    units: ["First Words", "Building Sentences", "Everyday French", "Describing Things", "Daily Life"],
+    lessonCount: "19 lessons · 5 unit tests",
   },
   {
     title: "School French Support",

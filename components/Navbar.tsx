@@ -16,13 +16,18 @@ export default function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 border-b border-[#E7DAB9] bg-[#FFFDF7]/95 backdrop-blur-md">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-[#0B1F3A] text-xs font-black text-white">
-            FR
-          </div>
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
+        <Link href="/" className="flex items-center gap-3">
+          <img
+            src="/cyffl-logo.jpeg"
+            alt="CYFFL logo"
+            className="h-14 w-14 rounded-full object-cover"
+          />
+
           <div>
-            <p className="text-sm font-black tracking-widest text-[#0B1F3A]">CYFFL</p>
+            <p className="text-sm font-black tracking-[0.22em] text-[#0B1F3A]">
+              CYFFL
+            </p>
             <p className="text-xs text-[#526173]">French Literacy</p>
           </div>
         </Link>

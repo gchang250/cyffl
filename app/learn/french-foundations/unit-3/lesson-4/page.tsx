@@ -191,46 +191,28 @@ export default function Unit3Lesson4Page() {
           </div>
         </section>
 
-        {/* Course complete */}
-        <section className="mt-16 overflow-hidden rounded-[2rem] bg-[#0B1F3A] p-8 text-white shadow-sm md:p-12">
-          <div className="text-4xl">🎓</div>
-          <p className="mt-4 text-sm font-bold uppercase tracking-widest text-[#C9A44C]">
-            Course complete!
+        <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+          <p className="text-sm font-bold uppercase tracking-widest text-[#C9A44C]">
+            Unit 3 complete!
           </p>
-          <h2 className="mt-3 text-3xl font-black md:text-4xl">
-            You finished French Foundations.
+          <h2 className="mt-3 text-3xl font-black">
+            You know numbers, calendar vocab, family, and how to express opinions.
           </h2>
-          <p className="mt-4 max-w-2xl leading-7 text-white/70">
-            You've gone from zero to greetings, introductions, pronouns, the
-            two key verbs, numbers, calendar vocab, family, and expressing
-            opinions, all in French. That's genuinely impressive.
+          <p className="mt-3 leading-7 text-[#526173]">
+            Test yourself on all of Unit 3 before moving on to Unit 4.
           </p>
-
-          <div className="mt-8 grid gap-4 sm:grid-cols-3">
-            {[
-              ["3", "Units"],
-              ["11", "Lessons"],
-              ["Done", "🎉"],
-            ].map(([n, label]) => (
-              <div key={label} className="rounded-2xl bg-white/10 p-4 text-center">
-                <p className="text-3xl font-black">{n}</p>
-                <p className="mt-1 text-sm text-white/60">{label}</p>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-8 flex flex-wrap gap-3">
+          <div className="mt-6 flex flex-wrap gap-3">
             <Link
               href="/learn/french-foundations/unit-3/lesson-3"
-              className="rounded-full border border-white/20 bg-white/10 px-6 py-3 text-sm font-black text-white transition hover:-translate-y-0.5"
+              className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5"
             >
               ← Previous
             </Link>
             <Link
-              href="/learn"
-              className="rounded-full bg-[#C9A44C] px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5"
+              href="/learn/french-foundations/unit-3/test"
+              className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]"
             >
-              Explore more courses
+              Take the unit test →
             </Link>
           </div>
         </section>

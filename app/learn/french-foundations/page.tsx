@@ -6,10 +6,11 @@ const units = [
     title: "First Words",
     description: "Greetings, introductions, and basic conversation starters.",
     color: "bg-[#EFF6FF] text-[#2563EB]",
+    testHref: "/learn/french-foundations/unit-1/test",
     lessons: [
-      { title: "Greetings", href: "/learn/french-foundations/unit-1/lesson-1", done: true },
-      { title: "Introducing Yourself", href: "/learn/french-foundations/unit-1/lesson-2", done: true },
-      { title: "How Are You?", href: "/learn/french-foundations/unit-1/lesson-3", done: true },
+      { title: "Greetings", href: "/learn/french-foundations/unit-1/lesson-1" },
+      { title: "Introducing Yourself", href: "/learn/french-foundations/unit-1/lesson-2" },
+      { title: "How Are You?", href: "/learn/french-foundations/unit-1/lesson-3" },
     ],
   },
   {
@@ -17,11 +18,12 @@ const units = [
     title: "Building Sentences",
     description: "Subject pronouns, être, avoir, and simple sentence structure.",
     color: "bg-[#FEF3C7] text-[#D97706]",
+    testHref: "/learn/french-foundations/unit-2/test",
     lessons: [
-      { title: "Subject Pronouns", href: "/learn/french-foundations/unit-2/lesson-1", done: true },
-      { title: "Être: To Be", href: "/learn/french-foundations/unit-2/lesson-2", done: true },
-      { title: "Avoir: To Have", href: "/learn/french-foundations/unit-2/lesson-3", done: true },
-      { title: "Simple Sentences", href: "/learn/french-foundations/unit-2/lesson-4", done: true },
+      { title: "Subject Pronouns", href: "/learn/french-foundations/unit-2/lesson-1" },
+      { title: "Être: To Be", href: "/learn/french-foundations/unit-2/lesson-2" },
+      { title: "Avoir: To Have", href: "/learn/french-foundations/unit-2/lesson-3" },
+      { title: "Simple Sentences", href: "/learn/french-foundations/unit-2/lesson-4" },
     ],
   },
   {
@@ -29,11 +31,38 @@ const units = [
     title: "Everyday French",
     description: "Numbers, days, family vocabulary, and expressing what you like.",
     color: "bg-[#F0FDF4] text-[#16A34A]",
+    testHref: "/learn/french-foundations/unit-3/test",
     lessons: [
-      { title: "Numbers 1–20", href: "/learn/french-foundations/unit-3/lesson-1", done: true },
-      { title: "Days & Months", href: "/learn/french-foundations/unit-3/lesson-2", done: true },
-      { title: "Family", href: "/learn/french-foundations/unit-3/lesson-3", done: true },
-      { title: "Likes & Dislikes", href: "/learn/french-foundations/unit-3/lesson-4", done: true },
+      { title: "Numbers 1–20", href: "/learn/french-foundations/unit-3/lesson-1" },
+      { title: "Days & Months", href: "/learn/french-foundations/unit-3/lesson-2" },
+      { title: "Family", href: "/learn/french-foundations/unit-3/lesson-3" },
+      { title: "Likes & Dislikes", href: "/learn/french-foundations/unit-3/lesson-4" },
+    ],
+  },
+  {
+    number: "04",
+    title: "Describing Things",
+    description: "Colors, adjectives, regular -er verbs, and asking questions.",
+    color: "bg-[#FEF9C3] text-[#854D0E]",
+    testHref: "/learn/french-foundations/unit-4/test",
+    lessons: [
+      { title: "Colors", href: "/learn/french-foundations/unit-4/lesson-1" },
+      { title: "Adjectives", href: "/learn/french-foundations/unit-4/lesson-2" },
+      { title: "Regular -er Verbs", href: "/learn/french-foundations/unit-4/lesson-3" },
+      { title: "Asking Questions", href: "/learn/french-foundations/unit-4/lesson-4" },
+    ],
+  },
+  {
+    number: "05",
+    title: "Daily Life",
+    description: "Food and drink, school subjects, telling time, and getting around.",
+    color: "bg-[#FCE7F3] text-[#9D174D]",
+    testHref: "/learn/french-foundations/unit-5/test",
+    lessons: [
+      { title: "Food & Drink", href: "/learn/french-foundations/unit-5/lesson-1" },
+      { title: "At School", href: "/learn/french-foundations/unit-5/lesson-2" },
+      { title: "Telling Time", href: "/learn/french-foundations/unit-5/lesson-3" },
+      { title: "Going Places", href: "/learn/french-foundations/unit-5/lesson-4" },
     ],
   },
 ];
@@ -60,17 +89,17 @@ export default function FrenchFoundationsPage() {
             </h1>
 
             <p className="mt-5 text-lg leading-8 text-[#526173]">
-              New to French? This is your starting point. Three units, eleven
-              lessons, and plenty of interactive exercises to make things stick.
+              New to French? This is your starting point. Five units, nineteen
+              lessons, and a unit test after each unit to make sure everything sticks.
             </p>
 
             <div className="mt-8 grid grid-cols-3 gap-3 text-center">
               <div className="rounded-2xl border border-[#E7DAB9] bg-white p-4">
-                <p className="text-2xl font-black">3</p>
+                <p className="text-2xl font-black">5</p>
                 <p className="mt-1 text-xs text-[#526173]">Units</p>
               </div>
               <div className="rounded-2xl border border-[#E7DAB9] bg-white p-4">
-                <p className="text-2xl font-black">11</p>
+                <p className="text-2xl font-black">19</p>
                 <p className="mt-1 text-xs text-[#526173]">Lessons</p>
               </div>
               <div className="rounded-2xl border border-[#E7DAB9] bg-white p-4">
@@ -118,6 +147,17 @@ export default function FrenchFoundationsPage() {
                       <span className="ml-auto text-xs font-normal text-[#526173]">→</span>
                     </Link>
                   ))}
+
+                  <Link
+                    href={unit.testHref}
+                    className="flex items-center gap-3 rounded-2xl border border-[#E7DAB9] bg-white px-4 py-3 text-sm font-bold text-[#526173] transition hover:-translate-y-0.5 hover:shadow-sm"
+                  >
+                    <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#0B1F3A] text-xs font-black text-white">
+                      ★
+                    </span>
+                    Unit Test
+                    <span className="ml-auto text-xs font-normal text-[#526173]">→</span>
+                  </Link>
                 </div>
               </div>
             ))}

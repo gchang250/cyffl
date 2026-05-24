@@ -183,10 +183,10 @@ export default function Lesson3Page() {
               ← Previous
             </Link>
             <Link
-              href="/learn/french-foundations/unit-2/lesson-1"
+              href="/learn/french-foundations/unit-1/test"
               className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]"
             >
-              Start Unit 2 →
+              Take the unit test →
             </Link>
           </div>
         </section>

@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   title: "CYFFL | French Literacy for Canadian Youth",
   description:
     "The Canadian Youth Foundation for French Literacy provides free French lessons, tutoring, and resources for Canadian students.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({

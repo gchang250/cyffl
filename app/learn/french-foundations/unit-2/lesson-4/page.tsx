@@ -202,8 +202,7 @@ export default function Unit2Lesson4Page() {
             You can build sentences, and break them with negation.
           </h2>
           <p className="mt-3 leading-7 text-[#526173]">
-            Unit 3 covers everyday vocabulary: numbers, days, family, and how
-            to talk about what you like.
+            Test yourself on subject pronouns, être, avoir, and sentence structure before moving on.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
@@ -213,10 +212,10 @@ export default function Unit2Lesson4Page() {
               ← Previous
             </Link>
             <Link
-              href="/learn/french-foundations/unit-3/lesson-1"
+              href="/learn/french-foundations/unit-2/test"
               className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]"
             >
-              Start Unit 3 →
+              Take the unit test →
             </Link>
           </div>
         </section>
