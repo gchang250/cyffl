@@ -115,7 +115,7 @@ export default function Unit3Lesson3Page() {
               Family
             </h1>
             <p className="mt-4 text-lg leading-8 text-[#526173]">
-              Talk about your family in French — who they are, how many there
+              Talk about your family in French, who they are, how many there
               are, and what they're called.
             </p>
           </div>
@@ -147,7 +147,7 @@ export default function Unit3Lesson3Page() {
         {/* Flashcards */}
         <section className="mt-16">
           <h2 className="text-2xl font-black">Family vocabulary</h2>
-          <p className="mt-1 text-[#526173]">Fourteen words — flip each card.</p>
+          <p className="mt-1 text-[#526173]">Fourteen words, flip each card.</p>
           <div className="mt-6">
             <FlashCardDeck cards={familyCards} title="La famille" />
           </div>
@@ -186,7 +186,7 @@ export default function Unit3Lesson3Page() {
             You can describe your family in French.
           </h2>
           <p className="mt-3 leading-7 text-[#526173]">
-            Last lesson: how to talk about what you like and dislike — one of
+            Last lesson: how to talk about what you like and dislike, one of
             the most useful skills in any language.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">

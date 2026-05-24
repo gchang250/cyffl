@@ -4,8 +4,8 @@ import MatchPairs from "@/components/MatchPairs";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const flashcards = [
-  { front: "Bonjour", back: "Hello / Good morning", subtext: "Use during the day — safe in any situation." },
-  { front: "Salut", back: "Hi / Bye", subtext: "Casual — use with friends and classmates." },
+  { front: "Bonjour", back: "Hello / Good morning", subtext: "Use during the day, safe in any situation." },
+  { front: "Salut", back: "Hi / Bye", subtext: "Casual, use with friends and classmates." },
   { front: "Bonsoir", back: "Good evening", subtext: "Use later in the day." },
   { front: "Au revoir", back: "Goodbye", subtext: "Standard and polite." },
   { front: "À bientôt", back: "See you soon", subtext: "When you'll see the person again shortly." },
@@ -26,13 +26,13 @@ const quiz = [
     question: "You walk into school in the morning. What's the safest greeting?",
     options: ["Salut", "Bonjour", "Bonsoir", "Au revoir"],
     correct: 1,
-    explanation: "Bonjour works in any daytime situation — formal or casual.",
+    explanation: "Bonjour works in any daytime situation, formal or casual.",
   },
   {
-    question: "Your friend texts you 'Salut!' — what does that mean?",
+    question: "Your friend texts you 'Salut!', what does that mean?",
     options: ["Goodbye", "Good evening", "Hi", "Thank you"],
     correct: 2,
-    explanation: "Salut is a casual greeting — like 'hey' or 'hi' in English.",
+    explanation: "Salut is a casual greeting, like 'hey' or 'hi' in English.",
   },
   {
     question: "Which phrase do you use when leaving a store?",
@@ -71,7 +71,7 @@ export default function Lesson1Page() {
             </h1>
             <p className="mt-4 text-lg leading-8 text-[#526173]">
               Six essential words that open every French conversation. Start
-              here — you'll use these forever.
+              here, you'll use these forever.
             </p>
           </div>
 
@@ -88,8 +88,8 @@ export default function Lesson1Page() {
             <div className="rounded-2xl border border-[#E7DAB9] bg-white p-5">
               <p className="text-xs font-bold text-[#526173]">Quick conversation</p>
               <div className="mt-3 space-y-2">
-                <p className="text-lg font-black">— Bonjour!</p>
-                <p className="text-lg font-black">— Bonjour! Au revoir!</p>
+                <p className="text-lg font-black">Bonjour!</p>
+                <p className="text-lg font-black">Bonjour! Au revoir!</p>
                 <p className="text-sm text-[#526173]">Hello! · Hello! Goodbye!</p>
               </div>
             </div>
@@ -117,7 +117,7 @@ export default function Lesson1Page() {
         {/* Quiz */}
         <section className="mt-16">
           <h2 className="text-2xl font-black">Quick quiz</h2>
-          <p className="mt-1 text-[#526173]">Four situations — pick the right greeting for each one.</p>
+          <p className="mt-1 text-[#526173]">Four situations, pick the right greeting for each one.</p>
           <div className="mt-6">
             <MultipleChoiceQuiz questions={quiz} title="Greetings quiz" />
           </div>
@@ -130,7 +130,7 @@ export default function Lesson1Page() {
             You know your first French greetings.
           </h2>
           <p className="mt-3 leading-7 text-[#526173]">
-            Next up: how to introduce yourself — your name, age, and where
+            Next up: how to introduce yourself, your name, age, and where
             you're from.
           </p>
 

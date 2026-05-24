@@ -4,14 +4,14 @@ const offerings = [
   {
     title: "Free Lessons",
     description:
-      "Structured French courses you can work through at your own pace — no account, no paywall, no stress.",
+      "Structured French courses you can work through at your own pace, no account, no paywall, no stress.",
     emoji: "📘",
     href: "/learn",
   },
   {
     title: "Tutoring",
     description:
-      "One-on-one French support for homework, tests, speaking practice, and grammar questions — led by youth.",
+      "One-on-one French support for homework, tests, speaking practice, and grammar questions, led by youth.",
     emoji: "💬",
     href: "/tutoring",
   },
@@ -29,7 +29,7 @@ const steps = [
     number: "01",
     title: "Pick your path",
     description:
-      "Start from zero, brush up for school, or prep for advanced French — there is a course for where you are.",
+      "Start from zero, brush up for school, or prep for advanced French, there is a course for where you are.",
   },
   {
     number: "02",
@@ -61,8 +61,11 @@ export default function HomePage() {
           </h1>
 
           <p className="mt-5 max-w-lg text-lg leading-8 text-[#526173]">
-            We make French less intimidating — free lessons, tutoring, and
+            We make French less intimidating, free lessons, tutoring, and
             resources made by Canadian youth, for Canadian youth.
+          </p>
+          <p className="mt-3 max-w-lg text-sm text-[#C9A44C] font-semibold">
+            CYFFL is open to students in Canada only.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
@@ -70,7 +73,7 @@ export default function HomePage() {
               href="/learn"
               className="rounded-full bg-[#2563EB] px-7 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]"
             >
-              Start learning — it's free
+              Start learning, it's free
             </Link>
             <Link
               href="/volunteer"
@@ -121,12 +124,12 @@ export default function HomePage() {
       <section className="border-y border-[#E7DAB9] bg-white">
         <div className="mx-auto grid max-w-7xl gap-8 px-6 py-16 md:grid-cols-[0.8fr_1.2fr]">
           <h2 className="text-3xl font-black tracking-tight md:text-4xl">
-            French is an official language — it should feel reachable.
+            French is an official language, it should feel reachable.
           </h2>
           <p className="text-lg leading-8 text-[#526173]">
             Plenty of Canadian students want to improve their French but find
             existing resources expensive, overwhelming, or just plain boring.
-            CYFFL is here to fix that — practical lessons, real support, and
+            CYFFL is here to fix that, practical lessons, real support, and
             zero cost.
           </p>
         </div>
@@ -189,7 +192,7 @@ export default function HomePage() {
               </h2>
               <p className="mt-4 max-w-2xl leading-7 text-[#526173]">
                 CYFFL runs on volunteers. If you know French and want to teach,
-                create resources, or help grow the community — we want you.
+                create resources, or help grow the community, we want you.
               </p>
             </div>
             <Link

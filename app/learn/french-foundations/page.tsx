@@ -19,8 +19,8 @@ const units = [
     color: "bg-[#FEF3C7] text-[#D97706]",
     lessons: [
       { title: "Subject Pronouns", href: "/learn/french-foundations/unit-2/lesson-1", done: true },
-      { title: "Être — To Be", href: "/learn/french-foundations/unit-2/lesson-2", done: true },
-      { title: "Avoir — To Have", href: "/learn/french-foundations/unit-2/lesson-3", done: true },
+      { title: "Être: To Be", href: "/learn/french-foundations/unit-2/lesson-2", done: true },
+      { title: "Avoir: To Have", href: "/learn/french-foundations/unit-2/lesson-3", done: true },
       { title: "Simple Sentences", href: "/learn/french-foundations/unit-2/lesson-4", done: true },
     ],
   },

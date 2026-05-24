@@ -5,7 +5,7 @@ const categories = [
     title: "Vocabulary",
     color: "bg-[#EFF6FF] text-[#2563EB] border-[#BFDBFE]",
     items: [
-      { label: "Beginner word lists", description: "Common nouns, verbs, and adjectives — organized by theme." },
+      { label: "Beginner word lists", description: "Common nouns, verbs, and adjectives, organized by theme." },
       { label: "School vocabulary", description: "Words you actually use in French class every day." },
       { label: "Family & people", description: "Words for describing the people in your life." },
       { label: "Numbers & time", description: "Counting, telling the time, and calendar vocabulary." },
@@ -15,8 +15,8 @@ const categories = [
     title: "Grammar",
     color: "bg-[#FEF3C7] text-[#D97706] border-[#FDE68A]",
     items: [
-      { label: "Être & avoir explained", description: "The two verbs that show up everywhere — demystified." },
-      { label: "Subject pronouns", description: "Je, tu, il, elle, nous, vous, ils, elles — with context." },
+      { label: "Être & avoir explained", description: "The two verbs that show up everywhere, demystified." },
+      { label: "Subject pronouns", description: "Je, tu, il, elle, nous, vous, ils, elles, with context." },
       { label: "Regular -er verbs", description: "The most common verb pattern in French, with examples." },
       { label: "Negation (ne…pas)", description: "How to say 'no,' 'not,' and 'don't' in French." },
     ],

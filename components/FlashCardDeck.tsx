@@ -49,7 +49,7 @@ export default function FlashCardDeck({ cards, title }: { cards: Card[]; title?:
         <h3 className="mt-4 text-2xl font-black text-[#0B1F3A]">
           You got all {cards.length}!
         </h3>
-        <p className="mt-2 text-[#526173]">Nice work — you know this set cold.</p>
+        <p className="mt-2 text-[#526173]">Nice work, you know this set cold.</p>
         <button
           onClick={restart}
           className="mt-6 rounded-full bg-[#2563EB] px-6 py-2.5 text-sm font-black text-white transition hover:bg-[#1D4ED8]"

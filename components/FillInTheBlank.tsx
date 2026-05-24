@@ -74,7 +74,7 @@ export default function FillInTheBlank({
         <p className="mt-2 text-[#526173]">
           {pct === 100
             ? "Flawless! You really know this."
-            : "Keep at it — every attempt builds memory."}
+            : "Keep at it, every attempt builds memory."}
         </p>
         <button
           onClick={restart}

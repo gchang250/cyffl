@@ -36,35 +36,35 @@ const fillIn = [
     before: "Je",
     after: "étudiant.",
     answer: "suis",
-    hint: "être — je form",
+    hint: "être (je form)",
     translation: "I am a student.",
   },
   {
     before: "Tu",
     after: "fatigué(e)?",
     answer: "es",
-    hint: "être — tu form",
+    hint: "être (tu form)",
     translation: "Are you tired?",
   },
   {
     before: "Nous",
     after: "au Canada.",
     answer: "sommes",
-    hint: "être — nous form",
+    hint: "être (nous form)",
     translation: "We are in Canada.",
   },
   {
     before: "Ils",
     after: "contents.",
     answer: "sont",
-    hint: "être — ils/elles form",
+    hint: "être (ils/elles form)",
     translation: "They are happy.",
   },
   {
     before: "Elle",
     after: "professeure.",
     answer: "est",
-    hint: "être — il/elle form",
+    hint: "être (il/elle form)",
     translation: "She is a teacher.",
   },
 ];
@@ -85,7 +85,7 @@ const quiz = [
       "Tu sont fatigué.",
     ],
     correct: 1,
-    explanation: "Tu uses 'es' — tu es. The others are wrong forms of être.",
+    explanation: "Tu uses 'es', tu es. The others are wrong forms of être.",
   },
   {
     question: "How do you say 'She is Canadian' in French?",
@@ -123,7 +123,7 @@ export default function Unit2Lesson2Page() {
               Unit 2 · Lesson 2
             </p>
             <h1 className="mt-3 text-5xl font-black tracking-tight md:text-6xl">
-              Être — To Be
+              Être: To Be
             </h1>
             <p className="mt-4 text-lg leading-8 text-[#526173]">
               Être is the most used verb in French. You need it to describe
@@ -134,7 +134,7 @@ export default function Unit2Lesson2Page() {
           {/* Conjugation table */}
           <div className="overflow-hidden rounded-2xl border border-[#E7DAB9] bg-white shadow-sm">
             <div className="bg-[#0B1F3A] px-5 py-3">
-              <p className="font-black text-white">être — present tense</p>
+              <p className="font-black text-white">être (present tense)</p>
             </div>
             <div className="divide-y divide-[#E7DAB9]">
               {[
@@ -157,7 +157,7 @@ export default function Unit2Lesson2Page() {
         {/* Flashcards - conjugations */}
         <section className="mt-16">
           <h2 className="text-2xl font-black">Learn the conjugation</h2>
-          <p className="mt-1 text-[#526173]">Six forms — flip each card to practise.</p>
+          <p className="mt-1 text-[#526173]">Six forms, flip each card to practise.</p>
           <div className="mt-6">
             <FlashCardDeck cards={conjugationCards} title="être conjugation" />
           </div>
@@ -166,7 +166,7 @@ export default function Unit2Lesson2Page() {
         {/* Flashcards - examples */}
         <section className="mt-12">
           <h2 className="text-2xl font-black">Être in action</h2>
-          <p className="mt-1 text-[#526173]">Real sentences using être — see the translation on each flip.</p>
+          <p className="mt-1 text-[#526173]">Real sentences using être, see the translation on each flip.</p>
           <div className="mt-6">
             <FlashCardDeck cards={exampleCards} title="Example sentences" />
           </div>
@@ -202,10 +202,10 @@ export default function Unit2Lesson2Page() {
         <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
           <p className="text-sm font-bold uppercase tracking-widest text-[#C9A44C]">Done!</p>
           <h2 className="mt-3 text-3xl font-black">
-            You can conjugate être — one of French's two key verbs.
+            You can conjugate être, one of French's two key verbs.
           </h2>
           <p className="mt-3 leading-7 text-[#526173]">
-            Next: avoir (to have) — the other essential verb, with some
+            Next: avoir (to have), the other essential verb, with some
             surprising uses you won't expect.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">

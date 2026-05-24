@@ -38,7 +38,7 @@ export default function TutoringPage() {
               Free French tutoring.
             </h1>
             <p className="mt-5 text-lg leading-8 text-[#526173]">
-              Youth-led, one-on-one French support — for students who want help
+              Youth-led, one-on-one French support, for students who want help
               with school French, grammar, speaking, or building confidence.
             </p>
             <a
@@ -69,7 +69,7 @@ export default function TutoringPage() {
           <p className="font-black text-[#92400E]">📣 Coming soon</p>
           <p className="mt-2 leading-7 text-[#78350F]">
             CYFFL is currently building the volunteer tutor team and preparing
-            the first tutoring intake. Email us to join the waitlist — we'll
+            the first tutoring intake. Email us to join the waitlist, we'll
             reach out as soon as sessions open.
           </p>
         </div>
@@ -102,10 +102,10 @@ export default function TutoringPage() {
             <div className="grid items-center gap-8 md:grid-cols-[1fr_auto]">
               <div>
                 <p className="text-xl font-black">
-                  While you wait — learn on your own.
+                  While you wait, learn on your own.
                 </p>
                 <p className="mt-2 leading-7 text-[#526173]">
-                  The French Foundations course is available right now — free,
+                  The French Foundations course is available right now, free,
                   interactive, and designed for beginners.
                 </p>
               </div>

@@ -9,7 +9,7 @@ export default function Footer() {
             CYFFL
           </p>
           <p className="mt-3 max-w-sm leading-7 text-sm">
-            The Canadian Youth Foundation for French Literacy — free French
+            The Canadian Youth Foundation for French Literacy, free French
             lessons, tutoring, and resources for Canadian students.
           </p>
         </div>

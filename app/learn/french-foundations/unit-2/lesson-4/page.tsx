@@ -14,7 +14,7 @@ const sentenceCards = [
 
 const negationCards = [
   { front: "Je ne parle pas anglais.", back: "I don't speak English.", subtext: "ne + verb + pas wraps the verb." },
-  { front: "Il ne mange pas.", back: "He doesn't eat.", subtext: "No object needed — the negative still wraps the verb." },
+  { front: "Il ne mange pas.", back: "He doesn't eat.", subtext: "No object needed, the negative still wraps the verb." },
   { front: "Nous n'avons pas de chat.", back: "We don't have a cat.", subtext: "ne → n' before a vowel." },
   { front: "Tu n'es pas fatigué?", back: "You're not tired?", subtext: "Works with être too." },
 ];
@@ -75,7 +75,7 @@ const quiz = [
       "Pas elle parle anglais.",
     ],
     correct: 1,
-    explanation: "Elle ne parle pas anglais — ne before the verb, pas after.",
+    explanation: "Elle ne parle pas anglais, ne before the verb, pas after.",
   },
   {
     question: "In French, what is the basic sentence structure?",
@@ -116,7 +116,7 @@ export default function Unit2Lesson4Page() {
               Simple Sentences
             </h1>
             <p className="mt-4 text-lg leading-8 text-[#526173]">
-              Build your first real French sentences — and learn how to make
+              Build your first real French sentences, and learn how to make
               them negative with ne…pas.
             </p>
           </div>
@@ -152,7 +152,7 @@ export default function Unit2Lesson4Page() {
         {/* Sentences flashcards */}
         <section className="mt-16">
           <h2 className="text-2xl font-black">Positive sentences</h2>
-          <p className="mt-1 text-[#526173]">Five examples — Subject + Verb + Object.</p>
+          <p className="mt-1 text-[#526173]">Five examples, Subject + Verb + Object.</p>
           <div className="mt-6">
             <FlashCardDeck cards={sentenceCards} title="Positive sentences" />
           </div>
@@ -160,7 +160,7 @@ export default function Unit2Lesson4Page() {
 
         {/* Negation flashcards */}
         <section className="mt-12">
-          <h2 className="text-2xl font-black">Negation — ne…pas</h2>
+          <h2 className="text-2xl font-black">Negation: ne…pas</h2>
           <p className="mt-1 text-[#526173]">Flip these to see how ne…pas wraps the verb.</p>
           <div className="mt-6">
             <FlashCardDeck cards={negationCards} title="Negative sentences" />
@@ -179,7 +179,7 @@ export default function Unit2Lesson4Page() {
         {/* Fill in */}
         <section className="mt-16">
           <h2 className="text-2xl font-black">Fill in the blank</h2>
-          <p className="mt-1 text-[#526173]">Complete each sentence — some are negative, some positive.</p>
+          <p className="mt-1 text-[#526173]">Complete each sentence, some are negative, some positive.</p>
           <div className="mt-6">
             <FillInTheBlank exercises={fillIn} title="Sentence completion" />
           </div>
@@ -199,7 +199,7 @@ export default function Unit2Lesson4Page() {
             Unit 2 complete!
           </p>
           <h2 className="mt-3 text-3xl font-black">
-            You can build sentences — and break them with negation.
+            You can build sentences, and break them with negation.
           </h2>
           <p className="mt-3 leading-7 text-[#526173]">
             Unit 3 covers everyday vocabulary: numbers, days, family, and how

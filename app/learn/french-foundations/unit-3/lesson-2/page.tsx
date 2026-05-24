@@ -95,7 +95,7 @@ const quiz = [
     question: "What month is 'août'?",
     options: ["April", "October", "June", "August"],
     correct: 3,
-    explanation: "Août = August. Don't let it fool you — the 't' is usually silent.",
+    explanation: "Août = August. Don't let it fool you, the 't' is usually silent.",
   },
   {
     question: "How do you say 'My birthday is in March'?",
@@ -136,7 +136,7 @@ export default function Unit3Lesson2Page() {
               Days & Months
             </h1>
             <p className="mt-4 text-lg leading-8 text-[#526173]">
-              Seven days, twelve months, four seasons — you'll use these for
+              Seven days, twelve months, four seasons, you'll use these for
               schedules, dates, birthdays, and small talk.
             </p>
           </div>
@@ -149,15 +149,15 @@ export default function Unit3Lesson2Page() {
                 <span className="font-black text-[#0B1F3A]">
                   not capitalized
                 </span>{" "}
-                — unlike English. Write 'lundi' not 'Lundi.'
+               , unlike English. Write 'lundi' not 'Lundi.'
               </p>
             </div>
             <div className="rounded-2xl bg-[#0B1F3A] p-5 text-white">
               <p className="text-xs font-bold text-[#C9A44C]">Useful phrases</p>
               <div className="mt-2 space-y-1 text-sm">
-                <p>Aujourd'hui c'est… — Today is…</p>
-                <p>Mon anniversaire est en… — My birthday is in…</p>
-                <p>La rentrée est en septembre. — School starts in September.</p>
+                <p>Aujourd'hui c'est…, Today is…</p>
+                <p>Mon anniversaire est en…, My birthday is in…</p>
+                <p>La rentrée est en septembre., School starts in September.</p>
               </div>
             </div>
           </div>
@@ -166,7 +166,7 @@ export default function Unit3Lesson2Page() {
         {/* Days flashcards */}
         <section className="mt-16">
           <h2 className="text-2xl font-black">Days of the week</h2>
-          <p className="mt-1 text-[#526173]">Seven cards — the French week starts on Monday.</p>
+          <p className="mt-1 text-[#526173]">Seven cards, the French week starts on Monday.</p>
           <div className="mt-6">
             <FlashCardDeck cards={dayCards} title="Les jours de la semaine" />
           </div>
@@ -175,7 +175,7 @@ export default function Unit3Lesson2Page() {
         {/* Months flashcards */}
         <section className="mt-12">
           <h2 className="text-2xl font-black">Months of the year</h2>
-          <p className="mt-1 text-[#526173]">Twelve months — many look like English but watch the spelling.</p>
+          <p className="mt-1 text-[#526173]">Twelve months, many look like English but watch the spelling.</p>
           <div className="mt-6">
             <FlashCardDeck cards={monthCards} title="Les mois de l'année" />
           </div>
@@ -184,7 +184,7 @@ export default function Unit3Lesson2Page() {
         {/* Seasons */}
         <section className="mt-12">
           <h2 className="text-2xl font-black">Seasons</h2>
-          <p className="mt-1 text-[#526173]">Four seasons — and they all use 'l'' before vowels.</p>
+          <p className="mt-1 text-[#526173]">Four seasons, and they all use 'l'' before vowels.</p>
           <div className="mt-6">
             <FlashCardDeck cards={seasonCards} title="Les saisons" />
           </div>
@@ -202,7 +202,7 @@ export default function Unit3Lesson2Page() {
         {/* Match months */}
         <section className="mt-12">
           <h2 className="text-2xl font-black">Match the months</h2>
-          <p className="mt-1 text-[#526173]">Six months — connect them to English.</p>
+          <p className="mt-1 text-[#526173]">Six months, connect them to English.</p>
           <div className="mt-6">
             <MatchPairs pairs={monthMatch} title="Months" />
           </div>
@@ -232,7 +232,7 @@ export default function Unit3Lesson2Page() {
             You know the days, months, and seasons in French.
           </h2>
           <p className="mt-3 leading-7 text-[#526173]">
-            Next: family vocabulary — la mère, le père, les frères, les sœurs,
+            Next: family vocabulary, la mère, le père, les frères, les sœurs,
             and more.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">

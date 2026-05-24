@@ -91,7 +91,7 @@ const quiz = [
     question: "Your French teacher asks 'Combien d'élèves?' There are 9 students. You say:",
     options: ["neuf", "huit", "dix", "six"],
     correct: 0,
-    explanation: "Neuf = 9. It's also one of the trickier pronunciations — the 'f' is silent before a consonant!",
+    explanation: "Neuf = 9. It's also one of the trickier pronunciations, the 'f' is silent before a consonant!",
   },
 ];
 
@@ -115,7 +115,7 @@ export default function Unit3Lesson1Page() {
               Numbers 1–20
             </h1>
             <p className="mt-4 text-lg leading-8 text-[#526173]">
-              Numbers are everywhere — ages, grades, quantities, times. Learn
+              Numbers are everywhere, ages, grades, quantities, times. Learn
               0–20 and you'll be set for most everyday situations.
             </p>
           </div>
@@ -153,7 +153,7 @@ export default function Unit3Lesson1Page() {
         <section className="mt-16">
           <h2 className="text-2xl font-black">Learn the numbers</h2>
           <p className="mt-1 text-[#526173]">
-            Flip each card — the digit is on the front, the French word is on the back.
+            Flip each card, the digit is on the front, the French word is on the back.
           </p>
           <div className="mt-6">
             <FlashCardDeck cards={numberCards} title="Numbers 0–20" />
@@ -181,7 +181,7 @@ export default function Unit3Lesson1Page() {
         {/* Quiz */}
         <section className="mt-16">
           <h2 className="text-2xl font-black">Quick quiz</h2>
-          <p className="mt-1 text-[#526173]">Four questions — think fast.</p>
+          <p className="mt-1 text-[#526173]">Four questions, think fast.</p>
           <div className="mt-6">
             <MultipleChoiceQuiz questions={quiz} title="Numbers quiz" />
           </div>
@@ -193,7 +193,7 @@ export default function Unit3Lesson1Page() {
             You can count from 0 to 20 in French.
           </h2>
           <p className="mt-3 leading-7 text-[#526173]">
-            Next: the days of the week and months of the year — useful for
+            Next: the days of the week and months of the year, useful for
             dates, schedules, and everyday conversation.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">

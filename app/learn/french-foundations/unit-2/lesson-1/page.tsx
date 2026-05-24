@@ -5,11 +5,11 @@ import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 import FillInTheBlank from "@/components/FillInTheBlank";
 
 const flashcards = [
-  { front: "je", back: "I", subtext: "Always lowercase — unless it starts a sentence." },
+  { front: "je", back: "I", subtext: "Always lowercase, unless it starts a sentence." },
   { front: "tu", back: "you (informal)", subtext: "Use with friends, family, kids, and animals." },
   { front: "il", back: "he / it (masc.)", subtext: "For a male person OR any masculine noun." },
   { front: "elle", back: "she / it (fem.)", subtext: "For a female person OR any feminine noun." },
-  { front: "nous", back: "we", subtext: "More formal — often replaced by 'on' in conversation." },
+  { front: "nous", back: "we", subtext: "More formal, often replaced by 'on' in conversation." },
   { front: "vous", back: "you (formal or plural)", subtext: "Singular formal: teacher, stranger. Or simply plural: 'you all.'" },
   { front: "ils", back: "they (masc. or mixed)", subtext: "Even one male in a group → use ils." },
   { front: "elles", back: "they (all fem.)", subtext: "Only for groups where everyone is female." },
@@ -62,10 +62,10 @@ const quiz = [
     question: "Your friend asks you something. Which pronoun represents 'you' in an informal context?",
     options: ["vous", "ils", "tu", "elle"],
     correct: 2,
-    explanation: "Tu is the informal 'you' — use it with friends, family, and peers.",
+    explanation: "Tu is the informal 'you', use it with friends, family, and peers.",
   },
   {
-    question: "A group of 4 boys and 1 girl — which pronoun do you use for 'they'?",
+    question: "A group of 4 boys and 1 girl, which pronoun do you use for 'they'?",
     options: ["elles", "ils", "nous", "vous"],
     correct: 1,
     explanation: "Even one male in a group means you use ils. French defaults to masculine for mixed groups.",
@@ -74,18 +74,18 @@ const quiz = [
     question: "You're speaking to your principal. Which 'you' do you use?",
     options: ["tu", "il", "vous", "elles"],
     correct: 2,
-    explanation: "Vous is the formal 'you' — always use it with adults in authority.",
+    explanation: "Vous is the formal 'you', always use it with adults in authority.",
   },
   {
     question: "What's the difference between 'nous' and 'on'?",
     options: [
       "Nous is plural, on is singular.",
-      "Both mean 'we' — on is more casual in conversation.",
+      "Both mean 'we', on is more casual in conversation.",
       "On means 'one' and nous means 'we'.",
       "There is no difference.",
     ],
     correct: 1,
-    explanation: "Both mean 'we.' On is used casually in everyday French — nous is more formal or written.",
+    explanation: "Both mean 'we.' On is used casually in everyday French, nous is more formal or written.",
   },
 ];
 
@@ -109,7 +109,7 @@ export default function Unit2Lesson1Page() {
               Subject Pronouns
             </h1>
             <p className="mt-4 text-lg leading-8 text-[#526173]">
-              Eight little words — je, tu, il, elle, nous, vous, ils, elles — that
+              Eight little words, je, tu, il, elle, nous, vous, ils, elles, that
               you'll use in literally every French sentence.
             </p>
           </div>
@@ -136,7 +136,7 @@ export default function Unit2Lesson1Page() {
 
         {/* Tu vs Vous callout */}
         <div className="mt-10 rounded-2xl bg-[#0B1F3A] p-6 text-white">
-          <p className="font-black text-[#C9A44C]">Tu vs. Vous — the big one</p>
+          <p className="font-black text-[#C9A44C]">Tu vs. Vous</p>
           <div className="mt-3 grid gap-4 text-sm leading-7 text-white/80 md:grid-cols-2">
             <div>
               <p className="font-black text-white">tu (informal)</p>
@@ -152,7 +152,7 @@ export default function Unit2Lesson1Page() {
         {/* Flashcards */}
         <section className="mt-16">
           <h2 className="text-2xl font-black">Vocabulary</h2>
-          <p className="mt-1 text-[#526173]">Eight pronouns — flip each one.</p>
+          <p className="mt-1 text-[#526173]">Eight pronouns, flip each one.</p>
           <div className="mt-6">
             <FlashCardDeck cards={flashcards} title="Subject pronouns" />
           </div>
@@ -191,7 +191,7 @@ export default function Unit2Lesson1Page() {
             You know all eight French subject pronouns.
           </h2>
           <p className="mt-3 leading-7 text-[#526173]">
-            Next: être — the most important verb in French. It means "to be,"
+            Next: être, the most important verb in French. It means "to be,"
             and you'll use it constantly.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">

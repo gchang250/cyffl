@@ -71,10 +71,10 @@ export default function MultipleChoiceQuiz({
         </h3>
         <p className="mt-2 text-[#526173]">
           {pct === 100
-            ? "Perfect score — you nailed it!"
+            ? "Perfect score, you nailed it!"
             : pct >= 70
             ? "Solid! Review the ones you missed."
-            : "Keep practising — you're getting there."}
+            : "Keep practising, you're getting there."}
         </p>
         <button
           onClick={restart}

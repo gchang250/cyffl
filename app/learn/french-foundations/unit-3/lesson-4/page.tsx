@@ -5,11 +5,11 @@ import FillInTheBlank from "@/components/FillInTheBlank";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const expressionCards = [
-  { front: "J'aime…", back: "I like…", subtext: "Versatile — works for most things you enjoy." },
-  { front: "J'adore…", back: "I love…", subtext: "Stronger than j'aime — really love it!" },
+  { front: "J'aime…", back: "I like…", subtext: "Versatile, works for most things you enjoy." },
+  { front: "J'adore…", back: "I love…", subtext: "Stronger than j'aime, really love it!" },
   { front: "Je n'aime pas…", back: "I don't like…", subtext: "ne + aime + pas → n'aime before a vowel." },
-  { front: "Je déteste…", back: "I hate…", subtext: "Strong — use sparingly." },
-  { front: "J'aime bien…", back: "I like (quite)…", subtext: "Softer than j'adore — 'I quite like.'" },
+  { front: "Je déteste…", back: "I hate…", subtext: "Strong, use sparingly." },
+  { front: "J'aime bien…", back: "I like (quite)…", subtext: "Softer than j'adore, 'I quite like.'" },
   { front: "Je préfère…", back: "I prefer…", subtext: "Use to compare: Je préfère la musique au sport." },
 ];
 
@@ -88,7 +88,7 @@ const quiz = [
     question: "What's the difference between 'j'aime' and 'j'adore'?",
     options: [
       "They mean the same thing.",
-      "J'adore is stronger — it means love.",
+      "J'adore is stronger, it means love.",
       "J'aime is stronger.",
       "J'adore is formal, j'aime is casual.",
     ],
@@ -104,7 +104,7 @@ const quiz = [
       "Il aime la lecture?",
     ],
     correct: 0,
-    explanation: "Tu aimes is the informal 'you like' — right for asking a friend. Vous aimez would be formal.",
+    explanation: "Tu aimes is the informal 'you like', right for asking a friend. Vous aimez would be formal.",
   },
 ];
 
@@ -129,18 +129,18 @@ export default function Unit3Lesson4Page() {
             </h1>
             <p className="mt-4 text-lg leading-8 text-[#526173]">
               Talk about what you love, what you hate, and everything in
-              between — one of the most natural ways to connect in any language.
+              between, one of the most natural ways to connect in any language.
             </p>
           </div>
 
           <div className="rounded-2xl border border-[#E7DAB9] bg-white p-5">
             <p className="text-xs font-bold text-[#526173]">Sample conversation</p>
             <div className="mt-3 space-y-2">
-              <p className="font-black">— Tu aimes le sport?</p>
+              <p className="font-black">Tu aimes le sport?</p>
               <p className="text-sm text-[#526173]">Do you like sport?</p>
-              <p className="font-black">— J'adore le football! Mais je n'aime pas la natation.</p>
+              <p className="font-black">J'adore le football! Mais je n'aime pas la natation.</p>
               <p className="text-sm text-[#526173]">I love soccer! But I don't like swimming.</p>
-              <p className="font-black">— Moi, je préfère la musique.</p>
+              <p className="font-black">Moi, je préfère la musique.</p>
               <p className="text-sm text-[#526173]">Me, I prefer music.</p>
             </div>
           </div>
@@ -185,7 +185,7 @@ export default function Unit3Lesson4Page() {
         {/* Quiz */}
         <section className="mt-16">
           <h2 className="text-2xl font-black">Quick quiz</h2>
-          <p className="mt-1 text-[#526173]">Four questions — finish strong.</p>
+          <p className="mt-1 text-[#526173]">Four questions, finish strong.</p>
           <div className="mt-6">
             <MultipleChoiceQuiz questions={quiz} title="Final quiz" />
           </div>
@@ -203,7 +203,7 @@ export default function Unit3Lesson4Page() {
           <p className="mt-4 max-w-2xl leading-7 text-white/70">
             You've gone from zero to greetings, introductions, pronouns, the
             two key verbs, numbers, calendar vocab, family, and expressing
-            opinions — all in French. That's genuinely impressive.
+            opinions, all in French. That's genuinely impressive.
           </p>
 
           <div className="mt-8 grid gap-4 sm:grid-cols-3">

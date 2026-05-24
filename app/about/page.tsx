@@ -9,7 +9,7 @@ const values = [
   {
     title: "Youth-led",
     description:
-      "Built by students who actually know what it feels like to struggle with school French — so we know what actually helps.",
+      "Built by students who actually know what it feels like to struggle with school French, so we know what actually helps.",
   },
   {
     title: "Practical",
@@ -56,7 +56,10 @@ export default function AboutPage() {
             <p className="mt-5 leading-7 text-white/70">
               Canada has two official languages. French is part of education,
               public life, and real opportunity. CYFFL exists to make it feel
-              reachable — not stressful.
+              reachable, not stressful.
+            </p>
+            <p className="mt-4 text-sm font-semibold text-[#C9A44C]">
+              Open to students in Canada only.
             </p>
           </div>
         </div>
@@ -70,7 +73,7 @@ export default function AboutPage() {
             <div className="space-y-5 text-lg leading-8 text-[#526173]">
               <p>
                 A lot of Canadian students grow up in multilingual households,
-                attend French Immersion, or take Core French — but still don't
+                attend French Immersion, or take Core French, but still don't
                 feel confident actually using the language.
               </p>
               <p>
@@ -110,7 +113,7 @@ export default function AboutPage() {
               </h2>
               <p className="mt-3 max-w-2xl leading-7 text-[#526173]">
                 CYFFL is always looking for French tutors, content creators, and
-                community builders. If you want to help — email us.
+                community builders. If you want to help, email us.
               </p>
             </div>
             <Link

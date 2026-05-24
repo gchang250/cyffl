@@ -32,7 +32,7 @@ const requirements = [
 const faqs = [
   {
     q: "Do I need teaching experience?",
-    a: "No formal teaching experience is required. CYFFL is youth-led — we value enthusiasm, patience, and a genuine interest in helping others learn French.",
+    a: "No formal teaching experience is required. CYFFL is youth-led, we value enthusiasm, patience, and a genuine interest in helping others learn French.",
   },
   {
     q: "How much time does volunteering take?",
@@ -199,7 +199,7 @@ export default function VolunteerPage() {
               </h2>
 
               <p className="mt-4 max-w-2xl leading-7 text-white/70">
-                Fill out the application form — it only takes a few minutes. We'll
+                Fill out the application form, it only takes a few minutes. We'll
                 be in touch once we've reviewed it.
               </p>
             </div>

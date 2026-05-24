@@ -5,8 +5,8 @@ import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const flashcards = [
   { front: "Je m'appelle…", back: "My name is…", subtext: "Literally: 'I call myself…'" },
-  { front: "Comment tu t'appelles?", back: "What's your name?", subtext: "Informal — use with friends or classmates." },
-  { front: "Comment vous appelez-vous?", back: "What's your name?", subtext: "Formal — use with adults or strangers." },
+  { front: "Comment tu t'appelles?", back: "What's your name?", subtext: "Informal, use with friends or classmates." },
+  { front: "Comment vous appelez-vous?", back: "What's your name?", subtext: "Formal, use with adults or strangers." },
   { front: "J'ai [X] ans.", back: "I am [X] years old.", subtext: "Literally: 'I have [X] years.' (French uses avoir/have, not être/be!)" },
   { front: "Je suis de…", back: "I am from…", subtext: "Use with a city or country." },
   { front: "J'habite à…", back: "I live in…", subtext: "Use with a city." },
@@ -56,13 +56,13 @@ const quiz = [
     question: "How do you say 'My name is Marc' in French?",
     options: ["Je suis Marc.", "Je m'appelle Marc.", "Mon nom Marc.", "J'appelle Marc."],
     correct: 1,
-    explanation: "Je m'appelle literally means 'I call myself' — it's the standard way to give your name.",
+    explanation: "Je m'appelle literally means 'I call myself', it's the standard way to give your name.",
   },
   {
     question: "How do you say your age in French?",
     options: ["Je suis 16 ans.", "Je m'appelle 16 ans.", "J'ai 16 ans.", "Je fais 16 ans."],
     correct: 2,
-    explanation: "French uses avoir (to have) for age — 'J'ai 16 ans' = 'I have 16 years.'",
+    explanation: "French uses avoir (to have) for age, 'J'ai 16 ans' = 'I have 16 years.'",
   },
   {
     question: "You meet a teacher for the first time. They ask your name formally. What do they say?",
@@ -73,7 +73,7 @@ const quiz = [
       "C'est quoi ton nom?",
     ],
     correct: 1,
-    explanation: "Comment vous appelez-vous? is the formal version — appropriate with adults and strangers.",
+    explanation: "Comment vous appelez-vous? is the formal version, appropriate with adults and strangers.",
   },
   {
     question: "Sofia just met someone new and wants to say 'Nice to meet you!' What does she say?",
@@ -103,7 +103,7 @@ export default function Lesson2Page() {
               Introducing Yourself
             </h1>
             <p className="mt-4 text-lg leading-8 text-[#526173]">
-              Say your name, age, and where you're from — the basics of any
+              Say your name, age, and where you're from, the basics of any
               first conversation in French.
             </p>
           </div>
@@ -114,7 +114,7 @@ export default function Lesson2Page() {
               <p className="mt-2 leading-7 text-white/80">
                 In French, you{" "}
                 <span className="font-black text-white">have</span> years old
-                — not <span className="font-black text-white">are</span>. Say{" "}
+               , not <span className="font-black text-white">are</span>. Say{" "}
                 <span className="font-black text-white">J'ai 15 ans</span>{" "}
                 (I have 15 years), not 'Je suis 15 ans.'
               </p>
@@ -136,7 +136,7 @@ export default function Lesson2Page() {
         {/* Flashcards */}
         <section className="mt-16">
           <h2 className="text-2xl font-black">Vocabulary</h2>
-          <p className="mt-1 text-[#526173]">Learn these seven phrases — they're the backbone of any intro.</p>
+          <p className="mt-1 text-[#526173]">Learn these seven phrases, they're the backbone of any intro.</p>
           <div className="mt-6">
             <FlashCardDeck cards={flashcards} title="Introducing yourself" />
           </div>
@@ -154,7 +154,7 @@ export default function Lesson2Page() {
         {/* Quiz */}
         <section className="mt-16">
           <h2 className="text-2xl font-black">Quick quiz</h2>
-          <p className="mt-1 text-[#526173]">Four questions — let's see what you've got.</p>
+          <p className="mt-1 text-[#526173]">Four questions, let's see what you've got.</p>
           <div className="mt-6">
             <MultipleChoiceQuiz questions={quiz} title="Introductions quiz" />
           </div>
@@ -167,7 +167,7 @@ export default function Lesson2Page() {
             You can introduce yourself in French.
           </h2>
           <p className="mt-3 leading-7 text-[#526173]">
-            Next: how to ask someone how they're doing — and actually answer
+            Next: how to ask someone how they're doing, and actually answer
             the question.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">

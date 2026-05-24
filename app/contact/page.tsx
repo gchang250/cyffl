@@ -1,6 +1,4 @@
 const topics = [
-  { label: "Tutoring request", href: "mailto:canadianyouthffl@gmail.com?subject=Tutoring%20Request" },
-  { label: "Volunteer application", href: "mailto:canadianyouthffl@gmail.com?subject=Volunteer%20Application" },
   { label: "Partnership or collaboration", href: "mailto:canadianyouthffl@gmail.com?subject=Partnership" },
   { label: "Resource suggestion", href: "mailto:canadianyouthffl@gmail.com?subject=Resource%20Suggestion" },
   { label: "General question", href: "mailto:canadianyouthffl@gmail.com?subject=Question" },
@@ -14,8 +12,8 @@ export default function ContactPage() {
           Get in touch.
         </h1>
         <p className="mt-5 text-lg leading-8 text-[#526173]">
-          Questions, tutoring requests, volunteering, or anything else — reach
-          us by email.
+          Questions, partnership ideas, resource suggestions, or anything else,
+          reach us by email.
         </p>
 
         {/* Email card */}
@@ -51,7 +49,7 @@ export default function ContactPage() {
 
         <p className="mt-10 text-sm text-[#526173]">
           CYFFL is a youth-led initiative run by volunteers. We're not always
-          online in real time — email is the best way to reach us.
+          online in real time, email is the best way to reach us.
         </p>
       </section>
     </main>

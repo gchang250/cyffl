@@ -38,35 +38,35 @@ const fillIn = [
     before: "Je n'",
     after: "pas faim.",
     answer: "ai",
-    hint: "avoir — je form",
+    hint: "avoir (je form)",
     translation: "I'm not hungry.",
   },
   {
     before: "Elle",
     after: "dix-sept ans.",
     answer: "a",
-    hint: "avoir — elle form",
+    hint: "avoir (elle form)",
     translation: "She is seventeen years old.",
   },
   {
     before: "Nous",
     after: "cours maintenant.",
     answer: "avons",
-    hint: "avoir — nous form",
+    hint: "avoir (nous form)",
     translation: "We have class right now.",
   },
   {
     before: "Tu",
     after: "froid?",
     answer: "as",
-    hint: "avoir — tu form",
+    hint: "avoir (tu form)",
     translation: "Are you cold?",
   },
   {
     before: "Ils",
     after: "peur.",
     answer: "ont",
-    hint: "avoir — ils form",
+    hint: "avoir (ils form)",
     translation: "They are scared.",
   },
 ];
@@ -120,18 +120,18 @@ export default function Unit2Lesson3Page() {
               Unit 2 · Lesson 3
             </p>
             <h1 className="mt-3 text-5xl font-black tracking-tight md:text-6xl">
-              Avoir — To Have
+              Avoir: To Have
             </h1>
             <p className="mt-4 text-lg leading-8 text-[#526173]">
               Avoir isn't just 'to have.' In French, it's used for hunger,
-              thirst, age, temperature — things English expresses with 'to be.'
+              thirst, age, temperature, things English expresses with 'to be.'
             </p>
           </div>
 
           {/* Conjugation table */}
           <div className="overflow-hidden rounded-2xl border border-[#E7DAB9] bg-white shadow-sm">
             <div className="bg-[#0B1F3A] px-5 py-3">
-              <p className="font-black text-white">avoir — present tense</p>
+              <p className="font-black text-white">avoir (present tense)</p>
             </div>
             <div className="divide-y divide-[#E7DAB9]">
               {[
@@ -155,7 +155,7 @@ export default function Unit2Lesson3Page() {
         <div className="mt-8 rounded-2xl bg-[#FEF3C7] p-5">
           <p className="font-black text-[#92400E]">🤔 The tricky part</p>
           <p className="mt-2 leading-7 text-[#78350F]">
-            In English you say "I am hungry" — in French, you say{" "}
+            In English you say "I am hungry", in French, you say{" "}
             <strong>j'ai faim</strong> (I have hunger). Same idea, different
             verb. Avoir is used for hunger, thirst, temperature, fear, age, and
             more. You'll see it below.
@@ -165,7 +165,7 @@ export default function Unit2Lesson3Page() {
         {/* Flashcards - conjugation */}
         <section className="mt-16">
           <h2 className="text-2xl font-black">Learn the conjugation</h2>
-          <p className="mt-1 text-[#526173]">Six forms — commit these to memory.</p>
+          <p className="mt-1 text-[#526173]">Six forms, commit these to memory.</p>
           <div className="mt-6">
             <FlashCardDeck cards={conjugationCards} title="avoir conjugation" />
           </div>
@@ -210,11 +210,11 @@ export default function Unit2Lesson3Page() {
         <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
           <p className="text-sm font-bold uppercase tracking-widest text-[#C9A44C]">Done!</p>
           <h2 className="mt-3 text-3xl font-black">
-            You know both key French verbs — être and avoir.
+            You know both key French verbs, être and avoir.
           </h2>
           <p className="mt-3 leading-7 text-[#526173]">
             Last lesson in Unit 2: how to put it all together and form simple
-            French sentences — including negatives.
+            French sentences, including negatives.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
