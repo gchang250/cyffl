@@ -20,8 +20,8 @@ const courses = [
     href: "/learn/school-french-support",
     description:
       "Review and strengthen your school French. Articles, noun gender, verb conjugations (-er, -ir, -re), and key irregular verbs.",
-    units: ["Core Grammar", "Present Tense Verbs", "Writing Skills", "Reading Strategies"],
-    lessonCount: "10 lessons · 2 unit tests",
+    units: ["Core Grammar", "Verb Conjugation", "The Past Tense", "Writing Practice", "Reading Comprehension"],
+    lessonCount: "24 lessons · 6 unit tests",
   },
   {
     title: "IB French B SL",

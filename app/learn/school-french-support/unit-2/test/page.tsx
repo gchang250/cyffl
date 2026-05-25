@@ -93,12 +93,12 @@ export default function Unit2TestPage() {
           <MultipleChoiceQuiz questions={questions} title="Unit 2 test" />
         </div>
 
-        <div className="mt-12 rounded-[2rem] bg-[#0B1F3A] p-8 text-white shadow-sm">
-          <p className="font-black text-lg">Course complete!</p>
-          <p className="mt-2 text-[#C9A44C]">You've finished School French Support. You now have a solid foundation in Canadian school French — grammar, articles, adjectives, prepositions, and verb conjugation.</p>
+        <div className="mt-12 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+          <p className="font-black text-lg">Ready for Unit 3?</p>
+          <p className="mt-2 text-[#526173]">Unit 3 introduces the passé composé — the most important past tense in French and a key part of every school exam.</p>
           <div className="mt-5 flex flex-wrap gap-3">
-            <Link href="/learn/school-french-support/unit-2/lesson-4" className="rounded-full border border-white/30 bg-white/10 px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5">← Back to lesson</Link>
-            <Link href="/learn" className="rounded-full bg-[#C9A44C] px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">Back to all courses →</Link>
+            <Link href="/learn/school-french-support/unit-2/lesson-4" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">← Back to lesson</Link>
+            <Link href="/learn/school-french-support/unit-3/lesson-1" className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Start Unit 3 →</Link>
           </div>
         </div>
       </section>

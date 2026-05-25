@@ -27,6 +27,58 @@ const units = [
       { title: "Irregular Verbs (faire, vouloir, pouvoir)", href: "/learn/school-french-support/unit-2/lesson-4" },
     ],
   },
+  {
+    number: "03",
+    title: "The Past Tense",
+    description: "The passé composé with avoir and être, irregular past participles, and negation in the past.",
+    color: "bg-[#EDE9FE] text-[#7C3AED]",
+    testHref: "/learn/school-french-support/unit-3/test",
+    lessons: [
+      { title: "Passé Composé with avoir", href: "/learn/school-french-support/unit-3/lesson-1" },
+      { title: "Passé Composé with être", href: "/learn/school-french-support/unit-3/lesson-2" },
+      { title: "Irregular Past Participles", href: "/learn/school-french-support/unit-3/lesson-3" },
+      { title: "Negation & Time Expressions", href: "/learn/school-french-support/unit-3/lesson-4" },
+    ],
+  },
+  {
+    number: "04",
+    title: "Describing the Past",
+    description: "L'imparfait for descriptions and habits, and how to choose between the two past tenses.",
+    color: "bg-[#FCE7F3] text-[#9D174D]",
+    testHref: "/learn/school-french-support/unit-4/test",
+    lessons: [
+      { title: "L'imparfait Formation", href: "/learn/school-french-support/unit-4/lesson-1" },
+      { title: "Uses of L'imparfait", href: "/learn/school-french-support/unit-4/lesson-2" },
+      { title: "Passé Composé vs Imparfait", href: "/learn/school-french-support/unit-4/lesson-3" },
+      { title: "Telling a Story in French", href: "/learn/school-french-support/unit-4/lesson-4" },
+    ],
+  },
+  {
+    number: "05",
+    title: "Writing Practice",
+    description: "Sentence structure, connectors, and guided writing — from paragraphs to short essays.",
+    color: "bg-[#F0FDF4] text-[#16A34A]",
+    testHref: "/learn/school-french-support/unit-5/test",
+    lessons: [
+      { title: "Connectors & Sentence Structure", href: "/learn/school-french-support/unit-5/lesson-1" },
+      { title: "Writing About Yourself", href: "/learn/school-french-support/unit-5/lesson-2" },
+      { title: "Writing About the Past", href: "/learn/school-french-support/unit-5/lesson-3" },
+      { title: "Writing About the Future", href: "/learn/school-french-support/unit-5/lesson-4" },
+    ],
+  },
+  {
+    number: "06",
+    title: "Reading Comprehension",
+    description: "Strategies for reading French texts, with graded passages and comprehension practice.",
+    color: "bg-[#FEF9C3] text-[#854D0E]",
+    testHref: "/learn/school-french-support/unit-6/test",
+    lessons: [
+      { title: "Reading Strategies", href: "/learn/school-french-support/unit-6/lesson-1" },
+      { title: "Beginner Texts", href: "/learn/school-french-support/unit-6/lesson-2" },
+      { title: "Intermediate Texts", href: "/learn/school-french-support/unit-6/lesson-3" },
+      { title: "Upper-Intermediate Texts", href: "/learn/school-french-support/unit-6/lesson-4" },
+    ],
+  },
 ];
 
 export default function SchoolFrenchSupportPage() {
@@ -51,16 +103,16 @@ export default function SchoolFrenchSupportPage() {
             </h1>
 
             <p className="mt-5 text-lg leading-8 text-[#526173]">
-              Review and strengthen your school French. Articles, noun gender, verb conjugations (-er, -ir, -re), and key irregular verbs.
+              Review and strengthen your school French. Grammar, verb tenses, writing skills, and reading comprehension — organized for Canadian school students.
             </p>
 
             <div className="mt-8 grid grid-cols-3 gap-3 text-center">
               <div className="rounded-2xl border border-[#E7DAB9] bg-white p-4">
-                <p className="text-2xl font-black">2</p>
+                <p className="text-2xl font-black">6</p>
                 <p className="mt-1 text-xs text-[#526173]">Units</p>
               </div>
               <div className="rounded-2xl border border-[#E7DAB9] bg-white p-4">
-                <p className="text-2xl font-black">10</p>
+                <p className="text-2xl font-black">24</p>
                 <p className="mt-1 text-xs text-[#526173]">Lessons</p>
               </div>
               <div className="rounded-2xl border border-[#E7DAB9] bg-white p-4">
