@@ -18,6 +18,27 @@ const values = [
   },
 ];
 
+const stats = [
+  {
+    number: "~10%",
+    label: "Outside Quebec",
+    description:
+      "Approximate share of youth bilingual in English and French outside Quebec.",
+  },
+  {
+    number: "~70%",
+    label: "Quebec",
+    description:
+      "Approximate share of youth bilingual in English and French in Quebec.",
+  },
+  {
+    number: "~30%",
+    label: "New Brunswick",
+    description:
+      "Approximate share of youth bilingual in English and French in Canada's only officially bilingual province.",
+  },
+];
+
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
@@ -72,16 +93,69 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-5 text-lg leading-8 text-[#526173]">
               <p>
-                A lot of Canadian students grow up in multilingual households,
-                attend French Immersion, or take Core French, but still don't
-                feel confident actually using the language.
+                CYFFL was built because we saw a real gap in French learning
+                across Canada. Students are expected to study French, but too
+                many do not have access to support that feels simple,
+                affordable, and made for them.
               </p>
               <p>
-                Good French resources are either expensive, aimed at adult
-                learners, or just plain boring for students. CYFFL was created to
-                fill that gap: free, student-focused, and built by people who
-                went through the same thing.
+                According to Statistics Canada, English-French bilingualism
+                among youth is much lower outside Quebec than inside Quebec.
+                Outside Quebec, roughly 10% of youth are bilingual in English
+                and French. In Quebec, that number is about 70%. In New
+                Brunswick, Canada's only officially bilingual province, it is
+                roughly 30%.
               </p>
+              <p>
+                That matters because Canada has two official languages at the
+                federal level: English and French. If French is part of
+                Canada's identity, education system, and public life, students
+                should have better access to resources that help them actually
+                learn it.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Stats */}
+        <section className="mt-16">
+          <div className="rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+            <div className="max-w-3xl">
+              <p className="text-sm font-black uppercase tracking-widest text-[#C9A44C]">
+                The gap
+              </p>
+              <h2 className="mt-3 text-3xl font-black tracking-tight md:text-4xl">
+                French access is not equal across Canada.
+              </h2>
+              <p className="mt-4 text-lg leading-8 text-[#526173]">
+                The numbers show why student-focused French support matters.
+                Bilingualism is much higher in Quebec than in the rest of
+                Canada, even though English and French are both official
+                languages federally.
+              </p>
+            </div>
+
+            <div className="mt-8 grid gap-5 md:grid-cols-3">
+              {stats.map((stat) => (
+                <div
+                  key={stat.label}
+                  className="rounded-[1.5rem] border border-[#E7DAB9] bg-[#FFFDF7] p-6"
+                >
+                  <p className="text-4xl font-black text-[#2563EB]">
+                    {stat.number}
+                  </p>
+                  <p className="mt-2 font-black">{stat.label}</p>
+                  <p className="mt-2 text-sm leading-6 text-[#526173]">
+                    {stat.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-6 rounded-2xl border border-[#E7DAB9] bg-[#FFF8ED] p-5 text-sm leading-6 text-[#526173]">
+              <span className="font-black text-[#0B1F3A]">Sources: </span>
+              Statistics Canada language data and the Department of Justice
+              Canada's explanation of official language rights in Canada.
             </div>
           </div>
         </section>
@@ -118,7 +192,7 @@ export default function AboutPage() {
             </div>
             <Link
               href="/volunteer"
-              className="rounded-full bg-[#D62828] px-7 py-3 text-center text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#B91C1C] whitespace-nowrap"
+              className="whitespace-nowrap rounded-full bg-[#D62828] px-7 py-3 text-center text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#B91C1C]"
             >
               Volunteer
             </Link>

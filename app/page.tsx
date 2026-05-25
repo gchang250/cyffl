@@ -61,7 +61,7 @@ export default function HomePage() {
           </h1>
 
           <p className="mt-5 max-w-lg text-lg leading-8 text-[#526173]">
-            We make French less intimidating, free lessons, tutoring, and
+            We make French less intimidating. Free lessons, tutoring, and
             resources made by Canadian youth, for Canadian youth.
           </p>
           <p className="mt-3 max-w-lg text-sm text-[#C9A44C] font-semibold">
