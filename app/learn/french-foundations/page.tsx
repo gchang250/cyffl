@@ -65,6 +65,32 @@ const units = [
       { title: "Going Places", href: "/learn/french-foundations/unit-5/lesson-4" },
     ],
   },
+  {
+    number: "06",
+    title: "Talking About the Past",
+    description: "The passé composé with avoir and être, irregular past participles, and time expressions.",
+    color: "bg-[#EDE9FE] text-[#7C3AED]",
+    testHref: "/learn/french-foundations/unit-6/test",
+    lessons: [
+      { title: "Passé Composé with avoir", href: "/learn/french-foundations/unit-6/lesson-1" },
+      { title: "Passé Composé with être", href: "/learn/french-foundations/unit-6/lesson-2" },
+      { title: "Irregular Past Participles", href: "/learn/french-foundations/unit-6/lesson-3" },
+      { title: "Talking About Yesterday", href: "/learn/french-foundations/unit-6/lesson-4" },
+    ],
+  },
+  {
+    number: "07",
+    title: "Common Irregular Verbs",
+    description: "Faire, pouvoir, vouloir, devoir, savoir, venir, prendre — the verbs you need most.",
+    color: "bg-[#FFE4E6] text-[#BE123C]",
+    testHref: "/learn/french-foundations/unit-7/test",
+    lessons: [
+      { title: "Faire, Pouvoir, Vouloir", href: "/learn/french-foundations/unit-7/lesson-1" },
+      { title: "Devoir, Savoir, Connaître", href: "/learn/french-foundations/unit-7/lesson-2" },
+      { title: "Venir, Prendre, Partir", href: "/learn/french-foundations/unit-7/lesson-3" },
+      { title: "Putting It All Together", href: "/learn/french-foundations/unit-7/lesson-4" },
+    ],
+  },
 ];
 
 export default function FrenchFoundationsPage() {
@@ -89,17 +115,17 @@ export default function FrenchFoundationsPage() {
             </h1>
 
             <p className="mt-5 text-lg leading-8 text-[#526173]">
-              New to French? This is your starting point. Five units, nineteen
+              New to French? This is your starting point. Seven units, twenty-seven
               lessons, and a unit test after each unit to make sure everything sticks.
             </p>
 
             <div className="mt-8 grid grid-cols-3 gap-3 text-center">
               <div className="rounded-2xl border border-[#E7DAB9] bg-white p-4">
-                <p className="text-2xl font-black">5</p>
+                <p className="text-2xl font-black">7</p>
                 <p className="mt-1 text-xs text-[#526173]">Units</p>
               </div>
               <div className="rounded-2xl border border-[#E7DAB9] bg-white p-4">
-                <p className="text-2xl font-black">19</p>
+                <p className="text-2xl font-black">27</p>
                 <p className="mt-1 text-xs text-[#526173]">Lessons</p>
               </div>
               <div className="rounded-2xl border border-[#E7DAB9] bg-white p-4">

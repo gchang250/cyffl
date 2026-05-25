@@ -75,6 +75,47 @@ const categories: ResourceCategory[] = [
     ],
   },
   {
+    title: "Verb Tenses",
+    color: "bg-[#EDE9FE] text-[#7C3AED] border-[#DDD6FE]",
+    items: [
+      {
+        label: "Le présent",
+        description: "Present tense conjugation for regular and irregular verbs — the foundation of everything.",
+        href: "/resources/verbs-present",
+      },
+      {
+        label: "Le passé composé",
+        description: "The most common past tense. How to form it, when to use avoir vs être, and irregular past participles.",
+        href: "/resources/verbs-passe-compose",
+      },
+      {
+        label: "L'imparfait",
+        description: "The imperfect tense for descriptions, habits, and ongoing past actions. Includes passé composé vs imparfait.",
+        href: "/resources/verbs-imparfait",
+      },
+      {
+        label: "Le futur simple",
+        description: "The simple future tense — conjugation, irregular stems, and when to use it.",
+        href: "/resources/verbs-futur-simple",
+      },
+      {
+        label: "Le futur antérieur",
+        description: "The future perfect — talking about actions that will have been completed before another future event.",
+        href: "/resources/verbs-futur-anterieur",
+      },
+      {
+        label: "Le subjonctif",
+        description: "The subjunctive mood — triggers, formation, and the most common irregular forms.",
+        href: "/resources/verbs-subjonctif",
+      },
+      {
+        label: "Le conditionnel",
+        description: "The conditional mood for polite requests, hypotheticals, and if-then clauses.",
+        href: "/resources/verbs-conditionnel",
+      },
+    ],
+  },
+  {
     title: "Practice & Exam Prep",
     color: "bg-[#F0FDF4] text-[#16A34A] border-[#BBF7D0]",
     items: [
@@ -83,14 +124,12 @@ const categories: ResourceCategory[] = [
         description:
           "Curated questions and topics to practise French conversation out loud.",
         href: "/resources/speaking-prompts",
-        comingSoon: true,
       },
       {
         label: "Reading comprehension",
         description:
           "Three short French texts at increasing difficulty, each with comprehension questions.",
         href: "/resources/reading-comprehension",
-        comingSoon: true,
       },
       {
         label: "IB French B prep",
@@ -104,7 +143,6 @@ const categories: ResourceCategory[] = [
         description:
           "Proven strategies for vocabulary, grammar, speaking, and listening — and making it stick.",
         href: "/resources/study-tips",
-        comingSoon: true,
       },
     ],
   },
@@ -116,16 +154,13 @@ function ResourceCard({ item }: { item: ResourceItem }) {
       <div className="flex flex-col rounded-2xl border border-[#E7DAB9] bg-white p-5 shadow-sm">
         <div className="flex items-start justify-between gap-4">
           <p className="font-black text-[#0B1F3A]">{item.label}</p>
-
           <span className="shrink-0 rounded-full bg-[#FFF8ED] px-3 py-1 text-xs font-bold text-[#526173]">
             Coming soon
           </span>
         </div>
-
         <p className="mt-2 grow text-sm leading-6 text-[#526173]">
           {item.description}
         </p>
-
         <div className="mt-4 rounded-full border border-[#E7DAB9] px-5 py-2 text-center text-sm font-bold text-[#526173]">
           Not yet available
         </div>
@@ -139,11 +174,9 @@ function ResourceCard({ item }: { item: ResourceItem }) {
       className="group flex flex-col rounded-2xl border border-[#E7DAB9] bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
     >
       <p className="font-black group-hover:text-[#2563EB]">{item.label}</p>
-
       <p className="mt-2 grow text-sm leading-6 text-[#526173]">
         {item.description}
       </p>
-
       <p className="mt-3 text-xs font-bold text-[#2563EB]">Read →</p>
     </Link>
   );
@@ -158,8 +191,8 @@ export default function ResourcesPage() {
             Free resources for French students.
           </h1>
           <p className="mt-5 text-lg leading-8 text-[#526173]">
-            Vocabulary lists, grammar guides, practice prompts, and exam prep,
-            all organized and free to use.
+            Vocabulary lists, grammar guides, verb tense references, and exam
+            prep — all organized and free to use.
           </p>
         </div>
 
@@ -171,7 +204,6 @@ export default function ResourcesPage() {
               >
                 {cat.title}
               </span>
-
               <div className="mt-5 grid gap-4 md:grid-cols-2">
                 {cat.items.map((item) => (
                   <ResourceCard key={item.label} item={item} />
@@ -207,8 +239,8 @@ export default function ResourcesPage() {
                 Ready to use what you've learned?
               </p>
               <p className="mt-2 text-white/70">
-                The French Foundations course is fully interactive and ready to
-                go.
+                The French Foundations course is fully interactive and free to
+                start right now.
               </p>
             </div>
             <Link

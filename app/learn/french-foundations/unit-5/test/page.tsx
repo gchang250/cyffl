@@ -74,7 +74,7 @@ export default function Unit5TestPage() {
 
         <div className="mt-6 grid gap-8 md:grid-cols-[1fr_1fr]">
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-[#C9A44C]">Unit 5 · Final Test</p>
+            <p className="text-xs font-bold uppercase tracking-widest text-[#C9A44C]">Unit 5 · Test</p>
             <h1 className="mt-3 text-5xl font-black tracking-tight md:text-6xl">Daily Life</h1>
             <p className="mt-4 text-lg leading-8 text-[#526173]">10 questions covering Unit 5: food and drink, school subjects, telling time, and going places.</p>
           </div>
@@ -93,26 +93,14 @@ export default function Unit5TestPage() {
           <MultipleChoiceQuiz questions={questions} title="Unit 5 test" />
         </div>
 
-        <section className="mt-16 overflow-hidden rounded-[2rem] bg-[#0B1F3A] p-8 text-white shadow-sm md:p-12">
-          <div className="text-4xl">🎓</div>
-          <p className="mt-4 text-sm font-bold uppercase tracking-widest text-[#C9A44C]">Course complete!</p>
-          <h2 className="mt-3 text-3xl font-black md:text-4xl">You finished French Foundations.</h2>
-          <p className="mt-4 max-w-2xl leading-7 text-white/70">
-            Five units, nineteen lessons, and five unit tests — you have gone from zero to greetings, sentences, everyday vocabulary, descriptions, and daily life, all in French. That is genuinely impressive.
-          </p>
-          <div className="mt-8 grid gap-4 sm:grid-cols-3">
-            {[["5", "Units"], ["19", "Lessons"], ["Done", "🎉"]].map(([n, label]) => (
-              <div key={label} className="rounded-2xl bg-white/10 p-4 text-center">
-                <p className="text-3xl font-black">{n}</p>
-                <p className="mt-1 text-sm text-white/60">{label}</p>
-              </div>
-            ))}
+        <div className="mt-12 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+          <p className="font-black text-lg">Ready for Unit 6?</p>
+          <p className="mt-2 text-[#526173]">Unit 6 introduces the passé composé — your first step into talking about the past in French.</p>
+          <div className="mt-5 flex flex-wrap gap-3">
+            <Link href="/learn/french-foundations/unit-5/lesson-4" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">← Back to lesson</Link>
+            <Link href="/learn/french-foundations/unit-6/lesson-1" className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Start Unit 6 →</Link>
           </div>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Link href="/learn/french-foundations/unit-5/lesson-4" className="rounded-full border border-white/20 bg-white/10 px-6 py-3 text-sm font-black text-white transition hover:-translate-y-0.5">← Previous</Link>
-            <Link href="/learn" className="rounded-full bg-[#C9A44C] px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">Explore more courses</Link>
-          </div>
-        </section>
+        </div>
       </section>
     </main>
   );

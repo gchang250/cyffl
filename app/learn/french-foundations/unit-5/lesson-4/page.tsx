@@ -148,11 +148,11 @@ export default function Unit5Lesson4Page() {
           <p className="text-sm font-bold uppercase tracking-widest text-[#C9A44C]">Unit 5 complete!</p>
           <h2 className="mt-3 text-3xl font-black">You can navigate daily life in French.</h2>
           <p className="mt-3 leading-7 text-[#526173]">
-            You know food vocabulary, school subjects, how to tell the time, and how to talk about going places. One final test and you've finished French Foundations.
+            You know food vocabulary, school subjects, how to tell the time, and how to talk about going places. Test yourself before moving on to Unit 6.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link href="/learn/french-foundations/unit-5/lesson-3" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">← Previous</Link>
-            <Link href="/learn/french-foundations/unit-5/test" className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Take the final test →</Link>
+            <Link href="/learn/french-foundations/unit-5/test" className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Take the unit test →</Link>
           </div>
         </section>
       </section>
