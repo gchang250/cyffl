@@ -1,18 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-
-const inter = Inter({ subsets: ["latin"], display: "swap" });
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "CYFFL | French Literacy for Canadian Youth",
   description:
     "The Canadian Youth Foundation for French Literacy provides free French lessons, tutoring, and resources for Canadian students.",
-  icons: {
-    icon: "/favicon.png",
-  },
 };
 
 export default function RootLayout({
@@ -21,11 +16,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={inter.className}>
+    <html lang="en">
       <body>
         <Navbar />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
