@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+export const revalidate = 3600;
+
 const offerings = [
   {
     title: "Free Lessons",
@@ -45,7 +47,44 @@ const steps = [
   },
 ];
 
+const weeklyWords = [
+  { word: "l'épanouissement", pos: "n.m.", meaning: "fulfillment, blossoming", example: "L'épanouissement personnel passe souvent par l'éducation." },
+  { word: "la perspicacité", pos: "n.f.", meaning: "insight, perspicacity", example: "Sa perspicacité lui permet de saisir les nuances rapidement." },
+  { word: "vraisemblable", pos: "adj.", meaning: "likely, plausible", example: "Il est vraisemblable qu'il réussira ses examens." },
+  { word: "la bienveillance", pos: "n.f.", meaning: "benevolence, kindness", example: "Agir avec bienveillance envers les autres est essentiel." },
+  { word: "incontournable", pos: "adj.", meaning: "essential, unavoidable", example: "C'est un ouvrage incontournable de la littérature française." },
+  { word: "s'épanouir", pos: "v.", meaning: "to flourish, to thrive", example: "Elle s'épanouit dans son nouvel environnement." },
+  { word: "irréfutable", pos: "adj.", meaning: "irrefutable, undeniable", example: "Les preuves présentées sont irréfutables." },
+  { word: "la résilience", pos: "n.f.", meaning: "resilience", example: "La résilience est la capacité de surmonter les épreuves." },
+  { word: "ambivalent(e)", pos: "adj.", meaning: "ambivalent, conflicted", example: "Il reste ambivalent face à cette opportunité." },
+  { word: "prépondérant(e)", pos: "adj.", meaning: "predominant, paramount", example: "Elle joue un rôle prépondérant dans l'organisation." },
+  { word: "l'ambiguïté", pos: "n.f.", meaning: "ambiguity, vagueness", example: "Ce discours laisse trop d'ambiguïtés." },
+  { word: "de surcroît", pos: "adv.", meaning: "on top of that, what's more", example: "C'est coûteux, et de surcroît peu pratique." },
+];
+
+const dailyExpressions = [
+  { expression: "Avoir le cafard", meaning: "To feel down / blue" },
+  { expression: "Faire d'une pierre deux coups", meaning: "To kill two birds with one stone" },
+  { expression: "Avoir du pain sur la planche", meaning: "To have a lot on one's plate" },
+  { expression: "Il pleut des cordes", meaning: "It's raining cats and dogs" },
+  { expression: "Coûter les yeux de la tête", meaning: "To cost a fortune" },
+  { expression: "Mettre les points sur les i", meaning: "To spell things out clearly" },
+  { expression: "Avoir d'autres chats à fouetter", meaning: "To have bigger fish to fry" },
+  { expression: "Appeler un chat un chat", meaning: "To call a spade a spade" },
+  { expression: "Poser un lapin à quelqu'un", meaning: "To stand someone up" },
+  { expression: "Noyer le poisson", meaning: "To dodge the issue" },
+  { expression: "Revenons à nos moutons", meaning: "Let's get back on topic" },
+  { expression: "Se noyer dans un verre d'eau", meaning: "To make a mountain out of a molehill" },
+  { expression: "Avoir le beurre et l'argent du beurre", meaning: "To have your cake and eat it too" },
+  { expression: "Force est de constater", meaning: "One cannot help but notice" },
+];
+
 export default function HomePage() {
+  const weekNumber = Math.floor(Date.now() / (7 * 24 * 60 * 60 * 1000));
+  const dayNumber = Math.floor(Date.now() / (24 * 60 * 60 * 1000));
+  const word = weeklyWords[weekNumber % weeklyWords.length];
+  const expression = dailyExpressions[dayNumber % dailyExpressions.length];
+
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       {/* Hero */}
@@ -91,14 +130,15 @@ export default function HomePage() {
           <div className="relative rounded-[2rem] border border-[#E7DAB9] bg-white p-6 shadow-xl">
             <div className="rounded-[1.5rem] bg-[#0B1F3A] p-6 text-white">
               <p className="text-xs font-bold uppercase tracking-widest text-[#C9A44C]">
-                Word of the day
+                Word of the week
               </p>
-              <h2 className="mt-4 text-4xl font-black">Bonjour.</h2>
-              <p className="mt-2 text-sm text-white/60">Hello.</p>
+              <h2 className="mt-4 text-3xl font-black leading-tight">{word.word}</h2>
+              <p className="mt-1 text-xs font-semibold uppercase tracking-widest text-white/40">{word.pos}</p>
+              <p className="mt-1 text-sm text-white/60">{word.meaning}</p>
               <div className="mt-5 rounded-2xl bg-white/10 p-4">
-                <p className="text-sm text-white/70">Today's phrase</p>
-                <p className="mt-1 text-xl font-black">Je peux apprendre.</p>
-                <p className="mt-1 text-sm text-white/60">I can learn.</p>
+                <p className="text-xs font-bold uppercase tracking-widest text-white/50">Daily expression</p>
+                <p className="mt-2 text-lg font-black">{expression.expression}</p>
+                <p className="mt-1 text-sm text-white/60">{expression.meaning}</p>
               </div>
             </div>
 

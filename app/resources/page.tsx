@@ -116,6 +116,24 @@ const categories: ResourceCategory[] = [
     ],
   },
   {
+    title: "Expressions & Style",
+    color: "bg-[#FFF7ED] text-[#C2410C] border-[#FED7AA]",
+    items: [
+      {
+        label: "Connecting words",
+        description:
+          "En outre, par ailleurs, néanmoins, de surcroît — a full reference of connectors organized by function, with level labels from A1 to C1.",
+        href: "/resources/connecting-words",
+      },
+      {
+        label: "Idiomatic expressions",
+        description:
+          "Culturally French expressions for conversation and writing, from avoir le cafard to force est de constater — with examples and usage notes.",
+        href: "/resources/expressions",
+      },
+    ],
+  },
+  {
     title: "Practice & Exam Prep",
     color: "bg-[#F0FDF4] text-[#16A34A] border-[#BBF7D0]",
     items: [
