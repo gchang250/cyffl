@@ -62,7 +62,7 @@ const weeklyWords = [
   { word: "de surcroît", pos: "adv.", meaning: "on top of that, what's more", example: "C'est coûteux, et de surcroît peu pratique." },
 ];
 
-const dailyExpressions = [
+const weeklyExpressions = [
   { expression: "Avoir le cafard", meaning: "To feel down / blue" },
   { expression: "Faire d'une pierre deux coups", meaning: "To kill two birds with one stone" },
   { expression: "Avoir du pain sur la planche", meaning: "To have a lot on one's plate" },
@@ -77,13 +77,18 @@ const dailyExpressions = [
   { expression: "Se noyer dans un verre d'eau", meaning: "To make a mountain out of a molehill" },
   { expression: "Avoir le beurre et l'argent du beurre", meaning: "To have your cake and eat it too" },
   { expression: "Force est de constater", meaning: "One cannot help but notice" },
+  { expression: "Avoir le vent en poupe", meaning: "To be on a roll" },
+  { expression: "Ne pas y aller par quatre chemins", meaning: "To not beat around the bush" },
+  { expression: "L'habit ne fait pas le moine", meaning: "Don't judge a book by its cover" },
+  { expression: "Mettre les bouchées doubles", meaning: "To work twice as hard, to step it up" },
+  { expression: "Tenir le coup", meaning: "To hold on, to hang in there" },
+  { expression: "Avoir la tête dans les nuages", meaning: "To have one's head in the clouds" },
 ];
 
 export default function HomePage() {
   const weekNumber = Math.floor(Date.now() / (7 * 24 * 60 * 60 * 1000));
-  const dayNumber = Math.floor(Date.now() / (24 * 60 * 60 * 1000));
   const word = weeklyWords[weekNumber % weeklyWords.length];
-  const expression = dailyExpressions[dayNumber % dailyExpressions.length];
+  const expression = weeklyExpressions[(weekNumber + 7) % weeklyExpressions.length];
 
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
@@ -136,7 +141,7 @@ export default function HomePage() {
               <p className="mt-1 text-xs font-semibold uppercase tracking-widest text-white/40">{word.pos}</p>
               <p className="mt-1 text-sm text-white/60">{word.meaning}</p>
               <div className="mt-5 rounded-2xl bg-white/10 p-4">
-                <p className="text-xs font-bold uppercase tracking-widest text-white/50">Daily expression</p>
+                <p className="text-xs font-bold uppercase tracking-widest text-white/50">Weekly expression</p>
                 <p className="mt-2 text-lg font-black">{expression.expression}</p>
                 <p className="mt-1 text-sm text-white/60">{expression.meaning}</p>
               </div>
