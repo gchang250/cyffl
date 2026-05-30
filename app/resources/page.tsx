@@ -15,6 +15,30 @@ type ResourceCategory = {
 
 const categories: ResourceCategory[] = [
   {
+    title: "Canadian French",
+    color: "bg-[#FEF2F2] text-[#B91C1C] border-[#FECACA]",
+    items: [
+      {
+        label: "Quebec French essentials",
+        description:
+          "Fin de semaine, dépanneur, magasinage, tuque — the vocabulary and expressions that make Quebec French distinct.",
+        href: "/resources/quebec-french",
+      },
+      {
+        label: "Government & official French",
+        description:
+          "How to read bilingual forms, government vocabulary, and the French you need for healthcare, taxes, and official documents.",
+        href: "/resources/government-french",
+      },
+      {
+        label: "Workplace French",
+        description:
+          "Job posting vocabulary, cover letter phrases, workplace communication, and interview French for bilingual environments.",
+        href: "/resources/workplace-french",
+      },
+    ],
+  },
+  {
     title: "Vocabulary",
     color: "bg-[#EFF6FF] text-[#2563EB] border-[#BFDBFE]",
     items: [

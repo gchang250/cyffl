@@ -4,25 +4,25 @@ export const revalidate = 3600;
 
 const offerings = [
   {
-    title: "Free Lessons",
+    title: "French for Canadian Life",
     description:
-      "Structured French courses you can work through at your own pace, no account, no paywall, no stress.",
+      "Quebec expressions, government forms, bilingual job postings, university applications — the French no app teaches you.",
+    emoji: "🍁",
+    href: "/learn/canadian-life",
+  },
+  {
+    title: "Free Courses",
+    description:
+      "Structured French from zero to advanced, including grammar, verb tenses, and exam prep — no account, no paywall.",
     emoji: "📘",
     href: "/learn",
   },
   {
     title: "Tutoring",
     description:
-      "One-on-one French support for homework, tests, speaking practice, and grammar questions, led by youth.",
+      "One-on-one support for homework, tests, speaking practice, and grammar questions, led by Canadian youth.",
     emoji: "💬",
     href: "/tutoring",
-  },
-  {
-    title: "Study Resources",
-    description:
-      "Vocabulary lists, grammar guides, practice prompts, and exam tools you can use any time.",
-    emoji: "✏️",
-    href: "/resources",
   },
 ];
 
@@ -31,19 +31,38 @@ const steps = [
     number: "01",
     title: "Pick your path",
     description:
-      "Start from zero, brush up for school, or prep for advanced French, there is a course for where you are.",
+      "Start from zero, review for school, prep for IB, or dive straight into the French you actually need in Canada.",
   },
   {
     number: "02",
     title: "Learn and practise",
     description:
-      "Short lessons, interactive exercises, and real examples so you actually remember what you study.",
+      "Short lessons, interactive exercises, and real Canadian examples — not textbook scenarios, but actual situations you'll encounter.",
   },
   {
     number: "03",
     title: "Use it for real",
     description:
-      "Build the confidence to use French in class, on exams, in conversation, and beyond.",
+      "Read a bilingual job posting confidently, fill out a government form, ace a French interview, and use French in daily Canadian life.",
+  },
+];
+
+const differentiators = [
+  {
+    label: "Quebec French",
+    detail: "Fin de semaine, dépanneur, magasinage — the vocabulary that changes across the border.",
+  },
+  {
+    label: "Government forms",
+    detail: "Health cards, tax returns, immigration documents — navigating official French with confidence.",
+  },
+  {
+    label: "Bilingual workplaces",
+    detail: "Job postings, cover letters, workplace emails, and French job interviews.",
+  },
+  {
+    label: "University applications",
+    detail: "Cégep, bourse, dossier d'admission — education French in Canada.",
   },
 ];
 
@@ -96,34 +115,33 @@ export default function HomePage() {
       <section className="mx-auto grid max-w-7xl items-center gap-12 px-6 pb-20 pt-12 md:grid-cols-[1.1fr_0.9fr] md:pt-24">
         <div>
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#E7DAB9] bg-white px-4 py-1.5 text-sm font-semibold text-[#526173]">
-            <span className="h-2 w-2 rounded-full bg-[#16A34A]" />
-            Youth-led · Free · Built for Canadian students
+            <span className="h-2 w-2 rounded-full bg-[#D62828]" />
+            Youth-led · Free · Built for Canadian life
           </div>
 
           <h1 className="max-w-xl text-5xl font-black leading-[0.95] tracking-tight md:text-7xl">
-            French for Canada's next generation.
+            French built for Canadian life.
           </h1>
 
           <p className="mt-5 max-w-lg text-lg leading-8 text-[#526173]">
-            We make French less intimidating. Free lessons, tutoring, and
-            resources made by Canadian youth, for Canadian youth.
+            Quebec expressions, government forms, bilingual job postings, university applications — the French that actually comes up in Canada. Free, made by Canadian youth.
           </p>
-          <p className="mt-3 max-w-lg text-sm text-[#C9A44C] font-semibold">
-            CYFFL is open to students in Canada only.
+          <p className="mt-3 max-w-lg text-sm font-semibold text-[#C9A44C]">
+            Open to students in Canada only.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
-              href="/learn"
-              className="rounded-full bg-[#2563EB] px-7 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]"
+              href="/learn/canadian-life"
+              className="rounded-full bg-[#D62828] px-7 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#B91C1C]"
             >
-              Start learning, it's free
+              French for Canadian Life
             </Link>
             <Link
-              href="/volunteer"
-              className="rounded-full border border-[#C9A44C] bg-white px-7 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5"
+              href="/learn"
+              className="rounded-full border border-[#E7DAB9] bg-white px-7 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5"
             >
-              Become a tutor
+              All courses
             </Link>
           </div>
         </div>
@@ -157,33 +175,48 @@ export default function HomePage() {
                 <p className="mt-0.5 text-xs text-[#526173]">Tutors</p>
               </div>
               <div className="rounded-2xl bg-[#FFFDF7] p-3">
-                <p className="text-xl font-black">FR</p>
-                <p className="mt-0.5 text-xs text-[#526173]">Practice</p>
+                <p className="text-xl font-black">🍁</p>
+                <p className="mt-0.5 text-xs text-[#526173]">Canadian</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Why */}
+      {/* Differentiator */}
       <section className="border-y border-[#E7DAB9] bg-white">
-        <div className="mx-auto grid max-w-7xl gap-8 px-6 py-16 md:grid-cols-[0.8fr_1.2fr]">
-          <h2 className="text-3xl font-black tracking-tight md:text-4xl">
-            French is an official language, it should feel reachable.
-          </h2>
-          <p className="text-lg leading-8 text-[#526173]">
-            Plenty of Canadian students want to improve their French but find
-            existing resources expensive, overwhelming, or just plain boring.
-            CYFFL is here to fix that, practical lessons, real support, and
-            zero cost.
-          </p>
+        <div className="mx-auto max-w-7xl px-6 py-16">
+          <div className="grid gap-10 md:grid-cols-[0.8fr_1.2fr]">
+            <div>
+              <h2 className="text-3xl font-black tracking-tight md:text-4xl">
+                Most French courses weren't made for Canada.
+              </h2>
+              <p className="mt-4 leading-7 text-[#526173]">
+                Knowing how to order a coffee won't help you fill out a government form, read a bilingual job posting, or understand why Quebecers say <em>fin de semaine</em> instead of <em>weekend</em>. CYFFL teaches the French that actually comes up in Canadian life.
+              </p>
+              <Link
+                href="/learn/canadian-life"
+                className="mt-6 inline-block rounded-full bg-[#D62828] px-6 py-3 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-[#B91C1C]"
+              >
+                See the course →
+              </Link>
+            </div>
+            <div className="grid gap-3 sm:grid-cols-2">
+              {differentiators.map((d) => (
+                <div key={d.label} className="rounded-2xl border border-[#E7DAB9] bg-[#FFFDF7] p-5">
+                  <p className="font-black text-[#D62828]">{d.label}</p>
+                  <p className="mt-2 text-sm leading-6 text-[#526173]">{d.detail}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Offerings */}
       <section className="mx-auto max-w-7xl px-6 py-20">
         <h2 className="text-3xl font-black tracking-tight md:text-4xl">
-          Everything you need in one place.
+          Everything you need for French in Canada.
         </h2>
 
         <div className="mt-10 grid gap-5 md:grid-cols-3">
@@ -242,7 +275,7 @@ export default function HomePage() {
             </div>
             <Link
               href="/volunteer"
-              className="rounded-full bg-[#D62828] px-7 py-3 text-center text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#B91C1C] whitespace-nowrap"
+              className="whitespace-nowrap rounded-full bg-[#D62828] px-7 py-3 text-center text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#B91C1C]"
             >
               Join as a volunteer
             </Link>

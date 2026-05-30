@@ -2,6 +2,17 @@ import Link from "next/link";
 
 const courses = [
   {
+    title: "French for Canadian Life",
+    level: "All levels",
+    status: "Available now",
+    statusColor: "bg-[#FEF2F2] text-[#B91C1C]",
+    href: "/learn/canadian-life",
+    description:
+      "Quebec expressions, government forms, bilingual job postings, and university applications — the French that actually comes up in Canada.",
+    units: ["Quebec French", "Government & Forms", "The Bilingual Workplace", "Education in French Canada"],
+    lessonCount: "16 lessons · 4 unit tests",
+  },
+  {
     title: "French Foundations",
     level: "Beginner",
     status: "Available now",
@@ -45,8 +56,7 @@ export default function LearnPage() {
             Pick your path.
           </h1>
           <p className="mt-5 text-lg leading-8 text-[#526173]">
-            Whether you're starting from zero or prepping for advanced exams —
-            CYFFL has a course for where you are.
+            Whether you're starting from zero, reviewing for school, prepping for IB, or learning the French that actually comes up in Canadian life — there's a course for where you are.
           </p>
         </div>
 

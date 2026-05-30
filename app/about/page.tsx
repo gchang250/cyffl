@@ -2,6 +2,11 @@ import Link from "next/link";
 
 const values = [
   {
+    title: "Canadian",
+    description:
+      "We teach the French that actually comes up in Canada — Quebec expressions, government forms, bilingual job postings, university applications. Not just classroom grammar.",
+  },
+  {
     title: "Accessible",
     description:
       "No paywalls, no sign-ups, no barriers. Everything CYFFL builds is free and available to any Canadian student.",
@@ -9,12 +14,7 @@ const values = [
   {
     title: "Youth-led",
     description:
-      "Built by students who actually know what it feels like to struggle with school French, so we know what actually helps.",
-  },
-  {
-    title: "Practical",
-    description:
-      "We focus on French you can use: in class, on exams, in conversation, and in life. Not just grammar for grammar's sake.",
+      "Built by students who actually know what it feels like to struggle with French in Canada, so we build what actually helps.",
   },
 ];
 
@@ -72,12 +72,13 @@ export default function AboutPage() {
           <div className="rounded-[2rem] bg-[#0B1F3A] p-8 text-white">
             <p className="text-sm font-bold text-[#C9A44C]">Our mission</p>
             <p className="mt-4 text-3xl font-black leading-tight">
-              French for Canada's next generation.
+              French built for Canadian life.
             </p>
             <p className="mt-5 leading-7 text-white/70">
-              Canada has two official languages. French is part of education,
-              public life, and real opportunity. CYFFL exists to make it feel
-              reachable, not stressful.
+              Generic apps teach you to order a coffee. We teach you to navigate
+              a Quebec government form, read a bilingual job posting, and
+              understand why Quebecers say <em>fin de semaine</em> instead of
+              <em> weekend</em>. Canada-specific, always free.
             </p>
             <p className="mt-4 text-sm font-semibold text-[#C9A44C]">
               Open to students in Canada only.
@@ -93,25 +94,27 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-5 text-lg leading-8 text-[#526173]">
               <p>
-                CYFFL was built because we saw a real gap in French learning
-                across Canada. Students are expected to study French, but too
-                many do not have access to support that feels simple,
-                affordable, and made for them.
+                CYFFL was built around a simple observation: most French
+                learning resources were not made for Canada. Textbooks teach
+                European French. Apps teach tourist French. Neither teaches you
+                to navigate a Quebec healthcare form, decode a bilingual job
+                posting, or understand what a Quebecer means when they say
+                something is <em>pas pire</em>.
               </p>
               <p>
-                According to Statistics Canada, English-French bilingualism
-                among youth is much lower outside Quebec than inside Quebec.
-                Outside Quebec, roughly 10% of youth are bilingual in English
-                and French. In Quebec, that number is about 70%. In New
-                Brunswick, Canada's only officially bilingual province, it is
-                roughly 30%.
+                That gap matters. Canada has two official languages, and French
+                opens real doors — federal jobs, Quebec universities, bilingual
+                workplaces, and the ability to participate in half the country's
+                public life. According to Statistics Canada, English-French
+                bilingualism among youth is far lower outside Quebec (roughly
+                10%) than inside it (roughly 70%). Better resources close
+                that gap.
               </p>
               <p>
-                That matters because Canada has two official languages at the
-                federal level: English and French. If French is part of
-                Canada's identity, education system, and public life, students
-                should have better access to resources that help them actually
-                learn it.
+                So we built the course we wished existed: one that starts with
+                grammar fundamentals but ends with the French you actually need
+                in Canada. Quebec expressions, government vocabulary, workplace
+                French, university applications. All of it, free.
               </p>
             </div>
           </div>
