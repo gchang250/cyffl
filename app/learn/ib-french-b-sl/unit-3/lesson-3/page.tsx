@@ -4,16 +4,16 @@ import MatchPairs from "@/components/MatchPairs";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const flashcards = [
-  { front: "tout d'abord", back: "first of all / to begin with", subtext: "Opens your first argument. More formal than 'premièrement'." },
-  { front: "de plus / en outre", back: "furthermore / moreover", subtext: "Adds a new point that supports your argument." },
-  { front: "cependant / néanmoins", back: "however / nevertheless", subtext: "Introduces a contrast or counterargument. Essential for balanced writing." },
+  { front: "tout d'abord", back: "first of all / to begin with", subtext: "Opens your first argument. More formal than 'premièrement'. Use it to start a structured essay or speech." },
+  { front: "de plus / en outre", back: "furthermore / moreover", subtext: "Adds a new point that supports your argument. En outre is more formal and impressive." },
+  { front: "cependant / néanmoins", back: "however / nevertheless", subtext: "Introduces a contrast or counterargument. Essential for balanced writing — shows critical thinking." },
   { front: "par conséquent / c'est pourquoi", back: "therefore / that is why", subtext: "Signals cause and effect. Use when you're drawing a conclusion from evidence." },
-  { front: "en conclusion / pour conclure", back: "in conclusion / to conclude", subtext: "Opens your final paragraph. Required in every Paper 2 text." },
+  { front: "en conclusion / pour conclure", back: "in conclusion / to conclude", subtext: "Opens your final paragraph. Required in every Paper 1 text." },
   { front: "à mon avis / selon moi", back: "in my opinion / according to me", subtext: "Introduces a personal viewpoint. Use in blogs, letters, and opinion pieces." },
-  { front: "il est indéniable que", back: "it is undeniable that", subtext: "Strong opener for a well-supported argument. Shows confidence in your claim." },
-  { front: "il faut reconnaître que", back: "one must acknowledge that", subtext: "Introduces a concession — useful for balanced essays and formal writing." },
+  { front: "il est indéniable que", back: "it is undeniable that", subtext: "Strong, formal opinion phrase. Shows confidence in your claim — ideal for higher-band writing." },
+  { front: "il faut reconnaître que", back: "one must acknowledge that", subtext: "Introduces a concession — useful for balanced essays and formal writing. Shows nuance." },
   { front: "d'une part… d'autre part", back: "on one hand… on the other hand", subtext: "Classic structure for presenting two sides of an argument." },
-  { front: "grâce à / à cause de", back: "thanks to / because of", subtext: "Grâce à (positive), à cause de (negative). Both explain cause." },
+  { front: "grâce à / à cause de", back: "thanks to / because of", subtext: "Grâce à (positive cause), à cause de (negative cause). Both explain cause-and-effect." },
 ];
 
 const matchPairs = [
@@ -36,7 +36,7 @@ const quiz = [
     question: "Your conclusion begins with: '_____, il est clair que des mesures urgentes sont nécessaires.' Which phrase fits?",
     options: ["Tout d'abord", "En conclusion", "De plus", "Cependant"],
     correct: 1,
-    explanation: "En conclusion or Pour conclure open the final paragraph. This is a required Paper 2 convention.",
+    explanation: "En conclusion or Pour conclure open the final paragraph. This is a required Paper 1 convention.",
   },
   {
     question: "Which sentence correctly uses 'grâce à'?",
@@ -51,7 +51,7 @@ const quiz = [
     explanation: "'D'une part… d'autre part' (on one hand… on the other hand) is the classic structure for presenting two sides of an argument.",
   },
   {
-    question: "You write: 'Les jeunes passent trop de temps sur les réseaux sociaux. _____, leur concentration diminue.' Which connector best fills the gap?",
+    question: "You write: 'Les jeunes passent trop de temps sur les réseaux sociaux. _____, leur concentration diminue.' Which connector fits best?",
     options: ["De plus", "Par conséquent", "Cependant", "D'une part"],
     correct: 1,
     explanation: "Par conséquent / C'est pourquoi signals cause and effect: 'they spend too much time on social media — therefore, their concentration decreases.'",
@@ -75,9 +75,7 @@ export default function Unit3Lesson3Page() {
               Writing Techniques & Connectors
             </h1>
             <p className="mt-4 text-lg leading-8 text-[#526173]">
-              The connectors, opinion phrases, and argument structures that make
-              Paper 2 writing clear, coherent, and convincing. These are the phrases
-              examiners notice — and reward.
+              The connectors, opinion phrases, and argument structures that make Paper 1 writing clear, coherent, and convincing — and help you score in the higher bands.
             </p>
           </div>
 
@@ -85,14 +83,14 @@ export default function Unit3Lesson3Page() {
             <div className="rounded-2xl bg-[#0B1F3A] p-5 text-white">
               <p className="text-xs font-bold text-[#C9A44C]">Key idea</p>
               <p className="mt-2 leading-7 text-white/80">
-                Every strong Paper 2 response has three moves:{" "}
+                Every strong Paper 1 response has three moves:{" "}
                 <span className="font-black text-white">state, support, connect</span>.
                 Make a claim, give evidence or an example, then use a connector to
                 move to the next point.
               </p>
             </div>
             <div className="rounded-2xl border border-[#E7DAB9] bg-white p-5">
-              <p className="text-xs font-bold text-[#526173]">Essential connectors</p>
+              <p className="text-xs font-bold text-[#526173]">Essential connectors by function</p>
               <div className="mt-2 space-y-1 text-sm">
                 <p><strong>Add:</strong> de plus, en outre, également</p>
                 <p><strong>Contrast:</strong> cependant, néanmoins, or</p>
@@ -127,9 +125,61 @@ export default function Unit3Lesson3Page() {
           </div>
         </section>
 
-        <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        {/* Scoring higher section */}
+        <section className="mt-16 rounded-[2rem] border-2 border-[#C9A44C] bg-[#FFFDF7] p-8">
+          <p className="text-xs font-bold uppercase tracking-widest text-[#C9A44C]">Scoring in the higher bands</p>
+          <h2 className="mt-3 text-2xl font-black text-[#0B1F3A]">What separates a 5 from a 7.</h2>
+          <p className="mt-3 leading-7 text-[#526173]">
+            Paper 1 examiners reward linguistic range and complexity. To move into the higher bands, you need to demonstrate three things consistently:
+          </p>
+          <div className="mt-6 grid gap-4 sm:grid-cols-3">
+            <div className="rounded-2xl bg-white p-5 shadow-sm">
+              <p className="font-black text-[#0B1F3A]">Complex tenses</p>
+              <p className="mt-2 text-sm leading-6 text-[#526173]">Use the <strong>subjunctive</strong>, <strong>conditional</strong>, and <strong>futur simple</strong> — not just the present and passé composé. Examiners notice variety.</p>
+              <div className="mt-3 space-y-1 text-xs text-[#526173]">
+                <p className="italic">"Il faudrait que nous agissions…"</p>
+                <p className="italic">"Si nous ne faisons rien, les conséquences seront…"</p>
+              </div>
+            </div>
+            <div className="rounded-2xl bg-white p-5 shadow-sm">
+              <p className="font-black text-[#0B1F3A]">Idiomatic expressions</p>
+              <p className="mt-2 text-sm leading-6 text-[#526173]">Native-sounding phrases show cultural and linguistic fluency. Even one or two well-placed expressions push you into the top band.</p>
+              <div className="mt-3 space-y-1 text-xs text-[#526173]">
+                <p className="italic">"Force est de constater que…"</p>
+                <p className="italic">"Il va sans dire que…"</p>
+              </div>
+            </div>
+            <div className="rounded-2xl bg-white p-5 shadow-sm">
+              <p className="font-black text-[#0B1F3A]">Varied connectors</p>
+              <p className="mt-2 text-sm leading-6 text-[#526173]">Don't repeat "mais" and "et" — use high-level connectors like <em>néanmoins, de surcroît, or, quant à</em> to show range.</p>
+              <div className="mt-3 space-y-1 text-xs text-[#526173]">
+                <p className="italic">"Néanmoins, il convient de souligner…"</p>
+                <p className="italic">"Quant aux jeunes, ils sont…"</p>
+              </div>
+            </div>
+          </div>
+          <div className="mt-6 flex flex-wrap gap-3">
+            <Link href="/resources/verbs-subjonctif" className="rounded-full bg-[#0B1F3A] px-5 py-2.5 text-sm font-black text-white transition hover:-translate-y-0.5">
+              Study le subjonctif →
+            </Link>
+            <Link href="/resources/verbs-conditionnel" className="rounded-full bg-[#0B1F3A] px-5 py-2.5 text-sm font-black text-white transition hover:-translate-y-0.5">
+              Study le conditionnel →
+            </Link>
+            <Link href="/resources/verbs-futur-simple" className="rounded-full bg-[#0B1F3A] px-5 py-2.5 text-sm font-black text-white transition hover:-translate-y-0.5">
+              Study le futur simple →
+            </Link>
+            <Link href="/resources/connecting-words" className="rounded-full border border-[#C9A44C] bg-white px-5 py-2.5 text-sm font-black text-[#0B1F3A] transition hover:-translate-y-0.5">
+              Full connectors list →
+            </Link>
+            <Link href="/resources/expressions" className="rounded-full border border-[#C9A44C] bg-white px-5 py-2.5 text-sm font-black text-[#0B1F3A] transition hover:-translate-y-0.5">
+              Idiomatic expressions →
+            </Link>
+          </div>
+        </section>
+
+        <section className="mt-8 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
           <p className="text-sm font-bold uppercase tracking-widest text-[#C9A44C]">Done!</p>
-          <h2 className="mt-3 text-3xl font-black">Paper 2 skills complete.</h2>
+          <h2 className="mt-3 text-3xl font-black">Paper 1 skills complete.</h2>
           <p className="mt-3 leading-7 text-[#526173]">
             Take the Unit 3 test, then move to Unit 4 — the Individual Oral.
           </p>

@@ -176,9 +176,8 @@ const categories: ResourceCategory[] = [
       {
         label: "IB French B prep",
         description:
-          "Tips and strategies for Paper 1, Paper 2, and the individual oral.",
+          "Assessment breakdown, exam tips, higher-band phrases, and the grammar resources that matter most for Paper 1, Paper 2, and the Individual Oral.",
         href: "/resources/ib-french-b-prep",
-        comingSoon: true,
       },
       {
         label: "Study tips for French",

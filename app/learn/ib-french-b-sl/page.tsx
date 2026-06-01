@@ -24,7 +24,7 @@ const units = [
   },
   {
     number: "02",
-    title: "Paper 1 — Receptive Skills",
+    title: "Paper 2 — Receptive Skills",
     description: "Reading and listening comprehension strategies, question types, and grammar for understanding complex texts.",
     color: "bg-[#FEF3C7] text-[#D97706]",
     testHref: "/learn/ib-french-b-sl/unit-2/test",
@@ -36,7 +36,7 @@ const units = [
   },
   {
     number: "03",
-    title: "Paper 2 — Written Production",
+    title: "Paper 1 — Written Production",
     description: "Text types, register, audience, writing conventions, connectors, and opinion phrases for the written paper.",
     color: "bg-[#F0FDF4] text-[#16A34A]",
     testHref: "/learn/ib-french-b-sl/unit-3/test",
@@ -83,8 +83,8 @@ export default function IBFrenchBSLPage() {
 
             <p className="mt-5 text-lg leading-8 text-[#526173]">
               Prepare for all three IB French B Standard Level assessments: Paper 1
-              (receptive skills), Paper 2 (written production), and the Individual
-              Oral. Four units, twelve lessons, four unit tests — all free.
+              (written production), Paper 2 (reading and listening), and the Individual
+              Oral. Four units, fourteen lessons, four unit tests — all free.
             </p>
 
             <div className="mt-8 grid grid-cols-3 gap-3 text-center">
@@ -113,16 +113,20 @@ export default function IBFrenchBSLPage() {
               <p className="text-xs font-bold text-[#526173] uppercase tracking-widest">Assessment breakdown</p>
               <div className="mt-3 space-y-2 text-sm">
                 <div className="flex justify-between">
-                  <span className="font-bold">Paper 1 — Receptive Skills</span>
-                  <span className="text-[#526173]">45%</span>
+                  <span className="font-bold">Paper 1 — Written Production</span>
+                  <span className="text-[#526173]">25% · /30</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="font-bold">Paper 2 — Written Production</span>
-                  <span className="text-[#526173]">25%</span>
+                  <span className="font-bold">Paper 2A — Reading</span>
+                  <span className="text-[#526173]">25% · /40</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="font-bold">Paper 2B — Listening</span>
+                  <span className="text-[#526173]">25% · /25</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="font-bold">Individual Oral (IA)</span>
-                  <span className="text-[#526173]">30%</span>
+                  <span className="text-[#526173]">25% · /30</span>
                 </div>
               </div>
             </div>

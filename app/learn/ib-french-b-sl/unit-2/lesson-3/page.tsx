@@ -8,12 +8,12 @@ const flashcards = [
   { front: "l'attitude (f)", back: "attitude / stance", subtext: "What does the speaker think or feel about the topic? Identifying attitude is a key listening skill." },
   { front: "le but", back: "the purpose / aim", subtext: "Why is the speaker saying this? To inform, warn, persuade, or celebrate?" },
   { front: "selon l'intervenant", back: "according to the speaker", subtext: "A phrase in listening questions. Use only what the speaker says — don't infer." },
-  { front: "l'interview (f)", back: "interview", subtext: "A common audio format: one person questions another. Listen for the interviewer's questions and the interviewee's answers." },
+  { front: "l'interview (f)", back: "interview", subtext: "A common audio format: one person questions another. Listen for questions and responses carefully." },
   { front: "le reportage", back: "news report / documentary segment", subtext: "Factual, journalistic audio. Often about current events, social issues, or research." },
-  { front: "l'annonce (f)", back: "announcement", subtext: "Short and direct. Announcements at stations, airports, events — listen for key details: dates, times, places." },
+  { front: "l'annonce (f)", back: "announcement", subtext: "Short and direct. Listen for key details: dates, times, places, and instructions." },
   { front: "la publicité", back: "advertisement", subtext: "Designed to persuade. Purpose is almost always to sell or promote something." },
   { front: "noter les chiffres", back: "note the numbers / statistics", subtext: "Numbers are often asked about in listening tasks. Train yourself to catch dates, percentages, and quantities." },
-  { front: "écouter deux fois", back: "listen twice", subtext: "In the exam you hear recordings twice. Use the first listen for the main idea and the second for details." },
+  { front: "écouter deux fois", back: "listen twice", subtext: "In the exam you hear recordings twice. First listen: main idea. Second listen: specific details and answers." },
 ];
 
 const matchPairs = [
@@ -34,7 +34,7 @@ const quiz = [
   },
   {
     question: "The recording plays twice. What should you do on the first listen?",
-    options: ["Write down every word you understand", "Identify the main idea, speaker, and purpose", "Answer all the detailed questions", "Ignore it and wait for the second playback"],
+    options: ["Write down every word you understand", "Identify the main idea, speaker, and purpose", "Answer all the detailed questions immediately", "Ignore it and wait for the second playback"],
     correct: 1,
     explanation: "First listen = big picture. Identify what it's about, who is speaking, and why. Use the second listen for specific details and answers.",
   },
@@ -52,7 +52,7 @@ const quiz = [
   },
   {
     question: "You hear numbers and dates in a listening text. What should you do?",
-    options: ["Ignore them — they're rarely tested", "Note them immediately since they're often asked about", "Wait until the second listen to write them", "Only note them if the question asks about dates"],
+    options: ["Ignore them — they're rarely tested", "Note them immediately since they're often asked about", "Wait until the second listen to write them down", "Only note them if the question specifically asks about dates"],
     correct: 1,
     explanation: "Numbers, dates, and statistics are frequently asked about in listening tasks. Write them during the first listen so you don't miss them.",
   },
@@ -75,9 +75,7 @@ export default function Unit2Lesson3Page() {
               Listening Comprehension
             </h1>
             <p className="mt-4 text-lg leading-8 text-[#526173]">
-              The listening section of Paper 1 tests you on audio texts ranging from
-              news reports to advertisements. Learn the formats, what to listen for,
-              and how to manage two listens.
+              The Paper 2 listening section is 25% of your grade, out of 25 marks. Audio texts range from news reports to advertisements — learn the formats and how to manage two listens.
             </p>
           </div>
 
@@ -106,7 +104,7 @@ export default function Unit2Lesson3Page() {
 
         <section className="mt-16">
           <h2 className="text-2xl font-black">Key vocabulary</h2>
-          <p className="mt-1 text-[#526173]">Click a card to flip it. Know these terms before listening tasks.</p>
+          <p className="mt-1 text-[#526173]">Click a card to flip it.</p>
           <div className="mt-6">
             <FlashCardDeck cards={flashcards} title="Listening comprehension — key terms" />
           </div>
@@ -130,9 +128,9 @@ export default function Unit2Lesson3Page() {
 
         <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
           <p className="text-sm font-bold uppercase tracking-widest text-[#C9A44C]">Done!</p>
-          <h2 className="mt-3 text-3xl font-black">Paper 1 skills complete.</h2>
+          <h2 className="mt-3 text-3xl font-black">Paper 2 skills complete.</h2>
           <p className="mt-3 leading-7 text-[#526173]">
-            Take the Unit 2 test, then move on to Paper 2 — written production.
+            Take the Unit 2 test, then move on to Paper 1 — written production.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link href="/learn/ib-french-b-sl/unit-2/lesson-2" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">
