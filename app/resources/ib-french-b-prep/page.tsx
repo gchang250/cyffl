@@ -17,16 +17,17 @@ const assessments = [
     description:
       "You choose one prompt from two and write a structured text in a specified format (article, letter, blog, speech, report, etc.). Minimum 250 words at SL.",
     criteria: [
-      { label: "Criterion A", name: "Language", marks: "/12", note: "Accuracy, range, and complexity of grammar and vocabulary" },
-      { label: "Criterion B", name: "Message", marks: "/12", note: "Relevance, development of ideas, and clarity of argument" },
-      { label: "Criterion C", name: "Format", marks: "/6", note: "Appropriate text type conventions, structure, and register" },
+      { label: "Criterion A", name: "Language", marks: "/12", note: "Accuracy, range, and complexity of grammar and vocabulary. Idiomatic expressions push you to the top band." },
+      { label: "Criterion B", name: "Message", marks: "/12", note: "Relevance, development of ideas, and clarity. Factual inaccuracies are NOT penalised — only coherence and depth." },
+      { label: "Criterion C", name: "Conceptual understanding", marks: "/6", note: "Three things: (1) did you choose an appropriate text type? (2) is your register consistent? (3) did you use the correct conventions?" },
     ],
     tips: [
-      "Always open with the correct format convention for your text type (salutation, headline, date, etc.)",
+      "The prompt gives you THREE text type options — choose the one that best fits the context, recipient, and purpose",
+      "Open with the required conventions for your chosen text type before writing any content",
       "Use the subjunctive, conditional, and futur simple — tense variety is directly rewarded in Criterion A",
-      "Include at least one or two idiomatic expressions to demonstrate linguistic range",
-      "Structure your argument: introduction → development (d'une part / d'autre part) → conclusion",
-      "Check agreement, tense consistency, and accents before you finish",
+      "Include at least one or two idiomatic expressions to reach the Criterion A top band",
+      "Criterion B does not penalise factual errors — if your ideas are coherent and well-developed, you will be rewarded",
+      "Keep your register consistent throughout — shifting between formal and informal mid-response loses Criterion C marks",
     ],
   },
   {
@@ -36,18 +37,20 @@ const assessments = [
     marks: "/40",
     color: "bg-[#FEF3C7] text-[#D97706]",
     description:
-      "A series of written texts. Questions are almost always True/False followed by a direct quote from the text as justification. There is very little 'explain in your own words' — the answers are in the text.",
+      "Three texts, each with different question types. The answer is always in the text — every question is testing whether you can locate and use the right information.",
     criteria: [
-      { label: "Main format", name: "True / False + direct quote", marks: "", note: "State Vrai or Faux, then quote the exact words from the text that prove it" },
-      { label: "Key rule", name: "Quote directly, don't paraphrase", marks: "", note: "Copy the words from the text — your own interpretation can lose marks" },
-      { label: "Key rule", name: "Use your common sense", marks: "", note: "If something sounds obviously true or false given the context, it probably is" },
+      { label: "Question types", name: "Choose N true statements · sentence completion · multiple choice", marks: "", note: "First two texts typically use these formats" },
+      { label: "Question types", name: "Matching · synonym matching · gap fill from word bank", marks: "", note: "Common in the second text — use grammar and context to eliminate" },
+      { label: "Question types", name: "True/False + direct quote · short answer · pronoun reference", marks: "", note: "Third text typically uses these — both T/F and quote are required for the mark" },
     ],
     tips: [
-      "Use your common sense — if a statement sounds obviously true or false given what you've read, trust that instinct",
-      "Always quote directly from the text to support your True/False answer — word-for-word is better than paraphrase",
-      "Watch for negatives (ne…pas, ne…jamais, seulement) — they flip meaning and are easy to miss",
-      "Check word counts carefully — if the question asks for 'deux mots', give exactly two",
-      "Read the questions before the text so you know what to scan for",
+      "Use your common sense — the texts are written clearly and the right answer is almost always the most obvious one",
+      "For True/False + Justification: you need both — T/F alone gets zero. Copy words exactly from the text",
+      "For sentence completion ('Trouvez les mots'): use the words exactly as they appear in the text — no paraphrasing",
+      "For synonym matching: use the line number — the meaning depends on how the word is used in context, not its general definition",
+      "For gap fill: eliminate wrong options using grammar (gender, number, tense) before choosing from what remains",
+      "Watch for negatives (ne…pas, ne…jamais, seulement) — they flip the meaning and are easy to miss under time pressure",
+      "For pronoun reference: go back to the preceding lines and find the noun the pronoun replaces, then copy it from the text",
     ],
   },
   {
@@ -221,61 +224,62 @@ export default function IBFrenchBPrepPage() {
           </div>
         </section>
 
-        {/* Paper 1 — choosing your text type */}
+        {/* Paper 1 — text types */}
         <section className="mt-16">
-          <h2 className="text-3xl font-black">Paper 1 — choosing the right text type</h2>
+          <h2 className="text-3xl font-black">Paper 1 — text types and official conventions</h2>
           <p className="mt-2 text-[#526173]">
-            The prompt will always give you context clues. Read them carefully — they tell you what format to write in.
+            Each prompt gives you three text type options. Pick the one that fits the context, recipient, and purpose. Then apply these conventions — examiners check for them directly in Criterion C.
           </p>
 
-          <div className="mt-6 grid gap-4 md:grid-cols-2">
+          <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {[
               {
-                clue: "Writing to a government body, minister, or official organisation",
-                format: "Formal letter (lettre formelle)",
-                detail: "Use 'Monsieur / Madame,' as your salutation. Use 'vous'. Include a subject line, structured body, and a formal closing like 'Veuillez agréer, Monsieur/Madame, l'expression de mes sentiments distingués.'",
-                register: "Formal",
-              },
-              {
-                clue: "Writing to your closest friend or a family member",
-                format: "Informal letter or message",
-                detail: "Use 'Cher(e) [prénom],' as your salutation. Use 'tu'. The tone is warm and personal — share feelings, ask questions, use casual connectors like 'en fait' and 'du coup'.",
-                register: "Informal",
-              },
-              {
-                clue: "Sharing an experience, opinion, or story with strangers or a general public audience",
-                format: "Blog post or social media post",
-                detail: "Write in the first person. Open with a hook — a question, anecdote, or striking statement. The tone is personal but accessible. No formal salutation needed — just a title.",
-                register: "Informal / semi-formal",
-              },
-              {
-                clue: "Writing for your school newspaper or a magazine",
-                format: "Article de presse",
-                detail: "Write a headline and subheading. Introduce the issue, develop it in structured paragraphs, and close with a perspective or call to action. Semi-formal register.",
+                type: "Article",
                 register: "Semi-formal",
+                conventions: ["Author name", "Date", "Title", "Introduction and conclusion"],
+                context: "School newspaper, magazine, or publication for a broad audience",
               },
               {
-                clue: "Addressing an audience at a school assembly, event, or debate",
-                format: "Speech (discours)",
-                detail: "Open with 'Mesdames et messieurs,' or 'Chers camarades,'. Structure your points clearly. Close with a call to action or memorable conclusion.",
-                register: "Formal",
+                type: "Blog",
+                register: "Informal",
+                conventions: ["Title", "Author name and/or date/time", "First person narration (je)", "Address the reader directly", "Multiple posts permitted"],
+                context: "Sharing a personal experience or opinion with a general public audience",
               },
               {
-                clue: "Presenting findings or recommendations to an organisation or committee",
-                format: "Report (rapport)",
-                detail: "Use numbered sections or subheadings. Objective tone — state facts, analyse them, and make recommendations. Avoid personal pronouns unless in the recommendations section.",
+                type: "Exposé (speech)",
                 register: "Formal",
+                conventions: ["Opening address (Mesdames et messieurs…)", "Introduction", "Stylistic devices (rhetorical questions, repetition)", "Strong conclusion", "Thank-you / closing formula"],
+                context: "Addressing classmates, an assembly, or a public audience directly",
               },
-            ].map((item) => (
-              <div key={item.format} className="rounded-[1.5rem] border border-[#E7DAB9] bg-white p-5 shadow-sm">
-                <p className="text-xs font-bold uppercase tracking-widest text-[#526173]">If the prompt says…</p>
-                <p className="mt-1 text-sm italic text-[#0B1F3A]">&ldquo;{item.clue}&rdquo;</p>
+              {
+                type: "Instructions",
+                register: "Neutral",
+                conventions: ["Title", "Logical sequential structure", "Subheadings, bullet points, or short paragraphs", "Address the reader directly"],
+                context: "Guiding or directing a reader through steps or a process",
+              },
+              {
+                type: "Proposition (proposal)",
+                register: "Semi-formal to formal",
+                conventions: ["Title", "Introduction", "Clear structure (bullets or paragraphs)", "Convincing conclusion or final recommendation", "Can be sent as a letter or email"],
+                context: "Presenting a project or idea to decision-makers or competition organisers",
+              },
+            ].map((t) => (
+              <div key={t.type} className="rounded-[1.5rem] border border-[#E7DAB9] bg-white p-5 shadow-sm">
+                <div className="flex items-center justify-between gap-2">
+                  <p className="font-black text-[#0B1F3A]">{t.type}</p>
+                  <span className="rounded-full bg-[#FFFDF7] px-2 py-0.5 text-xs font-bold text-[#526173]">{t.register}</span>
+                </div>
+                <p className="mt-1 text-xs italic text-[#526173]">{t.context}</p>
                 <div className="mt-3 border-t border-[#E7DAB9] pt-3">
-                  <div className="flex items-center justify-between gap-2">
-                    <p className="font-black text-[#0B1F3A]">{item.format}</p>
-                    <span className="rounded-full bg-[#FFFDF7] px-2 py-0.5 text-xs font-bold text-[#526173]">{item.register}</span>
-                  </div>
-                  <p className="mt-2 text-sm leading-6 text-[#526173]">{item.detail}</p>
+                  <p className="text-xs font-bold uppercase tracking-widest text-[#0B1F3A]">Required conventions</p>
+                  <ul className="mt-2 space-y-1">
+                    {t.conventions.map((c) => (
+                      <li key={c} className="flex items-start gap-2 text-sm text-[#526173]">
+                        <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#C9A44C]" />
+                        {c}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             ))}
