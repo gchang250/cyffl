@@ -37,13 +37,13 @@ const courses = [
   {
     title: "IB French B SL",
     level: "Advanced",
-    status: "Coming soon",
-    statusColor: "bg-[#FFF8ED] text-[#526173]",
-    href: "#",
+    status: "Available now",
+    statusColor: "bg-[#FDF4FF] text-[#9333EA]",
+    href: "/learn/ib-french-b-sl",
     description:
-      "Prepare for Paper 1, Paper 2 reading, Paper 2 listening, and the individual oral assessment.",
-    units: ["Paper 1", "Reading", "Listening", "Oral"],
-    lessonCount: "In development",
+      "Prepare for Paper 1, Paper 2, and the Individual Oral. All five core themes, reading and listening strategies, text types, and oral discussion language.",
+    units: ["The Five Themes", "Paper 1", "Paper 2", "Individual Oral"],
+    lessonCount: "12 lessons · 4 unit tests",
   },
 ];
 

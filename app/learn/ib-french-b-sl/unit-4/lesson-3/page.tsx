@@ -1,0 +1,147 @@
+import Link from "next/link";
+import FlashCardDeck from "@/components/FlashCardDeck";
+import MatchPairs from "@/components/MatchPairs";
+import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
+
+const flashcards = [
+  { front: "À mon avis…", back: "In my opinion…", subtext: "Safe, clear opener for sharing a personal view. Use it confidently in the discussion phase." },
+  { front: "Je pense que… / Je crois que…", back: "I think that… / I believe that…", subtext: "Introduces an opinion. Follow with a reason to show Criterion B depth." },
+  { front: "Il est essentiel que… (+ subjonctif)", back: "It is essential that…", subtext: "Strong, formal opinion phrase. Triggers the subjunctive: 'Il est essentiel que nous agissions maintenant.'" },
+  { front: "D'après moi…", back: "As far as I'm concerned… / In my view…", subtext: "A slightly stronger version of 'à mon avis'. Good for clear takes on global issues." },
+  { front: "Cela me préoccupe parce que…", back: "This concerns me because…", subtext: "Shows genuine engagement with the global issue. Examiners reward personal connection." },
+  { front: "Il faut admettre que…", back: "One must admit that…", subtext: "Introduces a concession — showing you understand the other side. Raises Criterion C." },
+  { front: "En ce qui concerne…", back: "Regarding… / As far as … is concerned…", subtext: "Useful for redirecting the conversation or introducing a new angle." },
+  { front: "Par exemple…", back: "For example…", subtext: "Always back up an opinion with an example. The examiner expects development." },
+  { front: "Si l'on considère que…", back: "If we consider that…", subtext: "Introduces evidence or context for your argument. Shows analytical thinking." },
+  { front: "C'est une question complexe.", back: "It is a complex issue.", subtext: "Acknowledges nuance. Use when an issue has multiple sides — shows intellectual maturity." },
+];
+
+const matchPairs = [
+  { left: "À mon avis…", right: "In my opinion…" },
+  { left: "Il est essentiel que…", right: "It is essential that…" },
+  { left: "Cela me préoccupe parce que…", right: "This concerns me because…" },
+  { left: "Il faut admettre que…", right: "One must admit that…" },
+  { left: "Par exemple…", right: "For example…" },
+  { left: "C'est une question complexe.", right: "It is a complex issue." },
+];
+
+const quiz = [
+  {
+    question: "The examiner asks: 'Pensez-vous que les gouvernements font assez pour lutter contre le changement climatique?' A strong answer begins with:",
+    options: ["'Oui.'", "'À mon avis, les gouvernements ne font pas assez, parce que…'", "'C'est difficile.'", "'Je ne sais pas.'"],
+    correct: 1,
+    explanation: "Start with an opinion phrase ('À mon avis'), state your position clearly, then develop with a reason. Never give a one-word answer.",
+  },
+  {
+    question: "Which phrase introduces a concession — showing you understand the opposing view?",
+    options: ["'Par exemple…'", "'Il faut admettre que…'", "'À mon avis…'", "'C'est une question complexe.'"],
+    correct: 1,
+    explanation: "'Il faut admettre que…' (one must admit that…) introduces a concession. Showing you understand both sides raises your Criterion C interactive skills score.",
+  },
+  {
+    question: "'Il est essentiel que nous _____ maintenant.' What form of agir goes in the blank?",
+    options: ["agissons", "agissez", "agissions", "agir"],
+    correct: 2,
+    explanation: "Il est essentiel que triggers the subjunctive. The subjunctive of agir in first person plural is 'agissions': 'il est essentiel que nous agissions'.",
+  },
+  {
+    question: "After giving your opinion, what should you always do next?",
+    options: ["Wait for the examiner to respond", "Add 'Par exemple…' and give a concrete example or reason", "Change the topic", "Summarise your point again"],
+    correct: 1,
+    explanation: "Every opinion needs development. 'Par exemple…' followed by a specific example shows Criterion B message depth. Examiners expect development, not just statements.",
+  },
+  {
+    question: "The examiner pushes back: 'Certains disent que la mondialisation profite à tout le monde. Qu'en pensez-vous?' You should:",
+    options: ["Agree with them immediately to avoid conflict", "Repeat exactly what you said before", "Engage with the counterargument and develop your own view", "Ask them to change the topic"],
+    correct: 2,
+    explanation: "Criterion C rewards interactive, spontaneous discussion. Engage with the counterargument: 'Il faut admettre que… cependant, à mon avis…'",
+  },
+];
+
+export default function Unit4Lesson3Page() {
+  return (
+    <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
+      <section className="mx-auto max-w-6xl px-6 py-16">
+        <Link href="/learn/ib-french-b-sl" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+          ← IB French B SL
+        </Link>
+
+        <div className="mt-6 grid gap-8 md:grid-cols-[1fr_1fr]">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-widest text-[#C9A44C]">
+              Unit 4 · Lesson 3
+            </p>
+            <h1 className="mt-3 text-5xl font-black tracking-tight md:text-6xl">
+              Discussing Global Issues
+            </h1>
+            <p className="mt-4 text-lg leading-8 text-[#526173]">
+              The opinion phrases, concession language, and discussion strategies you
+              need for the examiner conversation — the 6–9 minutes where Criterion C
+              interactive skills are fully tested.
+            </p>
+          </div>
+
+          <div className="space-y-3">
+            <div className="rounded-2xl bg-[#0B1F3A] p-5 text-white">
+              <p className="text-xs font-bold text-[#C9A44C]">Key idea</p>
+              <p className="mt-2 leading-7 text-white/80">
+                Every good oral answer has three parts:{" "}
+                <span className="font-black text-white">opinion + reason + example</span>.
+                Say what you think, explain why, and give a specific example.
+                Never just say oui or non.
+              </p>
+            </div>
+            <div className="rounded-2xl border border-[#E7DAB9] bg-white p-5">
+              <p className="text-xs font-bold text-[#526173]">Opinion → Reason → Example</p>
+              <div className="mt-2 space-y-1 text-sm">
+                <p><strong>Opinion:</strong> À mon avis, c'est un problème grave.</p>
+                <p><strong>Reason:</strong> Parce que les émissions augmentent.</p>
+                <p><strong>Example:</strong> Par exemple, en 2023, les températures ont battu des records.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section className="mt-16">
+          <h2 className="text-2xl font-black">Discussion phrases</h2>
+          <p className="mt-1 text-[#526173]">Click a card to flip it. These phrases are what high-scoring students actually say.</p>
+          <div className="mt-6">
+            <FlashCardDeck cards={flashcards} title="Global issue discussion language" />
+          </div>
+        </section>
+
+        <section className="mt-16">
+          <h2 className="text-2xl font-black">Match the pairs</h2>
+          <p className="mt-1 text-[#526173]">Match each discussion phrase to its English meaning.</p>
+          <div className="mt-6">
+            <MatchPairs pairs={matchPairs} title="Discussion phrases" />
+          </div>
+        </section>
+
+        <section className="mt-16">
+          <h2 className="text-2xl font-black">Quick quiz</h2>
+          <p className="mt-1 text-[#526173]">Apply discussion strategies to realistic examiner questions.</p>
+          <div className="mt-6">
+            <MultipleChoiceQuiz questions={quiz} title="Discussing global issues quiz" />
+          </div>
+        </section>
+
+        <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+          <p className="text-sm font-bold uppercase tracking-widest text-[#C9A44C]">Done!</p>
+          <h2 className="mt-3 text-3xl font-black">All four units complete.</h2>
+          <p className="mt-3 leading-7 text-[#526173]">
+            Take the Unit 4 test and you've finished the full IB French B SL course. Good luck on your exams.
+          </p>
+          <div className="mt-6 flex flex-wrap gap-3">
+            <Link href="/learn/ib-french-b-sl/unit-4/lesson-2" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">
+              ← Previous lesson
+            </Link>
+            <Link href="/learn/ib-french-b-sl/unit-4/test" className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">
+              Unit 4 Test →
+            </Link>
+          </div>
+        </section>
+      </section>
+    </main>
+  );
+}
