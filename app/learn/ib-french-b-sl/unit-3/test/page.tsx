@@ -3,64 +3,99 @@ import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const questions = [
   {
-    question: "A Paper 1 prompt asks you to write for your school newspaper about a local environmental issue. What text type is required?",
-    options: ["A formal letter", "A diary entry", "A newspaper article", "A report"],
+    question: "Paper 1 gives you how many text type options per prompt?",
+    options: ["One — the text type is prescribed", "Two — formal or informal", "Three — you choose the most appropriate one", "As many as you like"],
     correct: 2,
-    explanation: "School newspaper = un article de presse. It needs a headline, structured paragraphs, and semi-formal register.",
+    explanation: "Paper 1 gives you three text type options per prompt. You choose the one that best fits the context, recipient, and purpose described in the task.",
   },
   {
-    question: "Which text type always opens with a direct address like 'Mesdames et messieurs'?",
-    options: ["Blog post", "Formal letter", "Speech / discours", "Report"],
+    question: "What are the three things Criterion C (Compréhension conceptuelle) assesses?",
+    options: [
+      "Grammar, vocabulary, and punctuation",
+      "Text type choice, register/tone, and application of text type conventions",
+      "Introduction, development, and conclusion",
+      "Length, accuracy, and originality",
+    ],
+    correct: 1,
+    explanation: "Criterion C (/6) assesses: (1) did you choose an appropriate text type? (2) is your register and tone consistent and appropriate? (3) did you correctly apply the conventions of that text type?",
+  },
+  {
+    question: "Which four elements does the IB require for an article to earn full Criterion C marks?",
+    options: [
+      "Opening address, stylistic devices, conclusion, thank-you",
+      "Author name, date, title, introduction and conclusion",
+      "Title, first person narration, reader address, date",
+      "Title, introduction, bullet points, final recommendation",
+    ],
+    correct: 1,
+    explanation: "The official IB conventions for an article are: author name, date, title, and both an introduction and a conclusion. Missing any of these directly costs Criterion C marks.",
+  },
+  {
+    question: "For a blog, the IB requires 'reader awareness.' This means:",
+    options: [
+      "Knowing who the IB examiner is",
+      "Addressing the reader directly in the text and writing in first person",
+      "Using a formal salutation",
+      "Writing at least 300 words",
+    ],
+    correct: 1,
+    explanation: "The IB defines blog reader awareness as: first-person narration (je) and directly addressing the reader (e.g., 'Et vous, qu'en pensez-vous ?'). Both are required for full Criterion C.",
+  },
+  {
+    question: "A prompt asks you to share your opinion on a topic with your classmates. Which text type is the most directly appropriate?",
+    options: ["Formal letter to the school administration", "Proposal to a committee", "Speech (exposé) or article in the school newspaper", "Instructions"],
     correct: 2,
-    explanation: "Un discours (speech) opens with a direct address to the audience. This is a required convention that examiners look for.",
+    explanation: "Sharing with classmates = a direct address to an audience you know. An exposé is the most direct format. An article in the school newspaper also works. A proposal or formal letter would be over-formal for this context.",
   },
   {
-    question: "You are writing a complaint letter to a company. Which salutation is correct?",
-    options: ["Salut!", "Cher directeur,", "Monsieur / Madame,", "Bonjour,"],
+    question: "Criterion B does NOT penalise…",
+    options: [
+      "Using the wrong text type",
+      "Inconsistent register",
+      "Factual inaccuracies — only coherence and development are assessed",
+      "A missing conclusion",
+    ],
     correct: 2,
-    explanation: "'Monsieur / Madame,' is the standard formal letter salutation when you don't know the recipient's name.",
+    explanation: "The IB explicitly states that examiners do not penalise factually incorrect information in Criterion B. If your ideas are coherent and developed, you are rewarded — even if a statistic is wrong.",
   },
   {
-    question: "A blog post about travelling to Vietnam is written using 'vous' throughout. This is:",
-    options: ["Correct — all IB writing uses vous", "A register error — blogs use je and informal language", "Fine if the topic is serious", "Required in all Paper 1 tasks"],
+    question: "An exposé (speech) must open with:",
+    options: [
+      "A title and the author's name",
+      "A direct address ('Mesdames et messieurs,' or 'Chers camarades,')",
+      "A thesis statement in the first sentence",
+      "A date and subject line",
+    ],
     correct: 1,
-    explanation: "Blogs are informal and personal. Using 'vous' where 'tu' or 'je' is expected is a register error that costs marks in Criterion A.",
+    explanation: "An exposé always opens with a direct address to the audience. This is a required convention — without it, Criterion C is capped.",
   },
   {
-    question: "You want to introduce a counterargument. Which connector do you use?",
-    options: ["de plus", "tout d'abord", "cependant", "par conséquent"],
+    question: "To reach the Criterion A top band (10–12), your writing must demonstrate:",
+    options: [
+      "Only basic present and passé composé tenses",
+      "Varied vocabulary, complex tenses (subjunctive, conditional, futur simple), and idiomatic expressions",
+      "Long sentences with minimal connectors",
+      "Formal register regardless of text type",
+    ],
+    correct: 1,
+    explanation: "The IB top band descriptor (10–12) explicitly requires varied vocabulary, idiomatic expressions, and both basic and complex grammatical structures used effectively.",
+  },
+  {
+    question: "Which connector introduces a counterargument most effectively in a formal text?",
+    options: ["de plus", "tout d'abord", "cependant / néanmoins", "par conséquent"],
     correct: 2,
-    explanation: "Cependant (however) / néanmoins (nevertheless) introduce a counterargument or contrast. 'De plus' adds a point; 'par conséquent' draws a conclusion.",
+    explanation: "Cependant (however) and néanmoins (nevertheless) introduce a contrast or counterargument. 'De plus' adds a point; 'par conséquent' draws a conclusion; 'tout d'abord' opens a sequence.",
   },
   {
-    question: "Which sentence correctly uses 'grâce à'?",
-    options: ["Grâce à la crise, les gens souffrent.", "Grâce à ce projet, les résultats s'améliorent.", "Grâce à l'inégalité, rien ne change.", "Grâce à l'échec, tout s'empire."],
-    correct: 1,
-    explanation: "Grâce à expresses a positive cause. For negative causes use 'à cause de'. 'Thanks to this project, results are improving.'",
-  },
-  {
-    question: "Every Paper 1 text must include:",
-    options: ["A numbered list of points", "Appropriate format conventions and a conclusion", "At least three paragraphs and a headline", "A formal salutation and a bibliography"],
-    correct: 1,
-    explanation: "Every text type needs appropriate format conventions (opening, structure, closing) AND a conclusion. These are marked in Criterion A.",
-  },
-  {
-    question: "To score in the higher bands on Paper 1, you should demonstrate:",
-    options: ["Only the present and passé composé tenses", "Complex tenses like the subjunctive and conditional, plus idiomatic expressions", "Long sentences with no connectors", "Informal language regardless of text type"],
-    correct: 1,
-    explanation: "Higher-band writing uses the subjunctive, conditional, and futur simple — and idiomatic expressions like 'il va sans dire que' or 'force est de constater'. Tense variety and linguistic range are directly rewarded.",
-  },
-  {
-    question: "For a report to a city council, which pronoun do you use when addressing the reader?",
-    options: ["tu", "vous", "on", "il/elle"],
-    correct: 1,
-    explanation: "A report to a city council is a formal document. Always use 'vous' when directly addressing formal readers.",
-  },
-  {
-    question: "Which structure is best for presenting both sides of an argument in a balanced article?",
-    options: ["tout d'abord… de plus… en conclusion", "d'une part… d'autre part", "à mon avis… selon moi", "par conséquent… c'est pourquoi"],
-    correct: 1,
-    explanation: "'D'une part… d'autre part' (on one hand… on the other hand) is the standard structure for two-sided argument writing.",
+    question: "A proposal (proposition) is acceptable when submitted as a letter or email, provided:",
+    options: [
+      "It is at least 300 words long",
+      "It uses a formal register only",
+      "All required conventions (title, intro, structure, convincing conclusion) are present",
+      "It is addressed to a government official",
+    ],
+    correct: 2,
+    explanation: "The IB explicitly states a proposition can be submitted as a letter, email, or similar format — as long as all four required conventions are present: title, introduction, clear structure, and convincing conclusion.",
   },
 ];
 
@@ -76,7 +111,7 @@ export default function Unit3TestPage() {
           <span className="rounded-full bg-[#F0FDF4] px-3 py-1 text-xs font-black text-[#16A34A]">Unit 3 Test</span>
           <h1 className="mt-4 text-5xl font-black tracking-tight md:text-6xl">Paper 1 — Written Production</h1>
           <p className="mt-4 max-w-2xl text-lg leading-8 text-[#526173]">
-            10 questions on text types, format conventions, register, audience, connectors, and what it takes to score in the higher bands.
+            10 questions on text type conventions, Criterion C, register, text selection logic, and what separates the top band from the middle band.
           </p>
         </div>
 
