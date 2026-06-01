@@ -11,13 +11,15 @@ const units = [
   {
     number: "01",
     title: "The Five Core Themes",
-    description: "Vocabulary and concepts for Identities, Experiences, Human Ingenuity, Social Organisation, and Sharing the Planet.",
+    description: "Each IB theme in its own lesson: guiding principle, recommended topics, key vocabulary, and guiding questions.",
     color: "bg-[#EFF6FF] text-[#2563EB]",
     testHref: "/learn/ib-french-b-sl/unit-1/test",
     lessons: [
-      { title: "Identities & Experiences", href: "/learn/ib-french-b-sl/unit-1/lesson-1" },
-      { title: "Human Ingenuity & Social Organisation", href: "/learn/ib-french-b-sl/unit-1/lesson-2" },
-      { title: "Sharing the Planet", href: "/learn/ib-french-b-sl/unit-1/lesson-3" },
+      { title: "Identities", href: "/learn/ib-french-b-sl/unit-1/lesson-1" },
+      { title: "Experiences", href: "/learn/ib-french-b-sl/unit-1/lesson-2" },
+      { title: "Human Ingenuity", href: "/learn/ib-french-b-sl/unit-1/lesson-3" },
+      { title: "Social Organisation", href: "/learn/ib-french-b-sl/unit-1/lesson-4" },
+      { title: "Sharing the Planet", href: "/learn/ib-french-b-sl/unit-1/lesson-5" },
     ],
   },
   {
@@ -91,7 +93,7 @@ export default function IBFrenchBSLPage() {
                 <p className="mt-1 text-xs text-[#526173]">Units</p>
               </div>
               <div className="rounded-2xl border border-[#E7DAB9] bg-white p-4">
-                <p className="text-2xl font-black">12</p>
+                <p className="text-2xl font-black">14</p>
                 <p className="mt-1 text-xs text-[#526173]">Lessons</p>
               </div>
               <div className="rounded-2xl border border-[#E7DAB9] bg-white p-4">

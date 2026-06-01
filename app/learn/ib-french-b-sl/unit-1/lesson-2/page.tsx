@@ -4,57 +4,72 @@ import MatchPairs from "@/components/MatchPairs";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const flashcards = [
-  { front: "la créativité", back: "creativity", subtext: "Theme 3: Human Ingenuity — arts, invention, and self-expression." },
-  { front: "les médias (m pl)", back: "media", subtext: "News, social media, advertising — all fall under Human Ingenuity." },
-  { front: "l'innovation (f)", back: "innovation", subtext: "New ideas, inventions, and scientific breakthroughs." },
-  { front: "la technologie", back: "technology", subtext: "Covers both digital tech and broader scientific advances." },
-  { front: "les arts (m pl)", back: "the arts", subtext: "Visual art, music, literature, film — all Human Ingenuity sub-topics." },
-  { front: "la famille", back: "family", subtext: "Theme 4: Social Organisation — family structures and roles." },
-  { front: "l'éducation (f)", back: "education", subtext: "Schools, universities, learning systems — a major Social Organisation topic." },
-  { front: "le travail", back: "work / employment", subtext: "Jobs, careers, the workplace — common in Paper 1 and Paper 2 prompts." },
-  { front: "la communauté", back: "community", subtext: "Local groups, neighbourhoods, social networks." },
-  { front: "la justice", back: "justice", subtext: "Law, rights, fairness — key Social Organisation sub-topic." },
+  { front: "les loisirs (m pl)", back: "leisure activities / hobbies", subtext: "What people do in their free time — sport, arts, travel. A core Experiences sub-topic." },
+  { front: "les vacances (f pl)", back: "holidays / vacation", subtext: "Holidays and travel is one of the main Experiences topics. Common in Paper 1 texts and writing prompts." },
+  { front: "le voyage", back: "travel / journey", subtext: "Both the act of travelling and what that journey means. Often tied to personal growth and discovery." },
+  { front: "le récit de vie", back: "life story", subtext: "A personal account of someone's experiences — often the format for memoir-style Paper 1 texts." },
+  { front: "les rites de passage (m pl)", back: "rites of passage", subtext: "Significant life milestones — graduations, weddings, coming-of-age ceremonies. Officially listed as an Experiences topic." },
+  { front: "les coutumes (f pl)", back: "customs / traditions", subtext: "Cultural practices passed down through generations. How communities mark important moments." },
+  { front: "la migration", back: "migration", subtext: "Moving between places — within a country or internationally. Overlaps with Identities (cultural adjustment)." },
+  { front: "se souvenir de", back: "to remember / to recall", subtext: "Key verb for life story and memory-based texts. 'Je me souviens de…' = I remember…" },
+  { front: "marquer", back: "to mark / to leave an impression", subtext: "Used to describe experiences that have a lasting impact. 'Cette expérience m'a marqué(e).' = This experience left its mark on me." },
+  { front: "l'aventure (f)", back: "adventure", subtext: "Exploration and new experiences. Common in travel writing and holiday narratives." },
 ];
 
 const matchPairs = [
-  { left: "la créativité", right: "creativity" },
-  { left: "les médias", right: "media" },
-  { left: "l'innovation", right: "innovation" },
-  { left: "l'éducation", right: "education" },
-  { left: "le travail", right: "work / employment" },
-  { left: "la justice", right: "justice" },
+  { left: "les loisirs", right: "leisure activities" },
+  { left: "les vacances", right: "holidays" },
+  { left: "les rites de passage", right: "rites of passage" },
+  { left: "les coutumes", right: "customs / traditions" },
+  { left: "la migration", right: "migration" },
+  { left: "se souvenir de", right: "to remember" },
 ];
 
 const quiz = [
   {
-    question: "A text discusses how streaming platforms have changed how young people consume music. Which theme is this?",
-    options: ["Social Organisation", "Identities", "Human Ingenuity", "Sharing the Planet"],
+    question: "According to the IB, what is the guiding principle of the Experiences theme?",
+    options: [
+      "Explore the nature of the self and what it is to be human",
+      "Explore the ways human creativity and innovation affect our world",
+      "Explore and tell the stories of the events, experiences and journeys that shape our lives",
+      "Explore the challenges and opportunities faced by individuals in the modern world",
+    ],
     correct: 2,
-    explanation: "Media, technology, and how creativity is distributed all fall under Human Ingenuity.",
+    explanation: "The Experiences guiding principle is: 'Explore and tell the stories of the events, experiences and journeys that shape our lives.'",
   },
   {
-    question: "What does 'le travail' mean in an IB French context?",
-    options: ["Travel", "Work / employment", "Technology", "Arts"],
-    correct: 1,
-    explanation: "Le travail = work or employment. It appears frequently in Social Organisation texts about careers and the modern workplace.",
-  },
-  {
-    question: "A news article about rising youth unemployment and its effect on family structures fits which theme?",
-    options: ["Experiences", "Human Ingenuity", "Sharing the Planet", "Social Organisation"],
-    correct: 3,
-    explanation: "Employment, family structures, and social change are all core Social Organisation sub-topics.",
-  },
-  {
-    question: "Which of these is a Human Ingenuity sub-topic?",
-    options: ["Rites of passage", "Environmental protection", "Scientific advances", "Immigration"],
+    question: "A text describes a family's annual tradition of returning to their home village for a harvest festival. Which Experiences sub-topic is this?",
+    options: ["Leisure activities", "Rites of passage", "Customs and traditions", "Migration"],
     correct: 2,
-    explanation: "Scientific advances — along with arts, media, and technology — is a key Human Ingenuity sub-topic.",
+    explanation: "Customs and traditions — cultural practices passed down through generations — is an official Experiences sub-topic.",
   },
   {
-    question: "A text about how a city redesigned its school system to be more inclusive touches on:",
-    options: ["Identities and Experiences", "Social Organisation and Identities", "Human Ingenuity and Sharing the Planet", "Experiences and Human Ingenuity"],
+    question: "Which IB Experiences guiding question fits a text about a grandmother's immigration story?",
+    options: [
+      "What constitutes an identity?",
+      "How does our past shape our present and our future?",
+      "What role do rules and regulations play in society?",
+      "What environmental issues challenge the world?",
+    ],
     correct: 1,
-    explanation: "Education (Social Organisation) and identity and inclusion (Identities) overlap here. IB texts frequently cross themes.",
+    explanation: "'How does our past shape our present and our future?' — an immigration story is directly about how past experiences define who we become.",
+  },
+  {
+    question: "What does 'marquer' mean in the context of personal experience?",
+    options: ["To travel", "To celebrate", "To leave a lasting impression / to mark", "To remember"],
+    correct: 2,
+    explanation: "Marquer means to leave a mark or impression. 'Cette expérience m'a marqué(e)' = This experience had a lasting impact on me.",
+  },
+  {
+    question: "A student writes about a gap year spent volunteering abroad. Which two Experiences sub-topics does this best fit?",
+    options: [
+      "Rites of passage and Migration",
+      "Holidays and travel and Life stories",
+      "Leisure activities and Customs and traditions",
+      "Migration and Rites of passage",
+    ],
+    correct: 1,
+    explanation: "A gap year abroad involves travel (Holidays and travel) and is a significant personal story (Life stories). Both are Experiences sub-topics.",
   },
 ];
 
@@ -72,32 +87,36 @@ export default function Unit1Lesson2Page() {
               Unit 1 · Lesson 2
             </p>
             <h1 className="mt-3 text-5xl font-black tracking-tight md:text-6xl">
-              Human Ingenuity & Social Organisation
+              Experiences
             </h1>
             <p className="mt-4 text-lg leading-8 text-[#526173]">
-              Themes 3 and 4. Technology, creativity, community, and the structures
-              that shape how we live together.
+              Theme 2. Tell the stories of the events, journeys, and moments that shape who we are — leisure, travel, traditions, and migration.
             </p>
           </div>
 
           <div className="space-y-3">
             <div className="rounded-2xl bg-[#0B1F3A] p-5 text-white">
-              <p className="text-xs font-bold text-[#C9A44C]">Key idea</p>
+              <p className="text-xs font-bold text-[#C9A44C]">Guiding principle</p>
               <p className="mt-2 leading-7 text-white/80">
-                <span className="font-black text-white">Social Organisation</span> texts
-                often ask you to identify problems and solutions. Look for cause-and-effect
-                language: <em>à cause de, c'est pourquoi, par conséquent.</em>
+                Explore and tell the stories of the events, experiences and journeys that shape our lives.
               </p>
             </div>
+
             <div className="rounded-2xl border border-[#E7DAB9] bg-white p-5">
-              <p className="text-xs font-bold text-[#526173]">Theme 4 sub-topics</p>
-              <ul className="mt-2 space-y-1 text-sm text-[#0B1F3A]">
-                <li>→ Family structures</li>
-                <li>→ Education and youth</li>
-                <li>→ Work and careers</li>
-                <li>→ Community and belonging</li>
-                <li>→ Law, rights, and justice</li>
+              <p className="text-xs font-bold text-[#526173]">IB guiding questions</p>
+              <ul className="mt-2 space-y-2 text-sm text-[#0B1F3A]">
+                <li>→ How does our past shape our present and our future?</li>
+                <li>→ How and why do different cultures mark important moments in life?</li>
               </ul>
+            </div>
+
+            <div className="rounded-2xl border border-[#E7DAB9] bg-white p-5">
+              <p className="text-xs font-bold text-[#526173]">Recommended topics</p>
+              <div className="mt-2 flex flex-wrap gap-1">
+                {["Leisure activities", "Holidays and travel", "Life stories", "Rites of passage", "Customs and traditions", "Migration"].map(t => (
+                  <span key={t} className="rounded-full bg-[#FFFDF7] px-2 py-1 text-xs font-bold">{t}</span>
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -106,7 +125,7 @@ export default function Unit1Lesson2Page() {
           <h2 className="text-2xl font-black">Vocabulary</h2>
           <p className="mt-1 text-[#526173]">Click a card to flip it.</p>
           <div className="mt-6">
-            <FlashCardDeck cards={flashcards} title="Human Ingenuity & Social Organisation — key terms" />
+            <FlashCardDeck cards={flashcards} title="Experiences — key vocabulary" />
           </div>
         </section>
 
@@ -114,23 +133,23 @@ export default function Unit1Lesson2Page() {
           <h2 className="text-2xl font-black">Match the pairs</h2>
           <p className="mt-1 text-[#526173]">Match each French term to its English meaning.</p>
           <div className="mt-6">
-            <MatchPairs pairs={matchPairs} title="Theme 3 & 4 vocabulary" />
+            <MatchPairs pairs={matchPairs} title="Experiences vocabulary" />
           </div>
         </section>
 
         <section className="mt-16">
           <h2 className="text-2xl font-black">Quick quiz</h2>
-          <p className="mt-1 text-[#526173]">Apply the themes to real IB-style scenarios.</p>
+          <p className="mt-1 text-[#526173]">Apply the theme to real IB-style scenarios.</p>
           <div className="mt-6">
-            <MultipleChoiceQuiz questions={quiz} title="Human Ingenuity & Social Organisation quiz" />
+            <MultipleChoiceQuiz questions={quiz} title="Experiences quiz" />
           </div>
         </section>
 
         <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
           <p className="text-sm font-bold uppercase tracking-widest text-[#C9A44C]">Done!</p>
-          <h2 className="mt-3 text-3xl font-black">Themes 3 and 4 covered.</h2>
+          <h2 className="mt-3 text-3xl font-black">Theme 2 covered.</h2>
           <p className="mt-3 leading-7 text-[#526173]">
-            One more theme to go: Sharing the Planet — the environment, global issues, and equality.
+            Next: Human Ingenuity — creativity, media, technology, and scientific innovation.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link href="/learn/ib-french-b-sl/unit-1/lesson-1" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">

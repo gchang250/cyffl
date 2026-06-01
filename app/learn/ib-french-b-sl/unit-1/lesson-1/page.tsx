@@ -4,57 +4,67 @@ import MatchPairs from "@/components/MatchPairs";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const flashcards = [
-  { front: "l'identité (f)", back: "identity", subtext: "Theme 1: Identities — a core concept for Paper 1 texts and the oral." },
-  { front: "les valeurs (f pl)", back: "values", subtext: "What a person or culture considers important." },
-  { front: "les croyances (f pl)", back: "beliefs", subtext: "Religious, cultural, or personal convictions." },
-  { front: "le mode de vie", back: "lifestyle / way of life", subtext: "How someone lives day-to-day. Very common in Paper 1 texts." },
-  { front: "le bien-être", back: "well-being", subtext: "Physical and mental health together. A key Identities sub-topic." },
-  { front: "les loisirs (m pl)", back: "leisure activities / hobbies", subtext: "Theme 2: Experiences — what people do in their free time." },
-  { front: "le voyage", back: "travel / journey", subtext: "Travel and tourism is a major Experiences sub-topic." },
-  { front: "les traditions (f pl)", back: "traditions", subtext: "Cultural practices passed down through generations." },
-  { front: "l'immigration (f)", back: "immigration", subtext: "Movement of people between countries — overlaps Identities and Experiences." },
-  { front: "les rites de passage (m pl)", back: "rites of passage", subtext: "Milestones like graduations, weddings — common in Experiences texts." },
+  { front: "l'identité (f)", back: "identity", subtext: "The core concept of Theme 1 — who a person is, shaped by culture, language, beliefs, and experience." },
+  { front: "le mode de vie", back: "lifestyle / way of life", subtext: "How someone lives day-to-day: diet, habits, values, routines. Very common in Paper 1 texts." },
+  { front: "le bien-être", back: "well-being", subtext: "Physical and mental health together. A key Identities sub-topic — often linked to lifestyle choices." },
+  { front: "les croyances (f pl)", back: "beliefs", subtext: "Religious, spiritual, or personal convictions that shape how someone sees the world." },
+  { front: "les valeurs (f pl)", back: "values", subtext: "What a person or culture considers important — honesty, family, freedom, success." },
+  { front: "la sous-culture", back: "subculture", subtext: "A group within a larger culture with its own distinct identity — music scenes, online communities, etc." },
+  { front: "la langue maternelle", back: "mother tongue / first language", subtext: "Language and identity are deeply linked in IB. Your first language shapes how you think and who you are." },
+  { front: "appartenir à", back: "to belong to", subtext: "A key verb for discussions of identity — belonging to a group, culture, or community." },
+  { front: "se définir", back: "to define oneself", subtext: "How a person describes or understands their own identity. Common in oral discussion questions." },
+  { front: "l'estime de soi (f)", back: "self-esteem", subtext: "How a person values themselves — linked to well-being and mental health sub-topics." },
 ];
 
 const matchPairs = [
-  { left: "l'identité", right: "identity" },
-  { left: "les valeurs", right: "values" },
+  { left: "le mode de vie", right: "lifestyle" },
   { left: "le bien-être", right: "well-being" },
-  { left: "les loisirs", right: "leisure activities" },
-  { left: "le voyage", right: "travel" },
-  { left: "l'immigration", right: "immigration" },
+  { left: "les croyances", right: "beliefs" },
+  { left: "les valeurs", right: "values" },
+  { left: "la sous-culture", right: "subculture" },
+  { left: "appartenir à", right: "to belong to" },
 ];
 
 const quiz = [
   {
-    question: "A Paper 1 text discusses how social media affects teenagers' sense of self. Which IB theme does this fall under?",
-    options: ["Sharing the Planet", "Identities", "Human Ingenuity", "Social Organisation"],
+    question: "According to the IB, what is the guiding principle of the Identities theme?",
+    options: [
+      "Explore the challenges faced by individuals in the modern world",
+      "Explore the nature of the self and what it is to be human",
+      "Explore the ways human creativity affects our world",
+      "Explore how groups of people organise themselves",
+    ],
     correct: 1,
-    explanation: "Sense of self, personal identity, and how external forces shape who we are is the Identities theme.",
+    explanation: "The Identities guiding principle is: 'Explore the nature of the self and what it is to be human.' This is the lens for all texts and discussions in this theme.",
   },
   {
-    question: "What does 'le bien-être' mean?",
-    options: ["Belief system", "Lifestyle", "Well-being", "Identity"],
+    question: "A text discusses how growing up bilingual shapes a person's sense of self. Which Identities sub-topic is this?",
+    options: ["Health and well-being", "Subcultures", "Language and identity", "Lifestyles"],
     correct: 2,
-    explanation: "Le bien-être covers physical and mental health — a sub-topic within Identities.",
+    explanation: "Language and identity is an official Identities sub-topic. Bilingualism, mother tongue, and how language shapes self-perception all fall here.",
   },
   {
-    question: "A text about a Canadian student studying abroad and experiencing culture shock fits best under:",
-    options: ["Human Ingenuity", "Social Organisation", "Experiences", "Sharing the Planet"],
-    correct: 2,
-    explanation: "Cultural encounters and life abroad fall under the Experiences theme.",
-  },
-  {
-    question: "Which of these is the correct translation of 'les rites de passage'?",
-    options: ["Tourist passports", "Rites of passage", "Travel documents", "Cultural journeys"],
+    question: "Which IB Identities question best fits a text about young people rejecting their parents' religious traditions?",
+    options: [
+      "How and why do different cultures mark important moments in life?",
+      "What constitutes an identity?",
+      "What role do rules and regulations play in society?",
+      "How do the media change the way we relate to each other?",
+    ],
     correct: 1,
-    explanation: "Les rites de passage refers to significant life milestones — graduations, coming-of-age ceremonies, etc.",
+    explanation: "'What constitutes an identity?' — rejecting or adopting beliefs and values is central to forming identity. This is one of the two IB guiding questions for this theme.",
   },
   {
-    question: "A text about a family's religious traditions and how they shape daily life touches on which two Identities sub-topics?",
-    options: ["Travel and immigration", "Beliefs and lifestyle", "Technology and community", "Arts and language"],
+    question: "What does 'appartenir à' mean?",
+    options: ["To define oneself", "To belong to", "To identify with", "To separate from"],
     correct: 1,
-    explanation: "Les croyances (beliefs) and le mode de vie (lifestyle/daily life) are both Identities sub-topics.",
+    explanation: "Appartenir à = to belong to. It's essential vocabulary for discussing identity, group membership, and cultural belonging.",
+  },
+  {
+    question: "A teenager joins an online gaming community with its own language and norms. Which Identities sub-topic is this?",
+    options: ["Health and well-being", "Beliefs and values", "Language and identity", "Subcultures"],
+    correct: 3,
+    explanation: "Subcultures — groups within a larger culture with their own distinct identity, norms, and practices — is an official Identities sub-topic.",
   },
 ];
 
@@ -72,41 +82,45 @@ export default function Unit1Lesson1Page() {
               Unit 1 · Lesson 1
             </p>
             <h1 className="mt-3 text-5xl font-black tracking-tight md:text-6xl">
-              Identities & Experiences
+              Identities
             </h1>
             <p className="mt-4 text-lg leading-8 text-[#526173]">
-              The vocabulary you need for Themes 1 and 2. These words appear
-              constantly in Paper 1 texts and are essential for the Individual Oral.
+              Theme 1. Explore the nature of the self and what it is to be human — through lifestyle, belief, language, and belonging.
             </p>
           </div>
 
           <div className="space-y-3">
             <div className="rounded-2xl bg-[#0B1F3A] p-5 text-white">
-              <p className="text-xs font-bold text-[#C9A44C]">Key idea</p>
+              <p className="text-xs font-bold text-[#C9A44C]">Guiding principle</p>
               <p className="mt-2 leading-7 text-white/80">
-                All five IB themes overlap. A text about{" "}
-                <span className="font-black text-white">immigration</span> might
-                touch on identity, cultural traditions, and social change at once.
+                Explore the nature of the self and what it is to be human.
               </p>
             </div>
+
             <div className="rounded-2xl border border-[#E7DAB9] bg-white p-5">
-              <p className="text-xs font-bold text-[#526173]">Theme 1 sub-topics</p>
-              <ul className="mt-2 space-y-1 text-sm text-[#0B1F3A]">
-                <li>→ Lifestyle choices</li>
-                <li>→ Health and well-being</li>
-                <li>→ Beliefs and values</li>
-                <li>→ Cultural identity</li>
-                <li>→ Language and identity</li>
+              <p className="text-xs font-bold text-[#526173]">IB guiding questions</p>
+              <ul className="mt-2 space-y-2 text-sm text-[#0B1F3A]">
+                <li>→ What constitutes an identity?</li>
+                <li>→ How do language and culture contribute to form our identity?</li>
               </ul>
+            </div>
+
+            <div className="rounded-2xl border border-[#E7DAB9] bg-white p-5">
+              <p className="text-xs font-bold text-[#526173]">Recommended topics</p>
+              <div className="mt-2 grid grid-cols-2 gap-1 text-sm text-[#0B1F3A]">
+                {["Lifestyles", "Health and well-being", "Beliefs and values", "Subcultures", "Language and identity"].map(t => (
+                  <span key={t} className="rounded-full bg-[#FFFDF7] px-2 py-1 text-xs font-bold">{t}</span>
+                ))}
+              </div>
             </div>
           </div>
         </div>
 
         <section className="mt-16">
           <h2 className="text-2xl font-black">Vocabulary</h2>
-          <p className="mt-1 text-[#526173]">Click a card to flip it. Learn the word and its IB context.</p>
+          <p className="mt-1 text-[#526173]">Click a card to flip it. These words appear constantly in Identities texts.</p>
           <div className="mt-6">
-            <FlashCardDeck cards={flashcards} title="Identities & Experiences — key terms" />
+            <FlashCardDeck cards={flashcards} title="Identities — key vocabulary" />
           </div>
         </section>
 
@@ -114,23 +128,23 @@ export default function Unit1Lesson1Page() {
           <h2 className="text-2xl font-black">Match the pairs</h2>
           <p className="mt-1 text-[#526173]">Match each French term to its English meaning.</p>
           <div className="mt-6">
-            <MatchPairs pairs={matchPairs} title="Theme 1 & 2 vocabulary" />
+            <MatchPairs pairs={matchPairs} title="Identities vocabulary" />
           </div>
         </section>
 
         <section className="mt-16">
           <h2 className="text-2xl font-black">Quick quiz</h2>
-          <p className="mt-1 text-[#526173]">Apply the vocabulary to real IB-style scenarios.</p>
+          <p className="mt-1 text-[#526173]">Apply the theme to real IB-style scenarios and questions.</p>
           <div className="mt-6">
-            <MultipleChoiceQuiz questions={quiz} title="Identities & Experiences quiz" />
+            <MultipleChoiceQuiz questions={quiz} title="Identities quiz" />
           </div>
         </section>
 
         <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
           <p className="text-sm font-bold uppercase tracking-widest text-[#C9A44C]">Done!</p>
-          <h2 className="mt-3 text-3xl font-black">Themes 1 and 2 covered.</h2>
+          <h2 className="mt-3 text-3xl font-black">Theme 1 covered.</h2>
           <p className="mt-3 leading-7 text-[#526173]">
-            Next: Human Ingenuity and Social Organisation — themes 3 and 4.
+            Next: Experiences — the events, journeys, and moments that shape our lives.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link href="/learn/ib-french-b-sl" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">
