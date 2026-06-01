@@ -36,18 +36,18 @@ const assessments = [
     marks: "/40",
     color: "bg-[#FEF3C7] text-[#D97706]",
     description:
-      "A series of written texts across different types and registers. Questions test comprehension, vocabulary in context, purpose, audience, and tone.",
+      "A series of written texts. Questions are almost always True/False followed by a direct quote from the text as justification. There is very little 'explain in your own words' — the answers are in the text.",
     criteria: [
-      { label: "Question types", name: "Vrai/Faux/On ne sait pas", marks: "", note: "Never infer — only use what the text explicitly states" },
-      { label: "Question types", name: "Relevez / Identifiez", marks: "", note: "Find and copy from the text — don't add your own ideas" },
-      { label: "Question types", name: "Expliquez / Quel est le but…", marks: "", note: "Explain in your own words — clarity over length" },
+      { label: "Main format", name: "True / False + direct quote", marks: "", note: "State Vrai or Faux, then quote the exact words from the text that prove it" },
+      { label: "Key rule", name: "Quote directly, don't paraphrase", marks: "", note: "Copy the words from the text — your own interpretation can lose marks" },
+      { label: "Key rule", name: "Use your common sense", marks: "", note: "If something sounds obviously true or false given the context, it probably is" },
     ],
     tips: [
-      "Read the questions before reading the text — it focuses your attention",
-      "For Vrai/Faux/On ne sait pas: if the text doesn't explicitly say it, the answer is 'On ne sait pas'",
-      "For 'Relevez', quote or closely paraphrase from the text — don't add your own interpretation",
-      "Watch for negatives and qualifiers (ne…pas, seulement, rarement) — they change meaning",
-      "Check word counts on 'Relevez' questions — if it says 'deux mots', give exactly two",
+      "Use your common sense — if a statement sounds obviously true or false given what you've read, trust that instinct",
+      "Always quote directly from the text to support your True/False answer — word-for-word is better than paraphrase",
+      "Watch for negatives (ne…pas, ne…jamais, seulement) — they flip meaning and are easy to miss",
+      "Check word counts carefully — if the question asks for 'deux mots', give exactly two",
+      "Read the questions before the text so you know what to scan for",
     ],
   },
   {
@@ -85,10 +85,11 @@ const assessments = [
       { label: "Criterion C", name: "Interactive skills", marks: "/10", note: "Spontaneity, responsiveness, and ability to sustain conversation" },
     ],
     tips: [
-      "Use your 15 minutes: identify the IB theme, the global issue, and key vocabulary",
+      "Use your 15 minutes: identify the IB theme, the global issue, and key vocabulary before you start speaking",
       "Follow the structure: describe (Au premier plan…) → analyse (Cette image illustre…) → discuss",
       "Never give one-word answers — every response needs opinion + reason + example",
-      "Use complex language: 'Il est essentiel que nous agissions' (subjunctive), 'Ce serait mieux si…' (conditional)",
+      "If the examiner asks what you would do in this situation, answer in the conditional: 'Je ferais…', 'Je choisirais…', 'Ce serait…'",
+      "If the examiner asks what must be done so that something happens, answer in the subjunctive: 'Il faut que nous…', 'Pour que cela change, il est essentiel que…'",
       "Show nuance: acknowledge the other side with 'Il faut admettre que… cependant…'",
     ],
   },
@@ -217,6 +218,119 @@ export default function IBFrenchBPrepPage() {
                 </div>
               </div>
             ))}
+          </div>
+        </section>
+
+        {/* Paper 1 — choosing your text type */}
+        <section className="mt-16">
+          <h2 className="text-3xl font-black">Paper 1 — choosing the right text type</h2>
+          <p className="mt-2 text-[#526173]">
+            The prompt will always give you context clues. Read them carefully — they tell you what format to write in.
+          </p>
+
+          <div className="mt-6 grid gap-4 md:grid-cols-2">
+            {[
+              {
+                clue: "Writing to a government body, minister, or official organisation",
+                format: "Formal letter (lettre formelle)",
+                detail: "Use 'Monsieur / Madame,' as your salutation. Use 'vous'. Include a subject line, structured body, and a formal closing like 'Veuillez agréer, Monsieur/Madame, l'expression de mes sentiments distingués.'",
+                register: "Formal",
+              },
+              {
+                clue: "Writing to your closest friend or a family member",
+                format: "Informal letter or message",
+                detail: "Use 'Cher(e) [prénom],' as your salutation. Use 'tu'. The tone is warm and personal — share feelings, ask questions, use casual connectors like 'en fait' and 'du coup'.",
+                register: "Informal",
+              },
+              {
+                clue: "Sharing an experience, opinion, or story with strangers or a general public audience",
+                format: "Blog post or social media post",
+                detail: "Write in the first person. Open with a hook — a question, anecdote, or striking statement. The tone is personal but accessible. No formal salutation needed — just a title.",
+                register: "Informal / semi-formal",
+              },
+              {
+                clue: "Writing for your school newspaper or a magazine",
+                format: "Article de presse",
+                detail: "Write a headline and subheading. Introduce the issue, develop it in structured paragraphs, and close with a perspective or call to action. Semi-formal register.",
+                register: "Semi-formal",
+              },
+              {
+                clue: "Addressing an audience at a school assembly, event, or debate",
+                format: "Speech (discours)",
+                detail: "Open with 'Mesdames et messieurs,' or 'Chers camarades,'. Structure your points clearly. Close with a call to action or memorable conclusion.",
+                register: "Formal",
+              },
+              {
+                clue: "Presenting findings or recommendations to an organisation or committee",
+                format: "Report (rapport)",
+                detail: "Use numbered sections or subheadings. Objective tone — state facts, analyse them, and make recommendations. Avoid personal pronouns unless in the recommendations section.",
+                register: "Formal",
+              },
+            ].map((item) => (
+              <div key={item.format} className="rounded-[1.5rem] border border-[#E7DAB9] bg-white p-5 shadow-sm">
+                <p className="text-xs font-bold uppercase tracking-widest text-[#526173]">If the prompt says…</p>
+                <p className="mt-1 text-sm italic text-[#0B1F3A]">&ldquo;{item.clue}&rdquo;</p>
+                <div className="mt-3 border-t border-[#E7DAB9] pt-3">
+                  <div className="flex items-center justify-between gap-2">
+                    <p className="font-black text-[#0B1F3A]">{item.format}</p>
+                    <span className="rounded-full bg-[#FFFDF7] px-2 py-0.5 text-xs font-bold text-[#526173]">{item.register}</span>
+                  </div>
+                  <p className="mt-2 text-sm leading-6 text-[#526173]">{item.detail}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Oral — using the right tense */}
+        <section className="mt-16">
+          <h2 className="text-3xl font-black">Individual Oral — using the right tense</h2>
+          <p className="mt-2 text-[#526173]">
+            The examiner's questions are a signal. Listen to the question type and choose your tense deliberately — it's one of the clearest ways to demonstrate Criterion A range.
+          </p>
+
+          <div className="mt-6 grid gap-4 md:grid-cols-2">
+            <div className="rounded-[1.5rem] border-2 border-[#2563EB] bg-white p-6 shadow-sm">
+              <p className="text-xs font-bold uppercase tracking-widest text-[#2563EB]">Examiner asks…</p>
+              <p className="mt-2 text-lg font-black text-[#0B1F3A]">&ldquo;What would you do in this situation?&rdquo;</p>
+              <p className="mt-1 text-sm italic text-[#526173]">&ldquo;Que feriez-vous dans cette situation ?&rdquo;</p>
+              <div className="mt-4 rounded-xl bg-[#EFF6FF] p-4">
+                <p className="text-xs font-bold uppercase tracking-widest text-[#2563EB]">Answer in the conditional</p>
+                <p className="mt-2 text-sm leading-6 text-[#0B1F3A]">
+                  The conditional expresses what you <em>would</em> do. Use it to give a hypothetical response.
+                </p>
+                <div className="mt-3 space-y-1 text-sm italic text-[#526173]">
+                  <p>« Je ferais davantage d'efforts pour… »</p>
+                  <p>« Je choisirais de… parce que… »</p>
+                  <p>« Ce serait important de… »</p>
+                  <p>« J'essaierais de convaincre… »</p>
+                </div>
+              </div>
+              <Link href="/resources/verbs-conditionnel" className="mt-4 inline-block text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+                Review le conditionnel →
+              </Link>
+            </div>
+
+            <div className="rounded-[1.5rem] border-2 border-[#9333EA] bg-white p-6 shadow-sm">
+              <p className="text-xs font-bold uppercase tracking-widest text-[#9333EA]">Examiner asks…</p>
+              <p className="mt-2 text-lg font-black text-[#0B1F3A]">&ldquo;What must we do so that this changes?&rdquo;</p>
+              <p className="mt-1 text-sm italic text-[#526173]">&ldquo;Que faut-il faire pour que les choses changent ?&rdquo;</p>
+              <div className="mt-4 rounded-xl bg-[#FDF4FF] p-4">
+                <p className="text-xs font-bold uppercase tracking-widest text-[#9333EA]">Answer in the subjunctive</p>
+                <p className="mt-2 text-sm leading-6 text-[#0B1F3A]">
+                  Phrases like <em>pour que, il faut que, afin que</em> trigger the subjunctive — and using it shows you know your grammar.
+                </p>
+                <div className="mt-3 space-y-1 text-sm italic text-[#526173]">
+                  <p>« Il faut que nous agissions immédiatement. »</p>
+                  <p>« Pour que les choses changent, il est essentiel que… »</p>
+                  <p>« Afin que la situation s'améliore, il faudrait que… »</p>
+                  <p>« Il est nécessaire que les gouvernements prennent… »</p>
+                </div>
+              </div>
+              <Link href="/resources/verbs-subjonctif" className="mt-4 inline-block text-sm font-black text-[#9333EA] hover:opacity-80">
+                Review le subjonctif →
+              </Link>
+            </div>
           </div>
         </section>
 

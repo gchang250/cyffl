@@ -126,6 +126,49 @@ export default function Unit4Lesson3Page() {
           </div>
         </section>
 
+        {/* Tense guide for examiner questions */}
+        <section className="mt-16">
+          <h2 className="text-2xl font-black">Listen to the question — it tells you the tense</h2>
+          <p className="mt-1 text-[#526173]">The examiner's wording is a direct signal. Use it to choose the right tense — it's one of the clearest ways to show Criterion A range.</p>
+          <div className="mt-6 grid gap-5 md:grid-cols-2">
+            <div className="rounded-2xl border-2 border-[#2563EB] bg-white p-6">
+              <p className="text-xs font-bold uppercase tracking-widest text-[#2563EB]">Examiner asks…</p>
+              <p className="mt-2 font-black text-[#0B1F3A]">&ldquo;Que feriez-vous dans cette situation ?&rdquo;</p>
+              <p className="mt-0.5 text-sm italic text-[#526173]">&ldquo;What would you do in this situation?&rdquo;</p>
+              <div className="mt-4 rounded-xl bg-[#EFF6FF] p-4">
+                <p className="text-xs font-bold uppercase tracking-widest text-[#2563EB]">→ Answer in the conditional</p>
+                <div className="mt-2 space-y-1 text-sm italic text-[#526173]">
+                  <p>« Je ferais davantage d'efforts pour… »</p>
+                  <p>« Je choisirais de… parce que… »</p>
+                  <p>« Ce serait important de sensibiliser… »</p>
+                  <p>« J'essaierais de convaincre… »</p>
+                </div>
+              </div>
+              <Link href="/resources/verbs-conditionnel" className="mt-3 inline-block text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+                Review le conditionnel →
+              </Link>
+            </div>
+
+            <div className="rounded-2xl border-2 border-[#9333EA] bg-white p-6">
+              <p className="text-xs font-bold uppercase tracking-widest text-[#9333EA]">Examiner asks…</p>
+              <p className="mt-2 font-black text-[#0B1F3A]">&ldquo;Que faut-il faire pour que les choses changent ?&rdquo;</p>
+              <p className="mt-0.5 text-sm italic text-[#526173]">&ldquo;What must be done so that this changes?&rdquo;</p>
+              <div className="mt-4 rounded-xl bg-[#FDF4FF] p-4">
+                <p className="text-xs font-bold uppercase tracking-widest text-[#9333EA]">→ Answer in the subjunctive</p>
+                <div className="mt-2 space-y-1 text-sm italic text-[#526173]">
+                  <p>« Il faut que nous agissions immédiatement. »</p>
+                  <p>« Pour que les choses changent, il est essentiel que… »</p>
+                  <p>« Afin que la situation s'améliore, il faudrait que… »</p>
+                  <p>« Il est nécessaire que les gouvernements prennent… »</p>
+                </div>
+              </div>
+              <Link href="/resources/verbs-subjonctif" className="mt-3 inline-block text-sm font-black text-[#9333EA] hover:opacity-80">
+                Review le subjonctif →
+              </Link>
+            </div>
+          </div>
+        </section>
+
         <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
           <p className="text-sm font-bold uppercase tracking-widest text-[#C9A44C]">Done!</p>
           <h2 className="mt-3 text-3xl font-black">All four units complete.</h2>

@@ -126,6 +126,31 @@ export default function Unit3Lesson1Page() {
           </div>
         </section>
 
+        {/* Text type selection guide */}
+        <section className="mt-16">
+          <h2 className="text-2xl font-black">Read the prompt — it tells you the format</h2>
+          <p className="mt-1 text-[#526173]">The prompt always contains context clues. Use them to identify the text type before you write a single word.</p>
+          <div className="mt-6 grid gap-4 md:grid-cols-2">
+            {[
+              { clue: "Writing to a government body, minister, or official organisation", format: "Formal letter", note: "Monsieur / Madame, · use vous · formal closing formula" },
+              { clue: "Writing to your closest friend or a family member", format: "Informal letter or message", note: "Cher(e) [prénom], · use tu · warm, personal tone" },
+              { clue: "Sharing an experience or opinion with strangers or a general public", format: "Blog or social media post", note: "Title, first person, hook opening, no salutation needed" },
+              { clue: "Writing for your school newspaper or a magazine", format: "Article de presse", note: "Headline + subheading · semi-formal · structured paragraphs" },
+              { clue: "Addressing an audience at an event, assembly, or debate", format: "Speech (discours)", note: "Mesdames et messieurs, · clear structure · call to action" },
+              { clue: "Presenting findings or recommendations to a committee or organisation", format: "Report (rapport)", note: "Numbered sections or subheadings · objective, formal tone" },
+            ].map((item) => (
+              <div key={item.format} className="rounded-2xl border border-[#E7DAB9] bg-[#FFFDF7] p-5">
+                <p className="text-xs font-bold uppercase tracking-widest text-[#526173]">If the prompt says…</p>
+                <p className="mt-1 text-sm italic text-[#0B1F3A]">&ldquo;{item.clue}&rdquo;</p>
+                <div className="mt-3 border-t border-[#D8D0C3] pt-3">
+                  <p className="font-black text-[#0B1F3A]">{item.format}</p>
+                  <p className="mt-1 text-xs text-[#526173]">{item.note}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
         {/* Grammar resources callout */}
         <section className="mt-16 rounded-[2rem] bg-[#0B1F3A] p-8 text-white shadow-sm">
           <p className="text-xs font-bold uppercase tracking-widest text-[#C9A44C]">Resources to study alongside this unit</p>
