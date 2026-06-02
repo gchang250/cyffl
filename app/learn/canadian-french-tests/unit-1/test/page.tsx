@@ -126,12 +126,12 @@ export default function SLETestPage() {
           </p>
           <div className="mt-5 flex flex-wrap gap-3">
             <a
-              href="https://www.canada.ca/en/public-service-commission/services/second-language-testing-public-service/second-language-evaluation/practice-tests.html"
+              href="https://www.canada.ca/en/public-service-commission/services/second-language-testing-public-service/self-assessment-tests.html"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-full bg-[#C9A44C] px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5"
             >
-              PSC official practice tests ↗
+PSC self-assessment tests (official) ↗
             </a>
           </div>
         </div>

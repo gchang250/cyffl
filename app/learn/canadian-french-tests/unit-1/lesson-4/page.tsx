@@ -157,12 +157,12 @@ export default function SLELesson4Page() {
             The Public Service Commission provides official SLE practice tests for reading and writing. These are the closest thing to the real test available for free.
           </p>
           <a
-            href="https://www.canada.ca/en/public-service-commission/services/second-language-testing-public-service/second-language-evaluation/practice-tests.html"
+            href="https://www.canada.ca/en/public-service-commission/services/second-language-testing-public-service/self-assessment-tests.html"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-4 inline-block rounded-full bg-[#D97706] px-6 py-3 text-sm font-black text-white transition hover:-translate-y-0.5"
           >
-            PSC official SLE practice tests ↗
+PSC self-assessment tests (official) ↗
           </a>
         </section>
 

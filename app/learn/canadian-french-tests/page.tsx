@@ -15,7 +15,7 @@ const units = [
       "The SLE has three tests: reading (60 MCQ), written expression (65 MCQ — fill-in-blank and error identification), and oral interaction (20–40 min conversational interview). Build the vocabulary, grammar, and strategies for all three.",
     color: "bg-[#FEF3C7] text-[#D97706]",
     testHref: "/learn/canadian-french-tests/unit-1/test",
-    resource: { label: "PSC official practice tests ↗", url: "https://www.canada.ca/en/public-service-commission/services/second-language-testing-public-service/second-language-evaluation/practice-tests.html" },
+    resource: { label: "PSC self-assessment tests ↗", url: "https://www.canada.ca/en/public-service-commission/services/second-language-testing-public-service/self-assessment-tests.html" },
     lessons: [
       { title: "Government Vocabulary", href: "/learn/canadian-french-tests/unit-1/lesson-1" },
       { title: "Formal Grammar — Government French", href: "/learn/canadian-french-tests/unit-1/lesson-2" },
