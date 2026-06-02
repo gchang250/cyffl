@@ -4,10 +4,136 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Sentence Structure | CYFFL Resources",
   description:
-    "A complete reference for French sentence structure — word order, coordination, subordinate clauses, relative clauses, emphasis, impersonal constructions, and nominalization.",
+    "A complete reference for French sentence structure — syntactic groups (groupe nominal, verbal, prépositionnel), sentence types, word order, subordinate clauses, relative clauses, emphasis, and nominalization.",
 };
 
 const sections = [
+  {
+    id: "groupes",
+    title: "Syntactic groups",
+    subtitle: "Every French sentence is built from these five phrase types — the groupe nominal is the core of most clauses",
+    color: "bg-[#FEF3C7] text-[#D97706]",
+    rows: [
+      {
+        label: "Groupe nominal (GN)",
+        pattern: "Déterminant + Nom + (expansions: adj., compl. du nom, relative)",
+        example: "le grand rapport de gestion que nous avons rédigé",
+        note: "Déterminant (le) + Nom (rapport) + Adj. (grand) + Complément du nom (de gestion) + Relative (que nous avons rédigé). Any or all expansions can be omitted. The GN can be the subject, object, or complement of the sentence.",
+      },
+      {
+        label: "Groupe verbal (GV)",
+        pattern: "Verbe + (COD / COI / attribut / compléments circonstanciels)",
+        example: "donne le rapport à la directrice demain matin",
+        note: "Verbe (donne) + COD (le rapport) + COI (à la directrice) + CC de temps (demain matin). The GV is what the subject does or is. Every sentence has one.",
+      },
+      {
+        label: "Groupe prépositionnel (GPrép)",
+        pattern: "Préposition + GN (or infinitive)",
+        example: "dans la salle de conférence · pour améliorer les résultats · avec ses collègues",
+        note: "A preposition + its complement. Functions as: complement du nom ('la salle de réunion'), COI ('parler à quelqu'un'), or complément circonstanciel ('travailler dans ce bureau').",
+      },
+      {
+        label: "Groupe adjectival (GAdj)",
+        pattern: "Adjectif + (complément: de + inf / que + subj)",
+        example: "fier de réussir · contente que tu sois là · difficile à comprendre",
+        note: "The adjective is the head; it can take a complement. 'Difficile à comprendre' = adjective + à + infinitive. 'Content que + subj' = adjective + que + subjunctive. Position: usually after the noun.",
+      },
+      {
+        label: "Groupe adverbial (GAdv)",
+        pattern: "Adverbe + (complément)",
+        example: "très rapidement · beaucoup plus vite que lui · tout à fait correctement",
+        note: "Adverbs modify adjectives, verbs, or other adverbs. 'Très rapidement' = adverbe (très) + adverbe (rapidement). 'Beaucoup plus vite que lui' = intensifier + adverb + comparison.",
+      },
+    ],
+  },
+  {
+    id: "functions",
+    title: "Syntactic functions",
+    subtitle: "The role each group plays in the sentence — what the subject does, what the verb acts on, what describes the subject",
+    color: "bg-[#FFF7ED] text-[#C2410C]",
+    rows: [
+      {
+        label: "Sujet (S)",
+        pattern: "Who or what the sentence is about — controls verb agreement",
+        example: "Le ministre a approuvé la loi. · Les décisions prises par le comité sont contraignantes.",
+        note: "Test: ask 'Qui est-ce qui…?' or 'Qu'est-ce qui…?' before the verb. The sujet can be a GN, a pronoun, an infinitive, or even a clause: 'Que tu sois là me fait plaisir.'",
+      },
+      {
+        label: "COD (direct object)",
+        pattern: "Complément d'objet direct — answers 'quoi?' or 'qui?' after the verb",
+        example: "Il lit le rapport. (quoi?) · Elle rencontre le directeur. (qui?)",
+        note: "No preposition between the verb and COD. Replaced by 'le, la, les': 'Il le lit.' Past participle agrees with a preceding COD: 'Le rapport qu'il a lu…'",
+      },
+      {
+        label: "COI (indirect object)",
+        pattern: "Complément d'objet indirect — answers 'à qui?', 'de quoi?', etc.",
+        example: "Elle parle à ses collègues. · Il se souvient de cette réunion.",
+        note: "Always preceded by a preposition (à, de). Replaced by 'lui, leur' (à) or 'en' (de): 'Elle leur parle.' 'Il s'en souvient.' No past participle agreement with COI.",
+      },
+      {
+        label: "Attribut du sujet",
+        pattern: "Linked to the subject via a verb of state — describes what the subject IS",
+        example: "Il est directeur. · Elle semble fatiguée. · La situation devient critique.",
+        note: "Verb of state: être, sembler, paraître, devenir, rester, demeurer, se révéler. The attribute agrees with the subject in gender and number: 'Elles semblent fatiguées.'",
+      },
+      {
+        label: "CC de lieu",
+        pattern: "Complément circonstanciel de lieu — answers 'où?'",
+        example: "Il travaille dans ce bureau. · Nous allons à Montréal.",
+        note: "Expresses location or destination. Replaced by 'y': 'Il y travaille.' Not to be confused with COI — 'dans ce bureau' modifies the whole action, not the verb directly.",
+      },
+      {
+        label: "CC de temps / manière / cause",
+        pattern: "Answers 'quand?', 'comment?', 'pourquoi?'",
+        example: "Elle part demain. (temps) · Il parle clairement. (manière) · Elle réussit grâce à son travail. (cause)",
+        note: "Compléments circonstanciels are optional and mobile — you can usually move them without breaking the sentence. 'Demain, elle part.' is just as correct as 'Elle part demain.'",
+      },
+    ],
+  },
+  {
+    id: "sentence-types",
+    title: "Sentence types",
+    subtitle: "Simple, compound, and complex — how propositions combine to build longer sentences",
+    color: "bg-[#F0FDF4] text-[#16A34A]",
+    rows: [
+      {
+        label: "Phrase simple",
+        pattern: "One conjugated verb, one proposition",
+        example: "La réunion commence à neuf heures. · Il a approuvé le rapport sans hésitation.",
+        note: "A simple sentence contains exactly one finite verb (conjugated verb). It can be long and have many complements — as long as there is only one verb, it remains simple.",
+      },
+      {
+        label: "Phrase composée (juxtaposée)",
+        pattern: "Two independent clauses joined by punctuation only",
+        example: "Il a travaillé toute la nuit ; il a réussi l'examen.",
+        note: "Juxtaposition uses a comma or semicolon — no conjunction. Each clause could stand alone. The reader infers the logical link (here: cause → result).",
+      },
+      {
+        label: "Phrase composée (coordonnée)",
+        pattern: "Two independent clauses joined by a coordinating conjunction",
+        example: "Il a travaillé dur, donc il a réussi. · Elle veut partir, mais elle ne peut pas.",
+        note: "The two clauses are equal — neither depends on the other. Conjunctions: et, mais, ou, donc, or, ni, car. Each clause has its own subject and verb.",
+      },
+      {
+        label: "Phrase complexe — complétive",
+        pattern: "Main clause + subordinate completing clause (que + indicative)",
+        example: "Il dit qu'il viendra. · Je pense que la décision est correcte. · Nous savons qu'il a tort.",
+        note: "The complétive clause functions as the COD of the main verb. It answers 'quoi?' after verbs of saying, thinking, knowing, believing. Takes the indicative (unlike purpose or concession clauses).",
+      },
+      {
+        label: "Phrase complexe — relative",
+        pattern: "Main clause + subordinate describing a noun (qui / que / dont / où / lequel)",
+        example: "La décision que nous avons prise aura des conséquences. · L'expert dont je vous parle est très reconnu.",
+        note: "The relative clause is embedded inside the main clause and modifies a noun (its antecedent). It does not add a new idea — it expands the description of an existing noun.",
+      },
+      {
+        label: "Phrase complexe — circonstancielle",
+        pattern: "Main clause + subordinate expressing circumstance (time, cause, condition, etc.)",
+        example: "Bien qu'il soit fatigué, il continue. (concession) · Dès qu'elle arrive, appelle-moi. (temps)",
+        note: "The circonstancielle clause plays the role of a complément circonstanciel. It can often be moved: 'Appelle-moi dès qu'elle arrive.' is equally correct. See the subordinate clauses section for all conjunction types.",
+      },
+    ],
+  },
   {
     id: "word-order",
     title: "Word order",

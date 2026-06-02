@@ -194,6 +194,18 @@ const categories: ResourceCategory[] = [
     ],
   },
   {
+    title: "External Resources",
+    color: "bg-[#F0FDF4] text-[#16A34A] border-[#BBF7D0]",
+    items: [
+      {
+        label: "Free external resources",
+        description:
+          "Curated free resources beyond CYFFL — Canadian and international news, podcasts, TV, grammar exercise sites, and French–French dictionaries, with level and register notes.",
+        href: "/resources/external-resources",
+      },
+    ],
+  },
+  {
     title: "Canadian Test Prep",
     color: "bg-[#FEF3C7] text-[#D97706] border-[#FDE68A]",
     items: [
