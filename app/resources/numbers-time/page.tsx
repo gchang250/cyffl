@@ -1,4 +1,6 @@
 import Link from "next/link";
+import VocabTable, { type VocabRow } from "@/components/VocabTable";
+import SpeakButton from "@/components/SpeakButton";
 
 const numberChips: [number, string][] = [
   [1, "un"], [2, "deux"], [3, "trois"], [4, "quatre"], [5, "cinq"],
@@ -9,14 +11,14 @@ const numberChips: [number, string][] = [
   [70, "soixante-dix"], [80, "quatre-vingts"], [90, "quatre-vingt-dix"], [100, "cent"],
 ];
 
-const timeRows: [string, string][] = [
-  ["Il est une heure.", "It is 1 o'clock."],
-  ["Il est deux heures.", "It is 2 o'clock."],
-  ["Il est midi.", "It is noon."],
-  ["Il est minuit.", "It is midnight."],
-  ["…et quart", "…quarter past"],
-  ["…et demie", "…half past"],
-  ["…moins le quart", "…quarter to"],
+const timeRows: { fr: string; en: string }[] = [
+  { fr: "Il est une heure.", en: "It is 1 o'clock." },
+  { fr: "Il est deux heures.", en: "It is 2 o'clock." },
+  { fr: "Il est midi.", en: "It is noon." },
+  { fr: "Il est minuit.", en: "It is midnight." },
+  { fr: "…et quart", en: "…quarter past" },
+  { fr: "…et demie", en: "…half past" },
+  { fr: "…moins le quart", en: "…quarter to" },
 ];
 
 const timeExamples: { fr: string; en: string }[] = [
@@ -26,37 +28,38 @@ const timeExamples: { fr: string; en: string }[] = [
   { fr: "Il est neuf heures du matin.", en: "9 AM" },
 ];
 
-const daysData: [string, string][] = [
-  ["lundi", "Monday"],
-  ["mardi", "Tuesday"],
-  ["mercredi", "Wednesday"],
-  ["jeudi", "Thursday"],
-  ["vendredi", "Friday"],
-  ["samedi", "Saturday"],
-  ["dimanche", "Sunday"],
+const days: VocabRow[] = [
+  { fr: "lundi", ipa: "[lœ̃di]", en: "Monday" },
+  { fr: "mardi", ipa: "[maʁdi]", en: "Tuesday" },
+  { fr: "mercredi", ipa: "[mɛʁkʁədi]", en: "Wednesday" },
+  { fr: "jeudi", ipa: "[ʒødi]", en: "Thursday" },
+  { fr: "vendredi", ipa: "[vɑ̃dʁədi]", en: "Friday" },
+  { fr: "samedi", ipa: "[samdi]", en: "Saturday" },
+  { fr: "dimanche", ipa: "[dimɑ̃ʃ]", en: "Sunday" },
 ];
 
-const monthsData: [string, string][] = [
-  ["janvier", "January"],
-  ["février", "February"],
-  ["mars", "March"],
-  ["avril", "April"],
-  ["mai", "May"],
-  ["juin", "June"],
-  ["juillet", "July"],
-  ["août", "August"],
-  ["septembre", "September"],
-  ["octobre", "October"],
-  ["novembre", "November"],
-  ["décembre", "December"],
+const months: VocabRow[] = [
+  { fr: "janvier", ipa: "[ʒɑ̃vje]", en: "January" },
+  { fr: "février", ipa: "[fevʁije]", en: "February" },
+  { fr: "mars", ipa: "[maʁs]", en: "March" },
+  { fr: "avril", ipa: "[avʁil]", en: "April" },
+  { fr: "mai", ipa: "[mɛ]", en: "May" },
+  { fr: "juin", ipa: "[ʒɥɛ̃]", en: "June" },
+  { fr: "juillet", ipa: "[ʒɥijɛ]", en: "July" },
+  { fr: "août", ipa: "[u]", en: "August" },
+  { fr: "septembre", ipa: "[sɛptɑ̃bʁ]", en: "September" },
+  { fr: "octobre", ipa: "[ɔktɔbʁ]", en: "October" },
+  { fr: "novembre", ipa: "[nɔvɑ̃bʁ]", en: "November" },
+  { fr: "décembre", ipa: "[desɑ̃bʁ]", en: "December" },
 ];
 
 const datePhrases: { fr: string; en: string }[] = [
-  { fr: "Quelle est la date aujourd'hui?", en: "What is today's date?" },
-  { fr: "C'est le [number] [month].", en: "It is the [date] of [month]." },
+  { fr: "Quelle est la date aujourd'hui ?", en: "What is today's date?" },
+  { fr: "C'est le [numéro] [mois].", en: "It is the [date] of [month]." },
   { fr: "Je suis né(e) le…", en: "I was born on…" },
   { fr: "Mon anniversaire est en…", en: "My birthday is in…" },
-  { fr: "Quelle heure est-il?", en: "What time is it?" },
+  { fr: "Quelle heure est-il ?", en: "What time is it?" },
+  { fr: "Il est… heures.", en: "It is … o'clock." },
 ];
 
 export default function NumbersTimePage() {
@@ -75,20 +78,24 @@ export default function NumbersTimePage() {
             Numbers &amp; Time
           </h1>
           <p className="mt-4 text-lg leading-8 text-[#526173]">
-            Count, tell the time, and talk about dates in French. These come up constantly — in class, on exams, and in everyday conversation.
+            Count, tell the time, and talk about dates in French. Click <span className="font-black">🔊</span> on any word or phrase to hear it pronounced.
           </p>
         </div>
 
+        {/* Numbers grid */}
         <div className="mt-12">
           <h2 className="text-2xl font-black">Numbers 1–100</h2>
-          <div className="mt-6 grid grid-cols-4 gap-2 md:grid-cols-5">
+          <div className="mt-5 grid grid-cols-4 gap-2 sm:grid-cols-5">
             {numberChips.map(([n, fr]) => (
               <div
                 key={n}
-                className="rounded-xl border border-[#E7DAB9] bg-white p-2 text-center text-sm"
+                className="group rounded-xl border border-[#E7DAB9] bg-white p-3 text-center hover:border-[#2563EB] transition-colors"
               >
-                <p className="font-black text-[#0B1F3A]">{n}</p>
-                <p className="text-xs text-[#526173]">{fr}</p>
+                <p className="text-xs text-[#526173]">{n}</p>
+                <p className="mt-0.5 font-black text-[#0B1F3A]">{fr}</p>
+                <div className="mt-2 flex justify-center">
+                  <SpeakButton text={fr} size="sm" />
+                </div>
               </div>
             ))}
           </div>
@@ -98,87 +105,76 @@ export default function NumbersTimePage() {
           </div>
         </div>
 
+        {/* Telling time */}
         <div className="mt-12">
           <h2 className="text-2xl font-black">Telling time</h2>
-          <div className="mt-6 overflow-x-auto rounded-2xl border border-[#E7DAB9] bg-white p-5">
+          <div className="mt-5 overflow-x-auto rounded-2xl border border-[#E7DAB9] bg-white">
             <table className="w-full text-sm">
               <thead>
-                <tr className="border-b border-[#E7DAB9]">
-                  <th className="pb-3 text-left font-black text-[#0B1F3A]">French</th>
-                  <th className="pb-3 text-left font-black text-[#0B1F3A]">English</th>
+                <tr className="border-b border-[#E7DAB9] bg-[#FFFDF7]">
+                  <th className="py-3 pl-4 w-8" />
+                  <th className="py-3 pl-2 text-left font-black">French</th>
+                  <th className="py-3 pl-4 pr-5 text-left font-black">English</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-[#F3EDD8]">
-                {timeRows.map(([fr, en]) => (
-                  <tr key={fr}>
-                    <td className="py-3 font-black">{fr}</td>
-                    <td className="py-3 text-[#526173]">{en}</td>
+                {timeRows.map((row) => (
+                  <tr key={row.fr} className="group hover:bg-[#FFFDF7] transition-colors">
+                    <td className="py-2.5 pl-4"><SpeakButton text={row.fr} size="sm" /></td>
+                    <td className="py-2.5 pl-2 font-black">{row.fr}</td>
+                    <td className="py-2.5 pl-4 pr-5 text-[#526173]">{row.en}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
+
           <div className="mt-4 grid gap-3 sm:grid-cols-2">
             {timeExamples.map((ex) => (
-              <div key={ex.fr} className="rounded-2xl border border-[#E7DAB9] bg-white p-4">
-                <p className="font-black text-[#0B1F3A]">{ex.fr}</p>
-                <p className="mt-1 text-sm text-[#526173]">{ex.en}</p>
+              <div key={ex.fr} className="rounded-2xl border border-[#E7DAB9] bg-white p-4 flex items-start gap-3">
+                <SpeakButton text={ex.fr} size="sm" />
+                <div>
+                  <p className="font-black text-[#0B1F3A]">{ex.fr}</p>
+                  <p className="mt-0.5 text-sm text-[#526173]">{ex.en}</p>
+                </div>
               </div>
             ))}
           </div>
         </div>
 
+        {/* Days and months with IPA */}
         <div className="mt-12">
-          <h2 className="text-2xl font-black">Days &amp; months</h2>
-          <div className="mt-6 grid gap-6 md:grid-cols-2">
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="border-b border-[#E7DAB9]">
-                    <th className="pb-3 text-left font-black text-[#0B1F3A]">Day (French)</th>
-                    <th className="pb-3 text-left font-black text-[#0B1F3A]">English</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-[#F3EDD8]">
-                  {daysData.map(([fr, en]) => (
-                    <tr key={fr}>
-                      <td className="py-3 font-black">{fr}</td>
-                      <td className="py-3 text-[#526173]">{en}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="border-b border-[#E7DAB9]">
-                    <th className="pb-3 text-left font-black text-[#0B1F3A]">Month (French)</th>
-                    <th className="pb-3 text-left font-black text-[#0B1F3A]">English</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-[#F3EDD8]">
-                  {monthsData.map(([fr, en]) => (
-                    <tr key={fr}>
-                      <td className="py-3 font-black">{fr}</td>
-                      <td className="py-3 text-[#526173]">{en}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
+          <h2 className="text-2xl font-black">Days of the week</h2>
+          <VocabTable rows={days} />
         </div>
 
         <div className="mt-12">
-          <h2 className="text-2xl font-black">Useful date phrases</h2>
-          <div className="mt-6 grid gap-3 sm:grid-cols-2">
-            {datePhrases.map((p) => (
-              <div key={p.fr} className="rounded-2xl border border-[#E7DAB9] bg-white p-4">
-                <p className="font-black text-[#0B1F3A]">{p.fr}</p>
-                <p className="mt-1 text-sm text-[#526173]">{p.en}</p>
-              </div>
-            ))}
+          <h2 className="text-2xl font-black">Months</h2>
+          <VocabTable rows={months} />
+        </div>
+
+        {/* Date phrases */}
+        <div className="mt-12">
+          <h2 className="text-2xl font-black">Useful date &amp; time phrases</h2>
+          <div className="mt-5 overflow-x-auto rounded-2xl border border-[#E7DAB9] bg-white">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b border-[#E7DAB9] bg-[#FFFDF7]">
+                  <th className="py-3 pl-4 w-8" />
+                  <th className="py-3 pl-2 text-left font-black">French</th>
+                  <th className="py-3 pl-4 pr-5 text-left font-black">English</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-[#F3EDD8]">
+                {datePhrases.map((p) => (
+                  <tr key={p.fr} className="group hover:bg-[#FFFDF7] transition-colors">
+                    <td className="py-2.5 pl-4"><SpeakButton text={p.fr} size="sm" /></td>
+                    <td className="py-2.5 pl-2 font-black">{p.fr}</td>
+                    <td className="py-2.5 pl-4 pr-5 text-[#526173]">{p.en}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </div>
 
@@ -187,10 +183,7 @@ export default function NumbersTimePage() {
           <p className="mt-2 text-sm text-[#526173]">
             The French Foundations course covers all of this with flashcards, quizzes, and exercises.
           </p>
-          <Link
-            href="/learn/french-foundations"
-            className="mt-4 inline-block rounded-full bg-[#2563EB] px-5 py-2.5 text-sm font-black text-white transition hover:bg-[#1D4ED8]"
-          >
+          <Link href="/learn/french-foundations" className="mt-4 inline-block rounded-full bg-[#2563EB] px-5 py-2.5 text-sm font-black text-white transition hover:bg-[#1D4ED8]">
             Go to course →
           </Link>
         </div>

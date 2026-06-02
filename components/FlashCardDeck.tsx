@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import SpeakButton from "./SpeakButton";
 
 interface Card {
   front: string;
@@ -89,14 +90,19 @@ export default function FlashCardDeck({ cards, title }: { cards: Card[]; title?:
         <div className={`flip-card-inner w-full ${flipped ? "flipped" : ""}`}>
           {/* Front */}
           <div className="flip-card-face rounded-3xl bg-[#0B1F3A] p-8 text-center text-white shadow-md">
-            <p className="text-xs font-bold uppercase tracking-widest text-[#C9A44C]">
-              French
-            </p>
-            <p className="mt-6 text-4xl font-black leading-tight">{card.front}</p>
+            <div className="flex items-center justify-between">
+              <p className="text-xs font-bold uppercase tracking-widest text-[#C9A44C]">
+                French
+              </p>
+              <div onClick={(e) => e.stopPropagation()}>
+                <SpeakButton text={card.front} size="sm" />
+              </div>
+            </div>
+            <p className="mt-5 text-4xl font-black leading-tight">{card.front}</p>
             {card.ipa && (
               <p className="mt-2 font-mono text-sm text-white/50">{card.ipa}</p>
             )}
-            <p className={`text-sm text-white/40 ${card.ipa ? "mt-6" : "mt-8"}`}>tap to flip</p>
+            <p className={`text-sm text-white/40 ${card.ipa ? "mt-5" : "mt-7"}`}>tap to flip</p>
           </div>
 
           {/* Back */}

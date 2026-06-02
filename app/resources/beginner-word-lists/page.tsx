@@ -1,121 +1,96 @@
 import Link from "next/link";
+import VocabTable, { type VocabRow } from "@/components/VocabTable";
 
-// [French, IPA, English]
-const colours: [string, string, string][] = [
-  ["rouge", "[ʁuʒ]", "red"],
-  ["bleu", "[blø]", "blue"],
-  ["vert", "[vɛʁ]", "green"],
-  ["jaune", "[ʒon]", "yellow"],
-  ["blanc", "[blɑ̃]", "white"],
-  ["noir", "[nwaʁ]", "black"],
-  ["orange", "[ɔʁɑ̃ʒ]", "orange"],
-  ["violet", "[vjɔlɛ]", "purple"],
-  ["rose", "[ʁoz]", "pink"],
-  ["gris", "[ɡʁi]", "grey"],
+const colours: VocabRow[] = [
+  { fr: "rouge", ipa: "[ʁuʒ]", en: "red" },
+  { fr: "bleu", ipa: "[blø]", en: "blue" },
+  { fr: "vert", ipa: "[vɛʁ]", en: "green" },
+  { fr: "jaune", ipa: "[ʒon]", en: "yellow" },
+  { fr: "blanc", ipa: "[blɑ̃]", en: "white" },
+  { fr: "noir", ipa: "[nwaʁ]", en: "black" },
+  { fr: "orange", ipa: "[ɔʁɑ̃ʒ]", en: "orange" },
+  { fr: "violet", ipa: "[vjɔlɛ]", en: "purple" },
+  { fr: "rose", ipa: "[ʁoz]", en: "pink" },
+  { fr: "gris", ipa: "[ɡʁi]", en: "grey" },
 ];
 
-const numbers: [string, string, string][] = [
-  ["un", "[œ̃]", "one"],
-  ["deux", "[dø]", "two"],
-  ["trois", "[tʁwa]", "three"],
-  ["quatre", "[katʁ]", "four"],
-  ["cinq", "[sɛ̃k]", "five"],
-  ["six", "[sis]", "six"],
-  ["sept", "[sɛt]", "seven"],
-  ["huit", "[ɥit]", "eight"],
-  ["neuf", "[nœf]", "nine"],
-  ["dix", "[dis]", "ten"],
-  ["onze", "[ɔ̃z]", "eleven"],
-  ["douze", "[duz]", "twelve"],
-  ["treize", "[tʁɛz]", "thirteen"],
-  ["quatorze", "[katɔʁz]", "fourteen"],
-  ["quinze", "[kɛ̃z]", "fifteen"],
-  ["seize", "[sɛz]", "sixteen"],
-  ["dix-sept", "[dis.sɛt]", "seventeen"],
-  ["dix-huit", "[diz.ɥit]", "eighteen"],
-  ["dix-neuf", "[diz.nœf]", "nineteen"],
-  ["vingt", "[vɛ̃]", "twenty"],
+const numbers: VocabRow[] = [
+  { fr: "un", ipa: "[œ̃]", en: "one" },
+  { fr: "deux", ipa: "[dø]", en: "two" },
+  { fr: "trois", ipa: "[tʁwa]", en: "three" },
+  { fr: "quatre", ipa: "[katʁ]", en: "four" },
+  { fr: "cinq", ipa: "[sɛ̃k]", en: "five" },
+  { fr: "six", ipa: "[sis]", en: "six" },
+  { fr: "sept", ipa: "[sɛt]", en: "seven" },
+  { fr: "huit", ipa: "[ɥit]", en: "eight" },
+  { fr: "neuf", ipa: "[nœf]", en: "nine" },
+  { fr: "dix", ipa: "[dis]", en: "ten" },
+  { fr: "onze", ipa: "[ɔ̃z]", en: "eleven" },
+  { fr: "douze", ipa: "[duz]", en: "twelve" },
+  { fr: "treize", ipa: "[tʁɛz]", en: "thirteen" },
+  { fr: "quatorze", ipa: "[katɔʁz]", en: "fourteen" },
+  { fr: "quinze", ipa: "[kɛ̃z]", en: "fifteen" },
+  { fr: "seize", ipa: "[sɛz]", en: "sixteen" },
+  { fr: "dix-sept", ipa: "[dis.sɛt]", en: "seventeen" },
+  { fr: "dix-huit", ipa: "[diz.ɥit]", en: "eighteen" },
+  { fr: "dix-neuf", ipa: "[diz.nœf]", en: "nineteen" },
+  { fr: "vingt", ipa: "[vɛ̃]", en: "twenty" },
 ];
 
-const days: [string, string, string][] = [
-  ["lundi", "[lœ̃di]", "Monday"],
-  ["mardi", "[maʁdi]", "Tuesday"],
-  ["mercredi", "[mɛʁkʁədi]", "Wednesday"],
-  ["jeudi", "[ʒødi]", "Thursday"],
-  ["vendredi", "[vɑ̃dʁədi]", "Friday"],
-  ["samedi", "[samdi]", "Saturday"],
-  ["dimanche", "[dimɑ̃ʃ]", "Sunday"],
+const days: VocabRow[] = [
+  { fr: "lundi", ipa: "[lœ̃di]", en: "Monday" },
+  { fr: "mardi", ipa: "[maʁdi]", en: "Tuesday" },
+  { fr: "mercredi", ipa: "[mɛʁkʁədi]", en: "Wednesday" },
+  { fr: "jeudi", ipa: "[ʒødi]", en: "Thursday" },
+  { fr: "vendredi", ipa: "[vɑ̃dʁədi]", en: "Friday" },
+  { fr: "samedi", ipa: "[samdi]", en: "Saturday" },
+  { fr: "dimanche", ipa: "[dimɑ̃ʃ]", en: "Sunday" },
 ];
 
-const months: [string, string, string][] = [
-  ["janvier", "[ʒɑ̃vje]", "January"],
-  ["février", "[fevʁije]", "February"],
-  ["mars", "[maʁs]", "March"],
-  ["avril", "[avʁil]", "April"],
-  ["mai", "[mɛ]", "May"],
-  ["juin", "[ʒɥɛ̃]", "June"],
-  ["juillet", "[ʒɥijɛ]", "July"],
-  ["août", "[u]", "August"],
-  ["septembre", "[sɛptɑ̃bʁ]", "September"],
-  ["octobre", "[ɔktɔbʁ]", "October"],
-  ["novembre", "[nɔvɑ̃bʁ]", "November"],
-  ["décembre", "[desɑ̃bʁ]", "December"],
+const months: VocabRow[] = [
+  { fr: "janvier", ipa: "[ʒɑ̃vje]", en: "January" },
+  { fr: "février", ipa: "[fevʁije]", en: "February" },
+  { fr: "mars", ipa: "[maʁs]", en: "March" },
+  { fr: "avril", ipa: "[avʁil]", en: "April" },
+  { fr: "mai", ipa: "[mɛ]", en: "May" },
+  { fr: "juin", ipa: "[ʒɥɛ̃]", en: "June" },
+  { fr: "juillet", ipa: "[ʒɥijɛ]", en: "July" },
+  { fr: "août", ipa: "[u]", en: "August" },
+  { fr: "septembre", ipa: "[sɛptɑ̃bʁ]", en: "September" },
+  { fr: "octobre", ipa: "[ɔktɔbʁ]", en: "October" },
+  { fr: "novembre", ipa: "[nɔvɑ̃bʁ]", en: "November" },
+  { fr: "décembre", ipa: "[desɑ̃bʁ]", en: "December" },
 ];
 
-const verbs: [string, string, string][] = [
-  ["être", "[ɛtʁ]", "to be"],
-  ["avoir", "[avwaʁ]", "to have"],
-  ["aller", "[ale]", "to go"],
-  ["faire", "[fɛʁ]", "to do / make"],
-  ["parler", "[paʁle]", "to speak"],
-  ["manger", "[mɑ̃ʒe]", "to eat"],
-  ["aimer", "[ɛme]", "to like / love"],
-  ["regarder", "[ʁəɡaʁde]", "to watch"],
-  ["écouter", "[ekute]", "to listen"],
-  ["jouer", "[ʒwe]", "to play"],
-  ["habiter", "[abite]", "to live (somewhere)"],
-  ["travailler", "[tʁavaje]", "to work"],
+const verbs: VocabRow[] = [
+  { fr: "être", ipa: "[ɛtʁ]", en: "to be" },
+  { fr: "avoir", ipa: "[avwaʁ]", en: "to have" },
+  { fr: "aller", ipa: "[ale]", en: "to go" },
+  { fr: "faire", ipa: "[fɛʁ]", en: "to do / make" },
+  { fr: "parler", ipa: "[paʁle]", en: "to speak" },
+  { fr: "manger", ipa: "[mɑ̃ʒe]", en: "to eat" },
+  { fr: "aimer", ipa: "[ɛme]", en: "to like / love" },
+  { fr: "regarder", ipa: "[ʁəɡaʁde]", en: "to watch" },
+  { fr: "écouter", ipa: "[ekute]", en: "to listen" },
+  { fr: "jouer", ipa: "[ʒwe]", en: "to play" },
+  { fr: "habiter", ipa: "[abite]", en: "to live (somewhere)" },
+  { fr: "travailler", ipa: "[tʁavaje]", en: "to work" },
 ];
 
-const adjectives: [string, string, string][] = [
-  ["grand", "[ɡʁɑ̃]", "big / tall"],
-  ["petit", "[pəti]", "small"],
-  ["bon", "[bɔ̃]", "good"],
-  ["mauvais", "[movɛ]", "bad"],
-  ["beau", "[bo]", "beautiful"],
-  ["vieux", "[vjø]", "old"],
-  ["nouveau", "[nuvo]", "new"],
-  ["facile", "[fasil]", "easy"],
-  ["difficile", "[difisil]", "hard / difficult"],
-  ["intéressant", "[ɛ̃teʁesɑ̃]", "interesting"],
-  ["sympa", "[sɛ̃pa]", "nice / friendly"],
-  ["rapide", "[ʁapid]", "fast"],
+const adjectives: VocabRow[] = [
+  { fr: "grand", ipa: "[ɡʁɑ̃]", en: "big / tall" },
+  { fr: "petit", ipa: "[pəti]", en: "small" },
+  { fr: "bon", ipa: "[bɔ̃]", en: "good" },
+  { fr: "mauvais", ipa: "[movɛ]", en: "bad" },
+  { fr: "beau", ipa: "[bo]", en: "beautiful" },
+  { fr: "vieux", ipa: "[vjø]", en: "old" },
+  { fr: "nouveau", ipa: "[nuvo]", en: "new" },
+  { fr: "facile", ipa: "[fasil]", en: "easy" },
+  { fr: "difficile", ipa: "[difisil]", en: "hard / difficult" },
+  { fr: "intéressant", ipa: "[ɛ̃teʁesɑ̃]", en: "interesting" },
+  { fr: "sympa", ipa: "[sɛ̃pa]", en: "nice / friendly" },
+  { fr: "rapide", ipa: "[ʁapid]", en: "fast" },
 ];
-
-function WordTable({ rows }: { rows: [string, string, string][] }) {
-  return (
-    <div className="mt-5 overflow-x-auto rounded-2xl border border-[#E7DAB9] bg-white">
-      <table className="w-full text-sm">
-        <thead>
-          <tr className="border-b border-[#E7DAB9] bg-[#FFFDF7]">
-            <th className="py-3 pl-5 text-left font-black text-[#0B1F3A]">French</th>
-            <th className="py-3 pl-4 text-left font-mono text-xs font-bold text-[#526173]">IPA</th>
-            <th className="py-3 pl-4 pr-5 text-left font-black text-[#0B1F3A]">English</th>
-          </tr>
-        </thead>
-        <tbody className="divide-y divide-[#F3EDD8]">
-          {rows.map(([fr, ipa, en]) => (
-            <tr key={fr} className="group hover:bg-[#FFFDF7] transition-colors">
-              <td className="py-3 pl-5 font-black">{fr}</td>
-              <td className="py-3 pl-4 font-mono text-xs text-[#526173] group-hover:text-[#0B1F3A] transition-colors">{ipa}</td>
-              <td className="py-3 pl-4 pr-5 text-[#526173]">{en}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-  );
-}
 
 export default function BeginnerWordListsPage() {
   return (
@@ -133,7 +108,7 @@ export default function BeginnerWordListsPage() {
             Beginner Word Lists
           </h1>
           <p className="mt-4 text-lg leading-8 text-[#526173]">
-            Essential French vocabulary organized by theme, with IPA pronunciation for every word. The IPA column uses the International Phonetic Alphabet — a standard notation for how words are pronounced.
+            Essential French vocabulary organized by theme. Click <span className="font-black">🔊</span> to hear any word pronounced in French. IPA transcriptions are included for pronunciation reference.
           </p>
         </div>
 
@@ -158,32 +133,32 @@ export default function BeginnerWordListsPage() {
 
         <div className="mt-12">
           <h2 className="text-2xl font-black">Colours</h2>
-          <WordTable rows={colours} />
+          <VocabTable rows={colours} />
         </div>
 
         <div className="mt-12">
           <h2 className="text-2xl font-black">Numbers 1–20</h2>
-          <WordTable rows={numbers} />
+          <VocabTable rows={numbers} />
         </div>
 
         <div className="mt-12">
           <h2 className="text-2xl font-black">Days of the week</h2>
-          <WordTable rows={days} />
+          <VocabTable rows={days} />
         </div>
 
         <div className="mt-12">
           <h2 className="text-2xl font-black">Months</h2>
-          <WordTable rows={months} />
+          <VocabTable rows={months} />
         </div>
 
         <div className="mt-12">
           <h2 className="text-2xl font-black">Common verbs</h2>
-          <WordTable rows={verbs} />
+          <VocabTable rows={verbs} />
         </div>
 
         <div className="mt-12">
           <h2 className="text-2xl font-black">Common adjectives</h2>
-          <WordTable rows={adjectives} />
+          <VocabTable rows={adjectives} />
         </div>
 
         <div className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-6 shadow-sm">
