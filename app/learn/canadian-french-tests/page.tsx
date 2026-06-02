@@ -12,7 +12,7 @@ const units = [
     number: "01",
     title: "SLE — Federal Government Jobs",
     description:
-      "The Second Language Evaluation (SLE) is required for bilingual federal positions. Learn the A/B/C levels, the three tests, common profiles, and exactly how to prepare.",
+      "Build the French you need to pass the SLE. Government vocabulary (la mise en œuvre, les intervenants, la conformité), formal grammar (passive voice, nominalization, relative pronouns), and the exact writing formulas used in federal documents.",
     color: "bg-[#FEF3C7] text-[#D97706]",
     testHref: "/learn/canadian-french-tests/unit-1/test",
     lessons: [
@@ -25,7 +25,7 @@ const units = [
     number: "02",
     title: "TEF Canada — Immigration",
     description:
-      "The TEF Canada and TCF Canada are recognized by IRCC for Express Entry, PNP, and citizenship. Learn the CLB levels, score requirements, and how each section is tested.",
+      "Build the French you need to score CLB 7+ on TEF Canada. Topic vocabulary across environment, society, and technology themes; opinion and argument phrases (Force est de constater que…, Certes… mais…); and formal vs. informal writing register for both writing tasks.",
     color: "bg-[#EFF6FF] text-[#2563EB]",
     testHref: "/learn/canadian-french-tests/unit-2/test",
     lessons: [

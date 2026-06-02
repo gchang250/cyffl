@@ -3,109 +3,104 @@ import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const questions = [
   {
-    question: "What does CLB stand for, and who uses it?",
+    question: "'Les _____ sociales se creusent malgré les politiques de redistribution.' Which word fills the gap?",
+    options: ["cohésions", "mondialisation", "inégalités", "bénévolats"],
+    correct: 2,
+    explanation: "'Les inégalités sociales se creusent' = social inequalities are widening. 'Se creuser' (to deepen) is the standard verb used with inequalities, divisions, and gaps in French. This sentence structure appears frequently in TEF Canada texts on society.",
+  },
+  {
+    question: "A TEF Canada text discusses 'l'intelligence artificielle et son impact sur le marché du travail.' The text is most likely about:",
     options: [
-      "Canadian Language Band — used by Alliance française to certify students",
-      "Canadian Language Benchmark — used by IRCC to assess language proficiency for immigration",
-      "Certified Language Band — used by employers to assess bilingual candidates",
-      "Canada Literacy Benchmark — used by provincial governments",
+      "Environmental sustainability",
+      "How AI is transforming employment and jobs",
+      "Government immigration policy",
+      "Public health funding",
     ],
     correct: 1,
-    explanation: "CLB = Canadian Language Benchmarks. IRCC uses CLB levels — not raw test scores — to assess French proficiency for immigration applications. TEF Canada and TCF Canada scores are converted to CLB.",
+    explanation: "'L'intelligence artificielle' (AI) + 'le marché du travail' (labour market) = technology and employment — one of the most common TEF Canada themes. Recognizing these topic markers tells you immediately what the text is about before you read in depth.",
   },
   {
-    question: "Under the Federal Skilled Worker (FSW) Express Entry stream, what is the minimum CLB level required in each of the four skills?",
-    options: ["CLB 4", "CLB 5", "CLB 6", "CLB 7"],
-    correct: 3,
-    explanation: "CLB 7 is the FSW minimum in all four skills (listening, reading, writing, speaking). Below CLB 7 in any single skill means zero language points from that skill.",
-  },
-  {
-    question: "Which two French tests are recognized by IRCC for immigration purposes?",
+    question: "You are writing TEF Canada Task 2 — a formal letter to a city council. Which salutation is correct?",
     options: [
-      "DELF and DALF",
-      "SLE and TEF Canada",
-      "TEF Canada and TCF Canada",
-      "DELF and TEF Canada",
-    ],
-    correct: 2,
-    explanation: "IRCC recognizes TEF Canada and TCF Canada. The SLE is for federal government jobs, not immigration. DELF is a European qualification not recognized by IRCC for immigration applications.",
-  },
-  {
-    question: "TEF Canada listening audio plays:",
-    options: [
-      "Twice — once for main idea, once for details",
-      "Three times at decreasing speed",
-      "Once — you must take notes while listening",
-      "As many times as you need within the time limit",
-    ],
-    correct: 2,
-    explanation: "TEF Canada audio plays only once. Taking notes during the first (and only) listen is essential — write key words, names, numbers, and opinions as you hear them.",
-  },
-  {
-    question: "TEF Canada writing is assessed on four criteria. Which one, if failed, can bring down your entire response score the most?",
-    options: [
-      "Grammaire (grammar accuracy)",
-      "Vocabulaire (vocabulary range)",
-      "Pertinence (task relevance)",
-      "Longueur (text length)",
-    ],
-    correct: 2,
-    explanation: "Pertinence — whether your response addresses the task — is the most critical criterion. A grammatically perfect but off-topic text scores poorly. Always re-read the task before writing and stay focused on what's asked.",
-  },
-  {
-    question: "For TEF Canada writing Task 2 (the formal task), the correct salutation when you don't know the recipient's name is:",
-    options: [
+      "'Chère Madame la Mairesse,'",
       "'Bonjour,'",
-      "'Salut,'",
+      "'Salut !'",
       "'Madame, Monsieur,'",
-      "'Cher directeur,'",
     ],
-    correct: 2,
-    explanation: "'Madame, Monsieur,' is the standard salutation for a formal letter or email when the recipient's name is unknown. 'Bonjour' is semi-formal. 'Cher directeur' is only correct if the recipient's title is specified.",
+    correct: 3,
+    explanation: "'Madame, Monsieur,' is the standard salutation when writing to an institution or unknown recipient. 'Chère Madame la Mairesse,' would only be correct if the letter is addressed directly to the mayor by name. Never 'Bonjour' or 'Salut' in a formal letter.",
   },
   {
-    question: "TEF Canada speaking responses are:",
+    question: "Which structure best shows a balanced argument in TEF Canada Task 2?",
     options: [
-      "Assessed live by an examiner in the room with you",
-      "Recorded and evaluated by a trained examiner after the test",
-      "Submitted as a written transcript",
-      "Self-assessed using a rubric",
+      "'La mondialisation est très bonne mais aussi très mauvaise.'",
+      "'D'une part, la mondialisation stimule la croissance économique ; d'autre part, elle peut aggraver les inégalités.'",
+      "'La mondialisation, c'est compliqué.'",
+      "'Je pense que la mondialisation est bonne et mauvaise parfois.'",
     ],
     correct: 1,
-    explanation: "TEF Canada speaking is recorded — you speak into a microphone and your responses are evaluated later by a trained examiner. There is no live evaluator present. Speak clearly, stay on topic, and maintain a steady pace.",
+    explanation: "'D'une part… ; d'autre part…' presents two sides of an argument in one clean structure — separated by a semicolon. The examiner immediately sees organised, balanced thinking. This is the correct two-sided structure for formal writing.",
   },
   {
-    question: "Which of the following best describes the purpose of CLB 9 in Express Entry?",
+    question: "Which sentence uses 'Certes… mais…' correctly?",
     options: [
-      "It is the minimum requirement — candidates below CLB 9 earn no points",
-      "It is the maximum possible CLB level for immigration",
-      "It triggers a significant CRS boost, making your Express Entry profile much more competitive",
-      "It replaces the English language requirement",
+      "'Certes le français, mais aussi l'anglais.'",
+      "'Certes, les énergies renouvelables coûtent cher, mais elles réduisent la dépendance aux combustibles fossiles.'",
+      "'Certes et mais c'est la mondialisation.'",
+      "'Certes oui mais non.'",
     ],
-    correct: 2,
-    explanation: "CLB 9 produces a significant jump in CRS points compared to CLB 7–8. Candidates with CLB 9+ in all four skills have a notably higher CRS score and are considered strong bilingual candidates by IRCC.",
+    correct: 1,
+    explanation: "'Certes, [concession], mais [counter-argument].' = Admittedly, renewable energy is expensive, but it reduces dependence on fossil fuels. The structure acknowledges the opposing view and then argues against it — this shows critical thinking to the examiner.",
   },
   {
-    question: "A TEF Canada reading question asks what the word 'démarche' means in the context of paragraph 3. The best approach is:",
-    options: [
-      "Use the most common dictionary definition of 'démarche'",
-      "Skip vocabulary questions — they're unpredictable",
-      "Read the sentences around 'démarche' in paragraph 3 to understand how it's used in context",
-      "Look for the word in the questions — it might appear again with a definition",
-    ],
-    correct: 2,
-    explanation: "Vocabulary-in-context questions test reading comprehension, not dictionary knowledge. The answer is always supported by the surrounding text. Read 2–3 sentences around the word to infer its meaning in that specific context.",
+    question: "'_____ constater que les émissions de CO₂ continuent d'augmenter malgré les accords internationaux.' Which phrase fits?",
+    options: ["Il est à craindre de", "Force est de", "Il va sans dire de", "Il convient de bien"],
+    correct: 1,
+    explanation: "'Force est de constater que…' = One cannot help but notice that / The evidence compels us to note that. It is a fixed expression — 'force est de constater' always together. Using it correctly signals upper-register French to the examiner.",
   },
   {
-    question: "Someone with CLB 5 in listening and reading, CLB 7 in writing, and CLB 4 in speaking applies under Express Entry FSW. What is their French points situation?",
+    question: "Task 1 (informal) asks you to write to a friend about a problem at your apartment. Which opening line is correct?",
     options: [
-      "They earn maximum French bonus points",
-      "They earn points for the two skills above CLB 7",
-      "They earn zero French language points — all four skills must be at CLB 7+",
-      "They qualify but with a reduced bonus",
+      "'Madame, Monsieur, Je me permets de vous contacter afin de…'",
+      "'Je tiens à souligner que la situation est grave.'",
+      "'Chère Lucie, Je t'écris pour te parler d'un problème dans mon appartement.'",
+      "'Veuillez agréer mes salutations distinguées.'",
     ],
     correct: 2,
-    explanation: "Under FSW Express Entry, all four skills must be at CLB 7 or above to earn any French language points. CLB 4 in speaking means the language requirement is not met — zero French points regardless of the other skill scores.",
+    explanation: "Task 1 is informal. 'Chère Lucie,' (informal salutation) + 'Je t'écris pour te parler de…' (casual, uses 'tu') is the correct register. All the other options are formal — appropriate for Task 2 but wrong for Task 1.",
+  },
+  {
+    question: "Your Task 2 letter closes. Which sequence is correct?",
+    options: [
+      "'Merci et bonne journée !'",
+      "'À très bientôt.'",
+      "'Dans l'attente de votre réponse, je vous prie d'agréer mes salutations distinguées.'",
+      "'Bisous, [name]'",
+    ],
+    correct: 2,
+    explanation: "'Dans l'attente de votre réponse, je vous prie d'agréer mes salutations distinguées.' is the standard formal French letter closing. These two formulas always appear together. Any informal closing in a formal letter costs register marks.",
+  },
+  {
+    question: "The connector 'Par conséquent' is used to:",
+    options: [
+      "Introduce a concession — the other side of the argument",
+      "Introduce a conclusion or consequence drawn from the evidence presented",
+      "Open a new topic",
+      "Add an example",
+    ],
+    correct: 1,
+    explanation: "'Par conséquent' = therefore / as a result. It draws a logical conclusion from what was said before. 'Les émissions augmentent. Par conséquent, des mesures s'imposent.' = Emissions are rising. Therefore, action is required. It shows cause-and-effect reasoning.",
+  },
+  {
+    question: "Which sentence about sustainable development is correctly built?",
+    options: [
+      "'Le développement est durable si on développe durablement.'",
+      "'Concilier croissance économique et développement durable demeure un défi fondamental de notre siècle.'",
+      "'La durabilité développe l'économie et le développement.'",
+      "'Il faut développer durablement le développement durable.'",
+    ],
+    correct: 1,
+    explanation: "'Concilier [X] et [Y]' = to reconcile / balance X and Y. 'Concilier croissance économique et développement durable demeure un défi fondamental de notre siècle.' = Reconciling economic growth and sustainable development remains a fundamental challenge of our century. This is the kind of sentence that appears in TEF Canada reading texts — and that you can write in Task 2.",
   },
 ];
 
@@ -119,9 +114,9 @@ export default function TEFTestPage() {
 
         <div className="mt-6">
           <span className="rounded-full bg-[#EFF6FF] px-3 py-1 text-xs font-black text-[#2563EB]">Unit 2 Test</span>
-          <h1 className="mt-4 text-5xl font-black tracking-tight md:text-6xl">TEF Canada — Immigration</h1>
+          <h1 className="mt-4 text-5xl font-black tracking-tight md:text-6xl">French for TEF Canada</h1>
           <p className="mt-4 max-w-2xl text-lg leading-8 text-[#526173]">
-            10 questions on CLB levels, IRCC requirements, Express Entry points, and TEF Canada test strategies.
+            10 questions on topic vocabulary, opinion phrases, argument structure, and formal vs. informal writing register.
           </p>
         </div>
 
@@ -133,17 +128,17 @@ export default function TEFTestPage() {
           <p className="text-sm font-bold text-[#C9A44C] uppercase tracking-widest">Course complete!</p>
           <h2 className="mt-3 text-3xl font-black">You&apos;ve finished French for Canadian Tests.</h2>
           <p className="mt-3 leading-7 text-white/70">
-            You now understand the SLE for government jobs and TEF Canada for immigration — the format, scoring, and strategies for both. Keep practising with authentic French content.
+            You&apos;ve built government vocabulary, formal grammar, writing formulas, topic vocabulary, opinion phrases, and letter-writing register. Keep practising by reading French documents and writing regularly.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link href="/learn/canadian-french-tests" className="rounded-full bg-[#C9A44C] px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">
               Review the course
             </Link>
             <Link href="/resources/sle-guide" className="rounded-full border border-white/20 bg-white/10 px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5">
-              SLE quick reference →
+              SLE reference →
             </Link>
             <Link href="/resources/tef-canada-guide" className="rounded-full border border-white/20 bg-white/10 px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5">
-              TEF Canada quick reference →
+              TEF Canada reference →
             </Link>
           </div>
         </div>

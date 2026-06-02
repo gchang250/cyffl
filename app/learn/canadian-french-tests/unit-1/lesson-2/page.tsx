@@ -4,82 +4,64 @@ import MatchPairs from "@/components/MatchPairs";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const flashcards = [
-  { front: "le texte administratif", back: "administrative text", subtext: "The core text type in the SLE reading test. Memos, briefing notes, policies, reports — the language of the federal public service." },
-  { front: "la note de service", back: "memo / memorandum", subtext: "A standard government communication format. Short, structured, action-oriented. Very common in the SLE reading test." },
-  { front: "le compte rendu", back: "minutes / summary report", subtext: "A record of a meeting or event. SLE texts often include decisions made, actions assigned, and responsible parties." },
-  { front: "l'objet", back: "subject line", subtext: "The 'Re:' line in a memo or email. Sets the topic — read it first to orient yourself before reading the full text." },
-  { front: "repérer", back: "to locate / to identify", subtext: "The core skill in the reading test — find the specific information the question asks for. Don't read for general understanding." },
-  { front: "éliminer", back: "to eliminate", subtext: "The most reliable strategy for multiple-choice: eliminate options that are clearly wrong before choosing between the remaining two." },
-  { front: "le sens implicite", back: "implied meaning", subtext: "At Level C, some questions test inferred meaning — what the text suggests but doesn't state directly. Level B is mostly explicit." },
-  { front: "le registre soutenu", back: "formal register", subtext: "SLE reading texts use formal, bureaucratic French. Passive voice, nominalization, and complex sentence structures are common." },
-  { front: "le renvoi", back: "cross-reference", subtext: "A reference from one part of a document to another ('Voir section 4.2'). At Level C, following these is part of the comprehension task." },
-  { front: "gérer son temps", back: "to manage time", subtext: "The SLE reading test is timed. Don't spend more than about 90 seconds per question — move on and come back if you're stuck." },
+  { front: "La décision a été prise par le comité.", back: "The decision was taken by the committee.", subtext: "Passive voice: être + past participle. The actor (comité) comes after 'par'. Government texts use passive constantly — it avoids assigning personal responsibility." },
+  { front: "La politique a été approuvée.", back: "The policy was approved.", subtext: "Another passive. Note: 'par' is often omitted when the actor is obvious or unimportant. 'A été approuvée' — past participle agrees with the subject (politique = feminine)." },
+  { front: "Il convient de noter que…", back: "It should be noted that…", subtext: "Impersonal construction. 'Il convient de + infinitif' is formal for 'it is appropriate to / one should'. Very common in briefing notes and memos." },
+  { front: "Il y a lieu de…", back: "There are grounds to… / It is necessary to…", subtext: "Another impersonal: 'Il y a lieu de procéder à une révision.' = There are grounds to carry out a review. More formal than 'il faut'." },
+  { front: "Il est à noter que…", back: "It is to be noted that…", subtext: "Introduces an important point. 'Il est à noter que le délai a été prolongé.' = It is to be noted that the deadline has been extended." },
+  { front: "la procédure (from procéder)", back: "Nominalization: the procedure / the process", subtext: "Government French converts verbs to nouns constantly. procéder → la procédure · mettre en œuvre → la mise en œuvre · décider → la décision. This makes sentences longer and more abstract." },
+  { front: "le rapport dont nous avons besoin", back: "the report that we need (dont = of which)", subtext: "'Dont' replaces 'de + noun' and is used with verbs like avoir besoin de, parler de, tenir compte de. 'Le rapport dont il est question' = the report in question." },
+  { front: "les mesures auxquelles il est fait référence", back: "the measures referred to (auxquelles = to which)", subtext: "'Auxquelles' = à + lesquelles. Used with verbs + 'à'. 'Les mesures auxquelles nous faisons référence' = the measures we are referring to. Common in Level C SLE texts." },
+  { front: "lequel / laquelle / lesquels / lesquelles", back: "which / whom (formal relative pronoun)", subtext: "More formal than 'qui/que'. Used after prepositions: 'le comité au sein duquel…' = the committee within which… 'le programme grâce auquel…' = the programme thanks to which…" },
+  { front: "Étant donné que…", back: "Given that… / Since…", subtext: "Formal equivalent of 'puisque' or 'vu que'. 'Étant donné que les ressources sont limitées, il convient de prioriser.' = Given that resources are limited, it is appropriate to prioritize." },
+  { front: "À cet égard…", back: "In this regard… / In this respect…", subtext: "Connects a new sentence to what came before. 'À cet égard, il importe de souligner que…' = In this regard, it is important to highlight that… A Level B–C connector." },
+  { front: "sous réserve de", back: "subject to / conditional upon", subtext: "'L'approbation est accordée sous réserve de la conformité aux lignes directrices.' = Approval is granted subject to compliance with the guidelines. Very common in government decisions." },
 ];
 
 const matchPairs = [
-  { left: "la note de service", right: "memo" },
-  { left: "le compte rendu", right: "minutes / summary report" },
-  { left: "l'objet", right: "subject line" },
-  { left: "repérer", right: "to locate information" },
-  { left: "éliminer", right: "to eliminate wrong options" },
-  { left: "le registre soutenu", right: "formal register" },
+  { left: "Il convient de noter que…", right: "It should be noted that…" },
+  { left: "Il y a lieu de…", right: "There are grounds to…" },
+  { left: "Il est à noter que…", right: "It is to be noted that…" },
+  { left: "À cet égard…", right: "In this regard…" },
+  { left: "sous réserve de", right: "subject to / conditional upon" },
+  { left: "Étant donné que…", right: "Given that…" },
 ];
 
 const quiz = [
   {
-    question: "The most effective strategy for SLE reading multiple-choice questions is:",
-    options: [
-      "Read the whole text carefully before looking at the questions",
-      "Read the question first, then scan the text for the relevant section",
-      "Choose the longest answer — it's usually correct",
-      "Trust your gut — the first option that seems right usually is",
-    ],
+    question: "'La recommandation _____ par le sous-ministre.' Which passive construction is correct?",
+    options: ["est formulée", "a été formulée", "a formulé", "formule"],
     correct: 1,
-    explanation: "Read the question first. This tells you exactly what information to look for. Then scan the text to find the relevant section — you don't need to read every word.",
+    explanation: "'A été formulée' is the correct passé composé passive — être (a été) + past participle (formulée, agreeing with 'la recommandation', feminine). 'Est formulée' (présent passif) would work too in the right context, but 'a été' is past.",
   },
   {
-    question: "A Level C SLE reading question asks what a text 'implies' about a policy. This tests:",
+    question: "The sentence 'La décision a été prise par le directeur' means:",
     options: [
-      "Vocabulary — you need to know the word 'implique'",
-      "Inferred meaning — what the text suggests without stating directly",
-      "Explicit detail — the answer will be stated word-for-word in the text",
-      "Grammar — the question is about verb tense",
+      "The director takes the decision",
+      "The decision was taken by the director",
+      "The decision will be taken by the director",
+      "The director was taken by the decision",
     ],
     correct: 1,
-    explanation: "Level C tests implied meaning — what the text suggests, implies, or leaves unsaid. Level A and B questions are mostly about explicitly stated information. If you're targeting B, focus on explicit comprehension first.",
+    explanation: "Passive voice: 'a été prise' = was taken (passé composé passif). The subject (la décision) receives the action. The actor (le directeur) follows 'par'. Passive voice is everywhere in government French — you must read it fluently.",
   },
   {
-    question: "You're stuck between two options. The best approach is:",
-    options: [
-      "Pick the one that mentions a word from the text",
-      "Always pick option B — statistically more likely",
-      "Go back to the specific part of the text the question refers to and compare both options",
-      "Skip the question entirely",
-    ],
+    question: "'Le rapport _____ nous avons besoin sera distribué demain.' Which relative pronoun fits?",
+    options: ["que", "qui", "dont", "où"],
     correct: 2,
-    explanation: "Go back to the text. Read the specific sentence or paragraph the question is about, then decide which option is supported by what the text actually says — not what seems logical or plausible.",
+    explanation: "'Dont' replaces 'de + noun' and is used because 'avoir besoin de' requires 'de'. 'Le rapport dont nous avons besoin' = the report that we need. This is the most tested relative pronoun distinction.",
   },
   {
-    question: "The 'objet' (subject line) of a memo tells you:",
-    options: [
-      "Who wrote the memo",
-      "The date the memo was written",
-      "The main topic — read it first to orient yourself before reading the full text",
-      "The official reference number",
-    ],
-    correct: 2,
-    explanation: "The object/subject line sets the topic before you read anything else. In a timed test, reading it first helps you approach the text with context — you already know what to look for.",
-  },
-  {
-    question: "SLE reading texts use 'registre soutenu' (formal register). This means you will encounter:",
-    options: [
-      "Informal expressions and colloquialisms",
-      "Passive voice, complex sentence structures, and technical/administrative vocabulary",
-      "Short, simple sentences designed for quick reading",
-      "Mostly English loanwords",
-    ],
+    question: "'_____ les ressources soient limitées, le projet sera maintenu.' Which connector works here?",
+    options: ["Étant donné que", "Bien que", "Il convient de", "À cet égard"],
     correct: 1,
-    explanation: "Government French is formal and bureaucratic — passive voice ('il a été décidé que'), nominalization ('la mise en œuvre'), and long embedded clauses are common. Practice reading real government documents in French.",
+    explanation: "'Bien que' = although — it requires the subjunctive ('soient'). 'Bien que les ressources soient limitées' = although resources are limited. 'Étant donné que' means 'given that' and takes the indicative, not the subjunctive.",
+  },
+  {
+    question: "Government French converts verbs to nouns constantly. 'Mettre en œuvre' becomes:",
+    options: ["la mise en œuvre", "le mettre en œuvre", "la mettant en œuvre", "l'œuvrement"],
+    correct: 0,
+    explanation: "Nominalization: 'mettre en œuvre' → 'la mise en œuvre' (implementation). Other examples: procéder → la procédure · décider → la décision · recommander → la recommandation. Recognizing these makes long sentences much easier to parse.",
   },
 ];
 
@@ -97,83 +79,77 @@ export default function SLELesson2Page() {
               Unit 1 · Lesson 2
             </p>
             <h1 className="mt-3 text-5xl font-black tracking-tight md:text-6xl">
-              Reading Test Strategies
+              Formal Grammar
             </h1>
             <p className="mt-4 text-lg leading-8 text-[#526173]">
-              The SLE reading test uses authentic government texts — memos, briefing notes, policies, and reports. The questions are multiple choice, but the language is dense. Know how to navigate it efficiently.
+              Government French is dense because it uses three specific structures constantly: passive voice, nominalization, and complex relative pronouns. Master these and long bureaucratic sentences become readable.
             </p>
           </div>
 
           <div className="space-y-3">
             <div className="rounded-2xl bg-[#0B1F3A] p-5 text-white">
-              <p className="text-xs font-bold text-[#C9A44C]">Key idea</p>
-              <p className="mt-2 leading-7 text-white/80">
-                Read the{" "}
-                <span className="font-black text-white">question first</span>, then scan the text for the answer. Government reading texts are long — you don&apos;t need to read every word for every question.
-              </p>
+              <p className="text-xs font-bold text-[#C9A44C]">The three patterns</p>
+              <div className="mt-2 space-y-2 text-sm text-white/80">
+                <p><span className="font-black text-white">Passive voice</span> — 'La décision a été prise par…'</p>
+                <p><span className="font-black text-white">Nominalization</span> — procéder → la procédure</p>
+                <p><span className="font-black text-white">Complex relatives</span> — dont, lequel, auxquelles</p>
+              </div>
             </div>
             <div className="rounded-2xl border border-[#E7DAB9] bg-white p-5">
-              <p className="text-xs font-bold text-[#526173]">What the levels test</p>
+              <p className="text-xs font-bold text-[#526173]">Impersonal constructions</p>
               <div className="mt-2 space-y-1 text-sm">
-                <p><strong>Level A:</strong> Basic vocabulary, short clear sentences</p>
-                <p><strong>Level B:</strong> Longer texts, complex vocabulary, explicit detail</p>
-                <p><strong>Level C:</strong> Abstract language, implied meaning, cross-references</p>
+                <p>Il convient de… → It is appropriate to…</p>
+                <p>Il y a lieu de… → There are grounds to…</p>
+                <p>Il est à noter que… → It is to be noted that…</p>
               </div>
             </div>
           </div>
         </div>
 
         <section className="mt-16">
-          <h2 className="text-2xl font-black">Key vocabulary</h2>
-          <p className="mt-1 text-[#526173]">Click a card to flip it. Know the text types and strategies.</p>
+          <h2 className="text-2xl font-black">Structures in context</h2>
+          <p className="mt-1 text-[#526173]">Every card shows the structure in a real government sentence. Flip to see the English and the explanation.</p>
           <div className="mt-6">
-            <FlashCardDeck cards={flashcards} title="SLE reading — text types & strategies" />
+            <FlashCardDeck cards={flashcards} title="Formal grammar — passive, nominalization, connectors" />
           </div>
         </section>
 
         <section className="mt-16">
           <h2 className="text-2xl font-black">Match the pairs</h2>
-          <p className="mt-1 text-[#526173]">Match each term to its meaning.</p>
+          <p className="mt-1 text-[#526173]">Match each formal phrase to its English equivalent.</p>
           <div className="mt-6">
-            <MatchPairs pairs={matchPairs} title="Reading vocabulary" />
+            <MatchPairs pairs={matchPairs} title="Formal grammar phrases" />
           </div>
         </section>
 
         <section className="mt-16 rounded-[2rem] border-2 border-[#FEF3C7] bg-white p-8">
-          <p className="text-xs font-bold uppercase tracking-widest text-[#D97706]">Preparation tip</p>
-          <h2 className="mt-2 text-xl font-black">Read real government documents in French</h2>
-          <p className="mt-3 leading-7 text-[#526173]">
-            The PSC writes SLE reading texts to look exactly like real federal documents. The best way to prepare is to read the real thing. Try:
+          <p className="text-xs font-bold uppercase tracking-widest text-[#D97706]">Breaking down a real government sentence</p>
+          <p className="mt-3 text-lg italic text-[#526173] leading-8">
+            &ldquo;Il convient de noter que les mesures auxquelles il est fait référence ont été approuvées sous réserve de la conformité aux lignes directrices établies par le Conseil du Trésor.&rdquo;
           </p>
-          <ul className="mt-3 space-y-2 text-sm text-[#526173]">
-            {[
-              "canada.ca — read bilingual pages in French",
-              "Reports tabled in Parliament (Rapports au Parlement)",
-              "Treasury Board policy documents (Politique sur la gestion financière, etc.)",
-              "Any federal department's 'rapports annuels' (annual reports)",
-              "The Canada Gazette (Gazette du Canada) for regulatory language",
-            ].map((tip) => (
-              <li key={tip} className="flex items-start gap-2">
-                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#C9A44C]" />
-                {tip}
-              </li>
-            ))}
-          </ul>
+          <div className="mt-5 space-y-2 text-sm text-[#526173]">
+            <p><strong className="text-[#0B1F3A]">Il convient de noter que</strong> → It should be noted that</p>
+            <p><strong className="text-[#0B1F3A]">les mesures auxquelles il est fait référence</strong> → the measures referred to (auxquelles = à + lesquelles)</p>
+            <p><strong className="text-[#0B1F3A]">ont été approuvées</strong> → were approved (passive, passé composé)</p>
+            <p><strong className="text-[#0B1F3A]">sous réserve de la conformité</strong> → subject to compliance</p>
+            <p><strong className="text-[#0B1F3A]">aux lignes directrices établies par le Conseil du Trésor</strong> → with the guidelines established by the Treasury Board</p>
+            <p className="mt-3 font-black text-[#0B1F3A]">Full meaning: It should be noted that the measures referred to were approved subject to compliance with the guidelines established by the Treasury Board.</p>
+          </div>
         </section>
 
         <section className="mt-12">
-          <h2 className="text-2xl font-black">Quick quiz</h2>
-          <p className="mt-1 text-[#526173]">Test your reading strategies.</p>
+          <h2 className="text-2xl font-black">Apply the grammar</h2>
+          <p className="mt-1 text-[#526173]">Test yourself on passive voice, relative pronouns, and formal impersonal constructions.</p>
           <div className="mt-6">
-            <MultipleChoiceQuiz questions={quiz} title="Reading strategies quiz" />
+            <MultipleChoiceQuiz questions={quiz} title="Formal grammar quiz" />
           </div>
         </section>
 
         <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
           <p className="text-sm font-bold uppercase tracking-widest text-[#D97706]">Done!</p>
-          <h2 className="mt-3 text-3xl font-black">Reading strategies in place.</h2>
+          <h2 className="mt-3 text-3xl font-black">Formal grammar mastered.</h2>
           <p className="mt-3 leading-7 text-[#526173]">
-            Next: the SLE writing test and oral interaction — what they assess and how to prepare.
+            Next: writing government documents — the phrases, formulas, and structures for the SLE writing test.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link href="/learn/canadian-french-tests/unit-1/lesson-1" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">

@@ -4,77 +4,83 @@ import MatchPairs from "@/components/MatchPairs";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const flashcards = [
-  { front: "TEF Canada", back: "Test d'évaluation de français pour le Canada", subtext: "The most widely used French language test for Canadian immigration. Recognized by IRCC for Express Entry, PNP, and citizenship applications." },
-  { front: "TCF Canada", back: "Test de connaissance du français pour le Canada", subtext: "The other IRCC-recognized French test for immigration. Equivalent to TEF Canada — you choose which one to take. Both give CLB scores." },
-  { front: "CLB", back: "Canadian Language Benchmarks", subtext: "Canada's official scale for measuring language proficiency, from CLB 1 (beginner) to CLB 12 (advanced). Immigration decisions are based on CLB levels, not raw test scores." },
-  { front: "IRCC", back: "Immigration, Refugees and Citizenship Canada", subtext: "The federal department that manages immigration. IRCC accepts TEF Canada or TCF Canada scores as proof of French proficiency for immigration applications." },
-  { front: "Express Entry", back: "Express Entry", subtext: "Canada's main immigration system for skilled workers. French proficiency can earn up to 50 bonus CRS points (single) or 25 points (with an Anglophone spouse). CLB 7 minimum is required to earn any points." },
-  { front: "CRS", back: "Comprehensive Ranking System", subtext: "The points-based system used in Express Entry. Your CRS score determines if you receive an invitation to apply (ITA). French scores contribute directly to your CRS." },
-  { front: "les quatre habiletés", back: "the four skills", subtext: "TEF Canada and TCF Canada test four skills: compréhension de l'oral (listening), compréhension de l'écrit (reading), expression écrite (writing), expression orale (speaking)." },
-  { front: "CLB 7", back: "CLB 7 — Express Entry minimum", subtext: "The minimum score in all four skills to qualify under the Federal Skilled Worker Program (FSW). Below CLB 7 in any skill = no points from that skill." },
-  { front: "CLB 9", back: "CLB 9 — significant CRS boost", subtext: "CLB 9 in all four skills means you are counted as a strong bilingual candidate. CRS points increase significantly above CLB 7, maximizing your Express Entry score." },
-  { front: "le Programme des travailleurs qualifiés", back: "Federal Skilled Worker Program (FSW)", subtext: "The main Express Entry stream. Requires CLB 7 minimum in all four language skills if French is the primary language tested." },
+  { front: "le réchauffement climatique", back: "global warming", subtext: "Appears in almost every TEF Canada environmental text. 'Les effets du réchauffement climatique se font sentir partout.' = The effects of global warming are being felt everywhere." },
+  { front: "le développement durable", back: "sustainable development", subtext: "'Concilier développement économique et développement durable.' = Reconciling economic development and sustainable development. A central concept across environment, society, and economics texts." },
+  { front: "l'empreinte carbone (f)", back: "carbon footprint", subtext: "'Réduire son empreinte carbone.' = To reduce one's carbon footprint. Related: les émissions de gaz à effet de serre (greenhouse gas emissions), la décarbonation (decarbonization)." },
+  { front: "les inégalités sociales (f pl)", back: "social inequalities", subtext: "'Les inégalités sociales se creusent.' = Social inequalities are widening. 'Se creuser' = to widen/deepen. A very common structure for talking about growing problems." },
+  { front: "l'intégration (f)", back: "integration (social)", subtext: "'Les politiques d'intégration des immigrants.' = Immigrant integration policies. Linked to immigration texts — very relevant to candidates taking TEF Canada for immigration purposes." },
+  { front: "la cohésion sociale", back: "social cohesion", subtext: "'La diversité culturelle renforce la cohésion sociale.' = Cultural diversity strengthens social cohesion. A theme in both society and politics texts in TEF Canada." },
+  { front: "l'intelligence artificielle (f)", back: "artificial intelligence (AI)", subtext: "'L'intelligence artificielle transforme le marché du travail.' = AI is transforming the labour market. Technology texts are among the most common in TEF Canada reading and listening sections." },
+  { front: "la vie privée / la confidentialité", back: "privacy / confidentiality", subtext: "'La collecte de données soulève des questions de vie privée.' = Data collection raises privacy concerns. TEF Canada technology texts frequently discuss privacy, data, and digital rights." },
+  { front: "la santé publique", back: "public health", subtext: "'Les mesures de santé publique ont permis de limiter la propagation.' = Public health measures helped limit the spread. Health texts are common — know public health vocabulary." },
+  { front: "le système de soins de santé", back: "healthcare system", subtext: "'Le financement du système de soins de santé.' = Funding the healthcare system. Canada's healthcare is a frequent topic — l'accès aux soins (access to care), les temps d'attente (wait times)." },
+  { front: "le marché du travail", back: "labour market / job market", subtext: "'Les transformations du marché du travail à l'ère numérique.' = Labour market transformations in the digital age. Links technology, society, and economics topics." },
+  { front: "la mondialisation", back: "globalization", subtext: "'Les effets de la mondialisation sur les économies locales.' = The effects of globalization on local economies. Appears in economics, society, and politics texts." },
+  { front: "la citoyenneté", back: "citizenship", subtext: "'L'acquisition de la citoyenneté canadienne nécessite une connaissance du français.' = Acquiring Canadian citizenship requires knowledge of French. Directly relevant to TEF Canada candidates." },
+  { front: "le bénévolat", back: "volunteering", subtext: "'Le bénévolat contribue au tissu social.' = Volunteering contributes to the social fabric. A recurring theme in society and civic participation texts." },
 ];
 
 const matchPairs = [
-  { left: "TEF Canada", right: "Test d'évaluation de français pour le Canada" },
-  { left: "CLB", right: "Canadian Language Benchmarks (1–12)" },
-  { left: "IRCC", right: "Immigration, Refugees and Citizenship Canada" },
-  { left: "CRS", right: "Comprehensive Ranking System (Express Entry points)" },
-  { left: "CLB 7", right: "Express Entry minimum in each skill" },
-  { left: "CLB 9", right: "significant CRS boost — strong bilingual candidate" },
+  { left: "le réchauffement climatique", right: "global warming" },
+  { left: "le développement durable", right: "sustainable development" },
+  { left: "l'empreinte carbone", right: "carbon footprint" },
+  { left: "les inégalités sociales", right: "social inequalities" },
+  { left: "l'intelligence artificielle", right: "artificial intelligence" },
+  { left: "la santé publique", right: "public health" },
+  { left: "la mondialisation", right: "globalization" },
+  { left: "la cohésion sociale", right: "social cohesion" },
 ];
 
 const quiz = [
   {
-    question: "Which two French language tests are recognized by IRCC for Canadian immigration?",
+    question: "'Les _____ sociales se creusent depuis plusieurs décennies.' Which word fills the gap?",
+    options: ["cohésions", "inégalités", "mondialisation", "bénévolats"],
+    correct: 1,
+    explanation: "'Les inégalités sociales se creusent.' = Social inequalities are widening. 'Se creuser' (to deepen/widen) is the verb commonly used with inequalities, gaps, and divides in French texts. Know this construction.",
+  },
+  {
+    question: "A TEF Canada listening text discusses 'la collecte de données et ses effets sur la vie privée.' This text is most likely about:",
     options: [
-      "DELF and DALF",
-      "TEF Canada and TCF Canada",
-      "SLE and TEF Canada",
-      "Alliance française and TEF Canada",
+      "Environmental policy",
+      "Technology and digital rights / privacy",
+      "Public health",
+      "Agricultural practices",
     ],
     correct: 1,
-    explanation: "IRCC recognizes TEF Canada (Test d'évaluation de français) and TCF Canada (Test de connaissance du français) for immigration purposes. You choose which one to take — both give CLB scores.",
+    explanation: "'La collecte de données' (data collection) and 'la vie privée' (privacy) are technology topic markers. TEF Canada technology texts frequently deal with data, privacy, AI, and digital transformation.",
   },
   {
-    question: "What does CLB stand for, and what is the scale?",
+    question: "Choose the sentence about sustainable development that is correctly structured:",
     options: [
-      "Canadian Language Benchmark — scale from 1 to 10",
-      "Canadian Language Benchmark — scale from 1 to 12",
-      "Certified Language Band — scale from A to C",
-      "Canadian Literacy Band — scale from 1 to 7",
+      "'Le développement durable est un développement qui durable.'",
+      "'Concilier croissance économique et développement durable est un défi majeur de notre époque.'",
+      "'Le développement est durable si on développe.'",
+      "'La durabilité développe l'économie durablement.'",
     ],
     correct: 1,
-    explanation: "CLB = Canadian Language Benchmarks, from CLB 1 (beginner) to CLB 12 (advanced). All immigration French test scores are converted to CLB levels — this is the number IRCC uses.",
+    explanation: "'Concilier [X] et [Y]' = to reconcile / balance X and Y. 'Concilier croissance économique et développement durable est un défi majeur' is a well-constructed, idiomatic sentence that could appear directly in a TEF Canada text.",
   },
   {
-    question: "Under Express Entry (Federal Skilled Worker), what is the minimum CLB level required in each of the four skills to earn any language points?",
-    options: ["CLB 4", "CLB 5", "CLB 6", "CLB 7"],
-    correct: 3,
-    explanation: "CLB 7 is the FSW minimum in each of the four skills (listening, reading, writing, speaking). Scoring below CLB 7 in any skill means zero language points from that skill in your CRS score.",
-  },
-  {
-    question: "French proficiency can earn bonus CRS points in Express Entry because:",
+    question: "'Les transformations du marché du travail à l'ère numérique touchent de nombreux secteurs.' What does this sentence discuss?",
     options: [
-      "All federal jobs in Canada require bilingualism",
-      "Canada has an economic interest in attracting French-speaking immigrants, especially for Quebec and francophone communities",
-      "French scores replace English IELTS requirements",
-      "The CRS system awards points for every language spoken",
+      "Wage negotiations in traditional industries",
+      "How the digital age is changing the job market across many sectors",
+      "The end of the labour market",
+      "Social media and its effect on youth employment",
     ],
     correct: 1,
-    explanation: "Canada has a policy goal of attracting French-speaking immigrants — particularly outside Quebec — to support French-speaking minority communities. This is reflected in up to 50 bonus CRS points for strong French scores.",
+    explanation: "'Les transformations du marché du travail' = changes in the labour market. 'À l'ère numérique' = in the digital age. 'Toucher de nombreux secteurs' = to affect many sectors. This sentence connects technology and employment — a very common TEF Canada theme.",
   },
   {
-    question: "TEF Canada and TCF Canada are different tests but:",
+    question: "Which word means 'to reduce one's carbon footprint'?",
     options: [
-      "TEF Canada is easier and more widely accepted",
-      "TCF Canada is only for Quebec immigration",
-      "Both are recognized by IRCC and produce CLB scores — you choose which to take",
-      "You must take both to get the full French bonus in Express Entry",
+      "'agrandir son empreinte carbone'",
+      "'réduire son empreinte carbone'",
+      "'calculer son empreinte carbone'",
+      "'partager son empreinte carbone'",
     ],
-    correct: 2,
-    explanation: "TEF Canada and TCF Canada are both IRCC-recognized and produce equivalent CLB scores. Candidates choose based on availability, familiarity, or personal preference. Taking both is unnecessary.",
+    correct: 1,
+    explanation: "'Réduire son empreinte carbone' = to reduce one's carbon footprint. TEF Canada environmental texts will ask you to answer questions about what a speaker or text says should be done — understanding 'réduire', 'limiter', 'diminuer' vs 'augmenter', 'accroître' is essential.",
   },
 ];
 
@@ -92,84 +98,61 @@ export default function TEFLesson1Page() {
               Unit 2 · Lesson 1
             </p>
             <h1 className="mt-3 text-5xl font-black tracking-tight md:text-6xl">
-              CLB Levels & Immigration Requirements
+              Topic Vocabulary
             </h1>
             <p className="mt-4 text-lg leading-8 text-[#526173]">
-              TEF Canada and TCF Canada are the two IRCC-recognized French tests for Canadian immigration. Both give CLB scores — and CLB scores determine how many CRS points you earn in Express Entry.
+              TEF Canada reading and listening texts draw from the same recurring themes: environment, society, technology, health, and work. The vocabulary in this lesson appears across all four test sections.
             </p>
           </div>
 
           <div className="space-y-3">
             <div className="rounded-2xl bg-[#0B1F3A] p-5 text-white">
-              <p className="text-xs font-bold text-[#C9A44C]">Key idea</p>
+              <p className="text-xs font-bold text-[#C9A44C]">Why this matters</p>
               <p className="mt-2 leading-7 text-white/80">
-                IRCC does not use raw TEF/TCF scores — it converts them to{" "}
-                <span className="font-black text-white">CLB levels</span>. Your immigration application is assessed based on CLB, not the test&apos;s own scale.
+                You can&apos;t answer a comprehension question about a text you can&apos;t follow. These 14 words and phrases cover the most frequent TEF Canada themes — knowing them turns confusing texts into readable ones.
               </p>
             </div>
             <div className="rounded-2xl border border-[#E7DAB9] bg-white p-5">
-              <p className="text-xs font-bold text-[#526173]">Express Entry French bonus</p>
+              <p className="text-xs font-bold text-[#526173]">The four main themes</p>
               <div className="mt-2 space-y-1 text-sm">
-                <p><strong>CLB 7–8:</strong> moderate CRS bonus</p>
-                <p><strong>CLB 9+:</strong> significant CRS boost</p>
-                <p><strong>CLB 7 minimum</strong> in all 4 skills to earn any points</p>
-                <p className="mt-2 text-[#526173]">Up to 50 bonus points (single applicant)</p>
+                <p>🌱 <strong>Environment:</strong> climat, émissions, durabilité</p>
+                <p>🏙️ <strong>Society:</strong> inégalités, cohésion, citoyenneté</p>
+                <p>💻 <strong>Technology:</strong> IA, données, vie privée</p>
+                <p>🏥 <strong>Health & work:</strong> santé publique, marché du travail</p>
               </div>
             </div>
           </div>
         </div>
 
         <section className="mt-16">
-          <h2 className="text-2xl font-black">Key vocabulary</h2>
-          <p className="mt-1 text-[#526173]">Click a card to flip it. Understand the tests and the immigration system.</p>
+          <h2 className="text-2xl font-black">Learn the vocabulary</h2>
+          <p className="mt-1 text-[#526173]">Every card includes a real sentence from the kind of text you&apos;ll encounter in TEF Canada. Flip to see the English and the explanation.</p>
           <div className="mt-6">
-            <FlashCardDeck cards={flashcards} title="TEF Canada — CLB & immigration" />
+            <FlashCardDeck cards={flashcards} title="TEF Canada — topic vocabulary" />
           </div>
         </section>
 
-        <section className="mt-16 rounded-[2rem] border-2 border-[#EFF6FF] bg-white p-8">
-          <p className="text-xs font-bold uppercase tracking-widest text-[#2563EB]">CLB levels explained</p>
-          <h2 className="mt-2 text-xl font-black">What each level means for immigration</h2>
-          <div className="mt-5 space-y-3">
-            {[
-              { range: "CLB 1–3", label: "Beginner", color: "bg-[#FEE2E2] text-[#B91C1C]", note: "Not sufficient for any immigration pathway requiring language proficiency." },
-              { range: "CLB 4–6", label: "Intermediate", color: "bg-[#FEF3C7] text-[#D97706]", note: "Meets minimum requirements for some Provincial Nominee Programs. Not enough for Express Entry FSW." },
-              { range: "CLB 7–8", label: "Upper Intermediate", color: "bg-[#EFF6FF] text-[#2563EB]", note: "Meets the Express Entry FSW minimum. Earns moderate CRS bonus points. Citizenship requirement level." },
-              { range: "CLB 9–10", label: "Advanced", color: "bg-[#F0FDF4] text-[#16A34A]", note: "Significant CRS boost. Demonstrates strong professional proficiency. Highly competitive Express Entry profile." },
-              { range: "CLB 11–12", label: "Near-native", color: "bg-[#FDF4FF] text-[#9333EA]", note: "Maximum French proficiency. Maximizes all available CRS French bonus points." },
-            ].map((level) => (
-              <div key={level.range} className="flex items-start gap-4 rounded-2xl border border-[#E7DAB9] p-4">
-                <div className="text-center">
-                  <span className={`inline-block rounded-full px-3 py-1 text-xs font-black ${level.color}`}>{level.range}</span>
-                  <p className="mt-1 text-xs font-bold text-[#526173]">{level.label}</p>
-                </div>
-                <p className="text-sm leading-6 text-[#526173]">{level.note}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <section className="mt-12">
+        <section className="mt-16">
           <h2 className="text-2xl font-black">Match the pairs</h2>
-          <p className="mt-1 text-[#526173]">Match each term to its meaning.</p>
+          <p className="mt-1 text-[#526173]">Match each French term to its English meaning.</p>
           <div className="mt-6">
-            <MatchPairs pairs={matchPairs} title="TEF Canada & CLB terminology" />
+            <MatchPairs pairs={matchPairs} title="Topic vocabulary" />
           </div>
         </section>
 
-        <section className="mt-12">
-          <h2 className="text-2xl font-black">Quick quiz</h2>
-          <p className="mt-1 text-[#526173]">Test your knowledge of CLB levels and immigration requirements.</p>
+        <section className="mt-16">
+          <h2 className="text-2xl font-black">Vocabulary in context</h2>
+          <p className="mt-1 text-[#526173]">Each question uses these words in the kind of sentence that appears in TEF Canada texts.</p>
           <div className="mt-6">
-            <MultipleChoiceQuiz questions={quiz} title="CLB & immigration quiz" />
+            <MultipleChoiceQuiz questions={quiz} title="Topic vocabulary quiz" />
           </div>
         </section>
 
         <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
           <p className="text-sm font-bold uppercase tracking-widest text-[#2563EB]">Done!</p>
-          <h2 className="mt-3 text-3xl font-black">CLB system understood.</h2>
+          <h2 className="mt-3 text-3xl font-black">Topic vocabulary built.</h2>
           <p className="mt-3 leading-7 text-[#526173]">
-            Next: strategies for the TEF Canada listening and reading sections.
+            Next: the opinion and argumentation phrases you need to score well on TEF Canada speaking and writing.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link href="/learn/canadian-french-tests/unit-1/test" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">

@@ -4,82 +4,74 @@ import MatchPairs from "@/components/MatchPairs";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const flashcards = [
-  { front: "la compréhension de l'oral", back: "listening comprehension", subtext: "TEF Canada: ~40 questions, ~40 minutes. You hear audio texts — conversations, announcements, interviews, news segments — and answer multiple-choice questions." },
-  { front: "la compréhension de l'écrit", back: "reading comprehension", subtext: "TEF Canada: ~50 questions, ~60 minutes. Texts range from everyday documents to journalistic and formal articles. Questions cover main idea, detail, vocabulary in context, and implied meaning." },
-  { front: "l'idée principale", back: "main idea", subtext: "A key question type in both listening and reading. Identify what the whole text or audio is about — not a specific detail, but the overall message or purpose." },
-  { front: "la question de détail", back: "detail question", subtext: "The most common question type. A specific fact, name, date, number, or event is asked about. The answer is explicitly stated in the text or audio." },
-  { front: "le vocabulaire en contexte", back: "vocabulary in context", subtext: "A word or phrase from the text is given, and you identify its meaning based on how it's used — not its general dictionary definition. Use surrounding sentences as clues." },
-  { front: "le sens implicite / inférer", back: "implied meaning / to infer", subtext: "Higher-level questions ask what the text suggests but doesn't say directly. Read between the lines — the answer is supported by the text but not stated word-for-word." },
-  { front: "la première écoute", back: "first listen", subtext: "TEF Canada audio plays only ONCE. You don't get a second listen — unlike the IB. Take notes as you listen the first time." },
-  { front: "prendre des notes", back: "to take notes", subtext: "Essential for the listening test. Write key words — names, numbers, locations, opinions — while you listen. You won't hear the audio again." },
-  { front: "les distracteurs", back: "distractors", subtext: "Wrong answer options designed to look plausible. They often use words from the text in a misleading way. Always verify your answer against the text before committing." },
-  { front: "la progression du texte", back: "text structure / progression", subtext: "Recognizing how a text is organized (chronological, problem-solution, for-and-against) helps you predict where information is located and answer quickly." },
+  { front: "À mon avis, / Selon moi, / À mon sens,", back: "In my opinion, / In my view,", subtext: "The three safest ways to introduce a personal opinion. 'À mon avis, les énergies renouvelables sont la solution.' Use one — don't use all three in the same text." },
+  { front: "Il me semble que…", back: "It seems to me that…", subtext: "Softer than 'je pense que'. 'Il me semble que cette approche est insuffisante.' = It seems to me that this approach is insufficient. Expresses an opinion with slight uncertainty." },
+  { front: "Je suis convaincu(e) que…", back: "I am convinced that…", subtext: "Stronger than 'je pense que'. 'Je suis convaincu que des mesures urgentes sont nécessaires.' Use this when you want to express a firm, well-argued position." },
+  { front: "D'une part… d'autre part…", back: "On one hand… on the other hand…", subtext: "The classic two-sided structure. 'D'une part, la technologie crée des emplois ; d'autre part, elle en supprime d'autres.' = On one hand, technology creates jobs; on the other, it eliminates others." },
+  { front: "Certes… mais…", back: "Admittedly… but…", subtext: "Acknowledges the opposing view before countering it. 'Certes, le progrès technologique est inévitable, mais ses effets sociaux méritent une attention particulière.' Examiners reward this structure — it shows nuance." },
+  { front: "Il faut admettre que… / Il convient de reconnaître que…", back: "One must admit that… / One must acknowledge that…", subtext: "More formal version of 'certes'. 'Il faut admettre que la situation est complexe.' Introduces a concession — the point you're granting to the other side before making your own." },
+  { front: "Par conséquent, / Ainsi, / C'est pourquoi,", back: "Therefore, / Thus, / That is why,", subtext: "Signals a conclusion drawn from evidence. 'Les émissions ont augmenté de 3%. Par conséquent, des mesures immédiates s'imposent.' These three are interchangeable but have slightly different weights." },
+  { front: "Cela dit, / Cependant, / Néanmoins, / Toutefois,", back: "That said, / However, / Nevertheless, / Yet,", subtext: "Four ways to introduce a contrast or qualification. 'Cela dit' is more conversational; 'Néanmoins' and 'Toutefois' are more formal and impressive in writing." },
+  { front: "Il est indéniable que…", back: "It is undeniable that…", subtext: "Strong, confident claim. 'Il est indéniable que le changement climatique constitue une menace pour la biodiversité.' Use when your position is well-supported and you want to sound authoritative." },
+  { front: "Force est de constater que…", back: "One cannot help but notice that…", subtext: "A sophisticated phrase — signals that the evidence speaks for itself. 'Force est de constater que les inégalités persistent malgré les politiques mises en place.' Immediately signals B2+ level French." },
+  { front: "Il va sans dire que…", back: "It goes without saying that…", subtext: "Introduces something you're presenting as obvious or self-evident. 'Il va sans dire qu'une bonne maîtrise du français est indispensable.' A hallmark of confident, upper-register writing." },
+  { front: "Il est à craindre que… (+ subjonctif)", back: "There is reason to fear that… (+ subjunctive)", subtext: "'Il est à craindre que la situation ne s'aggrave.' = There is reason to fear that the situation may worsen. 'Craindre que' takes the subjunctive. A formal way to express concern or risk." },
 ];
 
 const matchPairs = [
-  { left: "la compréhension de l'oral", right: "listening — audio plays once" },
-  { left: "l'idée principale", right: "main idea of the whole text" },
-  { left: "la question de détail", right: "specific fact explicitly stated" },
-  { left: "le vocabulaire en contexte", right: "word meaning from surrounding text" },
-  { left: "prendre des notes", right: "write key words while listening" },
-  { left: "les distracteurs", right: "misleading wrong answer options" },
+  { left: "À mon avis,", right: "In my opinion," },
+  { left: "Je suis convaincu(e) que…", right: "I am convinced that…" },
+  { left: "Certes… mais…", right: "Admittedly… but…" },
+  { left: "Par conséquent,", right: "Therefore," },
+  { left: "Force est de constater que…", right: "One cannot help but notice that…" },
+  { left: "Il va sans dire que…", right: "It goes without saying that…" },
 ];
 
 const quiz = [
   {
-    question: "TEF Canada listening audio plays how many times?",
+    question: "You are writing a TEF Canada Task 2 response arguing that social media harms young people. Which sentence best introduces your position?",
     options: [
-      "Twice — you get a second listen for details",
-      "Three times at progressively slower speed",
-      "Once — take notes as you listen",
-      "As many times as you need — the test is self-paced",
-    ],
-    correct: 2,
-    explanation: "TEF Canada audio plays ONCE. This is different from some other tests. You must take notes during the first (and only) listen — write key words, numbers, names, and opinions.",
-  },
-  {
-    question: "A TEF Canada reading question gives you the word 'démarche' from the text and asks what it means. The best approach is:",
-    options: [
-      "Choose the most common dictionary definition",
-      "Skip it — vocabulary questions are a gamble",
-      "Read the sentences around 'démarche' in the text to understand how it's used in context",
-      "Look for a French synonym earlier in the text",
-    ],
-    correct: 2,
-    explanation: "Vocabulary-in-context questions are not testing your dictionary knowledge — they're testing your ability to infer meaning from context. Read the surrounding sentences. The author usually provides clues.",
-  },
-  {
-    question: "You are answering a TEF Canada listening question and two options both seem plausible. What should you do?",
-    options: [
-      "Pick the one that uses words you heard in the audio",
-      "Pick the longer option",
-      "Think about which one is explicitly supported by what the speaker actually said",
-      "Pick the first option — early options are statistically correct more often",
-    ],
-    correct: 2,
-    explanation: "Distractors often use words from the audio in a misleading way — this makes them sound right. Always ask: 'Is this what the speaker actually said?' Go with the option that is explicitly supported by the audio content.",
-  },
-  {
-    question: "A TEF Canada reading question asks for 'l'idée principale' of the text. You should:",
-    options: [
-      "Find the first sentence — it's always the main idea",
-      "Identify what the whole text is about — the central message, not a specific detail",
-      "Find the longest paragraph and summarize it",
-      "Answer based on the title alone",
+      "'Je pense que les réseaux sociaux sont mauvais pour les jeunes.'",
+      "'Je suis convaincu(e) que l'usage excessif des réseaux sociaux nuit au bien-être des jeunes, comme en témoignent de nombreuses études.'",
+      "'Les réseaux sociaux sont mauvais c'est sûr.'",
+      "'Tout le monde sait que les réseaux sociaux sont dangereux.'",
     ],
     correct: 1,
-    explanation: "Main idea questions ask what the whole text is fundamentally about. The answer is the most general, encompassing option — not a specific fact or example from one paragraph. Eliminate options that only describe one part of the text.",
+    explanation: "'Je suis convaincu(e) que…, comme en témoignent de nombreuses études' = I am convinced that…, as shown by numerous studies. This gives a clear opinion + evidence signal. The examiner sees a structured argument, not just a claim.",
   },
   {
-    question: "Which strategy is most effective for the TEF Canada reading section?",
+    question: "You want to show both sides of an argument about globalization. Which structure is best?",
     options: [
-      "Read the entire text carefully before looking at any questions",
-      "Answer all questions from memory without re-reading",
-      "Read each question first, then locate the relevant section of the text to find the answer",
-      "Read the last paragraph first — it usually contains the main idea",
+      "'La mondialisation est bonne et mauvaise.'",
+      "'D'une part, la mondialisation favorise les échanges économiques ; d'autre part, elle peut fragiliser les industries locales.'",
+      "'La mondialisation, c'est compliqué.'",
+      "'Je pense que la mondialisation est bonne mais aussi mauvaise parfois.'",
     ],
+    correct: 1,
+    explanation: "'D'une part… d'autre part…' is the correct two-sided structure. Notice the use of the semicolon between clauses — this is how high-scoring TEF candidates structure balanced arguments. The examiner can immediately see your organisation.",
+  },
+  {
+    question: "Which sentence correctly uses 'Certes… mais…'?",
+    options: [
+      "'Certes c'est vrai mais c'est aussi faux.'",
+      "'Certes, les énergies renouvelables représentent un coût initial élevé, mais elles permettent des économies significatives à long terme.'",
+      "'Certes je suis d'accord mais pas vraiment.'",
+      "'Certes et donc c'est pourquoi mais néanmoins.'",
+    ],
+    correct: 1,
+    explanation: "'Certes, [concession], mais [counter-argument].' — This structure signals: I acknowledge the opposing point, AND here is why my position stands. The examiner sees critical thinking and nuance. This single structure can raise your writing score significantly.",
+  },
+  {
+    question: "'Les émissions de CO₂ ont atteint un niveau record cette année. _____, des mesures urgentes s'imposent.' Which connector fits best?",
+    options: ["D'une part", "Certes", "Par conséquent", "Il me semble"],
     correct: 2,
-    explanation: "Read the question first, then locate the relevant section. TEF Canada texts are often long — you don't have time to read every word before every question. Targeted scanning is faster and just as accurate.",
+    explanation: "'Par conséquent' = therefore. It signals a logical conclusion drawn from the evidence presented in the first sentence. 'Par conséquent, des mesures urgentes s'imposent' = Therefore, urgent measures are necessary.",
+  },
+  {
+    question: "'_____ constater que les politiques actuelles sont insuffisantes pour atteindre les objectifs climatiques.' Which phrase fits?",
+    options: ["Il va sans dire que", "Force est de", "Il est à craindre de", "Il convient de reconnaître"],
+    correct: 1,
+    explanation: "'Force est de constater que…' = One cannot help but notice that / The evidence compels us to note that. This is a fixed phrase — you can't split it. 'Force est de constater que les politiques sont insuffisantes' immediately signals upper-register French.",
   },
 ];
 
@@ -97,101 +89,76 @@ export default function TEFLesson2Page() {
               Unit 2 · Lesson 2
             </p>
             <h1 className="mt-3 text-5xl font-black tracking-tight md:text-6xl">
-              Listening & Reading Strategies
+              Opinion & Argument
             </h1>
             <p className="mt-4 text-lg leading-8 text-[#526173]">
-              TEF Canada listening and reading tests are both multiple choice. The audio plays once. Knowing question types and strategies before test day separates the candidates who score CLB 7+ from those who don&apos;t.
+              TEF Canada writing and speaking both require you to give opinions, acknowledge opposing views, and build arguments. These phrases don&apos;t just help you express ideas — they show the examiner you can think in French.
             </p>
           </div>
 
           <div className="space-y-3">
             <div className="rounded-2xl bg-[#0B1F3A] p-5 text-white">
-              <p className="text-xs font-bold text-[#C9A44C]">Key idea</p>
-              <p className="mt-2 leading-7 text-white/80">
-                For listening: <span className="font-black text-white">take notes</span> — the audio only plays once. For reading: <span className="font-black text-white">read the question first</span>, then scan. Both tests reward efficiency over thoroughness.
-              </p>
+              <p className="text-xs font-bold text-[#C9A44C]">The three moves</p>
+              <div className="mt-2 space-y-2 text-sm text-white/80">
+                <p><span className="font-black text-white">State your position</span> — À mon avis… / Je suis convaincu(e) que…</p>
+                <p><span className="font-black text-white">Concede & counter</span> — Certes… mais… / Il faut admettre que…</p>
+                <p><span className="font-black text-white">Draw a conclusion</span> — Par conséquent… / Ainsi… / Force est de constater que…</p>
+              </div>
             </div>
             <div className="rounded-2xl border border-[#E7DAB9] bg-white p-5">
-              <p className="text-xs font-bold text-[#526173]">Section formats</p>
-              <div className="mt-2 space-y-1 text-sm">
-                <p><strong>Listening:</strong> ~40 questions · ~40 min · audio plays once</p>
-                <p><strong>Reading:</strong> ~50 questions · ~60 min · texts at various levels</p>
-                <p className="mt-2 text-[#526173]">Both are multiple choice A/B/C/D.</p>
+              <p className="text-xs font-bold text-[#526173]">Higher-register phrases</p>
+              <div className="mt-2 space-y-1 text-sm italic text-[#526173]">
+                <p>Force est de constater que…</p>
+                <p>Il va sans dire que…</p>
+                <p>Il est indéniable que…</p>
               </div>
+              <p className="mt-2 text-xs text-[#526173]">One or two of these in Task 2 signals upper-band French.</p>
             </div>
           </div>
         </div>
 
         <section className="mt-16">
-          <h2 className="text-2xl font-black">Key vocabulary</h2>
-          <p className="mt-1 text-[#526173]">Click a card to flip it. Know the question types and strategies.</p>
+          <h2 className="text-2xl font-black">Learn the phrases</h2>
+          <p className="mt-1 text-[#526173]">Every card shows how the phrase works in a real sentence on a TEF Canada topic. Flip to see the explanation.</p>
           <div className="mt-6">
-            <FlashCardDeck cards={flashcards} title="TEF Canada — listening & reading strategies" />
+            <FlashCardDeck cards={flashcards} title="Opinion & argument — 12 essential phrases" />
+          </div>
+        </section>
+
+        <section className="mt-16">
+          <h2 className="text-2xl font-black">Match the pairs</h2>
+          <p className="mt-1 text-[#526173]">Match each phrase to its English equivalent.</p>
+          <div className="mt-6">
+            <MatchPairs pairs={matchPairs} title="Opinion phrases" />
           </div>
         </section>
 
         <section className="mt-16 rounded-[2rem] border-2 border-[#EFF6FF] bg-white p-8">
-          <p className="text-xs font-bold uppercase tracking-widest text-[#2563EB]">Preparation strategy</p>
-          <h2 className="mt-2 text-xl font-black">Build listening and reading habits before your test</h2>
-          <div className="mt-4 grid gap-5 md:grid-cols-2">
-            <div>
-              <p className="font-black text-[#0B1F3A]">For listening</p>
-              <ul className="mt-2 space-y-1.5 text-sm text-[#526173]">
-                {[
-                  "Listen to Radio-Canada podcasts and news daily",
-                  "Practice taking notes in French while listening — key words only",
-                  "Watch RDI or TV5 with French subtitles, then without",
-                  "Listen to different French accents: Québécois, French, African French",
-                  "Practice identifying the speaker's opinion vs. stated facts",
-                ].map((t) => (
-                  <li key={t} className="flex items-start gap-2">
-                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#2563EB]" />
-                    {t}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <p className="font-black text-[#0B1F3A]">For reading</p>
-              <ul className="mt-2 space-y-1.5 text-sm text-[#526173]">
-                {[
-                  "Read Le Devoir or Le Monde articles daily — scan, don't translate",
-                  "Practice reading under time pressure — set a timer",
-                  "Identify question types as you practice: main idea, detail, vocabulary, inference",
-                  "Build vocabulary from context — guess before looking up words",
-                  "Study common false cognates (actuellement, éventuellement, rester)",
-                ].map((t) => (
-                  <li key={t} className="flex items-start gap-2">
-                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#2563EB]" />
-                    {t}
-                  </li>
-                ))}
-              </ul>
-            </div>
+          <p className="text-xs font-bold uppercase tracking-widest text-[#2563EB]">A high-scoring argument structure</p>
+          <p className="mt-3 text-sm italic text-[#526173] leading-8">
+            &ldquo;Il est indéniable que la mondialisation a favorisé la croissance économique dans de nombreux pays. Certes, cette ouverture des marchés a créé de nouvelles opportunités pour les entreprises ; cependant, il faut admettre que ses effets sur les inégalités sociales sont préoccupants. Force est de constater que les bénéfices de la mondialisation ne sont pas distribués équitablement. Par conséquent, il convient de mettre en place des mécanismes de redistribution plus efficaces.&rdquo;
+          </p>
+          <div className="mt-4 space-y-1 text-xs text-[#526173]">
+            <p><strong className="text-[#0B1F3A]">Il est indéniable que</strong> → strong opening claim</p>
+            <p><strong className="text-[#0B1F3A]">Certes… ; cependant,</strong> → acknowledge the other side, then counter</p>
+            <p><strong className="text-[#0B1F3A]">Force est de constater que</strong> → evidence-based observation</p>
+            <p><strong className="text-[#0B1F3A]">Par conséquent, il convient de</strong> → draw a conclusion and recommend action</p>
           </div>
         </section>
 
         <section className="mt-12">
-          <h2 className="text-2xl font-black">Match the pairs</h2>
-          <p className="mt-1 text-[#526173]">Match each strategy term to its meaning.</p>
+          <h2 className="text-2xl font-black">Use the phrases</h2>
+          <p className="mt-1 text-[#526173]">Each question puts these phrases into real TEF Canada-style writing contexts.</p>
           <div className="mt-6">
-            <MatchPairs pairs={matchPairs} title="Listening & reading vocabulary" />
-          </div>
-        </section>
-
-        <section className="mt-12">
-          <h2 className="text-2xl font-black">Quick quiz</h2>
-          <p className="mt-1 text-[#526173]">Test your listening and reading strategies.</p>
-          <div className="mt-6">
-            <MultipleChoiceQuiz questions={quiz} title="Listening & reading quiz" />
+            <MultipleChoiceQuiz questions={quiz} title="Opinion & argument quiz" />
           </div>
         </section>
 
         <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
           <p className="text-sm font-bold uppercase tracking-widest text-[#2563EB]">Done!</p>
-          <h2 className="mt-3 text-3xl font-black">Receptive skills ready.</h2>
+          <h2 className="mt-3 text-3xl font-black">Opinion phrases ready.</h2>
           <p className="mt-3 leading-7 text-[#526173]">
-            Next: strategies for the TEF Canada writing and speaking tests — the two productive skills.
+            Next: writing in formal French — the letter structure, register differences, and phrases you need for TEF Canada Task 2.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link href="/learn/canadian-french-tests/unit-2/lesson-1" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">

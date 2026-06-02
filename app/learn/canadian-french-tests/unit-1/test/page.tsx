@@ -3,109 +3,89 @@ import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const questions = [
   {
-    question: "A federal job posting requires a language profile of 'CBC.' In what order are the letters read?",
+    question: "'Le budget _____ approuvé par le ministre lors de la réunion.' Which passive construction is correct?",
+    options: ["est approuvé", "a été approuvé", "approuve", "a approuvé"],
+    correct: 1,
+    explanation: "'A été approuvé' is the passé composé passive: être (a été) + past participle (approuvé, agreeing with 'le budget', masculine). Passive voice is used constantly in government French to describe decisions and actions.",
+  },
+  {
+    question: "A memo reads: 'Les mesures _____ nous faisons référence seront mises en œuvre dès le 1er juillet.' Which relative pronoun fits?",
+    options: ["que", "qui", "auxquelles", "dont"],
+    correct: 2,
+    explanation: "'Auxquelles' = à + lesquelles. 'Faire référence à quelque chose' requires 'à', so the relative pronoun must carry 'à'. 'Les mesures auxquelles nous faisons référence' = the measures we are referring to.",
+  },
+  {
+    question: "Which sentence uses 'la mise en œuvre' correctly?",
     options: [
-      "Writing / Reading / Oral Interaction",
-      "Reading / Writing / Oral Interaction",
-      "Oral Interaction / Writing / Reading",
-      "Reading / Oral Interaction / Writing",
+      "'La mise en œuvre a été retardée en raison de contraintes budgétaires.'",
+      "'Nous avons mis en œuvre la procédure de la mise en œuvre.'",
+      "'La mise en œuvre est un verbe important.'",
+      "'Il faut mettre en la mise en œuvre immédiatement.'",
+    ],
+    correct: 0,
+    explanation: "'La mise en œuvre a été retardée' = Implementation was delayed. 'Mise en œuvre' is a noun (implementation) — it replaces the verb 'mettre en œuvre'. Use it as a subject or object, not alongside the verb itself.",
+  },
+  {
+    question: "Which opening line is correct for a formal government memo?",
+    options: [
+      "'Bonjour Marie, je voulais juste te tenir au courant…'",
+      "'Suite à la réunion du 3 juin, je vous informe des développements suivants.'",
+      "'Hey team, quick update:'",
+      "'Chère collègue, j'espère que tu vas bien!'",
     ],
     correct: 1,
-    explanation: "Profile letters always go in order: Reading / Writing / Oral Interaction. CBC = C in reading, B in writing, C in oral interaction. This is a supervisory-level profile.",
+    explanation: "Government memos use formal register throughout: 'vous', no informal openings, clear statement of purpose. 'Suite à la réunion du [date]' is a standard and correct opening formula.",
   },
   {
-    question: "Which government body administers the Second Language Evaluation (SLE)?",
+    question: "'Il _____ de noter que le délai a été prolongé de deux semaines.' Which impersonal construction is correct?",
+    options: ["convient", "est à", "importe", "faut"],
+    correct: 0,
+    explanation: "'Il convient de noter que' = It should be noted that. All four options can work in some contexts, but 'il convient de + infinitif' is the most common formal impersonal construction in this pattern.",
+  },
+  {
+    question: "A briefing note recommendation reads: 'Nous recommandons que le sous-ministre _____ la proposition.' Which form is correct?",
+    options: ["approuvera", "a approuvé", "approuve", "approuver"],
+    correct: 2,
+    explanation: "'Recommander que' triggers the subjunctive. 'Approuve' (present subjunctive) is correct — not the future 'approuvera' or the infinitive 'approuver'. This rule also applies to 'suggérer que', 'proposer que', 'demander que'.",
+  },
+  {
+    question: "Your email is ending. Which closing is appropriate for a formal government email?",
     options: [
-      "Treasury Board of Canada",
-      "IRCC (Immigration, Refugees and Citizenship Canada)",
-      "The Public Service Commission (PSC)",
-      "The Office of the Commissioner of Official Languages",
+      "'Bonne journée et merci !'",
+      "'À bientôt !'",
+      "'Je demeure à votre disposition pour tout renseignement complémentaire. Veuillez agréer mes salutations distinguées.'",
+      "'Ciao, [name]'",
     ],
     correct: 2,
-    explanation: "The Public Service Commission (Commission de la fonction publique) administers and oversees the SLE for federal bilingual positions.",
+    explanation: "Formal government correspondence closes with 'Je demeure à votre disposition pour tout renseignement complémentaire' (I remain available for any additional information) followed by 'Veuillez agréer mes salutations distinguées.'",
   },
   {
-    question: "The SLE reading test uses what type of texts?",
-    options: [
-      "Literary fiction and poetry",
-      "Conversational dialogues and interviews",
-      "Authentic federal government documents — memos, reports, briefing notes, policies",
-      "News articles and social media posts",
-    ],
-    correct: 2,
-    explanation: "The SLE reading test uses texts that look exactly like real federal government documents — administrative memos, briefing notes, policy summaries, and reports. Practice by reading real government documents in French.",
-  },
-  {
-    question: "Part A of the SLE writing test requires you to:",
-    options: [
-      "Summarize a document you have just read",
-      "Identify and correct deliberate errors in a provided document",
-      "Translate a paragraph from English to French",
-      "Answer short-answer comprehension questions",
-    ],
+    question: "'_____ ce qui précède, il est recommandé de procéder à une révision complète du programme.' Which phrase fits?",
+    options: ["En dépit de", "À la lumière de", "Bien que", "Il convient de"],
     correct: 1,
-    explanation: "Part A is an editing task. A document with embedded errors (grammar, spelling, vocabulary, punctuation) is provided, and you must find and correct them. Part B is the production task — writing from scratch.",
+    explanation: "'À la lumière de ce qui précède' = In light of the foregoing. This phrase introduces the conclusion of a briefing note or report, drawing on the analysis that came before it.",
   },
   {
-    question: "For the SLE oral interaction, the evaluator assesses all of the following EXCEPT:",
+    question: "The sentence 'Les intervenants concernés ont été consultés' means:",
     options: [
-      "Clarity of message",
-      "Vocabulary range",
-      "Grammatical accuracy",
-      "Regional French accent",
-    ],
-    correct: 3,
-    explanation: "Accent is not assessed — the SLE is not a pronunciation competition. What matters is clarity, vocabulary range, grammatical accuracy, fluency, and interactive skills.",
-  },
-  {
-    question: "The most effective strategy when you encounter a difficult SLE reading passage is:",
-    options: [
-      "Read the passage three times before looking at any questions",
-      "Skip the entire passage and its questions",
-      "Read each question first, then scan the text for the relevant section",
-      "Answer based on your general knowledge of the topic",
+      "The relevant stakeholders will be consulted",
+      "The relevant stakeholders are being consulted",
+      "The relevant stakeholders were consulted",
+      "The relevant stakeholders consult the policy",
     ],
     correct: 2,
-    explanation: "Always read the question first, then go to the text with a specific target. This is more efficient than reading the whole passage without knowing what's being asked.",
+    explanation: "'Ont été consultés' = were consulted (passé composé passif). 'Les intervenants' (stakeholders) is one of the most common nouns in federal documents — know it. The passive voice tells you what happened to the stakeholders (they were consulted).",
   },
   {
-    question: "An employee is marked 'exempté(e)' on their language profile. This means:",
+    question: "Your memo needs to say 'Please find attached the report requested.' Which sentence is correct?",
     options: [
-      "They failed the SLE and are waiting to retake it",
-      "They are only required to take two of the three SLE tests",
-      "Their French is confirmed — no SLE is required",
-      "They have received an automatic Level A rating",
+      "'J'ai attaché le rapport demandé.'",
+      "'Voici le rapport demandé en attachement.'",
+      "'Veuillez trouver ci-joint le rapport demandé.'",
+      "'Je vous envoie le rapport que vous avez demandé en pièce.'",
     ],
     correct: 2,
-    explanation: "Exempt employees have confirmed French proficiency — typically because French is their first language or they've already been tested. They don't need to take the SLE.",
-  },
-  {
-    question: "You are writing a Part B memo for the SLE. Your opening line should be:",
-    options: [
-      "'Salut! Je t'écris pour...'",
-      "'Je voulais juste te dire que...'",
-      "'Suite à notre réunion du 14 mars, je vous informe que...'",
-      "'Hey, quick update:'",
-    ],
-    correct: 2,
-    explanation: "Government memos use formal register. Openings like 'Suite à…' (Following…) or 'Je vous écris afin de…' (I am writing in order to…) are standard. Informal language is a register error that lowers your score.",
-  },
-  {
-    question: "Which level — A, B, or C — is required to handle abstract language, implied meaning, and cross-references in complex federal documents?",
-    options: ["Level A", "Level B", "Level C", "All three levels handle this equally"],
-    correct: 2,
-    explanation: "Level C is the advanced level — required for texts that use abstract language, implied meaning, specialized vocabulary, and complex document structures. Levels A and B focus on more explicit, concrete information.",
-  },
-  {
-    question: "During the SLE oral role-play, the evaluator presents a problem and you disagree with their position. The best approach is:",
-    options: [
-      "Immediately agree to avoid conflict — the evaluator controls your grade",
-      "Stay silent until they ask you another question",
-      "Acknowledge their point, then maintain and develop your position clearly",
-      "Ask to skip the role-play and do a monologue instead",
-    ],
-    correct: 2,
-    explanation: "Interactive skills are directly graded. Saying 'Je comprends votre point de vue, cependant…' shows you can engage, not just respond. Level B–C candidates hold their position while acknowledging the other perspective.",
+    explanation: "'Veuillez trouver ci-joint [le document]' is the standard government formula for attachments. 'Ci-joint' is the formal term for 'attached'. 'En pièce jointe' is also correct but 'ci-joint' is more common in formal documents.",
   },
 ];
 
@@ -119,9 +99,9 @@ export default function SLETestPage() {
 
         <div className="mt-6">
           <span className="rounded-full bg-[#FEF3C7] px-3 py-1 text-xs font-black text-[#D97706]">Unit 1 Test</span>
-          <h1 className="mt-4 text-5xl font-black tracking-tight md:text-6xl">SLE — Federal Government Jobs</h1>
+          <h1 className="mt-4 text-5xl font-black tracking-tight md:text-6xl">Government French</h1>
           <p className="mt-4 max-w-2xl text-lg leading-8 text-[#526173]">
-            10 questions on SLE format, language profiles, reading strategies, writing test structure, and oral interaction criteria.
+            10 questions testing government vocabulary, passive voice, relative pronouns, impersonal constructions, and formal writing formulas.
           </p>
         </div>
 
@@ -131,7 +111,7 @@ export default function SLETestPage() {
 
         <div className="mt-12 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
           <p className="font-black text-lg">Ready for Unit 2?</p>
-          <p className="mt-2 text-[#526173]">Unit 2 covers TEF Canada and TCF Canada — the French tests recognized by IRCC for Express Entry and immigration.</p>
+          <p className="mt-2 text-[#526173]">Unit 2 covers the French you need for TEF Canada — topic vocabulary, opinion phrases, and formal writing for the immigration test.</p>
           <div className="mt-5 flex flex-wrap gap-3">
             <Link href="/learn/canadian-french-tests/unit-1/lesson-3" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">← Back to lesson</Link>
             <Link href="/learn/canadian-french-tests/unit-2/lesson-1" className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Start Unit 2 →</Link>

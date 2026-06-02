@@ -52,7 +52,7 @@ const courses = [
     statusColor: "bg-[#FEF3C7] text-[#D97706]",
     href: "/learn/canadian-french-tests",
     description:
-      "Prepare for the SLE (federal government bilingual jobs) or TEF Canada / TCF Canada (Express Entry and immigration). Format, scoring, and strategies for both.",
+      "Build the French that gets you through the SLE (government jobs) and TEF Canada (immigration). Government vocabulary, formal grammar, opinion phrases, and letter-writing register.",
     units: ["SLE — Government Jobs", "TEF Canada — Immigration"],
     lessonCount: "6 lessons · 2 unit tests",
   },
