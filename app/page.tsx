@@ -11,9 +11,16 @@ const offerings = [
     href: "/learn/canadian-life",
   },
   {
-    title: "Free Courses",
+    title: "French for Canadian Tests",
     description:
-      "Structured French from zero to advanced, including grammar, verb tenses, and exam prep — no account, no paywall.",
+      "Government vocabulary, formal grammar, and opinion phrases for the SLE (federal jobs) and TEF Canada (Express Entry and immigration).",
+    emoji: "🏛️",
+    href: "/learn/canadian-french-tests",
+  },
+  {
+    title: "All Courses",
+    description:
+      "Structured French from zero to advanced — IB prep, school support, grammar, and verb tenses. No account, no paywall.",
     emoji: "📘",
     href: "/learn",
   },
@@ -31,7 +38,7 @@ const steps = [
     number: "01",
     title: "Pick your path",
     description:
-      "Start from zero, review for school, prep for IB, or dive straight into the French you actually need in Canada.",
+      "Start from zero, review for school, prep for IB, study for a government job test, or build the French you need to immigrate to Canada.",
   },
   {
     number: "02",
@@ -219,7 +226,7 @@ export default function HomePage() {
           Everything you need for French in Canada.
         </h2>
 
-        <div className="mt-10 grid gap-5 md:grid-cols-3">
+        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {offerings.map((item) => (
             <Link
               key={item.title}
