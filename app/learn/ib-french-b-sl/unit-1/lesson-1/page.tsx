@@ -5,7 +5,7 @@ import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const flashcards = [
   { front: "l'identité (f)", back: "identity", subtext: "The core concept of Theme 1 — who a person is, shaped by culture, language, beliefs, and experience." },
-  { front: "le mode de vie", back: "lifestyle / way of life", subtext: "How someone lives day-to-day: diet, habits, values, routines. Very common in Paper 1 texts." },
+  { front: "le mode de vie", back: "lifestyle / way of life", subtext: "How someone lives day-to-day: diet, habits, values, routines. Very common in Paper 2 reading texts." },
   { front: "le bien-être", back: "well-being", subtext: "Physical and mental health together. A key Identities sub-topic — often linked to lifestyle choices." },
   { front: "les croyances (f pl)", back: "beliefs", subtext: "Religious, spiritual, or personal convictions that shape how someone sees the world." },
   { front: "les valeurs (f pl)", back: "values", subtext: "What a person or culture considers important — honesty, family, freedom, success." },

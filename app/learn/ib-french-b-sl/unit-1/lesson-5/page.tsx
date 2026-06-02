@@ -4,8 +4,8 @@ import MatchPairs from "@/components/MatchPairs";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const flashcards = [
-  { front: "l'environnement (m)", back: "the environment", subtext: "Nature, ecosystems, pollution, climate — the most common Sharing the Planet sub-topic in Paper 1." },
-  { front: "le changement climatique", back: "climate change", subtext: "The defining environmental challenge of the era. Central to Individual Oral images and Paper 1 texts." },
+  { front: "l'environnement (m)", back: "the environment", subtext: "Nature, ecosystems, pollution, climate — the most common Sharing the Planet sub-topic in Paper 2." },
+  { front: "le changement climatique", back: "climate change", subtext: "The defining environmental challenge of the era. Central to Individual Oral images and Paper 2 reading texts." },
   { front: "les droits de l'homme (m pl)", back: "human rights", subtext: "Fundamental rights for all people. An officially listed sub-topic — appears in texts on conflict, inequality, and justice." },
   { front: "la paix", back: "peace", subtext: "Contrasted with conflict. 'Peace and conflict' is a single paired sub-topic in the IB framework." },
   { front: "le conflit", back: "conflict", subtext: "War, civil unrest, international disputes. Paired with 'peace' as a sub-topic." },
@@ -154,7 +154,7 @@ export default function Unit1Lesson5Page() {
           <p className="text-sm font-bold uppercase tracking-widest text-[#C9A44C]">Done!</p>
           <h2 className="mt-3 text-3xl font-black">All five themes covered.</h2>
           <p className="mt-3 leading-7 text-[#526173]">
-            Take the Unit 1 test to lock in all five themes before moving on to Paper 1 skills.
+            Take the Unit 1 test to lock in all five themes before moving on to Paper 2 skills.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link href="/learn/ib-french-b-sl/unit-1/lesson-4" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">

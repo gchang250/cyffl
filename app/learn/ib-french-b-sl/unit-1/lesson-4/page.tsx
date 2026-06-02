@@ -13,7 +13,7 @@ const flashcards = [
   { front: "l'ordre (m)", back: "order", subtext: "Social order — how rules keep a society functioning. Often discussed alongside justice and rights." },
   { front: "s'organiser", back: "to organise oneself / to come together", subtext: "How groups form and structure themselves. Reflects the IB guiding principle directly." },
   { front: "le rôle de l'individu", back: "the role of the individual", subtext: "How one person fits into and contributes to a larger community or system. Directly from the IB guiding questions." },
-  { front: "les inégalités sociales (f pl)", back: "social inequalities", subtext: "Gaps in access to education, work, and opportunity. Often the focus of Social Organisation Paper 1 texts." },
+  { front: "les inégalités sociales (f pl)", back: "social inequalities", subtext: "Gaps in access to education, work, and opportunity. Often the focus of Social Organisation Paper 2 reading texts." },
 ];
 
 const matchPairs = [

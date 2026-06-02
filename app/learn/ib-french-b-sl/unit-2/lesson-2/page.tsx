@@ -75,7 +75,7 @@ export default function Unit2Lesson2Page() {
               Grammar for Comprehension
             </h1>
             <p className="mt-4 text-lg leading-8 text-[#526173]">
-              The grammar structures that appear most in Paper 1 texts. Understanding
+              The grammar structures that appear most in Paper 2 texts. Understanding
               relative pronouns, tenses, and passive voice unlocks meaning in complex sentences.
             </p>
           </div>
@@ -106,7 +106,7 @@ export default function Unit2Lesson2Page() {
           <h2 className="text-2xl font-black">Grammar reference cards</h2>
           <p className="mt-1 text-[#526173]">Click a card to flip it. Focus on when each structure is used.</p>
           <div className="mt-6">
-            <FlashCardDeck cards={flashcards} title="Grammar for Paper 1 comprehension" />
+            <FlashCardDeck cards={flashcards} title="Grammar for Paper 2 comprehension" />
           </div>
         </section>
 
@@ -120,7 +120,7 @@ export default function Unit2Lesson2Page() {
 
         <section className="mt-16">
           <h2 className="text-2xl font-black">Quick quiz</h2>
-          <p className="mt-1 text-[#526173]">Apply the grammar to sentences like the ones you'll see in Paper 1.</p>
+          <p className="mt-1 text-[#526173]">Apply the grammar to sentences like the ones you'll see in Paper 2.</p>
           <div className="mt-6">
             <MultipleChoiceQuiz questions={quiz} title="Grammar for comprehension quiz" />
           </div>

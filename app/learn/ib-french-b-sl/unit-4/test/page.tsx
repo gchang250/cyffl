@@ -88,7 +88,7 @@ export default function Unit4TestPage() {
           <p className="text-sm font-bold text-[#C9A44C] uppercase tracking-widest">Course complete!</p>
           <h2 className="mt-3 text-3xl font-black">You've finished IB French B SL.</h2>
           <p className="mt-3 leading-7 text-white/70">
-            You've covered all five themes, Paper 1 receptive skills, Paper 2 written production, and the Individual Oral. Keep practising with authentic French content and you'll be exam-ready.
+            You've covered all five themes, Paper 2 receptive skills, Paper 1 written production, and the Individual Oral. Keep practising with authentic French content and you'll be exam-ready.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link href="/learn/ib-french-b-sl" className="rounded-full bg-[#C9A44C] px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">

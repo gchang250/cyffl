@@ -5,9 +5,9 @@ import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const flashcards = [
   { front: "les loisirs (m pl)", back: "leisure activities / hobbies", subtext: "What people do in their free time — sport, arts, travel. A core Experiences sub-topic." },
-  { front: "les vacances (f pl)", back: "holidays / vacation", subtext: "Holidays and travel is one of the main Experiences topics. Common in Paper 1 texts and writing prompts." },
+  { front: "les vacances (f pl)", back: "holidays / vacation", subtext: "Holidays and travel is one of the main Experiences topics. Common in Paper 2 reading texts and Paper 1 writing prompts." },
   { front: "le voyage", back: "travel / journey", subtext: "Both the act of travelling and what that journey means. Often tied to personal growth and discovery." },
-  { front: "le récit de vie", back: "life story", subtext: "A personal account of someone's experiences — often the format for memoir-style Paper 1 texts." },
+  { front: "le récit de vie", back: "life story", subtext: "A personal account of someone's experiences — often the format for memoir-style Paper 2 reading texts." },
   { front: "les rites de passage (m pl)", back: "rites of passage", subtext: "Significant life milestones — graduations, weddings, coming-of-age ceremonies. Officially listed as an Experiences topic." },
   { front: "les coutumes (f pl)", back: "customs / traditions", subtext: "Cultural practices passed down through generations. How communities mark important moments." },
   { front: "la migration", back: "migration", subtext: "Moving between places — within a country or internationally. Overlaps with Identities (cultural adjustment)." },

@@ -12,7 +12,7 @@ const flashcards = [
   { front: "le divertissement", back: "entertainment", subtext: "Movies, music, sport, video games — what a culture produces to entertain itself." },
   { front: "l'expression artistique (f)", back: "artistic expression", subtext: "How artists communicate ideas and emotions. An officially listed Ingenuity sub-topic." },
   { front: "les réseaux sociaux (m pl)", back: "social media / social networks", subtext: "Platforms like Instagram, TikTok, X — a major focus in media and communication texts." },
-  { front: "influencer", back: "to influence / to shape", subtext: "How technology or media changes behaviour, culture, or opinion. Core to many Paper 1 texts." },
+  { front: "influencer", back: "to influence / to shape", subtext: "How technology or media changes behaviour, culture, or opinion. Core to many Paper 2 reading texts." },
   { front: "la recherche scientifique", back: "scientific research", subtext: "Studies, experiments, discoveries — Scientific innovation is an official Human Ingenuity sub-topic." },
 ];
 

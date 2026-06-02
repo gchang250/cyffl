@@ -39,7 +39,7 @@ const quiz = [
     explanation: "Blogs are informal and personal. Using 'vous' where 'tu' or first-person 'je' is expected is a register error that costs marks.",
   },
   {
-    question: "You want to convince your school to adopt a recycling programme. Your Paper 2 tone should be:",
+    question: "You want to convince your school to adopt a recycling programme. Your Paper 1 tone should be:",
     options: ["Informative and neutral", "Persuasive — using evidence and strong arguments", "Informal and conversational", "Personal and emotional only"],
     correct: 1,
     explanation: "When your goal is to convince, use a persuasive tone: evidence, rhetorical questions, and calls to action. 'Il est essentiel que notre école agisse maintenant.'",
