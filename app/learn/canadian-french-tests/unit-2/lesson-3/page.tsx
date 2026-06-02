@@ -3,85 +3,89 @@ import FlashCardDeck from "@/components/FlashCardDeck";
 import MatchPairs from "@/components/MatchPairs";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
+// TEF Canada Written Expression — official format:
+// Section A (25 min): Continue an article — minimum 80 words
+// Section B (35 min): Express and justify a viewpoint — minimum 200 words
+// Both are open-ended writing tasks, NOT multiple choice.
+// Scored on: pertinence, cohérence, vocabulaire, morphosyntaxe.
+
 const flashcards = [
-  { front: "Madame, Monsieur,", back: "Dear Sir or Madam, (formal salutation)", subtext: "Use when you don't know the recipient's name or gender. Never 'Bonjour' in a formal letter. If you know the name: 'Madame Dupont,' or 'Monsieur le Directeur,'." },
-  { front: "Je me permets de vous contacter afin de…", back: "I am taking the liberty of contacting you in order to…", subtext: "'Afin de' is more formal than 'pour'. This opening immediately sets formal register. Follow with an infinitive: 'afin de vous soumettre ma candidature' / 'afin de vous faire part de ma préoccupation'." },
-  { front: "Suite à votre annonce parue dans…", back: "Following your advertisement published in…", subtext: "Standard opening for a letter of interest responding to a posting. 'Suite à' = following / in response to. Also: 'En réponse à votre offre d'emploi…' = In response to your job offer…" },
-  { front: "Je vous serais reconnaissant(e) de bien vouloir…", back: "I would be grateful if you would kindly…", subtext: "The most polished way to make a formal request. 'Je vous serais reconnaissante de bien vouloir m'accuser réception.' = I would be grateful if you would kindly acknowledge receipt." },
-  { front: "Dans l'attente de votre réponse,", back: "Awaiting your reply, / Looking forward to your response,", subtext: "Standard pre-closing formula. Always followed by the sign-off phrase. 'Dans l'attente de votre réponse, je vous prie d'agréer mes salutations distinguées.' — these two always go together." },
-  { front: "Je vous prie d'agréer mes salutations distinguées.", back: "Yours sincerely / Yours faithfully. (formal closing)", subtext: "The standard French letter closing. Variations: 'Veuillez agréer l'expression de mes sentiments distingués.' or 'Je vous adresse mes cordiales salutations.' The more official the letter, the more elaborate the closing." },
-  { front: "Cher [Prénom], / Chère [Prénom],", back: "Dear [First name], (informal salutation)", subtext: "For Task 1 — informal register. Use 'tu' throughout, casual expressions, and a friendly tone. Closing: 'Bonne journée !' / 'À bientôt !' / 'Grosses bises !' (depending on relationship)." },
-  { front: "Je t'écris pour te dire que…", back: "I'm writing to tell you that… (informal)", subtext: "Informal equivalent of 'Je vous écris afin de vous informer que…'. Note 'te' and 'tu' instead of 'vous'. Switching between 'tu' and 'vous' in the same text is a register error." },
-  { front: "Tout d'abord, … De plus, … Enfin,", back: "First of all, … Furthermore, … Finally,", subtext: "The classic three-part structure. 'Tout d'abord' opens the body. 'De plus' or 'En outre' adds a point. 'Enfin' or 'Pour conclure' closes. This structure works for both Task 1 and Task 2." },
-  { front: "En ce qui concerne…", back: "Regarding… / As far as … is concerned,", subtext: "'En ce qui concerne le logement, les prix ont augmenté de façon significative.' = Regarding housing, prices have risen significantly. Useful for introducing a new sub-topic or redirecting the text." },
-  { front: "Je tiens à souligner que…", back: "I wish to point out that… / I want to emphasize that…", subtext: "'Je tiens à souligner que ma demande est urgente.' = I wish to point out that my request is urgent. 'Tenir à + infinitif' = to insist on / to want to make clear. Signals something important follows." },
-  { front: "Je reste à votre disposition pour tout renseignement complémentaire.", back: "I remain available for any additional information.", subtext: "Standard pre-closing line. Slightly less elaborate than the full government version. Works for both formal letters and professional emails in TEF Canada writing tasks." },
+  { front: "Section A — Continuation d'article (80 mots min.)", back: "Continue an article — minimum 80 words, 25 minutes", subtext: "You are given the opening paragraph(s) of a journalistic or informational article. You continue it in the same style, tone, and register. Match the author's voice — if the opening is formal and factual, your continuation should be too." },
+  { front: "Section B — Expression d'un point de vue (200 mots min.)", back: "Express and justify a viewpoint — minimum 200 words, 35 minutes", subtext: "You are given a statement or topic and must express your opinion AND justify it with arguments. This is an argumentative text — state your position clearly, support it with at least two arguments, and include a conclusion." },
+  { front: "la pertinence", back: "relevance / staying on task", subtext: "The most important criterion. In Section A, your continuation must be consistent with the article's subject and tone. In Section B, your response must address the statement given — not a related topic you prefer." },
+  { front: "la cohérence et la cohésion", back: "coherence (logical flow) + cohesion (linguistic links)", subtext: "Coherence: ideas progress logically. Cohesion: you use connectors and pronouns to link sentences. 'Cependant', 'de plus', 'par conséquent', 'c'est pourquoi' all create cohesion. Avoid starting every sentence with 'Je'." },
+  { front: "la morphosyntaxe", back: "grammar — agreement, conjugation, sentence structure", subtext: "The examiner checks agreement (adjective, participle), verb conjugation, and sentence structure. You lose marks for systematic errors — repeated agreement mistakes signal a structural gap. Vary your sentence structures." },
+  { front: "le registre journalistique", back: "journalistic register — for Section A", subtext: "Journalistic French is formal but direct. Uses the present tense for current facts, the passé composé for recent events. Avoids first-person (use 'on', 'les experts', 'les études montrent'). No 'je pense que' — state facts or attribute opinions to sources." },
+  { front: "le texte argumentatif", back: "argumentative text — for Section B", subtext: "Structure: introduction (restate the topic + your position) → argument 1 + support → argument 2 + support → conclusion (restate position + call to action or broader implication). Each argument needs a specific example or evidence." },
+  { front: "la thèse", back: "thesis — your main position in Section B", subtext: "'À mon avis, …' or 'Il me semble que …' stated clearly in the introduction. Then every argument should support this thesis. Don't change your position mid-text — examiners value consistency." },
+  { front: "l'exemple concret", back: "concrete example — essential for Section B", subtext: "After each argument, add 'Par exemple, …' or 'C'est le cas de …' A claim without evidence reads as unsupported. Even approximate examples work — the examiner is not fact-checking your statistics, only assessing your French." },
+  { front: "la conclusion de Section B", back: "conclusion — final paragraph of Section B", subtext: "'En conclusion, …' or 'Pour conclure, …' + restate your thesis + broader implication or call to action. 'Il est donc essentiel que la société prenne des mesures pour…' A conclusion without a connector is just an abrupt ending." },
 ];
 
 const matchPairs = [
-  { left: "Madame, Monsieur,", right: "Dear Sir or Madam, (formal)" },
-  { left: "Je me permets de vous contacter afin de…", right: "I am contacting you in order to…" },
-  { left: "Je vous serais reconnaissant(e) de bien vouloir…", right: "I would be grateful if you would kindly…" },
-  { left: "Dans l'attente de votre réponse,", right: "Awaiting your reply," },
-  { left: "Je tiens à souligner que…", right: "I wish to emphasize that…" },
-  { left: "Cher [Prénom],", right: "Dear [First name], (informal)" },
+  { left: "Section A — continuation d'article", right: "continue an article in the same style" },
+  { left: "Section B — point de vue", right: "argue a position with evidence" },
+  { left: "la pertinence", right: "staying on the given topic" },
+  { left: "le registre journalistique", right: "formal, third-person, present tense for facts" },
+  { left: "la thèse", right: "your stated position in Section B" },
+  { left: "la morphosyntaxe", right: "grammar — agreement and conjugation" },
 ];
 
 const quiz = [
   {
-    question: "TEF Canada Task 1 asks you to write to a friend about a trip. Which salutation is correct?",
+    question: "Section A gives you the opening of an article about urban cycling infrastructure. The opening uses the third person, present tense, and cites statistics. Your continuation should:",
     options: [
-      "'Madame, Monsieur,'",
-      "'À qui de droit,'",
-      "'Chère Sophie,'",
-      "'Je vous contacte afin de vous informer,'",
+      "Switch to first person to give your personal opinion on cycling",
+      "Continue in third person, present tense, citing facts or expert views — matching the journalistic register",
+      "Add a personal anecdote about a time you rode a bike",
+      "Start a new topic more interesting than cycling",
+    ],
+    correct: 1,
+    explanation: "Section A requires you to continue the article in the SAME style. If it's journalistic (third person, present tense, factual), your continuation must match. Switching to first person or changing topic is a serious pertinence error that collapses your score.",
+  },
+  {
+    question: "Section B asks: 'Les réseaux sociaux ont-ils plus d'effets négatifs que positifs sur la jeunesse ?' Your Section B introduction should:",
+    options: [
+      "Describe what social media is and how it works",
+      "State your position clearly: 'À mon avis, les réseaux sociaux ont effectivement plus d'effets négatifs que positifs, notamment parce que…'",
+      "Say this is a complex question with no easy answer",
+      "List all the features of social media platforms",
+    ],
+    correct: 1,
+    explanation: "Section B is argumentative. Your introduction must state your thesis — your clear position on the question. 'À mon avis… notamment parce que' signals your position AND previews your first argument. Describing social media or saying 'it's complex' without taking a position fails the pertinence criterion.",
+  },
+  {
+    question: "In Section B, you've stated your thesis and written your first argument. What must come immediately after the argument?",
+    options: [
+      "Your conclusion",
+      "A transition to the counter-argument",
+      "A concrete example or evidence supporting the argument",
+      "A definition of the key term",
     ],
     correct: 2,
-    explanation: "Task 1 is informal — write to a friend. 'Chère Sophie,' (or 'Cher Marc,') is the correct informal salutation. 'Madame, Monsieur,' is formal and only for Task 2. Using formal register in Task 1 is a register error.",
+    explanation: "Every argument in Section B needs support: 'Par exemple, …' or 'Selon une étude de …' or 'C'est le cas en France, où …'. A claim with no example is unsubstantiated. The examiner isn't fact-checking — give any relevant example. An unsupported argument reads as an opinion, not an argument.",
   },
   {
-    question: "Task 2 asks you to write to a city council about a local issue. Which opening is correct?",
+    question: "Which sentence correctly opens a Section B conclusion?",
     options: [
-      "'Salut ! Je t'écris parce que j'ai un problème.'",
-      "'Je me permets de vous contacter afin de vous faire part d'une préoccupation concernant…'",
-      "'Bonjour, je voulais juste vous dire que…'",
-      "'Hey, il y a un problème dans ma rue.'",
+      "'Je pense donc que les réseaux sociaux sont mauvais.'",
+      "'En conclusion, il apparaît clairement que les effets négatifs des réseaux sociaux sur la jeunesse l'emportent sur leurs avantages. Il est donc essentiel que…'",
+      "'Pour finir, voilà mon opinion sur ce sujet.'",
+      "'C'est tout ce que j'ai à dire.'",
     ],
     correct: 1,
-    explanation: "'Je me permets de vous contacter afin de vous faire part de…' = I am taking the liberty of contacting you to bring to your attention… This immediately sets formal register ('vous', formal vocabulary) appropriate for writing to an official body.",
+    explanation: "'En conclusion, il apparaît clairement que…' restates the thesis formally. 'Il est donc essentiel que…' adds a call to action or broader implication — this is the hallmark of a high-scoring conclusion. The first option is grammatically fine but too casual; the others are not appropriate for a written exam.",
   },
   {
-    question: "Your Task 2 response needs to structure three points. Which ordering is correct?",
+    question: "Your Section B text has 185 words. You have 3 minutes left. You should:",
     options: [
-      "Enfin… Tout d'abord… De plus…",
-      "Tout d'abord… De plus… Enfin,…",
-      "De plus… Enfin… Tout d'abord…",
-      "Enfin… De plus… Tout d'abord…",
+      "Submit — close enough to 200",
+      "Add one more substantive sentence to your conclusion to reach 200+ words",
+      "Copy your introduction at the end to pad the word count",
+      "Stop writing and leave it at 185 — quality over quantity",
     ],
     correct: 1,
-    explanation: "'Tout d'abord' (first) → 'De plus' / 'En outre' (furthermore) → 'Enfin' / 'Pour conclure' (finally). This is the standard three-part connector sequence. Using it correctly shows the examiner your text is organized and your argumentation is sequential.",
-  },
-  {
-    question: "Which closing sequence is correct for a formal Task 2 letter?",
-    options: [
-      "'À bientôt !'",
-      "'Merci d'avance, [name]'",
-      "'Dans l'attente de votre réponse, je vous prie d'agréer mes salutations distinguées.'",
-      "'Cordialement, [name]'",
-    ],
-    correct: 2,
-    explanation: "'Dans l'attente de votre réponse, je vous prie d'agréer mes salutations distinguées.' is the standard formal French letter closing. 'Cordialement' is semi-formal and acceptable in some professional emails, but not in a formal letter to an institution.",
-  },
-  {
-    question: "Your Task 2 letter wants to say 'I want to emphasize that this situation is serious.' Which sentence is correct?",
-    options: [
-      "'Je veux dire que c'est sérieux.'",
-      "'Je tiens à souligner que cette situation est grave.'",
-      "'Il faut dire sérieusement que cette situation est très grave.'",
-      "'Selon moi, très sérieusement, cette situation est grave.'",
-    ],
-    correct: 1,
-    explanation: "'Je tiens à souligner que cette situation est grave.' = I wish to emphasize that this situation is serious. 'Tenir à + infinitif' signals that what follows is important. 'Grave' (serious) is more formal than 'très grave' which sounds informal by over-intensification.",
+    explanation: "200 words is the official minimum — falling short signals an incomplete response and can cap your score. Add one solid sentence: 'Il incombe aux gouvernements et aux plateformes de mettre en place des mesures de protection adaptées.' This is substantive, not padding, and gets you over the threshold.",
   },
 ];
 
@@ -99,65 +103,77 @@ export default function TEFLesson3Page() {
               Unit 2 · Lesson 3
             </p>
             <h1 className="mt-3 text-5xl font-black tracking-tight md:text-6xl">
-              Formal & Informal Writing
+              TEF Canada — Written Expression
             </h1>
             <p className="mt-4 text-lg leading-8 text-[#526173]">
-              TEF Canada writing has two tasks: one informal (to a friend), one formal (to an organization). These are the exact phrases, salutations, and closings that work — and the register errors that cost marks.
+              The TEF Canada writing test has two open-ended tasks in one hour. Section A: continue a journalistic article (80+ words, 25 min). Section B: express and justify your opinion on a topic (200+ words, 35 min).
             </p>
           </div>
 
           <div className="space-y-3">
             <div className="rounded-2xl bg-[#0B1F3A] p-5 text-white">
-              <p className="text-xs font-bold text-[#C9A44C]">The register rule</p>
-              <p className="mt-2 leading-7 text-white/80">
-                Every decision in Task 1 and Task 2 — pronoun, salutation, vocabulary, closing — must match the register. Using <span className="font-black text-white">vous</span> in Task 1 or <span className="font-black text-white">tu</span> in Task 2 is an automatic error.
-              </p>
+              <p className="text-xs font-bold text-[#C9A44C]">The four marking criteria</p>
+              <div className="mt-2 space-y-1 text-sm text-white/80">
+                <p>1. <span className="font-black text-white">Pertinence</span> — did you address the actual task?</p>
+                <p>2. <span className="font-black text-white">Cohérence</span> — do ideas flow logically?</p>
+                <p>3. <span className="font-black text-white">Vocabulaire</span> — range and precision of vocabulary</p>
+                <p>4. <span className="font-black text-white">Morphosyntaxe</span> — grammar, agreement, conjugation</p>
+              </div>
             </div>
             <div className="rounded-2xl border border-[#E7DAB9] bg-white p-5">
-              <p className="text-xs font-bold text-[#526173]">Task 1 vs Task 2 at a glance</p>
-              <div className="mt-2 grid grid-cols-2 gap-x-4 text-sm">
-                <div>
-                  <p className="font-black">Task 1 — Informal</p>
-                  <p className="mt-1 text-[#526173]">Cher/Chère [Prénom]</p>
-                  <p className="text-[#526173]">tu / te / ton</p>
-                  <p className="text-[#526173]">À bientôt !</p>
-                </div>
-                <div>
-                  <p className="font-black">Task 2 — Formal</p>
-                  <p className="mt-1 text-[#526173]">Madame, Monsieur,</p>
-                  <p className="text-[#526173]">vous / votre / vos</p>
-                  <p className="text-[#526173]">Salutations distinguées</p>
-                </div>
+              <p className="text-xs font-bold text-[#526173]">Section B structure</p>
+              <div className="mt-2 space-y-1 text-sm text-[#526173]">
+                <p>Introduction — state your thesis + preview arguments</p>
+                <p>Argument 1 + concrete example</p>
+                <p>Argument 2 + concrete example</p>
+                <p>(Optional: counterargument + response)</p>
+                <p>Conclusion — restate + call to action</p>
               </div>
             </div>
           </div>
         </div>
 
         <section className="mt-16">
-          <h2 className="text-2xl font-black">Learn the phrases</h2>
-          <p className="mt-1 text-[#526173]">These are the formulas that open, structure, and close French letters at different registers. Know which one to use and when.</p>
+          <h2 className="text-2xl font-black">Key concepts and vocabulary</h2>
+          <p className="mt-1 text-[#526173]">Flip each card to understand both writing tasks and their requirements.</p>
           <div className="mt-6">
-            <FlashCardDeck cards={flashcards} title="Formal & informal writing — salutations, connectors, closings" />
+            <FlashCardDeck cards={flashcards} title="TEF Canada Written Expression — both sections" />
           </div>
         </section>
 
         <section className="mt-16 rounded-[2rem] border-2 border-[#EFF6FF] bg-white p-8">
-          <p className="text-xs font-bold uppercase tracking-widest text-[#2563EB]">Side by side — same message, two registers</p>
+          <p className="text-xs font-bold uppercase tracking-widest text-[#2563EB]">Side by side — the two writing tasks</p>
           <div className="mt-4 grid gap-6 md:grid-cols-2">
             <div>
-              <p className="font-black text-[#0B1F3A] mb-3">Task 1 — Informal (to a friend)</p>
-              <div className="space-y-2 text-sm text-[#526173] italic">
-                <p>Chère Julie,</p>
-                <p>Je t&apos;écris pour te parler de mon déménagement à Montréal. Tout d&apos;abord, j&apos;ai trouvé un appartement fantastique dans le Plateau. De plus, mon nouveau quartier est vraiment dynamique. Enfin, j&apos;espère que tu viendras me rendre visite très bientôt !</p>
-                <p>À bientôt,<br />[Prénom]</p>
+              <p className="font-black text-[#0B1F3A]">Section A — Continue an article</p>
+              <p className="mt-1 text-sm text-[#526173]">25 minutes · minimum 80 words</p>
+              <ul className="mt-3 space-y-2 text-sm text-[#526173]">
+                <li className="flex gap-2"><span className="text-[#2563EB] font-black shrink-0">→</span>Match the register and tone of the opening</li>
+                <li className="flex gap-2"><span className="text-[#2563EB] font-black shrink-0">→</span>Stay in third person — avoid 'je'</li>
+                <li className="flex gap-2"><span className="text-[#2563EB] font-black shrink-0">→</span>Continue the same topic — don't introduce a new one</li>
+                <li className="flex gap-2"><span className="text-[#2563EB] font-black shrink-0">→</span>Use journalistic connectors: 'En outre…', 'Par ailleurs…', 'Ainsi…'</li>
+              </ul>
+              <div className="mt-4 rounded-xl bg-[#FFFDF7] p-4 text-sm italic text-[#526173]">
+                <p className="font-black not-italic text-[#0B1F3A] mb-2">Given opening:</p>
+                <p>&ldquo;Le nombre de cyclistes dans les grandes villes canadiennes a augmenté de 35 % en cinq ans. Cette tendance s&apos;explique par plusieurs facteurs…&rdquo;</p>
+                <p className="font-black not-italic text-[#0B1F3A] mt-3 mb-2">Strong continuation:</p>
+                <p>&ldquo;Parmi ceux-ci, l&apos;amélioration des infrastructures cyclables joue un rôle déterminant. En effet, la création de pistes protégées a permis d&apos;attirer des cyclistes qui hésitaient auparavant en raison des risques liés au trafic. Par ailleurs, la montée en popularité des vélos électriques a rendu le cyclisme accessible à des groupes autrefois peu représentés…&rdquo;</p>
               </div>
             </div>
             <div>
-              <p className="font-black text-[#0B1F3A] mb-3">Task 2 — Formal (to an organization)</p>
-              <div className="space-y-2 text-sm text-[#526173] italic">
-                <p>Madame, Monsieur,</p>
-                <p>Je me permets de vous contacter afin de vous faire part d&apos;une préoccupation concernant les conditions de logement dans l&apos;arrondissement. Tout d&apos;abord, je tiens à souligner que la situation est urgente. De plus, de nombreux résidents partagent cette préoccupation. Dans l&apos;attente de votre réponse, je vous prie d&apos;agréer mes salutations distinguées.</p>
-                <p>[Nom Prénom]</p>
+              <p className="font-black text-[#0B1F3A]">Section B — Express your viewpoint</p>
+              <p className="mt-1 text-sm text-[#526173]">35 minutes · minimum 200 words</p>
+              <ul className="mt-3 space-y-2 text-sm text-[#526173]">
+                <li className="flex gap-2"><span className="text-[#2563EB] font-black shrink-0">→</span>State your thesis clearly in the first paragraph</li>
+                <li className="flex gap-2"><span className="text-[#2563EB] font-black shrink-0">→</span>Two arguments minimum, each with an example</li>
+                <li className="flex gap-2"><span className="text-[#2563EB] font-black shrink-0">→</span>Concession strengthens your argument: 'Certes… cependant…'</li>
+                <li className="flex gap-2"><span className="text-[#2563EB] font-black shrink-0">→</span>Conclude with 'En conclusion…' + restate thesis</li>
+              </ul>
+              <div className="mt-4 rounded-xl bg-[#FFFDF7] p-4 text-sm italic text-[#526173]">
+                <p className="font-black not-italic text-[#0B1F3A] mb-2">Given topic:</p>
+                <p>&ldquo;Le télétravail devrait être généralisé dans tous les secteurs.&rdquo;</p>
+                <p className="font-black not-italic text-[#0B1F3A] mt-3 mb-2">Strong opening:</p>
+                <p>&ldquo;À mon avis, la généralisation du télétravail représente une avancée majeure pour la qualité de vie des travailleurs, même si elle ne peut s&apos;appliquer uniformément à tous les secteurs. En effet, deux arguments principaux soutiennent cette position…&rdquo;</p>
               </div>
             </div>
           </div>
@@ -165,33 +181,27 @@ export default function TEFLesson3Page() {
 
         <section className="mt-12">
           <h2 className="text-2xl font-black">Match the pairs</h2>
-          <p className="mt-1 text-[#526173]">Match each phrase to its meaning or equivalent.</p>
           <div className="mt-6">
-            <MatchPairs pairs={matchPairs} title="Formal & informal writing phrases" />
+            <MatchPairs pairs={matchPairs} title="TEF Writing — key terms" />
           </div>
         </section>
 
         <section className="mt-12">
-          <h2 className="text-2xl font-black">Apply the register</h2>
-          <p className="mt-1 text-[#526173]">Each question tests whether you know which phrase belongs in which context.</p>
+          <h2 className="text-2xl font-black">Apply your knowledge</h2>
           <div className="mt-6">
-            <MultipleChoiceQuiz questions={quiz} title="Writing register quiz" />
+            <MultipleChoiceQuiz questions={quiz} title="TEF Written Expression quiz" />
           </div>
         </section>
 
         <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
-          <p className="text-sm font-bold uppercase tracking-widest text-[#2563EB]">Unit 2 complete!</p>
-          <h2 className="mt-3 text-3xl font-black">TEF Canada writing ready.</h2>
+          <p className="text-sm font-bold uppercase tracking-widest text-[#2563EB]">Done!</p>
+          <h2 className="mt-3 text-3xl font-black">Written Expression understood.</h2>
           <p className="mt-3 leading-7 text-[#526173]">
-            Take the Unit 2 test to confirm your topic vocabulary, opinion phrases, and writing formulas.
+            Next: the TEF Canada listening test — 40 questions in 40 minutes, must answer as you go.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <Link href="/learn/canadian-french-tests/unit-2/lesson-2" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">
-              ← Previous lesson
-            </Link>
-            <Link href="/learn/canadian-french-tests/unit-2/test" className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">
-              Unit 2 Test →
-            </Link>
+            <Link href="/learn/canadian-french-tests/unit-2/lesson-2" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">← Previous lesson</Link>
+            <Link href="/learn/canadian-french-tests/unit-2/lesson-4" className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Next lesson →</Link>
           </div>
         </section>
       </section>

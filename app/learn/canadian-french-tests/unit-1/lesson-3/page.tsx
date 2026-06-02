@@ -3,75 +3,78 @@ import FlashCardDeck from "@/components/FlashCardDeck";
 import MatchPairs from "@/components/MatchPairs";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
+// The SLE Written Expression test is 65 multiple-choice questions (90 min).
+// Two question types: (1) fill-in-the-blank and (2) error identification.
+// It does NOT require producing a memo or email from scratch.
+// Texts used: emails, memos, bulletins, reports — government register throughout.
+
 const flashcards = [
-  { front: "Objet : [sujet du mémo]", back: "Subject: [memo topic]", subtext: "Every government memo starts with four header lines: DESTINATAIRE (To), EXPÉDITEUR (From), DATE, OBJET (Subject). The 'objet' line is like a subject line — be specific and concise." },
-  { front: "Suite à notre échange du [date]…", back: "Following our exchange on [date]…", subtext: "Opens a memo or email that follows a previous conversation. Always more formal than 'Bonjour' or 'Comme convenu' in government contexts." },
-  { front: "Je vous écris afin de…", back: "I am writing in order to…", subtext: "'Afin de' is more formal than 'pour'. Use it to state your purpose clearly at the start of any government correspondence. Follow with an infinitive: 'afin de vous informer que…'" },
-  { front: "Je vous prie de bien vouloir…", back: "I ask that you kindly…", subtext: "The most formal way to make a request. 'Je vous prie de bien vouloir approuver la proposition ci-jointe.' = I ask that you kindly approve the attached proposal." },
-  { front: "Veuillez trouver ci-joint…", back: "Please find attached…", subtext: "'Veuillez trouver ci-joint le rapport demandé.' = Please find attached the requested report. 'Ci-joint' is invariable when before the noun. Also useful: 'en pièce jointe'." },
-  { front: "Il importe de souligner que…", back: "It is important to highlight that…", subtext: "Used in briefing notes to draw attention to a key point. More formal than 'il est important de noter'. 'Il importe de souligner que le délai est impératif.' = It is important to highlight that the deadline is imperative." },
-  { front: "À la lumière de ce qui précède…", back: "In light of the foregoing…", subtext: "Signals a conclusion based on what was discussed above. 'À la lumière de ce qui précède, il est recommandé de…' = In light of the foregoing, it is recommended that… Used in every formal recommendation." },
-  { front: "Nous recommandons que… (+ subjonctif)", back: "We recommend that… (+ subjunctive)", subtext: "'Nous recommandons que le comité examine cette question.' = We recommend that the committee examine this matter. 'Recommander que' triggers the subjunctive — don't forget it." },
-  { front: "Je demeure à votre disposition…", back: "I remain at your disposal…", subtext: "Standard professional closing before the formal sign-off. 'Je demeure à votre disposition pour tout renseignement complémentaire.' = I remain available for any additional information." },
-  { front: "Veuillez agréer mes salutations distinguées.", back: "Yours sincerely. (formal sign-off)", subtext: "The standard formal closing for letters and formal emails. Alternatives: 'Veuillez agréer l'expression de mes sentiments les meilleurs.' Never use 'Bonne journée' in a formal government document." },
-  { front: "à titre informatif", back: "for information purposes / FYI (formal)", subtext: "'Le rapport ci-joint est transmis à titre informatif.' = The attached report is transmitted for information purposes. Government equivalent of FYI — used in forwarded documents." },
-  { front: "prendre acte de", back: "to take note of / to acknowledge formally", subtext: "'Nous prenons acte de votre demande.' = We acknowledge / take note of your request. More formal than 'noter'. Used to confirm receipt or acknowledgment of a document or request." },
+  { front: "complétez la phrase", back: "complete the sentence (fill-in-the-blank)", subtext: "The most common SLE writing question type. A sentence or short paragraph has one blank, and you choose the best word or phrase from four options. Grammar, register, and vocabulary are all tested." },
+  { front: "choisissez la version correcte", back: "choose the correct version (error identification)", subtext: "The second SLE writing question type. Four versions of a sentence or paragraph are given; you choose the one that contains no errors. Errors include: agreement, tense, preposition, register, and word choice." },
+  { front: "l'accord en genre et en nombre", back: "agreement in gender and number", subtext: "One of the most tested error types. 'La décision final' (wrong) → 'La décision finale' (correct). Adjective agreement with noun gender/number is a frequent trap." },
+  { front: "la concordance des temps", back: "sequence of tenses / tense agreement", subtext: "Using the correct tense relative to the main clause. 'Il a dit qu'il viendra' (wrong in formal writing) → 'Il a dit qu'il viendrait' (reported speech requires conditional). Tense errors are heavily tested at Level C." },
+  { front: "le mauvais registre", back: "wrong register", subtext: "Using an informal word in a formal government document. 'Le boss a confirmé...' (wrong) → 'Le directeur a confirmé...' Mixing registers is a classic Level B trap." },
+  { front: "la préposition incorrecte", back: "wrong preposition", subtext: "'Conformément avec la politique' (wrong) → 'Conformément à la politique' (correct). Preposition errors are common: conformément à, par rapport à, en vue de, à l'égard de." },
+  { front: "le pléonasme", back: "redundancy / pleonasm", subtext: "'une courte bref résumé' (wrong — bref already means short) → 'un bref résumé'. Government writing values precision; redundancy is an error." },
+  { front: "le participe passé", back: "past participle (agreement)", subtext: "'Les décisions que le ministre a pris' (wrong — pris must agree with 'les décisions', feminine plural preceding COD) → 'Les décisions que le ministre a prises'. This agreement rule is heavily tested." },
+  { front: "le choix lexical", back: "word choice / lexical error", subtext: "Choosing the wrong word for the context. 'Cette mesure est effectuée' vs 'Cette mesure est prise' — the verb matters. Government French uses specific collocations: prendre une décision, adopter une politique, mettre en œuvre des mesures." },
+  { front: "la structure de la phrase", back: "sentence structure", subtext: "'C'est une question dont il faut tenir compte de.' (wrong — dont already includes 'de': tenir compte DE → dont) → 'C'est une question dont il faut tenir compte.' Double prepositions are a classic trap." },
 ];
 
 const matchPairs = [
-  { left: "Suite à notre échange du…", right: "Following our exchange on…" },
-  { left: "Je vous prie de bien vouloir…", right: "I ask that you kindly…" },
-  { left: "Veuillez trouver ci-joint…", right: "Please find attached…" },
-  { left: "À la lumière de ce qui précède…", right: "In light of the foregoing…" },
-  { left: "Je demeure à votre disposition.", right: "I remain at your disposal." },
-  { left: "prendre acte de", right: "to formally acknowledge" },
+  { left: "complétez la phrase", right: "fill-in-the-blank question type" },
+  { left: "choisissez la version correcte", right: "error identification question type" },
+  { left: "l'accord en genre et en nombre", right: "agreement — gender and number" },
+  { left: "la concordance des temps", right: "tense agreement / sequence" },
+  { left: "le mauvais registre", right: "wrong register" },
+  { left: "le participe passé", right: "past participle agreement" },
 ];
 
 const quiz = [
   {
-    question: "You are writing a memo to inform your director of a policy change. Which opening is appropriate?",
+    question: "Fill in the blank: 'Suite à notre réunion du 12 mars, je vous transmets _____ le rapport final.' Which option is correct?",
+    options: ["par attaché", "ci-joint", "en attachement avec", "ensemble joint"],
+    correct: 1,
+    explanation: "'Ci-joint' is the standard government term for 'attached'. It is invariable before a noun without article: 'je vous transmets ci-joint le rapport.' 'Par attaché' does not exist; 'en attachement avec' is not standard government French.",
+  },
+  {
+    question: "Error identification: Which sentence is correctly written?",
     options: [
-      "'Bonjour Directrice, je voulais juste vous dire que…'",
-      "'Suite à la réunion du Conseil du 12 mars, je vous informe que la politique a été modifiée.'",
-      "'Hey, quick update on the policy:'",
-      "'Chère Marie, j'espère que tu vas bien!'",
+      "A. Les recommandations que le comité a formulé seront examinées.",
+      "B. Les recommandations que le comité a formulées seront examinées.",
+      "C. Les recommandations que le comité a formulés seront examinées.",
+      "D. Les recommandations qu'a formulées le comité seront examinées.",
     ],
     correct: 1,
-    explanation: "Government memos open formally. 'Suite à la réunion du [date], je vous informe que…' is the correct model. It references the context, uses 'vous', and states the purpose immediately.",
+    explanation: "B is correct: 'les recommandations' is the COD preceding 'a formulées' → the past participle must agree (feminine plural: formulées). A has no agreement; C uses masculine plural. D is grammatically awkward and non-standard.",
   },
   {
-    question: "'_____ le rapport demandé lors de la dernière réunion.' Which phrase completes this sentence about an attachment?",
-    options: ["Voilà", "Veuillez trouver ci-joint", "Je vous envoie", "J'ai mis en pièce"],
-    correct: 1,
-    explanation: "'Veuillez trouver ci-joint le rapport demandé lors de la dernière réunion.' = Please find attached the report requested at the last meeting. This is the standard government formula for attachments.",
+    question: "Fill in the blank: 'Cette mesure est _____ à la directive du Conseil du Trésor.' Which preposition is correct?",
+    options: ["conforme", "conformément", "selon", "d'accord avec"],
+    correct: 0,
+    explanation: "'Conforme à' (adjective + preposition) = in compliance with / in accordance with. 'Conformément à' is an adverb and cannot be used here as a predicate adjective after 'est'. 'Selon' means 'according to' and changes the meaning. 'd'accord avec' = agreeing with (person), not document compliance.",
   },
   {
-    question: "Which closing phrase is correct for a formal government email?",
+    question: "Error identification: 'C'est un problème dont il faut en tenir compte.' What is wrong?",
     options: [
-      "'Bonne journée !'",
-      "'Merci et à bientôt.'",
-      "'Je demeure à votre disposition pour tout renseignement complémentaire. Veuillez agréer mes salutations distinguées.'",
-      "'Cordialement, [name]'",
-    ],
-    correct: 2,
-    explanation: "Formal government correspondence ends with 'Je demeure à votre disposition…' followed by 'Veuillez agréer mes salutations distinguées.' 'Cordialement' is semi-formal and acceptable in some internal emails, but not in formal government letters.",
-  },
-  {
-    question: "A briefing note conclusion reads: '_____ ce qui précède, il est recommandé que le ministre approuve la proposition.' Which phrase fits?",
-    options: ["En dépit de", "À la lumière de", "Il convient de", "Bien que"],
-    correct: 1,
-    explanation: "'À la lumière de ce qui précède' = In light of the foregoing. This phrase introduces conclusions and recommendations based on the analysis above. It appears in almost every formal government recommendation.",
-  },
-  {
-    question: "Your memo recommends action. Which construction correctly uses the subjunctive?",
-    options: [
-      "'Nous recommandons que le comité examinera cette question.'",
-      "'Nous recommandons que le comité examine cette question.'",
-      "'Nous recommandons que le comité a examiné cette question.'",
-      "'Nous recommandons d'examiner cette question par le comité.'",
+      "Wrong tense — should use the subjunctive",
+      "Double preposition — 'dont' already includes 'de', so 'en' is redundant",
+      "Wrong subject — 'il' should be 'on'",
+      "Wrong verb — 'tenir' should be 'prendre'",
     ],
     correct: 1,
-    explanation: "'Recommander que' triggers the subjunctive: 'examine' (not 'examinera' or 'a examiné'). This is also true of 'suggérer que', 'proposer que', 'demander que'. The subjunctive after these verbs is mandatory.",
+    explanation: "'Tenir compte DE quelque chose' → relative pronoun 'dont' = de + lequel. So 'dont il faut tenir compte' is complete. Adding 'en' (also replacing 'de + thing') creates a double preposition: 'dont il faut en tenir compte' is wrong. Correct: 'C'est un problème dont il faut tenir compte.'",
+  },
+  {
+    question: "Fill in the blank: 'La politique _____ a été adoptée en 2022 demeure en vigueur.' Which phrase correctly identifies the subject?",
+    options: [
+      "qu'il s'agit",
+      "dont il est question",
+      "de laquelle il parle",
+      "à laquelle on réfère",
+    ],
+    correct: 1,
+    explanation: "'La politique dont il est question' = the policy in question / the policy referred to. 'Dont' replaces 'de + noun' and 'il est question de quelque chose' uses 'de'. This is a standard government phrase — 'la politique dont il est question demeure en vigueur' = the policy in question remains in force.",
   },
 ];
 
@@ -89,88 +92,77 @@ export default function SLELesson3Page() {
               Unit 1 · Lesson 3
             </p>
             <h1 className="mt-3 text-5xl font-black tracking-tight md:text-6xl">
-              Writing Government Documents
+              Written Expression — What the Test Actually Is
             </h1>
             <p className="mt-4 text-lg leading-8 text-[#526173]">
-              The SLE writing test asks you to produce a memo, email, or briefing note from scratch. These are the exact phrases, formulas, and structures that appear in real federal documents.
+              The SLE writing test is <strong>entirely multiple choice</strong> — 65 questions in 90 minutes. You are not asked to write a memo from scratch. You choose the best word to complete a sentence, or identify which version of a sentence has no errors.
             </p>
           </div>
 
           <div className="space-y-3">
             <div className="rounded-2xl bg-[#0B1F3A] p-5 text-white">
-              <p className="text-xs font-bold text-[#C9A44C]">Memo header structure</p>
-              <div className="mt-2 space-y-1 text-sm font-mono text-white/80">
-                <p>DESTINATAIRE : [To]</p>
-                <p>EXPÉDITEUR : [From]</p>
-                <p>DATE : [Date]</p>
-                <p>OBJET : [Subject]</p>
+              <p className="text-xs font-bold text-[#C9A44C]">The two question types</p>
+              <div className="mt-2 space-y-3 text-sm">
+                <div>
+                  <p className="font-black text-white">Type 1: Fill-in-the-blank</p>
+                  <p className="mt-1 text-white/70">A sentence has one gap. Choose the best word or phrase from four options. Tests vocabulary, collocations, and prepositions.</p>
+                </div>
+                <div className="border-t border-white/10 pt-3">
+                  <p className="font-black text-white">Type 2: Error identification</p>
+                  <p className="mt-1 text-white/70">Four versions of a sentence are given. Only one is correct. Tests agreement, tense, register, and sentence structure.</p>
+                </div>
               </div>
             </div>
             <div className="rounded-2xl border border-[#E7DAB9] bg-white p-5">
-              <p className="text-xs font-bold text-[#526173]">The four moves in every formal document</p>
-              <div className="mt-2 space-y-1 text-sm">
-                <p>1. State your purpose (objet / raison)</p>
-                <p>2. Provide context or background</p>
-                <p>3. Present the main information or analysis</p>
-                <p>4. Make a recommendation or request action</p>
+              <p className="text-xs font-bold text-[#526173]">Error types most commonly tested</p>
+              <div className="mt-2 space-y-1 text-sm text-[#526173]">
+                <p>• Past participle agreement (COD before avoir)</p>
+                <p>• Adjective agreement (gender / number)</p>
+                <p>• Wrong preposition (conformément à, etc.)</p>
+                <p>• Register mismatch (informal word in formal text)</p>
+                <p>• Double prepositions (dont + en)</p>
+                <p>• Tense sequence in reported speech</p>
               </div>
             </div>
           </div>
         </div>
 
         <section className="mt-16">
-          <h2 className="text-2xl font-black">Phrases and formulas</h2>
-          <p className="mt-1 text-[#526173]">These phrases are used in real government documents. Memorize them — they work in the SLE writing test and in the workplace.</p>
+          <h2 className="text-2xl font-black">Key vocabulary and error types</h2>
+          <p className="mt-1 text-[#526173]">Flip each card to understand the error type and how to spot it.</p>
           <div className="mt-6">
-            <FlashCardDeck cards={flashcards} title="Government writing — formulas & phrases" />
+            <FlashCardDeck cards={flashcards} title="SLE Written Expression — question types & error categories" />
           </div>
         </section>
 
-        <section className="mt-16 rounded-[2rem] border-2 border-[#FEF3C7] bg-white p-8">
-          <p className="text-xs font-bold uppercase tracking-widest text-[#D97706]">Model memo — annotated</p>
-          <div className="mt-4 space-y-1 text-sm font-mono text-[#0B1F3A]">
-            <p>DESTINATAIRE : Mme Sophie Lavoie, Directrice générale</p>
-            <p>EXPÉDITEUR : M. Antoine Tremblay, Chef de projet</p>
-            <p>DATE : 3 juin 2026</p>
-            <p>OBJET : Mise à jour sur la mise en œuvre du projet Horizon</p>
-          </div>
-          <div className="mt-4 space-y-3 text-sm text-[#526173]">
-            <p><span className="font-black text-[#0B1F3A]">Suite à la réunion du 27 mai</span>, je vous transmets une mise à jour sur l&apos;avancement du projet Horizon.</p>
-            <p>Il importe de souligner que la phase d&apos;analyse a été complétée conformément aux échéanciers prévus. <span className="font-black text-[#0B1F3A]">Les intervenants concernés ont été consultés</span> et leurs commentaires ont été intégrés à l&apos;ébauche.</p>
-            <p><span className="font-black text-[#0B1F3A]">À la lumière de ce qui précède</span>, nous recommandons que la Directrice générale approuve le passage à la phase de mise en œuvre.</p>
-            <p><span className="font-black text-[#0B1F3A]">Je demeure à votre disposition</span> pour tout renseignement complémentaire.</p>
-          </div>
-          <p className="mt-4 text-xs text-[#526173] italic">Highlighted phrases = the formulas from this lesson used in context.</p>
-        </section>
-
-        <section className="mt-12">
+        <section className="mt-16">
           <h2 className="text-2xl font-black">Match the pairs</h2>
-          <p className="mt-1 text-[#526173]">Match each formula to its English meaning.</p>
+          <p className="mt-1 text-[#526173]">Match each term to its definition.</p>
           <div className="mt-6">
-            <MatchPairs pairs={matchPairs} title="Writing formulas" />
+            <MatchPairs pairs={matchPairs} title="Written expression vocabulary" />
           </div>
         </section>
 
-        <section className="mt-12">
-          <h2 className="text-2xl font-black">Apply the formulas</h2>
-          <p className="mt-1 text-[#526173]">Each question tests whether you can use these phrases correctly in context.</p>
+        <section className="mt-16">
+          <h2 className="text-2xl font-black">Practice questions</h2>
+          <p className="mt-1 text-[#526173]">These replicate the two real question types you will face on test day.</p>
           <div className="mt-6">
-            <MultipleChoiceQuiz questions={quiz} title="Writing formulas quiz" />
+            <MultipleChoiceQuiz questions={quiz} title="Written expression — fill-in-blank & error ID" />
           </div>
         </section>
 
         <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
-          <p className="text-sm font-bold uppercase tracking-widest text-[#D97706]">Unit 1 complete!</p>
-          <h2 className="mt-3 text-3xl font-black">Government French done.</h2>
+          <p className="text-sm font-bold uppercase tracking-widest text-[#D97706]">Done!</p>
+          <h2 className="mt-3 text-3xl font-black">Written Expression understood.</h2>
           <p className="mt-3 leading-7 text-[#526173]">
-            Take the Unit 1 test to lock in government vocabulary, grammar, and writing formulas before moving on.
+            Next: the SLE reading test — comprehending government documents under time pressure.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link href="/learn/canadian-french-tests/unit-1/lesson-2" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">
               ← Previous lesson
             </Link>
-            <Link href="/learn/canadian-french-tests/unit-1/test" className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">
-              Unit 1 Test →
+            <Link href="/learn/canadian-french-tests/unit-1/lesson-4" className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">
+              Next lesson →
             </Link>
           </div>
         </section>

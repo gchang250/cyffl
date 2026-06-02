@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "French for Canadian Tests | CYFFL",
   description:
-    "Prepare for the Second Language Evaluation (SLE) for federal government jobs, or the TEF Canada / TCF Canada for immigration and Express Entry.",
+    "Build the French you need for the SLE (federal government bilingual jobs) and TEF Canada (Express Entry and immigration). Government vocabulary, formal grammar, and all four TEF Canada skills.",
 };
 
 const units = [
@@ -12,26 +12,32 @@ const units = [
     number: "01",
     title: "SLE — Federal Government Jobs",
     description:
-      "Build the French you need to pass the SLE. Government vocabulary (la mise en œuvre, les intervenants, la conformité), formal grammar (passive voice, nominalization, relative pronouns), and the exact writing formulas used in federal documents.",
+      "The SLE has three tests: reading (60 MCQ), written expression (65 MCQ — fill-in-blank and error identification), and oral interaction (20–40 min conversational interview). Build the vocabulary, grammar, and strategies for all three.",
     color: "bg-[#FEF3C7] text-[#D97706]",
     testHref: "/learn/canadian-french-tests/unit-1/test",
+    resource: { label: "PSC official practice tests ↗", url: "https://www.canada.ca/en/public-service-commission/services/second-language-testing-public-service/second-language-evaluation/practice-tests.html" },
     lessons: [
-      { title: "What is the SLE?", href: "/learn/canadian-french-tests/unit-1/lesson-1" },
-      { title: "Reading Test Strategies", href: "/learn/canadian-french-tests/unit-1/lesson-2" },
-      { title: "Writing & Oral Interaction", href: "/learn/canadian-french-tests/unit-1/lesson-3" },
+      { title: "Government Vocabulary", href: "/learn/canadian-french-tests/unit-1/lesson-1" },
+      { title: "Formal Grammar — Government French", href: "/learn/canadian-french-tests/unit-1/lesson-2" },
+      { title: "Written Expression — Fill-in-Blank & Error Identification", href: "/learn/canadian-french-tests/unit-1/lesson-3" },
+      { title: "Reading Comprehension — Government Texts", href: "/learn/canadian-french-tests/unit-1/lesson-4" },
+      { title: "Oral Interaction — Interview Strategies", href: "/learn/canadian-french-tests/unit-1/lesson-5" },
     ],
   },
   {
     number: "02",
     title: "TEF Canada — Immigration",
     description:
-      "Build the French you need to score CLB 7+ on TEF Canada. Topic vocabulary across environment, society, and technology themes; opinion and argument phrases (Force est de constater que…, Certes… mais…); and formal vs. informal writing register for both writing tasks.",
+      "TEF Canada tests four skills: reading (40 MCQ, 1 hr), listening (40 MCQ, 40 min — cannot go back), writing (continue an article + argue a viewpoint), and speaking (information-gathering conversation + persuasive presentation).",
     color: "bg-[#EFF6FF] text-[#2563EB]",
     testHref: "/learn/canadian-french-tests/unit-2/test",
+    resource: { label: "TEF Canada official site ↗", url: "https://www.lefrancaisdesaffaires.fr/en/candidate/test-evaluation-francais/tef-canada/" },
     lessons: [
-      { title: "CLB Levels & Immigration Requirements", href: "/learn/canadian-french-tests/unit-2/lesson-1" },
-      { title: "Listening & Reading Strategies", href: "/learn/canadian-french-tests/unit-2/lesson-2" },
-      { title: "Writing & Speaking Strategies", href: "/learn/canadian-french-tests/unit-2/lesson-3" },
+      { title: "Topic Vocabulary — Environment, Society, Technology, Health", href: "/learn/canadian-french-tests/unit-2/lesson-1" },
+      { title: "Opinion & Argument Phrases", href: "/learn/canadian-french-tests/unit-2/lesson-2" },
+      { title: "Written Expression — Sections A & B", href: "/learn/canadian-french-tests/unit-2/lesson-3" },
+      { title: "Listening Comprehension — Strategies & Question Types", href: "/learn/canadian-french-tests/unit-2/lesson-4" },
+      { title: "Oral Expression — Information Gathering & Persuasion", href: "/learn/canadian-french-tests/unit-2/lesson-5" },
     ],
   },
 ];
@@ -55,7 +61,7 @@ export default function CanadianFrenchTestsPage() {
             </h1>
 
             <p className="mt-5 text-lg leading-8 text-[#526173]">
-              Prepare for the tests that matter in Canada — whether you want a federal government job or a path to permanent residence.
+              Build the French you need to pass the SLE (federal government bilingual jobs) or TEF Canada (Express Entry and permanent residence). Vocabulary, grammar, and strategies for every section of each test.
             </p>
 
             <div className="mt-8 grid grid-cols-3 gap-3 text-center">
@@ -64,7 +70,7 @@ export default function CanadianFrenchTestsPage() {
                 <p className="mt-1 text-xs text-[#526173]">Units</p>
               </div>
               <div className="rounded-2xl border border-[#E7DAB9] bg-white p-4">
-                <p className="text-2xl font-black">6</p>
+                <p className="text-2xl font-black">10</p>
                 <p className="mt-1 text-xs text-[#526173]">Lessons</p>
               </div>
               <div className="rounded-2xl border border-[#E7DAB9] bg-white p-4">
@@ -74,22 +80,29 @@ export default function CanadianFrenchTestsPage() {
             </div>
 
             <div className="mt-6 rounded-[1.5rem] bg-[#0B1F3A] p-5 text-white">
-              <p className="text-sm font-bold text-[#C9A44C]">Course goal</p>
-              <p className="mt-2 font-black leading-7">
-                Walk into your test knowing the format, the scoring, and the strategies — so you don&apos;t lose marks to surprises.
-              </p>
+              <p className="text-sm font-bold text-[#C9A44C]">What you&apos;ll build</p>
+              <div className="mt-2 space-y-1 text-sm text-white/80">
+                <p>Government vocabulary and collocations (SLE)</p>
+                <p>Passive voice, nominalization, relative pronouns (SLE)</p>
+                <p>Fill-in-blank and error identification skills (SLE writing)</p>
+                <p>Reading government texts under time pressure (SLE)</p>
+                <p>Topic vocabulary across TEF Canada themes</p>
+                <p>Argumentation and opinion phrases (TEF writing & oral)</p>
+                <p>Note-taking and listening strategies (TEF)</p>
+                <p>Information-gathering and persuasion in French (TEF oral)</p>
+              </div>
             </div>
 
             <div className="mt-4 rounded-[1.5rem] border border-[#E7DAB9] bg-white p-5">
-              <p className="text-xs font-bold text-[#526173] uppercase tracking-widest">The two tracks</p>
+              <p className="text-xs font-bold text-[#526173] uppercase tracking-widest">The two tests</p>
               <div className="mt-3 space-y-3 text-sm">
                 <div>
-                  <p className="font-black text-[#0B1F3A]">Federal government jobs → SLE</p>
-                  <p className="mt-0.5 text-[#526173]">Three tests (reading, writing, oral), graded A/B/C. Most bilingual positions require a BBB or CBC profile.</p>
+                  <p className="font-black text-[#0B1F3A]">SLE — federal bilingual jobs (PSC)</p>
+                  <p className="mt-0.5 text-[#526173]">Reading (60 MCQ, 90 min) · Writing (65 MCQ, 90 min) · Oral (20–40 min interview). Graded A/B/C. Most positions require BBB or CBC profile.</p>
                 </div>
                 <div className="border-t border-[#E7DAB9] pt-3">
-                  <p className="font-black text-[#0B1F3A]">Immigration → TEF Canada or TCF Canada</p>
-                  <p className="mt-0.5 text-[#526173]">Scores convert to CLB levels. Express Entry FSW requires CLB 7 minimum in all four skills.</p>
+                  <p className="font-black text-[#0B1F3A]">TEF Canada — immigration (IRCC)</p>
+                  <p className="mt-0.5 text-[#526173]">Reading (40 MCQ, 1 hr) · Listening (40 MCQ, 40 min) · Writing (2 tasks, 1 hr) · Speaking (2 tasks, 15 min). Scores convert to CLB levels. Express Entry minimum: CLB 7 in all four skills.</p>
                 </div>
               </div>
             </div>
@@ -127,13 +140,21 @@ export default function CanadianFrenchTestsPage() {
                   ))}
                 </div>
 
-                <div className="mt-4 border-t border-[#E7DAB9] pt-4">
+                <div className="mt-4 border-t border-[#E7DAB9] pt-4 flex flex-wrap items-center gap-3">
                   <Link
                     href={unit.testHref}
                     className={`inline-flex items-center gap-2 rounded-full px-5 py-2 text-sm font-black transition hover:-translate-y-0.5 ${unit.color} border border-current`}
                   >
                     Unit {unit.number} Test →
                   </Link>
+                  <a
+                    href={unit.resource.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs font-black text-[#526173] hover:text-[#0B1F3A] transition"
+                  >
+                    {unit.resource.label}
+                  </a>
                 </div>
               </div>
             ))}

@@ -158,7 +158,7 @@ export default function TEFLesson2Page() {
           <p className="text-sm font-bold uppercase tracking-widest text-[#2563EB]">Done!</p>
           <h2 className="mt-3 text-3xl font-black">Opinion phrases ready.</h2>
           <p className="mt-3 leading-7 text-[#526173]">
-            Next: writing in formal French — the letter structure, register differences, and phrases you need for TEF Canada Task 2.
+            Next: TEF Canada Written Expression — what the two writing tasks actually are and how to approach each one.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link href="/learn/canadian-french-tests/unit-2/lesson-1" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">

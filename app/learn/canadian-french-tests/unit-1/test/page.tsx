@@ -3,89 +3,99 @@ import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const questions = [
   {
-    question: "'Le budget _____ approuvé par le ministre lors de la réunion.' Which passive construction is correct?",
-    options: ["est approuvé", "a été approuvé", "approuve", "a approuvé"],
-    correct: 1,
-    explanation: "'A été approuvé' is the passé composé passive: être (a été) + past participle (approuvé, agreeing with 'le budget', masculine). Passive voice is used constantly in government French to describe decisions and actions.",
-  },
-  {
-    question: "A memo reads: 'Les mesures _____ nous faisons référence seront mises en œuvre dès le 1er juillet.' Which relative pronoun fits?",
-    options: ["que", "qui", "auxquelles", "dont"],
-    correct: 2,
-    explanation: "'Auxquelles' = à + lesquelles. 'Faire référence à quelque chose' requires 'à', so the relative pronoun must carry 'à'. 'Les mesures auxquelles nous faisons référence' = the measures we are referring to.",
-  },
-  {
-    question: "Which sentence uses 'la mise en œuvre' correctly?",
-    options: [
-      "'La mise en œuvre a été retardée en raison de contraintes budgétaires.'",
-      "'Nous avons mis en œuvre la procédure de la mise en œuvre.'",
-      "'La mise en œuvre est un verbe important.'",
-      "'Il faut mettre en la mise en œuvre immédiatement.'",
-    ],
+    question: "Fill-in-blank (SLE writing): 'La Direction générale souhaite porter _____ votre attention les modifications apportées au programme.' Which preposition is correct?",
+    options: ["à", "en", "pour", "dans"],
     correct: 0,
-    explanation: "'La mise en œuvre a été retardée' = Implementation was delayed. 'Mise en œuvre' is a noun (implementation) — it replaces the verb 'mettre en œuvre'. Use it as a subject or object, not alongside the verb itself.",
+    explanation: "'Porter à l'attention de quelqu'un' = to bring to someone's attention. This is a fixed government collocation. 'Porter en' and 'porter pour' don't exist in this construction. Learn common government collocations: donner suite à, faire état de, tenir compte de, donner lieu à.",
   },
   {
-    question: "Which opening line is correct for a formal government memo?",
+    question: "Error identification (SLE writing): Which version of this sentence is correct?",
     options: [
-      "'Bonjour Marie, je voulais juste te tenir au courant…'",
-      "'Suite à la réunion du 3 juin, je vous informe des développements suivants.'",
-      "'Hey team, quick update:'",
-      "'Chère collègue, j'espère que tu vas bien!'",
+      "A. Les ressources humains ont confirmé la date de l'entretien.",
+      "B. Les ressources humaines ont confirmé la date de l'entretien.",
+      "C. La ressource humaine a confirmé la date de l'entretien.",
+      "D. Les ressources humaines a confirmé la date de l'entretien.",
     ],
     correct: 1,
-    explanation: "Government memos use formal register throughout: 'vous', no informal openings, clear statement of purpose. 'Suite à la réunion du [date]' is a standard and correct opening formula.",
+    explanation: "B is correct. 'Les ressources humaines' is a fixed plural feminine noun — always feminine plural ('humaines', not 'humains'). The verb must agree with the plural subject: 'ont confirmé' (not 'a confirmé'). Both A (wrong gender) and D (verb agrees with singular) are incorrect.",
   },
   {
-    question: "'Il _____ de noter que le délai a été prolongé de deux semaines.' Which impersonal construction is correct?",
-    options: ["convient", "est à", "importe", "faut"],
-    correct: 0,
-    explanation: "'Il convient de noter que' = It should be noted that. All four options can work in some contexts, but 'il convient de + infinitif' is the most common formal impersonal construction in this pattern.",
-  },
-  {
-    question: "A briefing note recommendation reads: 'Nous recommandons que le sous-ministre _____ la proposition.' Which form is correct?",
-    options: ["approuvera", "a approuvé", "approuve", "approuver"],
-    correct: 2,
-    explanation: "'Recommander que' triggers the subjunctive. 'Approuve' (present subjunctive) is correct — not the future 'approuvera' or the infinitive 'approuver'. This rule also applies to 'suggérer que', 'proposer que', 'demander que'.",
-  },
-  {
-    question: "Your email is ending. Which closing is appropriate for a formal government email?",
+    question: "SLE reading: A policy states: 'Cette mesure s'applique à tous les fonctionnaires à l'exception de ceux dont la nomination précède l'entrée en vigueur du présent règlement, sous réserve d'une décision contraire du sous-ministre.' A statement says: 'All public servants are subject to this measure without exception.' This is:",
     options: [
-      "'Bonne journée et merci !'",
-      "'À bientôt !'",
-      "'Je demeure à votre disposition pour tout renseignement complémentaire. Veuillez agréer mes salutations distinguées.'",
-      "'Ciao, [name]'",
+      "True — the policy covers all public servants",
+      "False — employees appointed before the regulation took effect are excluded, unless the deputy minister decides otherwise",
+      "True — the exception only applies in rare cases",
+      "Partially true — it depends on when they were appointed",
     ],
-    correct: 2,
-    explanation: "Formal government correspondence closes with 'Je demeure à votre disposition pour tout renseignement complémentaire' (I remain available for any additional information) followed by 'Veuillez agréer mes salutations distinguées.'",
-  },
-  {
-    question: "'_____ ce qui précède, il est recommandé de procéder à une révision complète du programme.' Which phrase fits?",
-    options: ["En dépit de", "À la lumière de", "Bien que", "Il convient de"],
     correct: 1,
-    explanation: "'À la lumière de ce qui précède' = In light of the foregoing. This phrase introduces the conclusion of a briefing note or report, drawing on the analysis that came before it.",
+    explanation: "The text contains two restrictions: (1) those appointed before the regulation's entry into force are excluded, AND (2) 'sous réserve d'une décision contraire' means the deputy minister can override this. 'Without exception' ignores both restrictions. At Level C, you must account for every qualifier.",
   },
   {
-    question: "The sentence 'Les intervenants concernés ont été consultés' means:",
-    options: [
-      "The relevant stakeholders will be consulted",
-      "The relevant stakeholders are being consulted",
-      "The relevant stakeholders were consulted",
-      "The relevant stakeholders consult the policy",
-    ],
-    correct: 2,
-    explanation: "'Ont été consultés' = were consulted (passé composé passif). 'Les intervenants' (stakeholders) is one of the most common nouns in federal documents — know it. The passive voice tells you what happened to the stakeholders (they were consulted).",
+    question: "Fill-in-blank (SLE writing): 'Le rapport _____ il est question dans cette note sera soumis au Conseil d'administration la semaine prochaine.' Which relative pronoun is correct?",
+    options: ["que", "dont", "auquel", "lequel"],
+    correct: 1,
+    explanation: "'Il est question DE quelque chose' → the relative pronoun must carry 'de', so use 'dont'. 'Le rapport dont il est question' = the report in question. 'Que' is the direct object pronoun (no preposition). 'Auquel' = à + lequel (wrong preposition). 'Lequel' needs a preposition before it.",
   },
   {
-    question: "Your memo needs to say 'Please find attached the report requested.' Which sentence is correct?",
+    question: "SLE oral: The assessor says: 'Si vous deviez convaincre votre équipe d'adopter un nouveau processus de travail qu'elle résiste à changer, comment procéderiez-vous ?' This question tests your ability to:",
     options: [
-      "'J'ai attaché le rapport demandé.'",
-      "'Voici le rapport demandé en attachement.'",
-      "'Veuillez trouver ci-joint le rapport demandé.'",
-      "'Je vous envoie le rapport que vous avez demandé en pièce.'",
+      "Describe your current workplace",
+      "Give a hypothetical problem-solving response using the conditional — Level C oral task",
+      "Define what a work process is",
+      "Explain why people resist change in general",
+    ],
+    correct: 1,
+    explanation: "'Comment procéderiez-vous ?' = how would you proceed — conditional tense, hypothetical scenario. This is a Level C oral task requiring structured problem-solving: 'Je commencerais par…', 'Ensuite, je…', 'Pour traiter la résistance au changement, je mettrais en avant…'. Defining 'work process' or explaining resistance theory is off-task.",
+  },
+  {
+    question: "Error identification (SLE writing): Which version is correctly written?",
+    options: [
+      "A. Suite à notre réunion, je vous fais part de mes décisions prises.",
+      "B. Suite à notre réunion, je vous fais part des décisions prises.",
+      "C. Après notre réunion, je vous fais part aux décisions prises.",
+      "D. À la suite de notre réunion, je vous fait part des décisions prises.",
+    ],
+    correct: 1,
+    explanation: "B is correct. 'Faire part de quelque chose' = to inform someone of something (fixed construction with 'de'). A uses 'de mes décisions prises' (wrong — the decisions aren't 'mine' in this impersonal context). C uses 'aux' (wrong preposition after 'faire part'). D has incorrect verb agreement ('vous fait' should be 'vous fais' — the subject is 'je').",
+  },
+  {
+    question: "SLE reading: A memo's OBJET line reads: 'Modifications aux critères d'admissibilité — Programme d'aide à la formation professionnelle.' A question asks: 'What is the most likely content of this memo?' The answer is:",
+    options: [
+      "A description of how to apply for professional training funding",
+      "An announcement that the eligibility criteria for the professional training aid program have changed",
+      "A request for employees to enroll in training programs",
+      "A report on the effectiveness of professional training",
+    ],
+    correct: 1,
+    explanation: "The OBJET line signals 'modifications aux critères d'admissibilité' = changes to eligibility criteria. The memo's content is about those changes — not how to apply (that would be a guide), not a request to enroll, not a performance report. Reading the OBJET line answers many purpose and structure questions immediately.",
+  },
+  {
+    question: "Fill-in-blank (SLE writing): 'À la lumière des consultations menées _____ les intervenants du secteur, il a été décidé de reporter la mise en œuvre.' Which preposition fits?",
+    options: ["avec", "auprès de", "sur", "par rapport à"],
+    correct: 1,
+    explanation: "'Mener des consultations auprès des intervenants' = to conduct consultations with/among stakeholders. 'Auprès de' is the fixed preposition for consultations and surveys in government French. 'Avec' is too informal; 'sur' changes the meaning; 'par rapport à' means 'in relation to'.",
+  },
+  {
+    question: "SLE oral — Level B explanation task: The assessor asks you to explain how your team handles a conflicting deadline between two projects. The BEST structure for your response is:",
+    options: [
+      "'C'est compliqué, ça dépend de la situation.'",
+      "'Nous gérons les conflits de priorités de la façon suivante. Tout d'abord, nous identifions laquelle des deux échéances est la plus critique. Ensuite, nous consultons les gestionnaires concernés. Finalement, nous réallouons les ressources en conséquence.'",
+      "'Dans mon équipe, nous essayons de bien travailler ensemble.'",
+      "'Je préférerais ne pas parler de conflits dans mon équipe.'",
+    ],
+    correct: 1,
+    explanation: "Level B explanation requires structure and specificity: 'la façon suivante' + sequential steps (Tout d'abord → Ensuite → Finalement) + relevant professional vocabulary ('échéances', 'gestionnaires', 'réallouer les ressources'). The other options are too vague, off-topic, or avoid the question.",
+  },
+  {
+    question: "Error identification (SLE writing): A document contains: 'Les membres du comité auxquels ont été remis les documents ont demandé un délai supplémentaire.' Is this correct?",
+    options: [
+      "No — 'auxquels ont été remis' should be 'auxquels les documents ont été remis'",
+      "No — 'auxquels' should be 'dont'",
+      "Yes — the sentence is correctly written",
+      "No — 'ont demandé' should be 'a demandé'",
     ],
     correct: 2,
-    explanation: "'Veuillez trouver ci-joint [le document]' is the standard government formula for attachments. 'Ci-joint' is the formal term for 'attached'. 'En pièce jointe' is also correct but 'ci-joint' is more common in formal documents.",
+    explanation: "The sentence is correct. 'Auxquels ont été remis les documents' is a correctly inverted passive relative clause (remise à quelqu'un → auxquels). 'Les membres… ont demandé' — the verb correctly agrees with the plural subject 'les membres'. This is a Level C sentence structure — recognize that a sentence with a complex clause can still be entirely correct.",
   },
 ];
 
@@ -101,7 +111,7 @@ export default function SLETestPage() {
           <span className="rounded-full bg-[#FEF3C7] px-3 py-1 text-xs font-black text-[#D97706]">Unit 1 Test</span>
           <h1 className="mt-4 text-5xl font-black tracking-tight md:text-6xl">Government French</h1>
           <p className="mt-4 max-w-2xl text-lg leading-8 text-[#526173]">
-            10 questions testing government vocabulary, passive voice, relative pronouns, impersonal constructions, and formal writing formulas.
+            10 questions mixing all three SLE test types: fill-in-blank (written expression), error identification (written expression), and reading comprehension passages with government text extracts. Oral strategy questions included.
           </p>
         </div>
 
@@ -109,11 +119,28 @@ export default function SLETestPage() {
           <MultipleChoiceQuiz questions={questions} title="Unit 1 Test · 10 questions" />
         </section>
 
-        <div className="mt-12 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
-          <p className="font-black text-lg">Ready for Unit 2?</p>
-          <p className="mt-2 text-[#526173]">Unit 2 covers the French you need for TEF Canada — topic vocabulary, opinion phrases, and formal writing for the immigration test.</p>
+        <div className="mt-12 rounded-[2rem] bg-[#0B1F3A] p-8 text-white shadow-sm">
+          <p className="text-sm font-bold text-[#C9A44C] uppercase tracking-widest">Official practice materials</p>
+          <p className="mt-3 leading-7 text-white/70">
+            The Public Service Commission provides free official SLE practice tests for reading and written expression. These are the most accurate preparation materials available.
+          </p>
           <div className="mt-5 flex flex-wrap gap-3">
-            <Link href="/learn/canadian-french-tests/unit-1/lesson-3" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">← Back to lesson</Link>
+            <a
+              href="https://www.canada.ca/en/public-service-commission/services/second-language-testing-public-service/second-language-evaluation/practice-tests.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full bg-[#C9A44C] px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5"
+            >
+              PSC official practice tests ↗
+            </a>
+          </div>
+        </div>
+
+        <div className="mt-6 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+          <p className="font-black text-lg">Ready for Unit 2?</p>
+          <p className="mt-2 text-[#526173]">Unit 2 covers the French you need for TEF Canada — topic vocabulary, opinion phrases, and all four test sections.</p>
+          <div className="mt-5 flex flex-wrap gap-3">
+            <Link href="/learn/canadian-french-tests/unit-1/lesson-5" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">← Back to lesson</Link>
             <Link href="/learn/canadian-french-tests/unit-2/lesson-1" className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Start Unit 2 →</Link>
           </div>
         </div>

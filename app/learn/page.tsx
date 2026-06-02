@@ -54,7 +54,7 @@ const courses = [
     description:
       "Build the French that gets you through the SLE (government jobs) and TEF Canada (immigration). Government vocabulary, formal grammar, opinion phrases, and letter-writing register.",
     units: ["SLE — Government Jobs", "TEF Canada — Immigration"],
-    lessonCount: "6 lessons · 2 unit tests",
+    lessonCount: "10 lessons · 2 unit tests",
   },
 ];
 
