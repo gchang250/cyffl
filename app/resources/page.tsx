@@ -134,14 +134,34 @@ const categories: ResourceCategory[] = [
         href: "/resources/verbs-futur-anterieur",
       },
       {
-        label: "Le subjonctif",
+        label: "Le plus-que-parfait",
+        description: "The 'had done' tense — for actions completed before another past event, reported speech, and si-clauses.",
+        href: "/resources/verbs-plus-que-parfait",
+      },
+      {
+        label: "Le subjonctif présent",
         description: "The subjunctive mood — triggers, formation, and the most common irregular forms.",
         href: "/resources/verbs-subjonctif",
       },
       {
-        label: "Le conditionnel",
+        label: "Le subjonctif passé",
+        description: "The past subjunctive — for completed actions in subjunctive contexts, superlatives, and concession clauses.",
+        href: "/resources/verbs-subjonctif-passe",
+      },
+      {
+        label: "Le conditionnel présent",
         description: "The conditional mood for polite requests, hypotheticals, and if-then clauses.",
         href: "/resources/verbs-conditionnel",
+      },
+      {
+        label: "Le conditionnel passé",
+        description: "The 'would have done' tense — hypothetical past, regrets, reproaches, and the journalistic conditional.",
+        href: "/resources/verbs-conditionnel-passe",
+      },
+      {
+        label: "Le passé simple ⚠️ Literary",
+        description: "The literary past tense — used in novels and formal narrative, not in conversation or modern writing. Recognize it; use passé composé instead.",
+        href: "/resources/verbs-passe-simple",
       },
     ],
   },
