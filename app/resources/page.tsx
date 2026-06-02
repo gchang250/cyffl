@@ -96,6 +96,12 @@ const categories: ResourceCategory[] = [
           "How to say no, not, never, and nothing — with common mistakes to avoid.",
         href: "/resources/negation",
       },
+      {
+        label: "Sentence structure",
+        description:
+          "Word order, subordinate clauses, relative pronouns, emphasis structures, impersonal constructions, and nominalization — a complete structural reference.",
+        href: "/resources/sentence-structure",
+      },
     ],
   },
   {
