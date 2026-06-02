@@ -11,8 +11,8 @@ const questions = [
   {
     question: "The Individual Oral is worth what percentage of the IB French B SL final grade?",
     options: ["20%", "25%", "30%", "45%"],
-    correct: 2,
-    explanation: "The Individual Oral (IA) = 30%. Paper 1 = 45%. Paper 2 = 25%. Total = 100%.",
+    correct: 1,
+    explanation: "The Individual Oral (IA) = 25%. Each component is 25%: Paper 1 (Written Production), Paper 2A (Reading), Paper 2B (Listening), and the Individual Oral.",
   },
   {
     question: "What are the three Individual Oral marking criteria?",

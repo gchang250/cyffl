@@ -35,8 +35,8 @@ const quiz = [
   {
     question: "The Individual Oral is worth what percentage of the IB French B SL final grade?",
     options: ["20%", "25%", "30%", "45%"],
-    correct: 2,
-    explanation: "The Individual Oral (IA) is worth 30% — making it the second-heaviest assessment after Paper 1 (45%).",
+    correct: 1,
+    explanation: "The Individual Oral (IA) is worth 25% — the same as each other component: Paper 1 (Written Production), Paper 2A (Reading), and Paper 2B (Listening). Each is 25%.",
   },
   {
     question: "After describing the image, what should you do next?",
@@ -75,7 +75,7 @@ export default function Unit4Lesson1Page() {
               Oral Structure & Preparation
             </h1>
             <p className="mt-4 text-lg leading-8 text-[#526173]">
-              The Individual Oral is 30% of your grade. Understanding exactly what happens,
+              The Individual Oral is 25% of your grade. Understanding exactly what happens,
               in what order, and what examiners are marking changes everything.
             </p>
           </div>
