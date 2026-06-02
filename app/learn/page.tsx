@@ -41,8 +41,8 @@ const courses = [
     statusColor: "bg-[#FDF4FF] text-[#9333EA]",
     href: "/learn/ib-french-b-sl",
     description:
-      "Prepare for Paper 1, Paper 2, and the Individual Oral. All five core themes, reading and listening strategies, text types, and oral discussion language.",
-    units: ["The Five Themes", "Paper 1", "Paper 2", "Individual Oral"],
+      "Prepare for Paper 2, Paper 1, and the Individual Oral. All five core themes, reading and listening strategies, text types, and oral discussion language.",
+    units: ["The Five Themes", "Paper 2", "Paper 1", "Individual Oral"],
     lessonCount: "14 lessons · 4 unit tests",
   },
 ];
