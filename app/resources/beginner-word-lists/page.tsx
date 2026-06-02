@@ -1,111 +1,114 @@
 import Link from "next/link";
 
-const colours: [string, string][] = [
-  ["rouge", "red"],
-  ["bleu", "blue"],
-  ["vert", "green"],
-  ["jaune", "yellow"],
-  ["blanc", "white"],
-  ["noir", "black"],
-  ["orange", "orange"],
-  ["violet", "purple"],
-  ["rose", "pink"],
-  ["gris", "grey"],
+// [French, IPA, English]
+const colours: [string, string, string][] = [
+  ["rouge", "[ʁuʒ]", "red"],
+  ["bleu", "[blø]", "blue"],
+  ["vert", "[vɛʁ]", "green"],
+  ["jaune", "[ʒon]", "yellow"],
+  ["blanc", "[blɑ̃]", "white"],
+  ["noir", "[nwaʁ]", "black"],
+  ["orange", "[ɔʁɑ̃ʒ]", "orange"],
+  ["violet", "[vjɔlɛ]", "purple"],
+  ["rose", "[ʁoz]", "pink"],
+  ["gris", "[ɡʁi]", "grey"],
 ];
 
-const numbers: [string, string][] = [
-  ["un", "one"],
-  ["deux", "two"],
-  ["trois", "three"],
-  ["quatre", "four"],
-  ["cinq", "five"],
-  ["six", "six"],
-  ["sept", "seven"],
-  ["huit", "eight"],
-  ["neuf", "nine"],
-  ["dix", "ten"],
-  ["onze", "eleven"],
-  ["douze", "twelve"],
-  ["treize", "thirteen"],
-  ["quatorze", "fourteen"],
-  ["quinze", "fifteen"],
-  ["seize", "sixteen"],
-  ["dix-sept", "seventeen"],
-  ["dix-huit", "eighteen"],
-  ["dix-neuf", "nineteen"],
-  ["vingt", "twenty"],
+const numbers: [string, string, string][] = [
+  ["un", "[œ̃]", "one"],
+  ["deux", "[dø]", "two"],
+  ["trois", "[tʁwa]", "three"],
+  ["quatre", "[katʁ]", "four"],
+  ["cinq", "[sɛ̃k]", "five"],
+  ["six", "[sis]", "six"],
+  ["sept", "[sɛt]", "seven"],
+  ["huit", "[ɥit]", "eight"],
+  ["neuf", "[nœf]", "nine"],
+  ["dix", "[dis]", "ten"],
+  ["onze", "[ɔ̃z]", "eleven"],
+  ["douze", "[duz]", "twelve"],
+  ["treize", "[tʁɛz]", "thirteen"],
+  ["quatorze", "[katɔʁz]", "fourteen"],
+  ["quinze", "[kɛ̃z]", "fifteen"],
+  ["seize", "[sɛz]", "sixteen"],
+  ["dix-sept", "[dis.sɛt]", "seventeen"],
+  ["dix-huit", "[diz.ɥit]", "eighteen"],
+  ["dix-neuf", "[diz.nœf]", "nineteen"],
+  ["vingt", "[vɛ̃]", "twenty"],
 ];
 
-const days: [string, string][] = [
-  ["lundi", "Monday"],
-  ["mardi", "Tuesday"],
-  ["mercredi", "Wednesday"],
-  ["jeudi", "Thursday"],
-  ["vendredi", "Friday"],
-  ["samedi", "Saturday"],
-  ["dimanche", "Sunday"],
+const days: [string, string, string][] = [
+  ["lundi", "[lœ̃di]", "Monday"],
+  ["mardi", "[maʁdi]", "Tuesday"],
+  ["mercredi", "[mɛʁkʁədi]", "Wednesday"],
+  ["jeudi", "[ʒødi]", "Thursday"],
+  ["vendredi", "[vɑ̃dʁədi]", "Friday"],
+  ["samedi", "[samdi]", "Saturday"],
+  ["dimanche", "[dimɑ̃ʃ]", "Sunday"],
 ];
 
-const months: [string, string][] = [
-  ["janvier", "January"],
-  ["février", "February"],
-  ["mars", "March"],
-  ["avril", "April"],
-  ["mai", "May"],
-  ["juin", "June"],
-  ["juillet", "July"],
-  ["août", "August"],
-  ["septembre", "September"],
-  ["octobre", "October"],
-  ["novembre", "November"],
-  ["décembre", "December"],
+const months: [string, string, string][] = [
+  ["janvier", "[ʒɑ̃vje]", "January"],
+  ["février", "[fevʁije]", "February"],
+  ["mars", "[maʁs]", "March"],
+  ["avril", "[avʁil]", "April"],
+  ["mai", "[mɛ]", "May"],
+  ["juin", "[ʒɥɛ̃]", "June"],
+  ["juillet", "[ʒɥijɛ]", "July"],
+  ["août", "[u]", "August"],
+  ["septembre", "[sɛptɑ̃bʁ]", "September"],
+  ["octobre", "[ɔktɔbʁ]", "October"],
+  ["novembre", "[nɔvɑ̃bʁ]", "November"],
+  ["décembre", "[desɑ̃bʁ]", "December"],
 ];
 
-const verbs: [string, string][] = [
-  ["être", "to be"],
-  ["avoir", "to have"],
-  ["aller", "to go"],
-  ["faire", "to do / make"],
-  ["parler", "to speak"],
-  ["manger", "to eat"],
-  ["aimer", "to like / love"],
-  ["regarder", "to watch"],
-  ["écouter", "to listen"],
-  ["jouer", "to play"],
-  ["habiter", "to live"],
-  ["travailler", "to work"],
+const verbs: [string, string, string][] = [
+  ["être", "[ɛtʁ]", "to be"],
+  ["avoir", "[avwaʁ]", "to have"],
+  ["aller", "[ale]", "to go"],
+  ["faire", "[fɛʁ]", "to do / make"],
+  ["parler", "[paʁle]", "to speak"],
+  ["manger", "[mɑ̃ʒe]", "to eat"],
+  ["aimer", "[ɛme]", "to like / love"],
+  ["regarder", "[ʁəɡaʁde]", "to watch"],
+  ["écouter", "[ekute]", "to listen"],
+  ["jouer", "[ʒwe]", "to play"],
+  ["habiter", "[abite]", "to live (somewhere)"],
+  ["travailler", "[tʁavaje]", "to work"],
 ];
 
-const adjectives: [string, string][] = [
-  ["grand", "big"],
-  ["petit", "small"],
-  ["bon", "good"],
-  ["mauvais", "bad"],
-  ["beau", "beautiful"],
-  ["vieux", "old"],
-  ["nouveau", "new"],
-  ["facile", "easy"],
-  ["difficile", "hard"],
-  ["intéressant", "interesting"],
-  ["sympa", "nice"],
-  ["rapide", "fast"],
+const adjectives: [string, string, string][] = [
+  ["grand", "[ɡʁɑ̃]", "big / tall"],
+  ["petit", "[pəti]", "small"],
+  ["bon", "[bɔ̃]", "good"],
+  ["mauvais", "[movɛ]", "bad"],
+  ["beau", "[bo]", "beautiful"],
+  ["vieux", "[vjø]", "old"],
+  ["nouveau", "[nuvo]", "new"],
+  ["facile", "[fasil]", "easy"],
+  ["difficile", "[difisil]", "hard / difficult"],
+  ["intéressant", "[ɛ̃teʁesɑ̃]", "interesting"],
+  ["sympa", "[sɛ̃pa]", "nice / friendly"],
+  ["rapide", "[ʁapid]", "fast"],
 ];
 
-function WordTable({ rows }: { rows: [string, string][] }) {
+function WordTable({ rows }: { rows: [string, string, string][] }) {
   return (
-    <div className="mt-6 overflow-x-auto">
+    <div className="mt-5 overflow-x-auto rounded-2xl border border-[#E7DAB9] bg-white">
       <table className="w-full text-sm">
         <thead>
-          <tr className="border-b border-[#E7DAB9]">
-            <th className="pb-3 text-left font-black text-[#0B1F3A]">French</th>
-            <th className="pb-3 text-left font-black text-[#0B1F3A]">English</th>
+          <tr className="border-b border-[#E7DAB9] bg-[#FFFDF7]">
+            <th className="py-3 pl-5 text-left font-black text-[#0B1F3A]">French</th>
+            <th className="py-3 pl-4 text-left font-mono text-xs font-bold text-[#526173]">IPA</th>
+            <th className="py-3 pl-4 pr-5 text-left font-black text-[#0B1F3A]">English</th>
           </tr>
         </thead>
         <tbody className="divide-y divide-[#F3EDD8]">
-          {rows.map(([fr, en]) => (
-            <tr key={fr}>
-              <td className="py-3 font-black">{fr}</td>
-              <td className="py-3 text-[#526173]">{en}</td>
+          {rows.map(([fr, ipa, en]) => (
+            <tr key={fr} className="group hover:bg-[#FFFDF7] transition-colors">
+              <td className="py-3 pl-5 font-black">{fr}</td>
+              <td className="py-3 pl-4 font-mono text-xs text-[#526173] group-hover:text-[#0B1F3A] transition-colors">{ipa}</td>
+              <td className="py-3 pl-4 pr-5 text-[#526173]">{en}</td>
             </tr>
           ))}
         </tbody>
@@ -130,8 +133,27 @@ export default function BeginnerWordListsPage() {
             Beginner Word Lists
           </h1>
           <p className="mt-4 text-lg leading-8 text-[#526173]">
-            Essential French vocabulary organized by theme. Build your core word bank with the words you'll use most often.
+            Essential French vocabulary organized by theme, with IPA pronunciation for every word. The IPA column uses the International Phonetic Alphabet — a standard notation for how words are pronounced.
           </p>
+        </div>
+
+        <div className="mt-8 rounded-2xl bg-[#0B1F3A] p-5 text-white">
+          <p className="font-black text-[#C9A44C] text-sm">Reading IPA — key symbols</p>
+          <div className="mt-3 grid gap-2 sm:grid-cols-3 text-sm">
+            {[
+              { sym: "ʁ", desc: "French R — back of throat" },
+              { sym: "ɑ̃ ɛ̃ ɔ̃ œ̃", desc: "Nasal vowels — air through nose" },
+              { sym: "ø œ", desc: "Front rounded vowels (bleu, neuf)" },
+              { sym: "ɥ", desc: "'Glide' in huit, nuit" },
+              { sym: "ʃ ʒ", desc: "sh (chat) / zh (je)" },
+              { sym: "[ ]", desc: "Square brackets = IPA transcription" },
+            ].map((k) => (
+              <div key={k.sym} className="rounded-xl bg-white/10 p-3">
+                <p className="font-mono font-black text-[#C9A44C]">{k.sym}</p>
+                <p className="mt-1 text-xs text-white/70">{k.desc}</p>
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className="mt-12">

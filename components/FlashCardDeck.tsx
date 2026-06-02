@@ -6,6 +6,7 @@ interface Card {
   front: string;
   back: string;
   subtext?: string;
+  ipa?: string;
 }
 
 export default function FlashCardDeck({ cards, title }: { cards: Card[]; title?: string }) {
@@ -92,7 +93,10 @@ export default function FlashCardDeck({ cards, title }: { cards: Card[]; title?:
               French
             </p>
             <p className="mt-6 text-4xl font-black leading-tight">{card.front}</p>
-            <p className="mt-8 text-sm text-white/40">tap to flip</p>
+            {card.ipa && (
+              <p className="mt-2 font-mono text-sm text-white/50">{card.ipa}</p>
+            )}
+            <p className={`text-sm text-white/40 ${card.ipa ? "mt-6" : "mt-8"}`}>tap to flip</p>
           </div>
 
           {/* Back */}
