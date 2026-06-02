@@ -45,6 +45,17 @@ const courses = [
     units: ["The Five Themes", "Paper 2", "Paper 1", "Individual Oral"],
     lessonCount: "14 lessons · 4 unit tests",
   },
+  {
+    title: "French for Canadian Tests",
+    level: "Intermediate–Advanced",
+    status: "Available now",
+    statusColor: "bg-[#FEF3C7] text-[#D97706]",
+    href: "/learn/canadian-french-tests",
+    description:
+      "Prepare for the SLE (federal government bilingual jobs) or TEF Canada / TCF Canada (Express Entry and immigration). Format, scoring, and strategies for both.",
+    units: ["SLE — Government Jobs", "TEF Canada — Immigration"],
+    lessonCount: "6 lessons · 2 unit tests",
+  },
 ];
 
 export default function LearnPage() {
@@ -56,7 +67,7 @@ export default function LearnPage() {
             Pick your path.
           </h1>
           <p className="mt-5 text-lg leading-8 text-[#526173]">
-            Whether you're starting from zero, reviewing for school, prepping for IB, or learning the French that actually comes up in Canadian life — there's a course for where you are.
+            Whether you&apos;re starting from zero, reviewing for school, prepping for IB, pursuing a federal government job, or immigrating to Canada — there&apos;s a course for where you are.
           </p>
         </div>
 
