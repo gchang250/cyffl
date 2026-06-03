@@ -48,6 +48,40 @@ const questions = [
     correct: 1,
     explanation: "The text says 'ce que je regrette le plus, c'est ses histoires et ses chansons' — her stories and songs.",
   },
+  {
+    question: "What does 'autrefois' signal about the tense that follows?",
+    options: ["The futur simple — predictions about the future.", "The passé composé — a specific completed event.", "The imparfait — habitual or background past.", "The présent — current habits."],
+    correct: 2,
+    explanation: "'Autrefois' (in the past / once upon a time) signals habitual or ongoing past states → imparfait. Autrefois, ma grand-mère chantait tous les soirs.",
+  },
+  {
+    question: "In Text B, the grandmother's habits are described using the imparfait. What verb would translate 'she used to prepare'?",
+    options: ["elle a préparé", "elle prépare", "elle préparait", "elle va préparer"],
+    correct: 2,
+    explanation: "Elle préparait — the imparfait of préparer. 'Used to prepare' signals a habitual past action → imparfait. Note the stem: nous préparons → prépar- + -ait = préparait.",
+  },
+  {
+    question: "What does 'inoubliable' mean, and how can you decode it?",
+    options: [
+      "Impossible — from 'im-possible'.",
+      "Unforgettable — from 'oublier' (forget) + in- (not) + -able.",
+      "Incredible — from 'incroyable'.",
+      "Unusual — from 'in-usuel'.",
+    ],
+    correct: 1,
+    explanation: "Inoubliable = unforgettable. Built from: oublier (to forget) + in- (negative prefix, not) + -able (suffix, able to be). Word family strategy lets you decode many French words this way.",
+  },
+  {
+    question: "Which strategy from Lesson 1 would help most with Text B's vocabulary like 'bondé' and 'raconter'?",
+    options: [
+      "Reading the title first.",
+      "Using context clues — surrounding words show that bondé means crowded and raconter means to tell/recount.",
+      "Identifying the text as an argument.",
+      "Counting the number of verbs.",
+    ],
+    correct: 1,
+    explanation: "Context clues: 'Le marché était bondé de touristes' — the context (tourists everywhere at a market) suggests 'bondé' = crowded. 'Elle me racontait des histoires' — she was telling me stories — 'raconter' = to tell/recount.",
+  },
 ];
 
 export default function Unit6Lesson3Page() {

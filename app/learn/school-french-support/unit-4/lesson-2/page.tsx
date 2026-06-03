@@ -67,6 +67,40 @@ const questions = [
     correct: 3,
     explanation: "'Autrefois' (in the old days / formerly) signals habitual or ongoing past states — classic imparfait territory. 'Soudain', 'hier', and 'tout à coup' signal single completed events (passé composé).",
   },
+  {
+    question: "Which sentence shows the imparfait used for background description?",
+    options: [
+      "Il a neigé hier.",
+      "Il neigeait et le ciel était gris.",
+      "Il a fait du soleil hier matin.",
+      "Il allait neiger.",
+    ],
+    correct: 1,
+    explanation: "'Il neigeait et le ciel était gris' — both verbs are in the imparfait, painting a background picture. This is the classic 'stage-setting' use of the imparfait in narratives.",
+  },
+  {
+    question: "A student uses 'chaque soir' in a sentence. Which tense should follow?",
+    options: ["passé composé", "futur simple", "imparfait", "présent only"],
+    correct: 2,
+    explanation: "'Chaque soir' (every evening) signals a habitual or repeated past action → imparfait. Chaque soir, il regardait la télé. Compare: 'hier soir' → passé composé.",
+  },
+  {
+    question: "What does 'Si tu travaillais plus, tu réussirais' illustrate?",
+    options: [
+      "A completed past action followed by a result.",
+      "A present habit.",
+      "A hypothetical condition using si + imparfait + conditionnel.",
+      "A future plan.",
+    ],
+    correct: 2,
+    explanation: "Si + imparfait (travaillais) → conditionnel (réussirais). This structure expresses a hypothetical: 'If you worked more, you would succeed.' The si clause always uses imparfait — never conditionnel.",
+  },
+  {
+    question: "How do you express 'He was looking for his keys' as an ongoing past action?",
+    options: ["Il cherchait ses clés.", "Il a cherché ses clés.", "Il cherche ses clés.", "Il va chercher ses clés."],
+    correct: 0,
+    explanation: "Il cherchait ses clés — the imparfait shows an ongoing, unfinished action in the past (he was in the process of searching). Passé composé (il a cherché) would imply the search is completed.",
+  },
 ];
 
 export default function Unit4Lesson2Page() {

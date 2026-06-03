@@ -72,6 +72,30 @@ const questions = [
     correct: 2,
     explanation: "Eau starts with a vowel, so la becomes l': l'eau. The gender is feminine.",
   },
+  {
+    question: "How do you say 'I'm hungry' in French?",
+    options: ["Je suis faim.", "J'ai faim.", "Je mange faim.", "J'aime faim."],
+    correct: 1,
+    explanation: "J'ai faim — French uses avoir (have) for hunger, not être (be). Literally 'I have hunger.' Also: j'ai soif = I'm thirsty.",
+  },
+  {
+    question: "What is 'le beurre'?",
+    options: ["beer", "bread", "butter", "beef"],
+    correct: 2,
+    explanation: "Le beurre = butter. It's a false friend for English speakers — beurre looks like 'beer' but means butter. La bière = beer.",
+  },
+  {
+    question: "A student at a café wants to order politely. Which phrase do they use?",
+    options: ["Je veux un café.", "Je voudrais un café.", "Je mange un café.", "Donnez un café."],
+    correct: 1,
+    explanation: "Je voudrais = I would like. It's the conditional of vouloir and is much more polite than Je veux (I want), which sounds blunt in French.",
+  },
+  {
+    question: "What is the gender of 'les pâtes' (pasta)?",
+    options: ["Masculine singular", "Feminine singular", "Masculine plural", "Feminine plural"],
+    correct: 3,
+    explanation: "Les pâtes is feminine plural (les + pâtes, feminine). Always check the article to identify gender and number: le/un = masc., la/une = fem., les = plural.",
+  },
 ];
 
 export default function Unit5Lesson1Page() {

@@ -59,6 +59,30 @@ const questions = [
     correct: 1,
     explanation: "The vous form of -er verbs always ends in -ez: vous travaillez, vous parlez, vous aimez.",
   },
+  {
+    question: "What is the 'je' form of 'commencer'?",
+    options: ["je commencent", "je commences", "je commence", "je commençons"],
+    correct: 2,
+    explanation: "Je form of -er verbs: remove -er, add -e. Je commence. The -e ending is silent — je, il, and elle forms all sound the same: commence.",
+  },
+  {
+    question: "How do you say 'I'm looking for my pen'?",
+    options: ["Je cherche mon stylo.", "Je cherches mon stylo.", "Je cherchez mon stylo.", "Je cherchons mon stylo."],
+    correct: 0,
+    explanation: "Je + chercher → je cherche. Remove -er, add -e. My pen = mon stylo (stylo is masculine).",
+  },
+  {
+    question: "Why do we write 'nous mangeons' and not 'nous mangons'?",
+    options: ["Manger is an irregular verb.", "The -e is kept before -ons to preserve the soft 'g' sound.", "All -er verbs insert an -e before -ons.", "Because manger ends in -ger, not -er."],
+    correct: 1,
+    explanation: "In French, g before 'o' becomes hard (like the g in 'go'). Adding -e keeps the g soft: nous mangeons. This applies to all -ger verbs: nous nageons, nous voyageons.",
+  },
+  {
+    question: "A student writes 'ils trouvent.' Is this correct?",
+    options: ["No — it should be ils trouvez.", "No — it should be ils trouve.", "Yes — ils/elles form of -er verbs ends in -ent.", "No — it should be ils trouventent."],
+    correct: 2,
+    explanation: "Ils/elles + -er verb = -ent ending. Ils trouvent is correct. The -ent ending is completely silent in spoken French.",
+  },
 ];
 
 export default function Unit2Lesson1Page() {

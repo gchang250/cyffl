@@ -73,6 +73,30 @@ const quiz = [
     correct: 0,
     explanation: "Je pars is the je form of partir. Partir: je pars, tu pars, il part, nous partons, vous partez, ils partent.",
   },
+  {
+    question: "How do you say 'She just arrived'?",
+    options: ["Elle vient arriver.", "Elle vient d'arriver.", "Elle vient de arriver.", "Elle vient pour arriver."],
+    correct: 1,
+    explanation: "Venir de + infinitive = just did something. Elle vient d'arriver. Note: de contracts to d' before a vowel (arriver starts with 'a').",
+  },
+  {
+    question: "What is the 'vous' form of 'prendre'?",
+    options: ["vous prenons", "vous prennez", "vous prenez", "vous prend"],
+    correct: 2,
+    explanation: "Vous prenez — the vous form of prendre. Note the difference: nous prenons (single n) vs ils prennent (double n). Vous follows the regular -ez pattern.",
+  },
+  {
+    question: "How do you say 'Are you coming with us tonight?'",
+    options: ["Tu viens avec nous ce soir?", "Tu viens nous ce soir?", "Tu venez avec nous ce soir?", "Tu vient avec nous ce soir?"],
+    correct: 0,
+    explanation: "Tu viens avec nous ce soir? — 'avec' = with, 'nous' = us. Tu → viens (correct form). 'Venez' is the vous form, 'vient' is il/elle.",
+  },
+  {
+    question: "Which verb means 'to take' in the sense of taking transportation?",
+    options: ["partir", "venir", "prendre", "aller"],
+    correct: 2,
+    explanation: "Prendre is used for taking transportation: je prends le bus, il prend le train, elles prennent l'avion. Aller expresses going somewhere, not the means of transport.",
+  },
 ];
 
 export default function Unit7Lesson3Page() {

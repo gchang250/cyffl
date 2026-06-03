@@ -67,6 +67,50 @@ const questions = [
     correct: 2,
     explanation: "The imparfait presents an action as ongoing, habitual, or without a defined end point. In contrast, the passé composé presents an action as completed and bounded in time.",
   },
+  {
+    question: "In 'J'avais faim, alors j'ai mangé,' which tense is used for the state and which for the action?",
+    options: [
+      "Both verbs are in the passé composé.",
+      "Avais (imparfait) = ongoing state; ai mangé (passé composé) = resulting action.",
+      "Avais (passé composé) = state; ai mangé (imparfait) = action.",
+      "Both verbs are in the imparfait.",
+    ],
+    correct: 1,
+    explanation: "J'avais faim (imparfait) describes the ongoing state of hunger. J'ai mangé (passé composé) is the completed action that resulted from it. States use imparfait; resulting actions use passé composé.",
+  },
+  {
+    question: "Which sentence uses the wrong tense for a sudden event?",
+    options: [
+      "Soudain, elle a crié.",
+      "Tout à coup, il a couru.",
+      "Soudain, elle criait.",
+      "Tout à coup, le chien a aboyé.",
+    ],
+    correct: 2,
+    explanation: "'Soudain, elle criait' is wrong — 'soudain' signals a sudden, completed event → passé composé. Correct: soudain, elle a crié. Imparfait for sudden events is a common exam error.",
+  },
+  {
+    question: "How do you choose between passé composé and imparfait for 'Every day I ate at noon'?",
+    options: [
+      "Passé composé, because eating happened at a specific time.",
+      "Imparfait, because 'every day' signals a repeated habit.",
+      "Either tense works equally well.",
+      "Futur proche, because this is an ongoing action.",
+    ],
+    correct: 1,
+    explanation: "'Every day' (chaque jour / tous les jours) signals a repeated or habitual past action → imparfait. Chaque jour, je mangeais à midi. Passé composé would imply it happened just once.",
+  },
+  {
+    question: "A student translates 'He was watching TV when his friend called.' They write 'Il regardait la télé quand son ami a appelé.' Is this correct?",
+    options: [
+      "No — both verbs should be in the passé composé.",
+      "No — both verbs should be in the imparfait.",
+      "Yes — regardait (ongoing background) and a appelé (interrupting event) are correct.",
+      "No — regardait should be a regardé.",
+    ],
+    correct: 2,
+    explanation: "Il regardait la télé (imparfait = ongoing background action) quand son ami a appelé (passé composé = the interrupting event). This is the perfect example of the classic PC + imparfait structure.",
+  },
 ];
 
 export default function Unit4Lesson3Page() {

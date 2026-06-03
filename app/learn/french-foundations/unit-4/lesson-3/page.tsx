@@ -61,6 +61,30 @@ const questions = [
     correct: 3,
     explanation: "Avoir (to have) is irregular and does not follow the -er conjugation pattern. The others are all regular -er verbs.",
   },
+  {
+    question: "What is the 'il/elle' form of 'chercher'?",
+    options: ["il cherchons", "il cherche", "il cherches", "il cherchez"],
+    correct: 1,
+    explanation: "Il/elle form of -er verbs: remove -er and add -e. Cherch + e = cherche. Il cherche ses clés. The ending is silent.",
+  },
+  {
+    question: "Conjugate 'étudier' for 'vous': Vous ___.",
+    options: ["vous étudiez", "vous étudions", "vous étudient", "vous étudie"],
+    correct: 0,
+    explanation: "Vous form of -er verbs: remove -er, add -ez. Étudi + ez = étudiez. Vous étudiez beaucoup.",
+  },
+  {
+    question: "Which sentence correctly uses 'habiter' in a negative sentence for 'ils'?",
+    options: ["Ils habitent ne pas ici.", "Ils ne habitent pas ici.", "Ils n'habitent pas ici.", "Ils pas habitent ici."],
+    correct: 2,
+    explanation: "Habiter starts with h (treated as a vowel here), so ne → n'. Ils n'habitent pas ici. Ne/n' goes before the verb, pas goes after.",
+  },
+  {
+    question: "A student conjugates 'danser' for 'elle' as 'elle dancez.' What is wrong?",
+    options: ["The stem is wrong — it should be dans-.", "The ending -ez is only for vous.", "Danser is an irregular verb.", "The subject should be il, not elle."],
+    correct: 1,
+    explanation: "-ez is the vous ending. For elle, use -e: elle danse. Confusing vous (-ez) and il/elle (-e) is a very common mistake.",
+  },
 ];
 
 export default function Unit4Lesson3Page() {

@@ -59,6 +59,45 @@ const questions = [
     correct: 2,
     explanation: "Context clues means using the surrounding sentence to deduce the meaning of an unknown word, without needing a dictionary.",
   },
+  {
+    question: "What does 'sensible' mean in French?",
+    options: ["sensible (having common sense)", "sensitive", "sensational", "significant"],
+    correct: 1,
+    explanation: "Sensible in French means 'sensitive' — it's a false friend (faux ami). The English meaning 'having good sense' is expressed as 'raisonnable' or 'sensé' in French.",
+  },
+  {
+    question: "Why is it useful to identify the text type before reading?",
+    options: [
+      "Different text types use different vocabulary and structures.",
+      "Text types determine how many words you need to know.",
+      "It tells you the answer to every question.",
+      "It replaces reading the whole text.",
+    ],
+    correct: 0,
+    explanation: "Each text type (narrative, argument, description, email) has characteristic language. A narrative uses past tenses and time markers; an argument uses opinion phrases and connectors. Knowing the type helps you predict vocabulary.",
+  },
+  {
+    question: "What does 'rester' mean — and how is it a false friend?",
+    options: [
+      "To rest — same as English.",
+      "To stay — not to rest (reposer = to rest).",
+      "To remain behind something.",
+      "To restart an action.",
+    ],
+    correct: 1,
+    explanation: "Rester = to stay. It's a false friend because English 'rest' means se reposer in French. Elle reste à la maison = She stays at home (not she rests).",
+  },
+  {
+    question: "Which strategy is most helpful when you encounter a word you don't know at all?",
+    options: [
+      "Skip the whole text.",
+      "Use word family knowledge and context clues to make a logical guess.",
+      "Translate the entire sentence word by word.",
+      "Write the word down and look it up after.",
+    ],
+    correct: 1,
+    explanation: "When stuck, combine strategies: look at the root (word family), check what comes before and after (context clues), and think about whether the word is a cognate. A reasonable guess is better than leaving an answer blank.",
+  },
 ];
 
 export default function Unit6Lesson1Page() {

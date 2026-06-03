@@ -59,6 +59,40 @@ const questions = [
     correct: 2,
     explanation: "Use futur proche for planned, immediate, or certain future events: Je vais partir dans cinq minutes. Use futur simple for more distant or hypothetical futures.",
   },
+  {
+    question: "What are the futur simple endings for 'je', 'tu', and 'il/elle'?",
+    options: ["-ai, -as, -a", "-ais, -ait, -a", "-erai, -eras, -era", "-ai, -as, -ont"],
+    correct: 0,
+    explanation: "Futur simple endings: je -ai, tu -as, il/elle -a, nous -ons, vous -ez, ils/elles -ont. These are added to the infinitive (or irregular stem): parler + ai = je parlerai.",
+  },
+  {
+    question: "How do you say 'They will go to France next year'?",
+    options: [
+      "Ils vont aller en France l'année prochaine.",
+      "Ils iront en France l'année prochaine.",
+      "Ils allaient en France l'année prochaine.",
+      "Ils allons en France l'année prochaine.",
+    ],
+    correct: 1,
+    explanation: "For a distant future plan (next year), futur simple is preferred. Aller → irregular stem ir-. Ils + -ont = ils iront. L'année prochaine = next year.",
+  },
+  {
+    question: "What is the futur simple of 'avoir' for 'nous'?",
+    options: ["nous avrons", "nous aurons", "nous aurions", "nous avons"],
+    correct: 1,
+    explanation: "Avoir → irregular stem aur-. Nous + -ons = nous aurons. Nous aurons du temps = We will have time.",
+  },
+  {
+    question: "A student writes 'Je vais serai médecin.' What's wrong?",
+    options: [
+      "Serai should be être.",
+      "You can't combine futur proche (vais) and futur simple (serai) — choose one.",
+      "Médecin should have an article.",
+      "Nothing is wrong.",
+    ],
+    correct: 1,
+    explanation: "Don't combine futur proche and futur simple — use one or the other. Correct options: 'Je vais être médecin' (futur proche) OR 'Je serai médecin' (futur simple).",
+  },
 ];
 
 export default function Unit5Lesson4Page() {

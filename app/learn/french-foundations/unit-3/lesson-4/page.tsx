@@ -106,6 +106,35 @@ const quiz = [
     correct: 0,
     explanation: "Tu aimes is the informal 'you like', right for asking a friend. Vous aimez would be formal.",
   },
+  {
+    question: "How do you say 'I prefer swimming to drawing'?",
+    options: [
+      "Je préfère la natation au dessin.",
+      "Je préfère la natation à le dessin.",
+      "Je préfère la natation de dessin.",
+      "Je préfère la natation plus dessin.",
+    ],
+    correct: 0,
+    explanation: "Je préfère A à B = I prefer A to B. When B is masculine (le dessin), à + le = au. So: je préfère la natation au dessin.",
+  },
+  {
+    question: "Which sentence is the most negative — expressing strong dislike?",
+    options: ["J'aime bien le foot.", "Je n'aime pas le foot.", "Je préfère le foot.", "Je déteste le foot."],
+    correct: 3,
+    explanation: "Je déteste = I hate. It's the strongest negative expression. Je n'aime pas is milder (I don't like), and je déteste is much stronger.",
+  },
+  {
+    question: "How does 'aimer' change for the 'il/elle' form?",
+    options: ["il aime", "il aimes", "il aimons", "il aimez"],
+    correct: 0,
+    explanation: "Il/elle + aimer → il aime / elle aime. The -er verb ending for il/elle is -e. Je, il, and elle all share the same sound: aime (the ending is silent).",
+  },
+  {
+    question: "You want to say 'I quite like travel.' Which expression fits best?",
+    options: ["J'adore le voyage.", "Je déteste le voyage.", "J'aime bien le voyage.", "Je n'aime pas le voyage."],
+    correct: 2,
+    explanation: "J'aime bien = I quite like / I like. It's softer than J'adore (I love) but more positive than J'aime (I like). Perfect for expressing moderate enjoyment.",
+  },
 ];
 
 export default function Unit3Lesson4Page() {

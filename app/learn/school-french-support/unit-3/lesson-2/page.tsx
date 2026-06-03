@@ -66,6 +66,35 @@ const questions = [
     correct: 2,
     explanation: "Téléphoner is a regular -er verb that uses avoir. The DR MRS VANDERTRAMP verbs (partir, naître, tomber, etc.) use être.",
   },
+  {
+    question: "How do you say 'The boys left early'?",
+    options: ["Les garçons sont partis tôt.", "Les garçons ont parti tôt.", "Les garçons sont parti tôt.", "Les garçons sont parties tôt."],
+    correct: 0,
+    explanation: "Partir uses être. Subject = les garçons (masculine plural) → partis (add -s for plural). Les garçons sont partis tôt.",
+  },
+  {
+    question: "A student writes 'Il est tombé sur le verglas.' Is this correct?",
+    options: ["No — tomber uses avoir.", "No — the past participle should be tombée.", "Yes — tomber uses être, and il (masculine) → tombé.", "No — the subject should agree with the participle differently."],
+    correct: 2,
+    explanation: "Tomber uses être. Il (masculine singular) → tombé (no extra ending). Il est tombé = He fell. Correct!",
+  },
+  {
+    question: "How do you say 'We stayed at home' (mixed group, masculine)?",
+    options: ["Nous sommes resté à la maison.", "Nous sommes restés à la maison.", "Nous avons resté à la maison.", "Nous sommes restées à la maison."],
+    correct: 1,
+    explanation: "Rester uses être. Nous (mixed/masculine plural) → restés (add -s). Nous sommes restés à la maison. Restées would be for an all-feminine group.",
+  },
+  {
+    question: "Which best explains why être verbs require participle agreement?",
+    options: [
+      "It is a random rule with no reason.",
+      "With être verbs, the participle acts like a predicate adjective and agrees with the subject.",
+      "All past participles in French must agree.",
+      "Because être is an irregular verb.",
+    ],
+    correct: 1,
+    explanation: "With être as auxiliary, the past participle behaves like a describing adjective (e.g., elle est grande → elle est allée). It must agree with the subject in gender and number.",
+  },
 ];
 
 export default function Unit3Lesson2Page() {

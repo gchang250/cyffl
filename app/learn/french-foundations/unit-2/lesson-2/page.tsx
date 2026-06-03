@@ -104,6 +104,30 @@ const quiz = [
     correct: 3,
     explanation: "Vous → êtes. Don't forget the accent on the ê in êtes.",
   },
+  {
+    question: "Which form of être is used with 'ils' and 'elles'?",
+    options: ["est", "sont", "sommes", "êtes"],
+    correct: 1,
+    explanation: "Ils/elles → sont. Both masculine plural (ils) and feminine plural (elles) use the same form: sont.",
+  },
+  {
+    question: "'Je suis fatiguée' is said by someone who is…",
+    options: ["A boy who is tired", "A girl who is tired", "A group who is tired", "Someone asking a question"],
+    correct: 1,
+    explanation: "Fatiguée (with double -e) is the feminine form. A boy would say 'je suis fatigué' (one -e). The extra -e shows the speaker is female.",
+  },
+  {
+    question: "How do you say 'Are we late?' using être?",
+    options: ["Nous sommes en retard?", "Nous sommes retard?", "Nous est en retard?", "Sommes en retard nous?"],
+    correct: 0,
+    explanation: "Nous sommes en retard? — 'en retard' means 'late.' To make a question with rising intonation, just raise your voice at the end.",
+  },
+  {
+    question: "A student says 'Je suis étudiant.' What is their mistake if they're a girl?",
+    options: ["They should say 'Je suis étudiante.'", "They should say 'J'ai étudiante.'", "They should say 'Tu es étudiante.'", "There is no mistake."],
+    correct: 0,
+    explanation: "When describing a feminine noun (yourself, if you're a girl), many professions and roles add -e: étudiant → étudiante. Agreement matters in French.",
+  },
 ];
 
 export default function Unit2Lesson2Page() {

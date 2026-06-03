@@ -74,6 +74,30 @@ const questions = [
     correct: 0,
     explanation: "Préférer + A + à + B. À + les = aux. Je préfère l'art aux maths.",
   },
+  {
+    question: "What does 'le tableau' mean in a classroom context?",
+    options: ["A table", "A painting in a museum", "The board / chalkboard", "The textbook"],
+    correct: 2,
+    explanation: "Le tableau = the board (whiteboard or chalkboard). In an art museum it can mean 'painting,' but in a classroom it's the board. Context matters!",
+  },
+  {
+    question: "Why is 'le crayon' a false friend for English speakers?",
+    options: ["It means 'crazy' in French.", "It means 'pencil,' not a wax crayon.", "It is not used in French schools.", "It is a verb, not a noun."],
+    correct: 1,
+    explanation: "Le crayon = pencil in French, NOT a wax crayon. A wax crayon is 'le crayon de cire.' This is a classic faux ami (false friend).",
+  },
+  {
+    question: "How do you say 'We have an exam tomorrow'?",
+    options: ["Nous avons un examen demain.", "Nous sommes un examen demain.", "Nous faisons un examen demain.", "Nous avons le examen demain."],
+    correct: 0,
+    explanation: "Nous avons un examen demain. Use avoir for 'having' a test. Note: 'un examen' (not 'le examen') — use an indefinite article for a single upcoming test.",
+  },
+  {
+    question: "What is the article used before 'informatique' and why?",
+    options: ["le — because it is masculine", "la — but it contracts to l' before a vowel", "un — because it starts with a vowel", "les — because it's always plural"],
+    correct: 1,
+    explanation: "L'informatique is feminine (la informatique → l'informatique). The 'l'' is used because informatique starts with a vowel. The gender is feminine.",
+  },
 ];
 
 export default function Unit5Lesson2Page() {

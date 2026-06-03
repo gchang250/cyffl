@@ -73,6 +73,30 @@ const questions = [
     correct: 0,
     explanation: "Vu (voir), lu (lire), bu (boire), pu (pouvoir), voulu (vouloir), eu (avoir) all share the -u ending pattern. Recognising this group helps memorisation.",
   },
+  {
+    question: "What is the past participle of 'dire' (to say)?",
+    options: ["diré", "dit", "disu", "dira"],
+    correct: 1,
+    explanation: "Dire → dit. J'ai dit bonjour = I said hello. Dit shares its -it pattern with fait (faire) and écrit (écrire).",
+  },
+  {
+    question: "How do you say 'She wrote a long email'?",
+    options: ["Elle a écrit un long email.", "Elle est écrit un long email.", "Elle a écrire un long email.", "Elle a écrivé un long email."],
+    correct: 0,
+    explanation: "Écrire → écrit (irregular). Auxiliary = avoir. Elle a écrit un long email. Never use the infinitive (écrire) after the auxiliary.",
+  },
+  {
+    question: "'J'ai su la réponse.' What does 'su' come from?",
+    options: ["suivre (to follow)", "savoir (to know)", "sortir (to go out)", "sentir (to feel)"],
+    correct: 1,
+    explanation: "Su is the past participle of savoir (to know). J'ai su = I knew. Savoir → su, following the -u pattern.",
+  },
+  {
+    question: "Which past participle is spelled correctly?",
+    options: ["voulé (vouloir)", "misé (mettre)", "voulu (vouloir)", "misu (mettre)"],
+    correct: 2,
+    explanation: "Voulu is the correct past participle of vouloir. Mettre → mis. Both are irregular: you must memorize them, as they don't follow regular patterns.",
+  },
 ];
 
 export default function Unit3Lesson3Page() {

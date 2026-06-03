@@ -94,6 +94,30 @@ const quiz = [
     correct: 1,
     explanation: "Before a vowel (aimer starts with 'a'), ne → n'. So: je n'aime pas.",
   },
+  {
+    question: "Which sentence correctly negates 'Ils jouent au foot'?",
+    options: ["Ils ne jouent pas au foot.", "Ils jouent ne au foot pas.", "Ils ne pas jouent au foot.", "Pas ils jouent au foot."],
+    correct: 0,
+    explanation: "Ne goes before the verb and pas goes after it, wrapping the verb: ils ne jouent pas. The rest of the sentence (au foot) comes after pas.",
+  },
+  {
+    question: "What is the French sentence structure when there is no object?",
+    options: ["Verb + Subject", "Subject + Verb", "Object + Verb", "Verb + Object"],
+    correct: 1,
+    explanation: "Even without an object, French uses Subject + Verb: 'Il mange.' (He eats.) The subject always comes before the verb in a statement.",
+  },
+  {
+    question: "'Elle n'a pas de chat.' What does this mean?",
+    options: ["She has a cat.", "She doesn't have a cat.", "She doesn't eat the cat.", "She isn't a cat."],
+    correct: 1,
+    explanation: "Elle n'a pas de chat = She doesn't have a cat. After negation (ne...pas), 'un/une' and 'du/de la' change to 'de' (or 'd' before a vowel).",
+  },
+  {
+    question: "How do you say 'We don't play tennis'?",
+    options: ["Nous ne jouons au tennis.", "Nous jouons pas au tennis.", "Nous ne jouons pas au tennis.", "Nous n'jouons pas au tennis."],
+    correct: 2,
+    explanation: "Nous ne jouons pas au tennis — ne goes before the verb and pas after it. Note: 'ne' stays as 'ne' before a consonant (jouons starts with 'j').",
+  },
 ];
 
 export default function Unit2Lesson4Page() {

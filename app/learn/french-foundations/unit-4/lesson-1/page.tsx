@@ -61,6 +61,30 @@ const questions = [
     correct: 1,
     explanation: "Color adjectives always go AFTER the noun in French: un stylo rouge, une voiture bleue.",
   },
+  {
+    question: "What is the masculine plural form of 'noir'?",
+    options: ["noirs", "noire", "noirx", "noires"],
+    correct: 0,
+    explanation: "To make an adjective masculine plural, add -s: noir → noirs. Feminine singular: noire. Feminine plural: noires.",
+  },
+  {
+    question: "How do you say 'a purple shirt' (chemise = feminine)?",
+    options: ["une chemise violet", "une chemise violets", "une chemise violette", "une violette chemise"],
+    correct: 2,
+    explanation: "Chemise is feminine, so violet → violette (double t + e). Color adjectives follow the noun: une chemise violette.",
+  },
+  {
+    question: "Which statement about 'marron' is correct?",
+    options: ["Marron adds -e for feminine nouns.", "Marron is only used for people's hair.", "Marron never changes form.", "Marron means red in French."],
+    correct: 2,
+    explanation: "Marron is an invariable adjective — it never changes. Un sac marron, une table marron, des chaussures marron. Same form for all genders and numbers.",
+  },
+  {
+    question: "You see 'les yeux bleus.' What does this describe?",
+    options: ["A single blue eye", "Blue sky", "Blue eyes (plural)", "A blue house"],
+    correct: 2,
+    explanation: "Les yeux bleus = blue eyes. Yeux (eyes) is masculine plural, so bleu adds -s: bleus. Adjectives agree with the noun they describe.",
+  },
 ];
 
 export default function Unit4Lesson1Page() {

@@ -64,6 +64,30 @@ const questions = [
     correct: 1,
     explanation: "Avoir raison = to be right. Avoir tort = to be wrong. These are fixed expressions using avoir, not être.",
   },
+  {
+    question: "How do you say 'They are lucky' using avoir?",
+    options: ["Ils sont de la chance.", "Ils ont de la chance.", "Ils font de la chance.", "Ils sont chanceux seulement."],
+    correct: 1,
+    explanation: "Avoir de la chance = to be lucky (literally 'to have luck'). Ils ont de la chance. This is an avoir idiom — don't use être here.",
+  },
+  {
+    question: "Which subject pronoun uses 'est' as the être form?",
+    options: ["nous", "vous", "ils", "il"],
+    correct: 3,
+    explanation: "Il/elle → est. Nous → sommes, vous → êtes, ils/elles → sont. Only il and elle use est.",
+  },
+  {
+    question: "How do you use être as an auxiliary verb?",
+    options: ["Être is never used as an auxiliary.", "Être is used with all verbs in the passé composé.", "Être is used with a specific group of movement/state verbs in the passé composé.", "Être is used only with -ir verbs."],
+    correct: 2,
+    explanation: "Être is the auxiliary for the DR MRS VANDERTRAMP verbs and all reflexive verbs in the passé composé. Most other verbs use avoir.",
+  },
+  {
+    question: "How do you say 'She is afraid'?",
+    options: ["Elle est peur.", "Elle a peur.", "Elle fait peur.", "Elle sait peur."],
+    correct: 1,
+    explanation: "Avoir peur = to be afraid (literally 'to have fear'). Elle a peur. Like faim, soif, froid, and chaud — fear uses avoir, not être.",
+  },
 ];
 
 export default function Unit1Lesson4Page() {

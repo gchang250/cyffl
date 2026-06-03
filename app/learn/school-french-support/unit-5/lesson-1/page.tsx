@@ -64,6 +64,40 @@ const questions = [
     correct: 2,
     explanation: "Ensuite means 'then/next' and is used to sequence events: D'abord…, ensuite…, enfin…",
   },
+  {
+    question: "What is the difference between 'car' and 'parce que'?",
+    options: [
+      "They are completely different in meaning.",
+      "Car is more formal than parce que, but both express cause.",
+      "Parce que is formal; car is casual.",
+      "Car means 'because of' while parce que means 'because'.",
+    ],
+    correct: 1,
+    explanation: "Both car and parce que mean 'because,' but car is more formal and literary. In school essays, car elevates the style. Both introduce a reason or cause.",
+  },
+  {
+    question: "Which connector would you use to add a contrasting point?",
+    options: ["de plus", "donc", "cependant", "d'abord"],
+    correct: 2,
+    explanation: "Cependant = however, expressing contrast. De plus = furthermore (addition), donc = therefore (consequence), d'abord = first (sequence).",
+  },
+  {
+    question: "How do you use 'puisque' in a sentence?",
+    options: [
+      "To list events in order.",
+      "To express contrast.",
+      "To introduce a known or obvious cause.",
+      "To add an extra point.",
+    ],
+    correct: 2,
+    explanation: "Puisque = since/given that — used when the cause is already known to both speakers. Puisque tu es là, aide-moi. (Since you're here, help me.) It differs from parce que, which introduces a new reason.",
+  },
+  {
+    question: "Complete this sentence with the right connector: 'J'aime le français. ___, c'est difficile parfois.' (contrast)",
+    options: ["Donc", "De plus", "Cependant", "D'abord"],
+    correct: 2,
+    explanation: "Cependant (however) introduces a contrasting point. 'I like French. However, it is sometimes difficult.' De plus adds information, donc draws a consequence, d'abord sequences.",
+  },
 ];
 
 export default function Unit5Lesson1Page() {

@@ -66,6 +66,35 @@ const questions = [
     correct: 3,
     explanation: "Être is the only verb with an irregular imparfait stem: ét-. All other verbs, including aller and faire, form their imparfait stem from the nous form: all-, fais-.",
   },
+  {
+    question: "What is the imparfait of 'être' for 'je'?",
+    options: ["j'étais", "j'était", "j'ai été", "j'étions"],
+    correct: 0,
+    explanation: "Être has the irregular stem ét-. Je form = j'étais. Full imparfait: j'étais, tu étais, il/elle était, nous étions, vous étiez, ils/elles étaient.",
+  },
+  {
+    question: "What is the imparfait stem of 'manger'?",
+    options: ["mange-", "mang-", "mangeait-", "mangeons-"],
+    correct: 1,
+    explanation: "Imparfait stem of manger: nous mangeons → remove -ons → mang-. Then add endings. Special: before -ais/-ait/-aient, write mange- to keep the g soft: je mangeais.",
+  },
+  {
+    question: "Which ending is used for ils/elles in the imparfait?",
+    options: ["-aient", "-ait", "-iez", "-ions"],
+    correct: 0,
+    explanation: "Ils/elles imparfait ending = -aient: ils parlaient, elles finissaient, ils avaient. This is the third-person plural ending for ALL verbs in the imparfait.",
+  },
+  {
+    question: "How do you say 'We used to go to the beach every summer'?",
+    options: [
+      "Nous allions à la plage chaque été.",
+      "Nous allons à la plage chaque été.",
+      "Nous avons allé à la plage chaque été.",
+      "Nous allaient à la plage chaque été.",
+    ],
+    correct: 0,
+    explanation: "Aller → imparfait stem all-. Nous form = -ions: nous allions. Habitual past action = imparfait. 'Chaque été' (every summer) confirms the habitual nature.",
+  },
 ];
 
 export default function Unit4Lesson1Page() {

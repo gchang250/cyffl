@@ -67,6 +67,45 @@ const questions = [
     correct: 2,
     explanation: "'Ensuite' (then/next) links sequential completed events — each one is passé composé: il est arrivé... ensuite, il a frappé à la porte... ensuite, il est entré.",
   },
+  {
+    question: "What tense should be used after 'pendant que' in a narrative?",
+    options: ["passé composé", "imparfait", "futur proche", "présent"],
+    correct: 1,
+    explanation: "'Pendant que' (while) introduces an ongoing background action → imparfait. Pendant qu'elle lisait (imparfait), il est sorti (passé composé). 'Pendant que' always signals the background, not the event.",
+  },
+  {
+    question: "How do you express 'Finally, they found the treasure' in a story?",
+    options: [
+      "Finalement, ils trouvaient le trésor.",
+      "Finalement, ils ont trouvé le trésor.",
+      "Finalement, ils trouvent le trésor.",
+      "Finalement, ils avaient trouvé le trésor.",
+    ],
+    correct: 1,
+    explanation: "'Finalement' closes a story by marking the last completed event → passé composé. Ils ont trouvé = they found. Imparfait would suggest the finding was ongoing, which doesn't fit a resolution.",
+  },
+  {
+    question: "A story begins: 'Il était une fois un vieux pêcheur qui ___ dans un village calme.' Which fits best?",
+    options: [
+      "a vécu",
+      "vivait",
+      "vit",
+      "va vivre",
+    ],
+    correct: 1,
+    explanation: "Il était une fois sets a story in the past, and 'qui vivait' (imparfait) continues the background description. The imparfait 'vivait' shows an ongoing state of living, perfect for establishing a character.",
+  },
+  {
+    question: "Which sequence correctly structures a narrative paragraph?",
+    options: [
+      "Background (imparfait) → Events (passé composé) → Conclusion (passé composé)",
+      "Events (passé composé) → Background (imparfait) → Conclusion (imparfait)",
+      "Background (passé composé) → Events (imparfait) → Conclusion (imparfait)",
+      "Everything in imparfait, then switch to passé composé for the conclusion only",
+    ],
+    correct: 0,
+    explanation: "The ideal French narrative structure: imparfait sets the scene (descriptions, states, weather) → passé composé advances the plot (events in sequence) → passé composé closes the story.",
+  },
 ];
 
 export default function Unit4Lesson4Page() {

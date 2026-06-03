@@ -67,6 +67,30 @@ const questions = [
     correct: 1,
     explanation: "Pouvoir = can / to be able to. Elle ne peut pas nager — she can't swim. Ne...pas wraps the conjugated verb.",
   },
+  {
+    question: "Which faire expression describes cooking?",
+    options: ["faire du vélo", "faire une promenade", "faire la cuisine", "faire du sport"],
+    correct: 2,
+    explanation: "Faire la cuisine = to cook. Faire du vélo = to cycle, faire une promenade = to go for a walk, faire du sport = to play sports/exercise.",
+  },
+  {
+    question: "What is the 'tu' form of 'pouvoir'?",
+    options: ["tu pouvez", "tu peux", "tu peut", "tu pouvons"],
+    correct: 1,
+    explanation: "Tu peux — pouvoir is irregular. Conjugation: je peux, tu peux, il/elle peut, nous pouvons, vous pouvez, ils/elles peuvent. Je and tu share the same stem: peu-.",
+  },
+  {
+    question: "How do you say 'They want to leave early'?",
+    options: ["Ils font partir tôt.", "Ils peuvent partir tôt.", "Ils veulent partir tôt.", "Ils vont partir tôt."],
+    correct: 2,
+    explanation: "Vouloir = to want. Ils veulent partir tôt. Follow the pattern: vouloir + infinitive = want to + verb.",
+  },
+  {
+    question: "A student writes 'Il fait beau.' What does this mean?",
+    options: ["He does something beautiful.", "The weather is nice.", "He looks beautiful.", "He is doing well."],
+    correct: 1,
+    explanation: "Il fait beau = the weather is nice. This is a fixed faire expression for weather. Similarly: il fait froid (it's cold), il fait chaud (it's hot).",
+  },
 ];
 
 export default function Unit2Lesson4Page() {

@@ -57,6 +57,40 @@ const questions = [
     correct: 2,
     explanation: "Inversion flips the subject and verb with a hyphen: Parles-tu? This is more formal and used in writing.",
   },
+  {
+    question: "What is the difference between 'où' (with accent) and 'ou' (no accent)?",
+    options: ["They mean the same thing.", "'Où' = where; 'ou' = or", "'Où' = or; 'ou' = where", "One is formal, one is informal."],
+    correct: 1,
+    explanation: "'Où' (with grave accent) = where. 'Ou' (no accent) = or. Accents change meaning in French — this is an important spelling distinction.",
+  },
+  {
+    question: "How do you ask 'Why are you studying French?' using 'pourquoi' and 'est-ce que'?",
+    options: [
+      "Pourquoi est-ce que tu étudies le français?",
+      "Pourquoi tu est-ce que étudies le français?",
+      "Est-ce que pourquoi tu étudies le français?",
+      "Tu étudies le français pourquoi est-ce que?",
+    ],
+    correct: 0,
+    explanation: "Question word + est-ce que + subject + verb: Pourquoi est-ce que tu étudies le français? Question words go at the very beginning.",
+  },
+  {
+    question: "What does 'Quel(le)' agree with?",
+    options: ["The subject of the sentence", "The noun it modifies", "The verb tense", "Nothing — it never changes"],
+    correct: 1,
+    explanation: "Quel agrees with the noun it describes: quel (m.), quelle (f.), quels (m.pl.), quelles (f.pl.). Quelle heure? (heure is feminine). Quel film? (film is masculine).",
+  },
+  {
+    question: "A student asks 'Comment est-ce que s'appelles-tu?' What's wrong?",
+    options: [
+      "Comment should be Quel.",
+      "You cannot combine est-ce que with inversion — choose one method.",
+      "S'appelles has the wrong ending.",
+      "Nothing is wrong.",
+    ],
+    correct: 1,
+    explanation: "Don't combine est-ce que and inversion — they are two separate methods. Either: 'Comment est-ce que tu t'appelles?' OR 'Comment t'appelles-tu?' — not both together.",
+  },
 ];
 
 export default function Unit4Lesson4Page() {

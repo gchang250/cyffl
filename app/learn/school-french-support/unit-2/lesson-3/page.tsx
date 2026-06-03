@@ -67,6 +67,30 @@ const questions = [
     correct: 2,
     explanation: "Vous êtes en retard = You are late — correct use of être. Age (j'ai 15 ans) and hunger (j'ai faim) use avoir.",
   },
+  {
+    question: "How do you negate the near future 'Je vais partir'?",
+    options: ["Je ne vais pas partir.", "Je ne pas vais partir.", "Je vais ne partir pas.", "Je vais pas partir."],
+    correct: 0,
+    explanation: "Negation in the near future wraps the conjugated auxiliary (aller): ne + aller + pas + infinitive. Je ne vais pas partir.",
+  },
+  {
+    question: "What is the 'il' form of 'aller'?",
+    options: ["il allez", "il va", "il vont", "il allons"],
+    correct: 1,
+    explanation: "Il/elle va — aller is fully irregular. Conjugation: je vais, tu vas, il/elle va, nous allons, vous allez, ils/elles vont.",
+  },
+  {
+    question: "'Elle a l'air fatigué.' What does this mean and which verb is used?",
+    options: ["She feels tired — uses être.", "She looks/seems tired — uses avoir.", "She was tired — uses avoir.", "She will be tired — uses aller."],
+    correct: 1,
+    explanation: "Avoir l'air = to look/seem. Elle a l'air fatigué = She looks tired. This expression always uses avoir, not être.",
+  },
+  {
+    question: "A student says 'Ils sont vont manger.' What's wrong?",
+    options: ["Sont should be removed — near future only uses aller + infinitive.", "Vont should be font.", "Manger should be mangé.", "Nothing is wrong."],
+    correct: 0,
+    explanation: "Near future = aller (conjugated) + infinitive. You don't combine être and aller. Correct: Ils vont manger (not 'Ils sont vont manger').",
+  },
 ];
 
 export default function Unit2Lesson3Page() {

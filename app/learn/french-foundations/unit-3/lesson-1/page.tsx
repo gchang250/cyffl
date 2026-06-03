@@ -93,6 +93,30 @@ const quiz = [
     correct: 0,
     explanation: "Neuf = 9. It's also one of the trickier pronunciations, the 'f' is silent before a consonant!",
   },
+  {
+    question: "What number is 'dix-huit'?",
+    options: ["17", "18", "19", "16"],
+    correct: 1,
+    explanation: "Dix = 10, huit = 8. Dix-huit = 10 + 8 = 18. The three '-teen' numbers follow this pattern: dix-sept (17), dix-huit (18), dix-neuf (19).",
+  },
+  {
+    question: "How do you write twenty in French?",
+    options: ["vingts", "vingt", "ving", "vint"],
+    correct: 1,
+    explanation: "Vingt = 20. Note: vingt does NOT take an -s when standing alone. It only takes -s in 'quatre-vingts' (80). Spelling matters!",
+  },
+  {
+    question: "A student says 'J'ai seize ans.' How old are they?",
+    options: ["15", "16", "17", "6"],
+    correct: 1,
+    explanation: "Seize = 16. Compare: quinze = 15, dix-sept = 17. Seize and quinze are often confused — remember seize is one step above quinze.",
+  },
+  {
+    question: "Count: zéro, un, deux, trois… What comes next?",
+    options: ["cinq", "quatre", "six", "sept"],
+    correct: 1,
+    explanation: "Quatre = 4. The order is: zéro (0), un (1), deux (2), trois (3), quatre (4), cinq (5).",
+  },
 ];
 
 export default function Unit3Lesson1Page() {

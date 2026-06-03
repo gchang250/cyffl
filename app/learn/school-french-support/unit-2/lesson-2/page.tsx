@@ -57,6 +57,30 @@ const questions = [
     correct: 2,
     explanation: "Attendre (to wait) is a regular -re verb. Aller, être, and prendre are all irregular verbs.",
   },
+  {
+    question: "What is the 'je' form of 'choisir'?",
+    options: ["je choisis", "je choisissons", "je choisi", "je choisit"],
+    correct: 0,
+    explanation: "Je + -ir verb: remove -ir, add -is. Chois + is = je choisis. Note: je and tu share the same -is ending for -ir verbs.",
+  },
+  {
+    question: "How do you say 'She succeeds in the exam'?",
+    options: ["Elle réussit à l'examen.", "Elle réussite à l'examen.", "Elle réussit l'examen.", "Elle réussit en l'examen."],
+    correct: 0,
+    explanation: "Réussir à = to succeed in / to pass. Elle réussit à l'examen. Note: réussit (no extra -e) — il/elle -ir verbs end in -it. Don't write 'réussite' (that's a noun meaning 'success').",
+  },
+  {
+    question: "What is the 'nous' form of 'répondre'?",
+    options: ["nous répondons", "nous répondissons", "nous répondez", "nous répondent"],
+    correct: 0,
+    explanation: "Nous + -re verb: drop -re, add -ons. Répond + ons = nous répondons. -re verbs use the same -ons/-ez/-ent endings as -er verbs for plural forms.",
+  },
+  {
+    question: "A student writes 'ils grandissent.' Is this the correct form of 'grandir' for ils?",
+    options: ["No — it should be ils grandent.", "No — it should be ils grandient.", "Yes — -ir verbs take -issent for ils.", "No — it should be ils grandissons."],
+    correct: 2,
+    explanation: "Ils grandissent is correct. Regular -ir verbs insert -iss- before plural endings: ils finissent, ils grandissent, ils réussissent. The -issons form is for nous.",
+  },
 ];
 
 export default function Unit2Lesson2Page() {

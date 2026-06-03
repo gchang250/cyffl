@@ -81,6 +81,30 @@ const quiz = [
     correct: 3,
     explanation: "Enchantée (feminine form) means 'nice to meet you.' Enchanté is the masculine form.",
   },
+  {
+    question: "Which sentence correctly says 'I live in Paris'?",
+    options: ["Je suis à Paris.", "Je suis de Paris.", "J'habite à Paris.", "J'habite de Paris."],
+    correct: 2,
+    explanation: "J'habite à + city = I live in [city]. Je suis de = I am from. These are two different expressions — don't mix them up.",
+  },
+  {
+    question: "A boy introduces himself: 'Enchanté ou Enchantée?'",
+    options: ["Enchantée — because he's meeting a new person", "Enchanté — because he is masculine", "Both are correct for anyone", "Neither — boys say 'Bonjour' only"],
+    correct: 1,
+    explanation: "Enchanté is the masculine form; Enchantée is feminine. The speaker's own gender determines which form to use.",
+  },
+  {
+    question: "How would you formally ask an adult their name?",
+    options: ["T'appelles comment?", "Tu t'appelles?", "Comment vous appelez-vous?", "C'est quoi votre nom?"],
+    correct: 2,
+    explanation: "Comment vous appelez-vous? is the formal way to ask someone's name. Use this with teachers, strangers, and adults you don't know well.",
+  },
+  {
+    question: "Fill in: 'Je suis ___ Montréal.' (I am from Montreal.)",
+    options: ["à", "en", "de", "au"],
+    correct: 2,
+    explanation: "Je suis de + city = I am from [city]. 'Je suis à' would mean 'I am in' (location right now), which is different.",
+  },
 ];
 
 export default function Lesson2Page() {

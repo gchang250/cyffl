@@ -59,6 +59,40 @@ const questions = [
     correct: 1,
     explanation: "Nationality adjectives ending in -en become -enne in the feminine: canadien → canadienne, indien → indienne.",
   },
+  {
+    question: "How do you say 'I have been playing guitar for three years'?",
+    options: [
+      "Je joue de la guitare depuis trois ans.",
+      "J'ai joué de la guitare pour trois ans.",
+      "Je joue de la guitare il y a trois ans.",
+      "J'ai joué de la guitare depuis trois ans.",
+    ],
+    correct: 0,
+    explanation: "Depuis + present tense expresses an action that started in the past and is still ongoing. Je joue de la guitare depuis trois ans. Using passé composé with depuis is incorrect here.",
+  },
+  {
+    question: "What verb construction do you use for activities like swimming and drawing?",
+    options: ["jouer au / à la + activity", "faire du / de la + activity", "aimer le / la + activity", "aller au / à la + activity"],
+    correct: 1,
+    explanation: "Faire de + activity for non-sport activities: je fais de la natation (swimming), je fais du dessin (drawing). Use jouer à for sports and games with a ball.",
+  },
+  {
+    question: "A student writes 'Je vais au lycée Rideau.' Why is 'au' used here?",
+    options: [
+      "Because lycée is a verb.",
+      "Because lycée is a masculine noun and à + le = au.",
+      "Because lycée is feminine.",
+      "Because this is a fixed expression.",
+    ],
+    correct: 1,
+    explanation: "Le lycée is masculine → à + le = au. Je vais au lycée. This contraction is obligatory: you can never write 'à le lycée.'",
+  },
+  {
+    question: "Which phrase best introduces a contrast in a self-description paragraph?",
+    options: ["Et aussi", "De plus", "Par contre", "D'abord"],
+    correct: 2,
+    explanation: "Par contre = on the other hand, introducing a contrast. Par contre, je n'aime pas regarder la télé. De plus adds a point (furthermore), et aussi adds (also), d'abord sequences (first).",
+  },
 ];
 
 export default function Unit5Lesson2Page() {

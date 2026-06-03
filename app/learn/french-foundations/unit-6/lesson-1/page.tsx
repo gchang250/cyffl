@@ -61,6 +61,30 @@ const quiz = [
     correct: 1,
     explanation: "Most verbs use avoir as their auxiliary. Only a specific group of verbs (and reflexive verbs) use être.",
   },
+  {
+    question: "What is the passé composé of 'répondre' (to answer) for 'tu'?",
+    options: ["tu as répondu", "tu es répondu", "tu as répondé", "tu as réponds"],
+    correct: 0,
+    explanation: "Répondre is a -re verb: past participle = répondu. Auxiliary = avoir. Tu as répondu. (-re verbs: remove -re, add -u)",
+  },
+  {
+    question: "How do you say 'We listened to the song' in passé composé?",
+    options: ["Nous avons écouté la chanson.", "Nous sommes écouté la chanson.", "Nous avons écouter la chanson.", "Nous avons écoutés la chanson."],
+    correct: 0,
+    explanation: "Nous avons écouté la chanson. Écouter is an -er verb: past participle = écouté. Auxiliary = avoir. With avoir, the past participle does NOT agree with the subject.",
+  },
+  {
+    question: "A student writes 'Elle a choisié le rouge.' What is the error?",
+    options: ["She used the wrong auxiliary.", "The past participle of choisir is 'choisi,' not 'choisié.'", "She used the wrong subject.", "Choisir doesn't have a passé composé."],
+    correct: 1,
+    explanation: "Choisir is an -ir verb: past participle = choisi (not choisié). -ir past participles just add -i, no extra -é. Elle a choisi le rouge.",
+  },
+  {
+    question: "How is the passé composé of 'attendre' (to wait) formed?",
+    options: ["j'ai attendu", "j'ai attendé", "je suis attendu", "j'ai attendr"],
+    correct: 0,
+    explanation: "Attendre is a -re verb: past participle = attendu (remove -re, add -u). Auxiliary = avoir. J'ai attendu longtemps.",
+  },
 ];
 
 export default function Unit6Lesson1Page() {

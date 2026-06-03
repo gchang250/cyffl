@@ -66,6 +66,30 @@ const quiz = [
     correct: 2,
     explanation: "Mettre → mis. J'ai mis ma veste = I put on my jacket.",
   },
+  {
+    question: "What is the past participle of 'vouloir' (to want)?",
+    options: ["voulé", "voulut", "voulu", "voult"],
+    correct: 2,
+    explanation: "Vouloir → voulu. J'ai voulu aider = I wanted to help. Note the -u ending it shares with boire (bu), lire (lu), and voir (vu).",
+  },
+  {
+    question: "A student writes 'J'ai écrite une lettre.' What is the error?",
+    options: ["The auxiliary should be être.", "The past participle écrit does not agree with the subject.", "The past participle of écrire is écrivé.", "J'ai should be contracted."],
+    correct: 1,
+    explanation: "With avoir, the past participle does NOT agree with the subject. It's J'ai écrit (no -e), not J'ai écrite. Agreement only happens with avoir when a direct object comes BEFORE the verb.",
+  },
+  {
+    question: "Which past participles share the same -it ending pattern?",
+    options: ["fait, dit, écrit", "vu, bu, lu", "pris, mis, voulu", "eu, été, pu"],
+    correct: 0,
+    explanation: "Fait (faire), dit (dire), écrit (écrire) all end in -it. Recognizing these groups helps you memorize them. The -u group: vu, bu, lu, pu, eu, voulu.",
+  },
+  {
+    question: "How do you say 'Did you open the window?' using 'ouvrir'?",
+    options: ["Tu as ouvert la fenêtre?", "Tu es ouvert la fenêtre?", "Tu as ouvré la fenêtre?", "Tu as ouvrir la fenêtre?"],
+    correct: 0,
+    explanation: "Ouvrir → ouvert (irregular). Auxiliary = avoir. Tu as ouvert la fenêtre? Note: never use the infinitive as a past participle.",
+  },
 ];
 
 export default function Unit6Lesson3Page() {

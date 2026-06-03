@@ -93,6 +93,30 @@ const quiz = [
     correct: 1,
     explanation: "l'amie is the feminine form of friend. l'ami is masculine.",
   },
+  {
+    question: "How do you say 'I have an aunt and an uncle' in French?",
+    options: ["J'ai une tante et un cousin.", "J'ai une tante et un oncle.", "J'ai un tante et une oncle.", "J'ai la tante et l'oncle."],
+    correct: 1,
+    explanation: "La tante (aunt) is feminine → une tante. L'oncle (uncle) is masculine → un oncle. Getting article gender right is essential.",
+  },
+  {
+    question: "What is the male equivalent of 'la cousine'?",
+    options: ["le cousin", "le cousine", "l'oncle", "le frère"],
+    correct: 0,
+    explanation: "La cousine (female cousin) → le cousin (male cousin). This is a regular pattern: add -e for feminine, remove it for masculine.",
+  },
+  {
+    question: "'Dans ma famille, nous sommes quatre.' What does this mean?",
+    options: ["My family has four children.", "There are four of us in my family.", "My family is from four places.", "I have four grandparents."],
+    correct: 1,
+    explanation: "'Nous sommes quatre' literally means 'we are four' — used to say how many people are in a family. A very common expression.",
+  },
+  {
+    question: "How do you say 'My grandmother's name is Marie'?",
+    options: ["Ma grand-mère s'appelle Marie.", "Mon grand-mère s'appelle Marie.", "Ma grand-père s'appelle Marie.", "La grand-mère appelle Marie."],
+    correct: 0,
+    explanation: "Grand-mère is feminine → 'ma grand-mère.' Use 's'appelle' (she calls herself) to give someone's name.",
+  },
 ];
 
 export default function Unit3Lesson3Page() {

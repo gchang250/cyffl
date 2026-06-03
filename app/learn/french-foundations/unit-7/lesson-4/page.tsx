@@ -45,6 +45,30 @@ const quiz = [
     correct: 3,
     explanation: "Connaître is used for people you know (are acquainted with). Ils connaissent Marie.",
   },
+  {
+    question: "How do you say 'We want to go but we can't'?",
+    options: ["Nous voulons aller mais nous ne pouvons pas.", "Nous voulons aller mais nous ne devons pas.", "Nous pouvons aller mais nous ne voulons pas.", "Nous allons aller mais nous ne savons pas."],
+    correct: 0,
+    explanation: "Nous voulons aller (we want to go) + mais (but) + nous ne pouvons pas (we can't). Vouloir = want; pouvoir = can/be able to.",
+  },
+  {
+    question: "What construction expresses an action that just happened?",
+    options: ["aller + infinitive", "venir de + infinitive", "devoir + infinitive", "pouvoir + infinitive"],
+    correct: 1,
+    explanation: "Venir de + infinitive = just did something (recent past). Elle vient de partir = She just left. Aller + infinitive = near future (going to do something).",
+  },
+  {
+    question: "Complete: 'Tu ___ nager, mais tu ___ pas nager si tu n'essaies pas.' (savoir / pouvoir)",
+    options: ["sais, peux", "peux, sais", "connais, peux", "sais, dois"],
+    correct: 0,
+    explanation: "Tu sais nager = you know how to swim (savoir + infinitive). Tu ne peux pas = you can't (pouvoir = ability). Savoir = knowing how; pouvoir = physical ability.",
+  },
+  {
+    question: "Which verb do you use to express 'I must study'?",
+    options: ["Je veux étudier.", "Je dois étudier.", "Je peux étudier.", "Je viens d'étudier."],
+    correct: 1,
+    explanation: "Je dois étudier = I must/have to study. Devoir expresses obligation or necessity. Vouloir = want; pouvoir = can; venir de = just did.",
+  },
 ];
 
 export default function Unit7Lesson4Page() {

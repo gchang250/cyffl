@@ -61,6 +61,30 @@ const quiz = [
     correct: 2,
     explanation: "Nous (masculine or mixed) → arrivés (masculine plural -s). Arrivées would be an all-female group.",
   },
+  {
+    question: "What does 'DR MRS VANDERTRAMP' help you remember?",
+    options: ["The six -er verb endings", "Which verbs use être in the passé composé", "The irregular past participles", "The order of French adjectives"],
+    correct: 1,
+    explanation: "DR MRS VANDERTRAMP is a mnemonic for the verbs that use être as their auxiliary in the passé composé: Devenir, Revenir, Monter, Rester, Sortir, Venir, Aller, Naître, Descendre, Entrer, Rentrer, Tomber, Retourner, Arriver, Mourir, Partir.",
+  },
+  {
+    question: "Two girls went to the park. How do you say 'they went' using 'aller'?",
+    options: ["Elles sont allé.", "Elles ont allées.", "Elles sont allées.", "Elles sont allé."],
+    correct: 2,
+    explanation: "Elles (all feminine) + aller = elles sont allées. Add -e for feminine, -s for plural → -es. Elles sont allées au parc.",
+  },
+  {
+    question: "Which sentence uses the passé composé with être CORRECTLY?",
+    options: ["Il est mangé une pomme.", "Il est arrivé en retard.", "Il a arrivé en retard.", "Il sont arrivés."],
+    correct: 1,
+    explanation: "Arriver uses être. Il est arrivé en retard = He arrived late. 'Il a arrivé' is wrong (wrong auxiliary). 'Il sont' is wrong (il is singular → il est).",
+  },
+  {
+    question: "How do you say 'She was born in 2009'?",
+    options: ["Elle a né en 2009.", "Elle est née en 2009.", "Elle est néé en 2009.", "Elle a nait en 2009."],
+    correct: 1,
+    explanation: "Naître uses être. Past participle: né. For a feminine subject (elle), add -e → née. Elle est née en 2009.",
+  },
 ];
 
 export default function Unit6Lesson2Page() {

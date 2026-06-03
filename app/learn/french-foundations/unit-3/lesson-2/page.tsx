@@ -114,6 +114,30 @@ const quiz = [
     correct: 2,
     explanation: "L'été = summer. L'hiver = winter, le printemps = spring, l'automne = fall.",
   },
+  {
+    question: "Are days of the week capitalized in French?",
+    options: ["Yes, always", "Only on calendars", "No, they are lowercase", "Only at the start of a sentence"],
+    correct: 2,
+    explanation: "In French, days of the week and months are NOT capitalized: lundi, mardi, janvier, février. This is different from English.",
+  },
+  {
+    question: "How do you say 'Today is Wednesday'?",
+    options: ["Aujourd'hui c'est le Wednesday.", "Aujourd'hui c'est mercredi.", "Aujourd'hui est mercredi.", "Maintenant c'est mercredi."],
+    correct: 1,
+    explanation: "Aujourd'hui c'est mercredi. — 'Aujourd'hui' means today and 'c'est' means 'it is.' Notice no article before the day.",
+  },
+  {
+    question: "Which day comes right before dimanche?",
+    options: ["vendredi", "lundi", "samedi", "jeudi"],
+    correct: 2,
+    explanation: "The days in order: lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche. Samedi comes just before dimanche.",
+  },
+  {
+    question: "How do you say 'in winter' (the season)?",
+    options: ["à hiver", "en hiver", "au hiver", "dans hiver"],
+    correct: 1,
+    explanation: "Use 'en' before seasons when the season starts with a consonant or vowel sound: en hiver, en été, en automne. Exception: au printemps.",
+  },
 ];
 
 export default function Unit3Lesson2Page() {

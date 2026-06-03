@@ -48,6 +48,35 @@ const questions = [
     correct: 2,
     explanation: "The text says 'je mange à la cantine avec mes amis' — the student eats at the school canteen with friends.",
   },
+  {
+    question: "What does 'la récréation' mean, and what is its informal shortened form?",
+    options: ["Homework — shortened to 'les devs'", "Break/recess — shortened to 'la récré'", "A lesson — shortened to 'le cours'", "PE class — shortened to 'l'EPS'"],
+    correct: 1,
+    explanation: "La récréation = break/recess — commonly shortened to 'la récré' in everyday speech. Students use this informal version constantly.",
+  },
+  {
+    question: "What does the time expression '16 heures' refer to in the text?",
+    options: ["4 AM", "6 PM", "4 PM", "16 minutes past noon"],
+    correct: 2,
+    explanation: "French commonly uses the 24-hour clock. 16 heures = 4 PM (16 - 12 = 4). Context (returning home after school) confirms this is late afternoon.",
+  },
+  {
+    question: "What tense are all the verbs in Text A written in, and why?",
+    options: [
+      "Passé composé — because the routine happened in the past.",
+      "Imparfait — because it is a habitual routine.",
+      "Present tense — because the routine is ongoing and current.",
+      "Futur proche — because these are plans.",
+    ],
+    correct: 2,
+    explanation: "Text A uses the present tense throughout (je me lève, je mange, je pars…) because it describes the student's current, ongoing daily routine — not a one-off past event.",
+  },
+  {
+    question: "Which word from the text means 'school subject' (as in a lesson area like maths or science)?",
+    options: ["le cours", "la cantine", "la matière", "le tableau"],
+    correct: 2,
+    explanation: "La matière = school subject. Le cours = a lesson/class. La matière refers to a subject area (les maths, le français, les sciences), while le cours is a specific session.",
+  },
 ];
 
 export default function Unit6Lesson2Page() {

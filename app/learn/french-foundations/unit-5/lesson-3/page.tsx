@@ -61,6 +61,30 @@ const questions = [
     correct: 1,
     explanation: "Quelle heure est-il? is the standard question. Note: quel temps = what weather, not what time.",
   },
+  {
+    question: "How do you say 'It is 10:45' (ten forty-five / quarter to eleven)?",
+    options: ["Il est dix heures et quart.", "Il est onze heures moins le quart.", "Il est dix heures moins le quart.", "Il est dix heures quarante-cinq."],
+    correct: 1,
+    explanation: "10:45 = fifteen minutes before 11 → onze heures moins le quart. 'Moins le quart' = quarter to. Count forward to the NEXT hour, not the current one.",
+  },
+  {
+    question: "What does 'du soir' mean when telling time?",
+    options: ["In the morning (AM)", "In the afternoon", "In the evening (PM)", "At midnight"],
+    correct: 2,
+    explanation: "Du soir = in the evening / PM. Il est huit heures du soir = 8 PM. Compare: du matin = AM, de l'après-midi = afternoon PM.",
+  },
+  {
+    question: "How do you say 'It is noon' in French?",
+    options: ["Il est douze heures.", "Il est midi.", "Il est minuit.", "Il est zéro heure."],
+    correct: 1,
+    explanation: "Il est midi = It is noon. Both 'il est midi' and 'il est douze heures' are correct, but 'il est midi' is the most natural expression for noon.",
+  },
+  {
+    question: "A class starts at 8:30 AM. How would you say this?",
+    options: ["Le cours commence à huit heures et demie du matin.", "Le cours commence à huit demie heures matin.", "Le cours commence à demie huit heures matin.", "Le cours commence à huit heure et demie."],
+    correct: 0,
+    explanation: "À huit heures et demie du matin — the order is: number + heures + minutes + AM/PM marker. Note 'heures' is plural for any hour other than une heure.",
+  },
 ];
 
 export default function Unit5Lesson3Page() {

@@ -73,6 +73,30 @@ const quiz = [
     correct: 2,
     explanation: "Il connaît (with a circumflex on the î — it distinguishes it from connait without accent). This is the standard form.",
   },
+  {
+    question: "Which verb would you use to say 'Do you know what time it is?'",
+    options: ["connaître", "savoir", "devoir", "pouvoir"],
+    correct: 1,
+    explanation: "Savoir is used for factual knowledge and information: Tu sais quelle heure il est? You're asking if someone knows a fact, not if they're acquainted with a person.",
+  },
+  {
+    question: "How do you say 'We have to finish the project'?",
+    options: ["Nous voulons finir le projet.", "Nous pouvons finir le projet.", "Nous devons finir le projet.", "Nous savons finir le projet."],
+    correct: 2,
+    explanation: "Devoir = must / have to. Nous devons finir le projet. Compare: vouloir = want, pouvoir = can, savoir = know how to.",
+  },
+  {
+    question: "A student writes 'Je sais Marie.' What's wrong?",
+    options: ["Sais should be connais — you know a person with connaître.", "Sais should be peux.", "The sentence needs a direct object marker.", "Nothing is wrong."],
+    correct: 0,
+    explanation: "You use connaître for people: Je connais Marie. Savoir is for facts and skills. This is one of the most common confusion points between these two verbs.",
+  },
+  {
+    question: "What does 'Vous devez arriver à l'heure' mean?",
+    options: ["You want to arrive on time.", "You know how to arrive on time.", "You must arrive on time.", "You can arrive on time."],
+    correct: 2,
+    explanation: "Devoir (vous devez) = must / have to. À l'heure = on time. So: you must arrive on time. An instruction from a teacher or authority figure.",
+  },
 ];
 
 export default function Unit7Lesson2Page() {

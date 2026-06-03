@@ -59,6 +59,30 @@ const questions = [
     correct: 3,
     explanation: "En face de = across from, facing. La pharmacie est en face de la boulangerie — the pharmacy is across from the bakery.",
   },
+  {
+    question: "Which preposition is used to go to a masculine country like Canada?",
+    options: ["à", "en", "au", "aux"],
+    correct: 2,
+    explanation: "Masculine countries use au: au Canada, au Japon, au Maroc. Feminine countries use en: en France, en Italie. Plural countries use aux: aux États-Unis.",
+  },
+  {
+    question: "How do you say 'the teacher's book' using de + le?",
+    options: ["le livre de le professeur", "le livre du professeur", "le livre de professeur", "le livre au professeur"],
+    correct: 1,
+    explanation: "De + le = du. Le livre du professeur = the teacher's book. 'De le' never stays as two words — it must contract to 'du.'",
+  },
+  {
+    question: "Where is the dog? 'Le chien est ___ la chaise.' (under)",
+    options: ["devant", "derrière", "sous", "dans"],
+    correct: 2,
+    explanation: "Sous = under/beneath. Le chien est sous la chaise. Compare: devant = in front of, derrière = behind, dans = in/inside.",
+  },
+  {
+    question: "Which sentence correctly uses 'dans'?",
+    options: ["Il est dans France.", "Le livre est dans le sac.", "Elle va dans le cinéma.", "Il habite dans Paris."],
+    correct: 1,
+    explanation: "Dans = in/inside (enclosed space). Le livre est dans le sac = the book is in the bag. For cities, use à (à Paris, not dans Paris). For countries, use en/au/aux.",
+  },
 ];
 
 export default function Unit1Lesson3Page() {

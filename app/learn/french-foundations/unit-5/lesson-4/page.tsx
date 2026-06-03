@@ -68,6 +68,30 @@ const questions = [
     correct: 2,
     explanation: "À + les always contracts to aux: Je vais aux magasins. (à + les = aux)",
   },
+  {
+    question: "How do you say 'We are going to swim' using the near future?",
+    options: ["Nous allons nager.", "Nous nageons.", "Nous allons à nager.", "Nous irons nager."],
+    correct: 0,
+    explanation: "Near future = aller (conjugated) + infinitive. Nous allons nager. No preposition between aller and the infinitive. 'Nous allons à nager' is wrong.",
+  },
+  {
+    question: "How do you say 'They are going to the park'?",
+    options: ["Ils vont au parc.", "Ils vont à le parc.", "Ils vont le parc.", "Ils aller au parc."],
+    correct: 0,
+    explanation: "Ils vont au parc. À + le = au (le parc is masculine). 'Ils aller' is wrong — aller must be conjugated: ils vont.",
+  },
+  {
+    question: "What is the 'tu' form of 'aller'?",
+    options: ["tu aller", "tu alles", "tu vas", "tu allons"],
+    correct: 2,
+    explanation: "Aller is irregular: je vais, tu vas, il/elle va, nous allons, vous allez, ils/elles vont. Tu vas is the only correct form.",
+  },
+  {
+    question: "A student says 'Je vais à le supermarché.' What's wrong?",
+    options: ["They used the wrong verb.", "À + le must contract to au.", "Supermarché is feminine.", "Vais should be vais aller."],
+    correct: 1,
+    explanation: "À + le always contracts to au: Je vais au supermarché. Never write 'à le' — it must be contracted. À + la stays as à la (no contraction needed).",
+  },
 ];
 
 export default function Unit5Lesson4Page() {

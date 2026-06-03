@@ -48,6 +48,40 @@ const questions = [
     correct: 2,
     explanation: "Text B uses 'nous' (we) and 'chacun d'entre nous' (each one of us) to address the reader directly and create a sense of shared responsibility.",
   },
+  {
+    question: "What does 'nuire à' mean, and what grammatical feature does it have?",
+    options: [
+      "To help with — used before nouns only.",
+      "To harm/damage — irregular verb followed by à + noun.",
+      "To know — followed by an infinitive.",
+      "To improve — used with de + noun.",
+    ],
+    correct: 1,
+    explanation: "Nuire à = to harm / to damage. It's an irregular verb followed by à: nuire à la santé (harm health), nuire à l'environnement (harm the environment). Common in formal and environmental writing.",
+  },
+  {
+    question: "Which phrase from the vocabulary introduces a widely accepted fact in an argument?",
+    options: ["à mon avis", "je pense que", "il est indéniable que", "pourtant"],
+    correct: 2,
+    explanation: "'Il est indéniable que' = it is undeniable that. This phrase introduces a fact the writer presents as beyond dispute. It signals objective, strong evidence — ideal for exam writing.",
+  },
+  {
+    question: "What type of text are both texts in this lesson, and how can you tell?",
+    options: [
+      "Narratives — because they tell a story with characters.",
+      "Opinion/argumentative texts — because they present a position, evidence, and counterpoints.",
+      "Descriptions — because they describe places and events.",
+      "Instructions — because they tell the reader what to do.",
+    ],
+    correct: 1,
+    explanation: "Both texts are argumentative/opinion texts. Signs include: opinion phrases (selon moi, il est clair que), contrast connectors (pourtant, cependant), evidence phrases (il est indéniable que), and a call to action at the end.",
+  },
+  {
+    question: "What does 's'engager' mean in the context of Text B?",
+    options: ["To hire someone", "To commit / to get involved (in a cause)", "To communicate", "To agree with someone"],
+    correct: 1,
+    explanation: "S'engager = to commit / to get involved. Chacun doit s'engager pour protéger la planète = Everyone must commit to protecting the planet. It's a strong, formal verb used in writing about responsibility.",
+  },
 ];
 
 export default function Unit6Lesson4Page() {

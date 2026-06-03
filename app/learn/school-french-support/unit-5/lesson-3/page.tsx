@@ -57,6 +57,45 @@ const questions = [
     correct: 1,
     explanation: "Venir uses être: nous sommes venus. The past participle venu agrees with the subject (add -s for plural).",
   },
+  {
+    question: "How do you say 'Yesterday, we went to the market' in French?",
+    options: [
+      "Hier, nous sommes allés au marché.",
+      "Hier, nous allions au marché.",
+      "Hier, nous avons allé au marché.",
+      "Hier, nous sommes allé au marché.",
+    ],
+    correct: 0,
+    explanation: "Hier signals a single completed event → passé composé. Aller uses être. Nous (masculine/mixed plural) → allés (add -s). Nous sommes allés au marché.",
+  },
+  {
+    question: "Which connector opens a past narrative sequence?",
+    options: ["À la fin", "Pendant que", "D'abord", "C'était"],
+    correct: 2,
+    explanation: "'D'abord' (first/to begin with) opens a narrative sequence of completed events. Each following step uses ensuite, puis, or alors, and the paragraph closes with à la fin or finalement.",
+  },
+  {
+    question: "A student writes 'Il faisait beau' to describe the weather. Which tense is this and why?",
+    options: [
+      "Passé composé — because the weather is a completed event.",
+      "Imparfait — because weather descriptions set the background scene.",
+      "Présent — because weather descriptions are always present tense.",
+      "Futur — because the weather is unpredictable.",
+    ],
+    correct: 1,
+    explanation: "Il faisait beau is the imparfait. Weather descriptions in a past narrative set the scene/background → imparfait. It's an ongoing condition, not a completed event.",
+  },
+  {
+    question: "When writing a past narrative, which sentence provides the best closing line?",
+    options: [
+      "Le soleil brillait et les oiseaux chantaient.",
+      "Nous allions souvent au parc.",
+      "À la fin, nous sommes rentrés chez nous, fatigués mais heureux.",
+      "Il était tard et il faisait froid.",
+    ],
+    correct: 2,
+    explanation: "A strong closing sentence uses the passé composé for the final completed action and adds a concluding observation. 'À la fin, nous sommes rentrés' — completed return — signals the narrative end.",
+  },
 ];
 
 export default function Unit5Lesson3Page() {

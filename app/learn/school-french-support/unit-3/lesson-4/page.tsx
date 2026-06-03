@@ -69,6 +69,40 @@ const questions = [
     correct: 3,
     explanation: "'Il y a + time' means 'ago' when used with a past tense: il y a deux semaines = two weeks ago. Compare: dans deux semaines = in two weeks.",
   },
+  {
+    question: "How do you say 'We haven't studied since Monday'?",
+    options: [
+      "Nous n'avons pas étudié depuis lundi.",
+      "Nous n'avons pas étudié il y a lundi.",
+      "Nous n'avons pas étudié avant lundi.",
+      "Nous ne pas avons étudié depuis lundi.",
+    ],
+    correct: 0,
+    explanation: "Depuis + time = since. Nous n'avons pas étudié depuis lundi. Negation wraps the auxiliary: ne + avons + pas. 'Il y a' means ago, not since.",
+  },
+  {
+    question: "What does 'ne...rien' mean?",
+    options: ["never", "nothing / not anything", "no longer", "not yet"],
+    correct: 1,
+    explanation: "Ne...rien = nothing / not anything. Je n'ai rien mangé = I didn't eat anything. Contrast: ne...jamais = never, ne...plus = no longer, ne...pas encore = not yet.",
+  },
+  {
+    question: "What does 'déjà' mean in 'Tu as déjà fini?'",
+    options: ["not yet", "still", "already", "again"],
+    correct: 2,
+    explanation: "Déjà = already. Tu as déjà fini? = Have you already finished? It goes between the auxiliary and the past participle: tu as déjà fini.",
+  },
+  {
+    question: "How do you say 'She has never come here'?",
+    options: [
+      "Elle n'est jamais venue ici.",
+      "Elle n'a jamais vendu ici.",
+      "Elle n'est pas venue jamais ici.",
+      "Elle jamais est venue ici.",
+    ],
+    correct: 0,
+    explanation: "Venir uses être. Elle n'est jamais venue ici. Jamais goes between the auxiliary (est) and the past participle (venue). Remember gender agreement: elle → venue.",
+  },
 ];
 
 export default function Unit3Lesson4Page() {

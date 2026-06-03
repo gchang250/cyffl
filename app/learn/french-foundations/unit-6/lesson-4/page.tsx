@@ -57,6 +57,40 @@ const quiz = [
     correct: 1,
     explanation: "Sortir uses être. Subject is elle (feminine), so add -e: sortie. Elle est sortie.",
   },
+  {
+    question: "How do you say 'He studied last month'?",
+    options: ["Il a étudié le mois dernier.", "Il a étudié le mois passé.", "Il a étudié le mois prochain.", "Il a étudié depuis le mois."],
+    correct: 0,
+    explanation: "Le mois dernier = last month. Il a étudié le mois dernier. (Note: 'le mois passé' is also acceptable but less standard in written French.)",
+  },
+  {
+    question: "What does 'il y a trois jours' mean?",
+    options: ["In three days", "For three days", "Three days ago", "Since three days"],
+    correct: 2,
+    explanation: "Il y a + time period = [time period] ago, when used with a past tense. Il y a trois jours = three days ago. Compare: dans trois jours = in three days.",
+  },
+  {
+    question: "Which sentence correctly combines a time expression with the passé composé?",
+    options: [
+      "La semaine dernière, j'ai mangé au restaurant.",
+      "La semaine dernière, je mange au restaurant.",
+      "La semaine dernière, j'ai manger au restaurant.",
+      "La semaine dernière, je mangeais au restaurant.",
+    ],
+    correct: 0,
+    explanation: "La semaine dernière (last week) signals a completed past event → passé composé: j'ai mangé. Using the infinitive (manger) after avoir is a very common error.",
+  },
+  {
+    question: "How do you say 'I haven't worked since Monday'?",
+    options: [
+      "Je n'ai pas travaillé depuis lundi.",
+      "Je n'ai pas travaillé lundi.",
+      "Je n'ai pas travaillé il y a lundi.",
+      "Depuis lundi, j'ai pas travaillé.",
+    ],
+    correct: 0,
+    explanation: "Since = depuis. Je n'ai pas travaillé depuis lundi. Depuis + time = since [time]. Note the negation: ne wraps the auxiliary (je n'ai pas).",
+  },
 ];
 
 export default function Unit6Lesson4Page() {

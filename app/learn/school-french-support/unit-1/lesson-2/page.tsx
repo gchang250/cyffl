@@ -57,6 +57,30 @@ const questions = [
     correct: 2,
     explanation: "Nouveau goes before the noun and pluralizes to nouveaux. Masculine plural of nouveau = nouveaux: les nouveaux livres.",
   },
+  {
+    question: "What is the feminine plural form of 'intéressant'?",
+    options: ["intéressants", "intéressante", "intéressantes", "intéressantse"],
+    correct: 2,
+    explanation: "Masculine: intéressant · Feminine: intéressante · Masculine plural: intéressants · Feminine plural: intéressantes. Add -e for feminine, -s for plural.",
+  },
+  {
+    question: "How do you say 'the happy boys'?",
+    options: ["les garçons heureuse", "les garçons heureux", "les garçons heureuses", "les heureux garçons"],
+    correct: 1,
+    explanation: "Heureux stays as heureux for masculine plural (it already ends in -x). Les garçons heureux. Only the feminine changes: heureuse / heureuses.",
+  },
+  {
+    question: "Which adjective has the same form in both masculine and feminine singular?",
+    options: ["grand", "beau", "français", "sympa"],
+    correct: 3,
+    explanation: "Sympa is invariable — it doesn't change for gender or number: un prof sympa, une élève sympa. Grand, beau, and français all have distinct feminine forms.",
+  },
+  {
+    question: "A student writes 'un vieux voiture.' What is wrong?",
+    options: ["Vieux should come after the noun.", "Voiture is feminine — it should be 'une vieille voiture.'", "Vieux is not a real adjective.", "Une should be used, not un."],
+    correct: 1,
+    explanation: "Voiture is feminine → use une, and the feminine form of vieux is vieille: une vieille voiture. Using vieux with a feminine noun is a very common error.",
+  },
 ];
 
 export default function Unit1Lesson2Page() {

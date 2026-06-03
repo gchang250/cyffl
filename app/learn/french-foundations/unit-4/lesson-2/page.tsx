@@ -61,6 +61,30 @@ const questions = [
     correct: 1,
     explanation: "Vieux (old) belongs to the Age category in BAGS. Other age adjectives: nouveau, jeune.",
   },
+  {
+    question: "What is the feminine form of 'vieux'?",
+    options: ["vieuxe", "vieux", "vielle", "vieille"],
+    correct: 3,
+    explanation: "Vieux has an irregular feminine: vieille. This is one of the trickier BAGS adjectives. Un vieux livre / une vieille maison.",
+  },
+  {
+    question: "How do you say 'a good idea' (idée = feminine)?",
+    options: ["une bonne idée", "une idée bonne", "un bonne idée", "une bon idée"],
+    correct: 0,
+    explanation: "Bon is a BAGS adjective (Goodness) and goes BEFORE the noun. Feminine form: bonne. So: une bonne idée.",
+  },
+  {
+    question: "The adjective 'sympa' is described as invariable. What does this mean?",
+    options: ["It only goes before the noun.", "It never changes form for gender or number.", "It is only used in negative sentences.", "It is a colour adjective."],
+    correct: 1,
+    explanation: "Invariable adjectives never change: un prof sympa, une prof sympa, des élèves sympa. Both sympa and marron work this way.",
+  },
+  {
+    question: "Which sentence correctly places the adjective 'nouveau'?",
+    options: ["un livre nouveau", "un nouveau livre", "un livres nouveau", "une nouveau livre"],
+    correct: 1,
+    explanation: "Nouveau (BAGS: Age) goes BEFORE the noun: un nouveau livre. The feminine form would be nouvelle: une nouvelle maison.",
+  },
 ];
 
 export default function Unit4Lesson2Page() {

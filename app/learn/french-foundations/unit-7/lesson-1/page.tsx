@@ -75,6 +75,30 @@ const quiz = [
     correct: 1,
     explanation: "Pouvoir = can / be able to. Il peut parler français = He can speak French.",
   },
+  {
+    question: "What is the 'nous' form of 'faire'?",
+    options: ["nous font", "nous faisons", "nous faisez", "nous faites"],
+    correct: 1,
+    explanation: "Nous faisons = we do/make. Note the pronunciation: 'faisons' is pronounced fuh-ZON, not fay-zon. It's one of the irregular forms.",
+  },
+  {
+    question: "How do you say 'They don't want to leave'?",
+    options: ["Ils ne veulent pas partir.", "Ils ne peuvent pas partir.", "Ils veulent ne pas partir.", "Ils ne voulons pas partir."],
+    correct: 0,
+    explanation: "Ils ne veulent pas partir. Vouloir (ils veulent) + negation (ne...pas) + infinitive. Ne wraps the conjugated verb vouloir.",
+  },
+  {
+    question: "What is the key difference between 'je veux' and 'je voudrais'?",
+    options: ["Veux is past tense; voudrais is present.", "Voudrais is more polite (conditional).", "Veux is formal; voudrais is informal.", "They mean exactly the same thing."],
+    correct: 1,
+    explanation: "Je voudrais (conditional) is more polite than je veux (present). Use je voudrais when ordering in a café or making a request — it's the equivalent of 'I would like.'",
+  },
+  {
+    question: "'Qu'est-ce que tu fais ce soir?' means:",
+    options: ["What do you want tonight?", "What are you doing tonight?", "Can you come tonight?", "What did you do tonight?"],
+    correct: 1,
+    explanation: "Faire = to do/make. Tu fais = you do/are doing. Qu'est-ce que tu fais ce soir? = What are you doing tonight? Present tense covers both habits and ongoing actions.",
+  },
 ];
 
 export default function Unit7Lesson1Page() {

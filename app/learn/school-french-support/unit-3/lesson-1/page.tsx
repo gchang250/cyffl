@@ -76,6 +76,30 @@ const questions = [
     correct: 2,
     explanation: "Negation wraps the auxiliary: ne + auxiliary + pas + past participle. Il n'a pas mangé — ne contracts to n' before a vowel.",
   },
+  {
+    question: "What is the past participle of 'travailler'?",
+    options: ["travaillé", "travaillé", "travaillir", "travaillou"],
+    correct: 0,
+    explanation: "Travailler is a regular -er verb: past participle = travaillé. The pattern is simple: remove -er, add -é. Ils ont travaillé toute la journée.",
+  },
+  {
+    question: "How do you say 'We waited for the bus'?",
+    options: ["Nous avons attendu le bus.", "Nous sommes attendu le bus.", "Nous avons attendé le bus.", "Nous avons attendre le bus."],
+    correct: 0,
+    explanation: "Attendre is a -re verb: past participle = attendu. Auxiliary = avoir. Nous avons attendu le bus. Note: never use the infinitive as the past participle.",
+  },
+  {
+    question: "With avoir in the passé composé, when does the past participle agree with something?",
+    options: ["Always with the subject", "Never — it stays unchanged", "With the subject only when it's feminine", "With a preceding direct object"],
+    correct: 3,
+    explanation: "With avoir, the past participle normally stays unchanged. BUT it does agree with a direct object that precedes the verb: Les livres qu'elle a lus (the books she read). At this level, the key rule is: with avoir, the past participle does NOT agree with the subject.",
+  },
+  {
+    question: "How do you say 'Did you listen to the radio?'",
+    options: ["Tu as écouté la radio?", "Tu es écouté la radio?", "Tu as écouter la radio?", "Tu avais écouté la radio?"],
+    correct: 0,
+    explanation: "Écouter → past participle: écouté. Auxiliary: avoir. Tu as écouté la radio? Questions in passé composé use the same structure — just raise your voice.",
+  },
 ];
 
 export default function Unit3Lesson1Page() {
