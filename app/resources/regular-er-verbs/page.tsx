@@ -109,6 +109,7 @@ export default function RegularErVerbsPage() {
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-[#E7DAB9]">
+                  <th className="w-8 pb-3 pl-3" />
                   <th className="pb-3 text-left font-black">Pronoun</th>
                   <th className="pb-3 text-left font-black">Parler</th>
                   <th className="pb-3 text-left text-[#526173]">English</th>
@@ -142,6 +143,7 @@ export default function RegularErVerbsPage() {
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-[#E7DAB9]">
+                  <th className="w-8 pb-3 pl-3" />
                   <th className="pb-3 text-left font-black text-[#0B1F3A]">French infinitive</th>
                   <th className="pb-3 text-left font-black text-[#0B1F3A]">English</th>
                 </tr>

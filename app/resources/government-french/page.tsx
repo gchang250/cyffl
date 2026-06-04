@@ -109,6 +109,7 @@ export default function GovernmentFrenchPage() {
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-[#E7DAB9]">
+                  <th className="w-8 pb-3 pl-3" />
                   <th className="pb-3 text-left font-black">French term</th>
                   <th className="pb-3 text-left font-black">English meaning</th>
                 </tr>
@@ -145,6 +146,7 @@ export default function GovernmentFrenchPage() {
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-[#E7DAB9]">
+                  <th className="w-8 pb-3 pl-3" />
                   <th className="pb-3 text-left font-black">French</th>
                   <th className="pb-3 text-left font-black">English</th>
                   <th className="pb-3 text-left text-[#526173]">Notes</th>
@@ -177,6 +179,7 @@ export default function GovernmentFrenchPage() {
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-[#E7DAB9]">
+                  <th className="w-8 pb-3 pl-3" />
                   <th className="pb-3 text-left font-black">French</th>
                   <th className="pb-3 text-left font-black">English</th>
                   <th className="pb-3 text-left text-[#526173]">Context</th>
@@ -252,6 +255,7 @@ export default function GovernmentFrenchPage() {
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-[#E7DAB9]">
+                  <th className="w-8 pb-3 pl-3" />
                   <th className="pb-3 text-left font-black">Function</th>
                   <th className="pb-3 text-left font-black">French phrase</th>
                   <th className="pb-3 text-left text-[#526173]">English equivalent</th>

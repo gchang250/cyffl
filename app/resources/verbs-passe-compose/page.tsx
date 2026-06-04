@@ -98,6 +98,7 @@ export default function VerbsPasseComposePage() {
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-[#E7DAB9]">
+                  <th className="w-8 pb-3 pl-3" />
                   <th className="pb-3 text-left font-black">French</th>
                   <th className="pb-3 text-left text-[#526173]">English</th>
                 </tr>
@@ -130,6 +131,7 @@ export default function VerbsPasseComposePage() {
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-[#E7DAB9]">
+                  <th className="w-8 pb-3 pl-3" />
                   <th className="pb-3 text-left font-black">French</th>
                   <th className="pb-3 text-left text-[#526173]">English</th>
                 </tr>

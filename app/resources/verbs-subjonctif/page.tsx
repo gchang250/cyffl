@@ -162,6 +162,7 @@ export default function VerbsSubjonctifPage() {
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-[#E7DAB9]">
+                  <th className="w-8 pb-3 pl-3" />
                   <th className="pb-3 text-left font-black">Trigger</th>
                   <th className="pb-3 text-left text-[#526173]">English</th>
                   <th className="pb-3 text-left font-black text-[#7C3AED]">Example</th>

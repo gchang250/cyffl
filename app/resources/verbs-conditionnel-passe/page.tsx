@@ -148,6 +148,7 @@ export default function ConditionnelPassePage() {
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-[#FDE68A]">
+                  <th className="w-8 pb-3 pl-3" />
                   <th className="pb-3 text-left font-black text-[#D97706]">Si-clause</th>
                   <th className="pb-3 text-left font-black text-[#D97706]">Result clause</th>
                   <th className="pb-3 text-left text-[#526173]">Meaning</th>
