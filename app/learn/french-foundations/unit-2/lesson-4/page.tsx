@@ -5,18 +5,18 @@ import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 import MatchPairs from "@/components/MatchPairs";
 
 const sentenceCards = [
-  { front: "Je parle français.", back: "I speak French.", subtext: "Subject + verb + object" },
-  { front: "Tu aimes le sport?", back: "Do you like sport?", subtext: "In French, questions can just use rising tone." },
-  { front: "Elle habite à Ottawa.", back: "She lives in Ottawa.", subtext: "habiter à = to live in (a city)" },
-  { front: "Nous aimons la musique.", back: "We like music.", subtext: "aimer = to like/love" },
-  { front: "Ils jouent au foot.", back: "They play soccer.", subtext: "jouer à = to play (a sport)" },
+  { front: "Je parle français.", back: "I speak French.", subtext: "Subject (je) + verb (parle) + object (français). Same order as English: no rearranging needed for simple statements." },
+  { front: "Tu aimes le sport?", back: "Do you like sport?", subtext: "In French, questions can just use rising intonation. No 'do you' equivalent — just say the statement with a question tone." },
+  { front: "Elle habite à Ottawa.", back: "She lives in Ottawa.", subtext: "Habiter à + city. Use 'à' before a city. Use 'en' before a country (feminine): elle habite en France." },
+  { front: "Nous aimons la musique.", back: "We like music.", subtext: "'La musique' uses the definite article — French often uses le/la/les for general likes: j'aime le sport, j'adore la musique." },
+  { front: "Ils jouent au foot.", back: "They play soccer.", subtext: "Jouer à + sport. 'Au' = à + le (contraction). Jouer au foot, jouer au tennis, jouer au basketball." },
 ];
 
 const negationCards = [
-  { front: "Je ne parle pas anglais.", back: "I don't speak English.", subtext: "ne + verb + pas wraps the verb." },
-  { front: "Il ne mange pas.", back: "He doesn't eat.", subtext: "No object needed, the negative still wraps the verb." },
-  { front: "Nous n'avons pas de chat.", back: "We don't have a cat.", subtext: "ne → n' before a vowel." },
-  { front: "Tu n'es pas fatigué?", back: "You're not tired?", subtext: "Works with être too." },
+  { front: "Je ne parle pas anglais.", back: "I don't speak English.", subtext: "Formula: ne + [verb] + pas. Ne goes before the verb, pas goes after — they 'sandwich' the verb." },
+  { front: "Il ne mange pas.", back: "He doesn't eat.", subtext: "No object needed — the sandwich still works. In spoken French, the 'ne' is often dropped: 'Il mange pas.' (informal)" },
+  { front: "Nous n'avons pas de chat.", back: "We don't have a cat.", subtext: "Ne → n' before a vowel (avons starts with 'a'). Also note: after negation, un/une/du/de la → de: 'pas de chat' not 'pas un chat'." },
+  { front: "Tu n'es pas fatigué?", back: "You're not tired?", subtext: "Works with être too. Ne → n' before est/es (vowel). A question with negation like this often expresses surprise." },
 ];
 
 const matchPairs = [
@@ -64,21 +64,21 @@ const quiz = [
     question: "Which is the correct negative of 'Je mange'?",
     options: ["Je pas mange.", "Je mange ne pas.", "Je ne mange pas.", "Ne je mange pas."],
     correct: 2,
-    explanation: "Negation wraps the verb: ne + [verb] + pas. So: Je ne mange pas.",
+    explanation: "Negation wraps the verb: ne + [verb] + pas. The verb stays in position — ne goes before it and pas goes after: 'Je ne mange pas.'",
   },
   {
-    question: "How do you say 'She doesn't speak English'?",
+    question: "You want to tell your teacher you don't speak English. Which is correct?",
     options: [
       "Elle parle pas anglais.",
       "Elle ne parle pas anglais.",
-      "Elle n'est pas anglais.",
-      "Pas elle parle anglais.",
+      "Je ne parle pas anglais.",
+      "Je parle ne pas anglais.",
     ],
-    correct: 1,
-    explanation: "Elle ne parle pas anglais, ne before the verb, pas after.",
+    correct: 2,
+    explanation: "'Je ne parle pas anglais' — you're talking about yourself (je). 'Elle' would be speaking about a third person. Ne before the verb, pas after it.",
   },
   {
-    question: "In French, what is the basic sentence structure?",
+    question: "In French, what is the basic word order for a positive sentence?",
     options: [
       "Verb + Subject + Object",
       "Object + Subject + Verb",
@@ -86,37 +86,42 @@ const quiz = [
       "Subject + Object + Verb",
     ],
     correct: 2,
-    explanation: "Like English! French uses Subject + Verb + Object in simple sentences.",
+    explanation: "Like English: Subject + Verb + Object. 'Je mange une pomme.' (I eat an apple.) The order is the same as English for basic statements — a big advantage for English speakers!",
   },
   {
-    question: "How does 'ne' change before a vowel? Example: 'Je __ aime pas.'",
+    question: "How does 'ne' change before a vowel? Complete: 'Je ___ aime pas.'",
     options: ["ne", "n'", "non", "pas"],
     correct: 1,
-    explanation: "Before a vowel (aimer starts with 'a'), ne → n'. So: je n'aime pas.",
+    explanation: "Before a vowel (aimer starts with 'a'), ne contracts to n'. So: 'je n'aime pas.' This is called elision — French removes the vowel from 'ne' to avoid two vowels in a row.",
   },
   {
     question: "Which sentence correctly negates 'Ils jouent au foot'?",
     options: ["Ils ne jouent pas au foot.", "Ils jouent ne au foot pas.", "Ils ne pas jouent au foot.", "Pas ils jouent au foot."],
     correct: 0,
-    explanation: "Ne goes before the verb and pas goes after it, wrapping the verb: ils ne jouent pas. The rest of the sentence (au foot) comes after pas.",
+    explanation: "Ne goes before the verb (jouent) and pas goes after it — wrapping the verb. The rest of the sentence (au foot) comes after pas, unchanged.",
   },
   {
-    question: "What is the French sentence structure when there is no object?",
-    options: ["Verb + Subject", "Subject + Verb", "Object + Verb", "Verb + Object"],
-    correct: 1,
-    explanation: "Even without an object, French uses Subject + Verb: 'Il mange.' (He eats.) The subject always comes before the verb in a statement.",
+    question: "Your friend says 'Je n'ai pas de stylo.' What do they mean?",
+    options: ["I don't have a pen.", "I have a pen.", "I don't like pens.", "I need a pen."],
+    correct: 0,
+    explanation: "'Je n'ai pas de stylo' = I don't have a pen. Notice: after negation (ne...pas), un/une/du/de la change to 'de' (or 'd' before a vowel). 'Un stylo' → 'pas de stylo'.",
   },
   {
-    question: "'Elle n'a pas de chat.' What does this mean?",
-    options: ["She has a cat.", "She doesn't have a cat.", "She doesn't eat the cat.", "She isn't a cat."],
-    correct: 1,
-    explanation: "Elle n'a pas de chat = She doesn't have a cat. After negation (ne...pas), 'un/une' and 'du/de la' change to 'de' (or 'd' before a vowel).",
+    question: "Translate: 'Elle n'a pas de chat.' What's the key grammar rule at work?",
+    options: [
+      "She doesn't have a cat — ne...pas wraps avoir, and un/de becomes de after negation.",
+      "She doesn't eat the cat — negation of manger.",
+      "She isn't a cat — negation of être.",
+      "She doesn't see the cat — negation of voir.",
+    ],
+    correct: 0,
+    explanation: "'Elle n'a pas de chat' = She doesn't have a cat. Two rules: (1) ne + a → n'a before vowel; (2) after ne...pas, un/une/du/de la → de. 'Elle a un chat' → 'elle n'a pas de chat'.",
   },
   {
     question: "How do you say 'We don't play tennis'?",
     options: ["Nous ne jouons au tennis.", "Nous jouons pas au tennis.", "Nous ne jouons pas au tennis.", "Nous n'jouons pas au tennis."],
     correct: 2,
-    explanation: "Nous ne jouons pas au tennis — ne goes before the verb and pas after it. Note: 'ne' stays as 'ne' before a consonant (jouons starts with 'j').",
+    explanation: "'Nous ne jouons pas au tennis.' Note: 'ne' stays as 'ne' before a consonant (jouons starts with 'j') — only contracts to n' before a vowel. The full ne...pas sandwich wraps the verb.",
   },
 ];
 

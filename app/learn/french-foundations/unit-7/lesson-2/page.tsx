@@ -92,10 +92,15 @@ const quiz = [
     explanation: "You use connaître for people: Je connais Marie. Savoir is for facts and skills. This is one of the most common confusion points between these two verbs.",
   },
   {
-    question: "What does 'Vous devez arriver à l'heure' mean?",
-    options: ["You want to arrive on time.", "You know how to arrive on time.", "You must arrive on time.", "You can arrive on time."],
-    correct: 2,
-    explanation: "Devoir (vous devez) = must / have to. À l'heure = on time. So: you must arrive on time. An instruction from a teacher or authority figure.",
+    question: "How do you say 'She doesn't know how to drive yet'?",
+    options: [
+      "Elle ne connaît pas conduire encore.",
+      "Elle ne sait pas encore conduire.",
+      "Elle ne doit pas conduire encore.",
+      "Elle ne peut pas encore connaître.",
+    ],
+    correct: 1,
+    explanation: "Savoir + infinitive = know how to. Negation wraps the conjugated verb: elle ne sait pas. 'Encore' (yet/still) goes after 'pas'. So: elle ne sait pas encore conduire.",
   },
 ];
 

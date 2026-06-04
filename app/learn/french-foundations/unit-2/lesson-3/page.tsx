@@ -99,7 +99,42 @@ const quiz = [
     question: "What does 'Il a tort' mean?",
     options: ["He is right.", "He has a tort.", "He is wrong.", "He has a cold."],
     correct: 2,
-    explanation: "Avoir tort means 'to be wrong.' Avoir raison = to be right.",
+    explanation: "Avoir tort means 'to be wrong.' Avoir raison = to be right. These expressions use avoir even though English uses 'to be'.",
+  },
+  {
+    question: "Which sentence correctly expresses 'We are thirsty'?",
+    options: ["Nous sommes soif.", "Nous avons soif.", "Nous avons la soif.", "Nous buvons soif."],
+    correct: 1,
+    explanation: "'Avoir soif' = to be thirsty (literally 'to have thirst'). French body-state expressions — hunger, thirst, cold, hot, fear — all use avoir, not être.",
+  },
+  {
+    question: "How do you say 'She is 25 years old' in French?",
+    options: ["Elle est vingt-cinq ans.", "Elle a vingt-cinq.", "Elle a vingt-cinq ans.", "Elle est âgée vingt-cinq."],
+    correct: 2,
+    explanation: "Age always uses avoir + number + ans: 'Elle a vingt-cinq ans.' Never 'Elle est vingt-cinq ans' — être is not used for age in French.",
+  },
+  {
+    question: "What is the correct conjugation of avoir for 'ils/elles'?",
+    options: ["ils sont", "ils ont", "ils avez", "ils avons"],
+    correct: 1,
+    explanation: "Avoir: j'ai · tu as · il/elle a · nous avons · vous avez · ils/elles ont. The full conjugation must be memorized — these are all irregular.",
+  },
+  {
+    question: "Translate: 'Nous avons besoin d'aide.'",
+    options: ["We need to help.", "We have help.", "We need help.", "We want help."],
+    correct: 2,
+    explanation: "'Avoir besoin de' = to need (literally: to have need of). 'Nous avons besoin d'aide' = We need help. One of the most common avoir expressions.",
+  },
+  {
+    question: "Why do French people say 'j'ai chaud' instead of 'je suis chaud'?",
+    options: [
+      "'Je suis chaud' is actually more correct",
+      "French uses avoir for physical sensations — temperature, hunger, thirst, fear, sleep",
+      "'Chaud' is an adjective so être can't be used with it",
+      "It's a regional variation with no grammatical reason",
+    ],
+    correct: 1,
+    explanation: "French uses avoir for physical sensations: avoir chaud, avoir froid, avoir faim, avoir soif, avoir peur, avoir sommeil. These are 'avoir + noun' — states you 'have'. Note: 'je suis chaud(e)' does exist but means something else (enthusiastic about something) — another reason to memorize these phrases.",
   },
 ];
 

@@ -41,25 +41,64 @@ const questions = [
     question: "Which article is used before a feminine noun starting with a consonant?",
     options: ["le", "la", "l'", "les"],
     correct: 1,
-    explanation: "La is the feminine singular definite article used before nouns starting with a consonant: la table, la chaise.",
+    explanation: "'La' is the feminine singular definite article used before nouns starting with a consonant: la table, la chaise, la maison. 'Le' is masculine; 'l'' is used before vowels.",
   },
   {
     question: "How do you say 'some water' using the partitive article?",
     options: ["du eau", "de la eau", "de l'eau", "des eau"],
     correct: 2,
-    explanation: "Eau starts with a vowel, so de la contracts to de l': de l'eau. The partitive before a vowel is always de l'.",
+    explanation: "Eau starts with a vowel, so 'de la' contracts to 'de l'': de l'eau. The partitive before any vowel or silent h is always 'de l''. Never write 'du eau' — it's ungrammatical.",
   },
   {
     question: "Which sentence correctly uses the indefinite article?",
     options: ["Je vois le chat.", "J'ai un problème.", "Nous mangeons la pizza.", "Elle boit du thé."],
     correct: 1,
-    explanation: "Un is the masculine indefinite article (a/an). Un problème = a problem. Le/la are definite articles (the).",
+    explanation: "'Un' is the masculine indefinite article (a/an). 'Un problème' = a problem. 'Le/la' are definite articles (the). 'Du thé' uses a partitive (some tea), not indefinite.",
   },
   {
     question: "What happens to le and la before a word starting with a vowel?",
     options: ["They stay the same.", "They become les.", "They become l'.", "They become de."],
     correct: 2,
-    explanation: "Both le and la contract to l' before a vowel or silent h: l'ami, l'école, l'heure.",
+    explanation: "Both 'le' and 'la' contract to 'l'' before a vowel or silent h: l'ami, l'école, l'heure. This is called elision and is mandatory — 'le ami' is incorrect.",
+  },
+  {
+    question: "When do you use 'du' vs 'de la'?",
+    options: [
+      "Du is for plurals; de la is for singulars.",
+      "Du is for masculine nouns; de la is for feminine nouns.",
+      "Du is for concrete things; de la is for abstract things.",
+      "They mean different things and are not interchangeable.",
+    ],
+    correct: 1,
+    explanation: "'Du' = de + le (masculine partitive): du pain, du lait, du café. 'De la' = feminine partitive: de la farine, de la musique. Both mean 'some' for uncountable nouns. Gender of the noun determines the choice.",
+  },
+  {
+    question: "A student writes 'Je ne mange pas du pain.' Is this correct?",
+    options: [
+      "Yes — correct French.",
+      "No — after negation, du/de la/des change to 'de' or 'd': je ne mange pas de pain.",
+      "No — should use 'le pain' after negation.",
+      "No — negation is placed incorrectly.",
+    ],
+    correct: 1,
+    explanation: "After negation (ne...pas), partitive and indefinite articles change: du → de, de la → de, des → de. 'Je ne mange pas de pain.' This is one of the most tested grammar points in school French.",
+  },
+  {
+    question: "Which noun ending is usually a sign of a feminine noun?",
+    options: ["-ment (like le mouvement)", "-age (like le fromage)", "-tion (like la solution)", "-isme (like le tourisme)"],
+    correct: 2,
+    explanation: "Nouns ending in -tion are almost always feminine: la solution, la nation, la révolution. The -ment, -age, -isme endings are usually masculine. These patterns help you predict gender, though exceptions exist.",
+  },
+  {
+    question: "What is the difference between 'des' and 'les'?",
+    options: [
+      "'Des' and 'les' mean the same thing — both mean 'the' for plurals.",
+      "'Des' = some (indefinite plural); 'les' = the (definite plural).",
+      "'Des' is masculine plural; 'les' is feminine plural.",
+      "'Des' is only used with uncountable nouns.",
+    ],
+    correct: 1,
+    explanation: "'Les' is the definite plural article (the): les livres = the books (specific ones). 'Des' is the indefinite plural (some): des livres = some books (non-specific). 'Les enfants' = the children; 'des enfants' = some children.",
   },
 ];
 

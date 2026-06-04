@@ -5,21 +5,21 @@ import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 import MatchPairs from "@/components/MatchPairs";
 
 const conjugationCards = [
-  { front: "je suis", back: "I am", subtext: "je + suis" },
-  { front: "tu es", back: "you are (informal)", subtext: "tu + es" },
-  { front: "il est / elle est", back: "he is / she is", subtext: "il or elle + est" },
-  { front: "nous sommes", back: "we are", subtext: "nous + sommes" },
-  { front: "vous êtes", back: "you are (formal/plural)", subtext: "vous + êtes" },
-  { front: "ils sont / elles sont", back: "they are", subtext: "ils or elles + sont" },
+  { front: "je suis", back: "I am", subtext: "[ʒə sɥi] — The most used form. 'Je suis étudiant(e).' Also used in fixed expressions: 'Je suis désolé(e)' (I'm sorry)." },
+  { front: "tu es", back: "you are (informal)", subtext: "[ty ɛ] — Informal you. 'Tu es fatigué(e)?' Are you tired? Never use with strangers or adults you don't know." },
+  { front: "il est / elle est", back: "he is / she is", subtext: "[il ɛ / ɛl ɛ] — Also for things: 'Il est grand' (It/He is big). Every noun in French is masculine (il) or feminine (elle)." },
+  { front: "nous sommes", back: "we are", subtext: "[nu sɔm] — Note the double -m. 'Nous sommes en retard.' In casual speech, often replaced by 'on est' (we are)." },
+  { front: "vous êtes", back: "you are (formal/plural)", subtext: "[vu zɛt] — The ê has a circumflex. Two uses: one person (formal) or multiple people. 'Vous êtes professeur?' / 'Vous êtes tous là?'" },
+  { front: "ils sont / elles sont", back: "they are", subtext: "[il sɔ̃ / ɛl sɔ̃] — ils for all-male or mixed groups; elles for all-female groups. 'Ils sont grands.' / 'Elles sont là.'" },
 ];
 
 const exampleCards = [
-  { front: "Je suis étudiant(e).", back: "I am a student." },
-  { front: "Tu es de Montréal?", back: "Are you from Montréal?" },
-  { front: "Elle est sympa.", back: "She is nice." },
-  { front: "Nous sommes en classe.", back: "We are in class." },
-  { front: "Vous êtes professeur?", back: "Are you a teacher?" },
-  { front: "Ils sont fatigués.", back: "They are tired." },
+  { front: "Je suis étudiant(e).", back: "I am a student.", subtext: "Add -e for feminine: étudiante. No article needed with professions after être." },
+  { front: "Tu es de Montréal?", back: "Are you from Montréal?", subtext: "Rising intonation turns a statement into a question. No word reordering needed in casual speech." },
+  { front: "Elle est sympa.", back: "She is nice.", subtext: "'Sympa' is invariable (same for masc/fem). Short for sympathique." },
+  { front: "Nous sommes en classe.", back: "We are in class.", subtext: "'En classe' = in class. En is used before many places: en ville, en vacances, en retard." },
+  { front: "Vous êtes professeur?", back: "Are you a teacher?", subtext: "No article with professions after être: 'Je suis médecin' not 'Je suis un médecin'." },
+  { front: "Ils sont fatigués.", back: "They are tired.", subtext: "Agreement: ils → fatigués (-s). Elle → fatiguée (-e). Elles → fatiguées (-es)." },
 ];
 
 const matchPairs = [
@@ -74,18 +74,18 @@ const quiz = [
     question: "Complete: 'Nous ___ en retard.' (We are late.)",
     options: ["est", "sommes", "sont", "êtes"],
     correct: 1,
-    explanation: "Nous → sommes. Être conjugated with nous is sommes.",
+    explanation: "Nous → sommes. Être: je suis · tu es · il/elle est · nous sommes · vous êtes · ils/elles sont. 'En retard' is a fixed expression meaning late.",
   },
   {
-    question: "Which sentence is correct?",
+    question: "Your classmate says 'Tu est fatigué?' Is this correct?",
     options: [
-      "Tu est fatigué.",
-      "Tu es fatigué.",
-      "Tu sommes fatigué.",
-      "Tu sont fatigué.",
+      "Yes — perfectly correct",
+      "No — it should be 'Tu es fatigué?'",
+      "No — it should be 'Tu sont fatigué?'",
+      "No — it should be 'Tu suis fatigué?'",
     ],
     correct: 1,
-    explanation: "Tu uses 'es', tu es. The others are wrong forms of être.",
+    explanation: "Tu → es (not est). 'Tu est' is one of the most common errors. 'Est' is for il/elle only. Correct: 'Tu es fatigué(e)?'",
   },
   {
     question: "How do you say 'She is Canadian' in French?",
@@ -96,37 +96,37 @@ const quiz = [
       "Elle sont canadienne.",
     ],
     correct: 2,
-    explanation: "Elle → est. Être conjugated with il/elle is always est.",
+    explanation: "Elle → est. Note: 'canadienne' is the feminine form of 'canadien'. In French, adjectives agree with the noun they describe.",
   },
   {
-    question: "Vous ___ mon professeur. (You are my teacher.) What fills the blank?",
+    question: "You're greeting your principal: 'Vous ___ très occupé.' Fill in the blank.",
     options: ["suis", "es", "est", "êtes"],
     correct: 3,
-    explanation: "Vous → êtes. Don't forget the accent on the ê in êtes.",
+    explanation: "Vous → êtes. 'Êtes' has a circumflex accent on the ê — don't forget it. This applies whether 'vous' is one person (formal) or multiple people.",
   },
   {
-    question: "Which form of être is used with 'ils' and 'elles'?",
+    question: "There are six students: three girls and three boys. Which form of être describes them?",
     options: ["est", "sont", "sommes", "êtes"],
     correct: 1,
-    explanation: "Ils/elles → sont. Both masculine plural (ils) and feminine plural (elles) use the same form: sont.",
+    explanation: "Ils/elles → sont. Mixed groups use 'ils' (masculine plural), so: 'Ils sont en classe.' Even if only one person in the group is male, you use 'ils' + 'sont'.",
   },
   {
-    question: "'Je suis fatiguée' is said by someone who is…",
-    options: ["A boy who is tired", "A girl who is tired", "A group who is tired", "Someone asking a question"],
+    question: "Marie says 'Je suis fatiguée.' What does the double -e tell you?",
+    options: ["She is very tired", "She is a girl — the -e marks feminine agreement", "It's a typo — should be fatigué", "She is speaking formally"],
     correct: 1,
-    explanation: "Fatiguée (with double -e) is the feminine form. A boy would say 'je suis fatigué' (one -e). The extra -e shows the speaker is female.",
+    explanation: "In French, adjectives agree with the person they describe. A girl adds -e: fatiguée. A boy says: fatigué. This is called adjectival agreement and it applies throughout French grammar.",
   },
   {
-    question: "How do you say 'Are we late?' using être?",
-    options: ["Nous sommes en retard?", "Nous sommes retard?", "Nous est en retard?", "Sommes en retard nous?"],
+    question: "How do you say 'Are we in the right class?' using être?",
+    options: ["Nous sommes dans la bonne classe?", "Nous est dans la bonne classe?", "Nous êtes dans la bonne classe?", "Sommes-vous dans la bonne classe?"],
     correct: 0,
-    explanation: "Nous sommes en retard? — 'en retard' means 'late.' To make a question with rising intonation, just raise your voice at the end.",
+    explanation: "'Nous sommes dans la bonne classe?' — with rising intonation at the end, it becomes a question. 'Dans la bonne classe' = in the right class. Note: 'bonne' goes BEFORE the noun (BAGS adjective).",
   },
   {
-    question: "A student says 'Je suis étudiant.' What is their mistake if they're a girl?",
-    options: ["They should say 'Je suis étudiante.'", "They should say 'J'ai étudiante.'", "They should say 'Tu es étudiante.'", "There is no mistake."],
+    question: "A girl says 'Je suis étudiant.' What should she say instead?",
+    options: ["Je suis étudiante.", "J'ai étudiante.", "Je suis une étudiant.", "There is no mistake."],
     correct: 0,
-    explanation: "When describing a feminine noun (yourself, if you're a girl), many professions and roles add -e: étudiant → étudiante. Agreement matters in French.",
+    explanation: "Professions after être agree in gender. Étudiant (masculine) → étudiante (feminine, add -e). Note: French does NOT use an article before professions after être: 'Je suis étudiante' not 'Je suis une étudiante'.",
   },
 ];
 

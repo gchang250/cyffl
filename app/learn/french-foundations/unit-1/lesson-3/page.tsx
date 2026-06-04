@@ -61,25 +61,64 @@ const quiz = [
     question: "Someone asks 'Comment ça va?', what are they asking?",
     options: ["What's your name?", "Where are you from?", "How are you?", "How old are you?"],
     correct: 2,
-    explanation: "Comment ça va? is the standard way to ask 'how are you?' in French.",
+    explanation: "Comment ça va? is the standard way to ask 'how are you?' in French. You'll hear it constantly.",
   },
   {
     question: "Your friend is having a rough day and says they feel 'comme ci, comme ça.' What do they mean?",
     options: ["Great!", "So-so.", "Terrible.", "I don't know."],
     correct: 1,
-    explanation: "Comme ci, comme ça means so-so, neither good nor bad. Literally 'like this, like that.'",
+    explanation: "Comme ci, comme ça means so-so, neither good nor bad. Literally 'like this, like that.' It's a neutral, relaxed answer.",
   },
   {
     question: "After answering 'ça va bien,' it's polite to add:",
     options: ["Au revoir!", "Bonjour!", "Et toi?", "Merci beaucoup."],
     correct: 2,
-    explanation: "Et toi? (And you?) turns the question back to the other person, always appreciated.",
+    explanation: "Et toi? (And you?) turns the question back to the other person. Always ask back — it shows you're interested in them too.",
   },
   {
     question: "You're talking to your teacher. They ask how you're doing. You reply very well. What's the polite response?",
     options: ["Ça va bien, et toi?", "Très bien, merci, et vous?", "Pas mal, salut.", "Ça va, et toi?"],
     correct: 1,
-    explanation: "With a teacher, use 'vous', so 'et vous?' is correct, not 'et toi?'.",
+    explanation: "With a teacher, use 'vous', so 'et vous?' is correct, not 'et toi?'. The full polite response: 'Très bien, merci, et vous?'",
+  },
+  {
+    question: "What is the difference between 'Ça va?' and 'Comment ça va?'?",
+    options: [
+      "They mean completely different things",
+      "Ça va? is more casual; Comment ça va? is slightly more formal but both mean the same thing",
+      "Comment ça va? is only used in writing",
+      "Ça va? is only used in Quebec",
+    ],
+    correct: 1,
+    explanation: "Both ask 'how are you?' — 'Ça va?' is the ultra-casual shortcut, and 'Comment ça va?' is slightly fuller. 'Comment allez-vous?' is the formal version used with strangers or in professional contexts.",
+  },
+  {
+    question: "A classmate replies 'Ça va mal' when you ask how they're doing. This means:",
+    options: ["They're doing very well", "Things aren't going well for them", "They're doing so-so", "They don't want to answer"],
+    correct: 1,
+    explanation: "'Ça va mal' = things are going badly / I'm not doing well. 'Mal' is the opposite of 'bien'. You'd say this when something's wrong. A sympathetic response: 'Oh non, désolé(e)! Qu'est-ce qui se passe?' (Oh no, sorry! What's happening?)",
+  },
+  {
+    question: "In Quebec, you might hear 'Ça va-tu?' What does the '-tu' do?",
+    options: [
+      "It means 'you' — it's the subject pronoun",
+      "It's a Quebec French interrogative particle that signals a yes/no question",
+      "It means 'I' in Quebec French",
+      "It's a mistake — this isn't correct French",
+    ],
+    correct: 1,
+    explanation: "In informal Quebec French, '-tu' (pronounced 'tu') is added after a verb to turn a statement into a yes/no question. 'Ça va-tu?' = 'Is it going okay?' It's not standard French, but you'll hear it constantly in Quebec.",
+  },
+  {
+    question: "Complete this exchange: 'Bonjour! Comment ça va?' — '_____'",
+    options: [
+      "'Bonjour!' (just greet back)",
+      "'Au revoir, très bien.'",
+      "'Très bien, merci! Et vous?'",
+      "'Je m'appelle Marie.'",
+    ],
+    correct: 2,
+    explanation: "A complete, polite response: answer how you are ('très bien, merci') + ask back ('et vous?' if formal, 'et toi?' if casual). Just saying 'bonjour' back doesn't answer the question. 'Je m'appelle Marie' answers a different question entirely.",
   },
 ];
 

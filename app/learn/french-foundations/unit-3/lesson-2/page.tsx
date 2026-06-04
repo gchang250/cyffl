@@ -5,35 +5,35 @@ import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 import FillInTheBlank from "@/components/FillInTheBlank";
 
 const dayCards = [
-  { front: "lundi", back: "Monday", subtext: "The French week starts on Monday." },
-  { front: "mardi", back: "Tuesday" },
-  { front: "mercredi", back: "Wednesday" },
-  { front: "jeudi", back: "Thursday" },
-  { front: "vendredi", back: "Friday" },
-  { front: "samedi", back: "Saturday" },
-  { front: "dimanche", back: "Sunday" },
+  { front: "lundi", back: "Monday", subtext: "[lœ̃di] — French weeks start on Monday, not Sunday. 'Le lundi' = every Monday (habitual). 'Lundi' alone = this Monday (specific)." },
+  { front: "mardi", back: "Tuesday", subtext: "[maʁdi] — Mardi Gras (Fat Tuesday) is named after this day — the last day before Lent." },
+  { front: "mercredi", back: "Wednesday", subtext: "[mɛʁkʁədi] — In France, many primary schools don't have class on Wednesday afternoons — 'le mercredi' is a school-free afternoon for younger students." },
+  { front: "jeudi", back: "Thursday", subtext: "[ʒødi] — Named after Jupiter (Jove), like English 'Thursday' (Thor's day). 'Jeudi' sounds like 'juh-dee'." },
+  { front: "vendredi", back: "Friday", subtext: "[vɑ̃dʁədi] — From Venus. 'Le vendredi saint' = Good Friday. Often shortened in speech." },
+  { front: "samedi", back: "Saturday", subtext: "[samdi] — From the Sabbath. 'Le samedi soir' = Saturday night. Weekend = le weekend (borrowed from English)." },
+  { front: "dimanche", back: "Sunday", subtext: "[dimɑ̃ʃ] — From 'dies Dominica' (Lord's day). 'Le dimanche' = every Sunday. Shops often have reduced hours on dimanche in France." },
 ];
 
 const monthCards = [
-  { front: "janvier", back: "January" },
-  { front: "février", back: "February" },
-  { front: "mars", back: "March" },
-  { front: "avril", back: "April" },
-  { front: "mai", back: "May" },
-  { front: "juin", back: "June" },
-  { front: "juillet", back: "July" },
-  { front: "août", back: "August" },
-  { front: "septembre", back: "September" },
-  { front: "octobre", back: "October" },
-  { front: "novembre", back: "November" },
-  { front: "décembre", back: "December" },
+  { front: "janvier", back: "January", subtext: "[ʒɑ̃vje] — 'En janvier' = in January. School term begins after Christmas break: la rentrée de janvier." },
+  { front: "février", back: "February", subtext: "[fevʁije] — Note the accent: févr-ier. Winter break (vacances d'hiver) often falls in février." },
+  { front: "mars", back: "March", subtext: "[maʁs] — Final s is usually silent. Spring break (vacances de printemps) often includes mars." },
+  { front: "avril", back: "April", subtext: "[avʁil] — 'Le premier avril' = April Fools' Day (le poisson d'avril — people stick paper fish on backs!)" },
+  { front: "mai", back: "May", subtext: "[mɛ] — 'Le premier mai' = Labour Day (public holiday in France and Quebec). 'En mai, fais ce qu'il te plaît!' (May proverb)." },
+  { front: "juin", back: "June", subtext: "[ʒɥɛ̃] — End-of-year exams (les examens de fin d'année). 'Le baccalauréat' (the Bac) happens in juin." },
+  { front: "juillet", back: "July", subtext: "[ʒɥijɛ] — 'Le quatorze juillet' = Bastille Day (French national holiday). Summer vacations (grandes vacances) begin." },
+  { front: "août", back: "August", subtext: "[u] or [ɔut] — The pronunciation varies: many French speakers say just [u], others say [ɔut]. Both are correct." },
+  { front: "septembre", back: "September", subtext: "[sɛptɑ̃bʁ] — 'La rentrée' (back to school) happens in septembre. One of the most culturally important months in France." },
+  { front: "octobre", back: "October", subtext: "[ɔktɔbʁ] — 'La Toussaint' (All Saints' Day) is November 1st, with autumn break (vacances de la Toussaint) often in octobre." },
+  { front: "novembre", back: "November", subtext: "[nɔvɑ̃bʁ] — 'Le onze novembre' = Armistice Day (Remembrance Day, public holiday)." },
+  { front: "décembre", back: "December", subtext: "[desɑ̃bʁ] — Christmas (Noël) is the big holiday. 'Joyeux Noël!' = Merry Christmas. School ends mid-décembre." },
 ];
 
 const seasonCards = [
-  { front: "le printemps", back: "spring" },
-  { front: "l'été", back: "summer" },
-  { front: "l'automne", back: "fall / autumn" },
-  { front: "l'hiver", back: "winter" },
+  { front: "le printemps", back: "spring", subtext: "[lə pʁɛ̃tɑ̃] — 'Au printemps' (in spring) — the only season that uses 'au' instead of 'en'. March–May." },
+  { front: "l'été", back: "summer", subtext: "[le te] — 'En été' (in summer). The accent on é changes the sound. June–August: les grandes vacances." },
+  { front: "l'automne", back: "fall / autumn", subtext: "[lo tɔn] — 'En automne' (in autumn). The mn at the end is nearly silent. September–November." },
+  { front: "l'hiver", back: "winter", subtext: "[li vɛʁ] — 'En hiver' (in winter). The h is silent, so 'l'hiver' not 'le hiver'. December–February." },
 ];
 
 const dayMatch = [
