@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import SpeakButton from "@/components/SpeakButton";
 
 const avoir: [string, string, string][] = [
   ["que je", "aie parlé", "that I (have) spoke(n)"],
@@ -88,7 +91,8 @@ export default function SubjonctifPassePage() {
                 <tbody className="divide-y divide-[#F3EDD8]">
                   {avoir.map(([pro, verb, en]) => (
                     <tr key={pro}>
-                      <td className="py-2 font-black text-xs text-[#526173] w-24">{pro}</td>
+                      <td className="py-2 pl-3 w-8"><SpeakButton text={verb} size="sm" /></td>
+                      <td className="py-2 font-black text-xs text-[#526173]">{pro}</td>
                       <td className="py-2 font-black text-[#7C3AED]">{verb}</td>
                       <td className="py-2 text-xs text-[#526173]">{en}</td>
                     </tr>

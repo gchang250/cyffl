@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import SpeakButton from "@/components/SpeakButton";
 
 const endings: [string, string, string][] = [
   ["que je", "-e", "que je parle"],
@@ -167,6 +170,7 @@ export default function VerbsSubjonctifPage() {
               <tbody className="divide-y divide-[#F3EDD8]">
                 {triggers.map(([trigger, eng, example]) => (
                   <tr key={trigger}>
+                    <td className="py-3 pl-3 w-8"><SpeakButton text={example} size="sm" /></td>
                     <td className="py-3 font-black">{trigger}</td>
                     <td className="py-3 text-[#526173]">{eng}</td>
                     <td className="py-3 font-black text-[#7C3AED]">{example}</td>

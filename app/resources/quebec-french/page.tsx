@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import SpeakButton from "@/components/SpeakButton";
 
 const vocabRows: [string, string, string][] = [
   // Everyday life
@@ -107,6 +110,7 @@ export default function QuebecFrenchPage() {
               <tbody className="divide-y divide-[#F3EDD8]">
                 {vocabRows.map(([qc, fr, en]) => (
                   <tr key={qc}>
+                    <td className="py-3 pl-3 w-8"><SpeakButton text={qc} lang="fr-CA" size="sm" /></td>
                     <td className="py-3 font-black">{qc}</td>
                     <td className="py-3 text-[#526173]">{fr}</td>
                     <td className="py-3 text-[#526173]">{en}</td>
@@ -149,6 +153,7 @@ export default function QuebecFrenchPage() {
               <tbody className="divide-y divide-[#F3EDD8]">
                 {expressionRows.map(([expr, meaning, example]) => (
                   <tr key={expr}>
+                    <td className="py-3 pl-3 w-8"><SpeakButton text={expr} lang="fr-CA" size="sm" /></td>
                     <td className="py-3 font-black">{expr}</td>
                     <td className="py-3 text-[#526173]">{meaning}</td>
                     <td className="py-3 text-[#526173] italic">{example}</td>

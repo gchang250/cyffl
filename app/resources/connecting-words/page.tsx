@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import SpeakButton from "@/components/SpeakButton";
 
 type ConnectorEntry = {
   word: string;
@@ -181,7 +184,8 @@ export default function ConnectingWordsPage() {
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b border-[#E7DAB9]">
-                      <th className="px-5 py-3 text-left font-black">Word / phrase</th>
+                      <th className="w-8 py-3 pl-3" />
+                      <th className="px-3 py-3 text-left font-black">Word / phrase</th>
                       <th className="px-3 py-3 text-left font-black">Level</th>
                       <th className="px-3 py-3 text-left font-black">Meaning</th>
                       <th className="px-5 py-3 text-left font-black text-[#526173]">Example</th>
@@ -190,7 +194,10 @@ export default function ConnectingWordsPage() {
                   <tbody className="divide-y divide-[#F3EDD8]">
                     {group.entries.map((entry) => (
                       <tr key={entry.word} className="align-top">
-                        <td className="px-5 py-4 font-black">{entry.word}</td>
+                        <td className="py-4 pl-3">
+                          <SpeakButton text={entry.word} size="sm" />
+                        </td>
+                        <td className="px-3 py-4 font-black">{entry.word}</td>
                         <td className="px-3 py-4">
                           <span className={`rounded-full px-2 py-0.5 text-xs font-black ${levelColors[entry.level]}`}>
                             {entry.level}
@@ -198,10 +205,17 @@ export default function ConnectingWordsPage() {
                         </td>
                         <td className="px-3 py-4 text-[#526173]">{entry.meaning}</td>
                         <td className="px-5 py-4">
-                          <p className="font-semibold text-[#2563EB]">{entry.example}</p>
-                          {entry.note && (
-                            <p className="mt-1 text-xs text-[#526173]">{entry.note}</p>
-                          )}
+                          <div className="flex items-start gap-2">
+                            <div className="mt-0.5 shrink-0">
+                              <SpeakButton text={entry.example} size="sm" />
+                            </div>
+                            <div>
+                              <p className="font-semibold text-[#2563EB]">{entry.example}</p>
+                              {entry.note && (
+                                <p className="mt-1 text-xs text-[#526173]">{entry.note}</p>
+                              )}
+                            </div>
+                          </div>
                         </td>
                       </tr>
                     ))}

@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import SpeakButton from "@/components/SpeakButton";
 
 type Expression = {
   expression: string;
@@ -453,17 +456,29 @@ export default function ExpressionsPage() {
             {writingExpressions.map((expr) => (
               <div key={expr.expression} className="rounded-2xl border border-[#E7DAB9] bg-white p-5">
                 <div className="flex flex-wrap items-start justify-between gap-3">
-                  <div>
-                    <p className="text-lg font-black text-[#0B1F3A]">{expr.expression}</p>
-                    <p className="mt-0.5 text-sm font-semibold text-[#2563EB]">{expr.meaning}</p>
+                  <div className="flex items-start gap-2">
+                    <div className="mt-0.5 shrink-0">
+                      <SpeakButton text={expr.expression} size="sm" />
+                    </div>
+                    <div>
+                      <p className="text-lg font-black text-[#0B1F3A]">{expr.expression}</p>
+                      <p className="mt-0.5 text-sm font-semibold text-[#2563EB]">{expr.meaning}</p>
+                    </div>
                   </div>
                   <span className={`shrink-0 rounded-full px-2.5 py-0.5 text-xs font-black ${usageColors[expr.usage]}`}>
                     {usageLabels[expr.usage]}
                   </span>
                 </div>
                 <div className="mt-4 rounded-xl bg-[#FFFDF7] p-4 text-sm">
-                  <p className="font-semibold">{expr.example}</p>
-                  <p className="mt-1 text-[#526173]">{expr.exampleEn}</p>
+                  <div className="flex items-start gap-2">
+                    <div className="mt-0.5 shrink-0">
+                      <SpeakButton text={expr.example} size="sm" />
+                    </div>
+                    <div>
+                      <p className="font-semibold">{expr.example}</p>
+                      <p className="mt-1 text-[#526173]">{expr.exampleEn}</p>
+                    </div>
+                  </div>
                 </div>
                 {expr.note && (
                   <p className="mt-3 text-xs leading-5 text-[#526173]">
@@ -486,20 +501,32 @@ export default function ExpressionsPage() {
             {culturalExpressions.map((expr) => (
               <div key={expr.expression} className="rounded-2xl border border-[#E7DAB9] bg-white p-5">
                 <div className="flex flex-wrap items-start justify-between gap-3">
-                  <div>
-                    <p className="text-lg font-black text-[#0B1F3A]">{expr.expression}</p>
-                    {expr.literal && (
-                      <p className="mt-0.5 text-xs italic text-[#526173]">Literally: {expr.literal}</p>
-                    )}
-                    <p className="mt-1 text-sm font-semibold text-[#2563EB]">{expr.meaning}</p>
+                  <div className="flex items-start gap-2">
+                    <div className="mt-0.5 shrink-0">
+                      <SpeakButton text={expr.expression} size="sm" />
+                    </div>
+                    <div>
+                      <p className="text-lg font-black text-[#0B1F3A]">{expr.expression}</p>
+                      {expr.literal && (
+                        <p className="mt-0.5 text-xs italic text-[#526173]">Literally: {expr.literal}</p>
+                      )}
+                      <p className="mt-1 text-sm font-semibold text-[#2563EB]">{expr.meaning}</p>
+                    </div>
                   </div>
                   <span className={`shrink-0 rounded-full px-2.5 py-0.5 text-xs font-black ${usageColors[expr.usage]}`}>
                     {usageLabels[expr.usage]}
                   </span>
                 </div>
                 <div className="mt-4 rounded-xl bg-[#FFFDF7] p-4 text-sm">
-                  <p className="font-semibold">{expr.example}</p>
-                  <p className="mt-1 text-[#526173]">{expr.exampleEn}</p>
+                  <div className="flex items-start gap-2">
+                    <div className="mt-0.5 shrink-0">
+                      <SpeakButton text={expr.example} size="sm" />
+                    </div>
+                    <div>
+                      <p className="font-semibold">{expr.example}</p>
+                      <p className="mt-1 text-[#526173]">{expr.exampleEn}</p>
+                    </div>
+                  </div>
                 </div>
                 {expr.note && (
                   <p className="mt-3 text-xs leading-5 text-[#526173]">
@@ -522,6 +549,7 @@ export default function ExpressionsPage() {
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-[#E7DAB9]">
+                  <th className="w-8 py-3 pl-3" />
                   <th className="px-5 py-3 text-left font-black">Proverb</th>
                   <th className="px-5 py-3 text-left font-black text-[#526173]">Meaning & context</th>
                 </tr>
@@ -529,6 +557,9 @@ export default function ExpressionsPage() {
               <tbody className="divide-y divide-[#F3EDD8]">
                 {proverbs.map((p) => (
                   <tr key={p.proverb} className="align-top">
+                    <td className="py-4 pl-3">
+                      <SpeakButton text={p.proverb} size="sm" />
+                    </td>
                     <td className="px-5 py-4 font-black text-[#2563EB]">{p.proverb}</td>
                     <td className="px-5 py-4">
                       <p className="font-semibold text-[#0B1F3A]">{p.meaning}</p>

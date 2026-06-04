@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import FillInTheBlank from "@/components/FillInTheBlank";
+import SpeakButton from "@/components/SpeakButton";
 
 const etreRows: [string, string, string][] = [
   ["je", "je suis", "I am"],
@@ -118,6 +121,7 @@ export default function EtreAvoirPage() {
               <tbody className="divide-y divide-[#F3EDD8]">
                 {etreRows.map(([pronoun, fr, en]) => (
                   <tr key={pronoun}>
+                    <td className="py-3 pl-3 w-8"><SpeakButton text={fr} size="sm" /></td>
                     <td className="py-3 font-black text-[#526173]">{pronoun}</td>
                     <td className="py-3 font-black">{fr}</td>
                     <td className="py-3 text-[#526173]">{en}</td>
@@ -150,6 +154,7 @@ export default function EtreAvoirPage() {
               <tbody className="divide-y divide-[#F3EDD8]">
                 {avoirRows.map(([pronoun, fr, en]) => (
                   <tr key={pronoun}>
+                    <td className="py-3 pl-3 w-8"><SpeakButton text={fr} size="sm" /></td>
                     <td className="py-3 font-black text-[#526173]">{pronoun}</td>
                     <td className="py-3 font-black">{fr}</td>
                     <td className="py-3 text-[#526173]">{en}</td>

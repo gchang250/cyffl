@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import SpeakButton from "@/components/SpeakButton";
 import VerbConjugator, { type Mood } from "@/components/VerbConjugator";
 
 // parler — the model -er verb
@@ -367,7 +370,8 @@ export default function VerbsPresentPage() {
                   <tbody className="divide-y divide-[#F3EDD8]">
                     {verb.forms.map(([pronoun, form]) => (
                       <tr key={pronoun} className="group">
-                        <td className="py-2 pl-5 text-[#526173] w-1/2 group-hover:text-[#0B1F3A] transition-colors">{pronoun}</td>
+                        <td className="py-2 pl-3 w-8"><SpeakButton text={form} size="sm" /></td>
+                        <td className="py-2 text-[#526173] w-1/2 group-hover:text-[#0B1F3A] transition-colors">{pronoun}</td>
                         <td className="py-2 pr-5 font-black text-[#7C3AED]">{form}</td>
                       </tr>
                     ))}

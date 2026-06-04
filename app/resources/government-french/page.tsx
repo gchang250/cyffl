@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import SpeakButton from "@/components/SpeakButton";
 
 const formFieldRows: [string, string][] = [
   ["Nom de famille", "Last name / surname"],
@@ -113,6 +116,7 @@ export default function GovernmentFrenchPage() {
               <tbody className="divide-y divide-[#F3EDD8]">
                 {formFieldRows.map(([fr, en]) => (
                   <tr key={fr}>
+                    <td className="py-3 pl-3 w-8"><SpeakButton text={fr} size="sm" /></td>
                     <td className="py-3 font-black">{fr}</td>
                     <td className="py-3 text-[#526173]">{en}</td>
                   </tr>
@@ -149,6 +153,7 @@ export default function GovernmentFrenchPage() {
               <tbody className="divide-y divide-[#F3EDD8]">
                 {healthcareRows.map(([fr, en, note]) => (
                   <tr key={fr}>
+                    <td className="py-3 pl-3 w-8"><SpeakButton text={fr} size="sm" /></td>
                     <td className="py-3 font-black">{fr}</td>
                     <td className="py-3 text-[#526173]">{en}</td>
                     <td className="py-3 text-[#526173] italic">{note}</td>
@@ -180,6 +185,7 @@ export default function GovernmentFrenchPage() {
               <tbody className="divide-y divide-[#F3EDD8]">
                 {taxRows.map(([fr, en, ctx]) => (
                   <tr key={fr}>
+                    <td className="py-3 pl-3 w-8"><SpeakButton text={fr} size="sm" /></td>
                     <td className="py-3 font-black">{fr}</td>
                     <td className="py-3 text-[#526173]">{en}</td>
                     <td className="py-3 text-[#526173] italic">{ctx}</td>
@@ -218,8 +224,15 @@ export default function GovernmentFrenchPage() {
                 ["Voir au verso.", "See overleaf / See the reverse side."],
               ].map(([fr, en]) => (
                 <div key={fr} className="rounded-xl bg-white/10 p-3">
-                  <p className="font-black">{fr}</p>
-                  <p className="mt-1 text-white/70">{en}</p>
+                  <div className="flex items-start gap-2">
+                    <div className="mt-0.5 shrink-0">
+                      <SpeakButton text={fr} size="sm" />
+                    </div>
+                    <div>
+                      <p className="font-black">{fr}</p>
+                      <p className="mt-1 text-white/70">{en}</p>
+                    </div>
+                  </div>
                 </div>
               ))}
             </div>
@@ -247,6 +260,7 @@ export default function GovernmentFrenchPage() {
               <tbody className="divide-y divide-[#F3EDD8]">
                 {formalLetterRows.map(([fn, fr, en]) => (
                   <tr key={fn}>
+                    <td className="py-3 pl-3 w-8"><SpeakButton text={fr} size="sm" /></td>
                     <td className="py-3 font-black text-[#526173]">{fn}</td>
                     <td className="py-3 font-black">{fr}</td>
                     <td className="py-3 text-[#526173]">{en}</td>

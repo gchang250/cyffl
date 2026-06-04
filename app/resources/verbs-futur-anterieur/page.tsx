@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import SpeakButton from "@/components/SpeakButton";
 
 const avoirExamples: [string, string, string][] = [
   ["j'aurai parlé", "I will have spoken", "avoir stem: aur-"],
@@ -77,6 +80,7 @@ export default function VerbsFuturAnterieurPage() {
               <tbody className="divide-y divide-[#F3EDD8]">
                 {avoirExamples.map(([fr, en, note]) => (
                   <tr key={fr}>
+                    <td className="py-3 pl-3 w-8"><SpeakButton text={fr} size="sm" /></td>
                     <td className="py-3 font-black text-[#7C3AED]">{fr}</td>
                     <td className="py-3 text-[#526173]">{en}</td>
                     <td className="py-3 text-xs text-[#526173]">{note}</td>
@@ -102,6 +106,7 @@ export default function VerbsFuturAnterieurPage() {
               <tbody className="divide-y divide-[#F3EDD8]">
                 {etreExamples.map(([fr, en, note]) => (
                   <tr key={fr}>
+                    <td className="py-3 pl-3 w-8"><SpeakButton text={fr} size="sm" /></td>
                     <td className="py-3 font-black text-[#7C3AED]">{fr}</td>
                     <td className="py-3 text-[#526173]">{en}</td>
                     <td className="py-3 text-xs text-[#526173]">{note}</td>

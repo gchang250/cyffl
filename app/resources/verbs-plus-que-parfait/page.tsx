@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import SpeakButton from "@/components/SpeakButton";
 
 const avoir: [string, string, string][] = [
   ["j'", "avais parlé", "I had spoken"],
@@ -181,6 +184,7 @@ export default function PlusQueParfaitPage() {
               <tbody className="divide-y divide-[#F3EDD8]">
                 {comparison.map(([fr, en, why]) => (
                   <tr key={fr}>
+                    <td className="py-3 pl-3 w-8"><SpeakButton text={fr} size="sm" /></td>
                     <td className="py-3 font-black">{fr}</td>
                     <td className="py-3 text-[#526173]">{en}</td>
                     <td className="py-3 text-xs text-[#7C3AED]">{why}</td>

@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import SpeakButton from "@/components/SpeakButton";
 
 const endings: [string, string, string][] = [
   ["je", "-ai", "je parlerai"],
@@ -151,6 +154,7 @@ export default function VerbsFuturSimplePage() {
                 <tbody className="divide-y divide-[#F3EDD8]">
                   {irregularFull.map(([fr, en]) => (
                     <tr key={fr}>
+                      <td className="py-3 pl-3 w-8"><SpeakButton text={fr} size="sm" /></td>
                       <td className="py-3 font-black text-[#7C3AED]">{fr}</td>
                       <td className="py-3 text-[#526173]">{en}</td>
                     </tr>

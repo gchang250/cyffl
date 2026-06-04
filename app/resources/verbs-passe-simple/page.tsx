@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import SpeakButton from "@/components/SpeakButton";
 
 const erEndings: [string, string, string][] = [
   ["je", "-ai", "je parlai"],
@@ -108,6 +111,7 @@ export default function PasseSimplePage() {
               <tbody className="divide-y divide-[#F3EDD8]">
                 {erEndings.map(([pro, end, ex]) => (
                   <tr key={pro}>
+                    <td className="py-3 pl-3 w-8"><SpeakButton text={ex} size="sm" /></td>
                     <td className="py-3 font-black">{pro}</td>
                     <td className="py-3 font-black text-[#7C3AED]">{end}</td>
                     <td className="py-3 text-[#526173]">{ex}</td>

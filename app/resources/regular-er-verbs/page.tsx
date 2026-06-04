@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import FillInTheBlank from "@/components/FillInTheBlank";
+import SpeakButton from "@/components/SpeakButton";
 
 const parlerRows: [string, string, string][] = [
   ["je", "je parle", "I speak"],
@@ -114,6 +117,7 @@ export default function RegularErVerbsPage() {
               <tbody className="divide-y divide-[#F3EDD8]">
                 {parlerRows.map(([pronoun, fr, en]) => (
                   <tr key={pronoun}>
+                    <td className="py-3 pl-3 w-8"><SpeakButton text={fr} size="sm" /></td>
                     <td className="py-3 font-black text-[#526173]">{pronoun}</td>
                     <td className="py-3 font-black">{fr}</td>
                     <td className="py-3 text-[#526173]">{en}</td>
@@ -145,6 +149,7 @@ export default function RegularErVerbsPage() {
               <tbody className="divide-y divide-[#F3EDD8]">
                 {erVerbs.map(([fr, en]) => (
                   <tr key={fr}>
+                    <td className="py-3 pl-3 w-8"><SpeakButton text={fr} size="sm" /></td>
                     <td className="py-3 font-black">{fr}</td>
                     <td className="py-3 text-[#526173]">{en}</td>
                   </tr>

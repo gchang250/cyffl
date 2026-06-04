@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
+import SpeakButton from "@/components/SpeakButton";
 
 const pronounRows: [string, string, string][] = [
   ["je", "I", "First person singular (j' before vowel)"],
@@ -78,6 +81,7 @@ export default function SubjectPronounsPage() {
               <tbody className="divide-y divide-[#F3EDD8]">
                 {pronounRows.map(([pronoun, en, use]) => (
                   <tr key={pronoun}>
+                    <td className="py-3 pl-3 w-8"><SpeakButton text={pronoun} size="sm" /></td>
                     <td className="py-3 font-black">{pronoun}</td>
                     <td className="py-3 text-[#526173]">{en}</td>
                     <td className="py-3 text-[#526173]">{use}</td>

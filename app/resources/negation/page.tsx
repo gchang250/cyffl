@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
+import SpeakButton from "@/components/SpeakButton";
 
 const patternRows: [string, string, string][] = [
   ["je parle", "je ne parle pas", "I do not speak"],
@@ -102,6 +105,7 @@ export default function NegationPage() {
               <tbody className="divide-y divide-[#F3EDD8]">
                 {patternRows.map(([positive, negative, english]) => (
                   <tr key={positive}>
+                    <td className="py-3 pl-3 w-8"><SpeakButton text={negative} size="sm" /></td>
                     <td className="py-3 font-black">{positive}</td>
                     <td className="py-3 font-black text-[#2563EB]">{negative}</td>
                     <td className="py-3 text-[#526173]">{english}</td>
@@ -144,6 +148,7 @@ export default function NegationPage() {
               <tbody className="divide-y divide-[#F3EDD8]">
                 {expressionRows.map(([french, english, example]) => (
                   <tr key={french}>
+                    <td className="py-3 pl-3 w-8"><SpeakButton text={example} size="sm" /></td>
                     <td className="py-3 font-black">{french}</td>
                     <td className="py-3 text-[#526173]">{english}</td>
                     <td className="py-3 font-black text-[#2563EB]">{example}</td>

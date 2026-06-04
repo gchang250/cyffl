@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import SpeakButton from "@/components/SpeakButton";
 
 const avoirExamples: [string, string][] = [
   ["j'ai parlé", "I spoke / I have spoken"],
@@ -102,6 +105,7 @@ export default function VerbsPasseComposePage() {
               <tbody className="divide-y divide-[#F3EDD8]">
                 {avoirExamples.map(([french, english]) => (
                   <tr key={french}>
+                    <td className="py-3 pl-3 w-8"><SpeakButton text={french} size="sm" /></td>
                     <td className="py-3 font-black text-[#7C3AED]">{french}</td>
                     <td className="py-3 text-[#526173]">{english}</td>
                   </tr>
@@ -133,6 +137,7 @@ export default function VerbsPasseComposePage() {
               <tbody className="divide-y divide-[#F3EDD8]">
                 {etreExamples.map(([french, english]) => (
                   <tr key={french}>
+                    <td className="py-3 pl-3 w-8"><SpeakButton text={french} size="sm" /></td>
                     <td className="py-3 font-black text-[#7C3AED]">{french}</td>
                     <td className="py-3 text-[#526173]">{english}</td>
                   </tr>

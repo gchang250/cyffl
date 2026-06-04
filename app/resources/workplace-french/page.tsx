@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import SpeakButton from "@/components/SpeakButton";
 
 const jobPostingRows: [string, string, string][] = [
   ["Poste offert", "Position offered", "Title of the job being advertised"],
@@ -131,6 +134,7 @@ export default function WorkplaceFrenchPage() {
               <tbody className="divide-y divide-[#F3EDD8]">
                 {jobPostingRows.map(([fr, en, note]) => (
                   <tr key={fr}>
+                    <td className="py-3 pl-3 w-8"><SpeakButton text={fr} size="sm" /></td>
                     <td className="py-3 font-black">{fr}</td>
                     <td className="py-3 text-[#526173]">{en}</td>
                     <td className="py-3 text-[#526173] italic">{note}</td>
@@ -169,11 +173,18 @@ export default function WorkplaceFrenchPage() {
                 ["Références disponibles sur demande", "References available upon request", "Standard closing line on a French CV"],
               ].map(([fr, en, note]) => (
                 <div key={fr} className="rounded-xl bg-white/10 p-3">
-                  <div className="flex flex-wrap items-baseline gap-2">
-                    <span className="font-black">{fr}</span>
-                    <span className="text-[#C9A44C] text-xs font-black">{en}</span>
+                  <div className="flex items-start gap-2">
+                    <div className="mt-0.5 shrink-0">
+                      <SpeakButton text={fr} size="sm" />
+                    </div>
+                    <div>
+                      <div className="flex flex-wrap items-baseline gap-2">
+                        <span className="font-black">{fr}</span>
+                        <span className="text-[#C9A44C] text-xs font-black">{en}</span>
+                      </div>
+                      <p className="mt-1 text-white/70">{note}</p>
+                    </div>
                   </div>
-                  <p className="mt-1 text-white/70">{note}</p>
                 </div>
               ))}
             </div>
@@ -206,6 +217,7 @@ export default function WorkplaceFrenchPage() {
               <tbody className="divide-y divide-[#F3EDD8]">
                 {coverLetterRows.map(([purpose, phrase]) => (
                   <tr key={purpose}>
+                    <td className="py-3 pl-3 w-8"><SpeakButton text={phrase} size="sm" /></td>
                     <td className="py-3 font-black text-[#526173] whitespace-nowrap pr-4">{purpose}</td>
                     <td className="py-3 font-black">{phrase}</td>
                   </tr>
@@ -236,6 +248,7 @@ export default function WorkplaceFrenchPage() {
               <tbody className="divide-y divide-[#F3EDD8]">
                 {emailSubjectRows.map(([situation, subject]) => (
                   <tr key={situation}>
+                    <td className="py-3 pl-3 w-8"><SpeakButton text={subject} size="sm" /></td>
                     <td className="py-3 text-[#526173]">{situation}</td>
                     <td className="py-3 font-black">{subject}</td>
                   </tr>
@@ -262,6 +275,7 @@ export default function WorkplaceFrenchPage() {
               <tbody className="divide-y divide-[#F3EDD8]">
                 {meetingRows.map(([situation, fr, en]) => (
                   <tr key={situation}>
+                    <td className="py-3 pl-3 w-8"><SpeakButton text={fr} size="sm" /></td>
                     <td className="py-3 font-black text-[#526173]">{situation}</td>
                     <td className="py-3 font-black">{fr}</td>
                     <td className="py-3 text-[#526173]">{en}</td>
@@ -299,6 +313,7 @@ export default function WorkplaceFrenchPage() {
               <tbody className="divide-y divide-[#F3EDD8]">
                 {interviewRows.map(([question, answer]) => (
                   <tr key={question}>
+                    <td className="py-3 pl-3 w-8 align-top pt-4"><SpeakButton text={answer} size="sm" /></td>
                     <td className="py-3 font-black text-[#526173] pr-4 align-top">{question}</td>
                     <td className="py-3 font-black align-top">{answer}</td>
                   </tr>

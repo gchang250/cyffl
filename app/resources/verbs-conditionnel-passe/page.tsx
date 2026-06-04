@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import SpeakButton from "@/components/SpeakButton";
 
 const avoir: [string, string, string][] = [
   ["j'", "aurais parlé", "I would have spoken"],
@@ -157,6 +160,7 @@ export default function ConditionnelPassePage() {
                   ["si + plus-que-parfait", "conditionnel passé", "Si tu avais travaillé, tu aurais réussi. (hypothetical past)"],
                 ].map(([si, result, ex]) => (
                   <tr key={si}>
+                    <td className="py-3 pl-3 w-8"><SpeakButton text={ex} size="sm" /></td>
                     <td className="py-3 font-black text-[#7C3AED]">{si}</td>
                     <td className="py-3 font-black text-[#7C3AED]">{result}</td>
                     <td className="py-3 text-[#526173]">{ex}</td>
