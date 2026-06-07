@@ -159,6 +159,50 @@ const questions = [
     correct: 2,
     explanation: "'Chargé(e) de' (responsible for) and 'Responsable de' (in charge of) are the standard action phrases for CV bullet points. They are equivalent to English phrases like 'Managed' or 'Led'.",
   },
+  {
+    question: "What is the standard French closing formula for a formal job application letter?",
+    options: [
+      "Cordialement,",
+      "À bientôt,",
+      "Veuillez agréer, Madame, Monsieur, l'expression de mes salutations distinguées.",
+      "Merci beaucoup,",
+    ],
+    correct: 2,
+    explanation: "'Veuillez agréer, Madame, Monsieur, l'expression de mes salutations distinguées.' is the required closing for a formal French job application letter. 'Cordialement' is used in professional emails but is too casual for a formal application letter.",
+  },
+  {
+    question: "On a French CV, how should you order your work experience?",
+    options: [
+      "Chronological — oldest job first",
+      "Reverse chronological — most recent job first",
+      "Alphabetical by employer name",
+      "By salary, highest to lowest",
+    ],
+    correct: 1,
+    explanation: "French CVs use reverse chronological order — most recent position first. This is the standard in both France and Canada. Employers want to see your most relevant recent experience immediately, not have to scroll to the bottom.",
+  },
+  {
+    question: "A cover letter paragraph reads: 'Je suis convaincu(e) que mes compétences en gestion de projets et mon expérience bilingue répondent pleinement aux exigences de ce poste.' What is the purpose of this sentence?",
+    options: [
+      "Closing the letter with a thank you",
+      "Introducing yourself for the first time",
+      "Connecting your skills explicitly to the job requirements",
+      "Requesting a higher salary",
+    ],
+    correct: 2,
+    explanation: "This is the 'value proposition' sentence — explicitly showing why your profile matches the job. 'Répondre aux exigences' = to meet the requirements. Strong cover letters don't just list experience; they link it directly to what the employer needs.",
+  },
+  {
+    question: "When the hiring manager's name is not given in a French job posting, how do you address the cover letter?",
+    options: [
+      "Monsieur le Directeur,",
+      "À qui de droit,",
+      "Madame, Monsieur,",
+      "Cher Recruteur,",
+    ],
+    correct: 2,
+    explanation: "'Madame, Monsieur,' is the standard opening when you don't know the recipient's name or gender. It's neutral and professional. If the posting names the hiring manager, address them specifically: 'Madame [Nom],' or 'Monsieur [Nom],'",
+  },
 ];
 
 export default function Unit3Lesson2Page() {

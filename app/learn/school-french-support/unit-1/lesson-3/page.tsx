@@ -122,6 +122,24 @@ export default function Unit1Lesson3Page() {
           </div>
         </div>
 
+        <div className="mt-12 rounded-[2rem] border-2 border-[#FEF3C7] bg-white p-6">
+          <p className="text-xs font-bold uppercase tracking-widest text-[#D97706]">Common mistakes — prepositions & contractions</p>
+          <div className="mt-4 space-y-3 text-sm">
+            {[
+              { wrong: "à le cinéma", right: "au cinéma — à + le always contracts to au. You can NEVER write 'à le'." },
+              { wrong: "dans Paris", right: "à Paris — use à (not dans) with city names. 'Dans' is for enclosed spaces: dans le sac." },
+              { wrong: "en le Canada", right: "au Canada — Canada is masculine, so use au. En is for feminine countries: en France." },
+              { wrong: "de les étudiants", right: "des étudiants — de + les always contracts to des. 'De les' never appears." },
+              { wrong: "Je vais au France", right: "Je vais en France — France is feminine, so use en, not au." },
+            ].map((m) => (
+              <div key={m.wrong} className="grid gap-1 rounded-xl border border-[#FDE68A] bg-[#FEFCE8] p-3">
+                <p className="text-[#B45309]">✗ {m.wrong}</p>
+                <p className="text-[#16A34A]">✓ {m.right}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
         <div className="mt-12">
           <FlashCardDeck cards={prepCards} title="Prepositions & contractions" />
         </div>

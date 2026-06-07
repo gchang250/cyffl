@@ -81,6 +81,39 @@ const quiz = [
     correct: 1,
     explanation: "'Au plus tard 30 jours avant' = at least 30 days before (no later than 30 days prior). 'At any time before the start date' ignores the 30-day requirement. The test exploits the reading trap of 'any time before' vs 'specifically 30 days before'. Always check time restrictions.",
   },
+  {
+    question: "You encounter 'le cas échéant' in a government text. Based on context, it appears in a conditional sentence. What does it most likely mean?",
+    options: [
+      "In the past",
+      "If applicable / where relevant / should this occur",
+      "In all cases, without exception",
+      "According to the committee",
+    ],
+    correct: 1,
+    explanation: "'Le cas échéant' = if applicable / if the case arises / where relevant. It's an idiomatic expression used to add a conditional caveat. 'Veuillez fournir les documents requis, le cas échéant' = please provide the required documents, where applicable.",
+  },
+  {
+    question: "The SLE reading test has 60 multiple-choice questions in 90 minutes. What is the recommended time per question?",
+    options: [
+      "30 seconds",
+      "90 seconds",
+      "3–4 minutes",
+      "6 minutes",
+    ],
+    correct: 1,
+    explanation: "90 minutes ÷ 60 questions = 90 seconds per question. In practice, read the passage quickly (~2 minutes per text), then answer the questions efficiently. Don't spend 5 minutes on one question — move on and come back if time allows.",
+  },
+  {
+    question: "A government text uses the phrase 'à cet effet.' What does this mean?",
+    options: [
+      "As a result of this",
+      "To this end / for this purpose",
+      "About this effect",
+      "Despite this",
+    ],
+    correct: 1,
+    explanation: "'À cet effet' = to this end / for this purpose. 'Des mesures ont été prises à cet effet' = measures were taken to this end. It refers back to an objective or goal stated earlier in the text. Common in policy documents and reports.",
+  },
 ];
 
 export default function SLELesson4Page() {

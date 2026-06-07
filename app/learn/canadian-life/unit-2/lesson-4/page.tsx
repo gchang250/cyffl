@@ -109,6 +109,50 @@ const questions = [
     correct: 1,
     explanation: "The correct structure of a French formal letter is: (1) sender's details, (2) date, (3) recipient's details, (4) Objet (subject), (5) salutation (Madame, Monsieur,), (6) body, (7) closing formula, (8) signature.",
   },
+  {
+    question: "What is the 'objet' line in a French formal letter or email?",
+    options: [
+      "The signature at the bottom",
+      "A one-line subject heading summarising the purpose of the letter",
+      "The salutation opening",
+      "The date of writing",
+    ],
+    correct: 1,
+    explanation: "'L'objet' = the subject line. In a formal French letter, it appears between the recipient's address and the salutation. Example: 'Objet : Demande de dérogation — dossier n° 2026-045.' It tells the reader immediately why you're writing. In emails, it maps to the email subject field.",
+  },
+  {
+    question: "Which phrase correctly introduces a formal request in French?",
+    options: [
+      "Je veux que vous faites quelque chose pour moi.",
+      "J'aurais besoin que vous...",
+      "Veuillez avoir l'amabilité de / Je vous saurais gré de bien vouloir…",
+      "S'il vous plaît, aidez-moi.",
+    ],
+    correct: 2,
+    explanation: "'Veuillez avoir l'amabilité de' or 'Je vous saurais gré de bien vouloir' are formal French request formulas. 'Saurais gré' (would be grateful) is the conditional form required for polite requests in official correspondence.",
+  },
+  {
+    question: "In a formal French letter asking for an extension, which approach is most appropriate?",
+    options: [
+      "State your need bluntly and demand an extension",
+      "Acknowledge the existing deadline, explain the reason briefly, make the request politely, and thank the recipient",
+      "Write only one sentence to save time",
+      "Apologize repeatedly throughout the letter",
+    ],
+    correct: 1,
+    explanation: "Effective formal requests: (1) acknowledge context, (2) state reason briefly, (3) make the request clearly ('Je vous sollicite donc pour…'), (4) express gratitude. Don't beg or over-apologize — be clear, professional, and polite. This structure works for any type of formal request in French.",
+  },
+  {
+    question: "How do you say 'I am writing to you regarding' in a formal French letter?",
+    options: [
+      "Je t'écris pour…",
+      "Je vous écris concernant… / Je me permets de vous contacter au sujet de…",
+      "Salut, je voulais te parler de…",
+      "Bonjour, mon problème est…",
+    ],
+    correct: 1,
+    explanation: "'Je vous écris concernant…' or 'Je me permets de vous contacter au sujet de…' are standard formal openings in French professional correspondence. Use 'vous' (never 'tu') and a formal register from the first sentence.",
+  },
 ];
 
 export default function Unit2Lesson4Page() {

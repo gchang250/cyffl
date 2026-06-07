@@ -86,6 +86,39 @@ const quiz = [
     correct: 2,
     explanation: "If April = 5.8% after a decrease of 0.3 points, then March = 5.8 + 0.3 = 6.1%. This is a calculation question disguised as a detail question. The audio states April's rate and the change — you must calculate March's. Note the numbers quickly as you listen: 'reculé de 0.3 → 5.8' gives you all the information you need.",
   },
+  {
+    question: "In the TEF Canada listening test, you CANNOT go back to change earlier answers. What is the best strategy for a question you weren't sure about?",
+    options: [
+      "Leave it blank and focus on later questions",
+      "Write your best guess immediately and move on — blank scores 0, wrong also scores 0, so guessing is never worse",
+      "Skip it and come back later when the test is over",
+      "Ask the proctor to pause the audio",
+    ],
+    correct: 1,
+    explanation: "There is no penalty for wrong answers in TEF Canada listening. Blank = 0, wrong = 0. Always put something — your best guess gives you a non-zero chance. Since you cannot go back, the strategy is: commit to your best answer, move on immediately, and stay focused on the current audio.",
+  },
+  {
+    question: "A TEF Canada listening audio mentions: 'Suite à une consultation publique menée pendant six mois…' What does 'suite à' mean?",
+    options: [
+      "Before / prior to",
+      "Despite / notwithstanding",
+      "Following / as a result of",
+      "During / throughout",
+    ],
+    correct: 2,
+    explanation: "'Suite à' = following / as a result of. It introduces a cause or preceding event: 'Suite à une consultation publique, le gouvernement a décidé…' = Following a public consultation, the government decided… It's very common in formal spoken French.",
+  },
+  {
+    question: "The TEF Canada listening test has 40 questions in 40 minutes. A single audio track can generate multiple questions. What is the best preparation strategy?",
+    options: [
+      "Read the questions after each audio plays",
+      "Read the questions for each audio BEFORE it plays — use any preparation time given",
+      "Focus only on vocabulary you know and guess the rest",
+      "Answer questions only after the full section is complete",
+    ],
+    correct: 1,
+    explanation: "Before each audio plays, read the questions. You then know exactly what information to listen for. This transforms passive listening into active targeted listening — dramatically improving your accuracy, especially for numbers, names, and details.",
+  },
 ];
 
 export default function TEFLesson4Page() {

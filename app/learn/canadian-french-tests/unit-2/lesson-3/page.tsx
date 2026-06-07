@@ -87,6 +87,39 @@ const quiz = [
     correct: 1,
     explanation: "200 words is the official minimum — falling short signals an incomplete response and can cap your score. Add one solid sentence: 'Il incombe aux gouvernements et aux plateformes de mettre en place des mesures de protection adaptées.' This is substantive, not padding, and gets you over the threshold.",
   },
+  {
+    question: "Section A of the TEF Canada writing test asks you to 'continue an article.' Which of the following is the single most important constraint?",
+    options: [
+      "Use the exact same vocabulary as the original article",
+      "Match the register, tone, and topic direction of the given text",
+      "Contradict the main argument in the article",
+      "Write in a different tense than the original",
+    ],
+    correct: 1,
+    explanation: "Section A continuation writing must maintain coherence with the original — same topic direction, same register (formal/journalistic), same tone. You're extending the article, not starting a new one. The examiner assesses whether the continuation feels natural and consistent.",
+  },
+  {
+    question: "Which of the following correctly uses a 'pour que' structure at the level expected in TEF writing?",
+    options: [
+      "'Pour que le problème se résout, il faut agir.'",
+      "'Pour que le problème soit résolu, les gouvernements doivent investir davantage.'",
+      "'Pour que les solutions, on doit les mettre en place.'",
+      "'Pour que résoudre le problème, il faut des lois.'",
+    ],
+    correct: 1,
+    explanation: "'Pour que' always requires the subjunctive: 'pour que le problème soit résolu.' The first option incorrectly uses indicative ('se résout'). 'Pour que' + subjunctive is a high-level structure that signals B2+ and scores on Criterion A/langue.",
+  },
+  {
+    question: "TEF Canada Section B gives you a statement and asks you to argue for or against it. What should your introduction do?",
+    options: [
+      "Agree with the statement and explain why",
+      "Present the topic, briefly acknowledge both sides, and clearly state your position",
+      "Start writing your arguments immediately",
+      "Give a personal anecdote about the topic",
+    ],
+    correct: 1,
+    explanation: "A strong Section B introduction: (1) introduces the topic/debate, (2) acknowledges complexity ('D'un côté… de l'autre…'), (3) clearly states your thesis. This three-part structure is what examiners look for — it signals organization and register from the first paragraph.",
+  },
 ];
 
 export default function TEFLesson3Page() {

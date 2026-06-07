@@ -111,6 +111,44 @@ export default function Unit4Lesson1Page() {
           </div>
         </div>
 
+        <div className="mt-12 rounded-[2rem] border border-[#E7DAB9] bg-white p-6 shadow-sm">
+          <p className="text-sm font-black uppercase tracking-widest text-[#C9A44C]">Color agreement — full table</p>
+          <div className="mt-4 overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="text-xs font-bold uppercase tracking-wide text-[#526173]">
+                  <th className="pb-2 text-left">Color</th>
+                  <th className="pb-2 text-left">Masc. sing.</th>
+                  <th className="pb-2 text-left">Fem. sing.</th>
+                  <th className="pb-2 text-left">Masc. pl.</th>
+                  <th className="pb-2 text-left">Fem. pl.</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-[#F0EDD8]">
+                {[
+                  ["blue", "bleu", "bleue", "bleus", "bleues"],
+                  ["green", "vert", "verte", "verts", "vertes"],
+                  ["grey", "gris", "grise", "gris", "grises"],
+                  ["black", "noir", "noire", "noirs", "noires"],
+                  ["white (irregular)", "blanc", "blanche", "blancs", "blanches"],
+                  ["purple (irregular)", "violet", "violette", "violets", "violettes"],
+                  ["orange (invariable)", "orange", "orange", "orange", "orange"],
+                  ["brown (invariable)", "marron", "marron", "marron", "marron"],
+                ].map(([label, m, f, mp, fp]) => (
+                  <tr key={label} className="text-[#0B1F3A]">
+                    <td className="py-1.5 text-xs text-[#526173]">{label}</td>
+                    <td className="py-1.5 font-bold">{m}</td>
+                    <td className="py-1.5 font-bold">{f}</td>
+                    <td className="py-1.5 font-bold">{mp}</td>
+                    <td className="py-1.5 font-bold">{fp}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="mt-4 text-xs text-[#526173]">Invariable colors (orange, marron, beige) never change — same form for all genders and numbers.</p>
+        </div>
+
         <div className="mt-12">
           <FlashCardDeck cards={flashcards} title="Colors" />
         </div>

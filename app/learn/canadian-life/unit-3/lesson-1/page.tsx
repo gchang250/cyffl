@@ -111,6 +111,50 @@ const questions = [
     correct: 2,
     explanation: "'Connaissance fonctionnelle' means functional knowledge — you can work in the language for everyday tasks but it's a lower bar than 'maîtrise' (full proficiency/mastery).",
   },
+  {
+    question: "What does 'expérience souhaitée' mean on a job posting, and how is it different from 'exigée'?",
+    options: [
+      "They mean the same — both are required",
+      "'Souhaitée' = preferred but not required; 'exigée' = required/mandatory",
+      "'Souhaitée' = required; 'exigée' = optional",
+      "'Souhaitée' means recent experience only",
+    ],
+    correct: 1,
+    explanation: "'Souhaitée' = desired / preferred — it would help your application but isn't blocking. 'Exigée' = required / mandatory — you must have it to apply. 'Bilinguisme exigé' means the employer will reject applications without it; 'bilinguisme souhaité' means it's an asset.",
+  },
+  {
+    question: "A job posting for a federal position lists 'Profil linguistique: CBC'. What does this mean for bilingualism?",
+    options: [
+      "You only need French, at level C",
+      "English at level C, French at level B, English reading at level C",
+      "You need a bilingual proficiency: English at Level C, French at Level B, the written component at Level C",
+      "The position is broadcast on CBC",
+    ],
+    correct: 2,
+    explanation: "CBC is the federal bilingual profile: English oral = C (advanced), French reading = B (intermediate), French written = C (advanced). Federal public service jobs each have a language profile code like BBB, CBC, or CCC — indicating the required level in each of the three SLE components.",
+  },
+  {
+    question: "A job posting closes with 'Nous remercions tous les candidats de leur intérêt.' What does this signal?",
+    options: [
+      "All applicants will receive an interview",
+      "The company will contact all applicants",
+      "The company thanks all applicants but will only contact those selected — a standard polite closing",
+      "You must respond to confirm your application",
+    ],
+    correct: 2,
+    explanation: "This is a standard polite closing meaning the employer thanks all applicants for their interest but implies only selected candidates will be contacted — typically followed by 'Seuls les candidats retenus seront contactés.' Don't wait for a response if you don't hear back.",
+  },
+  {
+    question: "What does 'mode hybride' mean as a work arrangement on a French job posting?",
+    options: [
+      "Working from two different offices",
+      "A combination of remote work and on-site work",
+      "Working with two languages",
+      "A part-time position with full benefits",
+    ],
+    correct: 1,
+    explanation: "'Mode hybride' = hybrid work arrangement — a combination of working from home (télétravail) and in-office (en présentiel). Post-pandemic, this has become a standard descriptor on Canadian job postings. The proportion may be specified: 'deux jours au bureau, trois jours en télétravail.'",
+  },
 ];
 
 export default function Unit3Lesson1Page() {

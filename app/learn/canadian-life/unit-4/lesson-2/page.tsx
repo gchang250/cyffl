@@ -159,6 +159,50 @@ const questions = [
     correct: 2,
     explanation: "'L'inscription' is the registration or enrolment step — it happens after you accept your offer of admission. It typically involves selecting courses and paying fees.",
   },
+  {
+    question: "What is a 'lettre de motivation' and how is it different from a resume in the academic context?",
+    options: [
+      "It lists your grades — same as a transcript",
+      "It is a personal statement / letter of intent explaining why you want to study the program",
+      "It is a reference letter from a professor",
+      "It is a financial aid application letter",
+    ],
+    correct: 1,
+    explanation: "La lettre de motivation (also called 'lettre de présentation' or 'lettre d'intention') is a personal statement explaining your motivation, goals, and fit for the program. Unlike a CV (which lists what you've done), the letter explains why you want this specific program and what you bring to it.",
+  },
+  {
+    question: "What does 'la cote R' measure in Quebec's cégep-to-university admissions?",
+    options: [
+      "Your high school graduation result",
+      "Your performance on a standardized national test",
+      "Your academic ranking relative to your cohort — used for university admissions in Quebec",
+      "The cost (coût) of tuition at your cégep",
+    ],
+    correct: 2,
+    explanation: "La cote R (cote de rendement au collégial) is a GPA adjusted for the strength of your cégep cohort — roughly equivalent to a class rank-adjusted GPA. It's the primary admissions criterion for competitive programs at Quebec universities.",
+  },
+  {
+    question: "What is 'SRAM' in the Quebec university admissions process?",
+    options: [
+      "A scholarship fund for francophone students",
+      "A centralized admissions service managing applications to most Montreal-area cégeps",
+      "A standardized French language test for university admission",
+      "A federal bursary for science students",
+    ],
+    correct: 1,
+    explanation: "SRAM (Service régional d'admission du Montréal métropolitain) manages applications to most cégeps in the Montreal area. Similar services exist for Quebec City (SRASL) and other regions. These centralized portals simplify multi-school applications.",
+  },
+  {
+    question: "You receive a letter saying 'Votre demande est en attente d'évaluation.' What does this mean?",
+    options: [
+      "Your application has been accepted",
+      "Your application has been rejected",
+      "Your application is under review — a decision has not yet been made",
+      "You need to resubmit your application",
+    ],
+    correct: 2,
+    explanation: "'En attente d'évaluation' = pending evaluation / under review. No decision has been made yet. You may need to provide additional documents or simply wait for the evaluation process to be completed.",
+  },
 ];
 
 export default function Unit4Lesson2Page() {

@@ -82,6 +82,24 @@ const quiz = [
     correct: 1,
     explanation: "'Réduire son empreinte carbone' = to reduce one's carbon footprint. TEF Canada environmental texts will ask you to answer questions about what a speaker or text says should be done — understanding 'réduire', 'limiter', 'diminuer' vs 'augmenter', 'accroître' is essential.",
   },
+  {
+    question: "Which health vocabulary phrase means 'universal healthcare' in French?",
+    options: ["les soins payants", "le système de santé universel / la couverture universelle", "le régime privé", "l'assurance privée obligatoire"],
+    correct: 1,
+    explanation: "'Le système de santé universel' or 'la couverture universelle' describes universal healthcare. In Canada, this is the basis of provincial health systems. TEF Canada health texts often discuss the merits and challenges of universal vs. private healthcare.",
+  },
+  {
+    question: "A TEF Canada text discusses 'le logement abordable' (affordable housing). Which topic category is this?",
+    options: ["Technology", "Environment", "Society", "Health"],
+    correct: 2,
+    explanation: "'Le logement abordable' (affordable housing) falls under the Society topic — alongside themes like immigration, social inequality, education access, and urban development. These are all common TEF Canada reading and listening text subjects.",
+  },
+  {
+    question: "Complete this sentence: 'Les avancées de _____ artificielle soulèvent des questions éthiques sur l'emploi.'",
+    options: ["l'intelligence", "la recherche", "l'innovation", "la technologie"],
+    correct: 0,
+    explanation: "'L'intelligence artificielle' (AI) — 'les avancées de l'intelligence artificielle soulèvent des questions éthiques sur l'emploi' = AI advances raise ethical questions about employment. AI is a rapidly growing TEF Canada technology topic — learn to recognize 'IA' (the French abbreviation) and related vocabulary.",
+  },
 ];
 
 export default function TEFLesson1Page() {

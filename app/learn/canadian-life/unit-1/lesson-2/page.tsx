@@ -110,6 +110,50 @@ const questions = [
     correct: 2,
     explanation: "'C'est de valeur' is a common Quebec expression meaning 'that's a shame' or 'too bad.' It has nothing to do with monetary value. Example: C'est de valeur qu'il pleuve aujourd'hui.",
   },
+  {
+    question: "A Quebec friend says 'T'es game de venir?' What are they asking?",
+    options: [
+      "Are you watching the game?",
+      "Are you up for coming / Are you willing to come?",
+      "Are you good at games?",
+      "Are you going home?",
+    ],
+    correct: 1,
+    explanation: "'Être game' = to be willing / to be up for it. 'T'es game de venir avec nous?' = Are you up for coming with us? It's casual and friendly — used to invite someone to join an activity.",
+  },
+  {
+    question: "In a Quebec store, someone says 'On passe au cash.' What does this mean?",
+    options: [
+      "We're leaving the store",
+      "We're going through the checkout / paying",
+      "We're getting cash from the ATM",
+      "We're asking for a discount",
+    ],
+    correct: 1,
+    explanation: "'Passer au cash' = to go through the checkout / to pay. 'Cash' here is borrowed from English but used as a noun meaning the cash register or checkout. Common in everyday Quebec conversation.",
+  },
+  {
+    question: "How would you translate 'J'ai de la misère à comprendre' into standard French?",
+    options: [
+      "Je suis miserable à comprendre",
+      "J'ai du mal à comprendre / Je n'arrive pas à comprendre",
+      "Je suis pauvre en compréhension",
+      "Je ne comprends jamais rien",
+    ],
+    correct: 1,
+    explanation: "'Avoir de la misère à' = to have difficulty doing something. The standard French equivalent is 'avoir du mal à' or 'peiner à'. It's one of the most common Quebec idiomatic expressions for struggle or difficulty.",
+  },
+  {
+    question: "Your Quebec friend says 'Ça fait que j'ai appelé ta mère.' What is 'ça fait que' doing in this sentence?",
+    options: [
+      "Asking a question",
+      "Expressing surprise",
+      "Acting as a conclusion connector meaning 'so' or 'and so'",
+      "Introducing a hypothetical situation",
+    ],
+    correct: 2,
+    explanation: "'Ça fait que' is a Quebec connector meaning 'so, and so, so then'. It introduces a result or conclusion from what was just said. Standard French equivalents: 'donc', 'alors', 'c'est pourquoi'.",
+  },
 ];
 
 export default function Unit1Lesson2Page() {

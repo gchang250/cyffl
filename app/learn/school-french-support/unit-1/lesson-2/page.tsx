@@ -120,6 +120,24 @@ export default function Unit1Lesson2Page() {
           </div>
         </div>
 
+        <div className="mt-12 rounded-[2rem] border-2 border-[#FEF3C7] bg-white p-6">
+          <p className="text-xs font-bold uppercase tracking-widest text-[#D97706]">Common mistakes — adjective agreement</p>
+          <div className="mt-4 space-y-3 text-sm">
+            {[
+              { wrong: "un vieux voiture", right: "une vieille voiture — voiture is feminine; vieux → vieille." },
+              { wrong: "une beau fille", right: "une belle fille — beau → belle before feminine nouns." },
+              { wrong: "les filles heureux", right: "les filles heureuses — feminine plural: heureux → heureuses." },
+              { wrong: "un nouveau problème intéressants", right: "un nouveau problème intéressant — adjectives must agree with the noun in both gender AND number." },
+              { wrong: "une livre intéressant", right: "un livre intéressant — livre is masculine, so use un and intéressant." },
+            ].map((m) => (
+              <div key={m.wrong} className="grid gap-1 rounded-xl border border-[#FDE68A] bg-[#FEFCE8] p-3">
+                <p className="text-[#B45309]">✗ {m.wrong}</p>
+                <p className="text-[#16A34A]">✓ {m.right}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
         <div className="mt-12">
           <FlashCardDeck cards={adjectiveCards} title="Adjective forms" />
         </div>

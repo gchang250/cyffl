@@ -14,6 +14,11 @@ const flashcards = [
   { front: "les réseaux sociaux (m pl)", back: "social media / social networks", subtext: "Platforms like Instagram, TikTok, X — a major focus in media and communication texts." },
   { front: "influencer", back: "to influence / to shape", subtext: "How technology or media changes behaviour, culture, or opinion. Core to many Paper 2 reading texts." },
   { front: "la recherche scientifique", back: "scientific research", subtext: "Studies, experiments, discoveries — Scientific innovation is an official Human Ingenuity sub-topic." },
+  { front: "l'intelligence artificielle (f)", back: "artificial intelligence (AI)", subtext: "Algorithms that simulate human reasoning. A rapidly growing Human Ingenuity topic — expect it in Paper 2 reading texts about science and technology." },
+  { front: "le progrès technique", back: "technological progress", subtext: "Advances in tools, machines, and digital systems. Often discussed in terms of both benefits ('améliorer la qualité de vie') and risks." },
+  { front: "une œuvre d'art", back: "a work of art", subtext: "A creative production — painting, sculpture, film, literature. 'Les œuvres d'art reflètent les valeurs d'une époque.' = Works of art reflect the values of an era." },
+  { front: "numériser", back: "to digitise", subtext: "To convert something into digital form. 'Numériser les archives culturelles' = to digitise cultural archives. Common in technology and media texts." },
+  { front: "l'impact (m)", back: "impact / effect", subtext: "The effect of something on people or the world. 'L'impact des réseaux sociaux sur les jeunes' = the impact of social media on young people. Used widely across all five themes." },
 ];
 
 const matchPairs = [
@@ -71,6 +76,39 @@ const quiz = [
     correct: 1,
     explanation: "Influencer = to influence or shape. 'Les réseaux sociaux influencent notre perception de la réalité.' = Social media shapes how we perceive reality.",
   },
+  {
+    question: "A text discusses whether AI can truly create original art, or only imitate human creativity. Which sub-topics does this best span?",
+    options: [
+      "Entertainment and Scientific innovation",
+      "Artistic expressions and Scientific innovation",
+      "Communication and media and Leisure activities",
+      "Technology and Social Organisation",
+    ],
+    correct: 1,
+    explanation: "AI-generated art sits at the intersection of Artistic expressions (creativity and art) and Scientific innovation (AI as a technology). IB texts often span two sub-topics.",
+  },
+  {
+    question: "What does 'numériser' mean, and where does it appear in IB texts?",
+    options: [
+      "To broadcast — used in news reports",
+      "To digitise — used in technology and media texts",
+      "To innovate — used in scientific research contexts",
+      "To publish — used in communication topics",
+    ],
+    correct: 1,
+    explanation: "Numériser = to digitise. It appears in texts about technology, cultural heritage, libraries, and media — all Human Ingenuity topics.",
+  },
+  {
+    question: "A film explores how a community's traditional music changed after the introduction of the internet. Which Human Ingenuity guiding question best frames this?",
+    options: [
+      "What is the individual's role in the community?",
+      "How does our past shape our present?",
+      "What can we learn about a culture through its artistic expression?",
+      "What environmental issues challenge the world?",
+    ],
+    correct: 2,
+    explanation: "'What can we learn about a culture through its artistic expression?' — the film examines traditional music (artistic expression) and how technology (internet) transformed it.",
+  },
 ];
 
 export default function Unit1Lesson3Page() {
@@ -126,6 +164,26 @@ export default function Unit1Lesson3Page() {
           <p className="mt-1 text-[#526173]">Click a card to flip it.</p>
           <div className="mt-6">
             <FlashCardDeck cards={flashcards} title="Human Ingenuity — key vocabulary" />
+          </div>
+        </section>
+
+        <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-6 shadow-sm">
+          <h2 className="text-xl font-black">Key phrases for discussing Human Ingenuity</h2>
+          <p className="mt-2 text-sm text-[#526173]">Use these in Paper 1 and the IO when discussing technology, media, and creativity.</p>
+          <div className="mt-4 grid gap-3 sm:grid-cols-2">
+            {[
+              { fr: "La technologie transforme notre façon de communiquer.", en: "Technology is transforming the way we communicate." },
+              { fr: "Les réseaux sociaux ont un impact considérable sur les jeunes.", en: "Social media has a considerable impact on young people." },
+              { fr: "L'intelligence artificielle soulève des questions éthiques.", en: "Artificial intelligence raises ethical questions." },
+              { fr: "L'art reflète les valeurs et les préoccupations d'une société.", en: "Art reflects the values and concerns of a society." },
+              { fr: "L'innovation scientifique améliore la qualité de vie.", en: "Scientific innovation improves quality of life." },
+              { fr: "Les médias jouent un rôle crucial dans la formation des opinions.", en: "The media plays a crucial role in shaping opinions." },
+            ].map((p) => (
+              <div key={p.fr} className="rounded-xl border border-[#E7DAB9] bg-[#FFFDF7] p-3">
+                <p className="font-bold text-sm text-[#0B1F3A]">{p.fr}</p>
+                <p className="mt-1 text-xs text-[#526173]">{p.en}</p>
+              </div>
+            ))}
           </div>
         </section>
 

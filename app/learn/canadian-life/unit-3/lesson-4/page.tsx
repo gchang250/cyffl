@@ -159,6 +159,50 @@ const questions = [
     correct: 1,
     explanation: "'Quelles sont les prochaines étapes du processus?' is professional, shows initiative, and prompts the interviewer to share the timeline — ideal to close the conversation.",
   },
+  {
+    question: "How do you answer 'Parlez-moi de vous' (Tell me about yourself) in a French job interview?",
+    options: [
+      "Talk about your hobbies and personal life for 5 minutes",
+      "Give a 1–2 minute professional summary: your background, key experience, and why you're interested in this role",
+      "Summarise your CV word-for-word",
+      "Ask the interviewer to read your CV instead",
+    ],
+    correct: 1,
+    explanation: "'Parlez-moi de vous' is the classic opening. The ideal response is 1–2 minutes structured as: formation (education/background), expérience clé (key experience), and pourquoi ce poste (why this role). Keep it professional and relevant — this isn't a personal story.",
+  },
+  {
+    question: "What does 'Quelles sont vos principales forces?' test, and how should you respond?",
+    options: [
+      "It tests how well you know sports — answer with 3 sports you excel at",
+      "It tests self-awareness — name 2–3 concrete, relevant strengths and give brief examples",
+      "It tests your knowledge of company policy",
+      "It tests your language ability only — any answer is acceptable",
+    ],
+    correct: 1,
+    explanation: "'Quelles sont vos principales forces?' = What are your main strengths? Give 2–3 professional strengths (e.g., rigueur, capacité de gestion, communication bilingue) and support each briefly with an example. Don't say 'Je suis travailleur' without evidence.",
+  },
+  {
+    question: "What is the correct way to discuss a past professional challenge using the STAR structure in French?",
+    options: [
+      "Décrivez le problème le plus difficile de votre carrière in detail",
+      "Situation: context → Tâche: your role → Action: what you specifically did → Résultat: the outcome",
+      "Read from your CV to avoid mistakes",
+      "Focus only on the result and skip the story",
+    ],
+    correct: 1,
+    explanation: "STAR in French: Situation (contexte) → Tâche (what you had to do) → Action (what you specifically did) → Résultat (the outcome). This structure is expected for 'behavioral questions' like 'Décrivez une situation où…' It shows you can communicate clearly and analytically in French.",
+  },
+  {
+    question: "An interviewer asks: 'Avez-vous des questions pour nous?' What should you do?",
+    options: [
+      "Say 'Non, merci' — it's polite not to take more of their time",
+      "Ask about salary immediately",
+      "Ask 2–3 thoughtful questions about the role, team, or growth opportunities",
+      "Ask if you got the job",
+    ],
+    correct: 2,
+    explanation: "Always have questions prepared. Not asking signals lack of interest. Good questions: 'Comment décririez-vous la culture de l'équipe ?' (What would you describe as the team culture?) or 'Quelles sont les possibilités d'évolution dans ce rôle ?' (What are the growth opportunities?) Avoid asking about salary in the first interview.",
+  },
 ];
 
 export default function Unit3Lesson4Page() {

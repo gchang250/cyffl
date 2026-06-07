@@ -149,6 +149,50 @@ const questions = [
     correct: 3,
     explanation: "Université Laval in Quebec City is one of Canada's oldest and most prestigious French-language universities. McGill, U of T, and SFU are English-language institutions.",
   },
+  {
+    question: "What is a 'cégep' and where does it fit in the Quebec education system?",
+    options: [
+      "A primary school for children aged 6–11",
+      "A private high school equivalent",
+      "A two-to-three year college between high school and university, unique to Quebec",
+      "A federal skills training centre",
+    ],
+    correct: 2,
+    explanation: "A cégep (Collège d'enseignement général et professionnel) is unique to Quebec. Students attend cégep after Grade 11 (Secondary V) before university — doing 2 years for a pre-university program or 3 years for a vocational/technical diploma (DEC). There is no direct equivalent in other provinces.",
+  },
+  {
+    question: "In Ontario and western Canada, which body typically operates French-language schools?",
+    options: [
+      "The federal Department of Education",
+      "The French Embassy",
+      "Provincial Catholic or public French-language school boards (conseils scolaires)",
+      "Alliance Française",
+    ],
+    correct: 2,
+    explanation: "Outside Quebec, French-language education is delivered through provincial 'conseils scolaires' (French-language school boards) under provincial jurisdiction. In Ontario, for example, there are four French-language school boards: two public and two Catholic.",
+  },
+  {
+    question: "What is the purpose of the 'avis d'admission' in a university application?",
+    options: [
+      "A letter from the government confirming your visa",
+      "An official offer of admission from the university",
+      "A registration confirmation for a single course",
+      "A financial aid decision",
+    ],
+    correct: 1,
+    explanation: "L'avis d'admission = an offer of admission. It is the official letter (or online notification) from the university stating you have been accepted into a program, often with conditions. You then decide whether to accept or decline.",
+  },
+  {
+    question: "What does 'programme contingenté' mean in the context of Canadian university admissions?",
+    options: [
+      "A free program for international students",
+      "A program offered only in summer",
+      "A competitive program with a limited number of spots — selective entry",
+      "A program delivered entirely online",
+    ],
+    correct: 2,
+    explanation: "'Programme contingenté' = limited-enrolment competitive program. Medicine, law, pharmacy, and nursing are typically contingentés in Quebec — you need high grades and sometimes other criteria to be admitted. Not all applicants who meet minimum requirements are accepted.",
+  },
 ];
 
 export default function Unit4Lesson1Page() {

@@ -126,6 +126,24 @@ export default function Unit4Lesson4Page() {
           </div>
         </div>
 
+        <div className="mt-12 rounded-[2rem] border-2 border-[#FEF3C7] bg-white p-6">
+          <p className="text-xs font-bold uppercase tracking-widest text-[#D97706]">Common mistakes — asking questions</p>
+          <div className="mt-4 space-y-3 text-sm">
+            {[
+              { wrong: "Comment est-ce que t'appelles-tu?", right: "Comment t'appelles-tu? OR Comment est-ce que tu t'appelles? — Never combine inversion and est-ce que." },
+              { wrong: "Où est-ce que tu vas? — said as 'Où tu vas?'", right: "Both are acceptable, but 'Où tu vas?' is informal (intonation only). For exams, use est-ce que or inversion." },
+              { wrong: "Combien livres as-tu?", right: "Combien de livres as-tu? — Combien requires de before a noun." },
+              { wrong: "Ou habites-tu? (no accent)", right: "Où habites-tu? (accent) — ou without accent means 'or'. Always add the accent for 'where'." },
+              { wrong: "Pourquoi tu parles? (mixing styles)", right: "Pourquoi est-ce que tu parles? OR Pourquoi parles-tu? — Don't mix the three question methods within one question." },
+            ].map((m) => (
+              <div key={m.wrong} className="grid gap-1 rounded-xl border border-[#FDE68A] bg-[#FEFCE8] p-3">
+                <p className="text-[#B45309]">✗ {m.wrong}</p>
+                <p className="text-[#16A34A]">✓ {m.right}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
         <div className="mt-12">
           <FlashCardDeck cards={flashcards} title="Question words" />
         </div>

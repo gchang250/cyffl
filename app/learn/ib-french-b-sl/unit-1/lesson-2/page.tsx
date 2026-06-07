@@ -14,6 +14,11 @@ const flashcards = [
   { front: "se souvenir de", back: "to remember / to recall", subtext: "Key verb for life story and memory-based texts. 'Je me souviens de…' = I remember…" },
   { front: "marquer", back: "to mark / to leave an impression", subtext: "Used to describe experiences that have a lasting impact. 'Cette expérience m'a marqué(e).' = This experience left its mark on me." },
   { front: "l'aventure (f)", back: "adventure", subtext: "Exploration and new experiences. Common in travel writing and holiday narratives." },
+  { front: "le témoignage", back: "testimony / personal account", subtext: "A first-person account of events experienced. Often the format of 'Life stories' texts in Paper 2 — listen for je/mon/ma." },
+  { front: "enrichissant(e)", back: "enriching / rewarding", subtext: "'Cette expérience m'a beaucoup enrichi(e).' = This experience enriched me greatly. A key adjective for positive personal narrative." },
+  { front: "un tournant décisif", back: "a decisive turning point", subtext: "A moment that changed everything. 'Ce voyage a été un tournant décisif dans ma vie.' = That trip was a turning point in my life." },
+  { front: "s'aventurer", back: "to venture / to go on an adventure", subtext: "To try something bold or new. 'S'aventurer hors de sa zone de confort.' = To venture outside one's comfort zone." },
+  { front: "la nostalgie", back: "nostalgia", subtext: "A sentimental longing for the past. Common in memory-based and life-story texts. 'Avec nostalgie, il se souvient de son enfance.' = With nostalgia, he recalls his childhood." },
 ];
 
 const matchPairs = [
@@ -71,6 +76,34 @@ const quiz = [
     correct: 1,
     explanation: "A gap year abroad involves travel (Holidays and travel) and is a significant personal story (Life stories). Both are Experiences sub-topics.",
   },
+  {
+    question: "What does 'enrichissant' mean and when would you use it in the IO or Paper 1?",
+    options: [
+      "Exhausting — to describe a tiring journey",
+      "Enriching / rewarding — to describe a positive life experience",
+      "Discouraging — to describe a setback",
+      "Challenging — to describe a difficult rite of passage",
+    ],
+    correct: 1,
+    explanation: "Enrichissant(e) = enriching / rewarding. 'Cette expérience m'a beaucoup enrichi(e)' is a high-level phrase for describing positive personal experiences in writing or the oral.",
+  },
+  {
+    question: "A text opens with: 'Je me souviens de ce jour comme si c'était hier…' What narrative technique and sub-topic is being used?",
+    options: [
+      "Statistics — Social Organisation",
+      "Personal testimony and nostalgia — Life stories / Experiences",
+      "Persuasion — Human Ingenuity",
+      "Official description — Sharing the Planet",
+    ],
+    correct: 1,
+    explanation: "First-person memory-based narration ('je me souviens') is a personal testimony / témoignage — and nostalgia is its key tone. This fits Life stories, an official Experiences sub-topic.",
+  },
+  {
+    question: "A ceremony marks a teenager's transition to adulthood in a specific culture. Which Experiences sub-topic is this?",
+    options: ["Leisure activities", "Migration", "Rites of passage", "Customs and traditions"],
+    correct: 2,
+    explanation: "Rites of passage are significant life milestones — ceremonies marking major transitions like coming of age, graduation, or marriage. This is an official Experiences sub-topic.",
+  },
 ];
 
 export default function Unit1Lesson2Page() {
@@ -126,6 +159,26 @@ export default function Unit1Lesson2Page() {
           <p className="mt-1 text-[#526173]">Click a card to flip it.</p>
           <div className="mt-6">
             <FlashCardDeck cards={flashcards} title="Experiences — key vocabulary" />
+          </div>
+        </section>
+
+        <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-6 shadow-sm">
+          <h2 className="text-xl font-black">Key phrases for writing about Experiences</h2>
+          <p className="mt-2 text-sm text-[#526173]">Use these for Paper 1 narratives and life-story texts, and in the Individual Oral when discussing global issues.</p>
+          <div className="mt-4 grid gap-3 sm:grid-cols-2">
+            {[
+              { fr: "Cette expérience m'a profondément marqué(e).", en: "This experience profoundly affected me." },
+              { fr: "Ce voyage a été un tournant décisif dans ma vie.", en: "This trip was a turning point in my life." },
+              { fr: "Je me souviens de ce moment comme si c'était hier.", en: "I remember that moment as if it were yesterday." },
+              { fr: "Cette tradition est au cœur de notre culture.", en: "This tradition is at the heart of our culture." },
+              { fr: "S'aventurer hors de sa zone de confort est enrichissant.", en: "Venturing outside one's comfort zone is enriching." },
+              { fr: "La migration façonne l'identité de manière unique.", en: "Migration shapes identity in a unique way." },
+            ].map((p) => (
+              <div key={p.fr} className="rounded-xl border border-[#E7DAB9] bg-[#FFFDF7] p-3">
+                <p className="font-bold text-sm text-[#0B1F3A]">{p.fr}</p>
+                <p className="mt-1 text-xs text-[#526173]">{p.en}</p>
+              </div>
+            ))}
           </div>
         </section>
 

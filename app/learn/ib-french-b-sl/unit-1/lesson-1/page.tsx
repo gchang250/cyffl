@@ -14,6 +14,11 @@ const flashcards = [
   { front: "appartenir à", back: "to belong to", subtext: "A key verb for discussions of identity — belonging to a group, culture, or community." },
   { front: "se définir", back: "to define oneself", subtext: "How a person describes or understands their own identity. Common in oral discussion questions." },
   { front: "l'estime de soi (f)", back: "self-esteem", subtext: "How a person values themselves — linked to well-being and mental health sub-topics." },
+  { front: "la diversité culturelle", back: "cultural diversity", subtext: "The coexistence of multiple cultures in a society. Common in multicultural and immigration contexts — spans both Identities and Social Organisation texts." },
+  { front: "le stéréotype", back: "stereotype", subtext: "A fixed, oversimplified image of a group. 'Briser les stéréotypes' = to break stereotypes. Recurring concept in identity and prejudice discussions." },
+  { front: "s'identifier à", back: "to identify with", subtext: "To feel a sense of connection to a group, culture, or set of values. 'Je m'identifie à cette communauté.' = I identify with this community." },
+  { front: "l'héritage culturel (m)", back: "cultural heritage", subtext: "Traditions, customs, and values passed across generations. 'Mon héritage culturel est une source de fierté.' = My cultural heritage is a source of pride." },
+  { front: "le préjugé", back: "prejudice / bias", subtext: "A preconceived negative opinion about a group, not based on evidence. 'Lutter contre les préjugés' = to fight prejudice. Linked to identity, inequality, and integration texts." },
 ];
 
 const matchPairs = [
@@ -65,6 +70,24 @@ const quiz = [
     options: ["Health and well-being", "Beliefs and values", "Language and identity", "Subcultures"],
     correct: 3,
     explanation: "Subcultures — groups within a larger culture with their own distinct identity, norms, and practices — is an official Identities sub-topic.",
+  },
+  {
+    question: "A news article portrays immigrants as uniformly unwilling to integrate. Which identity-related concept does this illustrate?",
+    options: ["Cultural heritage", "Self-esteem", "Stereotype", "Subculture"],
+    correct: 2,
+    explanation: "A fixed, negative generalisation about a group is a stereotype. Recognising stereotypes in texts is a key Paper 2 reading skill — and a recurring topic across Identities and Social Organisation discussions.",
+  },
+  {
+    question: "Which phrase means 'to identify with a culture'?",
+    options: ["nuire à une culture", "appartenir à une culture", "s'identifier à une culture", "se souvenir d'une culture"],
+    correct: 2,
+    explanation: "S'identifier à = to identify with. It expresses an emotional or ideological connection — distinct from 'appartenir à' (to belong to), which implies formal membership.",
+  },
+  {
+    question: "A student writes: 'Mon héritage culturel influence ma façon de voir le monde.' What concept is being discussed?",
+    options: ["Subculture", "Cultural heritage", "Social organisation", "Language innovation"],
+    correct: 1,
+    explanation: "L'héritage culturel = cultural heritage — the traditions and values passed across generations. This shapes identity directly, which is why it is central to the Identities theme.",
   },
 ];
 
@@ -121,6 +144,26 @@ export default function Unit1Lesson1Page() {
           <p className="mt-1 text-[#526173]">Click a card to flip it. These words appear constantly in Identities texts.</p>
           <div className="mt-6">
             <FlashCardDeck cards={flashcards} title="Identities — key vocabulary" />
+          </div>
+        </section>
+
+        <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-6 shadow-sm">
+          <h2 className="text-xl font-black">Key phrases for discussing Identities</h2>
+          <p className="mt-2 text-sm text-[#526173]">Use these in Paper 1 writing, Paper 2 responses, and the Individual Oral to score on language range.</p>
+          <div className="mt-4 grid gap-3 sm:grid-cols-2">
+            {[
+              { fr: "Mon identité est façonnée par…", en: "My identity is shaped by…" },
+              { fr: "Je m'identifie à ma culture d'origine.", en: "I identify with my culture of origin." },
+              { fr: "La langue est au cœur de notre identité.", en: "Language is at the heart of our identity." },
+              { fr: "Les stéréotypes nuisent à la compréhension mutuelle.", en: "Stereotypes harm mutual understanding." },
+              { fr: "Mon héritage culturel est une source de fierté.", en: "My cultural heritage is a source of pride." },
+              { fr: "L'estime de soi joue un rôle crucial dans le bien-être.", en: "Self-esteem plays a crucial role in well-being." },
+            ].map((p) => (
+              <div key={p.fr} className="rounded-xl border border-[#E7DAB9] bg-[#FFFDF7] p-3">
+                <p className="font-bold text-sm text-[#0B1F3A]">{p.fr}</p>
+                <p className="mt-1 text-xs text-[#526173]">{p.en}</p>
+              </div>
+            ))}
           </div>
         </section>
 

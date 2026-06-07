@@ -86,6 +86,34 @@ const quiz = [
     correct: 1,
     explanation: "'Quelles sont les conditions d'annulation et y a-t-il des frais si je dois me désister ?' asks for both the policy AND the financial implications in one structured question. This shows you've thought ahead about what information you need. 'C'est possible d'annuler ?' is A-level — it's a yes/no question that gives you minimal information.",
   },
+  {
+    question: "TEF Canada Section A oral (information gathering) is a conversation about a life scenario. Which strategy best raises your score?",
+    options: [
+      "Ask as many yes/no questions as possible to cover all topics",
+      "Ask open, structured questions using 'Quels sont…', 'Comment…', 'Dans quelles conditions…' to gather complete information",
+      "Let the interlocutor guide all topics — respond but don't ask",
+      "Use only present tense to avoid grammar errors",
+    ],
+    correct: 1,
+    explanation: "Open questions give you richer information and demonstrate oral competency. 'Quels sont les délais de livraison ?' gives you more than 'Est-ce que la livraison est rapide ?' The examiner also assesses whether you extract all necessary information — open questions are more efficient.",
+  },
+  {
+    question: "In Section B of the TEF Canada oral (persuasive presentation), how should you handle an objection from the examiner?",
+    options: [
+      "Say 'Je ne suis pas d'accord' and repeat your original point",
+      "Concede your argument completely",
+      "Acknowledge the objection respectfully, then respond with a counter-argument or evidence",
+      "Say you need more time to think about it",
+    ],
+    correct: 2,
+    explanation: "Acknowledge + counter: 'C'est une objection légitime. Cependant, les données montrent que…' — this shows you can engage critically without abandoning your position. The examiner is testing whether you can maintain a persuasive stance under challenge. Conceding entirely signals weak oral argumentation.",
+  },
+  {
+    question: "What is the minimum CLB level required in all four TEF Canada skills to be eligible for Express Entry immigration?",
+    options: ["CLB 5", "CLB 6", "CLB 7", "CLB 9"],
+    correct: 2,
+    explanation: "CLB 7 in all four skills (reading, listening, writing, speaking) is the minimum required for French first official language applicants in Express Entry's Federal Skilled Worker, Canadian Experience Class, and Federal Skilled Trades programs. Falling below CLB 7 in any one skill makes an application ineligible.",
+  },
 ];
 
 export default function TEFLesson5Page() {

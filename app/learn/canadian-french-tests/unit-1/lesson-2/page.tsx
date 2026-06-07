@@ -63,6 +63,34 @@ const quiz = [
     correct: 0,
     explanation: "Nominalization: 'mettre en œuvre' → 'la mise en œuvre' (implementation). Other examples: procéder → la procédure · décider → la décision · recommander → la recommandation. Recognizing these makes long sentences much easier to parse.",
   },
+  {
+    question: "A government document reads: 'L'approbation est accordée ___ de la conformité aux exigences.' Which phrase completes it?",
+    options: ["à la suite", "sous réserve", "en dépit", "en fonction"],
+    correct: 1,
+    explanation: "'Sous réserve de' = subject to / conditional upon. 'L'approbation est accordée sous réserve de la conformité' = approval is granted subject to compliance. This phrase appears constantly in government decisions and conditions.",
+  },
+  {
+    question: "'Il y a lieu de procéder à une révision immédiate.' What does this sentence mean?",
+    options: [
+      "There is no reason to carry out a review",
+      "There are grounds to carry out an immediate review",
+      "A review has already been completed",
+      "The location requires an immediate review",
+    ],
+    correct: 1,
+    explanation: "'Il y a lieu de' = there are grounds to / it is necessary to. This formal impersonal construction is more elevated than 'il faut'. 'Il y a lieu de procéder à' = there are grounds to carry out / proceed with.",
+  },
+  {
+    question: "Which sentence is grammatically correct passive voice in the passé composé?",
+    options: [
+      "Le rapport a approuvé par le comité.",
+      "Le rapport a été approuvé par le comité.",
+      "Le rapport était approuvé par le comité.",
+      "Le rapport avait approuvé le comité.",
+    ],
+    correct: 1,
+    explanation: "Passé composé passive = avoir (a/ont) + été + past participle. 'Le rapport a été approuvé' = the report was approved. The participle agrees with the subject: rapport is masculine → approuvé (no -e).",
+  },
 ];
 
 export default function SLELesson2Page() {

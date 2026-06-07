@@ -114,6 +114,30 @@ export default function Unit5Lesson3Page() {
           </div>
         </div>
 
+        <div className="mt-12 rounded-[2rem] border border-[#E7DAB9] bg-white p-6 shadow-sm">
+          <p className="text-sm font-black uppercase tracking-widest text-[#C9A44C]">The 24-hour clock (l'heure officielle)</p>
+          <p className="mt-2 text-sm text-[#526173]">France and Francophone Canada use the 24-hour clock in timetables, schedules, and official contexts. Subtract 12 to convert to PM.</p>
+          <div className="mt-4 grid gap-2 sm:grid-cols-2 text-sm">
+            {[
+              ["13h00 (treize heures)", "1 PM"],
+              ["15h30 (quinze heures trente)", "3:30 PM"],
+              ["18h15 (dix-huit heures quinze)", "6:15 PM"],
+              ["20h45 (vingt heures quarante-cinq)", "8:45 PM"],
+              ["00h00 (zéro heure / minuit)", "Midnight"],
+              ["12h00 (midi)", "Noon"],
+            ].map(([fr, en]) => (
+              <div key={fr} className="flex items-center justify-between rounded-xl border border-[#E7DAB9] bg-[#FFFDF7] px-3 py-2">
+                <span className="font-bold text-[#0B1F3A]">{fr}</span>
+                <span className="text-xs text-[#526173]">{en}</span>
+              </div>
+            ))}
+          </div>
+          <div className="mt-4 rounded-xl bg-[#0B1F3A] px-4 py-3 text-sm text-white">
+            <span className="font-black text-[#C9A44C]">Key difference:</span>
+            <span className="ml-2 text-white/80">In everyday speech, use 12-hour + du matin/de l&apos;après-midi/du soir. In written schedules, announcements, and timetables, use 24-hour.</span>
+          </div>
+        </div>
+
         <div className="mt-12">
           <FlashCardDeck cards={timeCards} title="Time vocabulary" />
         </div>

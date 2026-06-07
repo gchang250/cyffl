@@ -14,6 +14,11 @@ const flashcards = [
   { front: "On remarque que…", back: "One notices that… / We can observe that…", subtext: "Useful for pointing out specific details or implications in the image." },
   { front: "Ce qui est frappant, c'est…", back: "What is striking is…", subtext: "Introduces the most visually powerful or emotionally significant element." },
   { front: "Cette scène évoque…", back: "This scene evokes / suggests…", subtext: "Moves from observation to interpretation — what feeling or idea does the image create?" },
+  { front: "Au centre de l'image…", back: "In the centre of the image…", subtext: "Useful when the main subject is centrally placed. Combine with 'on peut voir' for a clear description." },
+  { front: "Le regard de… exprime…", back: "The expression/gaze of… expresses…", subtext: "Describing people's emotions through their faces. 'Le regard de l'enfant exprime la tristesse.' = The child's expression shows sadness." },
+  { front: "Cela symbolise…", back: "This symbolises…", subtext: "Moving from description to interpretation. 'Cela symbolise la destruction de l'environnement.' Connect what you see to what it means." },
+  { front: "Le contraste entre… et… illustre…", back: "The contrast between… and… illustrates…", subtext: "A high-level analytical phrase. 'Le contraste entre la richesse et la pauvreté illustre les inégalités mondiales.' Strong for Criterion B." },
+  { front: "D'après moi, cette image appartient au thème de…", back: "In my view, this image belongs to the theme of…", subtext: "Explicitly links the image to an IB theme — required for Criterion B. Always name the theme with this phrase or equivalent." },
 ];
 
 const matchPairs = [
@@ -55,6 +60,39 @@ const quiz = [
     options: ["30 seconds", "1 minute", "3–4 minutes", "6–9 minutes"],
     correct: 2,
     explanation: "The presentation (description + analysis) is 3–4 minutes. The discussion phase with the examiner is 6–9 minutes.",
+  },
+  {
+    question: "You see an image of two children — one in expensive school uniform, one in torn clothes — standing at a school gate. What analytical phrase best links this to a global issue?",
+    options: [
+      "'Au premier plan, on peut voir deux enfants.'",
+      "'Le contraste entre les deux enfants illustre les inégalités sociales et l'accès inégal à l'éducation.'",
+      "'Cette image est belle et triste.'",
+      "'Il s'agit d'une école quelque part dans le monde.'",
+    ],
+    correct: 1,
+    explanation: "'Le contraste entre… illustre…' directly connects the visual detail (two different children) to a global issue (inequality and access to education). This is Criterion B language.",
+  },
+  {
+    question: "After your 3–4 minute presentation, the examiner will spend the remaining time doing what?",
+    options: [
+      "Marking your work in silence",
+      "Asking you follow-up questions about the image, theme, and global issue",
+      "Showing you a second image to describe",
+      "Reading your preparation notes aloud",
+    ],
+    correct: 1,
+    explanation: "The 6–9 minute discussion phase consists of the examiner asking follow-up questions about the image, the theme, and the global issue — and potentially related topics. Your job is to respond naturally and develop ideas.",
+  },
+  {
+    question: "You receive an image of protesters outside a factory. Which phrase best opens your analysis phase?",
+    options: [
+      "'C'est une image intéressante.'",
+      "'Il y a des gens dans l'image.'",
+      "'Cette image illustre le problème de la pollution industrielle et appartient au thème de Partager la planète.'",
+      "'On ne sait pas exactement ce qui se passe.'",
+    ],
+    correct: 2,
+    explanation: "The analysis phase requires explicitly naming the global issue AND the IB theme. 'Cette image illustre le problème de… et appartient au thème de…' is the most direct and mark-scoring structure.",
   },
 ];
 
@@ -108,6 +146,26 @@ export default function Unit4Lesson2Page() {
           <p className="mt-1 text-[#526173]">Click a card to flip it. These are the phrases examiners hear from high-scoring students.</p>
           <div className="mt-6">
             <FlashCardDeck cards={flashcards} title="Image description language" />
+          </div>
+        </section>
+
+        <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-6 shadow-sm">
+          <h2 className="text-xl font-black">Model description walkthrough</h2>
+          <p className="mt-2 text-sm text-[#526173]">See how to structure a full image description — from first sentence to theme identification.</p>
+          <div className="mt-4 space-y-3 text-sm">
+            {[
+              { step: "1 — Foreground", fr: "Au premier plan, on peut voir une femme debout dans un champ de plastique.", en: "In the foreground, we can see a woman standing in a field of plastic." },
+              { step: "2 — Background", fr: "À l'arrière-plan, on distingue une plage et la mer.", en: "In the background, one can make out a beach and the sea." },
+              { step: "3 — Striking detail", fr: "Ce qui est frappant, c'est la quantité de déchets qui couvre le sol.", en: "What is striking is the quantity of waste covering the ground." },
+              { step: "4 — Analysis", fr: "Cette image illustre le problème de la pollution plastique et de la dégradation de l'environnement.", en: "This image illustrates the problem of plastic pollution and environmental degradation." },
+              { step: "5 — Theme", fr: "D'après moi, elle appartient au thème de Partager la planète.", en: "In my view, it belongs to the theme of Sharing the Planet." },
+            ].map((s) => (
+              <div key={s.step} className="rounded-xl border border-[#E7DAB9] bg-[#FFFDF7] p-3">
+                <p className="text-xs font-black uppercase tracking-widest text-[#C9A44C]">{s.step}</p>
+                <p className="mt-1 font-bold text-[#0B1F3A]">{s.fr}</p>
+                <p className="text-xs text-[#526173]">{s.en}</p>
+              </div>
+            ))}
           </div>
         </section>
 

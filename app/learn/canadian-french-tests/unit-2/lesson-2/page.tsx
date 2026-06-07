@@ -73,6 +73,39 @@ const quiz = [
     correct: 1,
     explanation: "'Force est de constater que…' = One cannot help but notice that / The evidence compels us to note that. This is a fixed phrase — you can't split it. 'Force est de constater que les politiques sont insuffisantes' immediately signals upper-register French.",
   },
+  {
+    question: "Which phrase best expresses 'I believe this is a serious issue' at the upper register level expected for TEF Canada writing?",
+    options: [
+      "Je pense que c'est grave.",
+      "Il me semble que c'est un problème sérieux.",
+      "Je suis d'avis que cette problématique mérite une attention accrue.",
+      "C'est un problème assez grave selon moi.",
+    ],
+    correct: 2,
+    explanation: "'Je suis d'avis que' = I am of the view that. 'Cette problématique mérite une attention accrue' = this issue deserves increased attention. This uses formal vocabulary (d'avis, problématique, mériter, attention accrue) that signals B2–C1 level. The other options are lower register.",
+  },
+  {
+    question: "TEF Canada Section A asks you to continue an article. What key constraint must you respect?",
+    options: [
+      "You must write exactly 100 words",
+      "You must continue the topic, style, and register of the original text — not change direction",
+      "You must disagree with the article's argument",
+      "You must use the passé composé throughout",
+    ],
+    correct: 1,
+    explanation: "Section A requires you to continue the article seamlessly — same topic, same style (journalistic, editorial, etc.), same register (formal or semi-formal). Abruptly changing topic or shifting from impersonal to personal register breaks the continuity the examiner is assessing.",
+  },
+  {
+    question: "Which phrase correctly introduces a counterargument before your rebuttal?",
+    options: [
+      "'Voici pourquoi j'ai raison:'",
+      "'D'autres personnes disent oui.'",
+      "'Il est vrai que certains soutiennent que… Cependant, cette position ignore le fait que…'",
+      "'Pas tout le monde est d'accord mais j'ai raison quand même.'",
+    ],
+    correct: 2,
+    explanation: "'Il est vrai que [counterargument]. Cependant, [your rebuttal].' — This structure concedes the opposing view and then refutes it. Using 'il est vrai que' + 'cependant' shows you can engage with complexity. Upper-register markers: 'il est vrai que', 'soutiennent', 'ignore le fait que'.",
+  },
 ];
 
 export default function TEFLesson2Page() {

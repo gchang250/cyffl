@@ -81,6 +81,39 @@ const quiz = [
     correct: 2,
     explanation: "Follow-up questions in the OLA are often invitations to go deeper, not signs you got something wrong. Use them: 'Pour compléter ce que je disais…' or 'Je voudrais ajouter un exemple…' This shows Level C conversational skill — sustaining and developing a dialogue.",
   },
+  {
+    question: "The assessor asks: 'Quelles sont, selon vous, les priorités du gouvernement en matière de…?' How should you structure your answer?",
+    options: [
+      "Give a one-sentence opinion and stop",
+      "Say you're not sure and ask for clarification",
+      "State your position, give 2–3 supporting points, and conclude — using discourse markers like 'D'abord… ensuite… enfin'",
+      "List every possible priority you can think of without analysis",
+    ],
+    correct: 2,
+    explanation: "A Level B–C answer to an opinion question is structured: position + reasons + conclusion. 'À mon avis, les priorités sont… D'abord… Ensuite… En conclusion.' This mirrors written argumentation and scores well on both organization and language.",
+  },
+  {
+    question: "The SLE oral interaction assesses you against which language levels?",
+    options: [
+      "Only Level A (the basic level)",
+      "Levels A, B, and C — the assessor calibrates based on your demonstrated ability",
+      "Level C only — anything below is an automatic fail",
+      "One fixed level determined before the test",
+    ],
+    correct: 1,
+    explanation: "The SLE assesses at levels A, B, and C. The assessor calibrates the difficulty of questions based on your responses during the test — performing well can lead to progressively harder C-level scenarios. Most federal positions require levels B or C.",
+  },
+  {
+    question: "You are asked: 'Décrivez votre parcours professionnel.' Which response demonstrates Level C oral ability?",
+    options: [
+      "'J'ai travaillé dans des bureaux différents.'",
+      "'J'ai travaillé dans un bureau.'",
+      "'Au fil des années, j'ai occupé plusieurs postes à responsabilité croissante dans le domaine de la gestion de projets, ce qui m'a permis de développer des compétences variées en leadership et en communication.'",
+      "'Mon travail, c'est dans les bureaux du gouvernement.'",
+    ],
+    correct: 2,
+    explanation: "The third option demonstrates Level C: complex structure ('au fil des années'), sophisticated vocabulary ('à responsabilité croissante', 'ce qui m'a permis de'), and professional register. The others are Level A or B responses — minimal grammar, simple vocabulary, no development.",
+  },
 ];
 
 export default function SLELesson5Page() {

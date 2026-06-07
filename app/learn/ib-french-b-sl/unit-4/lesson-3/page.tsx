@@ -56,6 +56,39 @@ const quiz = [
     correct: 2,
     explanation: "Criterion C rewards interactive, spontaneous discussion. Engage with the counterargument: 'Il faut admettre que… cependant, à mon avis…'",
   },
+  {
+    question: "The examiner asks you to explain your position further. Which response best demonstrates Criterion A (language) and Criterion C (interaction)?",
+    options: [
+      "'Oui, je suis d'accord.'",
+      "'Je ne sais pas comment expliquer.'",
+      "'Pour être plus précis, je dirais que… ce qui me semble particulièrement important, c'est…'",
+      "'C'est difficile à expliquer.'",
+    ],
+    correct: 2,
+    explanation: "'Pour être plus précis, je dirais que…' buys time while showing sophistication. 'Ce qui me semble particulièrement important, c'est…' uses a cleft structure (ce qui…, c'est…) that signals upper-register French. Both develop the response spontaneously — exactly what Criterion C assesses.",
+  },
+  {
+    question: "What vocabulary do you need to discuss the IB theme 'Sharing the Planet' during the Individual Oral discussion?",
+    options: [
+      "Vocabulary from novels and literary texts",
+      "Vocabulary for environmental issues: la durabilité, l'empreinte carbone, les inégalités, les droits de l'homme",
+      "Technical vocabulary from a science textbook",
+      "Everyday vocabulary for food, weather, and travel",
+    ],
+    correct: 1,
+    explanation: "Sharing the Planet discussions require environmental and social vocabulary: la durabilité (sustainability), l'empreinte carbone (carbon footprint), les inégalités (inequalities), la mondialisation (globalisation), les droits de l'homme (human rights). Build this vocabulary before the oral.",
+  },
+  {
+    question: "Which phrase correctly introduces a nuanced view during the IO discussion?",
+    options: [
+      "'Tout le monde sait que…'",
+      "'Je n'ai pas d'opinion là-dessus.'",
+      "'La situation est complexe : d'un côté… de l'autre…'",
+      "'Je suis complètement sûr(e) que…'",
+    ],
+    correct: 2,
+    explanation: "'La situation est complexe : d'un côté… de l'autre…' demonstrates critical thinking and Criterion B message depth. IB examiners reward nuance — showing you understand multiple perspectives is valued much more than expressing only one strong opinion.",
+  },
 ];
 
 export default function Unit4Lesson3Page() {

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import FlashCardDeck from "@/components/FlashCardDeck";
+import MatchPairs from "@/components/MatchPairs";
 import FillInTheBlank from "@/components/FillInTheBlank";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
@@ -10,6 +11,21 @@ const cards = [
   { front: "Elle veut prendre le train mais elle ne sait pas l'horaire.", back: "She wants to take the train but she doesn't know the schedule.", subtext: "vouloir + prendre + savoir" },
   { front: "Vous devez connaître ce restaurant — il est excellent!", back: "You have to know this restaurant — it's excellent!", subtext: "devoir + connaître" },
   { front: "Ils viennent souvent ici parce qu'ils peuvent travailler tranquillement.", back: "They come here often because they can work quietly.", subtext: "venir + pouvoir" },
+  { front: "Il faut faire attention en classe.", back: "One has to pay attention in class.", subtext: "il faut + infinitive = one must (impersonal obligation)" },
+  { front: "On veut partir mais on doit rester.", back: "We want to leave but we have to stay.", subtext: "vouloir vs. devoir — want vs. must" },
+  { front: "Elle vient de prendre une grande décision.", back: "She has just made a big decision.", subtext: "venir de + prendre — recent past with irregular verb" },
+  { front: "Ils savent faire la cuisine et ils aiment ça.", back: "They know how to cook and they like it.", subtext: "savoir + infinitive = to know how to" },
+  { front: "Pouvez-vous me dire où se trouve la gare?", back: "Can you tell me where the station is?", subtext: "pouvoir in a polite question — very common in everyday French" },
+  { front: "Je connais Paris, mais je ne sais pas où est cette rue.", back: "I know Paris, but I don't know where this street is.", subtext: "connaître (familiar with) vs. savoir (factual knowledge) in one sentence" },
+];
+
+const matchPairs = [
+  { left: "devoir + infinitif", right: "must / have to do something" },
+  { left: "pouvoir + infinitif", right: "can / be able to do something" },
+  { left: "vouloir + infinitif", right: "want to do something" },
+  { left: "savoir + infinitif", right: "know how to do something" },
+  { left: "venir de + infinitif", right: "to have just done something" },
+  { left: "connaître + noun", right: "to be acquainted with / to know a person/place" },
 ];
 
 const fillIn = [
@@ -103,8 +119,33 @@ export default function Unit7Lesson4Page() {
           </div>
         </div>
 
+        <div className="mt-12 rounded-[2rem] border border-[#E7DAB9] bg-white p-6 shadow-sm">
+          <p className="text-sm font-black uppercase tracking-widest text-[#C9A44C]">All seven verbs — quick reference</p>
+          <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3 text-sm">
+            {[
+              { verb: "faire", meaning: "to do / make", note: "je fais, tu fais, il fait, nous faisons" },
+              { verb: "pouvoir", meaning: "can / be able to", note: "je peux, tu peux, il peut, nous pouvons" },
+              { verb: "vouloir", meaning: "to want (to)", note: "je veux, tu veux, il veut, nous voulons" },
+              { verb: "devoir", meaning: "must / have to", note: "je dois, tu dois, il doit, nous devons" },
+              { verb: "savoir", meaning: "to know (how to)", note: "je sais, tu sais, il sait, nous savons" },
+              { verb: "connaître", meaning: "to know (a person/place)", note: "je connais, tu connais, il connaît" },
+              { verb: "venir (de)", meaning: "to come / to have just", note: "je viens de partir = I just left" },
+            ].map((v) => (
+              <div key={v.verb} className="rounded-xl border border-[#E7DAB9] bg-[#FFFDF7] p-3">
+                <p className="font-black text-[#0B1F3A]">{v.verb}</p>
+                <p className="text-xs font-bold text-[#C9A44C]">{v.meaning}</p>
+                <p className="mt-1 text-xs text-[#526173]">{v.note}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
         <div className="mt-12">
           <FlashCardDeck cards={cards} title="Rich sentences" />
+        </div>
+
+        <div className="mt-12">
+          <MatchPairs pairs={matchPairs} title="Verb → usage" />
         </div>
 
         <div className="mt-12">

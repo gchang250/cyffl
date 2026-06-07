@@ -102,6 +102,50 @@ const questions = [
     correct: 1,
     explanation: "The Official Languages Act of 1969 established English and French as co-official languages of the federal government of Canada. It requires federal services to be available in both languages across the country.",
   },
+  {
+    question: "Approximately how many Franco-Ontarians live in Ontario, and where are they primarily concentrated?",
+    options: [
+      "About 50,000 — mostly in Toronto",
+      "About 600,000 — concentrated in Ottawa, Sudbury, and northern Ontario",
+      "About 2 million — evenly distributed across the province",
+      "About 100,000 — primarily in Windsor",
+    ],
+    correct: 1,
+    explanation: "Ontario has approximately 600,000 francophones, making it the province with the second-largest French-speaking population after Quebec. Major francophone communities are in Ottawa (the capital region), Sudbury, and northern Ontario.",
+  },
+  {
+    question: "What historical event is often called 'le Grand Dérangement' in Acadian history?",
+    options: [
+      "The founding of New France in the 1600s",
+      "The forced deportation of Acadians by the British from 1755–1763",
+      "The Quiet Revolution in Quebec in the 1960s",
+      "The passing of the Official Languages Act in 1969",
+    ],
+    correct: 1,
+    explanation: "Le Grand Dérangement (the Great Upheaval) was the forced deportation of the Acadian population from Nova Scotia and surrounding areas by British forces from 1755 to 1763. Thousands were displaced across the Atlantic world. This event is central to Acadian identity and collective memory.",
+  },
+  {
+    question: "Radio-Canada plays a particularly important role for francophone communities outside Quebec. Why?",
+    options: [
+      "It is the only broadcaster allowed to produce French content in Canada",
+      "It provides French-language news, culture, and entertainment to minority francophone communities who have limited local French media",
+      "It produces content in English and French equally for all Canadians",
+      "It is only available in Quebec and New Brunswick",
+    ],
+    correct: 1,
+    explanation: "Radio-Canada is the French-language public broadcaster of CBC. For francophones in Alberta, Manitoba, and other provinces, Radio-Canada is often one of the few sources of professional French-language journalism and culture — vital for language maintenance in minority contexts.",
+  },
+  {
+    question: "If a francophone from New Brunswick and a francophone from Quebec have a conversation, which French would they naturally use?",
+    options: [
+      "They would not understand each other",
+      "They would both switch to English",
+      "Standard French — both varieties are mutually intelligible, with some vocabulary differences",
+      "Only Acadian French, which both understand",
+    ],
+    correct: 2,
+    explanation: "Quebec French and Acadian French are both fully intelligible varieties of French. Despite regional vocabulary and pronunciation differences, speakers communicate comfortably in standard French. The differences are comparable to British vs. American English.",
+  },
 ];
 
 export default function Unit1Lesson4Page() {

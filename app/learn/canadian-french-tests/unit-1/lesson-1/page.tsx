@@ -73,6 +73,39 @@ const quiz = [
     correct: 1,
     explanation: "'Une ébauche' = a draft. The sentence means 'This document is a draft and not the final version.' Recognizing document status words like ébauche, brouillon, définitif, and final is essential for reading government texts.",
   },
+  {
+    question: "A memo reads: 'Le procès-verbal de la réunion du 12 mai indique que…' What does 'procès-verbal' refer to?",
+    options: [
+      "A verbal reprimand given to an employee",
+      "The minutes of a meeting — a written record of decisions and discussions",
+      "A legal complaint filed by an employee",
+      "A verbal instruction given by a manager",
+    ],
+    correct: 1,
+    explanation: "Le procès-verbal (PV) = meeting minutes — the official written record of a meeting's decisions and action items. 'Rédiger le procès-verbal' = to write up the minutes. Government meetings always produce a PV, which is a legally binding record of decisions.",
+  },
+  {
+    question: "'La surveillance du programme incombe au directeur général.' What does 'incombe à' mean?",
+    options: [
+      "Is forbidden to",
+      "Is delegated away from",
+      "Falls to / is the responsibility of",
+      "Is shared with",
+    ],
+    correct: 2,
+    explanation: "'Incomber à' = to fall to / to be the responsibility of. 'Cette tâche incombe au ministère' = This task falls to the ministry. It's a formal verb for assigning responsibility. Know it — it appears in mandates, job descriptions, and accountability documents.",
+  },
+  {
+    question: "What is 'la reddition de comptes' and why is it a key concept in government French?",
+    options: [
+      "Counting government money during audits",
+      "A reduction in government spending",
+      "Accountability — the obligation to explain and justify decisions and results to those who granted authority",
+      "The process of returning money after a budget overrun",
+    ],
+    correct: 2,
+    explanation: "'La reddition de comptes' = accountability. It's one of the foundational principles of public administration — officials must account for how they used authority and resources. It appears in virtually every government strategic plan, annual report, and mandate letter.",
+  },
 ];
 
 export default function SLELesson1Page() {

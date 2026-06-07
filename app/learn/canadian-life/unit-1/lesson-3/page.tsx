@@ -102,6 +102,35 @@ const questions = [
     correct: 1,
     explanation: "The Quebec government website (gouv.qc.ca) publishes all content in standard formal Quebec French. It's an excellent resource for reading authentic official French.",
   },
+  {
+    question: "In Sample B (the social media post), the writer uses 'pis'. What does this word mean?",
+    options: ["then / and then", "because", "but", "really"],
+    correct: 0,
+    explanation: "'Pis' is an informal Quebec contraction of 'puis' (then) or 'et puis' (and then). 'J'ai pogné le mauvais bus pis je suis arrivée en retard' = I caught the wrong bus and then arrived late. It's extremely common in informal spoken and written Quebec French.",
+  },
+  {
+    question: "In Sample C (the government notice), what is a 'vignette de stationnement'?",
+    options: ["A parking ticket (fine)", "A parking permit / sticker", "A parking lot entrance code", "A parking receipt"],
+    correct: 1,
+    explanation: "A 'vignette de stationnement' is a parking permit — typically a sticker placed on a vehicle authorizing it to park in a specific residential or municipal zone. Residents must renew it periodically at the municipal office.",
+  },
+  {
+    question: "Looking at the three samples in this lesson, which has the most formal register?",
+    options: ["Sample A — store flyer", "Sample B — social media post", "Sample C — government notice", "All three are equally formal"],
+    correct: 2,
+    explanation: "Sample C (the government notice) is the most formal — it uses passive voice, impersonal constructions ('sont priés de'), and official vocabulary ('conformément à la réglementation'). Sample A is commercial/semi-formal. Sample B is informal/colloquial.",
+  },
+  {
+    question: "What does 'Conformément à la réglementation en vigueur' mean in Sample C?",
+    options: [
+      "According to recent regulations",
+      "In accordance with the regulations in force / currently applicable",
+      "Under new regulations to be introduced",
+      "Despite the current regulations",
+    ],
+    correct: 1,
+    explanation: "'Conformément à' = in accordance with. 'En vigueur' = in force / currently applicable. Together: 'in accordance with the currently applicable regulations.' This is a very common opening phrase in Quebec government and legal documents.",
+  },
 ];
 
 export default function Unit1Lesson3Page() {

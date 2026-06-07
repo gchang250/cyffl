@@ -118,6 +118,24 @@ export default function Unit2Lesson2Page() {
           </div>
         </div>
 
+        <div className="mt-12 rounded-[2rem] border-2 border-[#FEF3C7] bg-white p-6">
+          <p className="text-xs font-bold uppercase tracking-widest text-[#D97706]">Common mistakes — -ir and -re verbs</p>
+          <div className="mt-4 space-y-3 text-sm">
+            {[
+              { wrong: "il réussite à l'examen", right: "il réussit — 'réussite' is a noun (success). The verb is réussit (no extra -e)." },
+              { wrong: "ils finient", right: "ils finissent — -ir verbs take -issent, not -ient. The -iss- infix is always there for plural forms." },
+              { wrong: "il vends", right: "il vend — the il/elle form of -re verbs drops the -re and adds NOTHING. No -s added." },
+              { wrong: "nous choisisons", right: "nous choisissons — the infix is -iss-, not -is-. The full endings are: -issons / -issez / -issent." },
+              { wrong: "tu répond", right: "tu réponds — for je and tu forms of -re verbs, add -s: je vends, tu vends, je réponds, tu réponds." },
+            ].map((m) => (
+              <div key={m.wrong} className="grid gap-1 rounded-xl border border-[#FDE68A] bg-[#FEFCE8] p-3">
+                <p className="text-[#B45309]">✗ {m.wrong}</p>
+                <p className="text-[#16A34A]">✓ {m.right}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
         <div className="mt-12">
           <FlashCardDeck cards={irReCards} title="-ir and -re verbs" />
         </div>

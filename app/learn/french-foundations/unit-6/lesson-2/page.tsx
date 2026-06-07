@@ -113,6 +113,24 @@ export default function Unit6Lesson2Page() {
           </div>
         </div>
 
+        <div className="mt-12 rounded-[2rem] border-2 border-[#FEF3C7] bg-white p-6">
+          <p className="text-xs font-bold uppercase tracking-widest text-[#D97706]">Common mistakes — être verbs</p>
+          <div className="mt-4 space-y-3 text-sm">
+            {[
+              { wrong: "Il est arrivée.", right: "Il est arrivé. — arrivée is feminine. Il is masculine → arrivé." },
+              { wrong: "Elle a partié.", right: "Elle est partie. — Wrong auxiliary (avoir) and wrong participle. Partir uses être + parti → partie for feminine." },
+              { wrong: "Ils sont allé.", right: "Ils sont allés. — Masculine plural subject requires -s on the past participle: allés." },
+              { wrong: "Elle a tombé.", right: "Elle est tombée. — Tomber uses être. Elle est tombée." },
+              { wrong: "Je suis mangé.", right: "J'ai mangé. — Manger uses avoir, not être. Only movement/state verbs use être." },
+            ].map((m) => (
+              <div key={m.wrong} className="grid gap-1 rounded-xl border border-[#FDE68A] bg-[#FEFCE8] p-3">
+                <p className="text-[#B45309]">✗ {m.wrong}</p>
+                <p className="text-[#16A34A]">✓ {m.right}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
         <div className="mt-12">
           <FlashCardDeck cards={cards} title="être verbs" />
         </div>

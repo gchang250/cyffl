@@ -106,6 +106,39 @@ const quiz = [
     correct: 2,
     explanation: "The IB explicitly states that examiners should not penalise factually incorrect information in Criterion B, as long as ideas are coherent and sufficiently developed. Don't worry if you can't recall an exact statistic — make a logical claim and develop it.",
   },
+  {
+    question: "A prompt asks you to write a 'blog' about a social media campaign. What format conventions must you follow for Criterion C?",
+    options: [
+      "Opening address (Mesdames et messieurs…), stylistic devices, thank-you",
+      "Title, author name/date, first-person narration, and address the reader directly",
+      "Title, introduction, bullet points, concluding recommendation",
+      "Author name, date, title, introduction, conclusion",
+    ],
+    correct: 1,
+    explanation: "Blog conventions: title, author name/date, first-person narration (je), and reader awareness — address the reader directly (e.g., 'Et vous, avez-vous déjà participé…?'). These are the four elements assessed by Criterion C for blogs.",
+  },
+  {
+    question: "A prompt about a school environmental project gives you three text type options. You know how to write an article well but the prompt specifies classmates as the audience. What is the best choice?",
+    options: [
+      "Always choose the article — you know it best",
+      "Choose the text type that best fits the audience and purpose, even if it means using a type you've practised less",
+      "Choose the speech (exposé) because it's always the right choice for school audiences",
+      "Choose whichever appears first in the list",
+    ],
+    correct: 1,
+    explanation: "Criterion C assesses whether your text type choice is appropriate to the context, purpose, and recipient. An article written for classmates could work — but an exposé (speech) or blog might fit the audience even better. The choice must be justified by the prompt's context, not by what you find easiest.",
+  },
+  {
+    question: "You are writing a proposal (proposition) for a city council. What is the required conclusion element?",
+    options: [
+      "A thank-you formula (Merci pour votre attention…)",
+      "A rhetorical question asking the council to reflect",
+      "A convincing conclusion or call to action / final recommendation",
+      "A summary of all arguments made",
+    ],
+    correct: 2,
+    explanation: "Proposals end with a convincing conclusion or clear recommendation — the call to action. 'C'est pourquoi je vous recommande vivement d'adopter cette mesure' or 'Je vous invite à approuver ce projet.' Without a clear recommendation, a proposal is structurally incomplete under Criterion C.",
+  },
 ];
 
 export default function Unit3Lesson1Page() {

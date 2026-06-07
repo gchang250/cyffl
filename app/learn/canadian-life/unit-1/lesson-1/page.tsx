@@ -99,6 +99,35 @@ const questions = [
     correct: 2,
     explanation: "'Tantôt' is context-dependent in Quebec French: 'Je l'ai vu tantôt' means 'I saw him earlier,' while 'Je te rappelle tantôt' means 'I'll call you back in a bit.' This ambiguity often surprises learners.",
   },
+  {
+    question: "What is a 'dépanneur' in Quebec?",
+    options: ["A repair shop", "A pharmacy", "A convenience store open late hours", "A fast food restaurant"],
+    correct: 2,
+    explanation: "A dépanneur is a Quebec convenience store — typically open late and selling groceries, drinks, and everyday items. The name comes from 'dépanner' (to fix a problem). In standard French you'd say 'épicerie de proximité'.",
+  },
+  {
+    question: "In Quebec French, what is the difference between 'chum' and 'blonde'?",
+    options: [
+      "Both mean friend — there is no difference",
+      "Chum = boyfriend, blonde = girlfriend",
+      "Chum = best friend, blonde = acquaintance",
+      "Both are used only for children",
+    ],
+    correct: 1,
+    explanation: "In Quebec French, 'chum' (or 'mon chum') = boyfriend, and 'blonde' (or 'ma blonde') = girlfriend. These meanings don't exist in standard French where 'blonde' just means a blonde-haired person.",
+  },
+  {
+    question: "What is the Quebec French term for 'weekend'?",
+    options: ["la fin de journée", "la semaine finale", "la fin de semaine", "le week-end"],
+    correct: 2,
+    explanation: "'La fin de semaine' is the standard Quebec French term for weekend. While 'le week-end' (borrowed from English) is understood and used in France, Quebec French officially prefers 'fin de semaine' — promoted by the OQLF.",
+  },
+  {
+    question: "What does 'stationnement' mean in Quebec French?",
+    options: ["A bus station", "A parking lot / parking space", "A train station", "A standing order"],
+    correct: 1,
+    explanation: "'Stationnement' = parking or parking lot. It's a key Quebec government term — you'll see it on signs, in notices, and on Quebec government websites. In France, 'stationnement' is used mainly in official/legal contexts, but 'parking' is common in everyday speech.",
+  },
 ];
 
 export default function Unit1Lesson1Page() {

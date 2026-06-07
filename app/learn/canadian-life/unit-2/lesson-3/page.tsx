@@ -104,6 +104,50 @@ const questions = [
     correct: 1,
     explanation: "NAS stands for 'Numéro d'assurance sociale' — the French equivalent of SIN (Social Insurance Number). This 9-digit number is your federal identifier required on all tax documents, employment forms, and benefit applications.",
   },
+  {
+    question: "What is a REER in French tax vocabulary?",
+    options: [
+      "Résumé d'emploi et revenus",
+      "Régime enregistré d'épargne-retraite — registered retirement savings plan (RRSP)",
+      "Régime d'emploi et de rentes",
+      "Relevé d'évaluation et de remboursement",
+    ],
+    correct: 1,
+    explanation: "REER = Régime enregistré d'épargne-retraite, the French equivalent of RRSP (Registered Retirement Savings Plan). Contributions to a REER reduce your taxable income. In Quebec, you'll see 'cotisation au REER' on your tax slip.",
+  },
+  {
+    question: "What is the difference between the CRA (ARC in French) and Revenu Québec?",
+    options: [
+      "They are the same agency",
+      "CRA handles federal taxes for all Canadians; Revenu Québec handles only Quebec provincial taxes",
+      "CRA handles only Quebec taxes; Revenu Québec handles federal taxes",
+      "Revenu Québec handles taxes for all provinces in eastern Canada",
+    ],
+    correct: 1,
+    explanation: "CRA (Agence du revenu du Canada) handles federal income taxes for all Canadians. Revenu Québec handles Quebec's provincial taxes. Residents of Quebec must file TWO tax returns: a federal T1 (with CRA) and a provincial TP-1 (with Revenu Québec).",
+  },
+  {
+    question: "On your pay stub, 'cotisations au RPC' refers to:",
+    options: [
+      "Contributions to the Quebec Pension Plan (QPP/RRQ)",
+      "Contributions to the Canada Pension Plan (CPP)",
+      "Deductions for employment insurance",
+      "Federal income tax deductions",
+    ],
+    correct: 1,
+    explanation: "RPC = Régime de pensions du Canada = Canada Pension Plan (CPP). Mandatory contributions are deducted from every paycheque. Note: Quebec residents contribute to the RRQ (Régime de rentes du Québec) instead of CPP.",
+  },
+  {
+    question: "You owe more tax than was withheld. In French, this is called:",
+    options: [
+      "un remboursement",
+      "un solde créditeur",
+      "un impôt à payer / un solde dû",
+      "une retenue à la source",
+    ],
+    correct: 2,
+    explanation: "When you owe money to the government at tax time, you have 'un impôt à payer' or 'un solde dû.' This is the opposite of 'un remboursement' (a refund). It occurs when insufficient tax was withheld from your income during the year.",
+  },
 ];
 
 export default function Unit2Lesson3Page() {

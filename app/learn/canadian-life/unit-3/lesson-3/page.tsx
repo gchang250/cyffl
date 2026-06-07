@@ -159,6 +159,50 @@ const questions = [
     correct: 1,
     explanation: "'Délai' is a false friend — it doesn't just mean delay. In professional French, 'délai' means deadline or timeframe: 'Quel est le délai?' = What is the deadline?",
   },
+  {
+    question: "How do you say 'I'm copying you on this email' in professional French?",
+    options: [
+      "Je te mets en copie de cet email.",
+      "Je vous mets en copie de ce courriel.",
+      "Je vous envoie une copie par la poste.",
+      "Je partage le courriel avec vous.",
+    ],
+    correct: 1,
+    explanation: "'Mettre en copie' = to copy someone on an email (CC). 'Je vous mets en copie de ce courriel' is the standard professional French phrase. In government and formal contexts, use 'courriel' not 'email'. The CC field is 'CC' or 'copie conforme' in French.",
+  },
+  {
+    question: "During a meeting, a colleague proposes an idea you strongly disagree with. Which response is most professional in French?",
+    options: [
+      "'Non, c'est une mauvaise idée.'",
+      "'Je ne suis pas du tout d'accord avec vous.'",
+      "'Je vois ce que vous voulez dire. Cela dit, ne serait-il pas possible de…?'",
+      "'Je préfère ne pas me prononcer là-dessus.'",
+    ],
+    correct: 2,
+    explanation: "'Je vois ce que vous voulez dire. Cela dit, ne serait-il pas possible de…?' acknowledges the colleague's point before introducing an alternative — the professional French way to disagree constructively. Using the conditional ('ne serait-il pas possible') softens the disagreement.",
+  },
+  {
+    question: "What does 'faire le point sur' mean in a workplace context?",
+    options: [
+      "To make a point aggressively in a meeting",
+      "To score a point in a debate",
+      "To take stock of / to review the current situation on something",
+      "To start a new project",
+    ],
+    correct: 2,
+    explanation: "'Faire le point sur' = to take stock of, to review where things stand. 'Nous allons faire le point sur l'avancement du projet.' = We're going to review where the project stands. Very common in meetings and status updates.",
+  },
+  {
+    question: "What is a 'compte rendu de réunion' and when is it circulated?",
+    options: [
+      "An agenda sent before a meeting",
+      "A meeting minutes document summarising what was discussed and decided, circulated after the meeting",
+      "A performance evaluation form completed annually",
+      "A project proposal document",
+    ],
+    correct: 1,
+    explanation: "Un compte rendu (or procès-verbal) de réunion = meeting minutes. It's written after the meeting and circulated to participants, recording: who attended, what was discussed, what decisions were made, and action items. 'Les points d'action' = action items.",
+  },
 ];
 
 export default function Unit3Lesson3Page() {

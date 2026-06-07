@@ -14,6 +14,11 @@ const flashcards = [
   { front: "s'organiser", back: "to organise oneself / to come together", subtext: "How groups form and structure themselves. Reflects the IB guiding principle directly." },
   { front: "le rôle de l'individu", back: "the role of the individual", subtext: "How one person fits into and contributes to a larger community or system. Directly from the IB guiding questions." },
   { front: "les inégalités sociales (f pl)", back: "social inequalities", subtext: "Gaps in access to education, work, and opportunity. Often the focus of Social Organisation Paper 2 reading texts." },
+  { front: "le bénévolat", back: "volunteering / voluntary work", subtext: "Unpaid work for the benefit of others or the community. 'Faire du bénévolat' = to volunteer. A key form of civic engagement and social participation." },
+  { front: "la citoyenneté", back: "citizenship", subtext: "Both legal status and active participation in civic life. 'La citoyenneté active' = engaged citizenship. Tied to rights, duties, and community." },
+  { front: "les droits et les devoirs", back: "rights and responsibilities", subtext: "The two sides of civic membership — what society owes individuals and what individuals owe society. Central to any rule-of-law discussion." },
+  { front: "la solidarité", back: "solidarity", subtext: "Standing together to support those in need. 'La solidarité sociale' = social solidarity. Common in texts about community, welfare, and inequality." },
+  { front: "le système éducatif", back: "the education system", subtext: "How schools, colleges, and universities are organised in a society. Education is an official Social Organisation sub-topic — expect texts on access, quality, and reform." },
 ];
 
 const matchPairs = [
@@ -65,6 +70,34 @@ const quiz = [
     options: ["Social media engagement", "Social inequalities", "Civic participation / social engagement", "Social relationships"],
     correct: 2,
     explanation: "L'engagement social = civic participation or social engagement — getting involved in community life, activism, volunteering, or civic processes.",
+  },
+  {
+    question: "A school launches a mandatory volunteer programme requiring students to contribute 20 hours per year to the community. Which Social Organisation question does this directly address?",
+    options: [
+      "What can we learn about a culture through its art?",
+      "What role do rules and regulations play in the formation of a society?",
+      "What challenges does globalisation bring?",
+      "How does our past shape our present?",
+    ],
+    correct: 1,
+    explanation: "'What role do rules and regulations play in the formation of a society?' — a mandatory programme is a rule or regulation, and the debate centres on whether such rules build better citizens or override individual freedom.",
+  },
+  {
+    question: "What does 'la solidarité sociale' mean and why is it a Social Organisation concept?",
+    options: [
+      "Social media — how technology connects people",
+      "Social solidarity — the practice of supporting vulnerable members of society collectively",
+      "Social status — the rank of individuals in a hierarchy",
+      "Social science — the academic study of society",
+    ],
+    correct: 1,
+    explanation: "La solidarité sociale = social solidarity — the idea that society functions by members supporting each other, especially in times of hardship. It underpins welfare systems, community work, and civic engagement.",
+  },
+  {
+    question: "A text compares access to higher education in different countries. Which Social Organisation sub-topic is this?",
+    options: ["Law and order", "The working world", "Education", "Social relationships"],
+    correct: 2,
+    explanation: "Education — specifically access to and quality of schooling at all levels — is an official Social Organisation sub-topic. Comparisons of education systems across countries are very common in Paper 2 texts.",
   },
 ];
 
@@ -121,6 +154,26 @@ export default function Unit1Lesson4Page() {
           <p className="mt-1 text-[#526173]">Click a card to flip it.</p>
           <div className="mt-6">
             <FlashCardDeck cards={flashcards} title="Social Organisation — key vocabulary" />
+          </div>
+        </section>
+
+        <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-6 shadow-sm">
+          <h2 className="text-xl font-black">Key phrases for discussing Social Organisation</h2>
+          <p className="mt-2 text-sm text-[#526173]">Use these in Paper 1 and the IO when writing or speaking about society, community, and civic life.</p>
+          <div className="mt-4 grid gap-3 sm:grid-cols-2">
+            {[
+              { fr: "Chaque citoyen a des droits et des devoirs.", en: "Every citizen has rights and responsibilities." },
+              { fr: "La solidarité sociale est le fondement d'une société juste.", en: "Social solidarity is the foundation of a just society." },
+              { fr: "Le bénévolat renforce le tissu social.", en: "Volunteering strengthens the social fabric." },
+              { fr: "Les inégalités sociales représentent un défi majeur.", en: "Social inequalities represent a major challenge." },
+              { fr: "Le rôle de l'individu dans la communauté est essentiel.", en: "The role of the individual in the community is essential." },
+              { fr: "Un système éducatif équitable garantit l'égalité des chances.", en: "A fair education system guarantees equal opportunity." },
+            ].map((p) => (
+              <div key={p.fr} className="rounded-xl border border-[#E7DAB9] bg-[#FFFDF7] p-3">
+                <p className="font-bold text-sm text-[#0B1F3A]">{p.fr}</p>
+                <p className="mt-1 text-xs text-[#526173]">{p.en}</p>
+              </div>
+            ))}
           </div>
         </section>
 

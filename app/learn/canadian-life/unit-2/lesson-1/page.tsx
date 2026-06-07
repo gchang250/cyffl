@@ -109,6 +109,50 @@ const questions = [
     correct: 0,
     explanation: "'Les antécédents médicaux' means medical history. You'll see this term on intake forms: 'Avez-vous des antécédents de diabète?' — Do you have a history of diabetes?",
   },
+  {
+    question: "How do you say 'I need to make a doctor's appointment' in French?",
+    options: [
+      "Je dois prendre une décision chez le médecin.",
+      "Je dois prendre un rendez-vous chez le médecin.",
+      "Je dois faire une demande chez le médecin.",
+      "Je dois trouver un horaire avec le médecin.",
+    ],
+    correct: 1,
+    explanation: "'Prendre un rendez-vous' = to make an appointment. It's the standard phrase in French. You 'prendre' (take) an appointment — not 'faire', not 'avoir'. 'J'ai pris un rendez-vous pour lundi.' = I made an appointment for Monday.",
+  },
+  {
+    question: "What does 'une ordonnance' mean and when do you need one?",
+    options: [
+      "An emergency room authorization",
+      "A prescription — a doctor's written authorization for medication",
+      "A hospital referral form",
+      "A health card renewal notice",
+    ],
+    correct: 1,
+    explanation: "'Une ordonnance' = a prescription. Your doctor gives you an ordonnance to take to the pharmacy ('la pharmacie') to get medication. Without an ordonnance, pharmacies can only dispense over-the-counter (en vente libre) products.",
+  },
+  {
+    question: "In Quebec, if you don't have a family doctor, where should you go for non-emergency care?",
+    options: [
+      "Directly to the hospital emergency room",
+      "A CLSC or a walk-in clinic (clinique sans rendez-vous)",
+      "A private insurance office",
+      "Telehealth is the only option",
+    ],
+    correct: 1,
+    explanation: "A CLSC or 'clinique sans rendez-vous' (walk-in clinic) handles non-emergency care when you don't have a médecin de famille. Emergency rooms (urgences) are for serious/urgent situations — using them for minor issues increases wait times for everyone.",
+  },
+  {
+    question: "What does 'être admis aux urgences' mean?",
+    options: [
+      "Being registered with a family doctor",
+      "Being accepted into a pharmacy program",
+      "Being admitted to the emergency room",
+      "Being approved for provincial health insurance",
+    ],
+    correct: 2,
+    explanation: "'Être admis aux urgences' = to be admitted to the emergency room. 'Les urgences' is the French term for the ER / A&E. Note: 'les urgences' is plural even when referring to a single department. 'J'ai été admis aux urgences hier soir.' = I was admitted to the ER last night.",
+  },
 ];
 
 export default function Unit2Lesson1Page() {

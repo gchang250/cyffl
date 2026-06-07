@@ -120,6 +120,24 @@ export default function Unit2Lesson1Page() {
           </div>
         </div>
 
+        <div className="mt-12 rounded-[2rem] border-2 border-[#FEF3C7] bg-white p-6">
+          <p className="text-xs font-bold uppercase tracking-widest text-[#D97706]">Common mistakes — -er verb conjugation</p>
+          <div className="mt-4 space-y-3 text-sm">
+            {[
+              { wrong: "elle dancez", right: "elle danse — -ez is only the vous ending. Il/elle uses -e." },
+              { wrong: "nous mangons", right: "nous mangeons — -ger verbs keep the -e to preserve the soft g: mangeons, nageons, voyageons." },
+              { wrong: "ils parlent-ent", right: "ils parlent — the stem is parl-, the ending is -ent. Don't add -ent twice." },
+              { wrong: "je ne parle pas le français", right: "je ne parle pas français — no article with languages after parler." },
+              { wrong: "tu habites à la Montréal", right: "tu habites à Montréal — no article before city names." },
+            ].map((m) => (
+              <div key={m.wrong} className="grid gap-1 rounded-xl border border-[#FDE68A] bg-[#FEFCE8] p-3">
+                <p className="text-[#B45309]">✗ {m.wrong}</p>
+                <p className="text-[#16A34A]">✓ {m.right}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
         <div className="mt-12">
           <FlashCardDeck cards={erVerbCards} title="Common -er verbs" />
         </div>

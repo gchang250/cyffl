@@ -14,6 +14,11 @@ const flashcards = [
   { front: "l'éthique (f)", back: "ethics", subtext: "Questions of right and wrong — in science, business, media, and environmental decisions." },
   { front: "le milieu urbain / rural", back: "urban / rural environment", subtext: "The differences between city and countryside life — access, opportunity, and community. An official sub-topic." },
   { front: "le développement durable", back: "sustainable development", subtext: "Meeting present needs without compromising future generations. A key concept in environmental discussion." },
+  { front: "le réchauffement climatique", back: "global warming", subtext: "The long-term rise in Earth's average temperature due to greenhouse gases. Arguably the defining Sharing the Planet issue — appears in nearly every exam." },
+  { front: "la biodiversité", back: "biodiversity", subtext: "The variety of life on Earth — species, ecosystems, and genetic diversity. Threats to biodiversity are a common Paper 2 reading text topic." },
+  { front: "les énergies renouvelables (f pl)", back: "renewable energy", subtext: "Solar, wind, and hydroelectric power — alternatives to fossil fuels. Central to sustainable development discussions and environmental policy texts." },
+  { front: "polluer", back: "to pollute", subtext: "To contaminate air, water, or land. 'Les usines polluent les rivières.' = Factories pollute the rivers. Related nouns: la pollution, le polluant." },
+  { front: "la surpopulation", back: "overpopulation", subtext: "Too many people for available resources. Often discussed alongside climate change, food security, and urban growth. Linked to urban/rural environment sub-topic." },
 ];
 
 const matchPairs = [
@@ -76,6 +81,34 @@ const quiz = [
     correct: 1,
     explanation: "L'éthique = ethics. In IB discussions it comes up around scientific research, environmental decisions, media responsibility, and social justice.",
   },
+  {
+    question: "A text argues that developed nations have a greater responsibility to fund climate action than developing nations. Which Sharing the Planet guiding question does this address?",
+    options: [
+      "What can we learn about a culture through its artistic expression?",
+      "What role do rules and regulations play in society?",
+      "What environmental and social issues present challenges, and how can they be overcome?",
+      "What is the individual's role in the community?",
+    ],
+    correct: 2,
+    explanation: "'What environmental and social issues present challenges, and how can these challenges be overcome?' — climate responsibility and funding are exactly the kind of challenge-and-solution debate this guiding question frames.",
+  },
+  {
+    question: "An article explains that half of known plant species are threatened due to deforestation. Which Sharing the Planet sub-topic is this?",
+    options: ["Human rights", "Peace and conflict", "Globalisation", "The environment"],
+    correct: 3,
+    explanation: "Threats to plant species from deforestation = biodiversity loss = an environmental issue. 'The environment' is the most direct sub-topic, and biodiversity is one of its core concepts.",
+  },
+  {
+    question: "What is 'le développement durable' and why is it an IB key concept?",
+    options: [
+      "Rapid industrial development — the cause of environmental problems",
+      "Sustainable development — meeting present needs without compromising future generations",
+      "Durable infrastructure — long-lasting buildings and transport",
+      "Cultural development — preserving traditions in a globalised world",
+    ],
+    correct: 1,
+    explanation: "Le développement durable = sustainable development — development that meets present needs without harming the ability of future generations to meet theirs. It is the central concept linking the environment, equality, and globalisation.",
+  },
 ];
 
 export default function Unit1Lesson5Page() {
@@ -131,6 +164,26 @@ export default function Unit1Lesson5Page() {
           <p className="mt-1 text-[#526173]">Click a card to flip it. This theme generates the most Individual Oral images.</p>
           <div className="mt-6">
             <FlashCardDeck cards={flashcards} title="Sharing the Planet — key vocabulary" />
+          </div>
+        </section>
+
+        <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-6 shadow-sm">
+          <h2 className="text-xl font-black">Key phrases for writing about Sharing the Planet</h2>
+          <p className="mt-2 text-sm text-[#526173]">Use these in Paper 1 essays and the Individual Oral when addressing environmental or global issues.</p>
+          <div className="mt-4 grid gap-3 sm:grid-cols-2">
+            {[
+              { fr: "Le réchauffement climatique menace l'avenir de notre planète.", en: "Global warming threatens the future of our planet." },
+              { fr: "Il est urgent d'agir pour protéger la biodiversité.", en: "It is urgent to act to protect biodiversity." },
+              { fr: "Les énergies renouvelables sont la clé d'un avenir durable.", en: "Renewable energy is the key to a sustainable future." },
+              { fr: "La mondialisation crée à la fois des opportunités et des inégalités.", en: "Globalisation creates both opportunities and inequalities." },
+              { fr: "Chacun d'entre nous a un rôle à jouer dans la protection de l'environnement.", en: "Each one of us has a role to play in protecting the environment." },
+              { fr: "Les droits de l'homme doivent être respectés partout dans le monde.", en: "Human rights must be respected everywhere in the world." },
+            ].map((p) => (
+              <div key={p.fr} className="rounded-xl border border-[#E7DAB9] bg-[#FFFDF7] p-3">
+                <p className="font-bold text-sm text-[#0B1F3A]">{p.fr}</p>
+                <p className="mt-1 text-xs text-[#526173]">{p.en}</p>
+              </div>
+            ))}
           </div>
         </section>
 

@@ -121,6 +121,39 @@ const quiz = [
     correct: 1,
     explanation: "Go back to the text and identify the noun that 'lui' replaces. Copy it exactly as it appears in the text. Pronouns always refer to a specific previously mentioned noun — find it.",
   },
+  {
+    question: "A question says 'Choisissez les TROIS affirmations vraies parmi les six suivantes.' You find three clearly true statements but a fourth is also plausible. What do you do?",
+    options: [
+      "Write all four — you might get partial credit",
+      "Return to the text to verify each one, then commit to exactly three",
+      "Pick the three longest statements",
+      "Leave one blank if you're not sure",
+    ],
+    correct: 1,
+    explanation: "Return to the text and verify each candidate statement word-by-word. If you write four when three are asked for, only the first three you wrote are marked — order matters. Verify carefully, then commit to exactly the number asked.",
+  },
+  {
+    question: "A 'Complétez les phrases' question gives you the stem 'L'auteur affirme que les réseaux sociaux…'. You must complete it. What is the rule?",
+    options: [
+      "Paraphrase the text using your own words",
+      "Use words from the text exactly as they appear — do not paraphrase",
+      "Complete the sentence with your own opinion",
+      "Translate the relevant part of the text into English",
+    ],
+    correct: 1,
+    explanation: "For sentence completion questions, copy the exact words from the text — do not paraphrase. The instruction 'utilisez les mots tels qu'ils apparaissent dans le texte' applies to most completion question types. Paraphrasing can introduce errors and loses marks.",
+  },
+  {
+    question: "After finishing all the questions for a reading text, what should you do with the 3 minutes remaining before moving to the next text?",
+    options: [
+      "Wait quietly for the next section",
+      "Review your answers for the current text — check any you were uncertain about",
+      "Begin reading the next text ahead of time",
+      "Rest — you've earned it",
+    ],
+    correct: 1,
+    explanation: "Use any remaining time to review uncertain answers in the current text. Check them against the text again — it's faster than reading the next text without the questions in mind. Don't leave answers blank if you have time to revisit them.",
+  },
 ];
 
 export default function Unit2Lesson1Page() {

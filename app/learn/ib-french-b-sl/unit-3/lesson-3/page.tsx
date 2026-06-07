@@ -56,6 +56,39 @@ const quiz = [
     correct: 1,
     explanation: "Par conséquent / C'est pourquoi signals cause and effect: 'they spend too much time on social media — therefore, their concentration decreases.'",
   },
+  {
+    question: "Which phrase is most effective for introducing your personal opinion in a formal Paper 1 text?",
+    options: [
+      "Je pense que…",
+      "À mon humble avis…",
+      "Je suis d'avis que… / Il me semble que… / Il est évident que…",
+      "Selon moi je crois que…",
+    ],
+    correct: 2,
+    explanation: "'Je suis d'avis que' (I am of the view that) is more formal than 'je pense que.' 'Il me semble que' (it seems to me that) signals a measured opinion. 'Il est évident que' (it is clear that) is used when presenting what you frame as an obvious fact. Use register-appropriate opinion markers.",
+  },
+  {
+    question: "You want to concede a counterargument while maintaining your position. Which structure works best?",
+    options: [
+      "'Je suis totalement d'accord avec l'argument opposé.'",
+      "'Certes, [counterargument], mais/cependant, [your position].'",
+      "'L'argument contraire n'existe pas.'",
+      "'Je ne considère pas les arguments opposés.'",
+    ],
+    correct: 1,
+    explanation: "'Certes… mais / cependant' is the classic concession-and-counter structure. It shows intellectual honesty (you acknowledge the other side) while maintaining your thesis. Examiners reward nuance. Example: 'Certes, les réseaux sociaux facilitent la communication, mais ils réduisent aussi les contacts réels.'",
+  },
+  {
+    question: "Which connecting phrase best introduces a specific example to support your argument?",
+    options: [
+      "En conclusion…",
+      "D'une part…",
+      "C'est notamment le cas de… / On peut citer l'exemple de… / Par exemple, en France…",
+      "Il est important que…",
+    ],
+    correct: 2,
+    explanation: "'C'est notamment le cas de…' (This is notably the case for…), 'On peut citer l'exemple de…' (One can cite the example of…), and 'Par exemple, en [country]…' are high-scoring example introduction phrases. They show linguistic range and support your argument with evidence.",
+  },
 ];
 
 export default function Unit3Lesson3Page() {

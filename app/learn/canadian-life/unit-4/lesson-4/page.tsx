@@ -169,6 +169,50 @@ const questions = [
     correct: 1,
     explanation: "In Quebec, the 'syndicat étudiant' is a powerful student advocacy body with collective bargaining-style power. It can negotiate with institutions and organize strikes. It differs from the 'association étudiante', which is more social and faculty-specific.",
   },
+  {
+    question: "What is a 'séance de tutorat' in a university context?",
+    options: [
+      "A mandatory lecture with the full class",
+      "A paid part-time teaching position",
+      "A tutoring session — one-on-one or small group academic support",
+      "A formal academic assessment",
+    ],
+    correct: 2,
+    explanation: "'Le tutorat' = tutoring / academic peer support. Many Quebec universities offer free séances de tutorat where senior students help juniors with course material. Look for 'service de tutorat par les pairs' on your university's website.",
+  },
+  {
+    question: "What does 'charge de cours' mean at a Quebec university?",
+    options: [
+      "The cost of tuition per course",
+      "A contract lecturer / course instructor (not a tenure-track professor)",
+      "The number of credits in a course",
+      "A student grader who marks assignments",
+    ],
+    correct: 1,
+    explanation: "'Chargé(e) de cours' = course instructor / contract lecturer — someone hired on a per-course basis, distinct from a 'professeur' (tenure-track). Many university courses are taught by chargés de cours, especially at the undergraduate level. The distinction matters if you seek research supervision.",
+  },
+  {
+    question: "In Quebec student culture, what is 'le bar étudiant'?",
+    options: [
+      "A student law clinic",
+      "A campus pub / student bar run by student associations",
+      "A study area with coffee",
+      "An outdoor campus gathering space",
+    ],
+    correct: 1,
+    explanation: "'Le bar étudiant' is a campus pub typically run by the student association — a social space for students. Quebec universities and cégeps often have well-known bars étudians that serve as hubs for student life. They're legally operated and serve alcohol at subsidized prices.",
+  },
+  {
+    question: "What does 'travail de session' mean in French-language academic contexts?",
+    options: [
+      "Part-time work during the semester",
+      "A mid-term exam",
+      "A major written assignment or project due at the end of the semester",
+      "A laboratory practical session",
+    ],
+    correct: 2,
+    explanation: "'Un travail de session' = a semester paper / major assignment — a research paper, project, or report that is a significant portion of a course grade, typically due at the end of the semester. It differs from 'un examen final' (a final exam) and 'un devoir' (a homework assignment).",
+  },
 ];
 
 export default function Unit4Lesson4Page() {

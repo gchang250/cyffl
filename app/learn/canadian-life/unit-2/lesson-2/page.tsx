@@ -109,6 +109,50 @@ const questions = [
     correct: 1,
     explanation: "'Ci-joint' means 'enclosed' or 'attached.' It's used in formal correspondence: 'Veuillez trouver ci-joint...' = 'Please find enclosed...' You'll see it in both government forms and professional emails.",
   },
+  {
+    question: "On a government form, 'Renseignements obligatoires' means:",
+    options: [
+      "Optional information",
+      "Information for official use only",
+      "Required information — must be completed",
+      "Information about your rights",
+    ],
+    correct: 2,
+    explanation: "'Renseignements obligatoires' = required information. These fields must be completed for your application to be processed. Leaving obligatory fields blank typically results in the form being returned or rejected.",
+  },
+  {
+    question: "You receive a letter confirming receipt of your application. In French, this acknowledgment is called:",
+    options: [
+      "une décision favorable",
+      "une confirmation de dossier",
+      "un accusé de réception",
+      "une mise en demeure",
+    ],
+    correct: 2,
+    explanation: "'Un accusé de réception' is an acknowledgment of receipt — a formal confirmation that your application or correspondence has been received. It is not a decision on your application; it just confirms it was received.",
+  },
+  {
+    question: "A form has a field labelled 'Date d'entrée en vigueur.' What should you write there?",
+    options: [
+      "The date you filled out the form",
+      "The date you were born",
+      "The effective date when the provision, benefit, or change takes effect",
+      "The deadline for submitting the form",
+    ],
+    correct: 2,
+    explanation: "'Date d'entrée en vigueur' = effective date — the date from which something becomes valid or active. For example, an insurance policy has an 'entrée en vigueur' date when coverage begins.",
+  },
+  {
+    question: "How would you say 'Please fill in this form in capital letters' in French?",
+    options: [
+      "Veuillez remplir ce formulaire en lettres minuscules.",
+      "Veuillez remplir ce formulaire en lettres majuscules.",
+      "Veuillez compléter ce formulaire en français seulement.",
+      "Remplissez ce formulaire avec votre prénom seulement.",
+    ],
+    correct: 1,
+    explanation: "'En lettres majuscules' = in capital letters. 'En lettres minuscules' = in lowercase. Government forms almost always specify 'en lettres majuscules' or 'en caractères d'imprimerie' (in print) to ensure legibility.",
+  },
 ];
 
 export default function Unit2Lesson2Page() {

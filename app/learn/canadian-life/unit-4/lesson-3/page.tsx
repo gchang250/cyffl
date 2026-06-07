@@ -159,6 +159,50 @@ const questions = [
     correct: 2,
     explanation: "'Pièces justificatives' are the supporting documents required with your application — such as transcripts, proof of enrolment, income statements, or reference letters.",
   },
+  {
+    question: "What does 'bourses d'excellence' mean and how do they typically differ from 'bourses de besoins'?",
+    options: [
+      "They are identical — both are merit-based scholarships",
+      "'Bourses d'excellence' are awarded for academic merit; 'bourses de besoins' are awarded based on financial need",
+      "'Bourses d'excellence' are only for graduate students; 'bourses de besoins' are only for undergraduates",
+      "'Bourses de besoins' require a higher GPA than 'bourses d'excellence'",
+    ],
+    correct: 1,
+    explanation: "'Bourses d'excellence' = merit-based scholarships, awarded for high academic performance. 'Bourses de besoins' (or 'bourses d'aide financière') = need-based awards, based on financial situation. Many scholarships combine both criteria: 'bourses mixtes' require both good grades and demonstrated financial need.",
+  },
+  {
+    question: "What is the AFE (Aide financière aux études) in Quebec?",
+    options: [
+      "A private scholarship foundation",
+      "The Quebec government program providing loans and bursaries to full-time students",
+      "A federal program for first-generation university students",
+      "A work-study program at Quebec universities",
+    ],
+    correct: 1,
+    explanation: "The AFE (Aide financière aux études) is Quebec's provincial financial aid program. It provides a mix of loans (prêts) and bursaries (bourses) to eligible full-time students based on financial need. Students apply annually through the AFE portal on the Ministère de l'Éducation website.",
+  },
+  {
+    question: "What does 'renouvelable' mean for a scholarship, and what condition is usually attached?",
+    options: [
+      "The scholarship can be transferred to another student",
+      "The scholarship is paid in one lump sum",
+      "The scholarship can be received again in subsequent years, usually conditional on maintaining a minimum GPA",
+      "The scholarship covers renewable energy programs only",
+    ],
+    correct: 2,
+    explanation: "'Renouvelable' = renewable — the scholarship can be awarded again the following year(s), typically subject to maintaining a minimum average (e.g., 3.0/4.3 or 80%). 'Non renouvelable' means it is awarded once only. Always check if your scholarship is renewable when applying.",
+  },
+  {
+    question: "What is a 'lettre de référence' and when is it typically required?",
+    options: [
+      "A letter proving you are enrolled in a Canadian institution",
+      "A letter from a professor, employer, or supervisor recommending you for an award or program",
+      "A letter confirming your financial need",
+      "A government letter confirming your immigration status",
+    ],
+    correct: 1,
+    explanation: "Une lettre de référence = a reference / recommendation letter. It is written by a professor, employer, or mentor attesting to your abilities and character. Required for competitive scholarships (like the FRQSC or Vanier), graduate school applications, and many merit-based awards.",
+  },
 ];
 
 export default function Unit4Lesson3Page() {

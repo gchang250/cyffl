@@ -76,6 +76,34 @@ const quiz = [
     correct: 1,
     explanation: "'La politique dont il est question' = the policy in question / the policy referred to. 'Dont' replaces 'de + noun' and 'il est question de quelque chose' uses 'de'. This is a standard government phrase — 'la politique dont il est question demeure en vigueur' = the policy in question remains in force.",
   },
+  {
+    question: "Error identification: 'Les employés qui ont participé à la réunion a exprimé leurs préoccupations.' What is wrong?",
+    options: [
+      "Participé should be participés to agree with les employés",
+      "The verb 'a exprimé' should be 'ont exprimé' to agree with the subject 'les employés'",
+      "Réunion should be preceded by à la, not à la",
+      "Préoccupations should be masculine",
+    ],
+    correct: 1,
+    explanation: "'Les employés… ont exprimé' — the subject is 'les employés' (plural), so the verb must be 'ont' (plural), not 'a' (singular). The relative clause 'qui ont participé à la réunion' is not the subject — it's a modifier. This verb agreement error is a classic SLE writing test trap.",
+  },
+  {
+    question: "Choose the phrase that correctly completes: 'Le projet a été approuvé _____ aux restrictions budgétaires.' (despite / notwithstanding)",
+    options: ["grâce à", "en dépit de", "à la suite de", "conformément à"],
+    correct: 1,
+    explanation: "'En dépit de' = despite / notwithstanding. 'Le projet a été approuvé en dépit des restrictions budgétaires' = the project was approved despite budget constraints. 'Grâce à' = thanks to (positive), 'à la suite de' = following, 'conformément à' = in accordance with.",
+  },
+  {
+    question: "In the SLE written expression test, what does the 'error identification' section ask you to do?",
+    options: [
+      "Write a correction for every error you find in a text",
+      "Choose from multiple options which sentence contains an error, or identify the error type",
+      "Rewrite a paragraph without errors",
+      "Identify whether a text is formal or informal",
+    ],
+    correct: 1,
+    explanation: "The SLE written expression error identification section presents sentences with potential errors and asks you to identify the error — or confirm there is none. It tests grammar accuracy including agreement, tense, relative pronouns, and prepositions at levels A, B, and C.",
+  },
 ];
 
 export default function SLELesson3Page() {
