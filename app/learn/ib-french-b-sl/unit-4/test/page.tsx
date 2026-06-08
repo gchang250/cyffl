@@ -85,7 +85,7 @@ export default function Unit4TestPage() {
         </section>
 
         <div className="mt-12 rounded-[2rem] bg-[#0B1F3A] p-8 text-white shadow-sm">
-          <p className="text-sm font-bold text-[#C9A44C] uppercase tracking-widest">Course complete!</p>
+
           <h2 className="mt-3 text-3xl font-black">You've finished IB French B SL.</h2>
           <p className="mt-3 leading-7 text-white/70">
             You've covered all five themes, Paper 2 receptive skills, Paper 1 written production, and the Individual Oral. Keep practising with authentic French content and you'll be exam-ready.

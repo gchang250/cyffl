@@ -161,7 +161,7 @@ export default function Unit5Lesson4Page() {
         </div>
 
         <div className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
-          <p className="font-black text-lg text-[#16A34A]">Unit 5 complete!</p>
+
           <p className="mt-2 text-[#526173]">You&apos;ve covered connectors, writing about yourself, past narratives, and the future tense. Take the test to confirm your mastery before moving on to Unit 6.</p>
           <div className="mt-5 flex flex-wrap gap-3">
             <Link href="/learn/school-french-support/unit-5/lesson-3" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">← Lesson 3</Link>

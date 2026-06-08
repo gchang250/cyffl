@@ -137,7 +137,7 @@ export default function Unit2Lesson4Page() {
         </div>
 
         <div className="mt-12 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
-          <p className="font-black text-lg">Unit 2 complete!</p>
+
           <p className="mt-2 text-[#526173]">You've covered all three regular verb families and the six most important irregular verbs in French. Take the unit test to prove you've got it all.</p>
           <div className="mt-5 flex flex-wrap gap-3">
             <Link href="/learn/school-french-support/unit-2/test" className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Take Unit 2 Test →</Link>

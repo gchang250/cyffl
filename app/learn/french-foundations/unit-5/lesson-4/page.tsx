@@ -169,7 +169,7 @@ export default function Unit5Lesson4Page() {
         </div>
 
         <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
-          <p className="text-sm font-bold uppercase tracking-widest text-[#C9A44C]">Unit 5 complete!</p>
+
           <h2 className="mt-3 text-3xl font-black">You can navigate daily life in French.</h2>
           <p className="mt-3 leading-7 text-[#526173]">
             You know food vocabulary, school subjects, how to tell the time, and how to talk about going places. Test yourself before moving on to Unit 6.

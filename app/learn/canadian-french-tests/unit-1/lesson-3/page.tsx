@@ -180,7 +180,6 @@ export default function SLELesson3Page() {
         </section>
 
         <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
-          <p className="text-sm font-bold uppercase tracking-widest text-[#D97706]">Done!</p>
           <h2 className="mt-3 text-3xl font-black">Written Expression understood.</h2>
           <p className="mt-3 leading-7 text-[#526173]">
             Next: the SLE reading test — comprehending government documents under time pressure.

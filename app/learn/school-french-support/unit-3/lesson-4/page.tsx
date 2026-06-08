@@ -188,7 +188,7 @@ export default function Unit3Lesson4Page() {
         </div>
 
         <div className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
-          <p className="font-black text-lg">Unit 3 complete!</p>
+
           <p className="mt-2 text-[#526173]">You've covered passé composé with avoir and être, irregular past participles, and negation with time expressions. Test yourself before moving on to Unit 4.</p>
           <div className="mt-5 flex flex-wrap gap-3">
             <Link href="/learn/school-french-support/unit-3/test" className="rounded-full bg-[#7C3AED] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#6D28D9]">Take the unit test →</Link>

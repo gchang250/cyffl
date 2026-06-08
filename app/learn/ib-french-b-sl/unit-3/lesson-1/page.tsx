@@ -304,7 +304,6 @@ export default function Unit3Lesson1Page() {
         </section>
 
         <section className="mt-8 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
-          <p className="text-sm font-bold uppercase tracking-widest text-[#C9A44C]">Done!</p>
           <h2 className="mt-3 text-3xl font-black">Text types and conventions covered.</h2>
           <p className="mt-3 leading-7 text-[#526173]">
             Next: register and audience — how to keep your tone consistent throughout.

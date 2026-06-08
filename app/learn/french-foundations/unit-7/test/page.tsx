@@ -79,7 +79,7 @@ export default function Unit7TestPage() {
         </section>
         <section className="mt-16 overflow-hidden rounded-[2rem] bg-[#0B1F3A] p-8 text-white shadow-sm md:p-12">
           <div className="text-4xl">🎓</div>
-          <p className="mt-4 text-sm font-bold uppercase tracking-widest text-[#C9A44C]">Course complete!</p>
+
           <h2 className="mt-3 text-3xl font-black md:text-4xl">You finished French Foundations.</h2>
           <p className="mt-4 max-w-2xl leading-7 text-white/70">
             Seven units, twenty-seven lessons, and seven unit tests. You have gone from zero to greetings, building sentences, everyday vocabulary, past tense, and the most important irregular verbs — all in French. That is genuinely impressive.

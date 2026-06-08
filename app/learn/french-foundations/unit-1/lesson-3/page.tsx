@@ -204,9 +204,7 @@ export default function Lesson3Page() {
 
         {/* Done */}
         <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
-          <p className="text-sm font-bold uppercase tracking-widest text-[#C9A44C]">
-            Unit 1 complete!
-          </p>
+          
           <h2 className="mt-3 text-3xl font-black">
             You can greet, introduce yourself, and check in, all in French.
           </h2>

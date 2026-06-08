@@ -200,7 +200,6 @@ PSC self-assessment tests (official) ↗
         </section>
 
         <section className="mt-8 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
-          <p className="text-sm font-bold uppercase tracking-widest text-[#D97706]">Done!</p>
           <h2 className="mt-3 text-3xl font-black">Reading strategies ready.</h2>
           <p className="mt-3 leading-7 text-[#526173]">
             Next: the oral interaction test — what it looks like and the phrases that work.

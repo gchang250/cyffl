@@ -198,7 +198,7 @@ export default function Unit4Lesson4Page() {
         </div>
 
         <div className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
-          <p className="font-black text-lg">Unit 4 complete!</p>
+
           <p className="mt-2 text-[#526173]">You've mastered imparfait formation and uses, the contrast with passé composé, and storytelling in French. Test yourself before moving on!</p>
           <div className="mt-5 flex flex-wrap gap-3">
             <Link href="/learn/school-french-support/unit-4/test" className="rounded-full bg-[#9D174D] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#831843]">Take the unit test →</Link>

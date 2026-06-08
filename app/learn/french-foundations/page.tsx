@@ -166,9 +166,6 @@ export default function FrenchFoundationsPage() {
                       href={lesson.href}
                       className="flex items-center gap-3 rounded-2xl bg-[#FFFDF7] px-4 py-3 text-sm font-bold transition hover:-translate-y-0.5 hover:bg-white hover:shadow-sm"
                     >
-                      <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#E7DAB9] text-xs font-black text-[#526173]">
-                        {li + 1}
-                      </span>
                       {lesson.title}
                       <span className="ml-auto text-xs font-normal text-[#526173]">→</span>
                     </Link>
@@ -176,13 +173,10 @@ export default function FrenchFoundationsPage() {
 
                   <Link
                     href={unit.testHref}
-                    className="flex items-center gap-3 rounded-2xl border border-[#E7DAB9] bg-white px-4 py-3 text-sm font-bold text-[#526173] transition hover:-translate-y-0.5 hover:shadow-sm"
+                    className="flex items-center justify-between rounded-2xl border border-[#E7DAB9] bg-white px-4 py-3 text-sm font-bold text-[#526173] transition hover:border-[#0B1F3A] hover:text-[#0B1F3A]"
                   >
-                    <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#0B1F3A] text-xs font-black text-white">
-                      ★
-                    </span>
                     Unit Test
-                    <span className="ml-auto text-xs font-normal text-[#526173]">→</span>
+                    <span className="text-xs font-normal">→</span>
                   </Link>
                 </div>
               </div>

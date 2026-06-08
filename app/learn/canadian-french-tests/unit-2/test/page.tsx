@@ -155,7 +155,7 @@ export default function TEFTestPage() {
         </div>
 
         <div className="mt-6 rounded-[2rem] bg-[#0B1F3A] p-8 text-white shadow-sm">
-          <p className="text-sm font-bold text-[#C9A44C] uppercase tracking-widest">Course complete!</p>
+
           <h2 className="mt-3 text-3xl font-black">You&apos;ve finished French for Canadian Tests.</h2>
           <p className="mt-3 leading-7 text-white/70">
             You&apos;ve built government vocabulary, formal grammar, SLE written expression and reading skills, TEF Canada writing and speaking strategies, and listening comprehension techniques. Keep practising with authentic French.

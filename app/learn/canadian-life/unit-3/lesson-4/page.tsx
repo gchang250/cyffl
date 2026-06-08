@@ -285,7 +285,7 @@ export default function Unit3Lesson4Page() {
         </div>
 
         <div className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
-          <p className="text-lg font-black text-[#16A34A]">Unit 3 complete!</p>
+
           <p className="mt-2 text-[#526173]">You can now read job postings, write a French CV and cover letter, navigate workplace communication, and handle a French job interview. Put it all together in the unit test.</p>
           <div className="mt-5 flex flex-wrap gap-3">
             <Link href="/learn/canadian-life/unit-3/lesson-3" className="rounded-full border border-[#E7DAB9] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">← Lesson 3</Link>

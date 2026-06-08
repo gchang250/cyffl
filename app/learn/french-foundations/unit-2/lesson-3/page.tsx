@@ -243,7 +243,6 @@ export default function Unit2Lesson3Page() {
         </section>
 
         <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
-          <p className="text-sm font-bold uppercase tracking-widest text-[#C9A44C]">Done!</p>
           <h2 className="mt-3 text-3xl font-black">
             You know both key French verbs, être and avoir.
           </h2>

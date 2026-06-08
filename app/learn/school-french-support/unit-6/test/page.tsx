@@ -94,7 +94,7 @@ export default function Unit6TestPage() {
         </div>
 
         <div className="mt-12 rounded-2xl bg-[#0B1F3A] p-8 text-white">
-          <p className="font-black text-2xl">Course complete!</p>
+
           <p className="mt-3 leading-7 text-[#CBD5E1]">
             You&apos;ve finished School French Support. You now have a strong foundation in grammar, tenses, writing, and reading — everything you need for school French.
           </p>

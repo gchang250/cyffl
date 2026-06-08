@@ -213,7 +213,7 @@ export default function Unit1Lesson4Page() {
         </div>
 
         <div className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
-          <p className="text-lg font-black">Unit 1 complete!</p>
+
           <p className="mt-2 text-[#526173]">You've covered Quebec vocabulary, expressions, reading Quebec French in context, and French communities across Canada. Test yourself before moving on.</p>
           <div className="mt-5 flex flex-wrap gap-3">
             <Link href="/learn/canadian-life/unit-1/lesson-3" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">← Back to lesson</Link>

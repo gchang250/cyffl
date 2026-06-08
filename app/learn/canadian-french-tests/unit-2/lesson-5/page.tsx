@@ -218,7 +218,7 @@ export default function TEFLesson5Page() {
         </section>
 
         <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
-          <p className="text-sm font-bold uppercase tracking-widest text-[#2563EB]">Unit 2 complete!</p>
+
           <h2 className="mt-3 text-3xl font-black">TEF Canada French done.</h2>
           <p className="mt-3 leading-7 text-[#526173]">
             Take the Unit 2 test to consolidate everything — topic vocabulary, writing, listening, and oral strategies.

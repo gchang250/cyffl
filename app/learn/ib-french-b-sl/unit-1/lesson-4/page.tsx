@@ -194,7 +194,6 @@ export default function Unit1Lesson4Page() {
         </section>
 
         <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
-          <p className="text-sm font-bold uppercase tracking-widest text-[#C9A44C]">Done!</p>
           <h2 className="mt-3 text-3xl font-black">Theme 4 covered.</h2>
           <p className="mt-3 leading-7 text-[#526173]">
             One more: Sharing the Planet — environment, rights, conflict, and globalisation.

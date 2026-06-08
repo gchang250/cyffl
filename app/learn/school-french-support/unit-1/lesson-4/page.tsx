@@ -139,7 +139,7 @@ export default function Unit1Lesson4Page() {
         </div>
 
         <div className="mt-12 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
-          <p className="font-black text-lg">Unit 1 complete!</p>
+
           <p className="mt-2 text-[#526173]">You've covered articles, adjective agreement, prepositions, and the two most important irregular verbs. Now put it all together in the unit test.</p>
           <div className="mt-5 flex flex-wrap gap-3">
             <Link href="/learn/school-french-support/unit-1/test" className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Take Unit 1 Test →</Link>

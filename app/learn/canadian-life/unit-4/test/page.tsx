@@ -154,7 +154,7 @@ export default function Unit4TestPage() {
         </div>
 
         <div className="mt-12 rounded-[2rem] bg-[#0B1F3A] p-8 text-white">
-          <p className="text-lg font-black text-[#A78BFA]">Course complete!</p>
+
           <p className="mt-2 leading-7 text-[#CBD5E1]">
             You can navigate French in Canadian life — from Quebec expressions to government forms, bilingual workplaces, and university in French Canada. Take what you've learned and use it in the real world.
           </p>

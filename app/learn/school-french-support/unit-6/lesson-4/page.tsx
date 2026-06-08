@@ -186,7 +186,7 @@ export default function Unit6Lesson4Page() {
         </div>
 
         <div className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
-          <p className="font-black text-lg text-[#854D0E]">Unit 6 complete!</p>
+
           <p className="mt-2 text-[#526173]">You&apos;ve read and analysed French texts at three levels — from beginner daily-life texts to upper-intermediate opinion pieces. Take the test to complete Unit 6.</p>
           <div className="mt-5 flex flex-wrap gap-3">
             <Link href="/learn/school-french-support/unit-6/lesson-3" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">← Lesson 3</Link>
