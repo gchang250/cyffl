@@ -49,7 +49,7 @@ const weeklyWords = [
   { word: "la perspicacité", pos: "n.f.", meaning: "insight, perspicacity", example: "Sa perspicacité lui permet de saisir les nuances rapidement." },
   { word: "vraisemblable", pos: "adj.", meaning: "likely, plausible", example: "Il est vraisemblable qu'il réussira ses examens." },
   { word: "la bienveillance", pos: "n.f.", meaning: "benevolence, kindness", example: "Agir avec bienveillance envers les autres est essentiel." },
-  { word: "incontournable", pos: "adj.", meaning: "essential, unavoidable", example: "C'est un ouvrage incontournable de la littérature française." },
+  { word: "l'acuité", pos: "n.f.", meaning: "sharpness, acuity — of mind or perception", example: "L'acuité de son analyse a impressionné l'ensemble de l'équipe." },
   { word: "s'épanouir", pos: "v.", meaning: "to flourish, to thrive", example: "Elle s'épanouit dans son nouvel environnement." },
   { word: "irréfutable", pos: "adj.", meaning: "irrefutable, undeniable", example: "Les preuves présentées sont irréfutables." },
   { word: "la résilience", pos: "n.f.", meaning: "resilience", example: "La résilience est la capacité de surmonter les épreuves." },
@@ -70,7 +70,7 @@ const weeklyExpressions = [
   { expression: "Appeler un chat un chat", meaning: "To call a spade a spade" },
   { expression: "Poser un lapin à quelqu'un", meaning: "To stand someone up" },
   { expression: "Noyer le poisson", meaning: "To dodge the issue" },
-  { expression: "Revenons à nos moutons", meaning: "Let's get back on topic" },
+  { expression: "Casser du sucre sur le dos de quelqu'un", meaning: "To badmouth someone behind their back" },
   { expression: "Se noyer dans un verre d'eau", meaning: "To make a mountain out of a molehill" },
   { expression: "Avoir le beurre et l'argent du beurre", meaning: "To have your cake and eat it too" },
   { expression: "Force est de constater", meaning: "One cannot help but notice" },
@@ -92,59 +92,50 @@ export default function HomePage() {
 
       {/* Hero */}
       <section className="border-b border-[#E7DAB9]">
+        <div className="mx-auto max-w-7xl px-6 py-16 md:py-24">
+          <p className="text-sm font-semibold text-[#526173]">
+            Youth-led · Free · Students in Canada
+          </p>
+          <h1 className="mt-6 max-w-2xl text-6xl font-black leading-[0.92] tracking-tight md:text-7xl lg:text-8xl">
+            French built<br />for Canadian<br />life.
+          </h1>
+          <p className="mt-7 max-w-lg text-lg leading-8 text-[#526173]">
+            Quebec expressions, government forms, bilingual job postings, university applications — the French no app teaches you. Free, made by Canadian youth.
+          </p>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <Link
+              href="/learn/canadian-life"
+              className="rounded-full bg-[#D62828] px-7 py-3 text-sm font-black text-white transition hover:bg-[#B91C1C]"
+            >
+              French for Canadian Life
+            </Link>
+            <Link
+              href="/learn"
+              className="rounded-full border border-[#0B1F3A] px-7 py-3 text-sm font-black text-[#0B1F3A] transition hover:bg-[#0B1F3A] hover:text-white"
+            >
+              All courses
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Word / Expression strip */}
+      <section className="border-b border-[#E7DAB9]">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="grid md:grid-cols-[1.3fr_0.7fr] md:divide-x md:divide-[#E7DAB9]">
-
-            {/* Left: headline + CTAs */}
-            <div className="py-16 md:pr-16">
-              <p className="text-sm font-semibold text-[#526173]">
-                Youth-led · Free · Students in Canada
-              </p>
-
-              <h1 className="mt-6 text-6xl font-black leading-[0.92] tracking-tight md:text-7xl lg:text-8xl">
-                French built<br />for Canadian<br />life.
-              </h1>
-
-              <p className="mt-7 max-w-lg text-lg leading-8 text-[#526173]">
-                Quebec expressions, government forms, bilingual job postings, university applications — the French no app teaches you. Free, made by Canadian youth.
-              </p>
-
-              <div className="mt-8 flex flex-wrap gap-3">
-                <Link
-                  href="/learn/canadian-life"
-                  className="rounded-full bg-[#D62828] px-7 py-3 text-sm font-black text-white transition hover:bg-[#B91C1C]"
-                >
-                  French for Canadian Life
-                </Link>
-                <Link
-                  href="/learn"
-                  className="rounded-full border border-[#0B1F3A] px-7 py-3 text-sm font-black text-[#0B1F3A] transition hover:bg-[#0B1F3A] hover:text-white"
-                >
-                  All courses
-                </Link>
+          <div className="grid md:grid-cols-2 md:divide-x md:divide-[#E7DAB9]">
+            <div className="border-b border-[#E7DAB9] py-8 md:border-b-0 md:pr-12">
+              <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-[#526173]">Mot de la semaine</p>
+              <div className="mt-3 flex items-baseline gap-2">
+                <span className="text-2xl font-black">{word.word}</span>
+                <span className="text-xs text-[#526173]">{word.pos}</span>
               </div>
+              <p className="mt-0.5 text-sm leading-5 text-[#526173]">{word.meaning}</p>
+              <p className="mt-3 border-l-2 border-[#E7DAB9] pl-3 text-sm italic leading-6 text-[#526173]">{word.example}</p>
             </div>
-
-            {/* Right: word of the week */}
-            <div className="hidden border-t border-[#E7DAB9] py-12 md:block md:border-t-0 md:pl-12">
-              <p className="text-xs font-bold uppercase tracking-widest text-[#C9A44C]">
-                Word of the week
-              </p>
-              <p className="mt-5 text-3xl font-black">{word.word}</p>
-              <p className="mt-1 text-xs font-semibold uppercase tracking-widest text-[#526173]">
-                {word.pos} — {word.meaning}
-              </p>
-              <p className="mt-3 text-sm leading-7 text-[#526173] italic">
-                &ldquo;{word.example}&rdquo;
-              </p>
-
-              <div className="mt-8 border-t border-[#E7DAB9] pt-8">
-                <p className="text-xs font-bold uppercase tracking-widest text-[#C9A44C]">
-                  Expression of the week
-                </p>
-                <p className="mt-4 text-lg font-black">{expression.expression}</p>
-                <p className="mt-1 text-sm text-[#526173]">{expression.meaning}</p>
-              </div>
+            <div className="py-8 md:pl-12">
+              <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-[#526173]">Expression de la semaine</p>
+              <p className="mt-3 text-xl font-black">{expression.expression}</p>
+              <p className="mt-1 text-sm leading-6 text-[#526173]">{expression.meaning}</p>
             </div>
           </div>
         </div>

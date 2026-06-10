@@ -57,9 +57,9 @@ export default function LearnPage() {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-px border border-[#E7DAB9] bg-[#E7DAB9] md:grid-cols-3">
-          {courses.map((course) => (
-            <div key={course.title} className="flex flex-col bg-white p-7">
+        <div className="mt-12 grid gap-px border border-[#E7DAB9] bg-[#E7DAB9] md:grid-cols-2">
+          {courses.map((course, i) => (
+            <div key={course.title} className={`flex flex-col bg-white p-7${i === courses.length - 1 ? " md:col-span-2" : ""}`}>
               <p className="text-xs font-bold uppercase tracking-widest text-[#526173]">
                 {course.level}
               </p>
