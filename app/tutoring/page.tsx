@@ -43,13 +43,13 @@ export default function TutoringPage() {
             </p>
             <a
               href="https://docs.google.com/forms/d/1kUwPvzvQglWGs0Gk11eeVJNoIxc4na1RqmSEAUfjsxc/viewform"
-              className="mt-8 inline-block rounded-full bg-[#2563EB] px-7 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]"
+              className="mt-8 inline-block rounded-full bg-[#D62828] px-7 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#B91C1C]"
             >
               Request a tutor
             </a>
           </div>
 
-          <div className="rounded-[2rem] bg-[#0B1F3A] p-7 text-white">
+          <div className="rounded-2xl bg-[#0B1F3A] p-7 text-white">
             <p className="text-sm font-bold text-[#C9A44C]">What tutors can help with</p>
             <ul className="mt-5 space-y-3">
               {canHelpWith.map((item) => (
@@ -84,7 +84,7 @@ export default function TutoringPage() {
             {howItWorks.map((step) => (
               <div
                 key={step.step}
-                className="rounded-[1.75rem] border border-[#E7DAB9] bg-white p-6 shadow-sm"
+                className="rounded-2xl border border-[#E7DAB9] bg-white p-6 shadow-sm"
               >
                 <p className="text-sm font-black text-[#C9A44C]">{step.step}</p>
                 <h3 className="mt-3 text-xl font-black">{step.title}</h3>
@@ -98,7 +98,7 @@ export default function TutoringPage() {
 
         {/* While you wait */}
         <section className="mt-16">
-          <div className="rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+          <div className="rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
             <div className="grid items-center gap-8 md:grid-cols-[1fr_auto]">
               <div>
                 <p className="text-xl font-black">
@@ -111,7 +111,7 @@ export default function TutoringPage() {
               </div>
               <Link
                 href="/learn/french-foundations"
-                className="rounded-full bg-[#2563EB] px-6 py-3 text-center text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 whitespace-nowrap"
+                className="rounded-full bg-[#D62828] px-6 py-3 text-center text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 whitespace-nowrap"
               >
                 Start the course
               </Link>
@@ -121,7 +121,7 @@ export default function TutoringPage() {
 
         {/* Want to tutor */}
         <section className="mt-6">
-          <div className="rounded-[2rem] bg-[#0B1F3A] p-8 text-white shadow-sm">
+          <div className="rounded-2xl bg-[#0B1F3A] p-8 text-white shadow-sm">
             <div className="grid items-center gap-8 md:grid-cols-[1fr_auto]">
               <div>
                 <p className="text-xl font-black">Want to be a tutor?</p>

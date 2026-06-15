@@ -5,27 +5,27 @@ import FillInTheBlank from "@/components/FillInTheBlank";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const foodCards = [
-  { front: "le pain", back: "bread", subtext: "Le pain est délicieux. — Bread is delicious." },
+  { front: "le pain", back: "bread", subtext: "Le pain est délicieux.: Bread is delicious." },
   { front: "le fromage", back: "cheese", subtext: "La France a over 400 types of fromage!" },
-  { front: "le beurre", back: "butter", subtext: "Du beurre sur le pain — butter on bread." },
-  { front: "la viande", back: "meat", subtext: "Je n'aime pas la viande. — I don't like meat." },
-  { front: "le poulet", back: "chicken", subtext: "Le poulet rôti — roast chicken." },
-  { front: "le poisson", back: "fish", subtext: "Le poisson du vendredi — Friday fish." },
+  { front: "le beurre", back: "butter", subtext: "Du beurre sur le pain: butter on bread." },
+  { front: "la viande", back: "meat", subtext: "Je n'aime pas la viande.: I don't like meat." },
+  { front: "le poulet", back: "chicken", subtext: "Le poulet rôti: roast chicken." },
+  { front: "le poisson", back: "fish", subtext: "Le poisson du vendredi: Friday fish." },
   { front: "les légumes", back: "vegetables", subtext: "Plural masculine: les légumes." },
-  { front: "les fruits", back: "fruit", subtext: "Les fruits frais — fresh fruit." },
-  { front: "la salade", back: "salad", subtext: "Une salade verte — a green salad." },
+  { front: "les fruits", back: "fruit", subtext: "Les fruits frais: fresh fruit." },
+  { front: "la salade", back: "salad", subtext: "Une salade verte: a green salad." },
   { front: "les pâtes", back: "pasta", subtext: "Feminine plural: les pâtes." },
-  { front: "le riz", back: "rice", subtext: "Du riz avec du poulet — rice with chicken." },
+  { front: "le riz", back: "rice", subtext: "Du riz avec du poulet: rice with chicken." },
 ];
 
 const drinkCards = [
-  { front: "l'eau", back: "water", subtext: "L'eau minérale — mineral water. L' because it starts with a vowel." },
-  { front: "le lait", back: "milk", subtext: "Un verre de lait — a glass of milk." },
-  { front: "le jus", back: "juice", subtext: "Un jus d'orange — an orange juice." },
-  { front: "le café", back: "coffee", subtext: "Un café, s'il vous plaît — a coffee, please." },
-  { front: "le thé", back: "tea", subtext: "Un thé au citron — lemon tea." },
-  { front: "J'ai faim.", back: "I'm hungry.", subtext: "Uses avoir — literally 'I have hunger.'" },
-  { front: "J'ai soif.", back: "I'm thirsty.", subtext: "Uses avoir — literally 'I have thirst.'" },
+  { front: "l'eau", back: "water", subtext: "L'eau minérale: mineral water. L' because it starts with a vowel." },
+  { front: "le lait", back: "milk", subtext: "Un verre de lait: a glass of milk." },
+  { front: "le jus", back: "juice", subtext: "Un jus d'orange: an orange juice." },
+  { front: "le café", back: "coffee", subtext: "Un café, s'il vous plaît: a coffee, please." },
+  { front: "le thé", back: "tea", subtext: "Un thé au citron: lemon tea." },
+  { front: "J'ai faim.", back: "I'm hungry.", subtext: "Uses avoir: literally 'I have hunger.'" },
+  { front: "J'ai soif.", back: "I'm thirsty.", subtext: "Uses avoir: literally 'I have thirst.'" },
   { front: "Je voudrais…", back: "I would like…", subtext: "Polite way to order: Je voudrais un café." },
   { front: "C'est délicieux!", back: "It's delicious!", subtext: "High praise for French food." },
 ];
@@ -40,10 +40,10 @@ const pairs = [
 ];
 
 const exercises = [
-  { before: "J'ai", after: ". (hungry)", answer: "faim", hint: "hungry — uses avoir", translation: "I'm hungry." },
-  { before: "Je", after: "un jus d'orange. (I would like)", answer: "voudrais", hint: "I would like — polite order", translation: "I'd like an orange juice." },
+  { before: "J'ai", after: ". (hungry)", answer: "faim", hint: "hungry: uses avoir", translation: "I'm hungry." },
+  { before: "Je", after: "un jus d'orange. (I would like)", answer: "voudrais", hint: "I would like: polite order", translation: "I'd like an orange juice." },
   { before: "Est-ce que tu aimes le", after: "? (fish)", answer: "poisson", hint: "fish", translation: "Do you like fish?" },
-  { before: "Les", after: "sont bons. (vegetables)", answer: "légumes", hint: "vegetables — plural masculine", translation: "The vegetables are good." },
+  { before: "Les", after: "sont bons. (vegetables)", answer: "légumes", hint: "vegetables: plural masculine", translation: "The vegetables are good." },
   { before: "Nous mangeons du", after: "avec du riz. (chicken)", answer: "poulet", hint: "chicken", translation: "We're eating chicken with rice." },
 ];
 
@@ -76,13 +76,13 @@ const questions = [
     question: "How do you say 'I'm hungry' in French?",
     options: ["Je suis faim.", "J'ai faim.", "Je mange faim.", "J'aime faim."],
     correct: 1,
-    explanation: "J'ai faim — French uses avoir (have) for hunger, not être (be). Literally 'I have hunger.' Also: j'ai soif = I'm thirsty.",
+    explanation: "J'ai faim: French uses avoir (have) for hunger, not être (be). Literally 'I have hunger.' Also: j'ai soif = I'm thirsty.",
   },
   {
     question: "What is 'le beurre'?",
     options: ["beer", "bread", "butter", "beef"],
     correct: 2,
-    explanation: "Le beurre = butter. It's a false friend for English speakers — beurre looks like 'beer' but means butter. La bière = beer.",
+    explanation: "Le beurre = butter. It's a false friend for English speakers: beurre looks like 'beer' but means butter. La bière = beer.",
   },
   {
     question: "A student at a café wants to order politely. Which phrase do they use?",
@@ -102,7 +102,7 @@ export default function Unit5Lesson1Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/french-foundations" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/french-foundations" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← French Foundations
         </Link>
 
@@ -157,7 +157,7 @@ export default function Unit5Lesson1Page() {
 
         <div className="mt-16 flex items-center justify-between gap-4">
           <Link href="/learn/french-foundations/unit-4/test" className="rounded-full border border-[#E7DAB9] bg-white px-5 py-2.5 text-sm font-black text-[#526173] transition hover:-translate-y-0.5">← Previous</Link>
-          <Link href="/learn/french-foundations/unit-5/lesson-2" className="rounded-full bg-[#2563EB] px-5 py-2.5 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Next lesson →</Link>
+          <Link href="/learn/french-foundations/unit-5/lesson-2" className="rounded-full bg-[#D62828] px-5 py-2.5 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">Next lesson →</Link>
         </div>
       </section>
     </main>

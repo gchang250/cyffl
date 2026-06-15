@@ -4,7 +4,7 @@ import Link from "next/link";
 import SpeakButton from "@/components/SpeakButton";
 import VerbConjugator, { type Mood } from "@/components/VerbConjugator";
 
-// parler — the model -er verb
+// parler: the model -er verb
 const parlerMoods: Mood[] = [
   {
     name: "Indicatif",
@@ -188,7 +188,7 @@ const parlerMoods: Mood[] = [
   },
 ];
 
-// Key irregular verbs — présent only (full paradigm)
+// Key irregular verbs: présent only (full paradigm)
 type IrregularVerb = {
   infinitive: string;
   ipa: string;
@@ -274,7 +274,7 @@ export default function VerbsPresentPage() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-5xl px-6 py-16">
-        <Link href="/resources" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/resources" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← Resources
         </Link>
 

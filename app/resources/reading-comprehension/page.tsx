@@ -4,7 +4,7 @@ export default function ReadingComprehensionPage() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-4xl px-6 py-16">
-        <Link href="/resources" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/resources" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← Resources
         </Link>
 
@@ -20,7 +20,7 @@ export default function ReadingComprehensionPage() {
           </p>
         </div>
 
-        {/* Text 1 — Beginner */}
+        {/* Text 1: Beginner */}
         <div className="mt-12">
           <div className="flex items-center gap-3">
             <span className="rounded-full bg-[#F0FDF4] px-3 py-1 text-sm font-black text-[#16A34A]">Text 1</span>
@@ -59,7 +59,7 @@ export default function ReadingComprehensionPage() {
           </div>
         </div>
 
-        {/* Text 2 — Intermediate */}
+        {/* Text 2: Intermediate */}
         <div className="mt-14">
           <div className="flex items-center gap-3">
             <span className="rounded-full bg-[#F0FDF4] px-3 py-1 text-sm font-black text-[#16A34A]">Text 2</span>
@@ -69,7 +69,7 @@ export default function ReadingComprehensionPage() {
 
           <div className="mt-6 rounded-2xl border border-[#E7DAB9] bg-white p-6">
             <p className="leading-8 text-[#0B1F3A]">
-              Le mois dernier, Camille et ses amis ont décidé de passer un week-end à Paris. Ils sont partis de Lyon vendredi soir et ils sont arrivés à la gare de Lyon à vingt-deux heures. Le samedi matin, ils ont visité le musée du Louvre. Camille a été surprise par la taille du musée — elle n'a pas pu tout voir en une seule journée ! L'après-midi, ils ont mangé une crêpe près de la tour Eiffel et ils ont pris beaucoup de photos. Le dimanche, avant de rentrer, ils ont fait un tour en bateau sur la Seine. Camille a adoré cette expérience. Elle veut retourner à Paris l'année prochaine.
+              Le mois dernier, Camille et ses amis ont décidé de passer un week-end à Paris. Ils sont partis de Lyon vendredi soir et ils sont arrivés à la gare de Lyon à vingt-deux heures. Le samedi matin, ils ont visité le musée du Louvre. Camille a été surprise par la taille du musée: elle n'a pas pu tout voir en une seule journée ! L'après-midi, ils ont mangé une crêpe près de la tour Eiffel et ils ont pris beaucoup de photos. Le dimanche, avant de rentrer, ils ont fait un tour en bateau sur la Seine. Camille a adoré cette expérience. Elle veut retourner à Paris l'année prochaine.
             </p>
           </div>
 
@@ -85,7 +85,7 @@ export default function ReadingComprehensionPage() {
               <div className="rounded-2xl border border-[#E7DAB9] bg-white p-5">
                 <p className="font-black">2. Pourquoi est-ce que Camille a été surprise au Louvre ?</p>
                 <div className="mt-2 rounded-xl bg-[#F0FDF4] px-4 py-2 text-sm">
-                  <span className="font-black text-[#16A34A]">Answer: </span>Elle a été surprise par la taille du musée — elle n'a pas pu tout voir en une seule journée.
+                  <span className="font-black text-[#16A34A]">Answer: </span>Elle a été surprise par la taille du musée: elle n'a pas pu tout voir en une seule journée.
                 </div>
               </div>
               <div className="rounded-2xl border border-[#E7DAB9] bg-white p-5">
@@ -98,7 +98,7 @@ export default function ReadingComprehensionPage() {
           </div>
         </div>
 
-        {/* Text 3 — Upper-intermediate */}
+        {/* Text 3: Upper-intermediate */}
         <div className="mt-14">
           <div className="flex items-center gap-3">
             <span className="rounded-full bg-[#F0FDF4] px-3 py-1 text-sm font-black text-[#16A34A]">Text 3</span>

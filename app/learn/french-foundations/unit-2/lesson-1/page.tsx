@@ -65,7 +65,7 @@ const quiz = [
     explanation: "Tu is the informal 'you'. Use it with friends, family, peers, children, and pets. Using 'vous' with a friend sounds oddly formal.",
   },
   {
-    question: "A group of 4 boys and 1 girl — which pronoun do you use for 'they'?",
+    question: "A group of 4 boys and 1 girl: which pronoun do you use for 'they'?",
     options: ["elles", "ils", "nous", "vous"],
     correct: 1,
     explanation: "Even one male in a group → use 'ils'. French uses masculine plural as the default for mixed groups. This rule applies even if there's 99 girls and 1 boy.",
@@ -74,7 +74,7 @@ const quiz = [
     question: "You're speaking to your principal. Which 'you' do you use?",
     options: ["tu", "il", "vous", "elles"],
     correct: 2,
-    explanation: "Vous is the formal 'you' — use it with teachers, bosses, strangers, older people, and anyone in a professional context. Using 'tu' with a principal is considered rude.",
+    explanation: "Vous is the formal 'you': use it with teachers, bosses, strangers, older people, and anyone in a professional context. Using 'tu' with a principal is considered rude.",
   },
   {
     question: "What's the difference between 'nous' and 'on'?",
@@ -85,7 +85,7 @@ const quiz = [
       "There is no difference.",
     ],
     correct: 1,
-    explanation: "Both mean 'we'. 'On' is used constantly in everyday spoken French — 'On y va?' (Shall we go?) sounds natural; 'Nous y allons?' sounds formal. In written French and formal speech, 'nous' is preferred.",
+    explanation: "Both mean 'we'. 'On' is used constantly in everyday spoken French: 'On y va?' (Shall we go?) sounds natural; 'Nous y allons?' sounds formal. In written French and formal speech, 'nous' is preferred.",
   },
   {
     question: "'Il' can refer to which of the following?",
@@ -96,13 +96,13 @@ const quiz = [
       "Both male and female people",
     ],
     correct: 1,
-    explanation: "In French, every noun has a gender. 'Il' replaces any masculine noun — 'le livre' → 'il', 'le chat' → 'il', 'mon ami' → 'il'. It's not just for people. Same for 'elle' with feminine nouns.",
+    explanation: "In French, every noun has a gender. 'Il' replaces any masculine noun: 'le livre' → 'il', 'le chat' → 'il', 'mon ami' → 'il'. It's not just for people. Same for 'elle' with feminine nouns.",
   },
   {
     question: "Sophie et Claire habitent à Paris. _____ parlent français.",
     options: ["Ils", "Elles", "Nous", "Vous"],
     correct: 1,
-    explanation: "'Elles' — because Sophie and Claire are both female. If even one person in the group is male, you'd use 'ils'. All-female groups → 'elles'.",
+    explanation: "'Elles': because Sophie and Claire are both female. If even one person in the group is male, you'd use 'ils'. All-female groups → 'elles'.",
   },
   {
     question: "When does 'vous' mean 'you all' rather than 'you (formal)'?",
@@ -110,10 +110,10 @@ const quiz = [
       "Only when speaking to teachers",
       "When speaking to more than one person at once",
       "Only in writing",
-      "'Vous' always means you (formal) — never you all",
+      "'Vous' always means you (formal): never you all",
     ],
     correct: 1,
-    explanation: "'Vous' has two uses: (1) formal singular 'you' (one person you respect), and (2) plural 'you' (speaking to multiple people regardless of formality). 'Vous êtes tous les bienvenus' = 'You are all welcome' — plural, not necessarily formal.",
+    explanation: "'Vous' has two uses: (1) formal singular 'you' (one person you respect), and (2) plural 'you' (speaking to multiple people regardless of formality). 'Vous êtes tous les bienvenus' = 'You are all welcome': plural, not necessarily formal.",
   },
   {
     question: "In spoken French, which sentence would you actually hear in casual conversation?",
@@ -121,7 +121,7 @@ const quiz = [
       "'Nous allons au cinéma ce soir.'",
       "'On va au cinéma ce soir.'",
       "Both are equally common",
-      "Neither — you'd use 'vous' instead",
+      "Neither: you'd use 'vous' instead",
     ],
     correct: 1,
     explanation: "'On va au cinéma ce soir' is what real French speakers say in conversation. 'Nous allons' sounds formal and bookish in everyday speech. Learning 'on' = 'we' early is essential for understanding natural French.",
@@ -134,7 +134,7 @@ export default function Unit2Lesson1Page() {
       <section className="mx-auto max-w-6xl px-6 py-16">
         <Link
           href="/learn/french-foundations"
-          className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]"
+          className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]"
         >
           ← French Foundations
         </Link>
@@ -224,7 +224,7 @@ export default function Unit2Lesson1Page() {
           </div>
         </section>
 
-        <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <section className="mt-16 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
           <h2 className="mt-3 text-3xl font-black">
             You know all eight French subject pronouns.
           </h2>
@@ -241,7 +241,7 @@ export default function Unit2Lesson1Page() {
             </Link>
             <Link
               href="/learn/french-foundations/unit-2/lesson-2"
-              className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]"
+              className="rounded-full bg-[#D62828] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#B91C1C]"
             >
               Next lesson →
             </Link>

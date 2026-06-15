@@ -19,9 +19,15 @@ const categories: ResourceCategory[] = [
     color: "bg-[#FEF2F2] text-[#B91C1C] border-[#FECACA]",
     items: [
       {
+        label: "Canadian-exclusive vocabulary",
+        description:
+          "Words, institutions, and cultural terms that are specific to Canada and Quebec. A French speaker from anywhere else would not know these without living here.",
+        href: "/resources/canadian-exclusive-vocab",
+      },
+      {
         label: "Quebec French essentials",
         description:
-          "Fin de semaine, dépanneur, magasinage, tuque — the vocabulary and expressions that make Quebec French distinct.",
+          "Fin de semaine, dépanneur, magasinage, tuque: the vocabulary and expressions that make Quebec French distinct.",
         href: "/resources/quebec-french",
       },
       {
@@ -81,7 +87,7 @@ const categories: ResourceCategory[] = [
       {
         label: "Subject pronouns",
         description:
-          "Je, tu, il, elle, nous, vous, ils, elles — when and how to use each one.",
+          "Je, tu, il, elle, nous, vous, ils, elles: when and how to use each one.",
         href: "/resources/subject-pronouns",
       },
       {
@@ -93,13 +99,13 @@ const categories: ResourceCategory[] = [
       {
         label: "Negation (ne…pas)",
         description:
-          "How to say no, not, never, and nothing — with common mistakes to avoid.",
+          "How to say no, not, never, and nothing: with common mistakes to avoid.",
         href: "/resources/negation",
       },
       {
         label: "Sentence structure",
         description:
-          "Word order, subordinate clauses, relative pronouns, emphasis structures, impersonal constructions, and nominalization — a complete structural reference.",
+          "Word order, subordinate clauses, relative pronouns, emphasis structures, impersonal constructions, and nominalization: a complete structural reference.",
         href: "/resources/sentence-structure",
       },
     ],
@@ -110,7 +116,7 @@ const categories: ResourceCategory[] = [
     items: [
       {
         label: "Le présent",
-        description: "Present tense conjugation for regular and irregular verbs — the foundation of everything.",
+        description: "Present tense conjugation for regular and irregular verbs: the foundation of everything.",
         href: "/resources/verbs-present",
       },
       {
@@ -125,27 +131,27 @@ const categories: ResourceCategory[] = [
       },
       {
         label: "Le futur simple",
-        description: "The simple future tense — conjugation, irregular stems, and when to use it.",
+        description: "The simple future tense: conjugation, irregular stems, and when to use it.",
         href: "/resources/verbs-futur-simple",
       },
       {
         label: "Le futur antérieur",
-        description: "The future perfect — talking about actions that will have been completed before another future event.",
+        description: "The future perfect: talking about actions that will have been completed before another future event.",
         href: "/resources/verbs-futur-anterieur",
       },
       {
         label: "Le plus-que-parfait",
-        description: "The 'had done' tense — for actions completed before another past event, reported speech, and si-clauses.",
+        description: "The 'had done' tense: for actions completed before another past event, reported speech, and si-clauses.",
         href: "/resources/verbs-plus-que-parfait",
       },
       {
         label: "Le subjonctif présent",
-        description: "The subjunctive mood — triggers, formation, and the most common irregular forms.",
+        description: "The subjunctive mood: triggers, formation, and the most common irregular forms.",
         href: "/resources/verbs-subjonctif",
       },
       {
         label: "Le subjonctif passé",
-        description: "The past subjunctive — for completed actions in subjunctive contexts, superlatives, and concession clauses.",
+        description: "The past subjunctive: for completed actions in subjunctive contexts, superlatives, and concession clauses.",
         href: "/resources/verbs-subjonctif-passe",
       },
       {
@@ -155,12 +161,12 @@ const categories: ResourceCategory[] = [
       },
       {
         label: "Le conditionnel passé",
-        description: "The 'would have done' tense — hypothetical past, regrets, reproaches, and the journalistic conditional.",
+        description: "The 'would have done' tense: hypothetical past, regrets, reproaches, and the journalistic conditional.",
         href: "/resources/verbs-conditionnel-passe",
       },
       {
         label: "Le passé simple ⚠️ Literary",
-        description: "The literary past tense — used in novels and formal narrative, not in conversation or modern writing. Recognize it; use passé composé instead.",
+        description: "The literary past tense: used in novels and formal narrative, not in conversation or modern writing. Recognize it; use passé composé instead.",
         href: "/resources/verbs-passe-simple",
       },
     ],
@@ -172,13 +178,13 @@ const categories: ResourceCategory[] = [
       {
         label: "Connecting words",
         description:
-          "En outre, par ailleurs, néanmoins, de surcroît — a full reference of connectors organized by function, with level labels from A1 to C1.",
+          "En outre, par ailleurs, néanmoins, de surcroît: a full reference of connectors organized by function, with level labels from A1 to C1.",
         href: "/resources/connecting-words",
       },
       {
         label: "Idiomatic expressions",
         description:
-          "Culturally French expressions for conversation and writing, from avoir le cafard to force est de constater — with examples and usage notes.",
+          "Culturally French expressions for conversation and writing, from avoir le cafard to force est de constater: with examples and usage notes.",
         href: "/resources/expressions",
       },
     ],
@@ -208,7 +214,7 @@ const categories: ResourceCategory[] = [
       {
         label: "Study tips for French",
         description:
-          "Proven strategies for vocabulary, grammar, speaking, and listening — and making it stick.",
+          "Proven strategies for vocabulary, grammar, speaking, and listening: and making it stick.",
         href: "/resources/study-tips",
       },
     ],
@@ -220,7 +226,7 @@ const categories: ResourceCategory[] = [
       {
         label: "Free external resources",
         description:
-          "Curated free resources beyond CYFFL — Canadian and international news, podcasts, TV, grammar exercise sites, and French–French dictionaries, with level and register notes.",
+          "Curated free resources beyond CYFFL: Canadian and international news, podcasts, TV, grammar exercise sites, and French–French dictionaries, with level and register notes.",
         href: "/resources/external-resources",
       },
     ],
@@ -232,13 +238,13 @@ const categories: ResourceCategory[] = [
       {
         label: "SLE quick reference",
         description:
-          "Second Language Evaluation guide for federal government bilingual jobs — the three tests, A/B/C levels, language profiles, and writing formulas.",
+          "Second Language Evaluation guide for federal government bilingual jobs: the three tests, A/B/C levels, language profiles, and writing formulas.",
         href: "/resources/sle-guide",
       },
       {
         label: "TEF Canada guide",
         description:
-          "TEF Canada and TCF Canada reference for immigration — CLB levels, Express Entry CRS points, section formats, and writing register guide.",
+          "TEF Canada and TCF Canada reference for immigration: CLB levels, Express Entry CRS points, section formats, and writing register guide.",
         href: "/resources/tef-canada-guide",
       },
     ],
@@ -270,11 +276,11 @@ function ResourceCard({ item }: { item: ResourceItem }) {
       href={item.href}
       className="group flex flex-col rounded-2xl border border-[#E7DAB9] bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
     >
-      <p className="font-black group-hover:text-[#2563EB]">{item.label}</p>
+      <p className="font-black group-hover:text-[#D62828]">{item.label}</p>
       <p className="mt-2 grow text-sm leading-6 text-[#526173]">
         {item.description}
       </p>
-      <p className="mt-3 text-xs font-bold text-[#2563EB]">Read →</p>
+      <p className="mt-3 text-xs font-bold text-[#D62828]">Read →</p>
     </Link>
   );
 }
@@ -289,7 +295,7 @@ export default function ResourcesPage() {
           </h1>
           <p className="mt-5 text-lg leading-8 text-[#526173]">
             Vocabulary lists, grammar guides, verb tense references, and exam
-            prep — all organized and free to use.
+            prep: all organized and free to use.
           </p>
         </div>
 
@@ -310,7 +316,7 @@ export default function ResourcesPage() {
           ))}
         </div>
 
-        <div className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <div className="mt-16 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
           <div className="grid items-center gap-6 md:grid-cols-[1fr_auto]">
             <div>
               <p className="text-xl font-black">
@@ -329,7 +335,7 @@ export default function ResourcesPage() {
           </div>
         </div>
 
-        <div className="mt-6 rounded-[2rem] border border-[#E7DAB9] bg-[#0B1F3A] p-8 text-white shadow-sm">
+        <div className="mt-6 rounded-2xl border border-[#E7DAB9] bg-[#0B1F3A] p-8 text-white shadow-sm">
           <div className="grid items-center gap-6 md:grid-cols-[1fr_auto]">
             <div>
               <p className="text-xl font-black">
@@ -342,7 +348,7 @@ export default function ResourcesPage() {
             </div>
             <Link
               href="/learn/french-foundations"
-              className="whitespace-nowrap rounded-full bg-[#2563EB] px-6 py-3 text-center text-sm font-black text-white transition hover:-translate-y-0.5"
+              className="whitespace-nowrap rounded-full bg-[#D62828] px-6 py-3 text-center text-sm font-black text-white transition hover:-translate-y-0.5"
             >
               Start the course
             </Link>

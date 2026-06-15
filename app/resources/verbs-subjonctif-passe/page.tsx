@@ -24,27 +24,27 @@ const etre: [string, string, string][] = [
 const uses: { title: string; present: string; passe: string; note: string }[] = [
   {
     title: "Emotion about a completed action",
-    present: "Je suis content qu'il vienne. (he is coming — future/ongoing)",
-    passe: "Je suis content qu'il soit venu. (he came — it's done)",
+    present: "Je suis content qu'il vienne. (he is coming: future/ongoing)",
+    passe: "Je suis content qu'il soit venu. (he came: it's done)",
     note: "Same trigger (être content que), but the past subjunctive signals the action already happened at the time of speaking.",
   },
   {
     title: "Doubt / necessity about something completed",
     present: "Il faut que tu le fasses. (you need to do it)",
     passe: "Il faut que tu l'aies fait avant midi. (you need to have done it by noon)",
-    note: "The deadline is set in the future, but the action must be completed — so the past subjunctive expresses the completed state.",
+    note: "The deadline is set in the future, but the action must be completed: so the past subjunctive expresses the completed state.",
   },
   {
     title: "After superlatives and restrictive expressions",
     present: "C'est le meilleur livre que je lise.",
     passe: "C'est le meilleur livre que j'aie jamais lu.",
-    note: "'Que j'aie jamais lu' — that I have ever read. The past subjunctive is required after superlatives ('le meilleur que…', 'le seul que…') when the action is completed.",
+    note: "'Que j'aie jamais lu': that I have ever read. The past subjunctive is required after superlatives ('le meilleur que…', 'le seul que…') when the action is completed.",
   },
   {
     title: "Concession / purpose with completed action",
     present: "Bien qu'il travaille dur…",
     passe: "Bien qu'il ait travaillé toute la nuit, il n'a pas réussi.",
-    note: "Although he worked all night, he didn't succeed. 'Bien que' always triggers the subjunctive — use the past form when the action in the subordinate clause is completed.",
+    note: "Although he worked all night, he didn't succeed. 'Bien que' always triggers the subjunctive: use the past form when the action in the subordinate clause is completed.",
   },
 ];
 
@@ -52,7 +52,7 @@ export default function SubjonctifPassePage() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-4xl px-6 py-16">
-        <Link href="/resources" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/resources" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← Resources
         </Link>
 

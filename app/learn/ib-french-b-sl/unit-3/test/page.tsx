@@ -4,7 +4,7 @@ import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 const questions = [
   {
     question: "Paper 1 gives you how many text type options per prompt?",
-    options: ["One — the text type is prescribed", "Two — formal or informal", "Three — you choose the most appropriate one", "As many as you like"],
+    options: ["One: the text type is prescribed", "Two: formal or informal", "Three: you choose the most appropriate one", "As many as you like"],
     correct: 2,
     explanation: "Paper 1 gives you three text type options per prompt. You choose the one that best fits the context, recipient, and purpose described in the task.",
   },
@@ -52,11 +52,11 @@ const questions = [
     options: [
       "Using the wrong text type",
       "Inconsistent register",
-      "Factual inaccuracies — only coherence and development are assessed",
+      "Factual inaccuracies: only coherence and development are assessed",
       "A missing conclusion",
     ],
     correct: 2,
-    explanation: "The IB explicitly states that examiners do not penalise factually incorrect information in Criterion B. If your ideas are coherent and developed, you are rewarded — even if a statistic is wrong.",
+    explanation: "The IB explicitly states that examiners do not penalise factually incorrect information in Criterion B. If your ideas are coherent and developed, you are rewarded: even if a statistic is wrong.",
   },
   {
     question: "An exposé (speech) must open with:",
@@ -67,7 +67,7 @@ const questions = [
       "A date and subject line",
     ],
     correct: 1,
-    explanation: "An exposé always opens with a direct address to the audience. This is a required convention — without it, Criterion C is capped.",
+    explanation: "An exposé always opens with a direct address to the audience. This is a required convention: without it, Criterion C is capped.",
   },
   {
     question: "To reach the Criterion A top band (10–12), your writing must demonstrate:",
@@ -95,7 +95,7 @@ const questions = [
       "It is addressed to a government official",
     ],
     correct: 2,
-    explanation: "The IB explicitly states a proposition can be submitted as a letter, email, or similar format — as long as all four required conventions are present: title, introduction, clear structure, and convincing conclusion.",
+    explanation: "The IB explicitly states a proposition can be submitted as a letter, email, or similar format: as long as all four required conventions are present: title, introduction, clear structure, and convincing conclusion.",
   },
 ];
 
@@ -103,7 +103,7 @@ export default function Unit3TestPage() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/ib-french-b-sl" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/ib-french-b-sl" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← IB French B SL
         </Link>
 
@@ -119,12 +119,12 @@ export default function Unit3TestPage() {
           <MultipleChoiceQuiz questions={questions} title="Unit 3 Test · 10 questions" />
         </section>
 
-        <div className="mt-12 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <div className="mt-12 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
           <p className="font-black text-lg">Ready for Unit 4?</p>
           <p className="mt-2 text-[#526173]">Unit 4 is the Individual Oral — oral structure, image description, and discussing global issues.</p>
           <div className="mt-5 flex flex-wrap gap-3">
             <Link href="/learn/ib-french-b-sl/unit-3/lesson-3" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">← Back to lesson</Link>
-            <Link href="/learn/ib-french-b-sl/unit-4/lesson-1" className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Start Unit 4 →</Link>
+            <Link href="/learn/ib-french-b-sl/unit-4/lesson-1" className="rounded-full bg-[#D62828] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">Start Unit 4 →</Link>
           </div>
         </div>
       </section>

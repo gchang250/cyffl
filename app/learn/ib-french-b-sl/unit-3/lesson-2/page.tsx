@@ -6,7 +6,7 @@ import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 const flashcards = [
   { front: "le registre formel", back: "formal register", subtext: "Used for letters to officials, reports, and formal articles. Uses 'vous', complete sentences, and sophisticated vocabulary." },
   { front: "le registre informel", back: "informal register", subtext: "Used for blogs, diary entries, and messages to friends. Uses 'tu', contractions, and conversational expressions." },
-  { front: "le registre semi-formel", back: "semi-formal register", subtext: "Balanced — professional but approachable. Used in magazine articles, reviews, and most newspaper articles." },
+  { front: "le registre semi-formel", back: "semi-formal register", subtext: "Balanced: professional but approachable. Used in magazine articles, reviews, and most newspaper articles." },
   { front: "vous", back: "you (formal / plural)", subtext: "Required in formal letters, speeches to strangers or officials, and any formal writing. Never use 'tu' in a formal letter." },
   { front: "tu", back: "you (informal / singular)", subtext: "Use in blogs, diary entries, and messages to people you know. Using 'tu' in a formal context is a register error." },
   { front: "le destinataire", back: "the recipient / addressee", subtext: "Who you are writing to. Determines register: a mayor needs 'vous' and formal language; a friend needs 'tu' and informal language." },
@@ -15,9 +15,9 @@ const flashcards = [
   { front: "le ton informatif", back: "informative tone", subtext: "Presents facts clearly and neutrally. Common in reports and press articles. Avoid personal opinions unless asked." },
   { front: "la salutation", back: "salutation / greeting", subtext: "The opening of a letter. Formal: 'Monsieur / Madame,'. Informal: 'Cher(e) [prénom],'. Must match your register." },
   { front: "la formule de politesse", back: "closing formula", subtext: "The closing line of a letter. Formal: 'Veuillez agréer, Monsieur/Madame, l'expression de mes salutations distinguées.' Informal: 'Cordialement,' or 'À bientôt,'." },
-  { front: "le niveau de langue", back: "language level / register", subtext: "How formal or informal the language is — soutenu (elevated), standard, or familier (colloquial). The IB assesses this as part of Criterion C." },
+  { front: "le niveau de langue", back: "language level / register", subtext: "How formal or informal the language is: soutenu (elevated), standard, or familier (colloquial). The IB assesses this as part of Criterion C." },
   { front: "s'adresser à", back: "to address / to write to", subtext: "'À qui s'adresse ce texte?' = Who is this text addressed to? The answer determines everything: register, pronoun, text type." },
-  { front: "cohérent(e)", back: "coherent / consistent", subtext: "The IB penalises inconsistent register — switching between formal and informal. Stay coherent throughout the whole text." },
+  { front: "cohérent(e)", back: "coherent / consistent", subtext: "The IB penalises inconsistent register: switching between formal and informal. Stay coherent throughout the whole text." },
   { front: "adapté(e) au contexte", back: "appropriate to the context", subtext: "A key IB phrase from Criterion C. Your register must be 'adapté au contexte, à l'objectif et au destinataire' = suited to the context, purpose, and recipient." },
 ];
 
@@ -39,13 +39,13 @@ const quiz = [
   },
   {
     question: "A blog post is written using 'vous' throughout. This is:",
-    options: ["Correct — blogs use formal language", "A register error — blogs should use 'tu' or 'je'", "Acceptable — any pronoun works in blogs", "Only correct if the blog is about a serious topic"],
+    options: ["Correct: blogs use formal language", "A register error: blogs should use 'tu' or 'je'", "Acceptable: any pronoun works in blogs", "Only correct if the blog is about a serious topic"],
     correct: 1,
     explanation: "Blogs are informal and personal. Using 'vous' where 'tu' or first-person 'je' is expected is a register error that costs marks.",
   },
   {
     question: "You want to convince your school to adopt a recycling programme. Your Paper 1 tone should be:",
-    options: ["Informative and neutral", "Persuasive — using evidence and strong arguments", "Informal and conversational", "Personal and emotional only"],
+    options: ["Informative and neutral", "Persuasive: using evidence and strong arguments", "Informal and conversational", "Personal and emotional only"],
     correct: 1,
     explanation: "When your goal is to convince, use a persuasive tone: evidence, rhetorical questions, and calls to action. 'Il est essentiel que notre école agisse maintenant.'",
   },
@@ -53,13 +53,13 @@ const quiz = [
     question: "The word 'destinataire' refers to:",
     options: ["The purpose of the text", "The recipient / who you are writing to", "The subject heading of a letter", "The text type you must produce"],
     correct: 1,
-    explanation: "Le destinataire = the recipient — the person or organisation you are writing to. This determines register, pronoun choice, and format.",
+    explanation: "Le destinataire = the recipient: the person or organisation you are writing to. This determines register, pronoun choice, and format.",
   },
   {
     question: "A report for a city council should use which pronoun when referring to the reader?",
     options: ["tu", "vous", "on", "Either tu or vous is fine"],
     correct: 1,
-    explanation: "A report for a city council is a formal document — always use 'vous'. 'On' can appear in formal writing but 'vous' is required when addressing the reader directly.",
+    explanation: "A report for a city council is a formal document: always use 'vous'. 'On' can appear in formal writing but 'vous' is required when addressing the reader directly.",
   },
   {
     question: "What is the IB Criterion C criterion for register?",
@@ -70,29 +70,29 @@ const quiz = [
       "The register must be consistent with the first paragraph only",
     ],
     correct: 1,
-    explanation: "Criterion C requires register 'adapté au contexte, à l'objectif et au destinataire' — appropriate to context, purpose, and recipient. Consistency throughout the whole text is required.",
+    explanation: "Criterion C requires register 'adapté au contexte, à l'objectif et au destinataire': appropriate to context, purpose, and recipient. Consistency throughout the whole text is required.",
   },
   {
     question: "A student writes a blog post but uses the formal closing formula 'Veuillez agréer l'expression de mes salutations distinguées.' This is:",
     options: [
-      "Correct — all written texts need a formal closing",
-      "A register error — this formal closing is for letters, not blogs",
-      "Acceptable — the formula can be used in any text type",
+      "Correct: all written texts need a formal closing",
+      "A register error: this formal closing is for letters, not blogs",
+      "Acceptable: the formula can be used in any text type",
       "Incorrect grammar only",
     ],
     correct: 1,
-    explanation: "Formal letter closings are entirely wrong in a blog — using them is a register error that costs Criterion C marks. Blogs end informally or with a question to the reader: 'Et vous, qu'en pensez-vous ?'",
+    explanation: "Formal letter closings are entirely wrong in a blog: using them is a register error that costs Criterion C marks. Blogs end informally or with a question to the reader: 'Et vous, qu'en pensez-vous ?'",
   },
   {
     question: "A student addressing a letter to a school principal uses 'Cher directeur,' as the opening. Is this appropriate?",
     options: [
-      "Yes — 'cher' is always respectful",
-      "No — 'Cher/Chère' is semi-formal or informal; use 'Monsieur le Directeur,' for an official",
-      "Yes — 'directeur' is formal enough",
-      "No — you should use the person's full name",
+      "Yes: 'cher' is always respectful",
+      "No: 'Cher/Chère' is semi-formal or informal; use 'Monsieur le Directeur,' for an official",
+      "Yes: 'directeur' is formal enough",
+      "No: you should use the person's full name",
     ],
     correct: 1,
-    explanation: "'Cher/Chère' is semi-formal to informal. For a school principal, use 'Monsieur le Directeur,' or 'Madame la Directrice,' — the full formal title. This is a very common register error.",
+    explanation: "'Cher/Chère' is semi-formal to informal. For a school principal, use 'Monsieur le Directeur,' or 'Madame la Directrice,': the full formal title. This is a very common register error.",
   },
 ];
 
@@ -100,7 +100,7 @@ export default function Unit3Lesson2Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/ib-french-b-sl" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/ib-french-b-sl" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← IB French B SL
         </Link>
 
@@ -114,7 +114,7 @@ export default function Unit3Lesson2Page() {
             </h1>
             <p className="mt-4 text-lg leading-8 text-[#526173]">
               Register is how formal or informal your language is. Getting it wrong
-              costs marks — even if your French grammar is perfect. Learn to match
+              costs marks: even if your French grammar is perfect. Learn to match
               your writing to your audience every time.
             </p>
           </div>
@@ -144,18 +144,18 @@ export default function Unit3Lesson2Page() {
           <h2 className="text-2xl font-black">Register reference cards</h2>
           <p className="mt-1 text-[#526173]">Click a card to flip it.</p>
           <div className="mt-6">
-            <FlashCardDeck cards={flashcards} title="Register & audience — key terms" />
+            <FlashCardDeck cards={flashcards} title="Register & audience: key terms" />
           </div>
         </section>
 
-        <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-6 shadow-sm">
+        <section className="mt-16 rounded-2xl border border-[#E7DAB9] bg-white p-6 shadow-sm">
           <h2 className="text-xl font-black">Register quick reference — common errors</h2>
           <p className="mt-2 text-sm text-[#526173]">These are the most frequent register mistakes in IB Paper 1 scripts.</p>
           <div className="mt-4 space-y-3 text-sm">
             {[
               { wrong: "Using 'tu' in a formal letter to an official", right: "Always use 'vous' when writing to strangers, officials, or authorities." },
               { wrong: "Opening an exposé with 'Bonjour tout le monde'", right: "Open with 'Mesdames et messieurs,' or 'Chers camarades,' (if peers) for a formal speech." },
-              { wrong: "Using 'Cher Directeur,' in a letter to a school principal", right: "Use 'Monsieur le Directeur,' — 'Cher' is semi-formal and inappropriate for authority figures." },
+              { wrong: "Using 'Cher Directeur,' in a letter to a school principal", right: "Use 'Monsieur le Directeur,': 'Cher' is semi-formal and inappropriate for authority figures." },
               { wrong: "Mixing 'tu' and 'vous' in the same text", right: "Pick one and stay consistent throughout. Mixing registers is heavily penalised under Criterion C." },
               { wrong: "Ending a blog with a formal letter closing formula", right: "End a blog informally: 'À bientôt!' or with a question: 'Et vous, qu'en pensez-vous ?'" },
             ].map((m) => (
@@ -183,16 +183,16 @@ export default function Unit3Lesson2Page() {
           </div>
         </section>
 
-        <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <section className="mt-16 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
           <h2 className="mt-3 text-3xl font-black">Register and audience covered.</h2>
           <p className="mt-3 leading-7 text-[#526173]">
-            Next: writing techniques — connectors, opinion phrases, and how to structure a strong argument.
+            Next: writing techniques: connectors, opinion phrases, and how to structure a strong argument.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link href="/learn/ib-french-b-sl/unit-3/lesson-1" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">
               ← Previous lesson
             </Link>
-            <Link href="/learn/ib-french-b-sl/unit-3/lesson-3" className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">
+            <Link href="/learn/ib-french-b-sl/unit-3/lesson-3" className="rounded-full bg-[#D62828] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">
               Next lesson →
             </Link>
           </div>

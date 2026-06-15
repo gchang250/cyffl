@@ -12,7 +12,7 @@ const cards = [
   },
   {
     front: "le baccalauréat (bac)",
-    back: "Bachelor's degree — 3 years in Quebec, 4 elsewhere",
+    back: "Bachelor's degree: 3 years in Quebec, 4 elsewhere",
     subtext: "Because Quebec has the cégep, university bac programs are one year shorter than in other provinces.",
   },
   {
@@ -28,7 +28,7 @@ const cards = [
   {
     front: "le programme",
     back: "Program / major field of study",
-    subtext: "Je suis inscrit(e) dans le programme de sciences politiques. — I'm enrolled in the political science program.",
+    subtext: "Je suis inscrit(e) dans le programme de sciences politiques.: I'm enrolled in the political science program.",
   },
   {
     front: "les cours obligatoires",
@@ -136,7 +136,7 @@ const questions = [
       "The scholarship application",
     ],
     correct: 2,
-    explanation: "'Le relevé de notes' is the official academic transcript — the document listing your grades. It is required for university applications, scholarships, and professional programs.",
+    explanation: "'Le relevé de notes' is the official academic transcript: the document listing your grades. It is required for university applications, scholarships, and professional programs.",
   },
   {
     question: "Which of the following is a French-language university in Canada?",
@@ -158,7 +158,7 @@ const questions = [
       "A federal skills training centre",
     ],
     correct: 2,
-    explanation: "A cégep (Collège d'enseignement général et professionnel) is unique to Quebec. Students attend cégep after Grade 11 (Secondary V) before university — doing 2 years for a pre-university program or 3 years for a vocational/technical diploma (DEC). There is no direct equivalent in other provinces.",
+    explanation: "A cégep (Collège d'enseignement général et professionnel) is unique to Quebec. Students attend cégep after Grade 11 (Secondary V) before university: doing 2 years for a pre-university program or 3 years for a vocational/technical diploma (DEC). There is no direct equivalent in other provinces.",
   },
   {
     question: "In Ontario and western Canada, which body typically operates French-language schools?",
@@ -187,11 +187,11 @@ const questions = [
     options: [
       "A free program for international students",
       "A program offered only in summer",
-      "A competitive program with a limited number of spots — selective entry",
+      "A competitive program with a limited number of spots: selective entry",
       "A program delivered entirely online",
     ],
     correct: 2,
-    explanation: "'Programme contingenté' = limited-enrolment competitive program. Medicine, law, pharmacy, and nursing are typically contingentés in Quebec — you need high grades and sometimes other criteria to be admitted. Not all applicants who meet minimum requirements are accepted.",
+    explanation: "'Programme contingenté' = limited-enrolment competitive program. Medicine, law, pharmacy, and nursing are typically contingentés in Quebec: you need high grades and sometimes other criteria to be admitted. Not all applicants who meet minimum requirements are accepted.",
   },
 ];
 
@@ -199,7 +199,7 @@ export default function Unit4Lesson1Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/canadian-life" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/canadian-life" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← French for Canadian Life
         </Link>
 
@@ -208,7 +208,7 @@ export default function Unit4Lesson1Page() {
             <p className="text-xs font-bold uppercase tracking-widest text-[#7C3AED]">Unit 4 · Lesson 1</p>
             <h1 className="mt-3 text-5xl font-black tracking-tight md:text-6xl">The Canadian Education System</h1>
             <p className="mt-4 text-lg leading-8 text-[#526173]">
-              The French-Canadian education system differs significantly from the English one — especially in Quebec, where the cégep exists as a unique step between high school and university. Understanding this structure is essential whether you are applying, supporting someone who is, or working in an educational context.
+              The French-Canadian education system differs significantly from the English one: especially in Quebec, where the cégep exists as a unique step between high school and university. Understanding this structure is essential whether you are applying, supporting someone who is, or working in an educational context.
             </p>
             <p className="mt-4 text-lg leading-8 text-[#526173]">
               Outside Quebec, French immersion and francophone schools exist in every province, and French-language universities serve Francophone communities from New Brunswick to Manitoba. This lesson maps the full landscape.
@@ -222,9 +222,9 @@ export default function Unit4Lesson1Page() {
                 ["École primaire", "Grades 1–6, ages 6–12"],
                 ["École secondaire", "Secondary 1–5, ages 12–17"],
                 ["Cégep", "2 years pre-university OR 3 years technical, ages 17–19"],
-                ["Université — Baccalauréat", "3 years (Quebec) / 4 years (other provinces)"],
-                ["Université — Maîtrise", "2 years"],
-                ["Université — Doctorat", "3–5 years"],
+                ["Université: Baccalauréat", "3 years (Quebec) / 4 years (other provinces)"],
+                ["Université: Maîtrise", "2 years"],
+                ["Université: Doctorat", "3–5 years"],
               ].map(([level, detail]) => (
                 <div key={level} className="flex items-start gap-3 border-b border-[#F0EDD8] pb-2 last:border-0 last:pb-0">
                   <span className="mt-0.5 h-2 w-2 shrink-0 rounded-full bg-[#7C3AED]" />
@@ -246,12 +246,12 @@ export default function Unit4Lesson1Page() {
           <p className="mt-1 text-sm text-[#CBD5E1]">Key French-language institutions from coast to coast</p>
           <div className="mt-4 grid gap-3 text-sm sm:grid-cols-2 lg:grid-cols-3">
             {[
-              ["Université de Montréal", "Montreal, QC — large research university"],
-              ["UQAM", "Montreal, QC — Université du Québec à Montréal"],
-              ["Université Laval", "Quebec City, QC — oldest French university in North America"],
-              ["Université d'Ottawa", "Ottawa, ON — officially bilingual (French/English)"],
-              ["Université de Moncton", "Moncton, NB — main Francophone university in the Maritimes"],
-              ["Université Saint-Boniface", "Winnipeg, MB — serves Western Canada's Francophone community"],
+              ["Université de Montréal", "Montreal, QC: large research university"],
+              ["UQAM", "Montreal, QC: Université du Québec à Montréal"],
+              ["Université Laval", "Quebec City, QC: oldest French university in North America"],
+              ["Université d'Ottawa", "Ottawa, ON: officially bilingual (French/English)"],
+              ["Université de Moncton", "Moncton, NB: main Francophone university in the Maritimes"],
+              ["Université Saint-Boniface", "Winnipeg, MB: serves Western Canada's Francophone community"],
             ].map(([name, desc]) => (
               <div key={name} className="rounded-xl bg-white/10 p-3">
                 <p className="font-bold">{name}</p>

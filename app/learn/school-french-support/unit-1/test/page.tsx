@@ -12,7 +12,7 @@ const questions = [
     question: "How do you say 'some milk' (partitive, masculine)?",
     options: ["de le lait", "du lait", "des lait", "de lait"],
     correct: 1,
-    explanation: "The partitive for masculine nouns is du (de + le). Du lait = some milk. De le never appears — it always contracts.",
+    explanation: "The partitive for masculine nouns is du (de + le). Du lait = some milk. De le never appears: it always contracts.",
   },
   {
     question: "What is the feminine form of the adjective 'sérieux'?",
@@ -68,7 +68,7 @@ export default function Unit1TestPage() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/school-french-support/unit-1/lesson-4" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/school-french-support/unit-1/lesson-4" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← Back to Lesson 4
         </Link>
 
@@ -81,10 +81,10 @@ export default function Unit1TestPage() {
           <div className="rounded-2xl border border-[#EFF6FF] bg-[#EFF6FF] p-5">
             <p className="text-sm font-black text-[#2563EB]">Unit 1 covers</p>
             <ul className="mt-3 space-y-2 text-sm text-[#0B1F3A]">
-              <li className="flex items-center gap-2"><span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#2563EB] text-xs font-black text-white">1</span> Articles & Gender</li>
-              <li className="flex items-center gap-2"><span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#2563EB] text-xs font-black text-white">2</span> Adjective Agreement</li>
-              <li className="flex items-center gap-2"><span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#2563EB] text-xs font-black text-white">3</span> Prepositions</li>
-              <li className="flex items-center gap-2"><span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#2563EB] text-xs font-black text-white">4</span> Key Irregular Verbs</li>
+              <li className="flex items-center gap-2"><span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#D62828] text-xs font-black text-white">1</span> Articles & Gender</li>
+              <li className="flex items-center gap-2"><span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#D62828] text-xs font-black text-white">2</span> Adjective Agreement</li>
+              <li className="flex items-center gap-2"><span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#D62828] text-xs font-black text-white">3</span> Prepositions</li>
+              <li className="flex items-center gap-2"><span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#D62828] text-xs font-black text-white">4</span> Key Irregular Verbs</li>
             </ul>
           </div>
         </div>
@@ -93,12 +93,12 @@ export default function Unit1TestPage() {
           <MultipleChoiceQuiz questions={questions} title="Unit 1 test" />
         </div>
 
-        <div className="mt-12 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <div className="mt-12 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
           <p className="font-black text-lg">Ready for Unit 2?</p>
           <p className="mt-2 text-[#526173]">Unit 2 dives into verb conjugation — regular -er, -ir, and -re verbs, plus the most-used irregular verbs in French.</p>
           <div className="mt-5 flex flex-wrap gap-3">
             <Link href="/learn/school-french-support/unit-1/lesson-4" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">← Back to lesson</Link>
-            <Link href="/learn/school-french-support/unit-2/lesson-1" className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Start Unit 2 →</Link>
+            <Link href="/learn/school-french-support/unit-2/lesson-1" className="rounded-full bg-[#D62828] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">Start Unit 2 →</Link>
           </div>
         </div>
       </section>

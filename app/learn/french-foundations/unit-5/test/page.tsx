@@ -68,7 +68,7 @@ export default function Unit5TestPage() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/french-foundations" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/french-foundations" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← French Foundations
         </Link>
 
@@ -93,12 +93,12 @@ export default function Unit5TestPage() {
           <MultipleChoiceQuiz questions={questions} title="Unit 5 test" />
         </div>
 
-        <div className="mt-12 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <div className="mt-12 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
           <p className="font-black text-lg">Ready for Unit 6?</p>
           <p className="mt-2 text-[#526173]">Unit 6 introduces the passé composé — your first step into talking about the past in French.</p>
           <div className="mt-5 flex flex-wrap gap-3">
             <Link href="/learn/french-foundations/unit-5/lesson-4" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">← Back to lesson</Link>
-            <Link href="/learn/french-foundations/unit-6/lesson-1" className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Start Unit 6 →</Link>
+            <Link href="/learn/french-foundations/unit-6/lesson-1" className="rounded-full bg-[#D62828] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">Start Unit 6 →</Link>
           </div>
         </div>
       </section>

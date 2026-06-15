@@ -68,7 +68,7 @@ export default function Unit5TestPage() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/school-french-support/unit-5/lesson-4" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/school-french-support/unit-5/lesson-4" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← Back to Lesson 4
         </Link>
 
@@ -93,7 +93,7 @@ export default function Unit5TestPage() {
           <MultipleChoiceQuiz questions={questions} title="Unit 5 test" />
         </div>
 
-        <div className="mt-12 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <div className="mt-12 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
           <p className="font-black text-lg">Ready for Unit 6?</p>
           <p className="mt-2 text-[#526173]">Unit 6 builds on everything you&apos;ve learned — you&apos;ll practice reading and understanding French texts at beginner, intermediate, and upper-intermediate levels.</p>
           <div className="mt-5 flex flex-wrap gap-3">

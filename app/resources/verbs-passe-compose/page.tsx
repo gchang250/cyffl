@@ -67,7 +67,7 @@ export default function VerbsPasseComposePage() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-4xl px-6 py-16">
-        <Link href="/resources" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/resources" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← Resources
         </Link>
 

@@ -4,8 +4,8 @@ import MatchPairs from "@/components/MatchPairs";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const flashcards = [
-  { front: "La décision a été prise par le comité.", back: "The decision was taken by the committee.", subtext: "Passive voice: être + past participle. The actor (comité) comes after 'par'. Government texts use passive constantly — it avoids assigning personal responsibility." },
-  { front: "La politique a été approuvée.", back: "The policy was approved.", subtext: "Another passive. Note: 'par' is often omitted when the actor is obvious or unimportant. 'A été approuvée' — past participle agrees with the subject (politique = feminine)." },
+  { front: "La décision a été prise par le comité.", back: "The decision was taken by the committee.", subtext: "Passive voice: être + past participle. The actor (comité) comes after 'par'. Government texts use passive constantly: it avoids assigning personal responsibility." },
+  { front: "La politique a été approuvée.", back: "The policy was approved.", subtext: "Another passive. Note: 'par' is often omitted when the actor is obvious or unimportant. 'A été approuvée': past participle agrees with the subject (politique = feminine)." },
   { front: "Il convient de noter que…", back: "It should be noted that…", subtext: "Impersonal construction. 'Il convient de + infinitif' is formal for 'it is appropriate to / one should'. Very common in briefing notes and memos." },
   { front: "Il y a lieu de…", back: "There are grounds to… / It is necessary to…", subtext: "Another impersonal: 'Il y a lieu de procéder à une révision.' = There are grounds to carry out a review. More formal than 'il faut'." },
   { front: "Il est à noter que…", back: "It is to be noted that…", subtext: "Introduces an important point. 'Il est à noter que le délai a été prolongé.' = It is to be noted that the deadline has been extended." },
@@ -32,7 +32,7 @@ const quiz = [
     question: "'La recommandation _____ par le sous-ministre.' Which passive construction is correct?",
     options: ["est formulée", "a été formulée", "a formulé", "formule"],
     correct: 1,
-    explanation: "'A été formulée' is the correct passé composé passive — être (a été) + past participle (formulée, agreeing with 'la recommandation', feminine). 'Est formulée' (présent passif) would work too in the right context, but 'a été' is past.",
+    explanation: "'A été formulée' is the correct passé composé passive: être (a été) + past participle (formulée, agreeing with 'la recommandation', feminine). 'Est formulée' (présent passif) would work too in the right context, but 'a été' is past.",
   },
   {
     question: "The sentence 'La décision a été prise par le directeur' means:",
@@ -43,7 +43,7 @@ const quiz = [
       "The director was taken by the decision",
     ],
     correct: 1,
-    explanation: "Passive voice: 'a été prise' = was taken (passé composé passif). The subject (la décision) receives the action. The actor (le directeur) follows 'par'. Passive voice is everywhere in government French — you must read it fluently.",
+    explanation: "Passive voice: 'a été prise' = was taken (passé composé passif). The subject (la décision) receives the action. The actor (le directeur) follows 'par'. Passive voice is everywhere in government French: you must read it fluently.",
   },
   {
     question: "'Le rapport _____ nous avons besoin sera distribué demain.' Which relative pronoun fits?",
@@ -55,7 +55,7 @@ const quiz = [
     question: "'_____ les ressources soient limitées, le projet sera maintenu.' Which connector works here?",
     options: ["Étant donné que", "Bien que", "Il convient de", "À cet égard"],
     correct: 1,
-    explanation: "'Bien que' = although — it requires the subjunctive ('soient'). 'Bien que les ressources soient limitées' = although resources are limited. 'Étant donné que' means 'given that' and takes the indicative, not the subjunctive.",
+    explanation: "'Bien que' = although: it requires the subjunctive ('soient'). 'Bien que les ressources soient limitées' = although resources are limited. 'Étant donné que' means 'given that' and takes the indicative, not the subjunctive.",
   },
   {
     question: "Government French converts verbs to nouns constantly. 'Mettre en œuvre' becomes:",
@@ -97,7 +97,7 @@ export default function SLELesson2Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/canadian-french-tests" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/canadian-french-tests" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← French for Canadian Tests
         </Link>
 
@@ -138,7 +138,7 @@ export default function SLELesson2Page() {
           <h2 className="text-2xl font-black">Structures in context</h2>
           <p className="mt-1 text-[#526173]">Every card shows the structure in a real government sentence. Flip to see the English and the explanation.</p>
           <div className="mt-6">
-            <FlashCardDeck cards={flashcards} title="Formal grammar — passive, nominalization, connectors" />
+            <FlashCardDeck cards={flashcards} title="Formal grammar: passive, nominalization, connectors" />
           </div>
         </section>
 
@@ -150,7 +150,7 @@ export default function SLELesson2Page() {
           </div>
         </section>
 
-        <section className="mt-16 rounded-[2rem] border-2 border-[#FEF3C7] bg-white p-8">
+        <section className="mt-16 rounded-2xl border-2 border-[#FEF3C7] bg-white p-8">
           <p className="text-xs font-bold uppercase tracking-widest text-[#D97706]">Breaking down a real government sentence</p>
           <p className="mt-3 text-lg italic text-[#526173] leading-8">
             &ldquo;Il convient de noter que les mesures auxquelles il est fait référence ont été approuvées sous réserve de la conformité aux lignes directrices établies par le Conseil du Trésor.&rdquo;
@@ -173,16 +173,16 @@ export default function SLELesson2Page() {
           </div>
         </section>
 
-        <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <section className="mt-16 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
           <h2 className="mt-3 text-3xl font-black">Formal grammar mastered.</h2>
           <p className="mt-3 leading-7 text-[#526173]">
-            Next: writing government documents — the phrases, formulas, and structures for the SLE writing test.
+            Next: writing government documents: the phrases, formulas, and structures for the SLE writing test.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link href="/learn/canadian-french-tests/unit-1/lesson-1" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">
               ← Previous lesson
             </Link>
-            <Link href="/learn/canadian-french-tests/unit-1/lesson-3" className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">
+            <Link href="/learn/canadian-french-tests/unit-1/lesson-3" className="rounded-full bg-[#D62828] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">
               Next lesson →
             </Link>
           </div>

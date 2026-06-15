@@ -5,14 +5,14 @@ import FillInTheBlank from "@/components/FillInTheBlank";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const cards = [
-  { front: "bénéficier de", back: "to benefit from / to be entitled to", subtext: "Vous bénéficiez de soins gratuits. — You are entitled to free care." },
-  { front: "en vigueur", back: "in effect / currently applicable", subtext: "La loi en vigueur s'applique à tous. — The law currently in effect applies to everyone." },
-  { front: "s'adresser à", back: "to contact / to address (an authority)", subtext: "Adressez-vous au guichet principal. — Go to the main counter." },
-  { front: "les heures d'ouverture", back: "opening hours / business hours", subtext: "Voir les heures d'ouverture sur notre site. — See our opening hours on our website." },
-  { front: "la carte-soleil", back: "Quebec health insurance card (RAMQ card)", subtext: "N'oubliez pas votre carte-soleil. — Don't forget your health card." },
-  { front: "la livraison à domicile", back: "home delivery", subtext: "Livraison à domicile disponible dès 25 $. — Home delivery available from $25." },
-  { front: "le rabais", back: "discount / reduction", subtext: "Profitez d'un rabais de 20 % cette semaine. — Take advantage of a 20% discount this week." },
-  { front: "la mise en candidature", back: "nomination / putting forward a candidacy", subtext: "Les mises en candidature sont ouvertes. — Nominations are now open." },
+  { front: "bénéficier de", back: "to benefit from / to be entitled to", subtext: "Vous bénéficiez de soins gratuits.: You are entitled to free care." },
+  { front: "en vigueur", back: "in effect / currently applicable", subtext: "La loi en vigueur s'applique à tous.: The law currently in effect applies to everyone." },
+  { front: "s'adresser à", back: "to contact / to address (an authority)", subtext: "Adressez-vous au guichet principal.: Go to the main counter." },
+  { front: "les heures d'ouverture", back: "opening hours / business hours", subtext: "Voir les heures d'ouverture sur notre site.: See our opening hours on our website." },
+  { front: "la carte-soleil", back: "Quebec health insurance card (RAMQ card)", subtext: "N'oubliez pas votre carte-soleil.: Don't forget your health card." },
+  { front: "la livraison à domicile", back: "home delivery", subtext: "Livraison à domicile disponible dès 25 $.: Home delivery available from $25." },
+  { front: "le rabais", back: "discount / reduction", subtext: "Profitez d'un rabais de 20 % cette semaine.: Take advantage of a 20% discount this week." },
+  { front: "la mise en candidature", back: "nomination / putting forward a candidacy", subtext: "Les mises en candidature sont ouvertes.: Nominations are now open." },
 ];
 
 const pairs = [
@@ -112,13 +112,13 @@ const questions = [
     question: "In Sample C (the government notice), what is a 'vignette de stationnement'?",
     options: ["A parking ticket (fine)", "A parking permit / sticker", "A parking lot entrance code", "A parking receipt"],
     correct: 1,
-    explanation: "A 'vignette de stationnement' is a parking permit — typically a sticker placed on a vehicle authorizing it to park in a specific residential or municipal zone. Residents must renew it periodically at the municipal office.",
+    explanation: "A 'vignette de stationnement' is a parking permit: typically a sticker placed on a vehicle authorizing it to park in a specific residential or municipal zone. Residents must renew it periodically at the municipal office.",
   },
   {
     question: "Looking at the three samples in this lesson, which has the most formal register?",
-    options: ["Sample A — store flyer", "Sample B — social media post", "Sample C — government notice", "All three are equally formal"],
+    options: ["Sample A: store flyer", "Sample B: social media post", "Sample C: government notice", "All three are equally formal"],
     correct: 2,
-    explanation: "Sample C (the government notice) is the most formal — it uses passive voice, impersonal constructions ('sont priés de'), and official vocabulary ('conformément à la réglementation'). Sample A is commercial/semi-formal. Sample B is informal/colloquial.",
+    explanation: "Sample C (the government notice) is the most formal: it uses passive voice, impersonal constructions ('sont priés de'), and official vocabulary ('conformément à la réglementation'). Sample A is commercial/semi-formal. Sample B is informal/colloquial.",
   },
   {
     question: "What does 'Conformément à la réglementation en vigueur' mean in Sample C?",
@@ -137,7 +137,7 @@ export default function Unit1Lesson3Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/canadian-life" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/canadian-life" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← French for Canadian Life
         </Link>
 
@@ -146,7 +146,7 @@ export default function Unit1Lesson3Page() {
             <p className="text-xs font-bold uppercase tracking-widest text-[#B91C1C]">Unit 1 · Lesson 3</p>
             <h1 className="mt-3 text-5xl font-black tracking-tight md:text-6xl">Quebec French in Context</h1>
             <p className="mt-4 text-lg leading-8 text-[#526173]">
-              Reading real Quebec French — from store flyers to government notices — builds fluency you can't get from textbooks alone. This lesson works through authentic-style text samples across different registers.
+              Reading real Quebec French: from store flyers to government notices: builds fluency you can't get from textbooks alone. This lesson works through authentic-style text samples across different registers.
             </p>
           </div>
 
@@ -169,7 +169,7 @@ export default function Unit1Lesson3Page() {
             <div className="rounded-2xl border border-[#E7DAB9] bg-white p-6">
               <p className="font-black text-[#B91C1C]">LIQUIDATION DE FIN DE SAISON</p>
               <p className="mt-2 leading-7 text-[#0B1F3A]">
-                Profitez d'un rabais de 30 % sur toute notre collection de manteaux et tuques d'hiver. Vente en magasin seulement — stationnement gratuit pour les clients. Heures d'ouverture: du lundi au vendredi, 9 h à 21 h. Samedi et dimanche, 10 h à 17 h. Ne manquez pas cette occasion!
+                Profitez d'un rabais de 30 % sur toute notre collection de manteaux et tuques d'hiver. Vente en magasin seulement: stationnement gratuit pour les clients. Heures d'ouverture: du lundi au vendredi, 9 h à 21 h. Samedi et dimanche, 10 h à 17 h. Ne manquez pas cette occasion!
               </p>
             </div>
             <div className="mt-4 space-y-3">
@@ -189,7 +189,7 @@ export default function Unit1Lesson3Page() {
             <p className="mb-3 text-xs font-black uppercase tracking-widest text-[#526173]">Sample B — Informal social media post</p>
             <div className="rounded-2xl border border-[#E7DAB9] bg-white p-6">
               <p className="leading-7 text-[#0B1F3A]">
-                Bon, ça fait que ce matin j'ai pogné le mauvais bus pis je suis arrivée en retard au bureau. Mon patron était pas super content, mais y'a été correct avec moi. Tantôt je lui apporte un café pour me faire pardonner lol. En tout cas, vous avez passé une bonne fin de semaine, vous autres? Moi j'ai magasiné avec ma blonde samedi — c'était le boutte!
+                Bon, ça fait que ce matin j'ai pogné le mauvais bus pis je suis arrivée en retard au bureau. Mon patron était pas super content, mais y'a été correct avec moi. Tantôt je lui apporte un café pour me faire pardonner lol. En tout cas, vous avez passé une bonne fin de semaine, vous autres? Moi j'ai magasiné avec ma blonde samedi: c'était le boutte!
               </p>
             </div>
             <div className="mt-4 space-y-3">
@@ -233,7 +233,7 @@ export default function Unit1Lesson3Page() {
         <div className="mt-12 rounded-2xl bg-[#0B1F3A] p-6 text-white">
           <p className="text-lg font-black">L'Office québécois de la langue française (OQLF)</p>
           <p className="mt-3 leading-7 text-[#CBD5E1]">
-            The OQLF is the Quebec government body responsible for defining and promoting French in Quebec. It was established by the Charter of the French Language (Bill 101 / Loi 101) in 1977 — the landmark legislation that made French the official language of the province.
+            The OQLF is the Quebec government body responsible for defining and promoting French in Quebec. It was established by the Charter of the French Language (Bill 101 / Loi 101) in 1977: the landmark legislation that made French the official language of the province.
           </p>
           <p className="mt-3 leading-7 text-[#CBD5E1]">
             The OQLF creates official Quebec French terminology for new concepts: the word <strong className="text-white">courriel</strong> (email) is one of its most famous inventions. It also maintains the <em>Grand dictionnaire terminologique</em>, a public database of French terminology across hundreds of professional fields. When you're unsure whether a word has an official French equivalent in Quebec, that's the first place to check.

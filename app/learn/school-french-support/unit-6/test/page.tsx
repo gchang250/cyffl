@@ -48,7 +48,7 @@ const questions = [
     question: "What does 'il est indéniable que' introduce in an argumentative text?",
     options: ["A contrast", "A question", "An accepted fact", "A personal opinion"],
     correct: 2,
-    explanation: "'Il est indéniable que' (it is undeniable that) introduces a fact or point presented as universally accepted — common in formal opinion writing.",
+    explanation: "'Il est indéniable que' (it is undeniable that) introduces a fact or point presented as universally accepted: common in formal opinion writing.",
   },
   {
     question: "What is a cognate?",
@@ -60,7 +60,7 @@ const questions = [
     question: "According to the upper-intermediate texts, who does the environmental text say shares responsibility for environmental problems?",
     options: ["Governments alone", "Companies alone", "Both governments and individuals", "Scientists and researchers"],
     correct: 2,
-    explanation: "The text states 'la responsabilité est partagée: les gouvernements doivent adopter des politiques ambitieuses, mais chacun d'entre nous a également un rôle à jouer' — both governments and individuals.",
+    explanation: "The text states 'la responsabilité est partagée: les gouvernements doivent adopter des politiques ambitieuses, mais chacun d'entre nous a également un rôle à jouer': both governments and individuals.",
   },
 ];
 
@@ -68,7 +68,7 @@ export default function Unit6TestPage() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/school-french-support/unit-6/lesson-4" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/school-french-support/unit-6/lesson-4" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← Back to Lesson 4
         </Link>
 
@@ -96,7 +96,7 @@ export default function Unit6TestPage() {
         <div className="mt-12 rounded-2xl bg-[#0B1F3A] p-8 text-white">
 
           <p className="mt-3 leading-7 text-[#CBD5E1]">
-            You&apos;ve finished School French Support. You now have a strong foundation in grammar, tenses, writing, and reading — everything you need for school French.
+            You&apos;ve finished School French Support. You now have a strong foundation in grammar, tenses, writing, and reading: everything you need for school French.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link href="/learn/school-french-support/unit-6/lesson-4" className="rounded-full border border-[#334155] bg-[#0B1F3A] px-6 py-3 text-sm font-black text-[#CBD5E1] transition hover:-translate-y-0.5 hover:border-[#526173]">← Back to lesson</Link>

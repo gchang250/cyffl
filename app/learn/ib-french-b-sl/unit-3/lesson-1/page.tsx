@@ -41,7 +41,7 @@ const flashcards = [
   },
   {
     front: "Le destinataire",
-    back: "The recipient — the most important context clue",
+    back: "The recipient: the most important context clue",
     subtext: "The recipient determines almost everything: register, text type, pronoun (tu/vous), and tone. Identify the recipient before you write a word.",
   },
 ];
@@ -59,7 +59,7 @@ const quiz = [
   {
     question: "You receive a Paper 1 prompt with three text type options. How should you choose?",
     options: [
-      "Always pick the first option listed — it's usually the easiest",
+      "Always pick the first option listed: it's usually the easiest",
       "Pick the text type that best fits the context, purpose, and recipient described in the prompt",
       "Always pick the formal option to impress examiners",
       "Pick whichever format you've practised the most, regardless of the prompt",
@@ -71,7 +71,7 @@ const quiz = [
     question: "The prompt asks you to share your opinion on a topic with your classmates. Which is the most directly appropriate text type?",
     options: ["Formal letter", "Proposal", "Speech (exposé) or article for the school paper", "Instructions"],
     correct: 2,
-    explanation: "Sharing with classmates = an audience you know. An exposé (speech) is the most direct way to address them — or an article in the school newspaper. A formal letter or proposal would be over-formal for this context.",
+    explanation: "Sharing with classmates = an audience you know. An exposé (speech) is the most direct way to address them: or an article in the school newspaper. A formal letter or proposal would be over-formal for this context.",
   },
   {
     question: "For an article, which four elements does the IB require for full Criterion C marks?",
@@ -100,11 +100,11 @@ const quiz = [
     options: [
       "Writing in an informal register",
       "Using the wrong text type conventions",
-      "Factual inaccuracies — only coherence and development are assessed",
+      "Factual inaccuracies: only coherence and development are assessed",
       "Using the wrong tense",
     ],
     correct: 2,
-    explanation: "The IB explicitly states that examiners should not penalise factually incorrect information in Criterion B, as long as ideas are coherent and sufficiently developed. Don't worry if you can't recall an exact statistic — make a logical claim and develop it.",
+    explanation: "The IB explicitly states that examiners should not penalise factually incorrect information in Criterion B, as long as ideas are coherent and sufficiently developed. Don't worry if you can't recall an exact statistic: make a logical claim and develop it.",
   },
   {
     question: "A prompt asks you to write a 'blog' about a social media campaign. What format conventions must you follow for Criterion C?",
@@ -115,18 +115,18 @@ const quiz = [
       "Author name, date, title, introduction, conclusion",
     ],
     correct: 1,
-    explanation: "Blog conventions: title, author name/date, first-person narration (je), and reader awareness — address the reader directly (e.g., 'Et vous, avez-vous déjà participé…?'). These are the four elements assessed by Criterion C for blogs.",
+    explanation: "Blog conventions: title, author name/date, first-person narration (je), and reader awareness: address the reader directly (e.g., 'Et vous, avez-vous déjà participé…?'). These are the four elements assessed by Criterion C for blogs.",
   },
   {
     question: "A prompt about a school environmental project gives you three text type options. You know how to write an article well but the prompt specifies classmates as the audience. What is the best choice?",
     options: [
-      "Always choose the article — you know it best",
+      "Always choose the article: you know it best",
       "Choose the text type that best fits the audience and purpose, even if it means using a type you've practised less",
       "Choose the speech (exposé) because it's always the right choice for school audiences",
       "Choose whichever appears first in the list",
     ],
     correct: 1,
-    explanation: "Criterion C assesses whether your text type choice is appropriate to the context, purpose, and recipient. An article written for classmates could work — but an exposé (speech) or blog might fit the audience even better. The choice must be justified by the prompt's context, not by what you find easiest.",
+    explanation: "Criterion C assesses whether your text type choice is appropriate to the context, purpose, and recipient. An article written for classmates could work: but an exposé (speech) or blog might fit the audience even better. The choice must be justified by the prompt's context, not by what you find easiest.",
   },
   {
     question: "You are writing a proposal (proposition) for a city council. What is the required conclusion element?",
@@ -137,7 +137,7 @@ const quiz = [
       "A summary of all arguments made",
     ],
     correct: 2,
-    explanation: "Proposals end with a convincing conclusion or clear recommendation — the call to action. 'C'est pourquoi je vous recommande vivement d'adopter cette mesure' or 'Je vous invite à approuver ce projet.' Without a clear recommendation, a proposal is structurally incomplete under Criterion C.",
+    explanation: "Proposals end with a convincing conclusion or clear recommendation: the call to action. 'C'est pourquoi je vous recommande vivement d'adopter cette mesure' or 'Je vous invite à approuver ce projet.' Without a clear recommendation, a proposal is structurally incomplete under Criterion C.",
   },
 ];
 
@@ -145,7 +145,7 @@ export default function Unit3Lesson1Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/ib-french-b-sl" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/ib-french-b-sl" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← IB French B SL
         </Link>
 
@@ -260,7 +260,7 @@ export default function Unit3Lesson1Page() {
           <h2 className="text-2xl font-black">Reference cards</h2>
           <p className="mt-1 text-[#526173]">Click a card to flip it.</p>
           <div className="mt-6">
-            <FlashCardDeck cards={flashcards} title="Paper 1 — text types & Criterion C" />
+            <FlashCardDeck cards={flashcards} title="Paper 1: text types & Criterion C" />
           </div>
         </section>
 
@@ -281,7 +281,7 @@ export default function Unit3Lesson1Page() {
         </section>
 
         {/* Grammar resources callout */}
-        <section className="mt-16 rounded-[2rem] bg-[#0B1F3A] p-8 text-white shadow-sm">
+        <section className="mt-16 rounded-2xl bg-[#0B1F3A] p-8 text-white shadow-sm">
           <p className="text-xs font-bold uppercase tracking-widest text-[#C9A44C]">Resources to study alongside this unit</p>
           <h2 className="mt-3 text-2xl font-black">Use these to write at a higher level.</h2>
           <p className="mt-3 leading-7 text-white/70">
@@ -289,11 +289,11 @@ export default function Unit3Lesson1Page() {
           </p>
           <div className="mt-6 grid gap-3 sm:grid-cols-2">
             {[
-              { label: "Le subjonctif", desc: "Essential for formal writing — 'il faut que', 'bien que', 'pour que'", href: "/resources/verbs-subjonctif" },
+              { label: "Le subjonctif", desc: "Essential for formal writing: 'il faut que', 'bien que', 'pour que'", href: "/resources/verbs-subjonctif" },
               { label: "Le conditionnel", desc: "Polite requests, hypotheticals, and recommendations", href: "/resources/verbs-conditionnel" },
               { label: "Le futur simple", desc: "Predictions, plans, and consequences in your writing", href: "/resources/verbs-futur-simple" },
-              { label: "Connecting words", desc: "Connectors from A1 to C1 — elevate your argument structure", href: "/resources/connecting-words" },
-              { label: "Idiomatic expressions", desc: "Add cultural fluency to your writing — Criterion A top band", href: "/resources/expressions" },
+              { label: "Connecting words", desc: "Connectors from A1 to C1: elevate your argument structure", href: "/resources/connecting-words" },
+              { label: "Idiomatic expressions", desc: "Add cultural fluency to your writing: Criterion A top band", href: "/resources/expressions" },
             ].map(r => (
               <Link key={r.label} href={r.href} className="group rounded-2xl border border-white/10 bg-white/5 p-4 transition hover:bg-white/10">
                 <p className="font-black text-white group-hover:text-[#C9A44C]">{r.label} →</p>
@@ -303,16 +303,16 @@ export default function Unit3Lesson1Page() {
           </div>
         </section>
 
-        <section className="mt-8 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <section className="mt-8 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
           <h2 className="mt-3 text-3xl font-black">Text types and conventions covered.</h2>
           <p className="mt-3 leading-7 text-[#526173]">
-            Next: register and audience — how to keep your tone consistent throughout.
+            Next: register and audience: how to keep your tone consistent throughout.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link href="/learn/ib-french-b-sl" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">
               Back to course
             </Link>
-            <Link href="/learn/ib-french-b-sl/unit-3/lesson-2" className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">
+            <Link href="/learn/ib-french-b-sl/unit-3/lesson-2" className="rounded-full bg-[#D62828] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">
               Next lesson →
             </Link>
           </div>

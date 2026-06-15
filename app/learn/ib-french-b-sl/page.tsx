@@ -24,7 +24,7 @@ const units = [
   },
   {
     number: "02",
-    title: "Paper 2 — Receptive Skills",
+    title: "Paper 2: Receptive Skills",
     description: "Reading and listening comprehension strategies, question types, and grammar for understanding complex texts.",
     color: "bg-[#FEF3C7] text-[#D97706]",
     testHref: "/learn/ib-french-b-sl/unit-2/test",
@@ -36,7 +36,7 @@ const units = [
   },
   {
     number: "03",
-    title: "Paper 1 — Written Production",
+    title: "Paper 1: Written Production",
     description: "Text types, register, audience, writing conventions, connectors, and opinion phrases for the written paper.",
     color: "bg-[#F0FDF4] text-[#16A34A]",
     testHref: "/learn/ib-french-b-sl/unit-3/test",
@@ -66,7 +66,7 @@ export default function IBFrenchBSLPage() {
       <section className="mx-auto max-w-7xl px-6 py-20">
         <Link
           href="/learn"
-          className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]"
+          className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]"
         >
           ← Back to courses
         </Link>
@@ -84,7 +84,7 @@ export default function IBFrenchBSLPage() {
             <p className="mt-5 text-lg leading-8 text-[#526173]">
               Prepare for all three IB French B Standard Level assessments: Paper 1
               (written production), Paper 2 (reading and listening), and the Individual
-              Oral. Four units, fourteen lessons, four unit tests — all free.
+              Oral. Four units, fourteen lessons, four unit tests, all free.
             </p>
 
             <div className="mt-8 grid grid-cols-3 gap-3 text-center">
@@ -102,26 +102,26 @@ export default function IBFrenchBSLPage() {
               </div>
             </div>
 
-            <div className="mt-6 rounded-[1.5rem] bg-[#0B1F3A] p-5 text-white">
+            <div className="mt-6 rounded-2xl bg-[#0B1F3A] p-5 text-white">
               <p className="text-sm font-bold text-[#C9A44C]">Course goal</p>
               <p className="mt-2 font-black leading-7">
                 Score confidently on all three IB French B SL assessments.
               </p>
             </div>
 
-            <div className="mt-4 rounded-[1.5rem] border border-[#E7DAB9] bg-white p-5">
+            <div className="mt-4 rounded-2xl border border-[#E7DAB9] bg-white p-5">
               <p className="text-xs font-bold text-[#526173] uppercase tracking-widest">Assessment breakdown</p>
               <div className="mt-3 space-y-2 text-sm">
                 <div className="flex justify-between">
-                  <span className="font-bold">Paper 1 — Written Production</span>
+                  <span className="font-bold">Paper 1: Written Production</span>
                   <span className="text-[#526173]">25% · /30</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="font-bold">Paper 2A — Reading</span>
+                  <span className="font-bold">Paper 2A: Reading</span>
                   <span className="text-[#526173]">25% · /40</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="font-bold">Paper 2B — Listening</span>
+                  <span className="font-bold">Paper 2B: Listening</span>
                   <span className="text-[#526173]">25% · /25</span>
                 </div>
                 <div className="flex justify-between">
@@ -136,7 +136,7 @@ export default function IBFrenchBSLPage() {
             {units.map((unit) => (
               <div
                 key={unit.number}
-                className="rounded-[2rem] border border-[#E7DAB9] bg-white p-6 shadow-sm"
+                className="rounded-2xl border border-[#E7DAB9] bg-white p-6 shadow-sm"
               >
                 <div className="flex items-center gap-3">
                   <span className={`rounded-full px-2.5 py-0.5 text-xs font-black ${unit.color}`}>

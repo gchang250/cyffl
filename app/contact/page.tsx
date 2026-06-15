@@ -17,7 +17,7 @@ export default function ContactPage() {
         </p>
 
         {/* Email card */}
-        <div className="mt-10 rounded-[2rem] bg-[#0B1F3A] p-8 text-white shadow-sm">
+        <div className="mt-10 rounded-2xl bg-[#0B1F3A] p-8 text-white shadow-sm">
           <p className="text-sm font-bold text-[#C9A44C]">Email us at</p>
           <a
             href="mailto:canadianyouthffl@gmail.com"

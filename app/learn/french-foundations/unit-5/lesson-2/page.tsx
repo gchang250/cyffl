@@ -23,13 +23,13 @@ const classroomCards = [
   { front: "la salle de classe", back: "classroom", subtext: "La salle = room." },
   { front: "le tableau", back: "board / chalkboard", subtext: "Write on the tableau." },
   { front: "le bureau", back: "desk / teacher's desk", subtext: "Also means 'office.'" },
-  { front: "le stylo", back: "pen", subtext: "Un stylo rouge — a red pen." },
-  { front: "le crayon", back: "pencil", subtext: "Don't confuse with crayon (English) — it means pencil here!" },
-  { front: "le cahier", back: "notebook / exercise book", subtext: "Mon cahier de français — my French notebook." },
-  { front: "le livre", back: "book", subtext: "Le livre de maths — the math book." },
-  { front: "le cartable", back: "school bag", subtext: "Mon cartable est lourd! — My bag is heavy!" },
-  { front: "les devoirs", back: "homework", subtext: "Plural: les devoirs. Faire les devoirs — to do homework." },
-  { front: "l'examen", back: "exam / test", subtext: "Passer un examen — to take a test." },
+  { front: "le stylo", back: "pen", subtext: "Un stylo rouge: a red pen." },
+  { front: "le crayon", back: "pencil", subtext: "Don't confuse with crayon (English): it means pencil here!" },
+  { front: "le cahier", back: "notebook / exercise book", subtext: "Mon cahier de français: my French notebook." },
+  { front: "le livre", back: "book", subtext: "Le livre de maths: the math book." },
+  { front: "le cartable", back: "school bag", subtext: "Mon cartable est lourd!: My bag is heavy!" },
+  { front: "les devoirs", back: "homework", subtext: "Plural: les devoirs. Faire les devoirs: to do homework." },
+  { front: "l'examen", back: "exam / test", subtext: "Passer un examen: to take a test." },
 ];
 
 const pairs = [
@@ -42,11 +42,11 @@ const pairs = [
 ];
 
 const exercises = [
-  { before: "Mon matière préféré est", after: ". (history)", answer: "l'histoire", hint: "history — don't forget the l'", translation: "My favourite subject is history." },
+  { before: "Mon matière préféré est", after: ". (history)", answer: "l'histoire", hint: "history: don't forget the l'", translation: "My favourite subject is history." },
   { before: "J'ai oublié mon", after: ". (notebook)", answer: "cahier", hint: "notebook / exercise book", translation: "I forgot my notebook." },
   { before: "Nous avons un", after: "demain. (exam)", answer: "examen", hint: "exam / test", translation: "We have a test tomorrow." },
-  { before: "Est-ce que tu aimes", after: "? (computer science)", answer: "l'informatique", hint: "computer science — l' before vowel", translation: "Do you like computer science?" },
-  { before: "Elle fait ses", after: "après l'école. (homework)", answer: "devoirs", hint: "homework — always plural", translation: "She does her homework after school." },
+  { before: "Est-ce que tu aimes", after: "? (computer science)", answer: "l'informatique", hint: "computer science: l' before vowel", translation: "Do you like computer science?" },
+  { before: "Elle fait ses", after: "après l'école. (homework)", answer: "devoirs", hint: "homework: always plural", translation: "She does her homework after school." },
 ];
 
 const questions = [
@@ -90,11 +90,11 @@ const questions = [
     question: "How do you say 'We have an exam tomorrow'?",
     options: ["Nous avons un examen demain.", "Nous sommes un examen demain.", "Nous faisons un examen demain.", "Nous avons le examen demain."],
     correct: 0,
-    explanation: "Nous avons un examen demain. Use avoir for 'having' a test. Note: 'un examen' (not 'le examen') — use an indefinite article for a single upcoming test.",
+    explanation: "Nous avons un examen demain. Use avoir for 'having' a test. Note: 'un examen' (not 'le examen'): use an indefinite article for a single upcoming test.",
   },
   {
     question: "What is the article used before 'informatique' and why?",
-    options: ["le — because it is masculine", "la — but it contracts to l' before a vowel", "un — because it starts with a vowel", "les — because it's always plural"],
+    options: ["le: because it is masculine", "la: but it contracts to l' before a vowel", "un: because it starts with a vowel", "les: because it's always plural"],
     correct: 1,
     explanation: "L'informatique is feminine (la informatique → l'informatique). The 'l'' is used because informatique starts with a vowel. The gender is feminine.",
   },
@@ -104,7 +104,7 @@ export default function Unit5Lesson2Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/french-foundations" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/french-foundations" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← French Foundations
         </Link>
 
@@ -159,7 +159,7 @@ export default function Unit5Lesson2Page() {
 
         <div className="mt-16 flex items-center justify-between gap-4">
           <Link href="/learn/french-foundations/unit-5/lesson-1" className="rounded-full border border-[#E7DAB9] bg-white px-5 py-2.5 text-sm font-black text-[#526173] transition hover:-translate-y-0.5">← Previous</Link>
-          <Link href="/learn/french-foundations/unit-5/lesson-3" className="rounded-full bg-[#2563EB] px-5 py-2.5 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Next lesson →</Link>
+          <Link href="/learn/french-foundations/unit-5/lesson-3" className="rounded-full bg-[#D62828] px-5 py-2.5 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">Next lesson →</Link>
         </div>
       </section>
     </main>

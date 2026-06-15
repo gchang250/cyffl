@@ -25,12 +25,12 @@ const uses: { title: string; example: string; note: string }[] = [
   {
     title: "Action completed before another past action",
     example: "Il avait déjà mangé quand elle est arrivée.",
-    note: "He had already eaten when she arrived. The eating happened first (PQP) — the arrival came after (passé composé).",
+    note: "He had already eaten when she arrived. The eating happened first (PQP): the arrival came after (passé composé).",
   },
   {
-    title: "Reported speech — tense shift back",
+    title: "Reported speech: tense shift back",
     example: "Elle a dit qu'il était parti.",
-    note: "She said he had left. The original statement was 'il est parti' — in reported speech, this shifts to the plus-que-parfait.",
+    note: "She said he had left. The original statement was 'il est parti': in reported speech, this shifts to the plus-que-parfait.",
   },
   {
     title: "Condition in a si-clause (with conditionnel passé)",
@@ -45,9 +45,9 @@ const uses: { title: string; example: string; note: string }[] = [
 ];
 
 const comparison: [string, string, string][] = [
-  ["Elle a lu le rapport.", "She read the report.", "Passé composé — completed action"],
-  ["Elle avait lu le rapport avant la réunion.", "She had read the report before the meeting.", "PQP — completed before another past event"],
-  ["Il est arrivé.", "He arrived.", "Passé composé — the event itself"],
+  ["Elle a lu le rapport.", "She read the report.", "Passé composé: completed action"],
+  ["Elle avait lu le rapport avant la réunion.", "She had read the report before the meeting.", "PQP: completed before another past event"],
+  ["Il est arrivé.", "He arrived.", "Passé composé: the event itself"],
   ["Quand je suis arrivé, il était déjà parti.", "When I arrived, he had already left.", "PC (my arrival) / PQP (his leaving happened first)"],
 ];
 
@@ -55,7 +55,7 @@ export default function PlusQueParfaitPage() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-4xl px-6 py-16">
-        <Link href="/resources" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/resources" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← Resources
         </Link>
 
@@ -67,7 +67,7 @@ export default function PlusQueParfaitPage() {
             Le plus-que-parfait
           </h1>
           <p className="mt-4 text-lg leading-8 text-[#526173]">
-            The plus-que-parfait expresses an action completed <strong>before</strong> another past action — the &ldquo;had done&rdquo; tense. It is common in written and spoken French and essential for si-clauses and reported speech.
+            The plus-que-parfait expresses an action completed <strong>before</strong> another past action: the &ldquo;had done&rdquo; tense. It is common in written and spoken French and essential for si-clauses and reported speech.
           </p>
         </div>
 
@@ -80,7 +80,7 @@ export default function PlusQueParfaitPage() {
           <div className="mt-4 rounded-2xl bg-[#0B1F3A] p-5 text-white">
             <p className="font-black text-[#C9A44C]">The rule</p>
             <p className="mt-2 text-sm leading-7 text-white/80">
-              Same structure as the passé composé, but use <span className="font-black text-white">avoir or être in the imparfait</span> instead of the present tense. The same verbs that take être in the passé composé take être here — and the same agreement rules apply.
+              Same structure as the passé composé, but use <span className="font-black text-white">avoir or être in the imparfait</span> instead of the present tense. The same verbs that take être in the passé composé take être here: and the same agreement rules apply.
             </p>
             <div className="mt-3 grid gap-3 sm:grid-cols-2 text-sm">
               <div className="rounded-xl bg-white/10 p-3">
@@ -156,7 +156,7 @@ export default function PlusQueParfaitPage() {
               ["Si-clause", "Plus-que-parfait → Si j'avais su…"],
               ["Result clause", "Conditionnel passé → j'aurais agi différemment."],
               ["", "If I had known, I would have acted differently."],
-              ["", "This is the hypothetical past — describing what would have happened under different conditions."],
+              ["", "This is the hypothetical past: describing what would have happened under different conditions."],
             ].map(([label, text], i) => (
               <div key={i} className={`rounded-xl p-3 ${label ? "bg-white" : "bg-[#FFFDF7]"}`}>
                 {label && <p className="text-xs font-black uppercase tracking-widest text-[#D97706]">{label}</p>}

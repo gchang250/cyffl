@@ -5,21 +5,21 @@ import FillInTheBlank from "@/components/FillInTheBlank";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const cards = [
-  { front: "fin de semaine", back: "weekend — le weekend (standard)\n", subtext: "On se voit en fin de semaine? — See you this weekend?" },
-  { front: "magasinage", back: "shopping — faire du shopping (standard)", subtext: "Je vais faire du magasinage au centre-ville. — I'm going shopping downtown." },
-  { front: "dépanneur", back: "convenience store — épicerie de proximité (standard)", subtext: "Passe au dépanneur acheter du lait. — Stop at the dep to buy milk." },
-  { front: "tuque", back: "winter knit hat — bonnet de laine (standard)", subtext: "N'oublie pas ta tuque, il fait -20! — Don't forget your tuque, it's -20!" },
-  { front: "char", back: "car — voiture (standard)", subtext: "Mon char est brisé encore. — My car is broken again." },
-  { front: "pogner", back: "to catch / to get / to succeed — attraper / réussir (standard)", subtext: "T'as pogné le bus? — Did you catch the bus?" },
-  { front: "jaser", back: "to chat — bavarder (standard)", subtext: "On a jasé pendant des heures. — We chatted for hours." },
-  { front: "tantôt", back: "earlier / later / in a bit — tout à l'heure / plus tard (standard)", subtext: "Je te rappelle tantôt. — I'll call you back in a bit." },
-  { front: "virer", back: "to turn — tourner (standard)", subtext: "Vire à gauche au coin de la rue. — Turn left at the corner." },
-  { front: "placoter", back: "to gossip / to chat — bavarder / cancaner (standard)", subtext: "Elles placotent depuis ce matin. — They've been gossiping since this morning." },
-  { front: "courriel", back: "email — e-mail (standard)\nNote: courriel is the official Quebec government term and is widely used.", subtext: "Envoie-moi un courriel. — Send me an email." },
-  { front: "stationnement", back: "parking lot — parking (standard)", subtext: "Le stationnement est gratuit le dimanche. — Parking is free on Sundays." },
-  { front: "chum / blonde", back: "boyfriend / girlfriend — petit ami / petite amie (standard)", subtext: "C'est mon chum depuis deux ans. — He's been my boyfriend for two years." },
-  { front: "niaiseux / niaiseuse", back: "silly, dumb — idiot / stupide (standard)", subtext: "Fais pas le niaiseux! — Don't be silly!" },
-  { front: "gossant(e)", back: "annoying — agaçant(e) (standard)", subtext: "C'est vraiment gossant ce bruit-là. — That noise is really annoying." },
+  { front: "fin de semaine", back: "weekend: le weekend (standard)\n", subtext: "On se voit en fin de semaine?: See you this weekend?" },
+  { front: "magasinage", back: "shopping: faire du shopping (standard)", subtext: "Je vais faire du magasinage au centre-ville.: I'm going shopping downtown." },
+  { front: "dépanneur", back: "convenience store: épicerie de proximité (standard)", subtext: "Passe au dépanneur acheter du lait.: Stop at the dep to buy milk." },
+  { front: "tuque", back: "winter knit hat: bonnet de laine (standard)", subtext: "N'oublie pas ta tuque, il fait -20!: Don't forget your tuque, it's -20!" },
+  { front: "char", back: "car: voiture (standard)", subtext: "Mon char est brisé encore.: My car is broken again." },
+  { front: "pogner", back: "to catch / to get / to succeed: attraper / réussir (standard)", subtext: "T'as pogné le bus?: Did you catch the bus?" },
+  { front: "jaser", back: "to chat: bavarder (standard)", subtext: "On a jasé pendant des heures.: We chatted for hours." },
+  { front: "tantôt", back: "earlier / later / in a bit: tout à l'heure / plus tard (standard)", subtext: "Je te rappelle tantôt.: I'll call you back in a bit." },
+  { front: "virer", back: "to turn: tourner (standard)", subtext: "Vire à gauche au coin de la rue.: Turn left at the corner." },
+  { front: "placoter", back: "to gossip / to chat: bavarder / cancaner (standard)", subtext: "Elles placotent depuis ce matin.: They've been gossiping since this morning." },
+  { front: "courriel", back: "email: e-mail (standard)\nNote: courriel is the official Quebec government term and is widely used.", subtext: "Envoie-moi un courriel.: Send me an email." },
+  { front: "stationnement", back: "parking lot: parking (standard)", subtext: "Le stationnement est gratuit le dimanche.: Parking is free on Sundays." },
+  { front: "chum / blonde", back: "boyfriend / girlfriend: petit ami / petite amie (standard)", subtext: "C'est mon chum depuis deux ans.: He's been my boyfriend for two years." },
+  { front: "niaiseux / niaiseuse", back: "silly, dumb: idiot / stupide (standard)", subtext: "Fais pas le niaiseux!: Don't be silly!" },
+  { front: "gossant(e)", back: "annoying: agaçant(e) (standard)", subtext: "C'est vraiment gossant ce bruit-là.: That noise is really annoying." },
 ];
 
 const pairs = [
@@ -57,7 +57,7 @@ const exercises = [
     before: "On a",
     after: "longtemps après le souper. (chatted)",
     answer: "jasé",
-    hint: "Past tense of 'jaser' — to chat",
+    hint: "Past tense of 'jaser': to chat",
     translation: "We chatted for a long time after dinner.",
   },
   {
@@ -103,12 +103,12 @@ const questions = [
     question: "What is a 'dépanneur' in Quebec?",
     options: ["A repair shop", "A pharmacy", "A convenience store open late hours", "A fast food restaurant"],
     correct: 2,
-    explanation: "A dépanneur is a Quebec convenience store — typically open late and selling groceries, drinks, and everyday items. The name comes from 'dépanner' (to fix a problem). In standard French you'd say 'épicerie de proximité'.",
+    explanation: "A dépanneur is a Quebec convenience store: typically open late and selling groceries, drinks, and everyday items. The name comes from 'dépanner' (to fix a problem). In standard French you'd say 'épicerie de proximité'.",
   },
   {
     question: "In Quebec French, what is the difference between 'chum' and 'blonde'?",
     options: [
-      "Both mean friend — there is no difference",
+      "Both mean friend: there is no difference",
       "Chum = boyfriend, blonde = girlfriend",
       "Chum = best friend, blonde = acquaintance",
       "Both are used only for children",
@@ -120,13 +120,13 @@ const questions = [
     question: "What is the Quebec French term for 'weekend'?",
     options: ["la fin de journée", "la semaine finale", "la fin de semaine", "le week-end"],
     correct: 2,
-    explanation: "'La fin de semaine' is the standard Quebec French term for weekend. While 'le week-end' (borrowed from English) is understood and used in France, Quebec French officially prefers 'fin de semaine' — promoted by the OQLF.",
+    explanation: "'La fin de semaine' is the standard Quebec French term for weekend. While 'le week-end' (borrowed from English) is understood and used in France, Quebec French officially prefers 'fin de semaine': promoted by the OQLF.",
   },
   {
     question: "What does 'stationnement' mean in Quebec French?",
     options: ["A bus station", "A parking lot / parking space", "A train station", "A standing order"],
     correct: 1,
-    explanation: "'Stationnement' = parking or parking lot. It's a key Quebec government term — you'll see it on signs, in notices, and on Quebec government websites. In France, 'stationnement' is used mainly in official/legal contexts, but 'parking' is common in everyday speech.",
+    explanation: "'Stationnement' = parking or parking lot. It's a key Quebec government term: you'll see it on signs, in notices, and on Quebec government websites. In France, 'stationnement' is used mainly in official/legal contexts, but 'parking' is common in everyday speech.",
   },
 ];
 
@@ -134,7 +134,7 @@ export default function Unit1Lesson1Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/canadian-life" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/canadian-life" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← French for Canadian Life
         </Link>
 
@@ -143,7 +143,7 @@ export default function Unit1Lesson1Page() {
             <p className="text-xs font-bold uppercase tracking-widest text-[#B91C1C]">Unit 1 · Lesson 1</p>
             <h1 className="mt-3 text-5xl font-black tracking-tight md:text-6xl">Quebec Vocabulary</h1>
             <p className="mt-4 text-lg leading-8 text-[#526173]">
-              Quebec French has hundreds of words and expressions that differ from standard French. These aren't errors — they're a distinct and living variety of French. This lesson covers the most common vocabulary differences you'll encounter in Quebec.
+              Quebec French has hundreds of words and expressions that differ from standard French. These aren't errors: they're a distinct and living variety of French. This lesson covers the most common vocabulary differences you'll encounter in Quebec.
             </p>
           </div>
 

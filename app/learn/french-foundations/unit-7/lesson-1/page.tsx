@@ -5,30 +5,30 @@ import FillInTheBlank from "@/components/FillInTheBlank";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const faireCards = [
-  { front: "je fais", back: "I do / I make", subtext: "Je fais mes devoirs. — I do my homework." },
-  { front: "tu fais", back: "you do / you make", subtext: "Tu fais du sport? — Do you play sport?" },
-  { front: "il/elle fait", back: "he/she does/makes", subtext: "Elle fait la cuisine. — She cooks." },
-  { front: "nous faisons", back: "we do / we make", subtext: "Nous faisons une promenade. — We're going for a walk." },
-  { front: "vous faites", back: "you do / you make", subtext: "Vous faites quoi ce soir? — What are you doing tonight?" },
-  { front: "ils/elles font", back: "they do / they make", subtext: "Ils font du vélo. — They cycle." },
+  { front: "je fais", back: "I do / I make", subtext: "Je fais mes devoirs.: I do my homework." },
+  { front: "tu fais", back: "you do / you make", subtext: "Tu fais du sport?: Do you play sport?" },
+  { front: "il/elle fait", back: "he/she does/makes", subtext: "Elle fait la cuisine.: She cooks." },
+  { front: "nous faisons", back: "we do / we make", subtext: "Nous faisons une promenade.: We're going for a walk." },
+  { front: "vous faites", back: "you do / you make", subtext: "Vous faites quoi ce soir?: What are you doing tonight?" },
+  { front: "ils/elles font", back: "they do / they make", subtext: "Ils font du vélo.: They cycle." },
 ];
 
 const pouvoirCards = [
-  { front: "je peux", back: "I can", subtext: "Je peux t'aider. — I can help you." },
-  { front: "tu peux", back: "you can", subtext: "Tu peux venir? — Can you come?" },
-  { front: "il/elle peut", back: "he/she can", subtext: "Elle peut parler français. — She can speak French." },
-  { front: "nous pouvons", back: "we can", subtext: "Nous pouvons essayer. — We can try." },
-  { front: "vous pouvez", back: "you can", subtext: "Vous pouvez m'aider? — Can you help me?" },
-  { front: "ils/elles peuvent", back: "they can", subtext: "Ils peuvent partir. — They can leave." },
+  { front: "je peux", back: "I can", subtext: "Je peux t'aider.: I can help you." },
+  { front: "tu peux", back: "you can", subtext: "Tu peux venir?: Can you come?" },
+  { front: "il/elle peut", back: "he/she can", subtext: "Elle peut parler français.: She can speak French." },
+  { front: "nous pouvons", back: "we can", subtext: "Nous pouvons essayer.: We can try." },
+  { front: "vous pouvez", back: "you can", subtext: "Vous pouvez m'aider?: Can you help me?" },
+  { front: "ils/elles peuvent", back: "they can", subtext: "Ils peuvent partir.: They can leave." },
 ];
 
 const vouloirCards = [
-  { front: "je veux", back: "I want", subtext: "Je veux un café. — I want a coffee." },
-  { front: "tu veux", back: "you want", subtext: "Tu veux venir? — Do you want to come?" },
-  { front: "il/elle veut", back: "he/she wants", subtext: "Elle veut partir. — She wants to leave." },
-  { front: "nous voulons", back: "we want", subtext: "Nous voulons aider. — We want to help." },
-  { front: "vous voulez", back: "you want", subtext: "Vous voulez du thé? — Do you want some tea?" },
-  { front: "ils/elles veulent", back: "they want", subtext: "Ils veulent rester. — They want to stay." },
+  { front: "je veux", back: "I want", subtext: "Je veux un café.: I want a coffee." },
+  { front: "tu veux", back: "you want", subtext: "Tu veux venir?: Do you want to come?" },
+  { front: "il/elle veut", back: "he/she wants", subtext: "Elle veut partir.: She wants to leave." },
+  { front: "nous voulons", back: "we want", subtext: "Nous voulons aider.: We want to help." },
+  { front: "vous voulez", back: "you want", subtext: "Vous voulez du thé?: Do you want some tea?" },
+  { front: "ils/elles veulent", back: "they want", subtext: "Ils veulent rester.: They want to stay." },
 ];
 
 const pairs = [
@@ -47,7 +47,7 @@ const fillIn = [
   { before: "Est-ce que tu", after: "venir ce soir? (pouvoir)", answer: "peux", hint: "tu form of pouvoir", translation: "Can you come tonight?" },
   { before: "Elle", after: "partir tôt. (vouloir)", answer: "veut", hint: "elle form of vouloir", translation: "She wants to leave early." },
   { before: "Nous", after: "une promenade. (faire)", answer: "faisons", hint: "nous form of faire", translation: "We're going for a walk." },
-  { before: "Ils ne", after: "pas travailler aujourd'hui. (pouvoir)", answer: "peuvent", hint: "ils form of pouvoir — irregular!", translation: "They can't work today." },
+  { before: "Ils ne", after: "pas travailler aujourd'hui. (pouvoir)", answer: "peuvent", hint: "ils form of pouvoir: irregular!", translation: "They can't work today." },
 ];
 
 const quiz = [
@@ -61,7 +61,7 @@ const quiz = [
     question: "'Je voudrais' is more polite than 'je veux.' What mood is 'voudrais'?",
     options: ["Present tense", "Past tense", "Conditional", "Future"],
     correct: 2,
-    explanation: "Je voudrais is the conditional of vouloir — more polite for ordering or requesting. Je veux is direct.",
+    explanation: "Je voudrais is the conditional of vouloir: more polite for ordering or requesting. Je veux is direct.",
   },
   {
     question: "What is the 'ils' form of 'pouvoir'?",
@@ -91,7 +91,7 @@ const quiz = [
     question: "What is the key difference between 'je veux' and 'je voudrais'?",
     options: ["Veux is past tense; voudrais is present.", "Voudrais is more polite (conditional).", "Veux is formal; voudrais is informal.", "They mean exactly the same thing."],
     correct: 1,
-    explanation: "Je voudrais (conditional) is more polite than je veux (present). Use je voudrais when ordering in a café or making a request — it's the equivalent of 'I would like.'",
+    explanation: "Je voudrais (conditional) is more polite than je veux (present). Use je voudrais when ordering in a café or making a request: it's the equivalent of 'I would like.'",
   },
   {
     question: "'Qu'est-ce que tu fais ce soir?' means:",
@@ -105,7 +105,7 @@ export default function Unit7Lesson1Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/french-foundations" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">← French Foundations</Link>
+        <Link href="/learn/french-foundations" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">← French Foundations</Link>
         <div className="mt-6 grid gap-8 md:grid-cols-[1fr_1fr]">
           <div>
             <p className="text-xs font-bold uppercase tracking-widest text-[#C9A44C]">Unit 7 · Lesson 1</p>
@@ -144,15 +144,15 @@ export default function Unit7Lesson1Page() {
         </div>
 
         <div className="mt-12">
-          <FlashCardDeck cards={faireCards} title="faire — to do / make" />
+          <FlashCardDeck cards={faireCards} title="faire: to do / make" />
         </div>
 
         <div className="mt-12">
-          <FlashCardDeck cards={pouvoirCards} title="pouvoir — can / to be able to" />
+          <FlashCardDeck cards={pouvoirCards} title="pouvoir: can / to be able to" />
         </div>
 
         <div className="mt-12">
-          <FlashCardDeck cards={vouloirCards} title="vouloir — to want" />
+          <FlashCardDeck cards={vouloirCards} title="vouloir: to want" />
         </div>
 
         <div className="mt-12">
@@ -169,7 +169,7 @@ export default function Unit7Lesson1Page() {
 
         <div className="mt-16 flex items-center justify-between gap-4">
           <Link href="/learn/french-foundations/unit-6/test" className="rounded-full border border-[#E7DAB9] bg-white px-5 py-2.5 text-sm font-black text-[#526173] transition hover:-translate-y-0.5">← Previous</Link>
-          <Link href="/learn/french-foundations/unit-7/lesson-2" className="rounded-full bg-[#2563EB] px-5 py-2.5 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Next lesson →</Link>
+          <Link href="/learn/french-foundations/unit-7/lesson-2" className="rounded-full bg-[#D62828] px-5 py-2.5 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">Next lesson →</Link>
         </div>
       </section>
     </main>

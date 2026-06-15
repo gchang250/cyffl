@@ -5,16 +5,16 @@ import FillInTheBlank from "@/components/FillInTheBlank";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const cards = [
-  { front: "Veuillez remplir", back: "Please fill in / Please complete", subtext: "Veuillez remplir toutes les cases. — Please fill in all the boxes." },
-  { front: "Cochez la case appropriée", back: "Check the appropriate box / Tick the correct box", subtext: "Cochez la case appropriée selon votre situation. — Check the box that matches your situation." },
-  { front: "Ci-joint", back: "Enclosed / Attached (used in letters and forms)", subtext: "Veuillez trouver ci-joint les documents requis. — Please find the required documents attached." },
-  { front: "À l'usage officiel seulement", back: "For official use only", subtext: "This section appears on most government forms — leave it blank." },
-  { front: "Renseignements obligatoires", back: "Required information / mandatory fields", subtext: "Les renseignements obligatoires sont indiqués par un astérisque (*). — Required fields are marked with an asterisk." },
-  { front: "Sans objet (S.O.)", back: "Not applicable (N/A)", subtext: "Si la question ne vous concerne pas, inscrivez S.O. — If the question doesn't apply to you, write N/A." },
-  { front: "Pièces justificatives", back: "Supporting documents / documentary evidence", subtext: "Joignez les pièces justificatives à votre demande. — Attach supporting documents to your application." },
-  { front: "Date d'entrée en vigueur", back: "Effective date / date the document takes effect", subtext: "La date d'entrée en vigueur est le 1er janvier. — The effective date is January 1st." },
-  { front: "Numéro de dossier", back: "File number / case number", subtext: "Indiquez votre numéro de dossier dans toute correspondance. — Include your file number in all correspondence." },
-  { front: "Accusé de réception", back: "Acknowledgment of receipt / confirmation that something was received", subtext: "Vous recevrez un accusé de réception par courriel. — You will receive an acknowledgment by email." },
+  { front: "Veuillez remplir", back: "Please fill in / Please complete", subtext: "Veuillez remplir toutes les cases.: Please fill in all the boxes." },
+  { front: "Cochez la case appropriée", back: "Check the appropriate box / Tick the correct box", subtext: "Cochez la case appropriée selon votre situation.: Check the box that matches your situation." },
+  { front: "Ci-joint", back: "Enclosed / Attached (used in letters and forms)", subtext: "Veuillez trouver ci-joint les documents requis.: Please find the required documents attached." },
+  { front: "À l'usage officiel seulement", back: "For official use only", subtext: "This section appears on most government forms: leave it blank." },
+  { front: "Renseignements obligatoires", back: "Required information / mandatory fields", subtext: "Les renseignements obligatoires sont indiqués par un astérisque (*).: Required fields are marked with an asterisk." },
+  { front: "Sans objet (S.O.)", back: "Not applicable (N/A)", subtext: "Si la question ne vous concerne pas, inscrivez S.O.: If the question doesn't apply to you, write N/A." },
+  { front: "Pièces justificatives", back: "Supporting documents / documentary evidence", subtext: "Joignez les pièces justificatives à votre demande.: Attach supporting documents to your application." },
+  { front: "Date d'entrée en vigueur", back: "Effective date / date the document takes effect", subtext: "La date d'entrée en vigueur est le 1er janvier.: The effective date is January 1st." },
+  { front: "Numéro de dossier", back: "File number / case number", subtext: "Indiquez votre numéro de dossier dans toute correspondance.: Include your file number in all correspondence." },
+  { front: "Accusé de réception", back: "Acknowledgment of receipt / confirmation that something was received", subtext: "Vous recevrez un accusé de réception par courriel.: You will receive an acknowledgment by email." },
 ];
 
 const pairs = [
@@ -70,7 +70,7 @@ const questions = [
     options: [
       "Section officielle",
       "Sans obligation",
-      "Sans objet — not applicable",
+      "Sans objet: not applicable",
       "Signé officiellement",
     ],
     correct: 2,
@@ -85,18 +85,18 @@ const questions = [
       "Government-issued identification numbers",
     ],
     correct: 1,
-    explanation: "'Pièces justificatives' means supporting documents — any documentation you attach to support your application, such as a birth certificate, pay stub, or proof of address.",
+    explanation: "'Pièces justificatives' means supporting documents: any documentation you attach to support your application, such as a birth certificate, pay stub, or proof of address.",
   },
   {
     question: "What does 'À l'usage officiel seulement' mean?",
     options: [
       "For the applicant to fill out only",
-      "For official use only — leave it blank",
+      "For official use only: leave it blank",
       "Required to be signed by an official",
       "Official language section",
     ],
     correct: 1,
-    explanation: "'À l'usage officiel seulement' means 'for official use only.' This section appears on most government forms and should be left blank by the applicant — it's completed by the government office.",
+    explanation: "'À l'usage officiel seulement' means 'for official use only.' This section appears on most government forms and should be left blank by the applicant: it's completed by the government office.",
   },
   {
     question: "In a formal French document, 'ci-joint' means:",
@@ -114,7 +114,7 @@ const questions = [
     options: [
       "Optional information",
       "Information for official use only",
-      "Required information — must be completed",
+      "Required information: must be completed",
       "Information about your rights",
     ],
     correct: 2,
@@ -129,7 +129,7 @@ const questions = [
       "une mise en demeure",
     ],
     correct: 2,
-    explanation: "'Un accusé de réception' is an acknowledgment of receipt — a formal confirmation that your application or correspondence has been received. It is not a decision on your application; it just confirms it was received.",
+    explanation: "'Un accusé de réception' is an acknowledgment of receipt: a formal confirmation that your application or correspondence has been received. It is not a decision on your application; it just confirms it was received.",
   },
   {
     question: "A form has a field labelled 'Date d'entrée en vigueur.' What should you write there?",
@@ -140,7 +140,7 @@ const questions = [
       "The deadline for submitting the form",
     ],
     correct: 2,
-    explanation: "'Date d'entrée en vigueur' = effective date — the date from which something becomes valid or active. For example, an insurance policy has an 'entrée en vigueur' date when coverage begins.",
+    explanation: "'Date d'entrée en vigueur' = effective date: the date from which something becomes valid or active. For example, an insurance policy has an 'entrée en vigueur' date when coverage begins.",
   },
   {
     question: "How would you say 'Please fill in this form in capital letters' in French?",
@@ -159,7 +159,7 @@ export default function Unit2Lesson2Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/canadian-life" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/canadian-life" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← French for Canadian Life
         </Link>
 
@@ -168,7 +168,7 @@ export default function Unit2Lesson2Page() {
             <p className="text-xs font-bold uppercase tracking-widest text-[#2563EB]">Unit 2 · Lesson 2</p>
             <h1 className="mt-3 text-5xl font-black tracking-tight md:text-6xl">Government Forms</h1>
             <p className="mt-4 text-lg leading-8 text-[#526173]">
-              Canadian government forms are bilingual by law — knowing how to read the French side helps you understand your rights, obligations, and options. This lesson covers the key vocabulary that appears on nearly every government document.
+              Canadian government forms are bilingual by law: knowing how to read the French side helps you understand your rights, obligations, and options. This lesson covers the key vocabulary that appears on nearly every government document.
             </p>
           </div>
 
@@ -280,7 +280,7 @@ export default function Unit2Lesson2Page() {
 
         <div className="mt-16 flex items-center justify-between gap-4">
           <Link href="/learn/canadian-life/unit-2/lesson-1" className="rounded-full border border-[#E7DAB9] bg-white px-5 py-2.5 text-sm font-black text-[#0B1F3A] transition hover:-translate-y-0.5">← Previous lesson</Link>
-          <Link href="/learn/canadian-life/unit-2/lesson-3" className="rounded-full bg-[#2563EB] px-5 py-2.5 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Next lesson →</Link>
+          <Link href="/learn/canadian-life/unit-2/lesson-3" className="rounded-full bg-[#D62828] px-5 py-2.5 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">Next lesson →</Link>
         </div>
       </section>
     </main>

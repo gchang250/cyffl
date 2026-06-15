@@ -81,7 +81,7 @@ export default function VolunteerPage() {
             </div>
           </div>
 
-          <div className="rounded-[2rem] bg-[#0B1F3A] p-8 text-white shadow-xl">
+          <div className="rounded-2xl bg-[#0B1F3A] p-8 text-white shadow-xl">
             <p className="text-sm font-bold uppercase tracking-[0.25em] text-[#C9A44C]">
               Why volunteer?
             </p>
@@ -121,7 +121,7 @@ export default function VolunteerPage() {
             {roles.map((role) => (
               <div
                 key={role.title}
-                className="rounded-[1.75rem] border border-[#E7DAB9] bg-[#FFF8ED] p-6 shadow-sm"
+                className="rounded-2xl border border-[#E7DAB9] bg-[#FFF8ED] p-6 shadow-sm"
               >
                 <h3 className="text-xl font-black">{role.title}</h3>
 
@@ -155,7 +155,7 @@ export default function VolunteerPage() {
                   key={req}
                   className="flex items-start gap-3 rounded-2xl border border-[#E7DAB9] bg-white px-5 py-4 shadow-sm"
                 >
-                  <span className="mt-1 block h-2 w-2 shrink-0 rounded-full bg-[#2563EB]" />
+                  <span className="mt-1 block h-2 w-2 shrink-0 rounded-full bg-[#D62828]" />
                   <span className="font-semibold">{req}</span>
                 </li>
               ))}
@@ -175,7 +175,7 @@ export default function VolunteerPage() {
               {faqs.map((faq) => (
                 <div
                   key={faq.q}
-                  className="rounded-[1.5rem] border border-[#E7DAB9] bg-white p-6 shadow-sm"
+                  className="rounded-2xl border border-[#E7DAB9] bg-white p-6 shadow-sm"
                 >
                   <p className="font-black">{faq.q}</p>
                   <p className="mt-3 leading-7 text-[#526173]">{faq.a}</p>
@@ -187,7 +187,7 @@ export default function VolunteerPage() {
       </section>
 
       <section className="px-6 pb-20">
-        <div className="mx-auto max-w-7xl rounded-[2rem] bg-[#0B1F3A] p-8 text-white shadow-sm md:p-12">
+        <div className="mx-auto max-w-7xl rounded-2xl bg-[#0B1F3A] p-8 text-white shadow-sm md:p-12">
           <div className="grid items-center gap-8 md:grid-cols-[1fr_auto]">
             <div>
               <p className="text-sm font-bold uppercase tracking-[0.25em] text-[#C9A44C]">

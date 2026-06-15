@@ -10,34 +10,34 @@ export const metadata: Metadata = {
 const units = [
   {
     number: "01",
-    title: "SLE — Federal Government Jobs",
+    title: "SLE: Federal Government Jobs",
     description:
-      "The SLE has three tests: reading (60 MCQ), written expression (65 MCQ — fill-in-blank and error identification), and oral interaction (20–40 min conversational interview). Build the vocabulary, grammar, and strategies for all three.",
+      "The SLE has three tests: reading (60 MCQ), written expression (65 MCQ: fill-in-blank and error identification), and oral interaction (20 to 40 min conversational interview). Build the vocabulary, grammar, and strategies for all three.",
     color: "bg-[#FEF3C7] text-[#D97706]",
     testHref: "/learn/canadian-french-tests/unit-1/test",
     resource: { label: "PSC self-assessment tests ↗", url: "https://www.canada.ca/en/public-service-commission/services/second-language-testing-public-service/self-assessment-tests.html" },
     lessons: [
       { title: "Government Vocabulary", href: "/learn/canadian-french-tests/unit-1/lesson-1" },
-      { title: "Formal Grammar — Government French", href: "/learn/canadian-french-tests/unit-1/lesson-2" },
-      { title: "Written Expression — Fill-in-Blank & Error Identification", href: "/learn/canadian-french-tests/unit-1/lesson-3" },
-      { title: "Reading Comprehension — Government Texts", href: "/learn/canadian-french-tests/unit-1/lesson-4" },
-      { title: "Oral Interaction — Interview Strategies", href: "/learn/canadian-french-tests/unit-1/lesson-5" },
+      { title: "Formal Grammar: Government French", href: "/learn/canadian-french-tests/unit-1/lesson-2" },
+      { title: "Written Expression: Fill-in-Blank and Error Identification", href: "/learn/canadian-french-tests/unit-1/lesson-3" },
+      { title: "Reading Comprehension: Government Texts", href: "/learn/canadian-french-tests/unit-1/lesson-4" },
+      { title: "Oral Interaction: Interview Strategies", href: "/learn/canadian-french-tests/unit-1/lesson-5" },
     ],
   },
   {
     number: "02",
-    title: "TEF Canada — Immigration",
+    title: "TEF Canada: Immigration",
     description:
-      "TEF Canada tests four skills: reading (40 MCQ, 1 hr), listening (40 MCQ, 40 min — cannot go back), writing (continue an article + argue a viewpoint), and speaking (information-gathering conversation + persuasive presentation).",
+      "TEF Canada tests four skills: reading (40 MCQ, 1 hr), listening (40 MCQ, 40 min, no going back), writing (continue an article plus argue a viewpoint), and speaking (information-gathering conversation plus persuasive presentation).",
     color: "bg-[#EFF6FF] text-[#2563EB]",
     testHref: "/learn/canadian-french-tests/unit-2/test",
     resource: { label: "TEF Canada official site ↗", url: "https://www.lefrancaisdesaffaires.fr/en/candidate/test-evaluation-francais/tef-canada/" },
     lessons: [
-      { title: "Topic Vocabulary — Environment, Society, Technology, Health", href: "/learn/canadian-french-tests/unit-2/lesson-1" },
+      { title: "Topic Vocabulary: Environment, Society, Technology, Health", href: "/learn/canadian-french-tests/unit-2/lesson-1" },
       { title: "Opinion & Argument Phrases", href: "/learn/canadian-french-tests/unit-2/lesson-2" },
-      { title: "Written Expression — Sections A & B", href: "/learn/canadian-french-tests/unit-2/lesson-3" },
-      { title: "Listening Comprehension — Strategies & Question Types", href: "/learn/canadian-french-tests/unit-2/lesson-4" },
-      { title: "Oral Expression — Information Gathering & Persuasion", href: "/learn/canadian-french-tests/unit-2/lesson-5" },
+      { title: "Written Expression: Sections A and B", href: "/learn/canadian-french-tests/unit-2/lesson-3" },
+      { title: "Listening Comprehension: Strategies and Question Types", href: "/learn/canadian-french-tests/unit-2/lesson-4" },
+      { title: "Oral Expression: Information Gathering and Persuasion", href: "/learn/canadian-french-tests/unit-2/lesson-5" },
     ],
   },
 ];
@@ -46,7 +46,7 @@ export default function CanadianFrenchTestsPage() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-7xl px-6 py-20">
-        <Link href="/learn" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← Back to courses
         </Link>
 
@@ -79,7 +79,7 @@ export default function CanadianFrenchTestsPage() {
               </div>
             </div>
 
-            <div className="mt-6 rounded-[1.5rem] bg-[#0B1F3A] p-5 text-white">
+            <div className="mt-6 rounded-2xl bg-[#0B1F3A] p-5 text-white">
               <p className="text-sm font-bold text-[#C9A44C]">What you&apos;ll build</p>
               <div className="mt-2 space-y-1 text-sm text-white/80">
                 <p>Government vocabulary and collocations (SLE)</p>
@@ -93,15 +93,15 @@ export default function CanadianFrenchTestsPage() {
               </div>
             </div>
 
-            <div className="mt-4 rounded-[1.5rem] border border-[#E7DAB9] bg-white p-5">
+            <div className="mt-4 rounded-2xl border border-[#E7DAB9] bg-white p-5">
               <p className="text-xs font-bold text-[#526173] uppercase tracking-widest">The two tests</p>
               <div className="mt-3 space-y-3 text-sm">
                 <div>
-                  <p className="font-black text-[#0B1F3A]">SLE — federal bilingual jobs (PSC)</p>
+                  <p className="font-black text-[#0B1F3A]">SLE: federal bilingual jobs (PSC)</p>
                   <p className="mt-0.5 text-[#526173]">Reading (60 MCQ, 90 min) · Writing (65 MCQ, 90 min) · Oral (20–40 min interview). Graded A/B/C. Most positions require BBB or CBC profile.</p>
                 </div>
                 <div className="border-t border-[#E7DAB9] pt-3">
-                  <p className="font-black text-[#0B1F3A]">TEF Canada — immigration (IRCC)</p>
+                  <p className="font-black text-[#0B1F3A]">TEF Canada: immigration (IRCC)</p>
                   <p className="mt-0.5 text-[#526173]">Reading (40 MCQ, 1 hr) · Listening (40 MCQ, 40 min) · Writing (2 tasks, 1 hr) · Speaking (2 tasks, 15 min). Scores convert to CLB levels. Express Entry minimum: CLB 7 in all four skills.</p>
                 </div>
               </div>
@@ -112,7 +112,7 @@ export default function CanadianFrenchTestsPage() {
             {units.map((unit) => (
               <div
                 key={unit.number}
-                className="rounded-[2rem] border border-[#E7DAB9] bg-white p-6 shadow-sm"
+                className="rounded-2xl border border-[#E7DAB9] bg-white p-6 shadow-sm"
               >
                 <div className="flex items-center gap-3">
                   <span className={`rounded-full px-2.5 py-0.5 text-xs font-black ${unit.color}`}>

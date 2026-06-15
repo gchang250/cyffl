@@ -22,7 +22,7 @@ const groups: ConnectorGroup[] = [
     title: "Adding information",
     description: "Use these to build on an idea, add supporting points, or intensify an argument.",
     entries: [
-      { word: "et", level: "A1", meaning: "and", example: "Il parle français et anglais.", note: "Use sparingly in essays — too many 'et' sounds elementary." },
+      { word: "et", level: "A1", meaning: "and", example: "Il parle français et anglais.", note: "Use sparingly in essays: too many 'et' sounds elementary." },
       { word: "aussi", level: "A2", meaning: "also, too", example: "Elle aime la musique. Elle aime aussi la peinture.", note: "Placed after the conjugated verb, not at the start of a clause in formal writing." },
       { word: "également", level: "B1", meaning: "also, equally", example: "Il est également important de noter que...", note: "More formal than aussi. Excellent in essays." },
       { word: "de plus", level: "B1", meaning: "moreover, furthermore", example: "De plus, il faut considérer les conséquences.", note: "Very common in formal writing. Opens a new supporting point." },
@@ -31,14 +31,14 @@ const groups: ConnectorGroup[] = [
       { word: "non seulement... mais aussi", level: "B2", meaning: "not only... but also", example: "Non seulement c'est utile, mais aussi efficace.", note: "Powerful double structure. Creates emphasis and balance." },
       { word: "voire", level: "C1", meaning: "or even, indeed", example: "Cela prend des heures, voire des jours.", note: "Adds an extreme or surprising case to what was just said." },
       { word: "de surcroît", level: "C1", meaning: "on top of that, what's more", example: "C'est coûteux, et de surcroît peu pratique.", note: "Typically adds a negative point on top of another. High register." },
-      { word: "qui plus est", level: "C1", meaning: "what is more, on top of that", example: "Il est compétent, et qui plus est, très motivé.", note: "Emphatic and formal. Rarely used in speech — save it for writing." },
+      { word: "qui plus est", level: "C1", meaning: "what is more, on top of that", example: "Il est compétent, et qui plus est, très motivé.", note: "Emphatic and formal. Rarely used in speech: save it for writing." },
     ],
   },
   {
     title: "Contrast & opposition",
     description: "Show that two ideas are in tension, contradict each other, or present different perspectives.",
     entries: [
-      { word: "mais", level: "A1", meaning: "but", example: "J'aime le français, mais c'est difficile.", note: "The most basic contrast word. Overuse weakens essays — vary it." },
+      { word: "mais", level: "A1", meaning: "but", example: "J'aime le français, mais c'est difficile.", note: "The most basic contrast word. Overuse weakens essays: vary it." },
       { word: "par contre", level: "B1", meaning: "on the other hand, however", example: "Le train est rapide. Par contre, il est cher.", note: "Common in both speech and writing. Introduces a direct counter-point." },
       { word: "en revanche", level: "B2", meaning: "on the other hand, in return", example: "En revanche, les bénéfices à long terme sont réels.", note: "More formal than par contre. The preferred form in academic writing." },
       { word: "cependant", level: "B1", meaning: "however, yet", example: "Cependant, il faut nuancer cette affirmation.", note: "Neutral and very common in essays. Can open a sentence." },
@@ -55,7 +55,7 @@ const groups: ConnectorGroup[] = [
     description: "Explain why something happens or what caused a result.",
     entries: [
       { word: "parce que", level: "A2", meaning: "because", example: "Je reste à la maison parce qu'il pleut.", note: "The basic 'because'. Answers the question 'pourquoi?'." },
-      { word: "car", level: "B1", meaning: "because, for (formal)", example: "Il n'est pas venu, car il était malade.", note: "More formal than parce que. Common in written French — never starts a sentence in formal style." },
+      { word: "car", level: "B1", meaning: "because, for (formal)", example: "Il n'est pas venu, car il était malade.", note: "More formal than parce que. Common in written French: never starts a sentence in formal style." },
       { word: "puisque", level: "B1", meaning: "since, given that", example: "Puisque tu es là, on peut commencer.", note: "Refers to a reason both speaker and listener already know. Less explanatory, more logical." },
       { word: "grâce à", level: "B1", meaning: "thanks to (positive result)", example: "Grâce à ses efforts, elle a réussi.", note: "Only used when the outcome is positive. Contrast with à cause de." },
       { word: "à cause de", level: "A2", meaning: "because of (negative or neutral)", example: "Il est arrivé en retard à cause des embouteillages.", note: "Used for negative or problematic causes. Never use for positive outcomes." },
@@ -69,7 +69,7 @@ const groups: ConnectorGroup[] = [
     description: "Show what follows from an idea, fact, or argument.",
     entries: [
       { word: "donc", level: "A2", meaning: "therefore, so", example: "Je pense, donc je suis.", note: "The most common consequence connector. Works in all registers." },
-      { word: "alors", level: "A2", meaning: "so, then", example: "Il n'était pas là, alors on est partis.", note: "Common in speech. Slightly informal in formal writing — use par conséquent instead." },
+      { word: "alors", level: "A2", meaning: "so, then", example: "Il n'était pas là, alors on est partis.", note: "Common in speech. Slightly informal in formal writing: use par conséquent instead." },
       { word: "ainsi", level: "B2", meaning: "thus, in this way", example: "Ainsi, on peut conclure que...", note: "Formal. Often triggers subject-verb inversion when it opens a sentence: Ainsi peut-on affirmer que..." },
       { word: "c'est pourquoi", level: "B1", meaning: "that is why, this is why", example: "C'est pourquoi il faut agir maintenant.", note: "Excellent in essays. Directly links a cause to a decision or recommendation." },
       { word: "par conséquent", level: "B2", meaning: "consequently, as a result", example: "Par conséquent, les prix ont augmenté.", note: "Formal and common in academic writing. Marks a logical conclusion." },
@@ -106,15 +106,15 @@ const groups: ConnectorGroup[] = [
   },
   {
     title: "Sequence & structure",
-    description: "Organise ideas chronologically or logically — essential for structuring any text.",
+    description: "Organise ideas chronologically or logically: essential for structuring any text.",
     entries: [
       { word: "d'abord", level: "A2", meaning: "first, first of all", example: "D'abord, il faut définir le problème.", note: "The standard opening for a first point. Pairs with ensuite and enfin." },
       { word: "premièrement", level: "B1", meaning: "firstly", example: "Premièrement, examinons les avantages.", note: "More formal than d'abord. Often used with deuxièmement, troisièmement." },
       { word: "en premier lieu", level: "B2", meaning: "in the first place, first of all", example: "En premier lieu, il convient d'analyser les causes.", note: "High-register opener. Pairs with en second lieu and en dernier lieu." },
       { word: "ensuite", level: "A2", meaning: "then, next", example: "D'abord on prépare les ingrédients, ensuite on cuisine.", note: "Marks the next step or point. Very common and reliable." },
-      { word: "puis", level: "A2", meaning: "then, and then", example: "Il a étudié, puis il a passé son examen.", note: "More sequential than ensuite — suggests one thing coming right after another." },
+      { word: "puis", level: "A2", meaning: "then, and then", example: "Il a étudié, puis il a passé son examen.", note: "More sequential than ensuite: suggests one thing coming right after another." },
       { word: "enfin", level: "B1", meaning: "finally, lastly", example: "Enfin, il faut considérer l'impact à long terme.", note: "Closes a sequence. Can also express relief in speech: 'Enfin!' = At last!" },
-      { word: "finalement", level: "B1", meaning: "finally, in the end", example: "Finalement, ils ont trouvé un accord.", note: "Refers to what happened after a process — slightly different from enfin, which closes a list." },
+      { word: "finalement", level: "B1", meaning: "finally, in the end", example: "Finalement, ils ont trouvé un accord.", note: "Refers to what happened after a process: slightly different from enfin, which closes a list." },
       { word: "en dernier lieu", level: "B2", meaning: "lastly, finally", example: "En dernier lieu, il faut évoquer les solutions possibles.", note: "Formal closing. Pairs with en premier lieu and en second lieu." },
     ],
   },
@@ -125,9 +125,9 @@ const groups: ConnectorGroup[] = [
       { word: "en résumé", level: "B1", meaning: "in summary, to sum up", example: "En résumé, les avantages l'emportent sur les inconvénients.", note: "Signals a recap, not necessarily a final conclusion." },
       { word: "bref", level: "B1", meaning: "in short, in brief", example: "Bref, il faut agir.", note: "Conversational but common in writing. Implies impatience or conciseness." },
       { word: "en somme", level: "B2", meaning: "in sum, all in all", example: "En somme, le bilan est positif.", note: "More formal than bref. Weighs up the overall picture." },
-      { word: "au fond", level: "B2", meaning: "at bottom, ultimately, deep down", example: "Au fond, la question est simple.", note: "Slightly reflective — suggests getting to the heart of the matter." },
-      { word: "pour conclure", level: "B1", meaning: "to conclude, in conclusion", example: "Pour conclure, rappelons les points essentiels.", note: "Clear and direct closing for essays. Avoid starting every conclusion this way — vary it." },
-      { word: "en conclusion", level: "B1", meaning: "in conclusion", example: "En conclusion, cette politique semble inévitable.", note: "Standard essay closer. Acceptable but can be formulaic — en définitive is more elegant." },
+      { word: "au fond", level: "B2", meaning: "at bottom, ultimately, deep down", example: "Au fond, la question est simple.", note: "Slightly reflective: suggests getting to the heart of the matter." },
+      { word: "pour conclure", level: "B1", meaning: "to conclude, in conclusion", example: "Pour conclure, rappelons les points essentiels.", note: "Clear and direct closing for essays. Avoid starting every conclusion this way: vary it." },
+      { word: "en conclusion", level: "B1", meaning: "in conclusion", example: "En conclusion, cette politique semble inévitable.", note: "Standard essay closer. Acceptable but can be formulaic: en définitive is more elegant." },
       { word: "en définitive", level: "C1", meaning: "in the final analysis, ultimately", example: "En définitive, c'est à chacun de décider.", note: "High-register conclusion. Preferred in IB and academic essays over en conclusion." },
       { word: "tout compte fait", level: "C1", meaning: "all things considered, when all is said and done", example: "Tout compte fait, cette solution reste la meilleure.", note: "Weighs everything before landing on a final judgement. Impressive in formal writing." },
     ],
@@ -146,7 +146,7 @@ export default function ConnectingWordsPage() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-4xl px-6 py-16">
-        <Link href="/resources" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/resources" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← Resources
         </Link>
 
@@ -226,14 +226,14 @@ export default function ConnectingWordsPage() {
           ))}
         </div>
 
-        <div className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-6 shadow-sm">
+        <div className="mt-16 rounded-2xl border border-[#E7DAB9] bg-white p-6 shadow-sm">
           <p className="font-black">IB French B — writing tip</p>
           <p className="mt-2 text-sm leading-6 text-[#526173]">
             Examiners reward varied, precise connectors. Aim for at least three different functions in any essay: one to add (en outre, par ailleurs), one to contrast (néanmoins, en revanche), and one to conclude (en définitive, tout compte fait). Avoid relying on et, mais, and donc alone.
           </p>
           <Link
             href="/resources/expressions"
-            className="mt-4 inline-block rounded-full bg-[#2563EB] px-5 py-2.5 text-sm font-black text-white transition hover:bg-[#1D4ED8]"
+            className="mt-4 inline-block rounded-full bg-[#D62828] px-5 py-2.5 text-sm font-black text-white transition hover:bg-[#B91C1C]"
           >
             See idiomatic expressions →
           </Link>

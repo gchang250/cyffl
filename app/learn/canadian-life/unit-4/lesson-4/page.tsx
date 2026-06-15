@@ -8,7 +8,7 @@ const cards = [
   {
     front: "le cours magistral",
     back: "Lecture (professor to a large group)",
-    subtext: "A one-way presentation format in a large auditorium. No discussion — just note-taking.",
+    subtext: "A one-way presentation format in a large auditorium. No discussion: just note-taking.",
   },
   {
     front: "le séminaire / le cours",
@@ -33,7 +33,7 @@ const cards = [
   {
     front: "la date de remise",
     back: "Due date / submission deadline",
-    subtext: "La date de remise est le vendredi 13 juin à 23h59. — The due date is Friday June 13 at 11:59 pm.",
+    subtext: "La date de remise est le vendredi 13 juin à 23h59.: The due date is Friday June 13 at 11:59 pm.",
   },
   {
     front: "le plan de cours",
@@ -47,12 +47,12 @@ const cards = [
   },
   {
     front: "le syndicat étudiant",
-    back: "Student union — collective labour/advocacy body",
-    subtext: "In Quebec, student syndicats are powerful — they negotiate with universities and can call strikes.",
+    back: "Student union: collective labour/advocacy body",
+    subtext: "In Quebec, student syndicats are powerful: they negotiate with universities and can call strikes.",
   },
   {
     front: "l'association étudiante",
-    back: "Student association — social and representational body",
+    back: "Student association: social and representational body",
     subtext: "Represents students in a given faculty or program. Organizes events and advocates within the institution.",
   },
   {
@@ -72,7 +72,7 @@ const cards = [
   },
   {
     front: "le café étudiant",
-    back: "Student café — often run by the student association",
+    back: "Student café: often run by the student association",
     subtext: "A campus café managed by students. Common in Quebec universities and cégeps.",
   },
 ];
@@ -134,7 +134,7 @@ const questions = [
       "A practical lab session",
     ],
     correct: 2,
-    explanation: "'Le cours magistral' is a lecture in the traditional sense — a professor presents to a large group with little or no discussion. It contrasts with a 'séminaire', which involves student participation.",
+    explanation: "'Le cours magistral' is a lecture in the traditional sense: a professor presents to a large group with little or no discussion. It contrasts with a 'séminaire', which involves student participation.",
   },
   {
     question: "What is 'l'abandon de cours'?",
@@ -174,7 +174,7 @@ const questions = [
     options: [
       "A mandatory lecture with the full class",
       "A paid part-time teaching position",
-      "A tutoring session — one-on-one or small group academic support",
+      "A tutoring session: one-on-one or small group academic support",
       "A formal academic assessment",
     ],
     correct: 2,
@@ -189,7 +189,7 @@ const questions = [
       "A student grader who marks assignments",
     ],
     correct: 1,
-    explanation: "'Chargé(e) de cours' = course instructor / contract lecturer — someone hired on a per-course basis, distinct from a 'professeur' (tenure-track). Many university courses are taught by chargés de cours, especially at the undergraduate level. The distinction matters if you seek research supervision.",
+    explanation: "'Chargé(e) de cours' = course instructor / contract lecturer: someone hired on a per-course basis, distinct from a 'professeur' (tenure-track). Many university courses are taught by chargés de cours, especially at the undergraduate level. The distinction matters if you seek research supervision.",
   },
   {
     question: "In Quebec student culture, what is 'le bar étudiant'?",
@@ -200,7 +200,7 @@ const questions = [
       "An outdoor campus gathering space",
     ],
     correct: 1,
-    explanation: "'Le bar étudiant' is a campus pub typically run by the student association — a social space for students. Quebec universities and cégeps often have well-known bars étudians that serve as hubs for student life. They're legally operated and serve alcohol at subsidized prices.",
+    explanation: "'Le bar étudiant' is a campus pub typically run by the student association: a social space for students. Quebec universities and cégeps often have well-known bars étudians that serve as hubs for student life. They're legally operated and serve alcohol at subsidized prices.",
   },
   {
     question: "What does 'travail de session' mean in French-language academic contexts?",
@@ -211,7 +211,7 @@ const questions = [
       "A laboratory practical session",
     ],
     correct: 2,
-    explanation: "'Un travail de session' = a semester paper / major assignment — a research paper, project, or report that is a significant portion of a course grade, typically due at the end of the semester. It differs from 'un examen final' (a final exam) and 'un devoir' (a homework assignment).",
+    explanation: "'Un travail de session' = a semester paper / major assignment: a research paper, project, or report that is a significant portion of a course grade, typically due at the end of the semester. It differs from 'un examen final' (a final exam) and 'un devoir' (a homework assignment).",
   },
 ];
 
@@ -219,7 +219,7 @@ export default function Unit4Lesson4Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/canadian-life" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/canadian-life" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← French for Canadian Life
         </Link>
 
@@ -228,10 +228,10 @@ export default function Unit4Lesson4Page() {
             <p className="text-xs font-bold uppercase tracking-widest text-[#7C3AED]">Unit 4 · Lesson 4</p>
             <h1 className="mt-3 text-5xl font-black tracking-tight md:text-6xl">Student Life in French</h1>
             <p className="mt-4 text-lg leading-8 text-[#526173]">
-              Day-to-day student life vocabulary in a French-language or bilingual Canadian institution — from registering for courses to navigating campus life. Whether you're in a cours magistral, working on a dissertation, or looking for your association étudiante, this vocabulary is the practical foundation.
+              Day-to-day student life vocabulary in a French-language or bilingual Canadian institution: from registering for courses to navigating campus life. Whether you're in a cours magistral, working on a dissertation, or looking for your association étudiante, this vocabulary is the practical foundation.
             </p>
             <p className="mt-4 text-lg leading-8 text-[#526173]">
-              Quebec student culture has its own rhythms and institutions — from the powerful syndicat étudiant to the relaxed café étudiant. Knowing the vocabulary helps you participate, not just observe.
+              Quebec student culture has its own rhythms and institutions: from the powerful syndicat étudiant to the relaxed café étudiant. Knowing the vocabulary helps you participate, not just observe.
             </p>
           </div>
 
@@ -272,7 +272,7 @@ export default function Unit4Lesson4Page() {
           <MultipleChoiceQuiz questions={questions} title="Student life in French quiz" />
         </div>
 
-        <div className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <div className="mt-16 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
 
           <p className="mt-2 text-[#526173]">You now know the Quebec education system, how to navigate university applications in French, find scholarships, and thrive in student life at a francophone institution.</p>
           <div className="mt-5 flex flex-wrap gap-3">

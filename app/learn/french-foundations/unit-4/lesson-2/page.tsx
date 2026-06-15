@@ -6,13 +6,13 @@ import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const flashcards = [
   { front: "grand(e)", back: "big / tall", subtext: "Goes BEFORE the noun: un grand arbre." },
-  { front: "petit(e)", back: "small / short", subtext: "BAGS — before: une petite voiture." },
-  { front: "beau / belle", back: "beautiful", subtext: "BAGS — beau (masc), belle (fem): un beau jour / une belle maison." },
-  { front: "joli(e)", back: "pretty", subtext: "BAGS — before: une jolie fille." },
-  { front: "vieux / vieille", back: "old", subtext: "BAGS — vieux (masc), vieille (fem): un vieux livre." },
-  { front: "nouveau / nouvelle", back: "new", subtext: "BAGS — nouveau (masc), nouvelle (fem): un nouveau film." },
-  { front: "bon(ne)", back: "good", subtext: "BAGS — before: un bon repas." },
-  { front: "mauvais(e)", back: "bad", subtext: "BAGS — before: une mauvaise idée." },
+  { front: "petit(e)", back: "small / short", subtext: "BAGS: before: une petite voiture." },
+  { front: "beau / belle", back: "beautiful", subtext: "BAGS: beau (masc), belle (fem): un beau jour / une belle maison." },
+  { front: "joli(e)", back: "pretty", subtext: "BAGS: before: une jolie fille." },
+  { front: "vieux / vieille", back: "old", subtext: "BAGS: vieux (masc), vieille (fem): un vieux livre." },
+  { front: "nouveau / nouvelle", back: "new", subtext: "BAGS: nouveau (masc), nouvelle (fem): un nouveau film." },
+  { front: "bon(ne)", back: "good", subtext: "BAGS: before: un bon repas." },
+  { front: "mauvais(e)", back: "bad", subtext: "BAGS: before: une mauvaise idée." },
   { front: "facile", back: "easy", subtext: "After the noun: un exercice facile." },
   { front: "difficile", back: "difficult", subtext: "After the noun: une question difficile." },
   { front: "intéressant(e)", back: "interesting", subtext: "After the noun: un livre intéressant." },
@@ -29,11 +29,11 @@ const pairs = [
 ];
 
 const exercises = [
-  { before: "C'est un film", after: ".", answer: "intéressant", hint: "interesting — goes after noun", translation: "It's an interesting film." },
-  { before: "Elle a une", after: "maison.", answer: "belle", hint: "beautiful (feminine) — BAGS, goes before", translation: "She has a beautiful house." },
-  { before: "Il a un", after: "livre.", answer: "vieux", hint: "old (masculine) — BAGS, goes before", translation: "He has an old book." },
-  { before: "C'est une question", after: ".", answer: "difficile", hint: "difficult — NOT a BAGS adjective, goes after", translation: "It's a difficult question." },
-  { before: "Nous avons un", after: "professeur.", answer: "bon", hint: "good — BAGS, goes before", translation: "We have a good teacher." },
+  { before: "C'est un film", after: ".", answer: "intéressant", hint: "interesting: goes after noun", translation: "It's an interesting film." },
+  { before: "Elle a une", after: "maison.", answer: "belle", hint: "beautiful (feminine): BAGS, goes before", translation: "She has a beautiful house." },
+  { before: "Il a un", after: "livre.", answer: "vieux", hint: "old (masculine): BAGS, goes before", translation: "He has an old book." },
+  { before: "C'est une question", after: ".", answer: "difficile", hint: "difficult: NOT a BAGS adjective, goes after", translation: "It's a difficult question." },
+  { before: "Nous avons un", after: "professeur.", answer: "bon", hint: "good: BAGS, goes before", translation: "We have a good teacher." },
 ];
 
 const questions = [
@@ -91,7 +91,7 @@ export default function Unit4Lesson2Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/french-foundations" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/french-foundations" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← French Foundations
         </Link>
 
@@ -136,7 +136,7 @@ export default function Unit4Lesson2Page() {
 
         <div className="mt-16 flex items-center justify-between gap-4">
           <Link href="/learn/french-foundations/unit-4/lesson-1" className="rounded-full border border-[#E7DAB9] bg-white px-5 py-2.5 text-sm font-black text-[#526173] transition hover:-translate-y-0.5">← Previous</Link>
-          <Link href="/learn/french-foundations/unit-4/lesson-3" className="rounded-full bg-[#2563EB] px-5 py-2.5 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Next lesson →</Link>
+          <Link href="/learn/french-foundations/unit-4/lesson-3" className="rounded-full bg-[#D62828] px-5 py-2.5 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">Next lesson →</Link>
         </div>
       </section>
     </main>

@@ -5,22 +5,22 @@ import FillInTheBlank from "@/components/FillInTheBlank";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const allerCards = [
-  { front: "je vais", back: "I go / I am going", subtext: "Je vais à l'école. — I'm going to school." },
-  { front: "tu vas", back: "you go / you are going", subtext: "Tu vas où? — Where are you going?" },
-  { front: "il/elle va", back: "he/she goes", subtext: "Elle va au cinéma. — She's going to the cinema." },
-  { front: "nous allons", back: "we go / we are going", subtext: "Nous allons au parc. — We're going to the park." },
-  { front: "vous allez", back: "you go (formal/plural)", subtext: "Vous allez bien? — Are you well? (fixed expression)" },
-  { front: "ils/elles vont", back: "they go", subtext: "Ils vont au restaurant. — They're going to the restaurant." },
+  { front: "je vais", back: "I go / I am going", subtext: "Je vais à l'école.: I'm going to school." },
+  { front: "tu vas", back: "you go / you are going", subtext: "Tu vas où?: Where are you going?" },
+  { front: "il/elle va", back: "he/she goes", subtext: "Elle va au cinéma.: She's going to the cinema." },
+  { front: "nous allons", back: "we go / we are going", subtext: "Nous allons au parc.: We're going to the park." },
+  { front: "vous allez", back: "you go (formal/plural)", subtext: "Vous allez bien?: Are you well? (fixed expression)" },
+  { front: "ils/elles vont", back: "they go", subtext: "Ils vont au restaurant.: They're going to the restaurant." },
 ];
 
 const placesCards = [
   { front: "le cinéma", back: "movie theatre", subtext: "Je vais au cinéma. (au = à + le)" },
-  { front: "la bibliothèque", back: "library", subtext: "Je vais à la bibliothèque. (à la — feminine)" },
-  { front: "l'école", back: "school", subtext: "Je vais à l'école. (à l' — starts with vowel)" },
+  { front: "la bibliothèque", back: "library", subtext: "Je vais à la bibliothèque. (à la: feminine)" },
+  { front: "l'école", back: "school", subtext: "Je vais à l'école. (à l': starts with vowel)" },
   { front: "le parc", back: "park", subtext: "Nous allons au parc." },
   { front: "le supermarché", back: "supermarket", subtext: "Elle va au supermarché." },
   { front: "le restaurant", back: "restaurant", subtext: "Ils vont au restaurant." },
-  { front: "la maison", back: "home / house", subtext: "Je vais à la maison. — I'm going home." },
+  { front: "la maison", back: "home / house", subtext: "Je vais à la maison.: I'm going home." },
   { front: "la plage", back: "beach", subtext: "Nous allons à la plage en été." },
   { front: "le musée", back: "museum", subtext: "Vous allez au musée ce weekend?" },
   { front: "la piscine", back: "swimming pool", subtext: "Tu vas à la piscine?" },
@@ -39,8 +39,8 @@ const exercises = [
   { before: "Je", after: "au cinéma ce soir.", answer: "vais", hint: "je form of aller", translation: "I'm going to the cinema tonight." },
   { before: "Nous", after: "à la bibliothèque.", answer: "allons", hint: "nous form of aller", translation: "We're going to the library." },
   { before: "Elle va", after: "musée. (to the)", answer: "au", hint: "à + le = au (musée is masculine)", translation: "She's going to the museum." },
-  { before: "Ils vont", after: "plage. (to the)", answer: "à la", hint: "à la — plage is feminine", translation: "They're going to the beach." },
-  { before: "Je vais", after: "demain. (to study — near future)", answer: "étudier", hint: "aller + infinitive for near future", translation: "I'm going to study tomorrow." },
+  { before: "Ils vont", after: "plage. (to the)", answer: "à la", hint: "à la: plage is feminine", translation: "They're going to the beach." },
+  { before: "Je vais", after: "demain. (to study: near future)", answer: "étudier", hint: "aller + infinitive for near future", translation: "I'm going to study tomorrow." },
 ];
 
 const questions = [
@@ -78,7 +78,7 @@ const questions = [
     question: "How do you say 'They are going to the park'?",
     options: ["Ils vont au parc.", "Ils vont à le parc.", "Ils vont le parc.", "Ils aller au parc."],
     correct: 0,
-    explanation: "Ils vont au parc. À + le = au (le parc is masculine). 'Ils aller' is wrong — aller must be conjugated: ils vont.",
+    explanation: "Ils vont au parc. À + le = au (le parc is masculine). 'Ils aller' is wrong: aller must be conjugated: ils vont.",
   },
   {
     question: "What is the 'tu' form of 'aller'?",
@@ -90,7 +90,7 @@ const questions = [
     question: "A student says 'Je vais à le supermarché.' What's wrong?",
     options: ["They used the wrong verb.", "À + le must contract to au.", "Supermarché is feminine.", "Vais should be vais aller."],
     correct: 1,
-    explanation: "À + le always contracts to au: Je vais au supermarché. Never write 'à le' — it must be contracted. À + la stays as à la (no contraction needed).",
+    explanation: "À + le always contracts to au: Je vais au supermarché. Never write 'à le': it must be contracted. À + la stays as à la (no contraction needed).",
   },
 ];
 
@@ -98,7 +98,7 @@ export default function Unit5Lesson4Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/french-foundations" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/french-foundations" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← French Foundations
         </Link>
 
@@ -127,7 +127,7 @@ export default function Unit5Lesson4Page() {
         </div>
 
         <div className="mt-12">
-          <FlashCardDeck cards={allerCards} title="aller — conjugations" />
+          <FlashCardDeck cards={allerCards} title="aller: conjugations" />
         </div>
 
         <div className="mt-12 rounded-2xl bg-[#0B1F3A] p-6 text-white">
@@ -168,7 +168,7 @@ export default function Unit5Lesson4Page() {
           <MultipleChoiceQuiz questions={questions} title="Going places quiz" />
         </div>
 
-        <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <section className="mt-16 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
 
           <h2 className="mt-3 text-3xl font-black">You can navigate daily life in French.</h2>
           <p className="mt-3 leading-7 text-[#526173]">
@@ -176,7 +176,7 @@ export default function Unit5Lesson4Page() {
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link href="/learn/french-foundations/unit-5/lesson-3" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">← Previous</Link>
-            <Link href="/learn/french-foundations/unit-5/test" className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Take the unit test →</Link>
+            <Link href="/learn/french-foundations/unit-5/test" className="rounded-full bg-[#D62828] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">Take the unit test →</Link>
           </div>
         </section>
       </section>

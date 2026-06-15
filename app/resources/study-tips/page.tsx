@@ -11,7 +11,7 @@ const sections = [
       },
       {
         heading: "Use spaced repetition",
-        body: "Review vocabulary at increasing intervals — after one day, then three days, then a week. This matches how long-term memory works.",
+        body: "Review vocabulary at increasing intervals: after one day, then three days, then a week. This matches how long-term memory works.",
       },
       {
         heading: "Group by theme",
@@ -33,7 +33,7 @@ const sections = [
       },
       {
         heading: "Write example sentences yourself",
-        body: "Do not just read grammar rules — apply them. Write five sentences using each new structure. Your own examples are easier to remember.",
+        body: "Do not just read grammar rules: apply them. Write five sentences using each new structure. Your own examples are easier to remember.",
       },
       {
         heading: "Notice patterns, not exceptions",
@@ -41,7 +41,7 @@ const sections = [
       },
       {
         heading: "Revisit old grammar regularly",
-        body: "Set aside ten minutes a week to review grammar you learned a month ago. Language is a skill — it needs maintenance.",
+        body: "Set aside ten minutes a week to review grammar you learned a month ago. Language is a skill: it needs maintenance.",
       },
     ],
   },
@@ -121,7 +121,7 @@ const sections = [
       },
       {
         heading: "Celebrate small wins",
-        body: "Recognise your progress. Understanding a sentence you would have missed a month ago, or using a new word naturally — these are real achievements.",
+        body: "Recognise your progress. Understanding a sentence you would have missed a month ago, or using a new word naturally: these are real achievements.",
       },
     ],
   },
@@ -131,7 +131,7 @@ export default function StudyTipsPage() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-4xl px-6 py-16">
-        <Link href="/resources" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/resources" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← Resources
         </Link>
 
@@ -143,7 +143,7 @@ export default function StudyTipsPage() {
             Study tips for French
           </h1>
           <p className="mt-4 text-lg leading-8 text-[#526173]">
-            Practical, evidence-informed strategies to help you learn French more effectively — from building vocabulary to staying motivated over the long term.
+            Practical, evidence-informed strategies to help you learn French more effectively: from building vocabulary to staying motivated over the long term.
           </p>
         </div>
 

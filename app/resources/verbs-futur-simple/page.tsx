@@ -42,7 +42,7 @@ export default function VerbsFuturSimplePage() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-4xl px-6 py-16">
-        <Link href="/resources" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/resources" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← Resources
         </Link>
 
@@ -118,7 +118,7 @@ export default function VerbsFuturSimplePage() {
             <h2 className="text-xl font-black">Irregular stems</h2>
           </div>
           <p className="mt-3 text-sm text-[#526173]">
-            Some common verbs do not use the infinitive as their future stem. The endings are identical — only the stem changes. Memorise these stems; the rest follows the same pattern.
+            Some common verbs do not use the infinitive as their future stem. The endings are identical: only the stem changes. Memorise these stems; the rest follows the same pattern.
           </p>
           <div className="mt-5 overflow-x-auto rounded-2xl border border-[#E7DAB9] bg-white p-5">
             <table className="w-full text-sm">
@@ -204,7 +204,7 @@ export default function VerbsFuturSimplePage() {
           </div>
           <div className="mt-4 rounded-2xl bg-[#F5F3FF] border border-[#DDD6FE] p-4 text-sm text-[#526173]">
             <span className="font-black text-[#7C3AED]">Note: </span>
-            For near-future actions, French speakers often prefer <span className="font-black text-[#0B1F3A]">aller + infinitive</span> (Je vais partir — I am going to leave). The futur simple is more common in formal, written, and more distant future contexts.
+            For near-future actions, French speakers often prefer <span className="font-black text-[#0B1F3A]">aller + infinitive</span> (Je vais partir: I am going to leave). The futur simple is more common in formal, written, and more distant future contexts.
           </div>
         </div>
       </section>

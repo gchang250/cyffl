@@ -26,7 +26,7 @@ const pairs = [
 
 const fillIn = [
   { before: "", after: ", j'ai mangé une pizza. (yesterday)", answer: "Hier", hint: "yesterday", translation: "Yesterday, I ate a pizza." },
-  { before: "Il y a trois jours, elle", after: "au cinéma. (aller)", answer: "est allée", hint: "3 days ago — être + allé + -e", translation: "Three days ago, she went to the cinema." },
+  { before: "Il y a trois jours, elle", after: "au cinéma. (aller)", answer: "est allée", hint: "3 days ago: être + allé + -e", translation: "Three days ago, she went to the cinema." },
   { before: "La semaine", after: ", nous avons étudié pour l'examen.", answer: "dernière", hint: "last (week)", translation: "Last week, we studied for the exam." },
   { before: "Ce matin, j'", after: "du café. (boire)", answer: "ai bu", hint: "boire → bu", translation: "This morning, I drank coffee." },
   { before: "L'année", after: ", il a voyagé en France.", answer: "dernière", hint: "last (year)", translation: "Last year, he travelled to France." },
@@ -43,7 +43,7 @@ const quiz = [
     question: "Which sentence uses the passé composé correctly with a time expression?",
     options: ["Hier, je mange une pizza.", "Hier, j'ai mangé une pizza.", "Hier, je mangeais une pizza.", "Hier, j'ai manger une pizza."],
     correct: 1,
-    explanation: "Passé composé = avoir/être (present) + past participle. J'ai mangé = I ate. Note: j'ai manger is wrong — use the past participle, not the infinitive.",
+    explanation: "Passé composé = avoir/être (present) + past participle. J'ai mangé = I ate. Note: j'ai manger is wrong: use the past participle, not the infinitive.",
   },
   {
     question: "What does 'l'année dernière' mean?",
@@ -97,7 +97,7 @@ export default function Unit6Lesson4Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/french-foundations" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">← French Foundations</Link>
+        <Link href="/learn/french-foundations" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">← French Foundations</Link>
         <div className="mt-6 grid gap-8 md:grid-cols-[1fr_1fr]">
           <div>
             <p className="text-xs font-bold uppercase tracking-widest text-[#C9A44C]">Unit 6 · Lesson 4</p>
@@ -148,7 +148,7 @@ export default function Unit6Lesson4Page() {
           <MultipleChoiceQuiz questions={quiz} title="Talking about yesterday quiz" />
         </div>
 
-        <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <section className="mt-16 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
 
           <h2 className="mt-3 text-3xl font-black">You can talk about the past in French.</h2>
           <p className="mt-3 leading-7 text-[#526173]">
@@ -156,7 +156,7 @@ export default function Unit6Lesson4Page() {
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link href="/learn/french-foundations/unit-6/lesson-3" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">← Previous</Link>
-            <Link href="/learn/french-foundations/unit-6/test" className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Take the unit test →</Link>
+            <Link href="/learn/french-foundations/unit-6/test" className="rounded-full bg-[#D62828] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">Take the unit test →</Link>
           </div>
         </section>
       </section>

@@ -5,24 +5,24 @@ import FillInTheBlank from "@/components/FillInTheBlank";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const irregularCards = [
-  { front: "je fais", back: "I do / make (faire)", subtext: "faire — to do, to make. Used in weather, sports, and activities." },
-  { front: "tu fais", back: "you do / make (faire)", subtext: "Qu'est-ce que tu fais ce soir? — What are you doing tonight?" },
-  { front: "il/elle fait", back: "he/she does (faire)", subtext: "Il fait beau aujourd'hui. — The weather is nice today." },
-  { front: "nous faisons", back: "we do / make (faire)", subtext: "Nous faisons la cuisine ensemble. — We cook together." },
-  { front: "vous faites", back: "you do / make (faire)", subtext: "Vous faites du sport? — Do you play sports?" },
-  { front: "ils/elles font", back: "they do / make (faire)", subtext: "Ils font leurs devoirs. — They're doing their homework." },
-  { front: "je veux", back: "I want (vouloir)", subtext: "vouloir — to want. Used for wishes and requests." },
-  { front: "tu veux", back: "you want (vouloir)", subtext: "Tu veux venir avec nous? — Do you want to come with us?" },
-  { front: "il/elle veut", back: "he/she wants (vouloir)", subtext: "Elle veut être médecin. — She wants to be a doctor." },
-  { front: "nous voulons", back: "we want (vouloir)", subtext: "Nous voulons changer les choses. — We want to change things." },
-  { front: "vous voulez", back: "you want (vouloir)", subtext: "Vous voulez du café? — Would you like some coffee?" },
-  { front: "ils/elles veulent", back: "they want (vouloir)", subtext: "Ils veulent partir tôt. — They want to leave early." },
-  { front: "je peux", back: "I can (pouvoir)", subtext: "pouvoir — to be able to. Used for permission and ability." },
-  { front: "tu peux", back: "you can (pouvoir)", subtext: "Tu peux m'aider? — Can you help me?" },
-  { front: "il/elle peut", back: "he/she can (pouvoir)", subtext: "Elle ne peut pas venir. — She can't come." },
-  { front: "nous pouvons", back: "we can (pouvoir)", subtext: "Nous pouvons essayer! — We can try!" },
-  { front: "vous pouvez", back: "you can (pouvoir)", subtext: "Vous pouvez partir. — You may leave." },
-  { front: "ils/elles peuvent", back: "they can (pouvoir)", subtext: "Ils peuvent nager très bien. — They can swim very well." },
+  { front: "je fais", back: "I do / make (faire)", subtext: "faire: to do, to make. Used in weather, sports, and activities." },
+  { front: "tu fais", back: "you do / make (faire)", subtext: "Qu'est-ce que tu fais ce soir?: What are you doing tonight?" },
+  { front: "il/elle fait", back: "he/she does (faire)", subtext: "Il fait beau aujourd'hui.: The weather is nice today." },
+  { front: "nous faisons", back: "we do / make (faire)", subtext: "Nous faisons la cuisine ensemble.: We cook together." },
+  { front: "vous faites", back: "you do / make (faire)", subtext: "Vous faites du sport?: Do you play sports?" },
+  { front: "ils/elles font", back: "they do / make (faire)", subtext: "Ils font leurs devoirs.: They're doing their homework." },
+  { front: "je veux", back: "I want (vouloir)", subtext: "vouloir: to want. Used for wishes and requests." },
+  { front: "tu veux", back: "you want (vouloir)", subtext: "Tu veux venir avec nous?: Do you want to come with us?" },
+  { front: "il/elle veut", back: "he/she wants (vouloir)", subtext: "Elle veut être médecin.: She wants to be a doctor." },
+  { front: "nous voulons", back: "we want (vouloir)", subtext: "Nous voulons changer les choses.: We want to change things." },
+  { front: "vous voulez", back: "you want (vouloir)", subtext: "Vous voulez du café?: Would you like some coffee?" },
+  { front: "ils/elles veulent", back: "they want (vouloir)", subtext: "Ils veulent partir tôt.: They want to leave early." },
+  { front: "je peux", back: "I can (pouvoir)", subtext: "pouvoir: to be able to. Used for permission and ability." },
+  { front: "tu peux", back: "you can (pouvoir)", subtext: "Tu peux m'aider?: Can you help me?" },
+  { front: "il/elle peut", back: "he/she can (pouvoir)", subtext: "Elle ne peut pas venir.: She can't come." },
+  { front: "nous pouvons", back: "we can (pouvoir)", subtext: "Nous pouvons essayer!: We can try!" },
+  { front: "vous pouvez", back: "you can (pouvoir)", subtext: "Vous pouvez partir.: You may leave." },
+  { front: "ils/elles peuvent", back: "they can (pouvoir)", subtext: "Ils peuvent nager très bien.: They can swim very well." },
 ];
 
 const pairs = [
@@ -47,7 +47,7 @@ const questions = [
     question: "What is the 'vous' form of 'faire'?",
     options: ["vous faisez", "vous font", "vous faites", "vous faisons"],
     correct: 2,
-    explanation: "Vous faites is the irregular vous form of faire — one of the only -ez exceptions in French: vous faites, vous dites, vous êtes.",
+    explanation: "Vous faites is the irregular vous form of faire: one of the only -ez exceptions in French: vous faites, vous dites, vous êtes.",
   },
   {
     question: "Which faire expression means 'to do homework'?",
@@ -59,13 +59,13 @@ const questions = [
     question: "What is the 'ils' form of 'vouloir'?",
     options: ["ils voulons", "ils veulent", "ils voulant", "ils voulez"],
     correct: 1,
-    explanation: "Ils veulent — vouloir is irregular. Full conjugation: je veux, tu veux, il/elle veut, nous voulons, vous voulez, ils/elles veulent.",
+    explanation: "Ils veulent: vouloir is irregular. Full conjugation: je veux, tu veux, il/elle veut, nous voulons, vous voulez, ils/elles veulent.",
   },
   {
     question: "How do you say 'She can't swim' in French?",
     options: ["Elle ne veut pas nager.", "Elle ne peut pas nager.", "Elle ne fait pas nager.", "Elle ne va pas nager."],
     correct: 1,
-    explanation: "Pouvoir = can / to be able to. Elle ne peut pas nager — she can't swim. Ne...pas wraps the conjugated verb.",
+    explanation: "Pouvoir = can / to be able to. Elle ne peut pas nager: she can't swim. Ne...pas wraps the conjugated verb.",
   },
   {
     question: "Which faire expression describes cooking?",
@@ -77,7 +77,7 @@ const questions = [
     question: "What is the 'tu' form of 'pouvoir'?",
     options: ["tu pouvez", "tu peux", "tu peut", "tu pouvons"],
     correct: 1,
-    explanation: "Tu peux — pouvoir is irregular. Conjugation: je peux, tu peux, il/elle peut, nous pouvons, vous pouvez, ils/elles peuvent. Je and tu share the same stem: peu-.",
+    explanation: "Tu peux: pouvoir is irregular. Conjugation: je peux, tu peux, il/elle peut, nous pouvons, vous pouvez, ils/elles peuvent. Je and tu share the same stem: peu-.",
   },
   {
     question: "How do you say 'They want to leave early'?",
@@ -97,7 +97,7 @@ export default function Unit2Lesson4Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/school-french-support" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/school-french-support" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← School French Support
         </Link>
 
@@ -121,7 +121,7 @@ export default function Unit2Lesson4Page() {
         </div>
 
         <div className="mt-12">
-          <FlashCardDeck cards={irregularCards} title="faire, vouloir, pouvoir — all forms" />
+          <FlashCardDeck cards={irregularCards} title="faire, vouloir, pouvoir: all forms" />
         </div>
 
         <div className="mt-12">
@@ -136,11 +136,11 @@ export default function Unit2Lesson4Page() {
           <MultipleChoiceQuiz questions={questions} title="faire, vouloir, pouvoir quiz" />
         </div>
 
-        <div className="mt-12 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <div className="mt-12 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
 
           <p className="mt-2 text-[#526173]">You've covered all three regular verb families and the six most important irregular verbs in French. Take the unit test to prove you've got it all.</p>
           <div className="mt-5 flex flex-wrap gap-3">
-            <Link href="/learn/school-french-support/unit-2/test" className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Take Unit 2 Test →</Link>
+            <Link href="/learn/school-french-support/unit-2/test" className="rounded-full bg-[#D62828] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">Take Unit 2 Test →</Link>
           </div>
         </div>
 

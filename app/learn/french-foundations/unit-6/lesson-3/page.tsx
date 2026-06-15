@@ -5,21 +5,21 @@ import FillInTheBlank from "@/components/FillInTheBlank";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const cards = [
-  { front: "être", back: "été", subtext: "J'ai été malade. — I was sick. (uses avoir!)" },
-  { front: "avoir", back: "eu", subtext: "Tu as eu de la chance. — You were lucky." },
-  { front: "faire", back: "fait", subtext: "Elle a fait ses devoirs. — She did her homework." },
-  { front: "pouvoir", back: "pu", subtext: "Il n'a pas pu venir. — He couldn't come." },
-  { front: "vouloir", back: "voulu", subtext: "J'ai voulu aider. — I wanted to help." },
-  { front: "devoir", back: "dû", subtext: "Tu as dû partir tôt. — You had to leave early." },
-  { front: "prendre", back: "pris", subtext: "Nous avons pris le métro. — We took the metro." },
-  { front: "mettre", back: "mis", subtext: "Elle a mis sa veste. — She put on her jacket." },
-  { front: "voir", back: "vu", subtext: "Vous avez vu ce film? — Did you see that film?" },
-  { front: "boire", back: "bu", subtext: "Il a bu du café. — He drank coffee." },
-  { front: "écrire", back: "écrit", subtext: "J'ai écrit une lettre. — I wrote a letter." },
-  { front: "lire", back: "lu", subtext: "Tu as lu ce livre? — Did you read that book?" },
-  { front: "savoir", back: "su", subtext: "Elle a su la réponse. — She knew the answer." },
-  { front: "ouvrir", back: "ouvert", subtext: "Ils ont ouvert la fenêtre. — They opened the window." },
-  { front: "venir", back: "venu(e)(s)", subtext: "Elle est venue. — She came. (uses être)" },
+  { front: "être", back: "été", subtext: "J'ai été malade.: I was sick. (uses avoir!)" },
+  { front: "avoir", back: "eu", subtext: "Tu as eu de la chance.: You were lucky." },
+  { front: "faire", back: "fait", subtext: "Elle a fait ses devoirs.: She did her homework." },
+  { front: "pouvoir", back: "pu", subtext: "Il n'a pas pu venir.: He couldn't come." },
+  { front: "vouloir", back: "voulu", subtext: "J'ai voulu aider.: I wanted to help." },
+  { front: "devoir", back: "dû", subtext: "Tu as dû partir tôt.: You had to leave early." },
+  { front: "prendre", back: "pris", subtext: "Nous avons pris le métro.: We took the metro." },
+  { front: "mettre", back: "mis", subtext: "Elle a mis sa veste.: She put on her jacket." },
+  { front: "voir", back: "vu", subtext: "Vous avez vu ce film?: Did you see that film?" },
+  { front: "boire", back: "bu", subtext: "Il a bu du café.: He drank coffee." },
+  { front: "écrire", back: "écrit", subtext: "J'ai écrit une lettre.: I wrote a letter." },
+  { front: "lire", back: "lu", subtext: "Tu as lu ce livre?: Did you read that book?" },
+  { front: "savoir", back: "su", subtext: "Elle a su la réponse.: She knew the answer." },
+  { front: "ouvrir", back: "ouvert", subtext: "Ils ont ouvert la fenêtre.: They opened the window." },
+  { front: "venir", back: "venu(e)(s)", subtext: "Elle est venue.: She came. (uses être)" },
 ];
 
 const pairs = [
@@ -96,7 +96,7 @@ export default function Unit6Lesson3Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/french-foundations" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">← French Foundations</Link>
+        <Link href="/learn/french-foundations" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">← French Foundations</Link>
         <div className="mt-6 grid gap-8 md:grid-cols-[1fr_1fr]">
           <div>
             <p className="text-xs font-bold uppercase tracking-widest text-[#C9A44C]">Unit 6 · Lesson 3</p>
@@ -154,7 +154,7 @@ export default function Unit6Lesson3Page() {
 
         <div className="mt-16 flex items-center justify-between gap-4">
           <Link href="/learn/french-foundations/unit-6/lesson-2" className="rounded-full border border-[#E7DAB9] bg-white px-5 py-2.5 text-sm font-black text-[#526173] transition hover:-translate-y-0.5">← Previous</Link>
-          <Link href="/learn/french-foundations/unit-6/lesson-4" className="rounded-full bg-[#2563EB] px-5 py-2.5 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Next lesson →</Link>
+          <Link href="/learn/french-foundations/unit-6/lesson-4" className="rounded-full bg-[#D62828] px-5 py-2.5 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">Next lesson →</Link>
         </div>
       </section>
     </main>

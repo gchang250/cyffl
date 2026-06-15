@@ -4,14 +4,14 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Sentence Structure | CYFFL Resources",
   description:
-    "A complete reference for French sentence structure — syntactic groups (groupe nominal, verbal, prépositionnel), sentence types, word order, subordinate clauses, relative clauses, emphasis, and nominalization.",
+    "A complete reference for French sentence structure: syntactic groups (groupe nominal, verbal, prépositionnel), sentence types, word order, subordinate clauses, relative clauses, emphasis, and nominalization.",
 };
 
 const sections = [
   {
     id: "groupes",
     title: "Syntactic groups",
-    subtitle: "Every French sentence is built from these five phrase types — the groupe nominal is the core of most clauses",
+    subtitle: "Every French sentence is built from these five phrase types: the groupe nominal is the core of most clauses",
     color: "bg-[#FEF3C7] text-[#D97706]",
     rows: [
       {
@@ -49,85 +49,85 @@ const sections = [
   {
     id: "functions",
     title: "Syntactic functions",
-    subtitle: "The role each group plays in the sentence — what the subject does, what the verb acts on, what describes the subject",
+    subtitle: "The role each group plays in the sentence: what the subject does, what the verb acts on, what describes the subject",
     color: "bg-[#FFF7ED] text-[#C2410C]",
     rows: [
       {
         label: "Sujet (S)",
-        pattern: "Who or what the sentence is about — controls verb agreement",
+        pattern: "Who or what the sentence is about: controls verb agreement",
         example: "Le ministre a approuvé la loi. · Les décisions prises par le comité sont contraignantes.",
         note: "Test: ask 'Qui est-ce qui…?' or 'Qu'est-ce qui…?' before the verb. The sujet can be a GN, a pronoun, an infinitive, or even a clause: 'Que tu sois là me fait plaisir.'",
       },
       {
         label: "COD (direct object)",
-        pattern: "Complément d'objet direct — answers 'quoi?' or 'qui?' after the verb",
+        pattern: "Complément d'objet direct: answers 'quoi?' or 'qui?' after the verb",
         example: "Il lit le rapport. (quoi?) · Elle rencontre le directeur. (qui?)",
         note: "No preposition between the verb and COD. Replaced by 'le, la, les': 'Il le lit.' Past participle agrees with a preceding COD: 'Le rapport qu'il a lu…'",
       },
       {
         label: "COI (indirect object)",
-        pattern: "Complément d'objet indirect — answers 'à qui?', 'de quoi?', etc.",
+        pattern: "Complément d'objet indirect: answers 'à qui?', 'de quoi?', etc.",
         example: "Elle parle à ses collègues. · Il se souvient de cette réunion.",
         note: "Always preceded by a preposition (à, de). Replaced by 'lui, leur' (à) or 'en' (de): 'Elle leur parle.' 'Il s'en souvient.' No past participle agreement with COI.",
       },
       {
         label: "Attribut du sujet",
-        pattern: "Linked to the subject via a verb of state — describes what the subject IS",
+        pattern: "Linked to the subject via a verb of state: describes what the subject IS",
         example: "Il est directeur. · Elle semble fatiguée. · La situation devient critique.",
         note: "Verb of state: être, sembler, paraître, devenir, rester, demeurer, se révéler. The attribute agrees with the subject in gender and number: 'Elles semblent fatiguées.'",
       },
       {
         label: "CC de lieu",
-        pattern: "Complément circonstanciel de lieu — answers 'où?'",
+        pattern: "Complément circonstanciel de lieu: answers 'où?'",
         example: "Il travaille dans ce bureau. · Nous allons à Montréal.",
-        note: "Expresses location or destination. Replaced by 'y': 'Il y travaille.' Not to be confused with COI — 'dans ce bureau' modifies the whole action, not the verb directly.",
+        note: "Expresses location or destination. Replaced by 'y': 'Il y travaille.' Not to be confused with COI: 'dans ce bureau' modifies the whole action, not the verb directly.",
       },
       {
         label: "CC de temps / manière / cause",
         pattern: "Answers 'quand?', 'comment?', 'pourquoi?'",
         example: "Elle part demain. (temps) · Il parle clairement. (manière) · Elle réussit grâce à son travail. (cause)",
-        note: "Compléments circonstanciels are optional and mobile — you can usually move them without breaking the sentence. 'Demain, elle part.' is just as correct as 'Elle part demain.'",
+        note: "Compléments circonstanciels are optional and mobile: you can usually move them without breaking the sentence. 'Demain, elle part.' is just as correct as 'Elle part demain.'",
       },
     ],
   },
   {
     id: "sentence-types",
     title: "Sentence types",
-    subtitle: "Simple, compound, and complex — how propositions combine to build longer sentences",
+    subtitle: "Simple, compound, and complex: how propositions combine to build longer sentences",
     color: "bg-[#F0FDF4] text-[#16A34A]",
     rows: [
       {
         label: "Phrase simple",
         pattern: "One conjugated verb, one proposition",
         example: "La réunion commence à neuf heures. · Il a approuvé le rapport sans hésitation.",
-        note: "A simple sentence contains exactly one finite verb (conjugated verb). It can be long and have many complements — as long as there is only one verb, it remains simple.",
+        note: "A simple sentence contains exactly one finite verb (conjugated verb). It can be long and have many complements: as long as there is only one verb, it remains simple.",
       },
       {
         label: "Phrase composée (juxtaposée)",
         pattern: "Two independent clauses joined by punctuation only",
         example: "Il a travaillé toute la nuit ; il a réussi l'examen.",
-        note: "Juxtaposition uses a comma or semicolon — no conjunction. Each clause could stand alone. The reader infers the logical link (here: cause → result).",
+        note: "Juxtaposition uses a comma or semicolon: no conjunction. Each clause could stand alone. The reader infers the logical link (here: cause → result).",
       },
       {
         label: "Phrase composée (coordonnée)",
         pattern: "Two independent clauses joined by a coordinating conjunction",
         example: "Il a travaillé dur, donc il a réussi. · Elle veut partir, mais elle ne peut pas.",
-        note: "The two clauses are equal — neither depends on the other. Conjunctions: et, mais, ou, donc, or, ni, car. Each clause has its own subject and verb.",
+        note: "The two clauses are equal: neither depends on the other. Conjunctions: et, mais, ou, donc, or, ni, car. Each clause has its own subject and verb.",
       },
       {
-        label: "Phrase complexe — complétive",
+        label: "Phrase complexe: complétive",
         pattern: "Main clause + subordinate completing clause (que + indicative)",
         example: "Il dit qu'il viendra. · Je pense que la décision est correcte. · Nous savons qu'il a tort.",
         note: "The complétive clause functions as the COD of the main verb. It answers 'quoi?' after verbs of saying, thinking, knowing, believing. Takes the indicative (unlike purpose or concession clauses).",
       },
       {
-        label: "Phrase complexe — relative",
+        label: "Phrase complexe: relative",
         pattern: "Main clause + subordinate describing a noun (qui / que / dont / où / lequel)",
         example: "La décision que nous avons prise aura des conséquences. · L'expert dont je vous parle est très reconnu.",
-        note: "The relative clause is embedded inside the main clause and modifies a noun (its antecedent). It does not add a new idea — it expands the description of an existing noun.",
+        note: "The relative clause is embedded inside the main clause and modifies a noun (its antecedent). It does not add a new idea: it expands the description of an existing noun.",
       },
       {
-        label: "Phrase complexe — circonstancielle",
+        label: "Phrase complexe: circonstancielle",
         pattern: "Main clause + subordinate expressing circumstance (time, cause, condition, etc.)",
         example: "Bien qu'il soit fatigué, il continue. (concession) · Dès qu'elle arrive, appelle-moi. (temps)",
         note: "The circonstancielle clause plays the role of a complément circonstanciel. It can often be moved: 'Appelle-moi dès qu'elle arrive.' is equally correct. See the subordinate clauses section for all conjunction types.",
@@ -178,19 +178,19 @@ const sections = [
     subtitle: "Joining two clauses or elements of the same type",
     color: "bg-[#FEF3C7] text-[#D97706]",
     rows: [
-      { label: "et", pattern: "and — adds a point", example: "Il parle français et il comprend l'anglais.", note: "Do not use a comma before 'et' in French (unlike in English)." },
-      { label: "mais", pattern: "but — introduces a contrast", example: "Il veut réussir, mais il ne travaille pas assez.", note: "Always preceded by a comma. Stronger contrast than 'cependant'." },
-      { label: "ou", pattern: "or — presents an alternative", example: "Tu viens ce soir ou tu restes chez toi ?", note: "'Ou' = or. Don't confuse with 'où' (where, with accent)." },
-      { label: "donc", pattern: "therefore / so — signals a consequence", example: "Il pleut, donc nous restons.", note: "'Donc' is coordination, not subordination. The clause it introduces remains independent." },
-      { label: "or", pattern: "now / yet — introduces a contrast or new element", example: "Il pensait avoir raison ; or, les faits le contredisent.", note: "'Or' (no accent) is a coordinating conjunction meaning 'now' or 'and yet'. Often confused with 'or' in English." },
+      { label: "et", pattern: "and: adds a point", example: "Il parle français et il comprend l'anglais.", note: "Do not use a comma before 'et' in French (unlike in English)." },
+      { label: "mais", pattern: "but: introduces a contrast", example: "Il veut réussir, mais il ne travaille pas assez.", note: "Always preceded by a comma. Stronger contrast than 'cependant'." },
+      { label: "ou", pattern: "or: presents an alternative", example: "Tu viens ce soir ou tu restes chez toi ?", note: "'Ou' = or. Don't confuse with 'où' (where, with accent)." },
+      { label: "donc", pattern: "therefore / so: signals a consequence", example: "Il pleut, donc nous restons.", note: "'Donc' is coordination, not subordination. The clause it introduces remains independent." },
+      { label: "or", pattern: "now / yet: introduces a contrast or new element", example: "Il pensait avoir raison ; or, les faits le contredisent.", note: "'Or' (no accent) is a coordinating conjunction meaning 'now' or 'and yet'. Often confused with 'or' in English." },
       { label: "ni … ni …", pattern: "neither … nor …", example: "Il ne parle ni français ni anglais.", note: "Use 'ne' before the verb. Both 'ni' elements replace 'et' or 'ou'. The verb stays singular if both subjects are singular." },
-      { label: "car", pattern: "for / because (formal) — gives a reason", example: "Il est absent, car il est malade.", note: "'Car' is more formal than 'parce que' and introduces a justification — not a cause. It cannot start a sentence." },
+      { label: "car", pattern: "for / because (formal): gives a reason", example: "Il est absent, car il est malade.", note: "'Car' is more formal than 'parce que' and introduces a justification: not a cause. It cannot start a sentence." },
     ],
   },
   {
     id: "subordinate",
     title: "Subordinate clauses",
-    subtitle: "Dependent clauses joined by a subordinating conjunction — some trigger the subjunctive",
+    subtitle: "Dependent clauses joined by a subordinating conjunction: some trigger the subjunctive",
     color: "bg-[#F0FDF4] text-[#16A34A]",
     rows: [
       {
@@ -209,7 +209,7 @@ const sections = [
         label: "Opposition → indicative",
         pattern: "alors que · tandis que · même si",
         example: "Il réussit alors que son frère échoue. · Même si c'est difficile, il faut essayer.",
-        note: "'Alors que' and 'tandis que' contrast two simultaneous or opposing states. 'Même si' = even if — takes indicative (not subjunctive).",
+        note: "'Alors que' and 'tandis que' contrast two simultaneous or opposing states. 'Même si' = even if: takes indicative (not subjunctive).",
       },
       {
         label: "Concession → SUBJUNCTIVE",
@@ -240,7 +240,7 @@ const sections = [
   {
     id: "relative",
     title: "Relative clauses",
-    subtitle: "Clauses that describe or define a noun — introduced by a relative pronoun",
+    subtitle: "Clauses that describe or define a noun: introduced by a relative pronoun",
     color: "bg-[#FDF4FF] text-[#9333EA]",
     rows: [
       {
@@ -257,7 +257,7 @@ const sections = [
       },
       {
         label: "dont",
-        pattern: "replaces 'de + noun' — used with verbs/nouns requiring 'de'",
+        pattern: "replaces 'de + noun': used with verbs/nouns requiring 'de'",
         example: "Le projet dont je parle… · L'outil dont nous avons besoin… · L'auteur dont j'admire l'œuvre…",
         note: "'Dont' replaces 'de + [noun]'. Common triggers: parler de, avoir besoin de, se souvenir de, tenir compte de, faire partie de. Also used for possession: 'l'auteur dont j'admire l'œuvre' = the author whose work I admire.",
       },
@@ -291,13 +291,13 @@ const sections = [
         label: "C'est… que (object emphasis)",
         pattern: "C'est [emphasized element] que [rest of clause]",
         example: "C'est cette décision que je conteste. · C'est maintenant qu'il faut agir.",
-        note: "Emphasizes any element except the subject — object, time, place, manner. 'Que' becomes 'qu'' before a vowel.",
+        note: "Emphasizes any element except the subject: object, time, place, manner. 'Que' becomes 'qu'' before a vowel.",
       },
       {
         label: "Ce qui… c'est (subject)",
         pattern: "Ce qui [verb], c'est [complement]",
         example: "Ce qui m'inquiète, c'est l'absence de dialogue. · Ce qui est remarquable, c'est la rapidité.",
-        note: "'Ce qui' = what (subject). The structure delays the key information to the end — this is called dislocation. Very common in formal writing and speaking.",
+        note: "'Ce qui' = what (subject). The structure delays the key information to the end: this is called dislocation. Very common in formal writing and speaking.",
       },
       {
         label: "Ce que… c'est (object)",
@@ -307,30 +307,30 @@ const sections = [
       },
       {
         label: "Inversion (stylistic)",
-        pattern: "Verb before subject — after certain adverbs or in formal writing",
+        pattern: "Verb before subject: after certain adverbs or in formal writing",
         example: "Ainsi peut-on expliquer… · À peine avait-il parlé que… · Jamais il n'avait vu cela.",
-        note: "Inversion is required after 'ainsi', 'à peine', 'peut-être', 'aussi' (meaning 'therefore') at the start of a clause. Very formal — signals advanced register.",
+        note: "Inversion is required after 'ainsi', 'à peine', 'peut-être', 'aussi' (meaning 'therefore') at the start of a clause. Very formal: signals advanced register.",
       },
     ],
   },
   {
     id: "impersonal",
     title: "Impersonal constructions",
-    subtitle: "Structures with 'il' as a dummy subject — not referring to any person",
+    subtitle: "Structures with 'il' as a dummy subject: not referring to any person",
     color: "bg-[#FFF7ED] text-[#C2410C]",
     rows: [
       { label: "il faut que + subj", pattern: "it is necessary that / one must", example: "Il faut que tu sois présent. · Il faudrait qu'on agisse maintenant.", note: "⚠️ Always triggers the subjunctive. To avoid subjunctive, use 'il faut + infinitif': 'Il faut agir maintenant.'" },
-      { label: "il faut + infinitif", pattern: "one must / it is necessary to", example: "Il faut partir maintenant. · Il ne faut pas mentir.", note: "No subjunctive — use when the action is general (no specific subject). 'Il faut + que + subj' when there IS a specific subject." },
+      { label: "il faut + infinitif", pattern: "one must / it is necessary to", example: "Il faut partir maintenant. · Il ne faut pas mentir.", note: "No subjunctive: use when the action is general (no specific subject). 'Il faut + que + subj' when there IS a specific subject." },
       { label: "il est + adj + de + inf", pattern: "it is [adjective] to [verb]", example: "Il est important de noter que… · Il est difficile de comprendre.", note: "Followed by 'de + infinitif'. The adjective describes the action. Compare: 'Il est important que tu notes' (+ subjunctive, specific subject)." },
-      { label: "il convient de + inf", pattern: "it is appropriate to / one should", example: "Il convient de souligner que… · Il convient d'examiner cette question.", note: "Formal, impersonal. Very common in government French and formal writing. Slightly weaker than 'il faut' — suggests appropriateness rather than necessity." },
-      { label: "il s'agit de", pattern: "it is a matter of / it concerns / this is about", example: "Il s'agit d'un problème complexe. · Dans ce texte, il s'agit de…", note: "'Il s'agit de' is never personal — never say 'je m'agis'. Always impersonal. Used to introduce a topic: 'Il s'agit de comprendre les enjeux.' = It is a matter of understanding the issues." },
+      { label: "il convient de + inf", pattern: "it is appropriate to / one should", example: "Il convient de souligner que… · Il convient d'examiner cette question.", note: "Formal, impersonal. Very common in government French and formal writing. Slightly weaker than 'il faut': suggests appropriateness rather than necessity." },
+      { label: "il s'agit de", pattern: "it is a matter of / it concerns / this is about", example: "Il s'agit d'un problème complexe. · Dans ce texte, il s'agit de…", note: "'Il s'agit de' is never personal: never say 'je m'agis'. Always impersonal. Used to introduce a topic: 'Il s'agit de comprendre les enjeux.' = It is a matter of understanding the issues." },
       { label: "il est à noter / il est à craindre", pattern: "it is to be noted / there is reason to fear", example: "Il est à noter que les délais sont courts. · Il est à craindre que la situation s'aggrave.", note: "'Il est à + infinitif passif' is a formal structure. 'Il est à craindre que' takes the subjunctive. Common in formal reports and formal writing." },
     ],
   },
   {
     id: "nominalization",
     title: "Nominalization",
-    subtitle: "Converting verbs and adjectives into nouns — the hallmark of formal written French",
+    subtitle: "Converting verbs and adjectives into nouns: the hallmark of formal written French",
     color: "bg-[#EDE9FE] text-[#7C3AED]",
     rows: [
       { label: "Verb → noun", pattern: "Use the noun form instead of the verb", example: "mettre en œuvre → la mise en œuvre · décider → la décision · analyser → l'analyse", note: "Nominalization is more formal than a verb clause. 'La mise en œuvre de cette politique' is more formal than 'mettre en œuvre cette politique'. Very common in government and academic French." },
@@ -345,7 +345,7 @@ export default function SentenceStructurePage() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-7xl px-6 py-20">
-        <Link href="/resources" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/resources" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← Resources
         </Link>
 
@@ -357,7 +357,7 @@ export default function SentenceStructurePage() {
             Sentence Structure
           </h1>
           <p className="mt-5 text-lg leading-8 text-[#526173]">
-            A complete reference for how French sentences are built — from basic word order to relative clauses, emphasis structures, impersonal constructions, and the nominalization that defines formal written French.
+            A complete reference for how French sentences are built: from basic word order to relative clauses, emphasis structures, impersonal constructions, and the nominalization that defines formal written French.
           </p>
         </div>
 
@@ -386,7 +386,7 @@ export default function SentenceStructurePage() {
               <h2 className="mt-3 text-3xl font-black">{section.title}</h2>
               <p className="mt-1 text-[#526173]">{section.subtitle}</p>
 
-              <div className="mt-6 overflow-hidden rounded-[1.5rem] border border-[#E7DAB9]">
+              <div className="mt-6 overflow-hidden rounded-2xl border border-[#E7DAB9]">
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="bg-[#0B1F3A] text-white">
@@ -425,7 +425,7 @@ export default function SentenceStructurePage() {
         </div>
 
         {/* Warning box for subjunctive triggers */}
-        <section className="mt-16 rounded-[2rem] border-2 border-[#F0FDF4] bg-white p-8">
+        <section className="mt-16 rounded-2xl border-2 border-[#F0FDF4] bg-white p-8">
           <p className="text-xs font-bold uppercase tracking-widest text-[#16A34A]">⚠️ Subjunctive triggers — summary</p>
           <p className="mt-2 text-[#526173]">These conjunctions and verbs always require the subjunctive in the subordinate clause.</p>
           <div className="mt-5 grid gap-4 md:grid-cols-3">
@@ -462,7 +462,7 @@ export default function SentenceStructurePage() {
         </section>
 
         {/* Related resources */}
-        <section className="mt-10 rounded-[2rem] bg-[#0B1F3A] p-8 text-white shadow-sm">
+        <section className="mt-10 rounded-2xl bg-[#0B1F3A] p-8 text-white shadow-sm">
           <p className="text-xl font-black">Related resources</p>
           <div className="mt-5 flex flex-wrap gap-3">
             {[

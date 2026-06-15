@@ -5,30 +5,30 @@ import FillInTheBlank from "@/components/FillInTheBlank";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const devoirCards = [
-  { front: "je dois", back: "I must / I have to", subtext: "Je dois partir. — I have to leave." },
-  { front: "tu dois", back: "you must", subtext: "Tu dois étudier. — You have to study." },
-  { front: "il/elle doit", back: "he/she must", subtext: "Il doit travailler. — He has to work." },
-  { front: "nous devons", back: "we must", subtext: "Nous devons y aller. — We have to go." },
-  { front: "vous devez", back: "you must", subtext: "Vous devez arriver à l'heure. — You must arrive on time." },
-  { front: "ils/elles doivent", back: "they must", subtext: "Ils doivent finir. — They have to finish." },
+  { front: "je dois", back: "I must / I have to", subtext: "Je dois partir.: I have to leave." },
+  { front: "tu dois", back: "you must", subtext: "Tu dois étudier.: You have to study." },
+  { front: "il/elle doit", back: "he/she must", subtext: "Il doit travailler.: He has to work." },
+  { front: "nous devons", back: "we must", subtext: "Nous devons y aller.: We have to go." },
+  { front: "vous devez", back: "you must", subtext: "Vous devez arriver à l'heure.: You must arrive on time." },
+  { front: "ils/elles doivent", back: "they must", subtext: "Ils doivent finir.: They have to finish." },
 ];
 
 const savoirCards = [
-  { front: "je sais", back: "I know", subtext: "Je sais la réponse. — I know the answer." },
-  { front: "tu sais", back: "you know", subtext: "Tu sais nager? — Can/Do you know how to swim?" },
-  { front: "il/elle sait", back: "he/she knows", subtext: "Elle sait jouer du piano. — She can play the piano." },
-  { front: "nous savons", back: "we know", subtext: "Nous savons qu'il a raison. — We know he's right." },
-  { front: "vous savez", back: "you know", subtext: "Vous savez cuisiner? — Do you know how to cook?" },
-  { front: "ils/elles savent", back: "they know", subtext: "Ils savent la vérité. — They know the truth." },
+  { front: "je sais", back: "I know", subtext: "Je sais la réponse.: I know the answer." },
+  { front: "tu sais", back: "you know", subtext: "Tu sais nager?: Can/Do you know how to swim?" },
+  { front: "il/elle sait", back: "he/she knows", subtext: "Elle sait jouer du piano.: She can play the piano." },
+  { front: "nous savons", back: "we know", subtext: "Nous savons qu'il a raison.: We know he's right." },
+  { front: "vous savez", back: "you know", subtext: "Vous savez cuisiner?: Do you know how to cook?" },
+  { front: "ils/elles savent", back: "they know", subtext: "Ils savent la vérité.: They know the truth." },
 ];
 
 const connaitreCards = [
-  { front: "je connais", back: "I know", subtext: "Je connais Marie. — I know Marie." },
-  { front: "tu connais", back: "you know", subtext: "Tu connais ce restaurant? — Do you know this restaurant?" },
-  { front: "il/elle connaît", back: "he/she knows", subtext: "Elle connaît bien Paris. — She knows Paris well." },
-  { front: "nous connaissons", back: "we know", subtext: "Nous connaissons ses parents. — We know his parents." },
-  { front: "vous connaissez", back: "you know", subtext: "Vous connaissez cette chanson? — Do you know this song?" },
-  { front: "ils/elles connaissent", back: "they know", subtext: "Ils connaissent tout le monde. — They know everyone." },
+  { front: "je connais", back: "I know", subtext: "Je connais Marie.: I know Marie." },
+  { front: "tu connais", back: "you know", subtext: "Tu connais ce restaurant?: Do you know this restaurant?" },
+  { front: "il/elle connaît", back: "he/she knows", subtext: "Elle connaît bien Paris.: She knows Paris well." },
+  { front: "nous connaissons", back: "we know", subtext: "Nous connaissons ses parents.: We know his parents." },
+  { front: "vous connaissez", back: "you know", subtext: "Vous connaissez cette chanson?: Do you know this song?" },
+  { front: "ils/elles connaissent", back: "they know", subtext: "Ils connaissent tout le monde.: They know everyone." },
 ];
 
 const pairs = [
@@ -42,10 +42,10 @@ const pairs = [
 
 const fillIn = [
   { before: "Je", after: "partir maintenant. (devoir)", answer: "dois", hint: "je form of devoir", translation: "I have to leave now." },
-  { before: "Tu", after: "nager? (savoir)", answer: "sais", hint: "tu form of savoir — knowing how to do", translation: "Do you know how to swim?" },
-  { before: "Elle", after: "bien Montréal. (connaître)", answer: "connaît", hint: "elle form of connaître — knowing a place", translation: "She knows Montreal well." },
+  { before: "Tu", after: "nager? (savoir)", answer: "sais", hint: "tu form of savoir: knowing how to do", translation: "Do you know how to swim?" },
+  { before: "Elle", after: "bien Montréal. (connaître)", answer: "connaît", hint: "elle form of connaître: knowing a place", translation: "She knows Montreal well." },
   { before: "Nous", after: "travailler dur. (devoir)", answer: "devons", hint: "nous form of devoir", translation: "We have to work hard." },
-  { before: "Tu", after: "ce café? (connaître)", answer: "connais", hint: "tu form of connaître — knowing a place", translation: "Do you know this café?" },
+  { before: "Tu", after: "ce café? (connaître)", answer: "connais", hint: "tu form of connaître: knowing a place", translation: "Do you know this café?" },
 ];
 
 const quiz = [
@@ -71,7 +71,7 @@ const quiz = [
     question: "What is the 'il' form of 'connaître'?",
     options: ["il connaite", "il connait", "il connaît", "il connaisse"],
     correct: 2,
-    explanation: "Il connaît (with a circumflex on the î — it distinguishes it from connait without accent). This is the standard form.",
+    explanation: "Il connaît (with a circumflex on the î: it distinguishes it from connait without accent). This is the standard form.",
   },
   {
     question: "Which verb would you use to say 'Do you know what time it is?'",
@@ -87,7 +87,7 @@ const quiz = [
   },
   {
     question: "A student writes 'Je sais Marie.' What's wrong?",
-    options: ["Sais should be connais — you know a person with connaître.", "Sais should be peux.", "The sentence needs a direct object marker.", "Nothing is wrong."],
+    options: ["Sais should be connais: you know a person with connaître.", "Sais should be peux.", "The sentence needs a direct object marker.", "Nothing is wrong."],
     correct: 0,
     explanation: "You use connaître for people: Je connais Marie. Savoir is for facts and skills. This is one of the most common confusion points between these two verbs.",
   },
@@ -108,7 +108,7 @@ export default function Unit7Lesson2Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/french-foundations" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">← French Foundations</Link>
+        <Link href="/learn/french-foundations" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">← French Foundations</Link>
         <div className="mt-6 grid gap-8 md:grid-cols-[1fr_1fr]">
           <div>
             <p className="text-xs font-bold uppercase tracking-widest text-[#C9A44C]">Unit 7 · Lesson 2</p>
@@ -139,15 +139,15 @@ export default function Unit7Lesson2Page() {
         </div>
 
         <div className="mt-12">
-          <FlashCardDeck cards={devoirCards} title="devoir — must / to have to" />
+          <FlashCardDeck cards={devoirCards} title="devoir: must / to have to" />
         </div>
 
         <div className="mt-12">
-          <FlashCardDeck cards={savoirCards} title="savoir — to know (facts)" />
+          <FlashCardDeck cards={savoirCards} title="savoir: to know (facts)" />
         </div>
 
         <div className="mt-12">
-          <FlashCardDeck cards={connaitreCards} title="connaître — to know (people/places)" />
+          <FlashCardDeck cards={connaitreCards} title="connaître: to know (people/places)" />
         </div>
 
         <div className="mt-12">
@@ -164,7 +164,7 @@ export default function Unit7Lesson2Page() {
 
         <div className="mt-16 flex items-center justify-between gap-4">
           <Link href="/learn/french-foundations/unit-7/lesson-1" className="rounded-full border border-[#E7DAB9] bg-white px-5 py-2.5 text-sm font-black text-[#526173] transition hover:-translate-y-0.5">← Previous</Link>
-          <Link href="/learn/french-foundations/unit-7/lesson-3" className="rounded-full bg-[#2563EB] px-5 py-2.5 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Next lesson →</Link>
+          <Link href="/learn/french-foundations/unit-7/lesson-3" className="rounded-full bg-[#D62828] px-5 py-2.5 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">Next lesson →</Link>
         </div>
       </section>
     </main>

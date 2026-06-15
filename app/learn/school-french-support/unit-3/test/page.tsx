@@ -88,7 +88,7 @@ export default function Unit3TestPage() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/school-french-support/unit-3/lesson-4" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/school-french-support/unit-3/lesson-4" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← Back to Lesson 4
         </Link>
 
@@ -128,7 +128,7 @@ export default function Unit3TestPage() {
           <MultipleChoiceQuiz questions={questions} title="Unit 3 test" />
         </div>
 
-        <div className="mt-12 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <div className="mt-12 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
           <p className="font-black text-lg">Ready for Unit 4?</p>
           <p className="mt-2 text-[#526173]">Unit 4 introduces the imparfait — the second key past tense in French. You'll learn when to use it and how it contrasts with the passé composé.</p>
           <div className="mt-5 flex flex-wrap gap-3">

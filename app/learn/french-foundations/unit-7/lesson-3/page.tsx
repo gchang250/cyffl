@@ -5,30 +5,30 @@ import FillInTheBlank from "@/components/FillInTheBlank";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const venirCards = [
-  { front: "je viens", back: "I come / I'm coming", subtext: "Je viens dans cinq minutes. — I'm coming in five minutes." },
-  { front: "tu viens", back: "you come", subtext: "Tu viens avec nous? — Are you coming with us?" },
-  { front: "il/elle vient", back: "he/she comes", subtext: "Elle vient de France. — She comes from France." },
-  { front: "nous venons", back: "we come", subtext: "Nous venons à pied. — We're coming on foot." },
-  { front: "vous venez", back: "you come", subtext: "Vous venez ce soir? — Are you coming tonight?" },
-  { front: "ils/elles viennent", back: "they come", subtext: "Ils viennent souvent ici. — They come here often." },
+  { front: "je viens", back: "I come / I'm coming", subtext: "Je viens dans cinq minutes.: I'm coming in five minutes." },
+  { front: "tu viens", back: "you come", subtext: "Tu viens avec nous?: Are you coming with us?" },
+  { front: "il/elle vient", back: "he/she comes", subtext: "Elle vient de France.: She comes from France." },
+  { front: "nous venons", back: "we come", subtext: "Nous venons à pied.: We're coming on foot." },
+  { front: "vous venez", back: "you come", subtext: "Vous venez ce soir?: Are you coming tonight?" },
+  { front: "ils/elles viennent", back: "they come", subtext: "Ils viennent souvent ici.: They come here often." },
 ];
 
 const prendreCards = [
-  { front: "je prends", back: "I take", subtext: "Je prends le bus. — I take the bus." },
-  { front: "tu prends", back: "you take", subtext: "Tu prends du sucre? — Do you take sugar?" },
-  { front: "il/elle prend", back: "he/she takes", subtext: "Il prend le train. — He takes the train." },
-  { front: "nous prenons", back: "we take", subtext: "Nous prenons nos affaires. — We're taking our things." },
-  { front: "vous prenez", back: "you take", subtext: "Vous prenez quoi? — What are you having?" },
-  { front: "ils/elles prennent", back: "they take", subtext: "Elles prennent l'avion. — They're taking the plane." },
+  { front: "je prends", back: "I take", subtext: "Je prends le bus.: I take the bus." },
+  { front: "tu prends", back: "you take", subtext: "Tu prends du sucre?: Do you take sugar?" },
+  { front: "il/elle prend", back: "he/she takes", subtext: "Il prend le train.: He takes the train." },
+  { front: "nous prenons", back: "we take", subtext: "Nous prenons nos affaires.: We're taking our things." },
+  { front: "vous prenez", back: "you take", subtext: "Vous prenez quoi?: What are you having?" },
+  { front: "ils/elles prennent", back: "they take", subtext: "Elles prennent l'avion.: They're taking the plane." },
 ];
 
 const partirCards = [
-  { front: "je pars", back: "I leave", subtext: "Je pars à 8h. — I leave at 8." },
-  { front: "tu pars", back: "you leave", subtext: "Tu pars quand? — When are you leaving?" },
-  { front: "il/elle part", back: "he/she leaves", subtext: "Il part en vacances. — He's leaving on holiday." },
-  { front: "nous partons", back: "we leave", subtext: "Nous partons demain. — We're leaving tomorrow." },
-  { front: "vous partez", back: "you leave", subtext: "Vous partez à quelle heure? — What time do you leave?" },
-  { front: "ils/elles partent", back: "they leave", subtext: "Ils partent tout de suite. — They're leaving right away." },
+  { front: "je pars", back: "I leave", subtext: "Je pars à 8h.: I leave at 8." },
+  { front: "tu pars", back: "you leave", subtext: "Tu pars quand?: When are you leaving?" },
+  { front: "il/elle part", back: "he/she leaves", subtext: "Il part en vacances.: He's leaving on holiday." },
+  { front: "nous partons", back: "we leave", subtext: "Nous partons demain.: We're leaving tomorrow." },
+  { front: "vous partez", back: "you leave", subtext: "Vous partez à quelle heure?: What time do you leave?" },
+  { front: "ils/elles partent", back: "they leave", subtext: "Ils partent tout de suite.: They're leaving right away." },
 ];
 
 const pairs = [
@@ -43,9 +43,9 @@ const pairs = [
 const fillIn = [
   { before: "Je", after: "le bus tous les matins. (prendre)", answer: "prends", hint: "je form of prendre", translation: "I take the bus every morning." },
   { before: "Tu", after: "avec nous ce soir? (venir)", answer: "viens", hint: "tu form of venir", translation: "Are you coming with us tonight?" },
-  { before: "Elle", after: "de manger. (venir de — just ate)", answer: "vient de manger", hint: "venir de + infinitive", translation: "She just ate." },
+  { before: "Elle", after: "de manger. (venir de: just ate)", answer: "vient de manger", hint: "venir de + infinitive", translation: "She just ate." },
   { before: "Nous", after: "demain matin. (partir)", answer: "partons", hint: "nous form of partir", translation: "We're leaving tomorrow morning." },
-  { before: "Ils", after: "de finir le projet. (venir de — just finished)", answer: "viennent de finir", hint: "ils form of venir + de + infinitive", translation: "They just finished the project." },
+  { before: "Ils", after: "de finir le projet. (venir de: just finished)", answer: "viennent de finir", hint: "ils form of venir + de + infinitive", translation: "They just finished the project." },
 ];
 
 const quiz = [
@@ -53,7 +53,7 @@ const quiz = [
     question: "What is the 'ils' form of 'venir'?",
     options: ["ils venent", "ils vient", "ils viennent", "ils venons"],
     correct: 2,
-    explanation: "Ils viennent — irregular stem change: ven- → vienn- for ils/elles. Je viens, ils viennent.",
+    explanation: "Ils viennent: irregular stem change: ven- → vienn- for ils/elles. Je viens, ils viennent.",
   },
   {
     question: "What does 'Je viens de manger' mean?",
@@ -83,13 +83,13 @@ const quiz = [
     question: "What is the 'vous' form of 'prendre'?",
     options: ["vous prenons", "vous prennez", "vous prenez", "vous prend"],
     correct: 2,
-    explanation: "Vous prenez — the vous form of prendre. Note the difference: nous prenons (single n) vs ils prennent (double n). Vous follows the regular -ez pattern.",
+    explanation: "Vous prenez: the vous form of prendre. Note the difference: nous prenons (single n) vs ils prennent (double n). Vous follows the regular -ez pattern.",
   },
   {
     question: "How do you say 'Are you coming with us tonight?'",
     options: ["Tu viens avec nous ce soir?", "Tu viens nous ce soir?", "Tu venez avec nous ce soir?", "Tu vient avec nous ce soir?"],
     correct: 0,
-    explanation: "Tu viens avec nous ce soir? — 'avec' = with, 'nous' = us. Tu → viens (correct form). 'Venez' is the vous form, 'vient' is il/elle.",
+    explanation: "Tu viens avec nous ce soir?: 'avec' = with, 'nous' = us. Tu → viens (correct form). 'Venez' is the vous form, 'vient' is il/elle.",
   },
   {
     question: "Which verb means 'to take' in the sense of taking transportation?",
@@ -103,7 +103,7 @@ export default function Unit7Lesson3Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/french-foundations" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">← French Foundations</Link>
+        <Link href="/learn/french-foundations" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">← French Foundations</Link>
         <div className="mt-6 grid gap-8 md:grid-cols-[1fr_1fr]">
           <div>
             <p className="text-xs font-bold uppercase tracking-widest text-[#C9A44C]">Unit 7 · Lesson 3</p>
@@ -142,15 +142,15 @@ export default function Unit7Lesson3Page() {
         </div>
 
         <div className="mt-12">
-          <FlashCardDeck cards={venirCards} title="venir — to come" />
+          <FlashCardDeck cards={venirCards} title="venir: to come" />
         </div>
 
         <div className="mt-12">
-          <FlashCardDeck cards={prendreCards} title="prendre — to take" />
+          <FlashCardDeck cards={prendreCards} title="prendre: to take" />
         </div>
 
         <div className="mt-12">
-          <FlashCardDeck cards={partirCards} title="partir — to leave" />
+          <FlashCardDeck cards={partirCards} title="partir: to leave" />
         </div>
 
         <div className="mt-12 rounded-2xl bg-[#0B1F3A] p-6 text-white">
@@ -180,7 +180,7 @@ export default function Unit7Lesson3Page() {
 
         <div className="mt-16 flex items-center justify-between gap-4">
           <Link href="/learn/french-foundations/unit-7/lesson-2" className="rounded-full border border-[#E7DAB9] bg-white px-5 py-2.5 text-sm font-black text-[#526173] transition hover:-translate-y-0.5">← Previous</Link>
-          <Link href="/learn/french-foundations/unit-7/lesson-4" className="rounded-full bg-[#2563EB] px-5 py-2.5 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Next lesson →</Link>
+          <Link href="/learn/french-foundations/unit-7/lesson-4" className="rounded-full bg-[#D62828] px-5 py-2.5 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">Next lesson →</Link>
         </div>
       </section>
     </main>

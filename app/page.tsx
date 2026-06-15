@@ -5,11 +5,11 @@ export const revalidate = 3600;
 const differentiators = [
   {
     label: "Quebec French",
-    detail: "Fin de semaine, dépanneur, magasinage — the vocabulary that changes across the border.",
+    detail: "Fin de semaine, dépanneur, magasinage: the vocabulary that changes across the border.",
   },
   {
     label: "Government forms",
-    detail: "Health cards, tax returns, immigration documents — navigating official French with confidence.",
+    detail: "Health cards, tax returns, immigration documents: navigating official French with confidence.",
   },
   {
     label: "Bilingual workplaces",
@@ -17,7 +17,7 @@ const differentiators = [
   },
   {
     label: "University applications",
-    detail: "Cégep, bourse, dossier d'admission — education French in Canada.",
+    detail: "Cégep, bourse, dossier d'admission: the education French you need in Canada.",
   },
 ];
 
@@ -34,7 +34,7 @@ const offerings = [
   },
   {
     title: "All Courses",
-    description: "Structured French from zero to advanced — IB prep, school support, grammar, verb tenses.",
+    description: "Structured French from zero to advanced, including IB prep, school support, grammar, and verb tenses.",
     href: "/learn",
   },
   {
@@ -45,41 +45,44 @@ const offerings = [
 ];
 
 const weeklyWords = [
-  { word: "l'épanouissement", pos: "n.m.", meaning: "fulfillment, blossoming", example: "L'épanouissement personnel passe souvent par l'éducation." },
-  { word: "la perspicacité", pos: "n.f.", meaning: "insight, perspicacity", example: "Sa perspicacité lui permet de saisir les nuances rapidement." },
-  { word: "vraisemblable", pos: "adj.", meaning: "likely, plausible", example: "Il est vraisemblable qu'il réussira ses examens." },
-  { word: "la bienveillance", pos: "n.f.", meaning: "benevolence, kindness", example: "Agir avec bienveillance envers les autres est essentiel." },
-  { word: "l'acuité", pos: "n.f.", meaning: "sharpness, acuity — of mind or perception", example: "L'acuité de son analyse a impressionné l'ensemble de l'équipe." },
-  { word: "s'épanouir", pos: "v.", meaning: "to flourish, to thrive", example: "Elle s'épanouit dans son nouvel environnement." },
-  { word: "irréfutable", pos: "adj.", meaning: "irrefutable, undeniable", example: "Les preuves présentées sont irréfutables." },
-  { word: "la résilience", pos: "n.f.", meaning: "resilience", example: "La résilience est la capacité de surmonter les épreuves." },
-  { word: "ambivalent(e)", pos: "adj.", meaning: "ambivalent, conflicted", example: "Il reste ambivalent face à cette opportunité." },
-  { word: "prépondérant(e)", pos: "adj.", meaning: "predominant, paramount", example: "Elle joue un rôle prépondérant dans l'organisation." },
-  { word: "l'ambiguïté", pos: "n.f.", meaning: "ambiguity, vagueness", example: "Ce discours laisse trop d'ambiguïtés." },
-  { word: "de surcroît", pos: "adv.", meaning: "on top of that, what's more", example: "C'est coûteux, et de surcroît peu pratique." },
+  { word: "la francophonie", pos: "n.f.", meaning: "the French-speaking world and its community", example: "Le Canada joue un rôle important au sein de la francophonie mondiale." },
+  { word: "l'achalandage", pos: "n.m.", meaning: "foot traffic, patronage, customer volume", example: "L'achalandage dans ce quartier a augmenté depuis l'ouverture du métro." },
+  { word: "le bénévolat", pos: "n.m.", meaning: "volunteer work, volunteering", example: "Le bénévolat est au coeur du mandat de notre organisation." },
+  { word: "les démarches", pos: "n.f.pl.", meaning: "steps, procedures, formalities to complete", example: "Il faut effectuer les démarches nécessaires avant de soumettre votre dossier." },
+  { word: "l'embauche", pos: "n.f.", meaning: "hiring, recruitment", example: "L'offre d'embauche a été envoyée par courriel vendredi matin." },
+  { word: "le dossier", pos: "n.m.", meaning: "file, case, application, portfolio", example: "Votre dossier de candidature sera examiné dans les prochains jours." },
+  { word: "l'arrondissement", pos: "n.m.", meaning: "borough (used in Montreal, Quebec City, and other cities)", example: "L'arrondissement du Plateau-Mont-Royal est connu pour ses cafés et sa vie culturelle." },
+  { word: "la formation", pos: "n.f.", meaning: "training program, education, professional development", example: "Elle suit une formation en gestion de projet pour progresser dans sa carrière." },
+  { word: "le palier", pos: "n.m.", meaning: "level, tier (especially of government)", example: "Cette compétence relève du palier provincial, non fédéral." },
+  { word: "l'équité", pos: "n.f.", meaning: "equity, fairness", example: "La politique vise à garantir l'équité entre les différentes régions du pays." },
+  { word: "le suivi", pos: "n.m.", meaning: "follow-up, monitoring, tracking", example: "Assurez-vous de faire un suivi auprès du bureau des admissions après avoir soumis votre demande." },
+  { word: "se brancher", pos: "v.", meaning: "to make up one's mind, to commit to a choice (Quebec informal)", example: "Branche-toi: tu viens ou tu viens pas?" },
+  { word: "le prestataire", pos: "n.m.", meaning: "benefit recipient, service provider (government context)", example: "Les prestataires de l'aide sociale doivent renouveler leur demande chaque trimestre." },
+  { word: "prévaloir", pos: "v.", meaning: "to prevail, to take precedence", example: "En cas de contradiction, la version française prévaut sur la version anglaise." },
+  { word: "la mise en candidature", pos: "n.f.", meaning: "nomination, candidacy submission", example: "La période de mise en candidature se termine le 30 juin." },
 ];
 
 const weeklyExpressions = [
-  { expression: "Avoir le cafard", meaning: "To feel down / blue" },
-  { expression: "Faire d'une pierre deux coups", meaning: "To kill two birds with one stone" },
-  { expression: "Avoir du pain sur la planche", meaning: "To have a lot on one's plate" },
-  { expression: "Il pleut des cordes", meaning: "It's raining cats and dogs" },
-  { expression: "Coûter les yeux de la tête", meaning: "To cost a fortune" },
-  { expression: "Mettre les points sur les i", meaning: "To spell things out clearly" },
-  { expression: "Avoir d'autres chats à fouetter", meaning: "To have bigger fish to fry" },
-  { expression: "Appeler un chat un chat", meaning: "To call a spade a spade" },
-  { expression: "Poser un lapin à quelqu'un", meaning: "To stand someone up" },
-  { expression: "Noyer le poisson", meaning: "To dodge the issue" },
-  { expression: "Casser du sucre sur le dos de quelqu'un", meaning: "To badmouth someone behind their back" },
-  { expression: "Se noyer dans un verre d'eau", meaning: "To make a mountain out of a molehill" },
-  { expression: "Avoir le beurre et l'argent du beurre", meaning: "To have your cake and eat it too" },
-  { expression: "Force est de constater", meaning: "One cannot help but notice" },
-  { expression: "Avoir le vent en poupe", meaning: "To be on a roll" },
-  { expression: "Ne pas y aller par quatre chemins", meaning: "To not beat around the bush" },
-  { expression: "L'habit ne fait pas le moine", meaning: "Don't judge a book by its cover" },
-  { expression: "Mettre les bouchées doubles", meaning: "To work twice as hard, to step it up" },
-  { expression: "Tenir le coup", meaning: "To hold on, to hang in there" },
-  { expression: "Avoir la tête dans les nuages", meaning: "To have one's head in the clouds" },
+  { expression: "Tomber dans l'oeil", meaning: "To catch someone's eye, to appeal to someone" },
+  { expression: "Prendre une marche", meaning: "To go for a walk (Quebec expression)" },
+  { expression: "Ca fait mon affaire", meaning: "That works for me, that suits me fine (Quebec)" },
+  { expression: "Avoir les deux pieds dans la meme bottine", meaning: "To be clumsy or incompetent (Quebec)" },
+  { expression: "Passer comme une lettre a la poste", meaning: "To go smoothly, without a hitch" },
+  { expression: "Partir en peur", meaning: "To go full throttle, to freak out, to overreact (Quebec)" },
+  { expression: "Faire le pont", meaning: "To take extra days off to bridge a long weekend" },
+  { expression: "Avoir du front tout le tour de la tete", meaning: "To have a lot of nerve (Quebec)" },
+  { expression: "Brasser la cage", meaning: "To shake things up, to stir the pot (Quebec)" },
+  { expression: "Passer un mauvais quart d'heure", meaning: "To have a rough time, to go through a difficult moment" },
+  { expression: "Donner sa langue au chat", meaning: "To give up guessing" },
+  { expression: "Se mettre le doigt dans l'oeil", meaning: "To be completely wrong, to fool oneself" },
+  { expression: "Braser les cartes", meaning: "To shuffle the deck, to start fresh" },
+  { expression: "Se faire la main", meaning: "To practice, to get the hang of something" },
+  { expression: "Monter aux barricades", meaning: "To take a stand, to fight back against something" },
+  { expression: "Etre sur la coche", meaning: "To be on top of things, to be doing great (Quebec)" },
+  { expression: "S'en laver les mains", meaning: "To wash one's hands of something, to take no responsibility" },
+  { expression: "Tenir parole", meaning: "To keep one's word, to follow through on a promise" },
+  { expression: "Avoir le compas dans l'oeil", meaning: "To have a great eye for proportion or detail" },
+  { expression: "Battre le fer pendant qu'il est chaud", meaning: "To strike while the iron is hot" },
 ];
 
 export default function HomePage() {
@@ -100,7 +103,7 @@ export default function HomePage() {
             French built<br />for Canadian<br />life.
           </h1>
           <p className="mt-7 max-w-lg text-lg leading-8 text-[#526173]">
-            Quebec expressions, government forms, bilingual job postings, university applications — the French no app teaches you. Free, made by Canadian youth.
+            Quebec expressions, government forms, bilingual job postings, university applications. The French no app teaches you. Free, made by Canadian youth.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
@@ -147,10 +150,10 @@ export default function HomePage() {
           <div className="grid gap-12 md:grid-cols-2 md:gap-16">
             <div>
               <h2 className="text-3xl font-black tracking-tight md:text-4xl">
-                Most French courses weren't built for Canada.
+                Most French courses weren&apos;t built for Canada.
               </h2>
               <p className="mt-5 leading-7 text-[#526173]">
-                Knowing how to order a coffee in Paris won&apos;t help you fill out a RAMQ form, read a federal job posting, or understand why Quebecers say <em>fin de semaine</em> instead of <em>weekend</em>. CYFFL teaches the French that actually comes up in Canadian life — not textbook scenarios.
+                Knowing how to order a coffee in Paris won&apos;t help you fill out a RAMQ form, read a federal job posting, or understand why Quebecers say <em>fin de semaine</em> instead of <em>weekend</em>. CYFFL teaches the French that actually comes up in Canadian life. Not textbook scenarios.
               </p>
               <Link
                 href="/learn/canadian-life"
@@ -177,12 +180,12 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-6 py-16">
           <h2 className="text-2xl font-black">Courses &amp; services</h2>
 
-          <div className="mt-8 grid gap-px border border-[#E7DAB9] bg-[#E7DAB9] sm:grid-cols-2">
+          <div className="mt-8 grid gap-4 sm:grid-cols-2">
             {offerings.map((item) => (
               <Link
                 key={item.title}
                 href={item.href}
-                className="group bg-white p-7 transition hover:bg-[#FFFDF7]"
+                className="group flex flex-col rounded-2xl border border-[#E7DAB9] bg-white p-7 transition hover:-translate-y-0.5 hover:shadow-md"
               >
                 <h3 className="font-black group-hover:text-[#D62828]">
                   {item.title} →
@@ -205,7 +208,7 @@ export default function HomePage() {
                 Help make French click for students across Canada.
               </h2>
               <p className="mt-2 leading-7 text-[#526173]">
-                CYFFL runs on volunteers. If you know French and want to teach, create resources, or help grow the community — we want you.
+                CYFFL runs on volunteers. If you know French and want to teach, create resources, or help grow the community, we want you.
               </p>
             </div>
             <Link

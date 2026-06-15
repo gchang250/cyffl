@@ -5,17 +5,17 @@ import FillInTheBlank from "@/components/FillInTheBlank";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const cards = [
-  { front: "Poste offert", back: "Position offered", subtext: "Poste offert : Coordonnateur administratif — Position offered: Administrative Coordinator." },
-  { front: "Lieu de travail", back: "Workplace / location", subtext: "Lieu de travail : Ottawa (mode hybride) — Workplace: Ottawa (hybrid mode)." },
-  { front: "Type de poste", back: "Type of position", subtext: "Types courants : permanent, temporaire, contractuel — Common types: permanent, temporary, contract." },
-  { front: "Entrée en fonction", back: "Start date (literally: entry into function)", subtext: "Entrée en fonction prévue : 1er septembre — Expected start date: September 1st." },
-  { front: "Atout", back: "Asset — not required but helpful", subtext: "Expérience en gestion de projet est un atout. — Project management experience is an asset." },
-  { front: "Requis / Exigé", back: "Required / mandatory", subtext: "Bilinguisme exigé. — Bilingualism required. Versus: bilinguisme souhaité — preferred." },
-  { front: "Maîtrise du français", back: "French proficiency / mastery", subtext: "Maîtrise du français écrit et parlé requise. — Written and spoken French proficiency required." },
-  { front: "Connaissance fonctionnelle", back: "Functional knowledge (of a language)", subtext: "Connaissance fonctionnelle de l'anglais — can work in English but not fully fluent." },
-  { front: "Études postsecondaires", back: "Postsecondary education", subtext: "Diplôme d'études postsecondaires en administration — Postsecondary diploma in administration." },
-  { front: "Envoyez votre candidature", back: "Send your application", subtext: "Envoyez votre candidature avant le 15 juin. — Send your application before June 15." },
-  { front: "Faire parvenir votre CV", back: "Forward your CV / résumé", subtext: "Veuillez faire parvenir votre CV à rh@exemple.ca — Please forward your CV to rh@exemple.ca." },
+  { front: "Poste offert", back: "Position offered", subtext: "Poste offert : Coordonnateur administratif: Position offered: Administrative Coordinator." },
+  { front: "Lieu de travail", back: "Workplace / location", subtext: "Lieu de travail : Ottawa (mode hybride): Workplace: Ottawa (hybrid mode)." },
+  { front: "Type de poste", back: "Type of position", subtext: "Types courants : permanent, temporaire, contractuel: Common types: permanent, temporary, contract." },
+  { front: "Entrée en fonction", back: "Start date (literally: entry into function)", subtext: "Entrée en fonction prévue : 1er septembre: Expected start date: September 1st." },
+  { front: "Atout", back: "Asset: not required but helpful", subtext: "Expérience en gestion de projet est un atout.: Project management experience is an asset." },
+  { front: "Requis / Exigé", back: "Required / mandatory", subtext: "Bilinguisme exigé.: Bilingualism required. Versus: bilinguisme souhaité: preferred." },
+  { front: "Maîtrise du français", back: "French proficiency / mastery", subtext: "Maîtrise du français écrit et parlé requise.: Written and spoken French proficiency required." },
+  { front: "Connaissance fonctionnelle", back: "Functional knowledge (of a language)", subtext: "Connaissance fonctionnelle de l'anglais: can work in English but not fully fluent." },
+  { front: "Études postsecondaires", back: "Postsecondary education", subtext: "Diplôme d'études postsecondaires en administration: Postsecondary diploma in administration." },
+  { front: "Envoyez votre candidature", back: "Send your application", subtext: "Envoyez votre candidature avant le 15 juin.: Send your application before June 15." },
+  { front: "Faire parvenir votre CV", back: "Forward your CV / résumé", subtext: "Veuillez faire parvenir votre CV à rh@exemple.ca: Please forward your CV to rh@exemple.ca." },
   { front: "Seuls les candidats retenus seront contactés", back: "Only shortlisted candidates will be contacted", subtext: "Standard closing line on Canadian French job postings." },
 ];
 
@@ -33,14 +33,14 @@ const exercises = [
     before: "Le bilinguisme (français/anglais) est",
     after: "pour ce poste au gouvernement fédéral.",
     answer: "exigé",
-    hint: "Required / mandatory — a stronger word than 'souhaité'",
+    hint: "Required / mandatory: a stronger word than 'souhaité'",
     translation: "Bilingualism (French/English) is required for this federal government position.",
   },
   {
     before: "L'expérience en gestion budgétaire constitue un",
     after: "mais n'est pas obligatoire.",
     answer: "atout",
-    hint: "Asset — helpful but not mandatory",
+    hint: "Asset: helpful but not mandatory",
     translation: "Budget management experience is an asset but is not mandatory.",
   },
   {
@@ -71,12 +71,12 @@ const questions = [
     question: "What does 'atout' mean on a French job posting?",
     options: [
       "Required qualification",
-      "Asset — helpful but not mandatory",
+      "Asset: helpful but not mandatory",
       "Mandatory bilingualism",
       "Start date",
     ],
     correct: 1,
-    explanation: "'Atout' means asset — a quality or skill that is beneficial but not required. The opposite is 'exigé' (required) or 'requis' (required).",
+    explanation: "'Atout' means asset: a quality or skill that is beneficial but not required. The opposite is 'exigé' (required) or 'requis' (required).",
   },
   {
     question: "What is 'entrée en fonction'?",
@@ -105,22 +105,22 @@ const questions = [
     options: [
       "Full bilingual fluency at native level",
       "No knowledge required",
-      "Working knowledge — can function but not fully fluent",
+      "Working knowledge: can function but not fully fluent",
       "Written knowledge only",
     ],
     correct: 2,
-    explanation: "'Connaissance fonctionnelle' means functional knowledge — you can work in the language for everyday tasks but it's a lower bar than 'maîtrise' (full proficiency/mastery).",
+    explanation: "'Connaissance fonctionnelle' means functional knowledge: you can work in the language for everyday tasks but it's a lower bar than 'maîtrise' (full proficiency/mastery).",
   },
   {
     question: "What does 'expérience souhaitée' mean on a job posting, and how is it different from 'exigée'?",
     options: [
-      "They mean the same — both are required",
+      "They mean the same: both are required",
       "'Souhaitée' = preferred but not required; 'exigée' = required/mandatory",
       "'Souhaitée' = required; 'exigée' = optional",
       "'Souhaitée' means recent experience only",
     ],
     correct: 1,
-    explanation: "'Souhaitée' = desired / preferred — it would help your application but isn't blocking. 'Exigée' = required / mandatory — you must have it to apply. 'Bilinguisme exigé' means the employer will reject applications without it; 'bilinguisme souhaité' means it's an asset.",
+    explanation: "'Souhaitée' = desired / preferred: it would help your application but isn't blocking. 'Exigée' = required / mandatory: you must have it to apply. 'Bilinguisme exigé' means the employer will reject applications without it; 'bilinguisme souhaité' means it's an asset.",
   },
   {
     question: "A job posting for a federal position lists 'Profil linguistique: CBC'. What does this mean for bilingualism?",
@@ -131,18 +131,18 @@ const questions = [
       "The position is broadcast on CBC",
     ],
     correct: 2,
-    explanation: "CBC is the federal bilingual profile: English oral = C (advanced), French reading = B (intermediate), French written = C (advanced). Federal public service jobs each have a language profile code like BBB, CBC, or CCC — indicating the required level in each of the three SLE components.",
+    explanation: "CBC is the federal bilingual profile: English oral = C (advanced), French reading = B (intermediate), French written = C (advanced). Federal public service jobs each have a language profile code like BBB, CBC, or CCC: indicating the required level in each of the three SLE components.",
   },
   {
     question: "A job posting closes with 'Nous remercions tous les candidats de leur intérêt.' What does this signal?",
     options: [
       "All applicants will receive an interview",
       "The company will contact all applicants",
-      "The company thanks all applicants but will only contact those selected — a standard polite closing",
+      "The company thanks all applicants but will only contact those selected: a standard polite closing",
       "You must respond to confirm your application",
     ],
     correct: 2,
-    explanation: "This is a standard polite closing meaning the employer thanks all applicants for their interest but implies only selected candidates will be contacted — typically followed by 'Seuls les candidats retenus seront contactés.' Don't wait for a response if you don't hear back.",
+    explanation: "This is a standard polite closing meaning the employer thanks all applicants for their interest but implies only selected candidates will be contacted: typically followed by 'Seuls les candidats retenus seront contactés.' Don't wait for a response if you don't hear back.",
   },
   {
     question: "What does 'mode hybride' mean as a work arrangement on a French job posting?",
@@ -153,7 +153,7 @@ const questions = [
       "A part-time position with full benefits",
     ],
     correct: 1,
-    explanation: "'Mode hybride' = hybrid work arrangement — a combination of working from home (télétravail) and in-office (en présentiel). Post-pandemic, this has become a standard descriptor on Canadian job postings. The proportion may be specified: 'deux jours au bureau, trois jours en télétravail.'",
+    explanation: "'Mode hybride' = hybrid work arrangement: a combination of working from home (télétravail) and in-office (en présentiel). Post-pandemic, this has become a standard descriptor on Canadian job postings. The proportion may be specified: 'deux jours au bureau, trois jours en télétravail.'",
   },
 ];
 
@@ -161,7 +161,7 @@ export default function Unit3Lesson1Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/canadian-life" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/canadian-life" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← French for Canadian Life
         </Link>
 

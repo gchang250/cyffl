@@ -6,7 +6,7 @@ import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const cards = [
   { front: "Quebec", back: "Home to 8 million+ francophones. French is the sole official language of the province. The most influential centre of French in North America.", subtext: "Key institution: Office québécois de la langue française (OQLF)" },
-  { front: "New Brunswick", back: "Canada's only officially bilingual province. Roughly 33% of the population is francophone — most are Acadian, with roots predating the British conquest.", subtext: "City to know: Moncton — a major bilingual hub" },
+  { front: "New Brunswick", back: "Canada's only officially bilingual province. Roughly 33% of the population is francophone: most are Acadian, with roots predating the British conquest.", subtext: "City to know: Moncton: a major bilingual hub" },
   { front: "Ontario", back: "Approximately 600,000 Franco-Ontarians. Strong communities in Ottawa (especially Vanier/Orléans), Sudbury, Timmins, Hearst, and northern Ontario.", subtext: "Symbol: the Franco-Ontarian flag (green and white)" },
   { front: "Manitoba", back: "The Saint-Boniface neighbourhood of Winnipeg is the largest francophone community west of Ontario. Has its own Franco-Manitoban institutions and radio.", subtext: "University: Université de Saint-Boniface" },
   { front: "Nova Scotia", back: "Home to Acadian communities, particularly in Clare (Baie Sainte-Marie) and Chéticamp. Acadian French differs from Quebec French.", subtext: "Note: Acadians were expelled by the British in 1755 (Le Grand Dérangement)" },
@@ -78,7 +78,7 @@ const questions = [
       "A 19th-century French dialect no longer spoken",
     ],
     correct: 1,
-    explanation: "Acadian French is the variety of French spoken by Acadians — descendants of the original French settlers of the Maritime provinces (New Brunswick, Nova Scotia, PEI). It has a distinct accent, vocabulary, and history separate from Quebec French.",
+    explanation: "Acadian French is the variety of French spoken by Acadians: descendants of the original French settlers of the Maritime provinces (New Brunswick, Nova Scotia, PEI). It has a distinct accent, vocabulary, and history separate from Quebec French.",
   },
   {
     question: "Where is the largest francophone community west of Ontario?",
@@ -105,10 +105,10 @@ const questions = [
   {
     question: "Approximately how many Franco-Ontarians live in Ontario, and where are they primarily concentrated?",
     options: [
-      "About 50,000 — mostly in Toronto",
-      "About 600,000 — concentrated in Ottawa, Sudbury, and northern Ontario",
-      "About 2 million — evenly distributed across the province",
-      "About 100,000 — primarily in Windsor",
+      "About 50,000: mostly in Toronto",
+      "About 600,000: concentrated in Ottawa, Sudbury, and northern Ontario",
+      "About 2 million: evenly distributed across the province",
+      "About 100,000: primarily in Windsor",
     ],
     correct: 1,
     explanation: "Ontario has approximately 600,000 francophones, making it the province with the second-largest French-speaking population after Quebec. Major francophone communities are in Ottawa (the capital region), Sudbury, and northern Ontario.",
@@ -133,14 +133,14 @@ const questions = [
       "It is only available in Quebec and New Brunswick",
     ],
     correct: 1,
-    explanation: "Radio-Canada is the French-language public broadcaster of CBC. For francophones in Alberta, Manitoba, and other provinces, Radio-Canada is often one of the few sources of professional French-language journalism and culture — vital for language maintenance in minority contexts.",
+    explanation: "Radio-Canada is the French-language public broadcaster of CBC. For francophones in Alberta, Manitoba, and other provinces, Radio-Canada is often one of the few sources of professional French-language journalism and culture: vital for language maintenance in minority contexts.",
   },
   {
     question: "If a francophone from New Brunswick and a francophone from Quebec have a conversation, which French would they naturally use?",
     options: [
       "They would not understand each other",
       "They would both switch to English",
-      "Standard French — both varieties are mutually intelligible, with some vocabulary differences",
+      "Standard French: both varieties are mutually intelligible, with some vocabulary differences",
       "Only Acadian French, which both understand",
     ],
     correct: 2,
@@ -152,7 +152,7 @@ export default function Unit1Lesson4Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/canadian-life" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/canadian-life" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← French for Canadian Life
         </Link>
 
@@ -212,7 +212,7 @@ export default function Unit1Lesson4Page() {
           <MultipleChoiceQuiz questions={questions} title="Regional French across Canada quiz" />
         </div>
 
-        <div className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <div className="mt-16 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
 
           <p className="mt-2 text-[#526173]">You've covered Quebec vocabulary, expressions, reading Quebec French in context, and French communities across Canada. Test yourself before moving on.</p>
           <div className="mt-5 flex flex-wrap gap-3">

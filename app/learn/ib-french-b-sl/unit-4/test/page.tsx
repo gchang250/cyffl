@@ -24,7 +24,7 @@ const questions = [
     question: "You receive an image of factory workers in poor conditions. Which phrase best transitions from description to analysis?",
     options: ["'Au premier plan, on voit des ouvriers.'", "'C'est une image intéressante.'", "'Cette image illustre le problème des conditions de travail injustes.'", "'Je pense que c'est triste.'"],
     correct: 2,
-    explanation: "'Cette image illustre le problème de…' is a direct, clear transition from description to analysis — naming the global issue the image represents.",
+    explanation: "'Cette image illustre le problème de…' is a direct, clear transition from description to analysis: naming the global issue the image represents.",
   },
   {
     question: "Which phrase locates an element in the foreground of an image?",
@@ -36,16 +36,16 @@ const questions = [
     question: "The examiner asks: 'Que pensez-vous de l'impact des réseaux sociaux sur les jeunes?' The best opening is:",
     options: ["'Oui.'", "'C'est compliqué.'", "'À mon avis, les réseaux sociaux ont des effets positifs et négatifs parce que…'", "'Je ne sais pas vraiment.'"],
     correct: 2,
-    explanation: "State a clear opinion, then develop with a reason. Never give a one-word answer in the discussion phase — Criterion C requires interaction and development.",
+    explanation: "State a clear opinion, then develop with a reason. Never give a one-word answer in the discussion phase: Criterion C requires interaction and development.",
   },
   {
-    question: "Which phrase introduces a concession — showing you understand the opposing view?",
+    question: "Which phrase introduces a concession: showing you understand the opposing view?",
     options: ["'Par exemple…'", "'À mon avis…'", "'Il faut admettre que…'", "'En ce qui concerne…'"],
     correct: 2,
     explanation: "'Il faut admettre que…' introduces a concession. Acknowledging the other side shows intellectual maturity and raises your Criterion C score.",
   },
   {
-    question: "'Il est essentiel que nous _____ des mesures immédiates.' (prendre — subjunctive)",
+    question: "'Il est essentiel que nous _____ des mesures immédiates.' (prendre: subjunctive)",
     options: ["prenons", "prendre", "prenions", "prendrons"],
     correct: 2,
     explanation: "Il est essentiel que triggers the subjunctive. The subjunctive of prendre (nous) = prenions: 'il est essentiel que nous prenions des mesures immédiates.'",
@@ -68,7 +68,7 @@ export default function Unit4TestPage() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/ib-french-b-sl" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/ib-french-b-sl" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← IB French B SL
         </Link>
 
@@ -84,7 +84,7 @@ export default function Unit4TestPage() {
           <MultipleChoiceQuiz questions={questions} title="Unit 4 Test · 10 questions" />
         </section>
 
-        <div className="mt-12 rounded-[2rem] bg-[#0B1F3A] p-8 text-white shadow-sm">
+        <div className="mt-12 rounded-2xl bg-[#0B1F3A] p-8 text-white shadow-sm">
 
           <h2 className="mt-3 text-3xl font-black">You've finished IB French B SL.</h2>
           <p className="mt-3 leading-7 text-white/70">

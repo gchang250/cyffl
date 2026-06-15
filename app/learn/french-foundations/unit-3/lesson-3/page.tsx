@@ -5,20 +5,20 @@ import FillInTheBlank from "@/components/FillInTheBlank";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const familyCards = [
-  { front: "la famille", back: "the family", subtext: "[la faˈmij] — 'Dans ma famille, nous sommes quatre.' (In my family, there are four of us.) A very common expression." },
-  { front: "la mère", back: "mother / mom", subtext: "[la mɛʁ] — Informal: la maman [maˈmɑ̃]. 'Ma mère s'appelle Sophie.' Use 'ma' (my) not 'mon' — mère is feminine." },
-  { front: "le père", back: "father / dad", subtext: "[lə pɛʁ] — Informal: le papa [paˈpa]. 'Mon père travaille à Lyon.' Use 'mon' (my) — père is masculine." },
-  { front: "le frère", back: "brother", subtext: "[lə fʁɛʁ] — 'J'ai un frère.' (I have a brother.) Opposite: la sœur. Common mix-up: frère ≠ sœur." },
-  { front: "la sœur", back: "sister", subtext: "[la sœʁ] — The oe ligature (œ) is unique to French. 'J'ai deux sœurs.' (I have two sisters.)" },
-  { front: "les parents", back: "parents (or relatives)", subtext: "[le paˈʁɑ̃] — Means parents AND more broadly relatives/family. Context determines which. 'Mes parents sont à Québec.'" },
-  { front: "le fils", back: "son", subtext: "[lə fis] — The final 's' IS pronounced (unlike most French 's'). Watch out: 'fils' sounds like 'fiss', not 'fee'." },
-  { front: "la fille", back: "daughter / girl", subtext: "[la fij] — Two meanings: daughter (when talking about family) or girl in general. 'J'ai une fille et un fils.'" },
-  { front: "le grand-père", back: "grandfather", subtext: "[lə ɡʁɑ̃ pɛʁ] — Plural: les grands-pères. 'Mon grand-père a soixante-dix ans.'" },
-  { front: "la grand-mère", back: "grandmother", subtext: "[la ɡʁɑ̃ mɛʁ] — Informal: la mamie or la mémé. Plural: les grand-mères (no -s on grand here)." },
-  { front: "l'oncle", back: "uncle", subtext: "[lɔ̃kl] — Masculine, so l'oncle (not la). 'J'ai un oncle qui habite à Paris.'" },
-  { front: "la tante", back: "aunt", subtext: "[la tɑ̃t] — Feminine. 'Ma tante s'appelle Claire.' Uncle + aunt together: 'un oncle et une tante.'" },
-  { front: "le cousin / la cousine", back: "cousin (m. / f.)", subtext: "[lə kuzɛ̃ / la kuzin] — Regular gender pattern: add -e for feminine. 'Mon cousin Marc' / 'ma cousine Léa.'" },
-  { front: "l'ami / l'amie", back: "friend (m. / f.)", subtext: "[laˈmi / laˈmi] — Both sound identical! Only spelling differs. 'Mon ami' (masc.) / 'mon amie' (fem.) — note: 'mon' before both because amie starts with a vowel." },
+  { front: "la famille", back: "the family", subtext: "[la faˈmij]: 'Dans ma famille, nous sommes quatre.' (In my family, there are four of us.) A very common expression." },
+  { front: "la mère", back: "mother / mom", subtext: "[la mɛʁ]: Informal: la maman [maˈmɑ̃]. 'Ma mère s'appelle Sophie.' Use 'ma' (my) not 'mon': mère is feminine." },
+  { front: "le père", back: "father / dad", subtext: "[lə pɛʁ]: Informal: le papa [paˈpa]. 'Mon père travaille à Lyon.' Use 'mon' (my): père is masculine." },
+  { front: "le frère", back: "brother", subtext: "[lə fʁɛʁ]: 'J'ai un frère.' (I have a brother.) Opposite: la sœur. Common mix-up: frère ≠ sœur." },
+  { front: "la sœur", back: "sister", subtext: "[la sœʁ]: The oe ligature (œ) is unique to French. 'J'ai deux sœurs.' (I have two sisters.)" },
+  { front: "les parents", back: "parents (or relatives)", subtext: "[le paˈʁɑ̃]: Means parents AND more broadly relatives/family. Context determines which. 'Mes parents sont à Québec.'" },
+  { front: "le fils", back: "son", subtext: "[lə fis]: The final 's' IS pronounced (unlike most French 's'). Watch out: 'fils' sounds like 'fiss', not 'fee'." },
+  { front: "la fille", back: "daughter / girl", subtext: "[la fij]: Two meanings: daughter (when talking about family) or girl in general. 'J'ai une fille et un fils.'" },
+  { front: "le grand-père", back: "grandfather", subtext: "[lə ɡʁɑ̃ pɛʁ]: Plural: les grands-pères. 'Mon grand-père a soixante-dix ans.'" },
+  { front: "la grand-mère", back: "grandmother", subtext: "[la ɡʁɑ̃ mɛʁ]: Informal: la mamie or la mémé. Plural: les grand-mères (no -s on grand here)." },
+  { front: "l'oncle", back: "uncle", subtext: "[lɔ̃kl]: Masculine, so l'oncle (not la). 'J'ai un oncle qui habite à Paris.'" },
+  { front: "la tante", back: "aunt", subtext: "[la tɑ̃t]: Feminine. 'Ma tante s'appelle Claire.' Uncle + aunt together: 'un oncle et une tante.'" },
+  { front: "le cousin / la cousine", back: "cousin (m. / f.)", subtext: "[lə kuzɛ̃ / la kuzin]: Regular gender pattern: add -e for feminine. 'Mon cousin Marc' / 'ma cousine Léa.'" },
+  { front: "l'ami / l'amie", back: "friend (m. / f.)", subtext: "[laˈmi / laˈmi]: Both sound identical! Only spelling differs. 'Mon ami' (masc.) / 'mon amie' (fem.): note: 'mon' before both because amie starts with a vowel." },
 ];
 
 const matchPairs = [
@@ -73,25 +73,25 @@ const quiz = [
       "J'ai deux tantes.",
     ],
     correct: 1,
-    explanation: "La sœur = sister → deux sœurs. Frère = brother, fille = daughter/girl (not specifically sister), tante = aunt. The oe ligature (œ) is a hallmark of French — watch the spelling.",
+    explanation: "La sœur = sister → deux sœurs. Frère = brother, fille = daughter/girl (not specifically sister), tante = aunt. The oe ligature (œ) is a hallmark of French: watch the spelling.",
   },
   {
     question: "Your teacher points to a student and says 'C'est la fille de mon ami.' What does 'la fille' mean here?",
     options: ["the sister", "the aunt", "the daughter", "the grandmother"],
     correct: 2,
-    explanation: "In family context, 'la fille' means daughter. 'La fille de mon ami' = my friend's daughter. 'La fille' can also mean 'the girl' in other contexts — meaning depends on situation.",
+    explanation: "In family context, 'la fille' means daughter. 'La fille de mon ami' = my friend's daughter. 'La fille' can also mean 'the girl' in other contexts: meaning depends on situation.",
   },
   {
     question: "You're talking about your grandfather. Which word do you use?",
     options: ["le fils", "l'oncle", "le grand-père", "le cousin"],
     correct: 2,
-    explanation: "Le grand-père = grandfather. La grand-mère = grandmother. Note: in the plural, the spelling is 'les grands-pères' (grand takes an -s). But 'les grand-mères' — no -s on grand.",
+    explanation: "Le grand-père = grandfather. La grand-mère = grandmother. Note: in the plural, the spelling is 'les grands-pères' (grand takes an -s). But 'les grand-mères': no -s on grand.",
   },
   {
     question: "You're referring to your female friend. Which form is correct?",
     options: ["l'ami", "l'amie", "la cousine", "la sœur"],
     correct: 1,
-    explanation: "'L'amie' is the feminine form. Both l'ami and l'amie sound identical — the difference is only in writing. Both use 'mon' before them (not 'ma') because they start with a vowel: 'mon amie'.",
+    explanation: "'L'amie' is the feminine form. Both l'ami and l'amie sound identical: the difference is only in writing. Both use 'mon' before them (not 'ma') because they start with a vowel: 'mon amie'.",
   },
   {
     question: "How do you say 'I have an aunt and an uncle' in French?",
@@ -103,7 +103,7 @@ const quiz = [
     question: "What is the male equivalent of 'la cousine'?",
     options: ["le cousin", "le cousine", "l'oncle", "le frère"],
     correct: 0,
-    explanation: "La cousine (female cousin) → le cousin (male cousin). Regular pattern: feminine adds -e, masculine drops it. Compare: frère/sœur (different words entirely — irregular).",
+    explanation: "La cousine (female cousin) → le cousin (male cousin). Regular pattern: feminine adds -e, masculine drops it. Compare: frère/sœur (different words entirely: irregular).",
   },
   {
     question: "'Dans ma famille, nous sommes cinq.' What does this mean?",
@@ -115,7 +115,7 @@ const quiz = [
     question: "How do you say 'My grandmother's name is Marie'?",
     options: ["Ma grand-mère s'appelle Marie.", "Mon grand-mère s'appelle Marie.", "Ma grand-père s'appelle Marie.", "La grand-mère appelle Marie."],
     correct: 0,
-    explanation: "Grand-mère is feminine → 'ma grand-mère' (not 'mon'). Use 's'appelle' for names. 'La grand-mère appelle' would mean 'the grandmother is calling (someone)' — a very different meaning.",
+    explanation: "Grand-mère is feminine → 'ma grand-mère' (not 'mon'). Use 's'appelle' for names. 'La grand-mère appelle' would mean 'the grandmother is calling (someone)': a very different meaning.",
   },
 ];
 
@@ -125,7 +125,7 @@ export default function Unit3Lesson3Page() {
       <section className="mx-auto max-w-6xl px-6 py-16">
         <Link
           href="/learn/french-foundations"
-          className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]"
+          className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]"
         >
           ← French Foundations
         </Link>
@@ -204,7 +204,7 @@ export default function Unit3Lesson3Page() {
           </div>
         </section>
 
-        <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <section className="mt-16 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
           <h2 className="mt-3 text-3xl font-black">
             You can describe your family in French.
           </h2>
@@ -221,7 +221,7 @@ export default function Unit3Lesson3Page() {
             </Link>
             <Link
               href="/learn/french-foundations/unit-3/lesson-4"
-              className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]"
+              className="rounded-full bg-[#D62828] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#B91C1C]"
             >
               Final lesson →
             </Link>

@@ -49,7 +49,7 @@ export default function VerbsSubjonctifPage() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-4xl px-6 py-16">
-        <Link href="/resources" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/resources" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← Resources
         </Link>
 
@@ -123,7 +123,7 @@ export default function VerbsSubjonctifPage() {
             <h2 className="text-xl font-black">Irregular subjunctive stems</h2>
           </div>
           <p className="mt-3 text-sm text-[#526173]">
-            These high-frequency verbs have irregular stems in the subjunctive. Memorise the je and nous forms as anchors — the other forms follow from those stems.
+            These high-frequency verbs have irregular stems in the subjunctive. Memorise the je and nous forms as anchors: the other forms follow from those stems.
           </p>
           <div className="mt-5 overflow-x-auto rounded-2xl border border-[#E7DAB9] bg-white p-5">
             <table className="w-full text-sm">

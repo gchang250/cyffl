@@ -5,21 +5,21 @@ import FillInTheBlank from "@/components/FillInTheBlank";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const etreCards = [
-  { front: "je suis", back: "I am", subtext: "être — to be. Auxiliary for some passé composé verbs." },
+  { front: "je suis", back: "I am", subtext: "être: to be. Auxiliary for some passé composé verbs." },
   { front: "tu es", back: "you are (informal)", subtext: "Used with friends, family, classmates." },
-  { front: "il / elle est", back: "he / she is", subtext: "Also on/one est — one is / we are (informal)." },
-  { front: "nous sommes", back: "we are", subtext: "Sommes — the nous form of être." },
+  { front: "il / elle est", back: "he / she is", subtext: "Also on/one est: one is / we are (informal)." },
+  { front: "nous sommes", back: "we are", subtext: "Sommes: the nous form of être." },
   { front: "vous êtes", back: "you are (formal/plural)", subtext: "Used for one person formally or a group." },
   { front: "ils / elles sont", back: "they are", subtext: "Ils (mixed/masc. group), elles (all feminine)." },
 ];
 
 const avoirCards = [
-  { front: "j'ai", back: "I have", subtext: "avoir — to have. Used for age: j'ai seize ans." },
-  { front: "tu as", back: "you have", subtext: "Tu as de la chance! — You're lucky!" },
-  { front: "il / elle a", back: "he / she has", subtext: "Elle a faim. — She is hungry." },
-  { front: "nous avons", back: "we have", subtext: "Nous avons un cours de maths. — We have a maths class." },
-  { front: "vous avez", back: "you have (formal/plural)", subtext: "Vous avez raison. — You are right." },
-  { front: "ils / elles ont", back: "they have", subtext: "Ils ont tort. — They are wrong." },
+  { front: "j'ai", back: "I have", subtext: "avoir: to have. Used for age: j'ai seize ans." },
+  { front: "tu as", back: "you have", subtext: "Tu as de la chance!: You're lucky!" },
+  { front: "il / elle a", back: "he / she has", subtext: "Elle a faim.: She is hungry." },
+  { front: "nous avons", back: "we have", subtext: "Nous avons un cours de maths.: We have a maths class." },
+  { front: "vous avez", back: "you have (formal/plural)", subtext: "Vous avez raison.: You are right." },
+  { front: "ils / elles ont", back: "they have", subtext: "Ils ont tort.: They are wrong." },
 ];
 
 const pairs = [
@@ -34,7 +34,7 @@ const pairs = [
 const exercises = [
   { before: "Nous", after: "canadiens. (we are)", answer: "sommes", hint: "nous → sommes (être)", translation: "We are Canadian." },
   { before: "Il", after: "quinze ans. (he has)", answer: "a", hint: "il → a (avoir)", translation: "He is fifteen years old." },
-  { before: "Tu", after: "raison! (you are right — avoir)", answer: "as", hint: "tu → as (avoir)", translation: "You are right!" },
+  { before: "Tu", after: "raison! (you are right: avoir)", answer: "as", hint: "tu → as (avoir)", translation: "You are right!" },
   { before: "Vous", after: "dans quelle classe? (you are)", answer: "êtes", hint: "vous → êtes (être)", translation: "What class are you in?" },
   { before: "Elles", after: "soif après le sport. (they are thirsty)", answer: "ont", hint: "elles → ont (avoir)", translation: "They are thirsty after gym." },
 ];
@@ -68,7 +68,7 @@ const questions = [
     question: "How do you say 'They are lucky' using avoir?",
     options: ["Ils sont de la chance.", "Ils ont de la chance.", "Ils font de la chance.", "Ils sont chanceux seulement."],
     correct: 1,
-    explanation: "Avoir de la chance = to be lucky (literally 'to have luck'). Ils ont de la chance. This is an avoir idiom — don't use être here.",
+    explanation: "Avoir de la chance = to be lucky (literally 'to have luck'). Ils ont de la chance. This is an avoir idiom: don't use être here.",
   },
   {
     question: "Which subject pronoun uses 'est' as the être form?",
@@ -86,7 +86,7 @@ const questions = [
     question: "How do you say 'She is afraid'?",
     options: ["Elle est peur.", "Elle a peur.", "Elle fait peur.", "Elle sait peur."],
     correct: 1,
-    explanation: "Avoir peur = to be afraid (literally 'to have fear'). Elle a peur. Like faim, soif, froid, and chaud — fear uses avoir, not être.",
+    explanation: "Avoir peur = to be afraid (literally 'to have fear'). Elle a peur. Like faim, soif, froid, and chaud: fear uses avoir, not être.",
   },
 ];
 
@@ -94,7 +94,7 @@ export default function Unit1Lesson4Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/school-french-support" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/school-french-support" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← School French Support
         </Link>
 
@@ -119,11 +119,11 @@ export default function Unit1Lesson4Page() {
         </div>
 
         <div className="mt-12">
-          <FlashCardDeck cards={etreCards} title="Être — to be" />
+          <FlashCardDeck cards={etreCards} title="Être: to be" />
         </div>
 
         <div className="mt-12">
-          <FlashCardDeck cards={avoirCards} title="Avoir — to have" />
+          <FlashCardDeck cards={avoirCards} title="Avoir: to have" />
         </div>
 
         <div className="mt-12">
@@ -138,11 +138,11 @@ export default function Unit1Lesson4Page() {
           <MultipleChoiceQuiz questions={questions} title="Être & avoir quiz" />
         </div>
 
-        <div className="mt-12 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <div className="mt-12 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
 
           <p className="mt-2 text-[#526173]">You've covered articles, adjective agreement, prepositions, and the two most important irregular verbs. Now put it all together in the unit test.</p>
           <div className="mt-5 flex flex-wrap gap-3">
-            <Link href="/learn/school-french-support/unit-1/test" className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Take Unit 1 Test →</Link>
+            <Link href="/learn/school-french-support/unit-1/test" className="rounded-full bg-[#D62828] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">Take Unit 1 Test →</Link>
           </div>
         </div>
 

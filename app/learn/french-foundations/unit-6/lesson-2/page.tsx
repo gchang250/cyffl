@@ -5,18 +5,18 @@ import FillInTheBlank from "@/components/FillInTheBlank";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const cards = [
-  { front: "aller → allé(e)(s)", back: "to go — Elle est allée au marché.", subtext: "One of the most common être verbs." },
-  { front: "venir → venu(e)(s)", back: "to come — Ils sont venus hier.", subtext: "Je suis venu(e)." },
-  { front: "partir → parti(e)(s)", back: "to leave — Elle est partie tôt.", subtext: "Partir uses être." },
-  { front: "arriver → arrivé(e)(s)", back: "to arrive — Nous sommes arrivés.", subtext: "Arriver always uses être." },
-  { front: "entrer → entré(e)(s)", back: "to enter — Il est entré.", subtext: "The room-movement verbs use être." },
-  { front: "sortir → sorti(e)(s)", back: "to go out — Elle est sortie.", subtext: "Sortir = to go out (uses être)." },
-  { front: "monter → monté(e)(s)", back: "to go up — Ils sont montés.", subtext: "Monter = to go up / get on." },
-  { front: "descendre → descendu(e)(s)", back: "to go down — Elle est descendue.", subtext: "Descendre = to go down / get off." },
-  { front: "naître → né(e)(s)", back: "to be born — Je suis né(e) en 2008.", subtext: "Je suis né (male) / née (female)." },
-  { front: "mourir → mort(e)(s)", back: "to die — Il est mort.", subtext: "Irregular past participle: mort." },
-  { front: "rester → resté(e)(s)", back: "to stay — Nous sommes restés.", subtext: "Rester uses être." },
-  { front: "tomber → tombé(e)(s)", back: "to fall — Elle est tombée.", subtext: "Tomber = to fall." },
+  { front: "aller → allé(e)(s)", back: "to go: Elle est allée au marché.", subtext: "One of the most common être verbs." },
+  { front: "venir → venu(e)(s)", back: "to come: Ils sont venus hier.", subtext: "Je suis venu(e)." },
+  { front: "partir → parti(e)(s)", back: "to leave: Elle est partie tôt.", subtext: "Partir uses être." },
+  { front: "arriver → arrivé(e)(s)", back: "to arrive: Nous sommes arrivés.", subtext: "Arriver always uses être." },
+  { front: "entrer → entré(e)(s)", back: "to enter: Il est entré.", subtext: "The room-movement verbs use être." },
+  { front: "sortir → sorti(e)(s)", back: "to go out: Elle est sortie.", subtext: "Sortir = to go out (uses être)." },
+  { front: "monter → monté(e)(s)", back: "to go up: Ils sont montés.", subtext: "Monter = to go up / get on." },
+  { front: "descendre → descendu(e)(s)", back: "to go down: Elle est descendue.", subtext: "Descendre = to go down / get off." },
+  { front: "naître → né(e)(s)", back: "to be born: Je suis né(e) en 2008.", subtext: "Je suis né (male) / née (female)." },
+  { front: "mourir → mort(e)(s)", back: "to die: Il est mort.", subtext: "Irregular past participle: mort." },
+  { front: "rester → resté(e)(s)", back: "to stay: Nous sommes restés.", subtext: "Rester uses être." },
+  { front: "tomber → tombé(e)(s)", back: "to fall: Elle est tombée.", subtext: "Tomber = to fall." },
 ];
 
 const pairs = [
@@ -39,7 +39,7 @@ const fillIn = [
 const quiz = [
   {
     question: "Why do some verbs use être instead of avoir?",
-    options: ["Random — it must be memorized", "They are movement/state verbs (DR MRS VANDERTRAMP)", "They are irregular", "They end in -ir"],
+    options: ["Random: it must be memorized", "They are movement/state verbs (DR MRS VANDERTRAMP)", "They are irregular", "They end in -ir"],
     correct: 1,
     explanation: "The être verbs are mostly movement or change-of-state verbs: aller, venir, partir, arriver, etc. The mnemonic DR MRS VANDERTRAMP helps you remember them.",
   },
@@ -91,7 +91,7 @@ export default function Unit6Lesson2Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/french-foundations" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">← French Foundations</Link>
+        <Link href="/learn/french-foundations" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">← French Foundations</Link>
         <div className="mt-6 grid gap-8 md:grid-cols-[1fr_1fr]">
           <div>
             <p className="text-xs font-bold uppercase tracking-widest text-[#C9A44C]">Unit 6 · Lesson 2</p>
@@ -113,15 +113,15 @@ export default function Unit6Lesson2Page() {
           </div>
         </div>
 
-        <div className="mt-12 rounded-[2rem] border-2 border-[#FEF3C7] bg-white p-6">
+        <div className="mt-12 rounded-2xl border-2 border-[#FEF3C7] bg-white p-6">
           <p className="text-xs font-bold uppercase tracking-widest text-[#D97706]">Common mistakes — être verbs</p>
           <div className="mt-4 space-y-3 text-sm">
             {[
-              { wrong: "Il est arrivée.", right: "Il est arrivé. — arrivée is feminine. Il is masculine → arrivé." },
-              { wrong: "Elle a partié.", right: "Elle est partie. — Wrong auxiliary (avoir) and wrong participle. Partir uses être + parti → partie for feminine." },
-              { wrong: "Ils sont allé.", right: "Ils sont allés. — Masculine plural subject requires -s on the past participle: allés." },
-              { wrong: "Elle a tombé.", right: "Elle est tombée. — Tomber uses être. Elle est tombée." },
-              { wrong: "Je suis mangé.", right: "J'ai mangé. — Manger uses avoir, not être. Only movement/state verbs use être." },
+              { wrong: "Il est arrivée.", right: "Il est arrivé.: arrivée is feminine. Il is masculine → arrivé." },
+              { wrong: "Elle a partié.", right: "Elle est partie.: Wrong auxiliary (avoir) and wrong participle. Partir uses être + parti → partie for feminine." },
+              { wrong: "Ils sont allé.", right: "Ils sont allés.: Masculine plural subject requires -s on the past participle: allés." },
+              { wrong: "Elle a tombé.", right: "Elle est tombée.: Tomber uses être. Elle est tombée." },
+              { wrong: "Je suis mangé.", right: "J'ai mangé.: Manger uses avoir, not être. Only movement/state verbs use être." },
             ].map((m) => (
               <div key={m.wrong} className="grid gap-1 rounded-xl border border-[#FDE68A] bg-[#FEFCE8] p-3">
                 <p className="text-[#B45309]">✗ {m.wrong}</p>
@@ -161,7 +161,7 @@ export default function Unit6Lesson2Page() {
 
         <div className="mt-16 flex items-center justify-between gap-4">
           <Link href="/learn/french-foundations/unit-6/lesson-1" className="rounded-full border border-[#E7DAB9] bg-white px-5 py-2.5 text-sm font-black text-[#526173] transition hover:-translate-y-0.5">← Previous</Link>
-          <Link href="/learn/french-foundations/unit-6/lesson-3" className="rounded-full bg-[#2563EB] px-5 py-2.5 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Next lesson →</Link>
+          <Link href="/learn/french-foundations/unit-6/lesson-3" className="rounded-full bg-[#D62828] px-5 py-2.5 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">Next lesson →</Link>
         </div>
       </section>
     </main>

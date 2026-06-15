@@ -5,16 +5,16 @@ import FillInTheBlank from "@/components/FillInTheBlank";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const erVerbCards = [
-  { front: "parler", back: "to speak — je parle", subtext: "Remove -er → parl-, add endings: -e, -es, -e, -ons, -ez, -ent." },
-  { front: "manger", back: "to eat — je mange", subtext: "Nous mangeons — keep the -e before -ons to preserve the soft g." },
-  { front: "aimer", back: "to like/love — j'aime", subtext: "J'aime le français. — I like French." },
-  { front: "habiter", back: "to live (somewhere) — j'habite", subtext: "J'habite à Montréal. — I live in Montréal." },
-  { front: "travailler", back: "to work — je travaille", subtext: "Mes parents travaillent beaucoup. — My parents work a lot." },
-  { front: "regarder", back: "to watch/look at — je regarde", subtext: "Nous regardons la télé. — We watch TV." },
-  { front: "écouter", back: "to listen to — j'écoute", subtext: "Ils écoutent de la musique. — They listen to music." },
-  { front: "chercher", back: "to look for — je cherche", subtext: "Je cherche mon cahier. — I'm looking for my notebook." },
-  { front: "trouver", back: "to find — je trouve", subtext: "Tu trouves ça facile? — Do you find that easy?" },
-  { front: "commencer", back: "to start — je commence", subtext: "Le cours commence à 8h. — Class starts at 8 o'clock." },
+  { front: "parler", back: "to speak: je parle", subtext: "Remove -er → parl-, add endings: -e, -es, -e, -ons, -ez, -ent." },
+  { front: "manger", back: "to eat: je mange", subtext: "Nous mangeons: keep the -e before -ons to preserve the soft g." },
+  { front: "aimer", back: "to like/love: j'aime", subtext: "J'aime le français.: I like French." },
+  { front: "habiter", back: "to live (somewhere): j'habite", subtext: "J'habite à Montréal.: I live in Montréal." },
+  { front: "travailler", back: "to work: je travaille", subtext: "Mes parents travaillent beaucoup.: My parents work a lot." },
+  { front: "regarder", back: "to watch/look at: je regarde", subtext: "Nous regardons la télé.: We watch TV." },
+  { front: "écouter", back: "to listen to: j'écoute", subtext: "Ils écoutent de la musique.: They listen to music." },
+  { front: "chercher", back: "to look for: je cherche", subtext: "Je cherche mon cahier.: I'm looking for my notebook." },
+  { front: "trouver", back: "to find: je trouve", subtext: "Tu trouves ça facile?: Do you find that easy?" },
+  { front: "commencer", back: "to start: je commence", subtext: "Le cours commence à 8h.: Class starts at 8 o'clock." },
 ];
 
 const pairs = [
@@ -29,7 +29,7 @@ const pairs = [
 const exercises = [
   { before: "Nous", after: "le français ensemble. (to speak)", answer: "parlons", hint: "parler → nous parlons", translation: "We speak French together." },
   { before: "Tu", after: "du sport chaque jour. (to like)", answer: "aimes", hint: "aimer → tu aimes", translation: "You like sport every day." },
-  { before: "Ils ne", after: "pas ici. (to live — negation)", answer: "habitent", hint: "habiter → ils habitent. ne...pas around verb", translation: "They don't live here." },
+  { before: "Ils ne", after: "pas ici. (to live: negation)", answer: "habitent", hint: "habiter → ils habitent. ne...pas around verb", translation: "They don't live here." },
   { before: "Elle", after: "la radio le matin. (to listen to)", answer: "écoute", hint: "écouter → elle écoute", translation: "She listens to the radio in the morning." },
   { before: "Vous", after: "à quelle heure? (to start)", answer: "commencez", hint: "commencer → vous commencez", translation: "What time do you (all) start?" },
 ];
@@ -63,7 +63,7 @@ const questions = [
     question: "What is the 'je' form of 'commencer'?",
     options: ["je commencent", "je commences", "je commence", "je commençons"],
     correct: 2,
-    explanation: "Je form of -er verbs: remove -er, add -e. Je commence. The -e ending is silent — je, il, and elle forms all sound the same: commence.",
+    explanation: "Je form of -er verbs: remove -er, add -e. Je commence. The -e ending is silent: je, il, and elle forms all sound the same: commence.",
   },
   {
     question: "How do you say 'I'm looking for my pen'?",
@@ -79,7 +79,7 @@ const questions = [
   },
   {
     question: "A student writes 'ils trouvent.' Is this correct?",
-    options: ["No — it should be ils trouvez.", "No — it should be ils trouve.", "Yes — ils/elles form of -er verbs ends in -ent.", "No — it should be ils trouventent."],
+    options: ["No: it should be ils trouvez.", "No: it should be ils trouve.", "Yes: ils/elles form of -er verbs ends in -ent.", "No: it should be ils trouventent."],
     correct: 2,
     explanation: "Ils/elles + -er verb = -ent ending. Ils trouvent is correct. The -ent ending is completely silent in spoken French.",
   },
@@ -89,7 +89,7 @@ export default function Unit2Lesson1Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/school-french-support" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/school-french-support" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← School French Support
         </Link>
 
@@ -120,15 +120,15 @@ export default function Unit2Lesson1Page() {
           </div>
         </div>
 
-        <div className="mt-12 rounded-[2rem] border-2 border-[#FEF3C7] bg-white p-6">
+        <div className="mt-12 rounded-2xl border-2 border-[#FEF3C7] bg-white p-6">
           <p className="text-xs font-bold uppercase tracking-widest text-[#D97706]">Common mistakes — -er verb conjugation</p>
           <div className="mt-4 space-y-3 text-sm">
             {[
-              { wrong: "elle dancez", right: "elle danse — -ez is only the vous ending. Il/elle uses -e." },
-              { wrong: "nous mangons", right: "nous mangeons — -ger verbs keep the -e to preserve the soft g: mangeons, nageons, voyageons." },
-              { wrong: "ils parlent-ent", right: "ils parlent — the stem is parl-, the ending is -ent. Don't add -ent twice." },
-              { wrong: "je ne parle pas le français", right: "je ne parle pas français — no article with languages after parler." },
-              { wrong: "tu habites à la Montréal", right: "tu habites à Montréal — no article before city names." },
+              { wrong: "elle dancez", right: "elle danse: -ez is only the vous ending. Il/elle uses -e." },
+              { wrong: "nous mangons", right: "nous mangeons: -ger verbs keep the -e to preserve the soft g: mangeons, nageons, voyageons." },
+              { wrong: "ils parlent-ent", right: "ils parlent: the stem is parl-, the ending is -ent. Don't add -ent twice." },
+              { wrong: "je ne parle pas le français", right: "je ne parle pas français: no article with languages after parler." },
+              { wrong: "tu habites à la Montréal", right: "tu habites à Montréal: no article before city names." },
             ].map((m) => (
               <div key={m.wrong} className="grid gap-1 rounded-xl border border-[#FDE68A] bg-[#FEFCE8] p-3">
                 <p className="text-[#B45309]">✗ {m.wrong}</p>
@@ -156,7 +156,7 @@ export default function Unit2Lesson1Page() {
 
         <div className="mt-16 flex items-center justify-between gap-4">
           <Link href="/learn/school-french-support/unit-1/test" className="rounded-full border border-[#E7DAB9] bg-white px-5 py-2.5 text-sm font-black text-[#526173] transition hover:-translate-y-0.5">← Unit 1 Test</Link>
-          <Link href="/learn/school-french-support/unit-2/lesson-2" className="rounded-full bg-[#2563EB] px-5 py-2.5 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Next lesson →</Link>
+          <Link href="/learn/school-french-support/unit-2/lesson-2" className="rounded-full bg-[#D62828] px-5 py-2.5 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">Next lesson →</Link>
         </div>
       </section>
     </main>

@@ -18,16 +18,16 @@ const assessments = [
       "You choose one prompt from two and write a structured text in a specified format (article, letter, blog, speech, report, etc.). Minimum 250 words at SL.",
     criteria: [
       { label: "Criterion A", name: "Language", marks: "/12", note: "Accuracy, range, and complexity of grammar and vocabulary. Idiomatic expressions push you to the top band." },
-      { label: "Criterion B", name: "Message", marks: "/12", note: "Relevance, development of ideas, and clarity. Factual inaccuracies are NOT penalised — only coherence and depth." },
+      { label: "Criterion B", name: "Message", marks: "/12", note: "Relevance, development of ideas, and clarity. Factual inaccuracies are NOT penalised: only coherence and depth." },
       { label: "Criterion C", name: "Conceptual understanding", marks: "/6", note: "Three things: (1) did you choose an appropriate text type? (2) is your register consistent? (3) did you use the correct conventions?" },
     ],
     tips: [
-      "The prompt gives you THREE text type options — choose the one that best fits the context, recipient, and purpose",
+      "The prompt gives you THREE text type options: choose the one that best fits the context, recipient, and purpose",
       "Open with the required conventions for your chosen text type before writing any content",
-      "Use the subjunctive, conditional, and futur simple — tense variety is directly rewarded in Criterion A",
+      "Use the subjunctive, conditional, and futur simple: tense variety is directly rewarded in Criterion A",
       "Include at least one or two idiomatic expressions to reach the Criterion A top band",
-      "Criterion B does not penalise factual errors — if your ideas are coherent and well-developed, you will be rewarded",
-      "Keep your register consistent throughout — shifting between formal and informal mid-response loses Criterion C marks",
+      "Criterion B does not penalise factual errors: if your ideas are coherent and well-developed, you will be rewarded",
+      "Keep your register consistent throughout: shifting between formal and informal mid-response loses Criterion C marks",
     ],
   },
   {
@@ -37,19 +37,19 @@ const assessments = [
     marks: "/40",
     color: "bg-[#FEF3C7] text-[#D97706]",
     description:
-      "Three texts, each with different question types. The answer is always in the text — every question is testing whether you can locate and use the right information.",
+      "Three texts, each with different question types. The answer is always in the text: every question is testing whether you can locate and use the right information.",
     criteria: [
       { label: "Question types", name: "Choose N true statements · sentence completion · multiple choice", marks: "", note: "First two texts typically use these formats" },
-      { label: "Question types", name: "Matching · synonym matching · gap fill from word bank", marks: "", note: "Common in the second text — use grammar and context to eliminate" },
-      { label: "Question types", name: "True/False + direct quote · short answer · pronoun reference", marks: "", note: "Third text typically uses these — both T/F and quote are required for the mark" },
+      { label: "Question types", name: "Matching · synonym matching · gap fill from word bank", marks: "", note: "Common in the second text: use grammar and context to eliminate" },
+      { label: "Question types", name: "True/False + direct quote · short answer · pronoun reference", marks: "", note: "Third text typically uses these: both T/F and quote are required for the mark" },
     ],
     tips: [
-      "Use your common sense — the texts are written clearly and the right answer is almost always the most obvious one",
-      "For True/False + Justification: you need both — T/F alone gets zero. Copy words exactly from the text",
-      "For sentence completion ('Trouvez les mots'): use the words exactly as they appear in the text — no paraphrasing",
-      "For synonym matching: use the line number — the meaning depends on how the word is used in context, not its general definition",
+      "Use your common sense: the texts are written clearly and the right answer is almost always the most obvious one",
+      "For True/False + Justification: you need both: T/F alone gets zero. Copy words exactly from the text",
+      "For sentence completion ('Trouvez les mots'): use the words exactly as they appear in the text: no paraphrasing",
+      "For synonym matching: use the line number: the meaning depends on how the word is used in context, not its general definition",
       "For gap fill: eliminate wrong options using grammar (gender, number, tense) before choosing from what remains",
-      "Watch for negatives (ne…pas, ne…jamais, seulement) — they flip the meaning and are easy to miss under time pressure",
+      "Watch for negatives (ne…pas, ne…jamais, seulement): they flip the meaning and are easy to miss under time pressure",
       "For pronoun reference: go back to the preceding lines and find the noun the pronoun replaces, then copy it from the text",
     ],
   },
@@ -60,37 +60,37 @@ const assessments = [
     marks: "/25",
     color: "bg-[#FEF3C7] text-[#D97706]",
     description:
-      "A series of audio texts — interviews, news reports, announcements, and conversations — played twice each. Questions test main idea, speaker purpose, attitude, and details.",
+      "A series of audio texts: interviews, news reports, announcements, and conversations: played twice each. Questions test main idea, speaker purpose, attitude, and details.",
     criteria: [
       { label: "Format", name: "Audio played twice", marks: "", note: "First listen: main idea and speaker. Second listen: details and specific answers" },
       { label: "Watch for", name: "Tone and attitude", marks: "", note: "Positive, negative, or mixed? Identify the speaker's stance" },
       { label: "Watch for", name: "Numbers and statistics", marks: "", note: "Dates, percentages, and quantities are frequently tested" },
     ],
     tips: [
-      "Use the first listen for the big picture — who is speaking, what is it about, what is the purpose",
-      "Write numbers, dates, and names immediately — they're easy to miss on second listen",
-      "Identify tone and attitude — 'encourageants mais…' = cautiously optimistic, not fully positive",
+      "Use the first listen for the big picture: who is speaking, what is it about, what is the purpose",
+      "Write numbers, dates, and names immediately: they're easy to miss on second listen",
+      "Identify tone and attitude: 'encourageants mais…' = cautiously optimistic, not fully positive",
       "Know common audio formats: interview, reportage, annonce, publicité",
-      "Don't infer — only use what the speaker actually says",
+      "Don't infer: only use what the speaker actually says",
     ],
   },
   {
     paper: "Individual Oral",
-    name: "IA — Oral Assessment",
+    name: "IA: Oral Assessment",
     weight: "25%",
     marks: "/30",
     color: "bg-[#FDF4FF] text-[#9333EA]",
     description:
       "You receive a visual stimulus image and have 15 minutes to prepare. The oral has two parts: a presentation (describe and analyse the image, ~3–4 min) followed by a discussion with your teacher (~6–9 min).",
     criteria: [
-      { label: "Criterion A", name: "Language", marks: "/10", note: "Accuracy, range, and complexity — same principle as Paper 1" },
+      { label: "Criterion A", name: "Language", marks: "/10", note: "Accuracy, range, and complexity: same principle as Paper 1" },
       { label: "Criterion B", name: "Message", marks: "/10", note: "Quality of description, analysis, and connection to global issue" },
       { label: "Criterion C", name: "Interactive skills", marks: "/10", note: "Spontaneity, responsiveness, and ability to sustain conversation" },
     ],
     tips: [
       "Use your 15 minutes: identify the IB theme, the global issue, and key vocabulary before you start speaking",
       "Follow the structure: describe (Au premier plan…) → analyse (Cette image illustre…) → discuss",
-      "Never give one-word answers — every response needs opinion + reason + example",
+      "Never give one-word answers: every response needs opinion + reason + example",
       "If the examiner asks what you would do in this situation, answer in the conditional: 'Je ferais…', 'Je choisirais…', 'Ce serait…'",
       "If the examiner asks what must be done so that something happens, answer in the subjunctive: 'Il faut que nous…', 'Pour que cela change, il est essentiel que…'",
       "Show nuance: acknowledge the other side with 'Il faut admettre que… cependant…'",
@@ -131,7 +131,7 @@ const grammarResources = [
   },
   {
     label: "Connecting words",
-    note: "From A1 to C1 — organised by function. Higher-band writing uses cependant, néanmoins, de surcroît, quant à.",
+    note: "From A1 to C1: organised by function. Higher-band writing uses cependant, néanmoins, de surcroît, quant à.",
     href: "/resources/connecting-words",
     example: "Néanmoins, force est de constater que la situation s'aggrave.",
   },
@@ -160,7 +160,7 @@ export default function IBFrenchBPrepPage() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-7xl px-6 py-20">
-        <Link href="/resources" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/resources" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← Resources
         </Link>
 
@@ -172,7 +172,7 @@ export default function IBFrenchBPrepPage() {
             IB French B Prep
           </h1>
           <p className="mt-5 text-lg leading-8 text-[#526173]">
-            Assessment breakdown, exam tips, and the grammar resources you need to score in the higher bands — for Paper 1, Paper 2, and the Individual Oral.
+            Assessment breakdown, exam tips, and the grammar resources you need to score in the higher bands: for Paper 1, Paper 2, and the Individual Oral.
           </p>
         </div>
 
@@ -183,7 +183,7 @@ export default function IBFrenchBPrepPage() {
 
           <div className="mt-8 grid gap-6 lg:grid-cols-2">
             {assessments.map((a) => (
-              <div key={a.paper} className="flex flex-col rounded-[2rem] border border-[#E7DAB9] bg-white shadow-sm overflow-hidden">
+              <div key={a.paper} className="flex flex-col rounded-2xl border border-[#E7DAB9] bg-white shadow-sm overflow-hidden">
                 <div className="bg-[#0B1F3A] px-6 py-5">
                   <div className="flex items-center justify-between">
                     <span className={`rounded-full px-2.5 py-0.5 text-xs font-black ${a.color}`}>{a.paper}</span>
@@ -224,11 +224,11 @@ export default function IBFrenchBPrepPage() {
           </div>
         </section>
 
-        {/* Paper 1 — text types */}
+        {/* Paper 1: text types */}
         <section className="mt-16">
           <h2 className="text-3xl font-black">Paper 1 — text types and official conventions</h2>
           <p className="mt-2 text-[#526173]">
-            Each prompt gives you three text type options. Pick the one that fits the context, recipient, and purpose. Then apply these conventions — examiners check for them directly in Criterion C.
+            Each prompt gives you three text type options. Pick the one that fits the context, recipient, and purpose. Then apply these conventions: examiners check for them directly in Criterion C.
           </p>
 
           <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -264,7 +264,7 @@ export default function IBFrenchBPrepPage() {
                 context: "Presenting a project or idea to decision-makers or competition organisers",
               },
             ].map((t) => (
-              <div key={t.type} className="rounded-[1.5rem] border border-[#E7DAB9] bg-white p-5 shadow-sm">
+              <div key={t.type} className="rounded-2xl border border-[#E7DAB9] bg-white p-5 shadow-sm">
                 <div className="flex items-center justify-between gap-2">
                   <p className="font-black text-[#0B1F3A]">{t.type}</p>
                   <span className="rounded-full bg-[#FFFDF7] px-2 py-0.5 text-xs font-bold text-[#526173]">{t.register}</span>
@@ -286,15 +286,15 @@ export default function IBFrenchBPrepPage() {
           </div>
         </section>
 
-        {/* Oral — using the right tense */}
+        {/* Oral: using the right tense */}
         <section className="mt-16">
           <h2 className="text-3xl font-black">Individual Oral — using the right tense</h2>
           <p className="mt-2 text-[#526173]">
-            The examiner's questions are a signal. Listen to the question type and choose your tense deliberately — it's one of the clearest ways to demonstrate Criterion A range.
+            The examiner's questions are a signal. Listen to the question type and choose your tense deliberately: it's one of the clearest ways to demonstrate Criterion A range.
           </p>
 
           <div className="mt-6 grid gap-4 md:grid-cols-2">
-            <div className="rounded-[1.5rem] border-2 border-[#2563EB] bg-white p-6 shadow-sm">
+            <div className="rounded-2xl border-2 border-[#2563EB] bg-white p-6 shadow-sm">
               <p className="text-xs font-bold uppercase tracking-widest text-[#2563EB]">Examiner asks…</p>
               <p className="mt-2 text-lg font-black text-[#0B1F3A]">&ldquo;What would you do in this situation?&rdquo;</p>
               <p className="mt-1 text-sm italic text-[#526173]">&ldquo;Que feriez-vous dans cette situation ?&rdquo;</p>
@@ -310,19 +310,19 @@ export default function IBFrenchBPrepPage() {
                   <p>« J'essaierais de convaincre… »</p>
                 </div>
               </div>
-              <Link href="/resources/verbs-conditionnel" className="mt-4 inline-block text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+              <Link href="/resources/verbs-conditionnel" className="mt-4 inline-block text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
                 Review le conditionnel →
               </Link>
             </div>
 
-            <div className="rounded-[1.5rem] border-2 border-[#9333EA] bg-white p-6 shadow-sm">
+            <div className="rounded-2xl border-2 border-[#9333EA] bg-white p-6 shadow-sm">
               <p className="text-xs font-bold uppercase tracking-widest text-[#9333EA]">Examiner asks…</p>
               <p className="mt-2 text-lg font-black text-[#0B1F3A]">&ldquo;What must we do so that this changes?&rdquo;</p>
               <p className="mt-1 text-sm italic text-[#526173]">&ldquo;Que faut-il faire pour que les choses changent ?&rdquo;</p>
               <div className="mt-4 rounded-xl bg-[#FDF4FF] p-4">
                 <p className="text-xs font-bold uppercase tracking-widest text-[#9333EA]">Answer in the subjunctive</p>
                 <p className="mt-2 text-sm leading-6 text-[#0B1F3A]">
-                  Phrases like <em>pour que, il faut que, afin que</em> trigger the subjunctive — and using it shows you know your grammar.
+                  Phrases like <em>pour que, il faut que, afin que</em> trigger the subjunctive: and using it shows you know your grammar.
                 </p>
                 <div className="mt-3 space-y-1 text-sm italic text-[#526173]">
                   <p>« Il faut que nous agissions immédiatement. »</p>
@@ -344,7 +344,7 @@ export default function IBFrenchBPrepPage() {
           <p className="mt-2 text-[#526173]">
             Use these in Paper 1 and the Individual Oral. Even two or three well-placed expressions demonstrate linguistic range and push you into the top band.
           </p>
-          <div className="mt-6 grid gap-px bg-[#E7DAB9] sm:grid-cols-2 border border-[#E7DAB9] rounded-[1.5rem] overflow-hidden">
+          <div className="mt-6 grid gap-px bg-[#E7DAB9] sm:grid-cols-2 border border-[#E7DAB9] rounded-2xl overflow-hidden">
             {higherBandPhrases.map((p) => (
               <div key={p.phrase} className="bg-white px-5 py-4">
                 <p className="font-black text-[#0B1F3A] italic">{p.phrase}</p>
@@ -352,7 +352,7 @@ export default function IBFrenchBPrepPage() {
               </div>
             ))}
           </div>
-          <Link href="/resources/expressions" className="mt-4 inline-block text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+          <Link href="/resources/expressions" className="mt-4 inline-block text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
             Full idiomatic expressions list →
           </Link>
         </section>
@@ -361,14 +361,14 @@ export default function IBFrenchBPrepPage() {
         <section className="mt-16">
           <h2 className="text-3xl font-black">Grammar & style resources</h2>
           <p className="mt-2 text-[#526173]">
-            These are the specific resources that matter most for IB French B. Study them before your exams — they are the difference between a 5 and a 7.
+            These are the specific resources that matter most for IB French B. Study them before your exams: they are the difference between a 5 and a 7.
           </p>
           <div className="mt-6 grid gap-4 md:grid-cols-2">
             {grammarResources.map((r) => (
               <Link
                 key={r.label}
                 href={r.href}
-                className="group flex flex-col rounded-[1.5rem] border border-[#E7DAB9] bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+                className="group flex flex-col rounded-2xl border border-[#E7DAB9] bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
               >
                 <p className="font-black group-hover:text-[#2563EB]">{r.label} →</p>
                 <p className="mt-2 text-sm leading-6 text-[#526173]">{r.note}</p>
@@ -381,7 +381,7 @@ export default function IBFrenchBPrepPage() {
         </section>
 
         {/* Course link */}
-        <section className="mt-16 rounded-[2rem] bg-[#0B1F3A] p-8 text-white shadow-sm">
+        <section className="mt-16 rounded-2xl bg-[#0B1F3A] p-8 text-white shadow-sm">
           <div className="grid items-center gap-6 md:grid-cols-[1fr_auto]">
             <div>
               <p className="text-xl font-black">Want the full interactive course?</p>
@@ -391,7 +391,7 @@ export default function IBFrenchBPrepPage() {
             </div>
             <Link
               href="/learn/ib-french-b-sl"
-              className="whitespace-nowrap rounded-full bg-[#2563EB] px-6 py-3 text-center text-sm font-black text-white transition hover:-translate-y-0.5"
+              className="whitespace-nowrap rounded-full bg-[#D62828] px-6 py-3 text-center text-sm font-black text-white transition hover:-translate-y-0.5"
             >
               Start the course →
             </Link>

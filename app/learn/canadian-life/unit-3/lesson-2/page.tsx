@@ -8,62 +8,62 @@ const cards = [
   {
     front: "Opening a cover letter",
     back: "Madame, Monsieur, je vous soumets ma candidature pour le poste de...",
-    subtext: "I am submitting my application for the position of... — formal and standard.",
+    subtext: "I am submitting my application for the position of...: formal and standard.",
   },
   {
     front: "Highlighting experience",
     back: "Fort(e) de X années d'expérience en...",
-    subtext: "Drawing on X years of experience in... — opens the body of the letter strongly.",
+    subtext: "Drawing on X years of experience in...: opens the body of the letter strongly.",
   },
   {
     front: "Stating motivation",
     back: "Ce poste m'intéresse particulièrement car...",
-    subtext: "This position particularly interests me because... — personalise with specifics.",
+    subtext: "This position particularly interests me because...: personalise with specifics.",
   },
   {
     front: "Claiming skills",
     back: "Je maîtrise / Je possède de solides compétences en...",
-    subtext: "I am proficient in / I have strong skills in... — use 'maîtrise' for software, languages.",
+    subtext: "I am proficient in / I have strong skills in...: use 'maîtrise' for software, languages.",
   },
   {
     front: "Stating bilingualism",
     back: "Je suis parfaitement bilingue français-anglais.",
-    subtext: "I am fully bilingual in French and English. — direct and confident.",
+    subtext: "I am fully bilingual in French and English.: direct and confident.",
   },
   {
     front: "Stating availability",
     back: "Je suis disponible dès le [date] pour...",
-    subtext: "I am available from [date] for... — e.g., 'dès le 1er septembre pour débuter ce rôle'.",
+    subtext: "I am available from [date] for...: e.g., 'dès le 1er septembre pour débuter ce rôle'.",
   },
   {
     front: "Closing a cover letter",
     back: "Dans l'attente de vous rencontrer, je vous prie d'agréer...",
-    subtext: "Awaiting the pleasure of meeting you, I ask you to accept... — classic formal close.",
+    subtext: "Awaiting the pleasure of meeting you, I ask you to accept...: classic formal close.",
   },
   {
     front: "Education on a CV",
     back: "Baccalauréat en [domaine], Université de [nom], [année]",
-    subtext: "Bachelor's in [field], University of [name], [year] — reverse chronological order.",
+    subtext: "Bachelor's in [field], University of [name], [year]: reverse chronological order.",
   },
   {
-    front: "Work experience — leading duties",
+    front: "Work experience: leading duties",
     back: "Chargé(e) de... / Responsable de... / Assuré(e) la gestion de...",
-    subtext: "Responsible for... / Managed... — strong action phrases for bullet points.",
+    subtext: "Responsible for... / Managed...: strong action phrases for bullet points.",
   },
   {
     front: "Volunteering on a CV",
     back: "Bénévole auprès de... / Membre actif(ve) de...",
-    subtext: "Volunteer with... / Active member of... — shows community engagement.",
+    subtext: "Volunteer with... / Active member of...: shows community engagement.",
   },
   {
     front: "References on a CV",
     back: "Références disponibles sur demande.",
-    subtext: "References available on request. — standard last line of a French CV.",
+    subtext: "References available on request.: standard last line of a French CV.",
   },
   {
     front: "Professional summary opener",
     back: "Professionnel(le) dynamique avec une expérience confirmée en...",
-    subtext: "Dynamic professional with proven experience in... — strong summary opener.",
+    subtext: "Dynamic professional with proven experience in...: strong summary opener.",
   },
 ];
 
@@ -81,35 +81,35 @@ const exercises = [
     before: "Madame, Monsieur, je vous",
     after: "ma candidature pour le poste de gestionnaire de projet.",
     answer: "soumets",
-    hint: "Soumettre — to submit. Je soumets = I submit.",
+    hint: "Soumettre: to submit. Je soumets = I submit.",
     translation: "I am submitting my application for the position of project manager.",
   },
   {
     before: "Fort(e) de cinq années d'",
     after: "en ressources humaines, je suis en mesure de contribuer immédiatement.",
     answer: "expérience",
-    hint: "Expérience — experience (feminine noun in French).",
+    hint: "Expérience: experience (feminine noun in French).",
     translation: "Drawing on five years of experience in human resources, I am able to contribute immediately.",
   },
   {
     before: "Je",
     after: "parfaitement bilingue français-anglais, tant à l'oral qu'à l'écrit.",
     answer: "suis",
-    hint: "Je suis — I am (être, first person singular).",
+    hint: "Je suis: I am (être, first person singular).",
     translation: "I am fully bilingual in French and English, both spoken and written.",
   },
   {
     before: "Dans l'attente de vous",
     after: ", je vous prie d'agréer mes salutations distinguées.",
     answer: "rencontrer",
-    hint: "Rencontrer — to meet. 'Dans l'attente de vous rencontrer' = awaiting the pleasure of meeting you.",
+    hint: "Rencontrer: to meet. 'Dans l'attente de vous rencontrer' = awaiting the pleasure of meeting you.",
     translation: "Awaiting the pleasure of meeting you, I ask you to accept my distinguished greetings.",
   },
   {
     before: "Références",
     after: "sur demande.",
     answer: "disponibles",
-    hint: "Disponibles — available. The standard closing line of a French CV.",
+    hint: "Disponibles: available. The standard closing line of a French CV.",
     translation: "References available on request.",
   },
 ];
@@ -141,7 +141,7 @@ const questions = [
     question: "What does 'Fort(e) de X années d'expérience en...' convey?",
     options: [
       "I have been unemployed for X years.",
-      "Drawing on X years of experience in... — confident statement of experience.",
+      "Drawing on X years of experience in...: confident statement of experience.",
       "I need X more years of experience.",
       "I studied for X years.",
     ],
@@ -173,13 +173,13 @@ const questions = [
   {
     question: "On a French CV, how should you order your work experience?",
     options: [
-      "Chronological — oldest job first",
-      "Reverse chronological — most recent job first",
+      "Chronological: oldest job first",
+      "Reverse chronological: most recent job first",
       "Alphabetical by employer name",
       "By salary, highest to lowest",
     ],
     correct: 1,
-    explanation: "French CVs use reverse chronological order — most recent position first. This is the standard in both France and Canada. Employers want to see your most relevant recent experience immediately, not have to scroll to the bottom.",
+    explanation: "French CVs use reverse chronological order: most recent position first. This is the standard in both France and Canada. Employers want to see your most relevant recent experience immediately, not have to scroll to the bottom.",
   },
   {
     question: "A cover letter paragraph reads: 'Je suis convaincu(e) que mes compétences en gestion de projets et mon expérience bilingue répondent pleinement aux exigences de ce poste.' What is the purpose of this sentence?",
@@ -190,7 +190,7 @@ const questions = [
       "Requesting a higher salary",
     ],
     correct: 2,
-    explanation: "This is the 'value proposition' sentence — explicitly showing why your profile matches the job. 'Répondre aux exigences' = to meet the requirements. Strong cover letters don't just list experience; they link it directly to what the employer needs.",
+    explanation: "This is the 'value proposition' sentence: explicitly showing why your profile matches the job. 'Répondre aux exigences' = to meet the requirements. Strong cover letters don't just list experience; they link it directly to what the employer needs.",
   },
   {
     question: "When the hiring manager's name is not given in a French job posting, how do you address the cover letter?",
@@ -209,7 +209,7 @@ export default function Unit3Lesson2Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/canadian-life" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/canadian-life" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← French for Canadian Life
         </Link>
 
@@ -221,7 +221,7 @@ export default function Unit3Lesson2Page() {
               A French CV (curriculum vitae) and lettre de motivation follow specific conventions. Sections appear in a standard order, opening and closing phrases are formulaic by design, and action verbs on a CV take a different form than in English.
             </p>
             <p className="mt-4 text-lg leading-8 text-[#526173]">
-              In Canada, French employers expect a CV that mirrors French conventions — not a translated English résumé. Getting the tone, structure, and key phrases right signals that you understand the professional culture.
+              In Canada, French employers expect a CV that mirrors French conventions: not a translated English résumé. Getting the tone, structure, and key phrases right signals that you understand the professional culture.
             </p>
           </div>
 
@@ -231,9 +231,9 @@ export default function Unit3Lesson2Page() {
               {[
                 ["1", "Coordonnées", "Contact info: name, phone, email, LinkedIn, city"],
                 ["2", "Profil professionnel / Résumé", "Professional summary (3–5 lines)"],
-                ["3", "Expérience professionnelle", "Work experience — reverse chronological"],
-                ["4", "Formation / Études", "Education — most recent first"],
-                ["5", "Compétences", "Skills — langues, informatique, autres"],
+                ["3", "Expérience professionnelle", "Work experience: reverse chronological"],
+                ["4", "Formation / Études", "Education: most recent first"],
+                ["5", "Compétences", "Skills: langues, informatique, autres"],
                 ["6", "Bénévolat / Activités", "Volunteering and extracurricular activities"],
                 ["7", "Références", "Références disponibles sur demande"],
               ].map(([num, title, desc]) => (

@@ -54,7 +54,7 @@ const questions = [
     question: "What does 'Comme ci, comme ça' mean?",
     options: ["Very well", "Not bad", "So-so", "Not doing great"],
     correct: 2,
-    explanation: "Comme ci, comme ça literally means 'like this, like that' — it describes a middling, so-so feeling.",
+    explanation: "Comme ci, comme ça literally means 'like this, like that': it describes a middling, so-so feeling.",
   },
   {
     question: "How do you correctly say 'I am from Canada'?",
@@ -68,7 +68,7 @@ export default function Unit1TestPage() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/french-foundations" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/french-foundations" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← French Foundations
         </Link>
 
@@ -84,12 +84,12 @@ export default function Unit1TestPage() {
           <MultipleChoiceQuiz questions={questions} title="Unit 1 Test · 10 questions" />
         </section>
 
-        <div className="mt-12 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <div className="mt-12 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
           <p className="font-black text-lg">Ready for Unit 2?</p>
           <p className="mt-2 text-[#526173]">Unit 2 covers subject pronouns and the two most important verbs in French.</p>
           <div className="mt-5 flex flex-wrap gap-3">
             <Link href="/learn/french-foundations/unit-1/lesson-3" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">← Back to lesson</Link>
-            <Link href="/learn/french-foundations/unit-2/lesson-1" className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Start Unit 2 →</Link>
+            <Link href="/learn/french-foundations/unit-2/lesson-1" className="rounded-full bg-[#D62828] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">Start Unit 2 →</Link>
           </div>
         </div>
       </section>

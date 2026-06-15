@@ -5,27 +5,27 @@ import MatchPairs from "@/components/MatchPairs";
 import FillInTheBlank from "@/components/FillInTheBlank";
 
 const numberCards = [
-  { front: "0", back: "zéro", subtext: "[zeʁo] — Same as in many languages. Zero point zero = zéro virgule zéro (French uses a comma for decimals)." },
-  { front: "1", back: "un / une", subtext: "[œ̃ / yn] — Masculine: un (un livre). Feminine: une (une table). The gender matters because numbers agree with nouns." },
-  { front: "2", back: "deux", subtext: "[dø] — The x is silent. Deux livres, deux tables." },
-  { front: "3", back: "trois", subtext: "[tʁwa] — The s is silent. Watch: trois → troisième (3rd) — the s reappears in ordinals." },
-  { front: "4", back: "quatre", subtext: "[katʁ] — The final -e is barely pronounced. Sounds close to 'katr'." },
-  { front: "5", back: "cinq", subtext: "[sɛ̃k] — The q IS pronounced at the end. Cinq livres = 5 books." },
-  { front: "6", back: "six", subtext: "[sis] — Before a vowel: six ans [si zɑ̃]. Before a consonant: six livres [si livʁ]. The x changes sound." },
-  { front: "7", back: "sept", subtext: "[sɛt] — The p is silent, but the t IS pronounced. Often confused with set/sett in English." },
-  { front: "8", back: "huit", subtext: "[ɥit] — The t IS pronounced. Before a vowel: huit ans sounds [ɥi tɑ̃]." },
-  { front: "9", back: "neuf", subtext: "[nœf] — The f IS pronounced here. Exception: before heures, ans → the f sounds like a v: neuf heures [nœv œʁ]." },
-  { front: "10", back: "dix", subtext: "[dis] — Before a vowel: dix ans [di zɑ̃]. Before a consonant: dix livres [di livʁ]." },
-  { front: "11", back: "onze", subtext: "[ɔ̃z] — Important: unlike 1, 2... 11 does NOT link to a following vowel (no liaison). Say 'les onze élèves' as [le ɔ̃z]." },
-  { front: "12", back: "douze", subtext: "[duz] — Douze heures = noon/midnight. Easy to remember: English 'dozen' comes from French douze." },
-  { front: "13", back: "treize", subtext: "[tʁɛz] — Treize is an unlucky number in some cultures, but essential for French ages and dates." },
-  { front: "14", back: "quatorze", subtext: "[katɔʁz] — Le quatorze juillet = July 14th (Bastille Day, French national holiday)." },
-  { front: "15", back: "quinze", subtext: "[kɛ̃z] — Easy mix-up: quinze (15) vs. seize (16). Quinze starts with qu- like 'quarter'." },
-  { front: "16", back: "seize", subtext: "[sɛz] — Seize starts with se- and looks a bit like 'size'. Don't confuse with quinze (15)." },
-  { front: "17", back: "dix-sept", subtext: "[di sɛt] — Literally 10+7. Always hyphenated: dix-sept." },
-  { front: "18", back: "dix-huit", subtext: "[di zɥit] — Liaison: dix links to huit with a [z] sound: dix-huit = [di zɥit]." },
-  { front: "19", back: "dix-neuf", subtext: "[di znœf] — 10+9. Liaison applies: dix-neuf = [di znœf]." },
-  { front: "20", back: "vingt", subtext: "[vɛ̃] — The final -gt is SILENT. Don't say the t. Exception: vingt-et-un (21) — the t IS pronounced." },
+  { front: "0", back: "zéro", subtext: "[zeʁo]: Same as in many languages. Zero point zero = zéro virgule zéro (French uses a comma for decimals)." },
+  { front: "1", back: "un / une", subtext: "[œ̃ / yn]: Masculine: un (un livre). Feminine: une (une table). The gender matters because numbers agree with nouns." },
+  { front: "2", back: "deux", subtext: "[dø]: The x is silent. Deux livres, deux tables." },
+  { front: "3", back: "trois", subtext: "[tʁwa]: The s is silent. Watch: trois → troisième (3rd): the s reappears in ordinals." },
+  { front: "4", back: "quatre", subtext: "[katʁ]: The final -e is barely pronounced. Sounds close to 'katr'." },
+  { front: "5", back: "cinq", subtext: "[sɛ̃k]: The q IS pronounced at the end. Cinq livres = 5 books." },
+  { front: "6", back: "six", subtext: "[sis]: Before a vowel: six ans [si zɑ̃]. Before a consonant: six livres [si livʁ]. The x changes sound." },
+  { front: "7", back: "sept", subtext: "[sɛt]: The p is silent, but the t IS pronounced. Often confused with set/sett in English." },
+  { front: "8", back: "huit", subtext: "[ɥit]: The t IS pronounced. Before a vowel: huit ans sounds [ɥi tɑ̃]." },
+  { front: "9", back: "neuf", subtext: "[nœf]: The f IS pronounced here. Exception: before heures, ans → the f sounds like a v: neuf heures [nœv œʁ]." },
+  { front: "10", back: "dix", subtext: "[dis]: Before a vowel: dix ans [di zɑ̃]. Before a consonant: dix livres [di livʁ]." },
+  { front: "11", back: "onze", subtext: "[ɔ̃z]: Important: unlike 1, 2... 11 does NOT link to a following vowel (no liaison). Say 'les onze élèves' as [le ɔ̃z]." },
+  { front: "12", back: "douze", subtext: "[duz]: Douze heures = noon/midnight. Easy to remember: English 'dozen' comes from French douze." },
+  { front: "13", back: "treize", subtext: "[tʁɛz]: Treize is an unlucky number in some cultures, but essential for French ages and dates." },
+  { front: "14", back: "quatorze", subtext: "[katɔʁz]: Le quatorze juillet = July 14th (Bastille Day, French national holiday)." },
+  { front: "15", back: "quinze", subtext: "[kɛ̃z]: Easy mix-up: quinze (15) vs. seize (16). Quinze starts with qu- like 'quarter'." },
+  { front: "16", back: "seize", subtext: "[sɛz]: Seize starts with se- and looks a bit like 'size'. Don't confuse with quinze (15)." },
+  { front: "17", back: "dix-sept", subtext: "[di sɛt]: Literally 10+7. Always hyphenated: dix-sept." },
+  { front: "18", back: "dix-huit", subtext: "[di zɥit]: Liaison: dix links to huit with a [z] sound: dix-huit = [di zɥit]." },
+  { front: "19", back: "dix-neuf", subtext: "[di znœf]: 10+9. Liaison applies: dix-neuf = [di znœf]." },
+  { front: "20", back: "vingt", subtext: "[vɛ̃]: The final -gt is SILENT. Don't say the t. Exception: vingt-et-un (21): the t IS pronounced." },
 ];
 
 const matchPairs = [
@@ -109,7 +109,7 @@ const quiz = [
     question: "A student says 'J'ai seize ans.' How old are they?",
     options: ["15", "16", "17", "6"],
     correct: 1,
-    explanation: "Seize = 16. Compare: quinze = 15, dix-sept = 17. Seize and quinze are often confused — remember seize is one step above quinze.",
+    explanation: "Seize = 16. Compare: quinze = 15, dix-sept = 17. Seize and quinze are often confused: remember seize is one step above quinze.",
   },
   {
     question: "Count: zéro, un, deux, trois… What comes next?",
@@ -125,7 +125,7 @@ export default function Unit3Lesson1Page() {
       <section className="mx-auto max-w-6xl px-6 py-16">
         <Link
           href="/learn/french-foundations"
-          className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]"
+          className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]"
         >
           ← French Foundations
         </Link>
@@ -211,7 +211,7 @@ export default function Unit3Lesson1Page() {
           </div>
         </section>
 
-        <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <section className="mt-16 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
           <h2 className="mt-3 text-3xl font-black">
             You can count from 0 to 20 in French.
           </h2>
@@ -228,7 +228,7 @@ export default function Unit3Lesson1Page() {
             </Link>
             <Link
               href="/learn/french-foundations/unit-3/lesson-2"
-              className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]"
+              className="rounded-full bg-[#D62828] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#B91C1C]"
             >
               Next lesson →
             </Link>

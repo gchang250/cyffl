@@ -5,18 +5,26 @@ import FillInTheBlank from "@/components/FillInTheBlank";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const flashcards = [
-  { front: "parler", back: "to speak", subtext: "Je parle français. — I speak French." },
+  { front: "parler", back: "to speak", subtext: "Je parle français. I speak French." },
   { front: "manger", back: "to eat", subtext: "Note: nous mangeons (keep the g soft before -ons)." },
-  { front: "regarder", back: "to watch", subtext: "Je regarde la télé. — I watch TV." },
-  { front: "écouter", back: "to listen", subtext: "Tu écoutes de la musique. — You listen to music." },
-  { front: "jouer", back: "to play", subtext: "Il joue au foot. — He plays soccer." },
-  { front: "travailler", back: "to work", subtext: "Elle travaille beaucoup. — She works a lot." },
-  { front: "habiter", back: "to live (somewhere)", subtext: "Nous habitons à Montréal. — We live in Montreal." },
-  { front: "danser", back: "to dance", subtext: "Vous dansez bien. — You dance well." },
-  { front: "chanter", back: "to sing", subtext: "Ils chantent ensemble. — They sing together." },
-  { front: "étudier", back: "to study", subtext: "J'étudie le français. — I study French." },
-  { front: "chercher", back: "to look for", subtext: "Elle cherche ses clés. — She's looking for her keys." },
+  { front: "regarder", back: "to watch", subtext: "Je regarde la télé. I watch TV." },
+  { front: "écouter", back: "to listen", subtext: "Tu écoutes de la musique. You listen to music." },
+  { front: "jouer", back: "to play", subtext: "Il joue au foot. He plays soccer." },
+  { front: "travailler", back: "to work", subtext: "Elle travaille beaucoup. She works a lot." },
+  { front: "habiter", back: "to live (somewhere)", subtext: "Nous habitons à Montréal. We live in Montreal." },
+  { front: "danser", back: "to dance", subtext: "Vous dansez bien. You dance well." },
+  { front: "chanter", back: "to sing", subtext: "Ils chantent ensemble. They sing together." },
+  { front: "étudier", back: "to study", subtext: "J'étudie le français. I study French." },
+  { front: "chercher", back: "to look for", subtext: "Elle cherche ses clés. She's looking for her keys." },
   { front: "aimer", back: "to like / to love", subtext: "Already familiar from Unit 3!" },
+  { front: "rentrer", back: "to go home / to return", subtext: "Je rentre à 18h. I'm going home at 6pm." },
+  { front: "oublier", back: "to forget", subtext: "N'oublie pas ton livre! Don't forget your book!" },
+  { front: "montrer", back: "to show", subtext: "Il me montre comment faire. He's showing me how." },
+  { front: "expliquer", back: "to explain", subtext: "Tu peux m'expliquer? Can you explain to me?" },
+  { front: "préparer", back: "to prepare", subtext: "Elle prépare le souper. She's preparing dinner." },
+  { front: "fermer", back: "to close", subtext: "Ferme la porte, s'il te plaît! Close the door, please!" },
+  { front: "tomber", back: "to fall", subtext: "Il tombe souvent. He falls often." },
+  { front: "rester", back: "to stay / to remain", subtext: "Je reste à la maison ce soir. I'm staying home tonight." },
 ];
 
 const pairs = [
@@ -81,7 +89,7 @@ const questions = [
   },
   {
     question: "A student conjugates 'danser' for 'elle' as 'elle dancez.' What is wrong?",
-    options: ["The stem is wrong — it should be dans-.", "The ending -ez is only for vous.", "Danser is an irregular verb.", "The subject should be il, not elle."],
+    options: ["The stem is wrong: it should be dans-.", "The ending -ez is only for vous.", "Danser is an irregular verb.", "The subject should be il, not elle."],
     correct: 1,
     explanation: "-ez is the vous ending. For elle, use -e: elle danse. Confusing vous (-ez) and il/elle (-e) is a very common mistake.",
   },
@@ -91,7 +99,7 @@ export default function Unit4Lesson3Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/french-foundations" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/french-foundations" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← French Foundations
         </Link>
 
@@ -115,6 +123,31 @@ export default function Unit4Lesson3Page() {
           </div>
         </div>
 
+        <div className="mt-10 rounded-2xl bg-[#0B1F3A] p-6 text-white">
+          <p className="text-lg font-black">The -er verb pattern</p>
+          <p className="mt-3 leading-7 text-[#CBD5E1]">
+            Regular -er verbs all follow the same pattern: take the infinitive, remove the <strong className="text-white">-er</strong>, then add the right ending. There are six endings, one for each subject pronoun: <strong className="text-white">-e, -es, -e, -ons, -ez, -ent</strong>. The most important thing to know: the <em>je</em>, <em>il/elle</em>, and <em>ils/elles</em> endings are all silent when spoken. Only <em>-ons</em> and <em>-ez</em> produce audible endings.
+          </p>
+          <div className="mt-4 grid grid-cols-2 gap-2 text-sm sm:grid-cols-3">
+            {[
+              ["je", "-e"],
+              ["tu", "-es"],
+              ["il/elle", "-e"],
+              ["nous", "-ons"],
+              ["vous", "-ez"],
+              ["ils/elles", "-ent"],
+            ].map(([pronoun, ending]) => (
+              <div key={pronoun} className="rounded-xl bg-white/10 px-3 py-2">
+                <span className="text-white/60">{pronoun} </span>
+                <span className="font-black text-[#C9A44C]">{ending}</span>
+              </div>
+            ))}
+          </div>
+          <p className="mt-4 text-sm text-[#CBD5E1]">
+            <strong className="text-white">Watch out:</strong> some -er verbs have spelling changes in certain forms. Verbs ending in <em>-ger</em> (manger, voyager, nager) add a silent <em>e</em> before <em>-ons</em>: nous mangeons. Verbs ending in <em>-cer</em> (commencer, lancer) use a cedilla before <em>-ons</em>: nous commençons. These spelling changes preserve the soft sound of the consonant.
+          </p>
+        </div>
+
         <div className="mt-12">
           <FlashCardDeck cards={flashcards} title="Common -er verbs" />
         </div>
@@ -133,7 +166,7 @@ export default function Unit4Lesson3Page() {
 
         <div className="mt-16 flex items-center justify-between gap-4">
           <Link href="/learn/french-foundations/unit-4/lesson-2" className="rounded-full border border-[#E7DAB9] bg-white px-5 py-2.5 text-sm font-black text-[#526173] transition hover:-translate-y-0.5">← Previous</Link>
-          <Link href="/learn/french-foundations/unit-4/lesson-4" className="rounded-full bg-[#2563EB] px-5 py-2.5 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Next lesson →</Link>
+          <Link href="/learn/french-foundations/unit-4/lesson-4" className="rounded-full bg-[#D62828] px-5 py-2.5 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">Next lesson →</Link>
         </div>
       </section>
     </main>

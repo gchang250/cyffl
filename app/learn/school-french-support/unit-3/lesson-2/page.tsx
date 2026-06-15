@@ -5,18 +5,18 @@ import FillInTheBlank from "@/components/FillInTheBlank";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const cards = [
-  { front: "aller", back: "allé(e) — gone", subtext: "Je suis allé au marché. — I went to the market." },
-  { front: "venir", back: "venu(e) — come", subtext: "Elle est venue hier soir. — She came yesterday evening." },
-  { front: "partir", back: "parti(e) — left", subtext: "Ils sont partis tôt. — They left early." },
-  { front: "arriver", back: "arrivé(e) — arrived", subtext: "Tu es arrivée en retard. — You arrived late. (fem.)" },
-  { front: "entrer", back: "entré(e) — entered", subtext: "Nous sommes entrés dans la salle. — We entered the room." },
-  { front: "sortir", back: "sorti(e) — gone out", subtext: "Elle est sortie avec ses amis. — She went out with her friends." },
-  { front: "naître", back: "né(e) — born", subtext: "Il est né en 2005. — He was born in 2005." },
-  { front: "mourir", back: "mort(e) — died", subtext: "Le chien est mort la semaine dernière. — The dog died last week." },
-  { front: "tomber", back: "tombé(e) — fallen", subtext: "Il est tombé dans l'escalier. — He fell on the stairs." },
-  { front: "rester", back: "resté(e) — stayed", subtext: "Nous sommes restés à la maison. — We stayed at home." },
-  { front: "monter", back: "monté(e) — gone up", subtext: "Elle est montée au premier étage. — She went up to the first floor." },
-  { front: "descendre", back: "descendu(e) — gone down", subtext: "Ils sont descendus en courant. — They ran downstairs." },
+  { front: "aller", back: "allé(e): gone", subtext: "Je suis allé au marché.: I went to the market." },
+  { front: "venir", back: "venu(e): come", subtext: "Elle est venue hier soir.: She came yesterday evening." },
+  { front: "partir", back: "parti(e): left", subtext: "Ils sont partis tôt.: They left early." },
+  { front: "arriver", back: "arrivé(e): arrived", subtext: "Tu es arrivée en retard.: You arrived late. (fem.)" },
+  { front: "entrer", back: "entré(e): entered", subtext: "Nous sommes entrés dans la salle.: We entered the room." },
+  { front: "sortir", back: "sorti(e): gone out", subtext: "Elle est sortie avec ses amis.: She went out with her friends." },
+  { front: "naître", back: "né(e): born", subtext: "Il est né en 2005.: He was born in 2005." },
+  { front: "mourir", back: "mort(e): died", subtext: "Le chien est mort la semaine dernière.: The dog died last week." },
+  { front: "tomber", back: "tombé(e): fallen", subtext: "Il est tombé dans l'escalier.: He fell on the stairs." },
+  { front: "rester", back: "resté(e): stayed", subtext: "Nous sommes restés à la maison.: We stayed at home." },
+  { front: "monter", back: "monté(e): gone up", subtext: "Elle est montée au premier étage.: She went up to the first floor." },
+  { front: "descendre", back: "descendu(e): gone down", subtext: "Ils sont descendus en courant.: They ran downstairs." },
 ];
 
 const pairs = [
@@ -31,9 +31,9 @@ const pairs = [
 const exercises = [
   { before: "Elle", after: "au cinéma hier. (aller)", answer: "est allée", hint: "être (elle est) + allé + agreement: feminine → allée", translation: "She went to the cinema yesterday." },
   { before: "Nous", after: "à midi. (arriver)", answer: "sommes arrivés", hint: "être (nous sommes) + arrivé + agreement: masculine plural → arrivés", translation: "We arrived at noon." },
-  { before: "Il", after: "à Paris. (naître)", answer: "est né", hint: "être (il est) + né — masculine singular, no agreement change", translation: "He was born in Paris." },
+  { before: "Il", after: "à Paris. (naître)", answer: "est né", hint: "être (il est) + né: masculine singular, no agreement change", translation: "He was born in Paris." },
   { before: "Les filles", after: "de la salle. (sortir)", answer: "sont sorties", hint: "être (elles sont) + sorti + agreement: feminine plural → sorties", translation: "The girls left the room." },
-  { before: "Je (m.)", after: "à l'hôtel. (rester)", answer: "suis resté", hint: "être (je suis) + resté — masculine subject, no extra ending", translation: "I stayed at the hotel." },
+  { before: "Je (m.)", after: "à l'hôtel. (rester)", answer: "suis resté", hint: "être (je suis) + resté: masculine subject, no extra ending", translation: "I stayed at the hotel." },
 ];
 
 const questions = [
@@ -74,7 +74,7 @@ const questions = [
   },
   {
     question: "A student writes 'Il est tombé sur le verglas.' Is this correct?",
-    options: ["No — tomber uses avoir.", "No — the past participle should be tombée.", "Yes — tomber uses être, and il (masculine) → tombé.", "No — the subject should agree with the participle differently."],
+    options: ["No: tomber uses avoir.", "No: the past participle should be tombée.", "Yes: tomber uses être, and il (masculine) → tombé.", "No: the subject should agree with the participle differently."],
     correct: 2,
     explanation: "Tomber uses être. Il (masculine singular) → tombé (no extra ending). Il est tombé = He fell. Correct!",
   },
@@ -101,7 +101,7 @@ export default function Unit3Lesson2Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/school-french-support" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/school-french-support" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← School French Support
         </Link>
 
@@ -149,13 +149,13 @@ export default function Unit3Lesson2Page() {
         </div>
 
         <div className="mt-12">
-          <FlashCardDeck cards={cards} title="Être verbs — past participles" />
+          <FlashCardDeck cards={cards} title="Être verbs: past participles" />
         </div>
 
         <div className="mt-12 rounded-2xl bg-[#0B1F3A] p-6 text-white">
           <p className="text-lg font-black">Past participle agreement with être</p>
           <p className="mt-3 leading-7 text-[#CBD5E1]">
-            Unlike avoir verbs, the past participle of être verbs changes to match the subject's gender and number — just like an adjective.
+            Unlike avoir verbs, the past participle of être verbs changes to match the subject's gender and number: just like an adjective.
           </p>
           <div className="mt-4 grid gap-2 text-sm sm:grid-cols-2">
             <div className="rounded-lg bg-white/10 p-3">

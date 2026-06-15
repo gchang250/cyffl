@@ -34,7 +34,7 @@ const questions = [
       "Chaque soir, il a regarder la télé.",
     ],
     correct: 1,
-    explanation: "'Chaque soir' signals a habitual, repeated past action — always imparfait. Il regardait la télé chaque soir = he used to watch TV every evening.",
+    explanation: "'Chaque soir' signals a habitual, repeated past action: always imparfait. Il regardait la télé chaque soir = he used to watch TV every evening.",
   },
   {
     question: "When should you use the passé composé rather than the imparfait?",
@@ -51,18 +51,18 @@ const questions = [
     question: "Which time expression signals the imparfait?",
     options: ["soudain", "un jour", "autrefois", "puis"],
     correct: 2,
-    explanation: "'Autrefois' (in the old days / formerly) signals habitual or ongoing past — imparfait. 'Soudain', 'un jour', and 'puis' all signal completed events — passé composé.",
+    explanation: "'Autrefois' (in the old days / formerly) signals habitual or ongoing past: imparfait. 'Soudain', 'un jour', and 'puis' all signal completed events: passé composé.",
   },
   {
     question: "In 'Il pleuvait quand je suis arrivé', what is the role of 'il pleuvait'?",
     options: [
       "It is the interrupting event.",
       "It is the background ongoing action.",
-      "It is wrong — should be passé composé.",
+      "It is wrong: should be passé composé.",
       "It describes a habit.",
     ],
     correct: 1,
-    explanation: "'Il pleuvait' (imparfait) is the ongoing background: the rain was the stage. 'Je suis arrivé' (passé composé) is the event — my arrival interrupted the background rain.",
+    explanation: "'Il pleuvait' (imparfait) is the ongoing background: the rain was the stage. 'Je suis arrivé' (passé composé) is the event: my arrival interrupted the background rain.",
   },
   {
     question: "Which sentence correctly opens a story using both tenses?",
@@ -85,7 +85,7 @@ const questions = [
     question: "Which storytelling phrase introduces the conclusion of a narrative?",
     options: ["Il était une fois...", "Pendant que...", "Finalement, ...", "Quand j'étais jeune..."],
     correct: 2,
-    explanation: "'Finalement' (finally) marks the concluding event — always followed by passé composé. 'Il était une fois' opens, 'pendant que' introduces background, and 'quand j'étais jeune' signals habitual past.",
+    explanation: "'Finalement' (finally) marks the concluding event: always followed by passé composé. 'Il était une fois' opens, 'pendant que' introduces background, and 'quand j'étais jeune' signals habitual past.",
   },
 ];
 
@@ -93,7 +93,7 @@ export default function Unit4TestPage() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/school-french-support/unit-4/lesson-4" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/school-french-support/unit-4/lesson-4" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← Back to Lesson 4
         </Link>
 
@@ -133,7 +133,7 @@ export default function Unit4TestPage() {
           <MultipleChoiceQuiz questions={questions} title="Unit 4 test" />
         </div>
 
-        <div className="mt-12 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <div className="mt-12 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
           <p className="font-black text-lg">Ready for Unit 5?</p>
           <p className="mt-2 text-[#526173]">Unit 5 builds on everything you've learned so far, introducing the future tense and more advanced French grammar structures.</p>
           <div className="mt-5 flex flex-wrap gap-3">

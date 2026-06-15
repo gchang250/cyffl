@@ -8,12 +8,12 @@ const flashcards = [
   { front: "le développement durable", back: "sustainable development", subtext: "'Concilier développement économique et développement durable.' = Reconciling economic development and sustainable development. A central concept across environment, society, and economics texts." },
   { front: "l'empreinte carbone (f)", back: "carbon footprint", subtext: "'Réduire son empreinte carbone.' = To reduce one's carbon footprint. Related: les émissions de gaz à effet de serre (greenhouse gas emissions), la décarbonation (decarbonization)." },
   { front: "les inégalités sociales (f pl)", back: "social inequalities", subtext: "'Les inégalités sociales se creusent.' = Social inequalities are widening. 'Se creuser' = to widen/deepen. A very common structure for talking about growing problems." },
-  { front: "l'intégration (f)", back: "integration (social)", subtext: "'Les politiques d'intégration des immigrants.' = Immigrant integration policies. Linked to immigration texts — very relevant to candidates taking TEF Canada for immigration purposes." },
+  { front: "l'intégration (f)", back: "integration (social)", subtext: "'Les politiques d'intégration des immigrants.' = Immigrant integration policies. Linked to immigration texts: very relevant to candidates taking TEF Canada for immigration purposes." },
   { front: "la cohésion sociale", back: "social cohesion", subtext: "'La diversité culturelle renforce la cohésion sociale.' = Cultural diversity strengthens social cohesion. A theme in both society and politics texts in TEF Canada." },
   { front: "l'intelligence artificielle (f)", back: "artificial intelligence (AI)", subtext: "'L'intelligence artificielle transforme le marché du travail.' = AI is transforming the labour market. Technology texts are among the most common in TEF Canada reading and listening sections." },
   { front: "la vie privée / la confidentialité", back: "privacy / confidentiality", subtext: "'La collecte de données soulève des questions de vie privée.' = Data collection raises privacy concerns. TEF Canada technology texts frequently discuss privacy, data, and digital rights." },
-  { front: "la santé publique", back: "public health", subtext: "'Les mesures de santé publique ont permis de limiter la propagation.' = Public health measures helped limit the spread. Health texts are common — know public health vocabulary." },
-  { front: "le système de soins de santé", back: "healthcare system", subtext: "'Le financement du système de soins de santé.' = Funding the healthcare system. Canada's healthcare is a frequent topic — l'accès aux soins (access to care), les temps d'attente (wait times)." },
+  { front: "la santé publique", back: "public health", subtext: "'Les mesures de santé publique ont permis de limiter la propagation.' = Public health measures helped limit the spread. Health texts are common: know public health vocabulary." },
+  { front: "le système de soins de santé", back: "healthcare system", subtext: "'Le financement du système de soins de santé.' = Funding the healthcare system. Canada's healthcare is a frequent topic: l'accès aux soins (access to care), les temps d'attente (wait times)." },
   { front: "le marché du travail", back: "labour market / job market", subtext: "'Les transformations du marché du travail à l'ère numérique.' = Labour market transformations in the digital age. Links technology, society, and economics topics." },
   { front: "la mondialisation", back: "globalization", subtext: "'Les effets de la mondialisation sur les économies locales.' = The effects of globalization on local economies. Appears in economics, society, and politics texts." },
   { front: "la citoyenneté", back: "citizenship", subtext: "'L'acquisition de la citoyenneté canadienne nécessite une connaissance du français.' = Acquiring Canadian citizenship requires knowledge of French. Directly relevant to TEF Canada candidates." },
@@ -69,7 +69,7 @@ const quiz = [
       "Social media and its effect on youth employment",
     ],
     correct: 1,
-    explanation: "'Les transformations du marché du travail' = changes in the labour market. 'À l'ère numérique' = in the digital age. 'Toucher de nombreux secteurs' = to affect many sectors. This sentence connects technology and employment — a very common TEF Canada theme.",
+    explanation: "'Les transformations du marché du travail' = changes in the labour market. 'À l'ère numérique' = in the digital age. 'Toucher de nombreux secteurs' = to affect many sectors. This sentence connects technology and employment: a very common TEF Canada theme.",
   },
   {
     question: "Which word means 'to reduce one's carbon footprint'?",
@@ -80,7 +80,7 @@ const quiz = [
       "'partager son empreinte carbone'",
     ],
     correct: 1,
-    explanation: "'Réduire son empreinte carbone' = to reduce one's carbon footprint. TEF Canada environmental texts will ask you to answer questions about what a speaker or text says should be done — understanding 'réduire', 'limiter', 'diminuer' vs 'augmenter', 'accroître' is essential.",
+    explanation: "'Réduire son empreinte carbone' = to reduce one's carbon footprint. TEF Canada environmental texts will ask you to answer questions about what a speaker or text says should be done: understanding 'réduire', 'limiter', 'diminuer' vs 'augmenter', 'accroître' is essential.",
   },
   {
     question: "Which health vocabulary phrase means 'universal healthcare' in French?",
@@ -92,13 +92,13 @@ const quiz = [
     question: "A TEF Canada text discusses 'le logement abordable' (affordable housing). Which topic category is this?",
     options: ["Technology", "Environment", "Society", "Health"],
     correct: 2,
-    explanation: "'Le logement abordable' (affordable housing) falls under the Society topic — alongside themes like immigration, social inequality, education access, and urban development. These are all common TEF Canada reading and listening text subjects.",
+    explanation: "'Le logement abordable' (affordable housing) falls under the Society topic: alongside themes like immigration, social inequality, education access, and urban development. These are all common TEF Canada reading and listening text subjects.",
   },
   {
     question: "Complete this sentence: 'Les avancées de _____ artificielle soulèvent des questions éthiques sur l'emploi.'",
     options: ["l'intelligence", "la recherche", "l'innovation", "la technologie"],
     correct: 0,
-    explanation: "'L'intelligence artificielle' (AI) — 'les avancées de l'intelligence artificielle soulèvent des questions éthiques sur l'emploi' = AI advances raise ethical questions about employment. AI is a rapidly growing TEF Canada technology topic — learn to recognize 'IA' (the French abbreviation) and related vocabulary.",
+    explanation: "'L'intelligence artificielle' (AI): 'les avancées de l'intelligence artificielle soulèvent des questions éthiques sur l'emploi' = AI advances raise ethical questions about employment. AI is a rapidly growing TEF Canada technology topic: learn to recognize 'IA' (the French abbreviation) and related vocabulary.",
   },
 ];
 
@@ -106,7 +106,7 @@ export default function TEFLesson1Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/canadian-french-tests" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/canadian-french-tests" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← French for Canadian Tests
         </Link>
 
@@ -127,7 +127,7 @@ export default function TEFLesson1Page() {
             <div className="rounded-2xl bg-[#0B1F3A] p-5 text-white">
               <p className="text-xs font-bold text-[#C9A44C]">Why this matters</p>
               <p className="mt-2 leading-7 text-white/80">
-                You can&apos;t answer a comprehension question about a text you can&apos;t follow. These 14 words and phrases cover the most frequent TEF Canada themes — knowing them turns confusing texts into readable ones.
+                You can&apos;t answer a comprehension question about a text you can&apos;t follow. These 14 words and phrases cover the most frequent TEF Canada themes: knowing them turns confusing texts into readable ones.
               </p>
             </div>
             <div className="rounded-2xl border border-[#E7DAB9] bg-white p-5">
@@ -146,7 +146,7 @@ export default function TEFLesson1Page() {
           <h2 className="text-2xl font-black">Learn the vocabulary</h2>
           <p className="mt-1 text-[#526173]">Every card includes a real sentence from the kind of text you&apos;ll encounter in TEF Canada. Flip to see the English and the explanation.</p>
           <div className="mt-6">
-            <FlashCardDeck cards={flashcards} title="TEF Canada — topic vocabulary" />
+            <FlashCardDeck cards={flashcards} title="TEF Canada: topic vocabulary" />
           </div>
         </section>
 
@@ -166,7 +166,7 @@ export default function TEFLesson1Page() {
           </div>
         </section>
 
-        <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <section className="mt-16 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
           <h2 className="mt-3 text-3xl font-black">Topic vocabulary built.</h2>
           <p className="mt-3 leading-7 text-[#526173]">
             Next: the opinion and argumentation phrases you need to score well on TEF Canada speaking and writing.
@@ -175,7 +175,7 @@ export default function TEFLesson1Page() {
             <Link href="/learn/canadian-french-tests/unit-1/test" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">
               ← Unit 1 Test
             </Link>
-            <Link href="/learn/canadian-french-tests/unit-2/lesson-2" className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">
+            <Link href="/learn/canadian-french-tests/unit-2/lesson-2" className="rounded-full bg-[#D62828] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">
               Next lesson →
             </Link>
           </div>

@@ -3,32 +3,32 @@ import FlashCardDeck from "@/components/FlashCardDeck";
 import MatchPairs from "@/components/MatchPairs";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
-// TEF Canada Written Expression — official format:
-// Section A (25 min): Continue an article — minimum 80 words
-// Section B (35 min): Express and justify a viewpoint — minimum 200 words
+// TEF Canada Written Expression: official format:
+// Section A (25 min): Continue an article: minimum 80 words
+// Section B (35 min): Express and justify a viewpoint: minimum 200 words
 // Both are open-ended writing tasks, NOT multiple choice.
 // Scored on: pertinence, cohérence, vocabulaire, morphosyntaxe.
 
 const flashcards = [
-  { front: "Section A — Continuation d'article (80 mots min.)", back: "Continue an article — minimum 80 words, 25 minutes", subtext: "You are given the opening paragraph(s) of a journalistic or informational article. You continue it in the same style, tone, and register. Match the author's voice — if the opening is formal and factual, your continuation should be too." },
-  { front: "Section B — Expression d'un point de vue (200 mots min.)", back: "Express and justify a viewpoint — minimum 200 words, 35 minutes", subtext: "You are given a statement or topic and must express your opinion AND justify it with arguments. This is an argumentative text — state your position clearly, support it with at least two arguments, and include a conclusion." },
-  { front: "la pertinence", back: "relevance / staying on task", subtext: "The most important criterion. In Section A, your continuation must be consistent with the article's subject and tone. In Section B, your response must address the statement given — not a related topic you prefer." },
+  { front: "Section A: Continuation d'article (80 mots min.)", back: "Continue an article: minimum 80 words, 25 minutes", subtext: "You are given the opening paragraph(s) of a journalistic or informational article. You continue it in the same style, tone, and register. Match the author's voice: if the opening is formal and factual, your continuation should be too." },
+  { front: "Section B: Expression d'un point de vue (200 mots min.)", back: "Express and justify a viewpoint: minimum 200 words, 35 minutes", subtext: "You are given a statement or topic and must express your opinion AND justify it with arguments. This is an argumentative text: state your position clearly, support it with at least two arguments, and include a conclusion." },
+  { front: "la pertinence", back: "relevance / staying on task", subtext: "The most important criterion. In Section A, your continuation must be consistent with the article's subject and tone. In Section B, your response must address the statement given: not a related topic you prefer." },
   { front: "la cohérence et la cohésion", back: "coherence (logical flow) + cohesion (linguistic links)", subtext: "Coherence: ideas progress logically. Cohesion: you use connectors and pronouns to link sentences. 'Cependant', 'de plus', 'par conséquent', 'c'est pourquoi' all create cohesion. Avoid starting every sentence with 'Je'." },
-  { front: "la morphosyntaxe", back: "grammar — agreement, conjugation, sentence structure", subtext: "The examiner checks agreement (adjective, participle), verb conjugation, and sentence structure. You lose marks for systematic errors — repeated agreement mistakes signal a structural gap. Vary your sentence structures." },
-  { front: "le registre journalistique", back: "journalistic register — for Section A", subtext: "Journalistic French is formal but direct. Uses the present tense for current facts, the passé composé for recent events. Avoids first-person (use 'on', 'les experts', 'les études montrent'). No 'je pense que' — state facts or attribute opinions to sources." },
-  { front: "le texte argumentatif", back: "argumentative text — for Section B", subtext: "Structure: introduction (restate the topic + your position) → argument 1 + support → argument 2 + support → conclusion (restate position + call to action or broader implication). Each argument needs a specific example or evidence." },
-  { front: "la thèse", back: "thesis — your main position in Section B", subtext: "'À mon avis, …' or 'Il me semble que …' stated clearly in the introduction. Then every argument should support this thesis. Don't change your position mid-text — examiners value consistency." },
-  { front: "l'exemple concret", back: "concrete example — essential for Section B", subtext: "After each argument, add 'Par exemple, …' or 'C'est le cas de …' A claim without evidence reads as unsupported. Even approximate examples work — the examiner is not fact-checking your statistics, only assessing your French." },
-  { front: "la conclusion de Section B", back: "conclusion — final paragraph of Section B", subtext: "'En conclusion, …' or 'Pour conclure, …' + restate your thesis + broader implication or call to action. 'Il est donc essentiel que la société prenne des mesures pour…' A conclusion without a connector is just an abrupt ending." },
+  { front: "la morphosyntaxe", back: "grammar: agreement, conjugation, sentence structure", subtext: "The examiner checks agreement (adjective, participle), verb conjugation, and sentence structure. You lose marks for systematic errors: repeated agreement mistakes signal a structural gap. Vary your sentence structures." },
+  { front: "le registre journalistique", back: "journalistic register: for Section A", subtext: "Journalistic French is formal but direct. Uses the present tense for current facts, the passé composé for recent events. Avoids first-person (use 'on', 'les experts', 'les études montrent'). No 'je pense que': state facts or attribute opinions to sources." },
+  { front: "le texte argumentatif", back: "argumentative text: for Section B", subtext: "Structure: introduction (restate the topic + your position) → argument 1 + support → argument 2 + support → conclusion (restate position + call to action or broader implication). Each argument needs a specific example or evidence." },
+  { front: "la thèse", back: "thesis: your main position in Section B", subtext: "'À mon avis, …' or 'Il me semble que …' stated clearly in the introduction. Then every argument should support this thesis. Don't change your position mid-text: examiners value consistency." },
+  { front: "l'exemple concret", back: "concrete example: essential for Section B", subtext: "After each argument, add 'Par exemple, …' or 'C'est le cas de …' A claim without evidence reads as unsupported. Even approximate examples work: the examiner is not fact-checking your statistics, only assessing your French." },
+  { front: "la conclusion de Section B", back: "conclusion: final paragraph of Section B", subtext: "'En conclusion, …' or 'Pour conclure, …' + restate your thesis + broader implication or call to action. 'Il est donc essentiel que la société prenne des mesures pour…' A conclusion without a connector is just an abrupt ending." },
 ];
 
 const matchPairs = [
-  { left: "Section A — continuation d'article", right: "continue an article in the same style" },
-  { left: "Section B — point de vue", right: "argue a position with evidence" },
+  { left: "Section A: continuation d'article", right: "continue an article in the same style" },
+  { left: "Section B: point de vue", right: "argue a position with evidence" },
   { left: "la pertinence", right: "staying on the given topic" },
   { left: "le registre journalistique", right: "formal, third-person, present tense for facts" },
   { left: "la thèse", right: "your stated position in Section B" },
-  { left: "la morphosyntaxe", right: "grammar — agreement and conjugation" },
+  { left: "la morphosyntaxe", right: "grammar: agreement and conjugation" },
 ];
 
 const quiz = [
@@ -36,7 +36,7 @@ const quiz = [
     question: "Section A gives you the opening of an article about urban cycling infrastructure. The opening uses the third person, present tense, and cites statistics. Your continuation should:",
     options: [
       "Switch to first person to give your personal opinion on cycling",
-      "Continue in third person, present tense, citing facts or expert views — matching the journalistic register",
+      "Continue in third person, present tense, citing facts or expert views: matching the journalistic register",
       "Add a personal anecdote about a time you rode a bike",
       "Start a new topic more interesting than cycling",
     ],
@@ -52,7 +52,7 @@ const quiz = [
       "List all the features of social media platforms",
     ],
     correct: 1,
-    explanation: "Section B is argumentative. Your introduction must state your thesis — your clear position on the question. 'À mon avis… notamment parce que' signals your position AND previews your first argument. Describing social media or saying 'it's complex' without taking a position fails the pertinence criterion.",
+    explanation: "Section B is argumentative. Your introduction must state your thesis: your clear position on the question. 'À mon avis… notamment parce que' signals your position AND previews your first argument. Describing social media or saying 'it's complex' without taking a position fails the pertinence criterion.",
   },
   {
     question: "In Section B, you've stated your thesis and written your first argument. What must come immediately after the argument?",
@@ -63,7 +63,7 @@ const quiz = [
       "A definition of the key term",
     ],
     correct: 2,
-    explanation: "Every argument in Section B needs support: 'Par exemple, …' or 'Selon une étude de …' or 'C'est le cas en France, où …'. A claim with no example is unsubstantiated. The examiner isn't fact-checking — give any relevant example. An unsupported argument reads as an opinion, not an argument.",
+    explanation: "Every argument in Section B needs support: 'Par exemple, …' or 'Selon une étude de …' or 'C'est le cas en France, où …'. A claim with no example is unsubstantiated. The examiner isn't fact-checking: give any relevant example. An unsupported argument reads as an opinion, not an argument.",
   },
   {
     question: "Which sentence correctly opens a Section B conclusion?",
@@ -74,18 +74,18 @@ const quiz = [
       "'C'est tout ce que j'ai à dire.'",
     ],
     correct: 1,
-    explanation: "'En conclusion, il apparaît clairement que…' restates the thesis formally. 'Il est donc essentiel que…' adds a call to action or broader implication — this is the hallmark of a high-scoring conclusion. The first option is grammatically fine but too casual; the others are not appropriate for a written exam.",
+    explanation: "'En conclusion, il apparaît clairement que…' restates the thesis formally. 'Il est donc essentiel que…' adds a call to action or broader implication: this is the hallmark of a high-scoring conclusion. The first option is grammatically fine but too casual; the others are not appropriate for a written exam.",
   },
   {
     question: "Your Section B text has 185 words. You have 3 minutes left. You should:",
     options: [
-      "Submit — close enough to 200",
+      "Submit: close enough to 200",
       "Add one more substantive sentence to your conclusion to reach 200+ words",
       "Copy your introduction at the end to pad the word count",
-      "Stop writing and leave it at 185 — quality over quantity",
+      "Stop writing and leave it at 185: quality over quantity",
     ],
     correct: 1,
-    explanation: "200 words is the official minimum — falling short signals an incomplete response and can cap your score. Add one solid sentence: 'Il incombe aux gouvernements et aux plateformes de mettre en place des mesures de protection adaptées.' This is substantive, not padding, and gets you over the threshold.",
+    explanation: "200 words is the official minimum: falling short signals an incomplete response and can cap your score. Add one solid sentence: 'Il incombe aux gouvernements et aux plateformes de mettre en place des mesures de protection adaptées.' This is substantive, not padding, and gets you over the threshold.",
   },
   {
     question: "Section A of the TEF Canada writing test asks you to 'continue an article.' Which of the following is the single most important constraint?",
@@ -96,7 +96,7 @@ const quiz = [
       "Write in a different tense than the original",
     ],
     correct: 1,
-    explanation: "Section A continuation writing must maintain coherence with the original — same topic direction, same register (formal/journalistic), same tone. You're extending the article, not starting a new one. The examiner assesses whether the continuation feels natural and consistent.",
+    explanation: "Section A continuation writing must maintain coherence with the original: same topic direction, same register (formal/journalistic), same tone. You're extending the article, not starting a new one. The examiner assesses whether the continuation feels natural and consistent.",
   },
   {
     question: "Which of the following correctly uses a 'pour que' structure at the level expected in TEF writing?",
@@ -118,7 +118,7 @@ const quiz = [
       "Give a personal anecdote about the topic",
     ],
     correct: 1,
-    explanation: "A strong Section B introduction: (1) introduces the topic/debate, (2) acknowledges complexity ('D'un côté… de l'autre…'), (3) clearly states your thesis. This three-part structure is what examiners look for — it signals organization and register from the first paragraph.",
+    explanation: "A strong Section B introduction: (1) introduces the topic/debate, (2) acknowledges complexity ('D'un côté… de l'autre…'), (3) clearly states your thesis. This three-part structure is what examiners look for: it signals organization and register from the first paragraph.",
   },
 ];
 
@@ -126,7 +126,7 @@ export default function TEFLesson3Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/canadian-french-tests" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/canadian-french-tests" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← French for Canadian Tests
         </Link>
 
@@ -136,7 +136,7 @@ export default function TEFLesson3Page() {
               Unit 2 · Lesson 3
             </p>
             <h1 className="mt-3 text-5xl font-black tracking-tight md:text-6xl">
-              TEF Canada — Written Expression
+              TEF Canada: Written Expression
             </h1>
             <p className="mt-4 text-lg leading-8 text-[#526173]">
               The TEF Canada writing test has two open-ended tasks in one hour. Section A: continue a journalistic article (80+ words, 25 min). Section B: express and justify your opinion on a topic (200+ words, 35 min).
@@ -170,11 +170,11 @@ export default function TEFLesson3Page() {
           <h2 className="text-2xl font-black">Key concepts and vocabulary</h2>
           <p className="mt-1 text-[#526173]">Flip each card to understand both writing tasks and their requirements.</p>
           <div className="mt-6">
-            <FlashCardDeck cards={flashcards} title="TEF Canada Written Expression — both sections" />
+            <FlashCardDeck cards={flashcards} title="TEF Canada Written Expression: both sections" />
           </div>
         </section>
 
-        <section className="mt-16 rounded-[2rem] border-2 border-[#EFF6FF] bg-white p-8">
+        <section className="mt-16 rounded-2xl border-2 border-[#EFF6FF] bg-white p-8">
           <p className="text-xs font-bold uppercase tracking-widest text-[#2563EB]">Side by side — the two writing tasks</p>
           <div className="mt-4 grid gap-6 md:grid-cols-2">
             <div>
@@ -215,7 +215,7 @@ export default function TEFLesson3Page() {
         <section className="mt-12">
           <h2 className="text-2xl font-black">Match the pairs</h2>
           <div className="mt-6">
-            <MatchPairs pairs={matchPairs} title="TEF Writing — key terms" />
+            <MatchPairs pairs={matchPairs} title="TEF Writing: key terms" />
           </div>
         </section>
 
@@ -226,14 +226,14 @@ export default function TEFLesson3Page() {
           </div>
         </section>
 
-        <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <section className="mt-16 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
           <h2 className="mt-3 text-3xl font-black">Written Expression understood.</h2>
           <p className="mt-3 leading-7 text-[#526173]">
-            Next: the TEF Canada listening test — 40 questions in 40 minutes, must answer as you go.
+            Next: the TEF Canada listening test: 40 questions in 40 minutes, must answer as you go.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link href="/learn/canadian-french-tests/unit-2/lesson-2" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">← Previous lesson</Link>
-            <Link href="/learn/canadian-french-tests/unit-2/lesson-4" className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Next lesson →</Link>
+            <Link href="/learn/canadian-french-tests/unit-2/lesson-4" className="rounded-full bg-[#D62828] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">Next lesson →</Link>
           </div>
         </section>
       </section>

@@ -5,14 +5,14 @@ import FillInTheBlank from "@/components/FillInTheBlank";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const cards = [
-  { front: "Opening — introducing the subject", back: "Je me permets de vous écrire au sujet de...\nI am writing to you regarding...", subtext: "Formal and respectful way to open a letter to an institution or government body." },
+  { front: "Opening: introducing the subject", back: "Je me permets de vous écrire au sujet de...\nI am writing to you regarding...", subtext: "Formal and respectful way to open a letter to an institution or government body." },
   { front: "Stating your purpose", back: "Je vous contacte afin de...\nI am contacting you in order to...", subtext: "Clear and direct. Use 'afin de' + infinitive: afin de demander, afin d'obtenir." },
   { front: "Enclosing documents", back: "Veuillez trouver ci-joint...\nPlease find enclosed...", subtext: "Standard phrase for attaching documents: Veuillez trouver ci-joint une copie de mon passeport." },
   { front: "Making a polite request", back: "Je vous saurais gré de bien vouloir...\nI would be grateful if you could...", subtext: "Very formal. Followed by infinitive: Je vous saurais gré de bien vouloir me faire parvenir..." },
   { front: "Following up on a previous contact", back: "Suite à notre conversation du [date],...\nFollowing our conversation on [date],...", subtext: "Suite à notre échange téléphonique du 15 mai, je vous transmets..." },
   { front: "Asking for confirmation", back: "Je vous serais reconnaissant(e) de bien vouloir accuser réception de...\nI would be grateful if you could acknowledge receipt of...", subtext: "Used when you need confirmation that a document was received." },
-  { front: "Formal closing — full", back: "Veuillez agréer, Madame, Monsieur, l'expression de mes salutations distinguées.\n(Yours faithfully / Sincerely yours)", subtext: "The most formal closing in French. Use when writing to someone you don't know." },
-  { front: "Formal closing — semi-formal", back: "Dans l'attente de votre réponse, je vous adresse mes cordiales salutations.\n(Awaiting your reply, I send you my cordial regards.)", subtext: "Slightly warmer than the full formal closing. Common in professional correspondence." },
+  { front: "Formal closing: full", back: "Veuillez agréer, Madame, Monsieur, l'expression de mes salutations distinguées.\n(Yours faithfully / Sincerely yours)", subtext: "The most formal closing in French. Use when writing to someone you don't know." },
+  { front: "Formal closing: semi-formal", back: "Dans l'attente de votre réponse, je vous adresse mes cordiales salutations.\n(Awaiting your reply, I send you my cordial regards.)", subtext: "Slightly warmer than the full formal closing. Common in professional correspondence." },
   { front: "Email subject line", back: "Objet: Demande de renseignements concernant...\nSubject: Request for information regarding...", subtext: "Always include a clear 'Objet:' line in formal French emails." },
   { front: "Expressing urgency politely", back: "Je me permets d'attirer votre attention sur l'urgence de cette situation.\nI take the liberty of drawing your attention to the urgency of this matter.", subtext: "More polite than directly saying 'this is urgent.'" },
 ];
@@ -57,7 +57,7 @@ const exercises = [
   },
   {
     before: "Dans l'attente de votre réponse, je vous adresse mes",
-    after: "salutations. (cordial — semi-formal closing)",
+    after: "salutations. (cordial: semi-formal closing)",
     answer: "cordiales",
     hint: "mes cordiales salutations = my cordial regards",
     translation: "Awaiting your reply, I send you my cordial regards.",
@@ -118,7 +118,7 @@ const questions = [
       "The date of writing",
     ],
     correct: 1,
-    explanation: "'L'objet' = the subject line. In a formal French letter, it appears between the recipient's address and the salutation. Example: 'Objet : Demande de dérogation — dossier n° 2026-045.' It tells the reader immediately why you're writing. In emails, it maps to the email subject field.",
+    explanation: "'L'objet' = the subject line. In a formal French letter, it appears between the recipient's address and the salutation. Example: 'Objet : Demande de dérogation: dossier n° 2026-045.' It tells the reader immediately why you're writing. In emails, it maps to the email subject field.",
   },
   {
     question: "Which phrase correctly introduces a formal request in French?",
@@ -140,7 +140,7 @@ const questions = [
       "Apologize repeatedly throughout the letter",
     ],
     correct: 1,
-    explanation: "Effective formal requests: (1) acknowledge context, (2) state reason briefly, (3) make the request clearly ('Je vous sollicite donc pour…'), (4) express gratitude. Don't beg or over-apologize — be clear, professional, and polite. This structure works for any type of formal request in French.",
+    explanation: "Effective formal requests: (1) acknowledge context, (2) state reason briefly, (3) make the request clearly ('Je vous sollicite donc pour…'), (4) express gratitude. Don't beg or over-apologize: be clear, professional, and polite. This structure works for any type of formal request in French.",
   },
   {
     question: "How do you say 'I am writing to you regarding' in a formal French letter?",
@@ -159,7 +159,7 @@ export default function Unit2Lesson4Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/canadian-life" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/canadian-life" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← French for Canadian Life
         </Link>
 
@@ -168,7 +168,7 @@ export default function Unit2Lesson4Page() {
             <p className="text-xs font-bold uppercase tracking-widest text-[#2563EB]">Unit 2 · Lesson 4</p>
             <h1 className="mt-3 text-5xl font-black tracking-tight md:text-6xl">Writing Formal Requests</h1>
             <p className="mt-4 text-lg leading-8 text-[#526173]">
-              Writing a formal letter or email to a government body, landlord, or institution in French requires a specific structure and tone. The formulas are fixed — once you know them, you can use them again and again.
+              Writing a formal letter or email to a government body, landlord, or institution in French requires a specific structure and tone. The formulas are fixed: once you know them, you can use them again and again.
             </p>
           </div>
 
@@ -176,12 +176,12 @@ export default function Unit2Lesson4Page() {
             <p className="text-sm font-black text-[#0B1F3A]">French formal letter structure</p>
             <ol className="mt-3 space-y-2 text-sm text-[#526173]">
               {[
-                ["1", "Coordonnées de l'expéditeur", "Sender's name, address, phone, email — top left"],
+                ["1", "Coordonnées de l'expéditeur", "Sender's name, address, phone, email: top left"],
                 ["2", "Date", "Written in full: le 15 mai 2026, or Montréal, le 15 mai 2026"],
                 ["3", "Coordonnées du destinataire", "Recipient's name, title, organization, address"],
-                ["4", "Objet:", "Subject line — brief, clear"],
+                ["4", "Objet:", "Subject line: brief, clear"],
                 ["5", "Formule d'appel", "Madame, / Monsieur, / Madame, Monsieur,"],
-                ["6", "Corps de la lettre", "Body — purpose, supporting details, request"],
+                ["6", "Corps de la lettre", "Body: purpose, supporting details, request"],
                 ["7", "Formule de politesse", "Formal closing formula"],
                 ["8", "Signature", "Handwritten signature + printed name"],
               ].map(([num, title, desc]) => (
@@ -215,9 +215,9 @@ export default function Unit2Lesson4Page() {
           </div>
           <div className="mt-4 grid gap-2 text-xs sm:grid-cols-2">
             {[
-              ["Objet:", "Clear subject line — always include"],
-              ["Je me permets de vous écrire", "Formal opening — 'I am writing to you'"],
-              ["Je vous saurais gré de", "Polite request — 'I would be grateful if'"],
+              ["Objet:", "Clear subject line: always include"],
+              ["Je me permets de vous écrire", "Formal opening: 'I am writing to you'"],
+              ["Je vous saurais gré de", "Polite request: 'I would be grateful if'"],
               ["Veuillez trouver ci-joint", "Attaching a document"],
               ["Dans l'attente de votre réponse", "Semi-formal closing opener"],
               ["mes cordiales salutations", "Warm but professional closing"],
@@ -242,12 +242,12 @@ export default function Unit2Lesson4Page() {
           <MultipleChoiceQuiz questions={questions} title="Formal writing quiz" />
         </div>
 
-        <div className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <div className="mt-16 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
 
           <p className="mt-2 text-[#526173]">You've covered healthcare vocabulary, government form language, tax terminology, and formal letter writing. Test yourself to consolidate what you've learned.</p>
           <div className="mt-5 flex flex-wrap gap-3">
             <Link href="/learn/canadian-life/unit-2/lesson-3" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">← Back to lesson</Link>
-            <Link href="/learn/canadian-life/unit-2/test" className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Take unit test →</Link>
+            <Link href="/learn/canadian-life/unit-2/test" className="rounded-full bg-[#D62828] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">Take unit test →</Link>
           </div>
         </div>
       </section>

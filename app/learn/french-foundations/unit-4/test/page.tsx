@@ -6,7 +6,7 @@ const questions = [
     question: "Which color adjective is invariable (never changes form)?",
     options: ["vert", "blanc", "orange", "gris"],
     correct: 2,
-    explanation: "Orange and marron are invariable — they never change: une robe orange, un sac marron.",
+    explanation: "Orange and marron are invariable: they never change: une robe orange, un sac marron.",
   },
   {
     question: "What is the feminine form of 'blanc'?",
@@ -36,7 +36,7 @@ const questions = [
     question: "What does 'Où' mean?",
     options: ["Who", "When", "Where", "Why"],
     correct: 2,
-    explanation: "Où = where. Note: où (with accent) = where, ou (no accent) = or — different words!",
+    explanation: "Où = where. Note: où (with accent) = where, ou (no accent) = or: different words!",
   },
   {
     question: "'Est-ce que tu habites à Québec?' is which type of question?",
@@ -68,7 +68,7 @@ export default function Unit4TestPage() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/french-foundations" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">← French Foundations</Link>
+        <Link href="/learn/french-foundations" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">← French Foundations</Link>
         <div className="mt-6">
           <span className="rounded-full bg-[#FEF9C3] px-3 py-1 text-xs font-black text-[#854D0E]">Unit 4 Test</span>
           <h1 className="mt-4 text-5xl font-black tracking-tight md:text-6xl">Describing Things</h1>
@@ -77,12 +77,12 @@ export default function Unit4TestPage() {
         <section className="mt-12">
           <MultipleChoiceQuiz questions={questions} title="Unit 4 Test · 10 questions" />
         </section>
-        <div className="mt-12 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <div className="mt-12 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
           <p className="text-lg font-black">Ready for Unit 5?</p>
           <p className="mt-2 text-[#526173]">Unit 5 covers daily life: food and drink, school, telling time, and getting around.</p>
           <div className="mt-5 flex flex-wrap gap-3">
             <Link href="/learn/french-foundations/unit-4/lesson-4" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">← Back to lesson</Link>
-            <Link href="/learn/french-foundations/unit-5/lesson-1" className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Start Unit 5 →</Link>
+            <Link href="/learn/french-foundations/unit-5/lesson-1" className="rounded-full bg-[#D62828] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">Start Unit 5 →</Link>
           </div>
         </div>
       </section>

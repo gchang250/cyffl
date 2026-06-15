@@ -5,24 +5,28 @@ import FillInTheBlank from "@/components/FillInTheBlank";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const irregularCards = [
-  { front: "je suis", back: "I am (être)", subtext: "être — to be. Completely irregular: memorize all six forms." },
-  { front: "tu es", back: "you are (être)", subtext: "Tu es prêt(e)? — Are you ready?" },
-  { front: "il/elle est", back: "he/she is (être)", subtext: "Il est professeur. — He is a teacher." },
-  { front: "nous sommes", back: "we are (être)", subtext: "Nous sommes en retard! — We're late!" },
-  { front: "vous êtes", back: "you are (être)", subtext: "Vous êtes d'accord? — Do you agree?" },
-  { front: "ils/elles sont", back: "they are (être)", subtext: "Ils sont très sympas. — They are very nice." },
-  { front: "j'ai", back: "I have (avoir)", subtext: "avoir — to have. Also used for age and physical feelings." },
-  { front: "tu as", back: "you have (avoir)", subtext: "Tu as combien de frères? — How many brothers do you have?" },
-  { front: "il/elle a", back: "he/she has (avoir)", subtext: "Elle a un chien adorable. — She has an adorable dog." },
-  { front: "nous avons", back: "we have (avoir)", subtext: "Nous avons cours à 9h. — We have class at 9." },
-  { front: "vous avez", back: "you have (avoir)", subtext: "Vous avez raison. — You are right." },
-  { front: "ils/elles ont", back: "they have (avoir)", subtext: "Ils ont de la chance. — They are lucky." },
-  { front: "je vais", back: "I go (aller)", subtext: "aller — to go. Near future: aller + infinitive." },
-  { front: "tu vas", back: "you go (aller)", subtext: "Tu vas bien? — Are you doing well?" },
-  { front: "il/elle va", back: "he/she goes (aller)", subtext: "Il va à l'école. — He goes to school." },
-  { front: "nous allons", back: "we go (aller)", subtext: "Nous allons manger. — We are going to eat." },
-  { front: "vous allez", back: "you go (aller)", subtext: "Vous allez où? — Where are you going?" },
-  { front: "ils/elles vont", back: "they go (aller)", subtext: "Ils vont au parc demain. — They're going to the park tomorrow." },
+  { front: "je suis", back: "I am (être)", subtext: "être: to be. Completely irregular. Memorize all six forms." },
+  { front: "tu es", back: "you are (être)", subtext: "Tu es prêt(e)? Are you ready?" },
+  { front: "il/elle est", back: "he/she is (être)", subtext: "Il est professeur. He is a teacher." },
+  { front: "nous sommes", back: "we are (être)", subtext: "Nous sommes en retard! We are late!" },
+  { front: "vous êtes", back: "you are (être)", subtext: "Vous êtes d'accord? Do you agree?" },
+  { front: "ils/elles sont", back: "they are (être)", subtext: "Ils sont très sympas. They are very nice." },
+  { front: "j'ai", back: "I have (avoir)", subtext: "avoir: to have. Also used for age and physical feelings." },
+  { front: "tu as", back: "you have (avoir)", subtext: "Tu as combien de frères? How many brothers do you have?" },
+  { front: "il/elle a", back: "he/she has (avoir)", subtext: "Elle a un chien adorable. She has an adorable dog." },
+  { front: "nous avons", back: "we have (avoir)", subtext: "Nous avons cours à 9h. We have class at 9." },
+  { front: "vous avez", back: "you have (avoir)", subtext: "Vous avez raison. You are right." },
+  { front: "ils/elles ont", back: "they have (avoir)", subtext: "Ils ont de la chance. They are lucky." },
+  { front: "je vais", back: "I go (aller)", subtext: "aller: to go. Near future: aller + infinitive." },
+  { front: "tu vas", back: "you go (aller)", subtext: "Tu vas bien? Are you doing well?" },
+  { front: "il/elle va", back: "he/she goes (aller)", subtext: "Il va à l'école. He goes to school." },
+  { front: "nous allons", back: "we go (aller)", subtext: "Nous allons manger. We are going to eat." },
+  { front: "vous allez", back: "you go (aller)", subtext: "Vous allez où? Where are you going?" },
+  { front: "ils/elles vont", back: "they go (aller)", subtext: "Ils vont au parc demain. They're going to the park tomorrow." },
+  { front: "avoir faim", back: "to be hungry", subtext: "J'ai faim. I'm hungry. French uses avoir, not être, for physical feelings." },
+  { front: "avoir soif", back: "to be thirsty", subtext: "Tu as soif? Are you thirsty?" },
+  { front: "avoir froid / chaud", back: "to be cold / hot (about a person)", subtext: "Elle a froid. She is cold. Use avoir, not être, for body temperature." },
+  { front: "avoir ... ans", back: "to be ... years old", subtext: "Il a 14 ans. He is 14 years old. French says 'have' years, not 'be' years." },
 ];
 
 const pairs = [
@@ -53,7 +57,7 @@ const questions = [
     question: "What is the 'vous' form of 'aller'?",
     options: ["vous allez", "vous aller", "vous allons", "vous vont"],
     correct: 0,
-    explanation: "Vous allez — the vous form of aller. Full conjugation: je vais, tu vas, il/elle va, nous allons, vous allez, ils/elles vont.",
+    explanation: "Vous allez: the vous form of aller. Full conjugation: je vais, tu vas, il/elle va, nous allons, vous allez, ils/elles vont.",
   },
   {
     question: "'Ils vont jouer au foot' means:",
@@ -65,7 +69,7 @@ const questions = [
     question: "Which sentence uses 'être' correctly?",
     options: ["Nous sommes faim.", "Je suis 15 ans.", "Vous êtes en retard.", "Il est froid."],
     correct: 2,
-    explanation: "Vous êtes en retard = You are late — correct use of être. Age (j'ai 15 ans) and hunger (j'ai faim) use avoir.",
+    explanation: "Vous êtes en retard = You are late: correct use of être. Age (j'ai 15 ans) and hunger (j'ai faim) use avoir.",
   },
   {
     question: "How do you negate the near future 'Je vais partir'?",
@@ -77,17 +81,17 @@ const questions = [
     question: "What is the 'il' form of 'aller'?",
     options: ["il allez", "il va", "il vont", "il allons"],
     correct: 1,
-    explanation: "Il/elle va — aller is fully irregular. Conjugation: je vais, tu vas, il/elle va, nous allons, vous allez, ils/elles vont.",
+    explanation: "Il/elle va: aller is fully irregular. Conjugation: je vais, tu vas, il/elle va, nous allons, vous allez, ils/elles vont.",
   },
   {
     question: "'Elle a l'air fatigué.' What does this mean and which verb is used?",
-    options: ["She feels tired — uses être.", "She looks/seems tired — uses avoir.", "She was tired — uses avoir.", "She will be tired — uses aller."],
+    options: ["She feels tired: uses être.", "She looks/seems tired: uses avoir.", "She was tired: uses avoir.", "She will be tired: uses aller."],
     correct: 1,
     explanation: "Avoir l'air = to look/seem. Elle a l'air fatigué = She looks tired. This expression always uses avoir, not être.",
   },
   {
     question: "A student says 'Ils sont vont manger.' What's wrong?",
-    options: ["Sont should be removed — near future only uses aller + infinitive.", "Vont should be font.", "Manger should be mangé.", "Nothing is wrong."],
+    options: ["Sont should be removed: near future only uses aller + infinitive.", "Vont should be font.", "Manger should be mangé.", "Nothing is wrong."],
     correct: 0,
     explanation: "Near future = aller (conjugated) + infinitive. You don't combine être and aller. Correct: Ils vont manger (not 'Ils sont vont manger').",
   },
@@ -97,7 +101,7 @@ export default function Unit2Lesson3Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/school-french-support" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/school-french-support" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← School French Support
         </Link>
 
@@ -124,8 +128,35 @@ export default function Unit2Lesson3Page() {
           </div>
         </div>
 
+        <div className="mt-10 rounded-2xl bg-[#0B1F3A] p-6 text-white">
+          <p className="text-lg font-black">The avoir trap: feelings, age, and sensations</p>
+          <p className="mt-3 leading-7 text-[#CBD5E1]">
+            One of the most common mistakes in French is using <em>être</em> where French actually uses <em>avoir</em>. French uses <strong className="text-white">avoir</strong> (to have) for many expressions that feel like states of being in English:
+          </p>
+          <div className="mt-4 grid gap-2 text-sm sm:grid-cols-2">
+            {[
+              ["avoir faim", "to be hungry"],
+              ["avoir soif", "to be thirsty"],
+              ["avoir froid", "to be cold (body)"],
+              ["avoir chaud", "to be hot (body)"],
+              ["avoir peur", "to be scared/afraid"],
+              ["avoir honte", "to be ashamed"],
+              ["avoir raison", "to be right"],
+              ["avoir tort", "to be wrong"],
+              ["avoir ... ans", "to be ... years old"],
+              ["avoir l'air", "to seem / to look (like)"],
+            ].map(([fr, en]) => (
+              <div key={fr} className="flex items-center gap-2 rounded-xl bg-white/10 px-3 py-1.5">
+                <span className="font-bold text-[#C9A44C]">{fr}</span>
+                <span className="text-white/70">{en}</span>
+              </div>
+            ))}
+          </div>
+          <p className="mt-4 text-sm text-[#CBD5E1]">In all these expressions, <em>avoir</em> is the only correct choice. <strong className="text-white">Never substitute être</strong> — 'Je suis froid' sounds strange or means the food is cold, not you.</p>
+        </div>
+
         <div className="mt-12">
-          <FlashCardDeck cards={irregularCards} title="être, avoir, aller — all forms" />
+          <FlashCardDeck cards={irregularCards} title="être, avoir, aller: all forms" />
         </div>
 
         <div className="mt-12">
@@ -142,7 +173,7 @@ export default function Unit2Lesson3Page() {
 
         <div className="mt-16 flex items-center justify-between gap-4">
           <Link href="/learn/school-french-support/unit-2/lesson-2" className="rounded-full border border-[#E7DAB9] bg-white px-5 py-2.5 text-sm font-black text-[#526173] transition hover:-translate-y-0.5">← Previous</Link>
-          <Link href="/learn/school-french-support/unit-2/lesson-4" className="rounded-full bg-[#2563EB] px-5 py-2.5 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Next lesson →</Link>
+          <Link href="/learn/school-french-support/unit-2/lesson-4" className="rounded-full bg-[#D62828] px-5 py-2.5 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">Next lesson →</Link>
         </div>
       </section>
     </main>

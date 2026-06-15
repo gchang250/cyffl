@@ -6,7 +6,7 @@ const courses = [
     level: "All levels",
     href: "/learn/canadian-life",
     description:
-      "Quebec expressions, government forms, bilingual job postings, and university applications — the French that actually comes up in Canada.",
+      "Quebec expressions, government forms, bilingual job postings, and university applications. The French that actually comes up in Canada.",
     lessonCount: "16 lessons · 4 unit tests",
   },
   {
@@ -14,7 +14,7 @@ const courses = [
     level: "Beginner",
     href: "/learn/french-foundations",
     description:
-      "Start from zero. Greetings, introductions, essential verbs, past tense, and key irregular verbs — with a unit test after every unit.",
+      "Start from zero. Greetings, introductions, essential verbs, past tense, and key irregular verbs, with a unit test after every unit.",
     lessonCount: "27 lessons · 7 unit tests",
   },
   {
@@ -22,7 +22,7 @@ const courses = [
     level: "Grades 4–10",
     href: "/learn/school-french-support",
     description:
-      "Review and strengthen your school French. Articles, noun gender, verb conjugations, and key irregular verbs.",
+      "Review and strengthen your school French. Articles, noun gender, verb conjugations, adjective agreement, and key irregular verbs.",
     lessonCount: "24 lessons · 6 unit tests",
   },
   {
@@ -35,7 +35,7 @@ const courses = [
   },
   {
     title: "French for Canadian Tests",
-    level: "Intermediate–Advanced",
+    level: "Intermediate to Advanced",
     href: "/learn/canadian-french-tests",
     description:
       "Build the French that gets you through the SLE (government jobs) and TEF Canada (immigration). Government vocabulary, formal grammar, opinion phrases, and letter-writing register.",
@@ -53,13 +53,13 @@ export default function LearnPage() {
             Pick your path.
           </h1>
           <p className="mt-5 text-lg leading-8 text-[#526173]">
-            Whether you&apos;re starting from zero, reviewing for school, prepping for IB, pursuing a government job, or immigrating to Canada — there&apos;s a course for where you are.
+            Whether you&apos;re starting from zero, reviewing for school, prepping for IB, pursuing a government job, or immigrating to Canada, there&apos;s a course for where you are.
           </p>
         </div>
 
-        <div className="mt-12 grid gap-px border border-[#E7DAB9] bg-[#E7DAB9] md:grid-cols-2">
+        <div className="mt-12 grid gap-4 md:grid-cols-2">
           {courses.map((course, i) => (
-            <div key={course.title} className={`flex flex-col bg-white p-7${i === courses.length - 1 ? " md:col-span-2" : ""}`}>
+            <div key={course.title} className={`flex flex-col rounded-2xl border border-[#E7DAB9] bg-white p-7${i === courses.length - 1 ? " md:col-span-2" : ""}`}>
               <p className="text-xs font-bold uppercase tracking-widest text-[#526173]">
                 {course.level}
               </p>

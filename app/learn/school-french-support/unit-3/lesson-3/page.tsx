@@ -5,20 +5,20 @@ import FillInTheBlank from "@/components/FillInTheBlank";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const cards = [
-  { front: "avoir", back: "eu — had", subtext: "J'ai eu un problème. — I had a problem." },
-  { front: "être", back: "été — been", subtext: "Nous avons été contents. — We were happy." },
-  { front: "faire", back: "fait — done/made", subtext: "Qu'est-ce que tu as fait? — What did you do?" },
-  { front: "dire", back: "dit — said", subtext: "Il a dit bonjour. — He said hello." },
-  { front: "écrire", back: "écrit — written", subtext: "Elle a écrit une lettre. — She wrote a letter." },
-  { front: "lire", back: "lu — read", subtext: "J'ai lu ce roman. — I read this novel." },
-  { front: "voir", back: "vu — seen", subtext: "Tu as vu ce film? — Did you see that film?" },
-  { front: "prendre", back: "pris — taken", subtext: "Nous avons pris le train. — We took the train." },
-  { front: "mettre", back: "mis — put", subtext: "Il a mis son manteau. — He put on his coat." },
-  { front: "pouvoir", back: "pu — been able to", subtext: "Je n'ai pas pu venir. — I wasn't able to come." },
-  { front: "vouloir", back: "voulu — wanted", subtext: "Elle a voulu partir. — She wanted to leave." },
-  { front: "boire", back: "bu — drunk", subtext: "Ils ont bu du jus d'orange. — They drank orange juice." },
-  { front: "savoir", back: "su — known", subtext: "J'ai su la réponse. — I knew the answer." },
-  { front: "ouvrir", back: "ouvert — opened", subtext: "Tu as ouvert la fenêtre? — Did you open the window?" },
+  { front: "avoir", back: "eu: had", subtext: "J'ai eu un problème.: I had a problem." },
+  { front: "être", back: "été: been", subtext: "Nous avons été contents.: We were happy." },
+  { front: "faire", back: "fait: done/made", subtext: "Qu'est-ce que tu as fait?: What did you do?" },
+  { front: "dire", back: "dit: said", subtext: "Il a dit bonjour.: He said hello." },
+  { front: "écrire", back: "écrit: written", subtext: "Elle a écrit une lettre.: She wrote a letter." },
+  { front: "lire", back: "lu: read", subtext: "J'ai lu ce roman.: I read this novel." },
+  { front: "voir", back: "vu: seen", subtext: "Tu as vu ce film?: Did you see that film?" },
+  { front: "prendre", back: "pris: taken", subtext: "Nous avons pris le train.: We took the train." },
+  { front: "mettre", back: "mis: put", subtext: "Il a mis son manteau.: He put on his coat." },
+  { front: "pouvoir", back: "pu: been able to", subtext: "Je n'ai pas pu venir.: I wasn't able to come." },
+  { front: "vouloir", back: "voulu: wanted", subtext: "Elle a voulu partir.: She wanted to leave." },
+  { front: "boire", back: "bu: drunk", subtext: "Ils ont bu du jus d'orange.: They drank orange juice." },
+  { front: "savoir", back: "su: known", subtext: "J'ai su la réponse.: I knew the answer." },
+  { front: "ouvrir", back: "ouvert: opened", subtext: "Tu as ouvert la fenêtre?: Did you open the window?" },
 ];
 
 const pairs = [
@@ -65,10 +65,10 @@ const questions = [
   {
     question: "Which group of past participles follows the same pattern?",
     options: [
-      "vu, lu, bu — all end in -u",
-      "fait, dit, écrit — all end in -it",
-      "eu, été, pu — all use être",
-      "pris, mis, dit — all use être",
+      "vu, lu, bu: all end in -u",
+      "fait, dit, écrit: all end in -it",
+      "eu, été, pu: all use être",
+      "pris, mis, dit: all use être",
     ],
     correct: 0,
     explanation: "Vu (voir), lu (lire), bu (boire), pu (pouvoir), voulu (vouloir), eu (avoir) all share the -u ending pattern. Recognising this group helps memorisation.",
@@ -103,7 +103,7 @@ export default function Unit3Lesson3Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/school-french-support" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/school-french-support" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← School French Support
         </Link>
 

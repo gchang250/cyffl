@@ -5,18 +5,18 @@ import FillInTheBlank from "@/components/FillInTheBlank";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const nounCards = [
-  { front: "le livre", back: "masculine — the book", subtext: "Most nouns ending in a consonant are masculine." },
-  { front: "la table", back: "feminine — the table", subtext: "La is used before feminine nouns starting with a consonant." },
-  { front: "l'ami", back: "masculine — the friend", subtext: "L' replaces le/la before any vowel sound." },
-  { front: "l'école", back: "feminine — the school", subtext: "L' is used here because école starts with é." },
-  { front: "les enfants", back: "plural — the children", subtext: "Les is the plural definite article for all genders." },
-  { front: "un stylo", back: "masculine — a pen", subtext: "Un is the masculine indefinite article." },
-  { front: "une chaise", back: "feminine — a chair", subtext: "Une is the feminine indefinite article." },
-  { front: "des cahiers", back: "plural — some notebooks", subtext: "Des is the plural indefinite article." },
+  { front: "le livre", back: "masculine: the book", subtext: "Most nouns ending in a consonant are masculine." },
+  { front: "la table", back: "feminine: the table", subtext: "La is used before feminine nouns starting with a consonant." },
+  { front: "l'ami", back: "masculine: the friend", subtext: "L' replaces le/la before any vowel sound." },
+  { front: "l'école", back: "feminine: the school", subtext: "L' is used here because école starts with é." },
+  { front: "les enfants", back: "plural: the children", subtext: "Les is the plural definite article for all genders." },
+  { front: "un stylo", back: "masculine: a pen", subtext: "Un is the masculine indefinite article." },
+  { front: "une chaise", back: "feminine: a chair", subtext: "Une is the feminine indefinite article." },
+  { front: "des cahiers", back: "plural: some notebooks", subtext: "Des is the plural indefinite article." },
   { front: "du pain", back: "some bread (partitive)", subtext: "Du = de + le. Used for uncountable masculine nouns." },
   { front: "de la farine", back: "some flour (partitive)", subtext: "De la is used for uncountable feminine nouns." },
   { front: "de l'eau", back: "some water (partitive)", subtext: "De l' before a vowel: de l'eau, de l'air." },
-  { front: "le garçon", back: "masculine — the boy", subtext: "The ç in garçon keeps the soft 's' sound." },
+  { front: "le garçon", back: "masculine: the boy", subtext: "The ç in garçon keeps the soft 's' sound." },
 ];
 
 const pairs = [
@@ -31,9 +31,9 @@ const pairs = [
 const exercises = [
   { before: "J'ai", after: "stylo. (a / masculine)", answer: "un", hint: "masculine indefinite article", translation: "I have a pen." },
   { before: "Où est", after: "bibliothèque? (the / feminine)", answer: "la", hint: "feminine definite article", translation: "Where is the library?" },
-  { before: "Il boit", after: "eau. (some — before vowel)", answer: "de l'", hint: "partitive before vowel", translation: "He is drinking some water." },
-  { before: "Nous avons", after: "devoirs. (some — plural)", answer: "des", hint: "plural indefinite article", translation: "We have homework." },
-  { before: "Elle mange", after: "fromage. (some — masculine)", answer: "du", hint: "partitive masculine: de + le", translation: "She is eating some cheese." },
+  { before: "Il boit", after: "eau. (some: before vowel)", answer: "de l'", hint: "partitive before vowel", translation: "He is drinking some water." },
+  { before: "Nous avons", after: "devoirs. (some: plural)", answer: "des", hint: "plural indefinite article", translation: "We have homework." },
+  { before: "Elle mange", after: "fromage. (some: masculine)", answer: "du", hint: "partitive masculine: de + le", translation: "She is eating some cheese." },
 ];
 
 const questions = [
@@ -47,7 +47,7 @@ const questions = [
     question: "How do you say 'some water' using the partitive article?",
     options: ["du eau", "de la eau", "de l'eau", "des eau"],
     correct: 2,
-    explanation: "Eau starts with a vowel, so 'de la' contracts to 'de l'': de l'eau. The partitive before any vowel or silent h is always 'de l''. Never write 'du eau' — it's ungrammatical.",
+    explanation: "Eau starts with a vowel, so 'de la' contracts to 'de l'': de l'eau. The partitive before any vowel or silent h is always 'de l''. Never write 'du eau': it's ungrammatical.",
   },
   {
     question: "Which sentence correctly uses the indefinite article?",
@@ -59,7 +59,7 @@ const questions = [
     question: "What happens to le and la before a word starting with a vowel?",
     options: ["They stay the same.", "They become les.", "They become l'.", "They become de."],
     correct: 2,
-    explanation: "Both 'le' and 'la' contract to 'l'' before a vowel or silent h: l'ami, l'école, l'heure. This is called elision and is mandatory — 'le ami' is incorrect.",
+    explanation: "Both 'le' and 'la' contract to 'l'' before a vowel or silent h: l'ami, l'école, l'heure. This is called elision and is mandatory: 'le ami' is incorrect.",
   },
   {
     question: "When do you use 'du' vs 'de la'?",
@@ -75,10 +75,10 @@ const questions = [
   {
     question: "A student writes 'Je ne mange pas du pain.' Is this correct?",
     options: [
-      "Yes — correct French.",
-      "No — after negation, du/de la/des change to 'de' or 'd': je ne mange pas de pain.",
-      "No — should use 'le pain' after negation.",
-      "No — negation is placed incorrectly.",
+      "Yes: correct French.",
+      "No: after negation, du/de la/des change to 'de' or 'd': je ne mange pas de pain.",
+      "No: should use 'le pain' after negation.",
+      "No: negation is placed incorrectly.",
     ],
     correct: 1,
     explanation: "After negation (ne...pas), partitive and indefinite articles change: du → de, de la → de, des → de. 'Je ne mange pas de pain.' This is one of the most tested grammar points in school French.",
@@ -92,7 +92,7 @@ const questions = [
   {
     question: "What is the difference between 'des' and 'les'?",
     options: [
-      "'Des' and 'les' mean the same thing — both mean 'the' for plurals.",
+      "'Des' and 'les' mean the same thing: both mean 'the' for plurals.",
       "'Des' = some (indefinite plural); 'les' = the (definite plural).",
       "'Des' is masculine plural; 'les' is feminine plural.",
       "'Des' is only used with uncountable nouns.",
@@ -106,7 +106,7 @@ export default function Unit1Lesson1Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/school-french-support" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/school-french-support" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← School French Support
         </Link>
 
@@ -156,7 +156,7 @@ export default function Unit1Lesson1Page() {
         </div>
 
         <div className="mt-16 flex items-center justify-end gap-4">
-          <Link href="/learn/school-french-support/unit-1/lesson-2" className="rounded-full bg-[#2563EB] px-5 py-2.5 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Next lesson →</Link>
+          <Link href="/learn/school-french-support/unit-1/lesson-2" className="rounded-full bg-[#D62828] px-5 py-2.5 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">Next lesson →</Link>
         </div>
       </section>
     </main>

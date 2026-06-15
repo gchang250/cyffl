@@ -5,16 +5,16 @@ import FillInTheBlank from "@/components/FillInTheBlank";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const cards = [
-  { front: "la carte d'assurance maladie", back: "health insurance card\nIn Quebec this is called the 'carte-soleil' (sun card) because of its yellow colour.", subtext: "N'oubliez pas votre carte d'assurance maladie. — Don't forget your health card." },
-  { front: "la RAMQ", back: "Régie de l'assurance maladie du Québec — Quebec's provincial health insurance plan.\nEquivalent to OHIP in Ontario.", subtext: "Votre carte RAMQ est valide 4 ans. — Your RAMQ card is valid for 4 years." },
-  { front: "le médecin de famille", back: "family doctor / general practitioner (GP)", subtext: "Je cherche un médecin de famille qui accepte de nouveaux patients. — I'm looking for a family doctor accepting new patients." },
-  { front: "l'urgence (f.)", back: "emergency room / ER", subtext: "Il faut aller à l'urgence tout de suite. — You need to go to the emergency room right away." },
-  { front: "le rendez-vous", back: "appointment", subtext: "J'ai un rendez-vous chez le médecin lundi matin. — I have a doctor's appointment Monday morning." },
-  { front: "l'ordonnance (f.)", back: "prescription", subtext: "Le médecin m'a donné une ordonnance pour des antibiotiques. — The doctor gave me a prescription for antibiotics." },
-  { front: "le médicament", back: "medication / medicine", subtext: "Prenez ce médicament deux fois par jour. — Take this medication twice a day." },
-  { front: "les antécédents médicaux (m.pl.)", back: "medical history", subtext: "Avez-vous des antécédents de maladies cardiaques? — Do you have a history of heart disease?" },
-  { front: "le CLSC", back: "Centre local de services communautaires — a Quebec community health centre offering primary care, social services, and mental health support.", subtext: "Le CLSC peut vous aider sans rendez-vous. — The CLSC can help you without an appointment." },
-  { front: "remplir un formulaire", back: "to fill out a form", subtext: "Veuillez remplir ce formulaire avant votre consultation. — Please fill out this form before your appointment." },
+  { front: "la carte d'assurance maladie", back: "health insurance card\nIn Quebec this is called the 'carte-soleil' (sun card) because of its yellow colour.", subtext: "N'oubliez pas votre carte d'assurance maladie.: Don't forget your health card." },
+  { front: "la RAMQ", back: "Régie de l'assurance maladie du Québec: Quebec's provincial health insurance plan.\nEquivalent to OHIP in Ontario.", subtext: "Votre carte RAMQ est valide 4 ans.: Your RAMQ card is valid for 4 years." },
+  { front: "le médecin de famille", back: "family doctor / general practitioner (GP)", subtext: "Je cherche un médecin de famille qui accepte de nouveaux patients.: I'm looking for a family doctor accepting new patients." },
+  { front: "l'urgence (f.)", back: "emergency room / ER", subtext: "Il faut aller à l'urgence tout de suite.: You need to go to the emergency room right away." },
+  { front: "le rendez-vous", back: "appointment", subtext: "J'ai un rendez-vous chez le médecin lundi matin.: I have a doctor's appointment Monday morning." },
+  { front: "l'ordonnance (f.)", back: "prescription", subtext: "Le médecin m'a donné une ordonnance pour des antibiotiques.: The doctor gave me a prescription for antibiotics." },
+  { front: "le médicament", back: "medication / medicine", subtext: "Prenez ce médicament deux fois par jour.: Take this medication twice a day." },
+  { front: "les antécédents médicaux (m.pl.)", back: "medical history", subtext: "Avez-vous des antécédents de maladies cardiaques?: Do you have a history of heart disease?" },
+  { front: "le CLSC", back: "Centre local de services communautaires: a Quebec community health centre offering primary care, social services, and mental health support.", subtext: "Le CLSC peut vous aider sans rendez-vous.: The CLSC can help you without an appointment." },
+  { front: "remplir un formulaire", back: "to fill out a form", subtext: "Veuillez remplir ce formulaire avant votre consultation.: Please fill out this form before your appointment." },
 ];
 
 const pairs = [
@@ -85,7 +85,7 @@ const questions = [
       "Registre de l'assistance médicale du Québec",
     ],
     correct: 1,
-    explanation: "RAMQ stands for Régie de l'assurance maladie du Québec — the public body that manages Quebec's provincial health insurance plan. It issues the carte-soleil and reimburses covered medical services.",
+    explanation: "RAMQ stands for Régie de l'assurance maladie du Québec: the public body that manages Quebec's provincial health insurance plan. It issues the carte-soleil and reimburses covered medical services.",
   },
   {
     question: "What is a CLSC?",
@@ -96,7 +96,7 @@ const questions = [
       "A specialized hospital department",
     ],
     correct: 2,
-    explanation: "A CLSC (Centre local de services communautaires) is a Quebec community health centre that provides primary care, mental health support, social services, and more — often without an appointment for basic needs.",
+    explanation: "A CLSC (Centre local de services communautaires) is a Quebec community health centre that provides primary care, mental health support, social services, and more: often without an appointment for basic needs.",
   },
   {
     question: "Which word means 'medical history' in French?",
@@ -107,7 +107,7 @@ const questions = [
       "les soins antérieurs",
     ],
     correct: 0,
-    explanation: "'Les antécédents médicaux' means medical history. You'll see this term on intake forms: 'Avez-vous des antécédents de diabète?' — Do you have a history of diabetes?",
+    explanation: "'Les antécédents médicaux' means medical history. You'll see this term on intake forms: 'Avez-vous des antécédents de diabète?': Do you have a history of diabetes?",
   },
   {
     question: "How do you say 'I need to make a doctor's appointment' in French?",
@@ -118,13 +118,13 @@ const questions = [
       "Je dois trouver un horaire avec le médecin.",
     ],
     correct: 1,
-    explanation: "'Prendre un rendez-vous' = to make an appointment. It's the standard phrase in French. You 'prendre' (take) an appointment — not 'faire', not 'avoir'. 'J'ai pris un rendez-vous pour lundi.' = I made an appointment for Monday.",
+    explanation: "'Prendre un rendez-vous' = to make an appointment. It's the standard phrase in French. You 'prendre' (take) an appointment: not 'faire', not 'avoir'. 'J'ai pris un rendez-vous pour lundi.' = I made an appointment for Monday.",
   },
   {
     question: "What does 'une ordonnance' mean and when do you need one?",
     options: [
       "An emergency room authorization",
-      "A prescription — a doctor's written authorization for medication",
+      "A prescription: a doctor's written authorization for medication",
       "A hospital referral form",
       "A health card renewal notice",
     ],
@@ -140,7 +140,7 @@ const questions = [
       "Telehealth is the only option",
     ],
     correct: 1,
-    explanation: "A CLSC or 'clinique sans rendez-vous' (walk-in clinic) handles non-emergency care when you don't have a médecin de famille. Emergency rooms (urgences) are for serious/urgent situations — using them for minor issues increases wait times for everyone.",
+    explanation: "A CLSC or 'clinique sans rendez-vous' (walk-in clinic) handles non-emergency care when you don't have a médecin de famille. Emergency rooms (urgences) are for serious/urgent situations: using them for minor issues increases wait times for everyone.",
   },
   {
     question: "What does 'être admis aux urgences' mean?",
@@ -159,7 +159,7 @@ export default function Unit2Lesson1Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/canadian-life" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/canadian-life" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← French for Canadian Life
         </Link>
 
@@ -254,7 +254,7 @@ export default function Unit2Lesson1Page() {
 
         <div className="mt-16 flex items-center justify-between gap-4">
           <Link href="/learn/canadian-life/unit-1/test" className="rounded-full border border-[#E7DAB9] bg-white px-5 py-2.5 text-sm font-black text-[#0B1F3A] transition hover:-translate-y-0.5">← Unit 1 test</Link>
-          <Link href="/learn/canadian-life/unit-2/lesson-2" className="rounded-full bg-[#2563EB] px-5 py-2.5 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Next lesson →</Link>
+          <Link href="/learn/canadian-life/unit-2/lesson-2" className="rounded-full bg-[#D62828] px-5 py-2.5 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">Next lesson →</Link>
         </div>
       </section>
     </main>

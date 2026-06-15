@@ -44,7 +44,7 @@ const questions = [
       "A reference letter from a professor",
     ],
     correct: 2,
-    explanation: "'La lettre de motivation' is a personal statement — equivalent to a letter of intent or statement of purpose. It explains why you want to study in the program and what you bring to it.",
+    explanation: "'La lettre de motivation' is a personal statement: equivalent to a letter of intent or statement of purpose. It explains why you want to study in the program and what you bring to it.",
   },
   {
     question: "What is the AFE in Quebec?",
@@ -66,7 +66,7 @@ const questions = [
       "A bourse is only for graduate students.",
     ],
     correct: 1,
-    explanation: "A 'bourse' is a scholarship, bursary, or grant — generally non-repayable. A 'prêt étudiant' is a student loan that must be repaid after graduation.",
+    explanation: "A 'bourse' is a scholarship, bursary, or grant: generally non-repayable. A 'prêt étudiant' is a student loan that must be repaid after graduation.",
   },
   {
     question: "What is 'le cours magistral'?",
@@ -77,7 +77,7 @@ const questions = [
       "An online course with no in-person component",
     ],
     correct: 1,
-    explanation: "'Le cours magistral' is a lecture in the traditional sense — a professor addresses a large group, with students listening and taking notes. It contrasts with 'le séminaire', which involves participation.",
+    explanation: "'Le cours magistral' is a lecture in the traditional sense: a professor addresses a large group, with students listening and taking notes. It contrasts with 'le séminaire', which involves participation.",
   },
   {
     question: "What does 'l'abandon de cours' mean?",
@@ -106,11 +106,11 @@ const questions = [
     options: [
       "The student union office",
       "The financial aid office",
-      "The registrar's office — handles transcripts, enrolment records, and graduation",
+      "The registrar's office: handles transcripts, enrolment records, and graduation",
       "The professor's office hours",
     ],
     correct: 2,
-    explanation: "'Le bureau du registraire' is the registrar's office, responsible for official academic records — transcripts, enrolment confirmation, graduation paperwork, and course registration.",
+    explanation: "'Le bureau du registraire' is the registrar's office, responsible for official academic records: transcripts, enrolment confirmation, graduation paperwork, and course registration.",
   },
 ];
 
@@ -118,7 +118,7 @@ export default function Unit4TestPage() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/canadian-life/unit-4/lesson-4" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/canadian-life/unit-4/lesson-4" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← Back to Lesson 4
         </Link>
 
@@ -150,13 +150,13 @@ export default function Unit4TestPage() {
         </div>
 
         <div className="mt-12">
-          <MultipleChoiceQuiz questions={questions} title="Unit 4 test — Education in French Canada" />
+          <MultipleChoiceQuiz questions={questions} title="Unit 4 test: Education in French Canada" />
         </div>
 
-        <div className="mt-12 rounded-[2rem] bg-[#0B1F3A] p-8 text-white">
+        <div className="mt-12 rounded-2xl bg-[#0B1F3A] p-8 text-white">
 
           <p className="mt-2 leading-7 text-[#CBD5E1]">
-            You can navigate French in Canadian life — from Quebec expressions to government forms, bilingual workplaces, and university in French Canada. Take what you've learned and use it in the real world.
+            You can navigate French in Canadian life: from Quebec expressions to government forms, bilingual workplaces, and university in French Canada. Take what you've learned and use it in the real world.
           </p>
           <div className="mt-5 flex flex-wrap gap-3">
             <Link href="/learn/canadian-life/unit-4/lesson-4" className="rounded-full border border-white/20 bg-white/10 px-6 py-3 text-sm font-black text-white transition hover:-translate-y-0.5">← Back to lesson</Link>

@@ -8,62 +8,62 @@ const cards = [
   {
     front: "Parlez-moi de vous.",
     back: "Je suis étudiant(e) en [domaine] et j'ai une passion pour...",
-    subtext: "Tell me about yourself. — Keep it professional: education, experience, interest in the role.",
+    subtext: "Tell me about yourself.: Keep it professional: education, experience, interest in the role.",
   },
   {
     front: "Quelles sont vos forces?",
     back: "Je dirais que ma principale qualité est...",
-    subtext: "What are your strengths? — 'Je dirais que' = I would say that. Confident but not arrogant.",
+    subtext: "What are your strengths?: 'Je dirais que' = I would say that. Confident but not arrogant.",
   },
   {
     front: "Quelles sont vos faiblesses?",
     back: "Je travaille à améliorer [faiblesse], notamment en...",
-    subtext: "What are your weaknesses? — Name a real one, then show what you're doing about it.",
+    subtext: "What are your weaknesses?: Name a real one, then show what you're doing about it.",
   },
   {
     front: "Pourquoi voulez-vous ce poste?",
     back: "Ce qui m'attire particulièrement dans ce poste, c'est...",
-    subtext: "Why do you want this position? — 'Ce qui m'attire' = what draws me to it.",
+    subtext: "Why do you want this position?: 'Ce qui m'attire' = what draws me to it.",
   },
   {
     front: "Bilingualism question",
     back: "Je suis à l'aise de travailler autant en français qu'en anglais.",
-    subtext: "I am comfortable working in both French and English. — Clear and reassuring.",
+    subtext: "I am comfortable working in both French and English.: Clear and reassuring.",
   },
   {
     front: "Décrivez votre expérience.",
     back: "Dans mon précédent poste, j'étais chargé(e) de...",
-    subtext: "In my previous position, I was responsible for... — leads into a concrete example.",
+    subtext: "In my previous position, I was responsible for...: leads into a concrete example.",
   },
   {
     front: "Travail en équipe",
     back: "Je m'épanouis particulièrement en équipe.",
-    subtext: "I particularly thrive in a team environment. — 's'épanouir' = to flourish / thrive.",
+    subtext: "I particularly thrive in a team environment.: 's'épanouir' = to flourish / thrive.",
   },
   {
     front: "Closing question to the interviewer",
     back: "Quelles sont les prochaines étapes du processus?",
-    subtext: "What are the next steps in the process? — Shows initiative and genuine interest.",
+    subtext: "What are the next steps in the process?: Shows initiative and genuine interest.",
   },
   {
     front: "Où vous voyez-vous dans cinq ans?",
     back: "Je souhaite évoluer vers un rôle de [poste] et contribuer à...",
-    subtext: "I hope to move into a [role] and contribute to... — Shows ambition and alignment.",
+    subtext: "I hope to move into a [role] and contribute to...: Shows ambition and alignment.",
   },
   {
     front: "Avez-vous des questions pour nous?",
-    back: "Oui — Qu'est-ce qui vous plaît particulièrement dans la culture de cet organisme?",
+    back: "Oui: Qu'est-ce qui vous plaît particulièrement dans la culture de cet organisme?",
     subtext: "Always have a question ready. Asking about culture shows genuine interest.",
   },
   {
     front: "Thanking the interviewers",
     back: "Je vous remercie pour le temps que vous m'avez accordé.",
-    subtext: "Thank you for the time you have given me. — Warm, professional close.",
+    subtext: "Thank you for the time you have given me.: Warm, professional close.",
   },
   {
     front: "Adapting to a new environment",
     back: "Je suis capable de m'adapter rapidement à de nouveaux contextes de travail.",
-    subtext: "I am capable of adapting quickly to new work environments. — Versatility signal.",
+    subtext: "I am capable of adapting quickly to new work environments.: Versatility signal.",
   },
 ];
 
@@ -81,7 +81,7 @@ const exercises = [
     before: "Ce qui m'",
     after: "particulièrement dans ce poste, c'est l'occasion de travailler en équipe bilingue.",
     answer: "attire",
-    hint: "Attirer — to attract / to draw. 'Ce qui m'attire' = what draws me to it.",
+    hint: "Attirer: to attract / to draw. 'Ce qui m'attire' = what draws me to it.",
     translation: "What particularly draws me to this position is the opportunity to work in a bilingual team.",
   },
   {
@@ -102,7 +102,7 @@ const exercises = [
     before: "Je me",
     after: "particulièrement en équipe et je valorise la collaboration.",
     answer: "épanouis",
-    hint: "S'épanouir — to flourish / to thrive. Je m'épanouis = I thrive.",
+    hint: "S'épanouir: to flourish / to thrive. Je m'épanouis = I thrive.",
     translation: "I particularly thrive in a team setting and I value collaboration.",
   },
   {
@@ -140,10 +140,10 @@ const questions = [
   {
     question: "What is the STAR method called in French?",
     options: [
-      "SAVE — Situation, Action, Valeur, Effet",
-      "STAR — Situation, Tâche, Action, Résultat",
-      "PACE — Problème, Analyse, Compétence, Effet",
-      "FARE — Fait, Action, Résultat, Expérience",
+      "SAVE: Situation, Action, Valeur, Effet",
+      "STAR: Situation, Tâche, Action, Résultat",
+      "PACE: Problème, Analyse, Compétence, Effet",
+      "FARE: Fait, Action, Résultat, Expérience",
     ],
     correct: 1,
     explanation: "The STAR method is used directly in French as Situation, Tâche, Action, Résultat. It structures answers to behavioural questions ('Décrivez une situation où...').",
@@ -157,7 +157,7 @@ const questions = [
       "Pourquoi avez-vous besoin de moi?",
     ],
     correct: 1,
-    explanation: "'Quelles sont les prochaines étapes du processus?' is professional, shows initiative, and prompts the interviewer to share the timeline — ideal to close the conversation.",
+    explanation: "'Quelles sont les prochaines étapes du processus?' is professional, shows initiative, and prompts the interviewer to share the timeline: ideal to close the conversation.",
   },
   {
     question: "How do you answer 'Parlez-moi de vous' (Tell me about yourself) in a French job interview?",
@@ -168,15 +168,15 @@ const questions = [
       "Ask the interviewer to read your CV instead",
     ],
     correct: 1,
-    explanation: "'Parlez-moi de vous' is the classic opening. The ideal response is 1–2 minutes structured as: formation (education/background), expérience clé (key experience), and pourquoi ce poste (why this role). Keep it professional and relevant — this isn't a personal story.",
+    explanation: "'Parlez-moi de vous' is the classic opening. The ideal response is 1–2 minutes structured as: formation (education/background), expérience clé (key experience), and pourquoi ce poste (why this role). Keep it professional and relevant: this isn't a personal story.",
   },
   {
     question: "What does 'Quelles sont vos principales forces?' test, and how should you respond?",
     options: [
-      "It tests how well you know sports — answer with 3 sports you excel at",
-      "It tests self-awareness — name 2–3 concrete, relevant strengths and give brief examples",
+      "It tests how well you know sports: answer with 3 sports you excel at",
+      "It tests self-awareness: name 2–3 concrete, relevant strengths and give brief examples",
       "It tests your knowledge of company policy",
-      "It tests your language ability only — any answer is acceptable",
+      "It tests your language ability only: any answer is acceptable",
     ],
     correct: 1,
     explanation: "'Quelles sont vos principales forces?' = What are your main strengths? Give 2–3 professional strengths (e.g., rigueur, capacité de gestion, communication bilingue) and support each briefly with an example. Don't say 'Je suis travailleur' without evidence.",
@@ -195,7 +195,7 @@ const questions = [
   {
     question: "An interviewer asks: 'Avez-vous des questions pour nous?' What should you do?",
     options: [
-      "Say 'Non, merci' — it's polite not to take more of their time",
+      "Say 'Non, merci': it's polite not to take more of their time",
       "Ask about salary immediately",
       "Ask 2–3 thoughtful questions about the role, team, or growth opportunities",
       "Ask if you got the job",
@@ -209,7 +209,7 @@ export default function Unit3Lesson4Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/canadian-life" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/canadian-life" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← French for Canadian Life
         </Link>
 
@@ -218,7 +218,7 @@ export default function Unit3Lesson4Page() {
             <p className="text-xs font-bold uppercase tracking-widest text-[#16A34A]">Unit 3 · Lesson 4</p>
             <h1 className="mt-3 text-5xl font-black tracking-tight md:text-6xl">Job Interview French</h1>
             <p className="mt-4 text-lg leading-8 text-[#526173]">
-              French job interviews in Canada follow predictable patterns. Whether you're interviewing for a federal public service role, a Quebec Crown corporation, or a bilingual NGO, the questions are consistent — and so are the expectations for how to answer them.
+              French job interviews in Canada follow predictable patterns. Whether you're interviewing for a federal public service role, a Quebec Crown corporation, or a bilingual NGO, the questions are consistent: and so are the expectations for how to answer them.
             </p>
             <p className="mt-4 text-lg leading-8 text-[#526173]">
               Knowing how to answer common questions in formal, fluent French makes a lasting impression. This lesson gives you the key phrases and the STAR method in French for behavioural questions.
@@ -284,7 +284,7 @@ export default function Unit3Lesson4Page() {
           <MultipleChoiceQuiz questions={questions} title="Job interview French quiz" />
         </div>
 
-        <div className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <div className="mt-16 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
 
           <p className="mt-2 text-[#526173]">You can now read job postings, write a French CV and cover letter, navigate workplace communication, and handle a French job interview. Put it all together in the unit test.</p>
           <div className="mt-5 flex flex-wrap gap-3">

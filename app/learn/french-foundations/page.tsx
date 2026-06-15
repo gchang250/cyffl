@@ -81,7 +81,7 @@ const units = [
   {
     number: "07",
     title: "Common Irregular Verbs",
-    description: "Faire, pouvoir, vouloir, devoir, savoir, venir, prendre — the verbs you need most.",
+    description: "Faire, pouvoir, vouloir, devoir, savoir, venir, prendre: the verbs you need most.",
     color: "bg-[#FFE4E6] text-[#BE123C]",
     testHref: "/learn/french-foundations/unit-7/test",
     lessons: [
@@ -99,7 +99,7 @@ export default function FrenchFoundationsPage() {
       <section className="mx-auto max-w-7xl px-6 py-20">
         <Link
           href="/learn"
-          className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]"
+          className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]"
         >
           ← Back to courses
         </Link>
@@ -134,7 +134,7 @@ export default function FrenchFoundationsPage() {
               </div>
             </div>
 
-            <div className="mt-6 rounded-[1.5rem] bg-[#0B1F3A] p-5 text-white">
+            <div className="mt-6 rounded-2xl bg-[#0B1F3A] p-5 text-white">
               <p className="text-sm font-bold text-[#C9A44C]">Goal</p>
               <p className="mt-2 font-black leading-7">
                 Understand and use simple French in real situations.
@@ -146,7 +146,7 @@ export default function FrenchFoundationsPage() {
             {units.map((unit) => (
               <div
                 key={unit.number}
-                className="rounded-[2rem] border border-[#E7DAB9] bg-white p-6 shadow-sm"
+                className="rounded-2xl border border-[#E7DAB9] bg-white p-6 shadow-sm"
               >
                 <div className="flex items-center gap-3">
                   <span className={`rounded-full px-2.5 py-0.5 text-xs font-black ${unit.color}`}>

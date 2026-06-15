@@ -4,21 +4,21 @@ import MatchPairs from "@/components/MatchPairs";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const flashcards = [
-  { front: "Bonjour", back: "Hello / Good morning", subtext: "[bɔ̃ʒuʁ] — The safest, most universal greeting. Use any time of day until early evening, in any situation formal or casual." },
-  { front: "Bonsoir", back: "Good evening", subtext: "[bɔ̃swaʁ] — Replaces bonjour once it's evening (roughly after 6 pm). Use it when arriving somewhere in the evening." },
-  { front: "Salut", back: "Hi / Bye (casual)", subtext: "[saly] — Casual, like 'hey'. Use only with people you know: friends, classmates. Never with a teacher, boss, or stranger." },
-  { front: "Coucou", back: "Hey! (very informal)", subtext: "[kuku] — Even more casual than salut. Used with close friends and family, often in texts. Not appropriate in any formal or professional context." },
-  { front: "Au revoir", back: "Goodbye", subtext: "[o ʁəvwaʁ] — Standard polite farewell. Use with everyone. Literally: 'until we see each other again'." },
-  { front: "À bientôt", back: "See you soon", subtext: "[a bjɛ̃to] — Use when you expect to see the person again shortly. More specific than 'au revoir'." },
-  { front: "À demain", back: "See you tomorrow", subtext: "[a dəmɛ̃] — For when you'll see the person the next day. Combines à (until) + demain (tomorrow)." },
-  { front: "À tout à l'heure", back: "See you in a bit / later today", subtext: "[a tu ta lœʁ] — When you'll see the person later the same day. Often shortened in speech to 'à toute'." },
-  { front: "Bonne journée!", back: "Have a good day!", subtext: "[bɔn ʒuʁne] — Said when leaving in the morning/daytime. Response: 'Merci, vous aussi!' (Thank you, you too!)" },
-  { front: "Bonne soirée!", back: "Have a good evening!", subtext: "[bɔn swaʁe] — Said when leaving in the evening. Different from bonsoir — that's a greeting, this is a farewell." },
-  { front: "Merci", back: "Thank you", subtext: "[mɛʁsi] — Works in every situation. 'Merci beaucoup' = thank you very much. 'Merci bien' = thanks a lot (friendly)." },
-  { front: "De rien / Pas de quoi", back: "You're welcome", subtext: "[də ʁjɛ̃] / [pa də kwa] — Both mean 'you're welcome'. 'Je vous en prie' is the formal version. 'De rien' is the most common." },
-  { front: "S'il vous plaît", back: "Please (formal/plural)", subtext: "[sil vu plɛ] — Use with strangers, adults, or when speaking to multiple people. Formal. Shorten to 'SVP' in writing." },
-  { front: "S'il te plaît", back: "Please (informal)", subtext: "[sil tə plɛ] — Use with friends, classmates, family. Informal. Often shortened to 'STP' in texts." },
-  { front: "Excusez-moi / Pardon", back: "Excuse me / Sorry", subtext: "[ɛkskyze mwa] / [paʁdɔ̃] — Use to get someone's attention or apologize. 'Excusez-moi' = formal; 'pardon' = quick, neutral." },
+  { front: "Bonjour", back: "Hello / Good morning", subtext: "[bɔ̃ʒuʁ]: The safest, most universal greeting. Use any time of day until early evening, in any situation formal or casual." },
+  { front: "Bonsoir", back: "Good evening", subtext: "[bɔ̃swaʁ]: Replaces bonjour once it's evening (roughly after 6 pm). Use it when arriving somewhere in the evening." },
+  { front: "Salut", back: "Hi / Bye (casual)", subtext: "[saly]: Casual, like 'hey'. Use only with people you know: friends, classmates. Never with a teacher, boss, or stranger." },
+  { front: "Coucou", back: "Hey! (very informal)", subtext: "[kuku]: Even more casual than salut. Used with close friends and family, often in texts. Not appropriate in any formal or professional context." },
+  { front: "Au revoir", back: "Goodbye", subtext: "[o ʁəvwaʁ]: Standard polite farewell. Use with everyone. Literally: 'until we see each other again'." },
+  { front: "À bientôt", back: "See you soon", subtext: "[a bjɛ̃to]: Use when you expect to see the person again shortly. More specific than 'au revoir'." },
+  { front: "À demain", back: "See you tomorrow", subtext: "[a dəmɛ̃]: For when you'll see the person the next day. Combines à (until) + demain (tomorrow)." },
+  { front: "À tout à l'heure", back: "See you in a bit / later today", subtext: "[a tu ta lœʁ]: When you'll see the person later the same day. Often shortened in speech to 'à toute'." },
+  { front: "Bonne journée!", back: "Have a good day!", subtext: "[bɔn ʒuʁne]: Said when leaving in the morning/daytime. Response: 'Merci, vous aussi!' (Thank you, you too!)" },
+  { front: "Bonne soirée!", back: "Have a good evening!", subtext: "[bɔn swaʁe]: Said when leaving in the evening. Different from bonsoir: that's a greeting, this is a farewell." },
+  { front: "Merci", back: "Thank you", subtext: "[mɛʁsi]: Works in every situation. 'Merci beaucoup' = thank you very much. 'Merci bien' = thanks a lot (friendly)." },
+  { front: "De rien / Pas de quoi", back: "You're welcome", subtext: "[də ʁjɛ̃] / [pa də kwa]: Both mean 'you're welcome'. 'Je vous en prie' is the formal version. 'De rien' is the most common." },
+  { front: "S'il vous plaît", back: "Please (formal/plural)", subtext: "[sil vu plɛ]: Use with strangers, adults, or when speaking to multiple people. Formal. Shorten to 'SVP' in writing." },
+  { front: "S'il te plaît", back: "Please (informal)", subtext: "[sil tə plɛ]: Use with friends, classmates, family. Informal. Often shortened to 'STP' in texts." },
+  { front: "Excusez-moi / Pardon", back: "Excuse me / Sorry", subtext: "[ɛkskyze mwa] / [paʁdɔ̃]: Use to get someone's attention or apologize. 'Excusez-moi' = formal; 'pardon' = quick, neutral." },
 ];
 
 const matchPairs = [
@@ -41,7 +41,7 @@ const quiz = [
   },
   {
     question: "Your friend texts you 'Salut !' What does it mean and what tone is it?",
-    options: ["Good evening — formal", "Goodbye — neutral", "Hi — casual, friends only", "Excuse me — polite"],
+    options: ["Good evening: formal", "Goodbye: neutral", "Hi: casual, friends only", "Excuse me: polite"],
     correct: 2,
     explanation: "Salut means 'Hi' and is casual. It is only appropriate with people you know well. In a text to a friend, it's completely natural.",
   },
@@ -77,10 +77,10 @@ const quiz = [
   {
     question: "A student asks their teacher 'S'il te plaît, puis-je aller aux toilettes?' Is this correct?",
     options: [
-      "Yes — perfectly correct",
-      "No — should be 's'il vous plaît' with a teacher, who is an adult",
-      "No — should be 'Bonjour' first",
-      "No — 'plaît' should be 'plait'",
+      "Yes: perfectly correct",
+      "No: should be 's'il vous plaît' with a teacher, who is an adult",
+      "No: should be 'Bonjour' first",
+      "No: 'plaît' should be 'plait'",
     ],
     correct: 1,
     explanation: "'S'il te plaît' uses the informal 'te' and is for friends and family. With a teacher (an adult you show respect to), use 's'il vous plaît'. This is one of the most common politeness errors students make.",
@@ -97,7 +97,7 @@ export default function Lesson1Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/french-foundations" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/french-foundations" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← French Foundations
         </Link>
 
@@ -110,7 +110,7 @@ export default function Lesson1Page() {
               Greetings
             </h1>
             <p className="mt-4 text-lg leading-8 text-[#526173]">
-              French has more greetings than you might think — and choosing the wrong one for the situation is one of the most common beginner mistakes. This lesson covers them all, with context for when to use each one.
+              French has more greetings than you might think: and choosing the wrong one for the situation is one of the most common beginner mistakes. This lesson covers them all, with context for when to use each one.
             </p>
           </div>
 
@@ -135,7 +135,7 @@ export default function Lesson1Page() {
         </div>
 
         {/* Formal vs informal */}
-        <section className="mt-12 rounded-[2rem] border border-[#E7DAB9] bg-white p-6 shadow-sm">
+        <section className="mt-12 rounded-2xl border border-[#E7DAB9] bg-white p-6 shadow-sm">
           <h2 className="text-xl font-black">Formal vs. informal register</h2>
           <p className="mt-2 text-sm text-[#526173]">French has a formal/informal distinction built into greetings and throughout the language. The choice signals respect.</p>
           <div className="mt-4 grid gap-4 sm:grid-cols-2">
@@ -163,7 +163,7 @@ export default function Lesson1Page() {
         </section>
 
         {/* Common mistakes */}
-        <section className="mt-8 rounded-[2rem] border-2 border-[#FEF3C7] bg-white p-6">
+        <section className="mt-8 rounded-2xl border-2 border-[#FEF3C7] bg-white p-6">
           <p className="text-xs font-bold uppercase tracking-widest text-[#D97706]">Common mistakes</p>
           <div className="mt-4 space-y-3 text-sm">
             {[
@@ -204,16 +204,16 @@ export default function Lesson1Page() {
           </div>
         </section>
 
-        <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <section className="mt-16 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
           <h2 className="mt-3 text-3xl font-black">You know French greetings.</h2>
           <p className="mt-3 leading-7 text-[#526173]">
-            Next: how to introduce yourself — your name, age, and where you&apos;re from.
+            Next: how to introduce yourself: your name, age, and where you&apos;re from.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link href="/learn/french-foundations" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">
               Back to course
             </Link>
-            <Link href="/learn/french-foundations/unit-1/lesson-2" className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">
+            <Link href="/learn/french-foundations/unit-1/lesson-2" className="rounded-full bg-[#D62828] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">
               Next lesson →
             </Link>
           </div>

@@ -29,7 +29,7 @@ const questions = [
       "To be in trouble",
     ],
     correct: 2,
-    explanation: "'Avoir de la misère' means to have difficulty or to struggle with something. Example: J'ai de la misère à comprendre cette leçon. — I'm struggling to understand this lesson.",
+    explanation: "'Avoir de la misère' means to have difficulty or to struggle with something. Example: J'ai de la misère à comprendre cette leçon.: I'm struggling to understand this lesson.",
   },
   {
     question: "Which body enforces French language laws in Quebec and creates official French terminology?",
@@ -74,7 +74,7 @@ const questions = [
     question: "In Quebec French, what does 'être chaud(e)' mean?",
     options: ["To be warm", "To be drunk", "To be in trouble", "To be excited"],
     correct: 1,
-    explanation: "In Quebec French, 'être chaud(e)' means to be drunk — a false friend compared to standard French, where it simply means to be warm or hot. Context is key.",
+    explanation: "In Quebec French, 'être chaud(e)' means to be drunk: a false friend compared to standard French, where it simply means to be warm or hot. Context is key.",
   },
   {
     question: "What is 'le Grand Dérangement' in Acadian history?",
@@ -93,7 +93,7 @@ export default function Unit1TestPage() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/canadian-life/unit-1/lesson-4" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/canadian-life/unit-1/lesson-4" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← Back to Lesson 4
         </Link>
 
@@ -128,12 +128,12 @@ export default function Unit1TestPage() {
           <MultipleChoiceQuiz questions={questions} title="Unit 1 test" />
         </div>
 
-        <div className="mt-12 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <div className="mt-12 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
           <p className="text-lg font-black">Ready for Unit 2?</p>
           <p className="mt-2 text-[#526173]">Unit 2 covers the French you need for Canadian government and official documents — healthcare cards, tax returns, government forms, and formal letters.</p>
           <div className="mt-5 flex flex-wrap gap-3">
             <Link href="/learn/canadian-life/unit-1/lesson-4" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">← Back to lesson</Link>
-            <Link href="/learn/canadian-life/unit-2/lesson-1" className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Start Unit 2 →</Link>
+            <Link href="/learn/canadian-life/unit-2/lesson-1" className="rounded-full bg-[#D62828] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">Start Unit 2 →</Link>
           </div>
         </div>
       </section>

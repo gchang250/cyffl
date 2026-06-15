@@ -56,7 +56,7 @@ const units = [
   {
     number: "05",
     title: "Writing Practice",
-    description: "Sentence structure, connectors, and guided writing — from paragraphs to short essays.",
+    description: "Sentence structure, connectors, and guided writing: from paragraphs to short essays.",
     color: "bg-[#F0FDF4] text-[#16A34A]",
     testHref: "/learn/school-french-support/unit-5/test",
     lessons: [
@@ -87,7 +87,7 @@ export default function SchoolFrenchSupportPage() {
       <section className="mx-auto max-w-7xl px-6 py-20">
         <Link
           href="/learn"
-          className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]"
+          className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]"
         >
           ← Back to courses
         </Link>
@@ -103,7 +103,7 @@ export default function SchoolFrenchSupportPage() {
             </h1>
 
             <p className="mt-5 text-lg leading-8 text-[#526173]">
-              Review and strengthen your school French. Grammar, verb tenses, writing skills, and reading comprehension — organized for Canadian school students.
+              Review and strengthen your school French. Grammar, verb tenses, writing skills, and reading comprehension, organized for Canadian school students.
             </p>
 
             <div className="mt-8 grid grid-cols-3 gap-3 text-center">
@@ -121,7 +121,7 @@ export default function SchoolFrenchSupportPage() {
               </div>
             </div>
 
-            <div className="mt-6 rounded-[1.5rem] bg-[#0B1F3A] p-5 text-white">
+            <div className="mt-6 rounded-2xl bg-[#0B1F3A] p-5 text-white">
               <p className="text-sm font-bold text-[#C9A44C]">Goal</p>
               <p className="mt-2 font-black leading-7">
                 Master the core grammar patterns taught in Canadian schools.
@@ -133,7 +133,7 @@ export default function SchoolFrenchSupportPage() {
             {units.map((unit) => (
               <div
                 key={unit.number}
-                className="rounded-[2rem] border border-[#E7DAB9] bg-white p-6 shadow-sm"
+                className="rounded-2xl border border-[#E7DAB9] bg-white p-6 shadow-sm"
               >
                 <div className="flex items-center gap-3">
                   <span className={`rounded-full px-2.5 py-0.5 text-xs font-black ${unit.color}`}>

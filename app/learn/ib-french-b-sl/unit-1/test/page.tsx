@@ -17,7 +17,7 @@ const questions = [
     question: "A text about a teenager joining an online gaming community with its own language and culture fits which Identities sub-topic?",
     options: ["Health and well-being", "Lifestyles", "Subcultures", "Beliefs and values"],
     correct: 2,
-    explanation: "Subcultures — groups within a larger culture with their own distinct identity and norms — is an official Identities sub-topic.",
+    explanation: "Subcultures: groups within a larger culture with their own distinct identity and norms: is an official Identities sub-topic.",
   },
   {
     question: "What is the guiding principle of the Experiences theme?",
@@ -34,7 +34,7 @@ const questions = [
     question: "A family's annual pilgrimage to their ancestral village fits which Experiences sub-topic?",
     options: ["Leisure activities", "Life stories", "Customs and traditions", "Rites of passage"],
     correct: 2,
-    explanation: "Customs and traditions — cultural practices passed down through generations — is an official Experiences sub-topic.",
+    explanation: "Customs and traditions: cultural practices passed down through generations: is an official Experiences sub-topic.",
   },
   {
     question: "What is the guiding principle of Human Ingenuity?",
@@ -73,7 +73,7 @@ const questions = [
     question: "A text about stricter school attendance rules and their impact on students fits which Social Organisation sub-topic?",
     options: ["Social relationships", "The working world", "Law and order", "Education"],
     correct: 3,
-    explanation: "Education — access to, structure of, and rules within — is an official Social Organisation sub-topic.",
+    explanation: "Education: access to, structure of, and rules within: is an official Social Organisation sub-topic.",
   },
   {
     question: "What is the guiding principle of Sharing the Planet?",
@@ -103,7 +103,7 @@ export default function Unit1TestPage() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/ib-french-b-sl" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/ib-french-b-sl" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← IB French B SL
         </Link>
 
@@ -111,7 +111,7 @@ export default function Unit1TestPage() {
           <span className="rounded-full bg-[#EFF6FF] px-3 py-1 text-xs font-black text-[#2563EB]">Unit 1 Test</span>
           <h1 className="mt-4 text-5xl font-black tracking-tight md:text-6xl">The Five Core Themes</h1>
           <p className="mt-4 max-w-2xl text-lg leading-8 text-[#526173]">
-            10 questions — 2 per theme. Guiding principles, recommended sub-topics, and how to identify which theme a text or image belongs to.
+            10 questions: 2 per theme. Guiding principles, recommended sub-topics, and how to identify which theme a text or image belongs to.
           </p>
         </div>
 
@@ -119,12 +119,12 @@ export default function Unit1TestPage() {
           <MultipleChoiceQuiz questions={questions} title="Unit 1 Test · 10 questions" />
         </section>
 
-        <div className="mt-12 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <div className="mt-12 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
           <p className="font-black text-lg">Ready for Unit 2?</p>
           <p className="mt-2 text-[#526173]">Unit 2 covers Paper 2 — reading and listening comprehension strategies, question types, and grammar.</p>
           <div className="mt-5 flex flex-wrap gap-3">
             <Link href="/learn/ib-french-b-sl/unit-1/lesson-5" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">← Back to lesson</Link>
-            <Link href="/learn/ib-french-b-sl/unit-2/lesson-1" className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Start Unit 2 →</Link>
+            <Link href="/learn/ib-french-b-sl/unit-2/lesson-1" className="rounded-full bg-[#D62828] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">Start Unit 2 →</Link>
           </div>
         </div>
       </section>

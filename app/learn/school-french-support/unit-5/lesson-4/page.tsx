@@ -5,16 +5,16 @@ import FillInTheBlank from "@/components/FillInTheBlank";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const futureCards = [
-  { front: "Je vais partir demain.", back: "I am going to leave tomorrow. — Futur proche (immediate/planned).", subtext: "Futur proche = aller (conjugated) + infinitive. Use for near-future plans." },
-  { front: "Elle va étudier ce soir.", back: "She is going to study tonight. — Futur proche.", subtext: "Very common in speech; feels more certain/immediate than futur simple." },
-  { front: "Nous allons voyager cet été.", back: "We are going to travel this summer. — Futur proche.", subtext: "Use futur proche for intentions and decisions already made." },
-  { front: "Je partirai à huit heures.", back: "I will leave at eight o'clock. — Futur simple.", subtext: "Futur simple = infinitive + endings. Drop the final -e from -re verbs first." },
-  { front: "Il sera médecin.", back: "He will be a doctor. — Futur simple of être: ser- + ai/as/a/ons/ez/ont.", subtext: "Être → stem: ser-. Used for predictions, distant plans, dreams." },
-  { front: "Nous aurons une grande maison.", back: "We will have a big house. — Futur simple of avoir: aur-.", subtext: "Avoir → stem: aur-. Irregular stem, regular endings." },
-  { front: "Tu feras tes devoirs.", back: "You will do your homework. — Futur simple of faire: fer-.", subtext: "Faire → stem: fer-. Don't forget the irregular stem." },
-  { front: "Ils iront en France.", back: "They will go to France. — Futur simple of aller: ir-.", subtext: "Aller → stem: ir-. Same stem as the infinitive of partir! Don't confuse." },
-  { front: "Elle voudra partir tôt.", back: "She will want to leave early. — Futur simple of vouloir: voudr-.", subtext: "Vouloir → stem: voudr-. Notice the d is kept from the infinitive." },
-  { front: "Vous pourrez venir.", back: "You will be able to come. — Futur simple of pouvoir: pourr-.", subtext: "Pouvoir → stem: pourr-. Double-r is the key feature." },
+  { front: "Je vais partir demain.", back: "I am going to leave tomorrow.: Futur proche (immediate/planned).", subtext: "Futur proche = aller (conjugated) + infinitive. Use for near-future plans." },
+  { front: "Elle va étudier ce soir.", back: "She is going to study tonight.: Futur proche.", subtext: "Very common in speech; feels more certain/immediate than futur simple." },
+  { front: "Nous allons voyager cet été.", back: "We are going to travel this summer.: Futur proche.", subtext: "Use futur proche for intentions and decisions already made." },
+  { front: "Je partirai à huit heures.", back: "I will leave at eight o'clock.: Futur simple.", subtext: "Futur simple = infinitive + endings. Drop the final -e from -re verbs first." },
+  { front: "Il sera médecin.", back: "He will be a doctor.: Futur simple of être: ser- + ai/as/a/ons/ez/ont.", subtext: "Être → stem: ser-. Used for predictions, distant plans, dreams." },
+  { front: "Nous aurons une grande maison.", back: "We will have a big house.: Futur simple of avoir: aur-.", subtext: "Avoir → stem: aur-. Irregular stem, regular endings." },
+  { front: "Tu feras tes devoirs.", back: "You will do your homework.: Futur simple of faire: fer-.", subtext: "Faire → stem: fer-. Don't forget the irregular stem." },
+  { front: "Ils iront en France.", back: "They will go to France.: Futur simple of aller: ir-.", subtext: "Aller → stem: ir-. Same stem as the infinitive of partir! Don't confuse." },
+  { front: "Elle voudra partir tôt.", back: "She will want to leave early.: Futur simple of vouloir: voudr-.", subtext: "Vouloir → stem: voudr-. Notice the d is kept from the infinitive." },
+  { front: "Vous pourrez venir.", back: "You will be able to come.: Futur simple of pouvoir: pourr-.", subtext: "Pouvoir → stem: pourr-. Double-r is the key feature." },
 ];
 
 const pairs = [
@@ -27,11 +27,11 @@ const pairs = [
 ];
 
 const exercises = [
-  { before: "Ce soir, je", after: "mes devoirs. (aller + faire — futur proche)", answer: "vais faire", hint: "aller conjugated: je vais + infinitive faire", translation: "Tonight, I am going to do my homework." },
-  { before: "L'année prochaine, nous", after: "à Paris. (aller — futur simple)", answer: "irons", hint: "aller → ir- + ons (nous ending)", translation: "Next year, we will go to Paris." },
-  { before: "Elle", after: "médecin un jour. (être — futur simple)", answer: "sera", hint: "être → ser- + a (il/elle ending)", translation: "She will be a doctor one day." },
-  { before: "Tu", after: "le temps de terminer. (avoir — futur simple)", answer: "auras", hint: "avoir → aur- + as (tu ending)", translation: "You will have time to finish." },
-  { before: "Ils", after: "une fête demain soir. (aller + organiser — futur proche)", answer: "vont organiser", hint: "aller conjugated: ils vont + infinitive organiser", translation: "They are going to organise a party tomorrow evening." },
+  { before: "Ce soir, je", after: "mes devoirs. (aller + faire: futur proche)", answer: "vais faire", hint: "aller conjugated: je vais + infinitive faire", translation: "Tonight, I am going to do my homework." },
+  { before: "L'année prochaine, nous", after: "à Paris. (aller: futur simple)", answer: "irons", hint: "aller → ir- + ons (nous ending)", translation: "Next year, we will go to Paris." },
+  { before: "Elle", after: "médecin un jour. (être: futur simple)", answer: "sera", hint: "être → ser- + a (il/elle ending)", translation: "She will be a doctor one day." },
+  { before: "Tu", after: "le temps de terminer. (avoir: futur simple)", answer: "auras", hint: "avoir → aur- + as (tu ending)", translation: "You will have time to finish." },
+  { before: "Ils", after: "une fête demain soir. (aller + organiser: futur proche)", answer: "vont organiser", hint: "aller conjugated: ils vont + infinitive organiser", translation: "They are going to organise a party tomorrow evening." },
 ];
 
 const questions = [
@@ -86,12 +86,12 @@ const questions = [
     question: "A student writes 'Je vais serai médecin.' What's wrong?",
     options: [
       "Serai should be être.",
-      "You can't combine futur proche (vais) and futur simple (serai) — choose one.",
+      "You can't combine futur proche (vais) and futur simple (serai): choose one.",
       "Médecin should have an article.",
       "Nothing is wrong.",
     ],
     correct: 1,
-    explanation: "Don't combine futur proche and futur simple — use one or the other. Correct options: 'Je vais être médecin' (futur proche) OR 'Je serai médecin' (futur simple).",
+    explanation: "Don't combine futur proche and futur simple: use one or the other. Correct options: 'Je vais être médecin' (futur proche) OR 'Je serai médecin' (futur simple).",
   },
 ];
 
@@ -99,7 +99,7 @@ export default function Unit5Lesson4Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/school-french-support" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/school-french-support" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← School French Support
         </Link>
 
@@ -160,7 +160,7 @@ export default function Unit5Lesson4Page() {
           <MultipleChoiceQuiz questions={questions} title="Future tense quiz" />
         </div>
 
-        <div className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <div className="mt-16 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
 
           <p className="mt-2 text-[#526173]">You&apos;ve covered connectors, writing about yourself, past narratives, and the future tense. Take the test to confirm your mastery before moving on to Unit 6.</p>
           <div className="mt-5 flex flex-wrap gap-3">

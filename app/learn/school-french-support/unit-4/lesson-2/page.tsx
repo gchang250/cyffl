@@ -5,14 +5,14 @@ import FillInTheBlank from "@/components/FillInTheBlank";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const cards = [
-  { front: "Quand j'étais jeune, j'habitais à Lyon.", back: "When I was young, I lived in Lyon. — ongoing background state", subtext: "Use 1: background description / ongoing state in the past." },
-  { front: "Le soleil brillait et les oiseaux chantaient.", back: "The sun was shining and the birds were singing. — setting the scene", subtext: "Use 1: painting the background picture of a scene." },
-  { front: "Chaque soir, elle lisait avant de dormir.", back: "Every evening she used to read before sleeping. — habit", subtext: "Use 2: repeated action or habit in the past." },
-  { front: "Nous allions à l'église tous les dimanches.", back: "We used to go to church every Sunday. — routine", subtext: "Use 2: regular, habitual action in the past." },
-  { front: "Il était triste ce jour-là.", back: "He was sad that day. — mental/emotional state", subtext: "Use 3: describing a feeling, emotion, or mental state." },
-  { front: "J'avais faim et je me sentais fatiguée.", back: "I was hungry and I felt tired. — physical/emotional state", subtext: "Use 3: physical sensations and mental states use imparfait." },
-  { front: "Si j'avais le temps, j'apprendrais la guitare.", back: "If I had the time, I would learn the guitar. — si clause", subtext: "Use 4: imparfait in si (if) clauses expressing a hypothetical." },
-  { front: "Pendant qu'il dormait, le téléphone a sonné.", back: "While he was sleeping, the phone rang. — ongoing action interrupted", subtext: "Use 1 + passé composé: imparfait = background, PC = the interrupting event." },
+  { front: "Quand j'étais jeune, j'habitais à Lyon.", back: "When I was young, I lived in Lyon.: ongoing background state", subtext: "Use 1: background description / ongoing state in the past." },
+  { front: "Le soleil brillait et les oiseaux chantaient.", back: "The sun was shining and the birds were singing.: setting the scene", subtext: "Use 1: painting the background picture of a scene." },
+  { front: "Chaque soir, elle lisait avant de dormir.", back: "Every evening she used to read before sleeping.: habit", subtext: "Use 2: repeated action or habit in the past." },
+  { front: "Nous allions à l'église tous les dimanches.", back: "We used to go to church every Sunday.: routine", subtext: "Use 2: regular, habitual action in the past." },
+  { front: "Il était triste ce jour-là.", back: "He was sad that day.: mental/emotional state", subtext: "Use 3: describing a feeling, emotion, or mental state." },
+  { front: "J'avais faim et je me sentais fatiguée.", back: "I was hungry and I felt tired.: physical/emotional state", subtext: "Use 3: physical sensations and mental states use imparfait." },
+  { front: "Si j'avais le temps, j'apprendrais la guitare.", back: "If I had the time, I would learn the guitar.: si clause", subtext: "Use 4: imparfait in si (if) clauses expressing a hypothetical." },
+  { front: "Pendant qu'il dormait, le téléphone a sonné.", back: "While he was sleeping, the phone rang.: ongoing action interrupted", subtext: "Use 1 + passé composé: imparfait = background, PC = the interrupting event." },
 ];
 
 const pairs = [
@@ -25,11 +25,11 @@ const pairs = [
 ];
 
 const exercises = [
-  { before: "Quand il était petit, il", after: "souvent au foot. (jouer)", answer: "jouait", hint: "Repeated past action — imparfait: jouer → stem jou- → jouait", translation: "When he was little, he often played football." },
-  { before: "Nous", after: "fatigués après le voyage. (être)", answer: "étions", hint: "Emotional/physical state — imparfait of être: nous étions", translation: "We were tired after the journey." },
-  { before: "Elle", after: "à la bibliothèque tous les mercredis. (aller)", answer: "allait", hint: "Habitual action — imparfait: aller → stem all- → allait", translation: "She used to go to the library every Wednesday." },
-  { before: "Si tu", after: "plus, tu réussirais. (travailler)", answer: "travaillais", hint: "Si clause — always imparfait: travailler → stem travaill- → travaillais", translation: "If you worked more, you would succeed." },
-  { before: "Le ciel", after: "bleu et il", answer: "était, faisait", hint: "Background description — two states: être → était, faire → faisait", translation: "The sky was blue and it was (good weather)." },
+  { before: "Quand il était petit, il", after: "souvent au foot. (jouer)", answer: "jouait", hint: "Repeated past action: imparfait: jouer → stem jou- → jouait", translation: "When he was little, he often played football." },
+  { before: "Nous", after: "fatigués après le voyage. (être)", answer: "étions", hint: "Emotional/physical state: imparfait of être: nous étions", translation: "We were tired after the journey." },
+  { before: "Elle", after: "à la bibliothèque tous les mercredis. (aller)", answer: "allait", hint: "Habitual action: imparfait: aller → stem all- → allait", translation: "She used to go to the library every Wednesday." },
+  { before: "Si tu", after: "plus, tu réussirais. (travailler)", answer: "travaillais", hint: "Si clause: always imparfait: travailler → stem travaill- → travaillais", translation: "If you worked more, you would succeed." },
+  { before: "Le ciel", after: "bleu et il", answer: "était, faisait", hint: "Background description: two states: être → était, faire → faisait", translation: "The sky was blue and it was (good weather)." },
 ];
 
 const questions = [
@@ -42,7 +42,7 @@ const questions = [
       "Si j'avais le temps... (If I had the time...)",
     ],
     correct: 1,
-    explanation: "'Chaque jour, il marchait' expresses a repeated, habitual action — a classic use of the imparfait. Trigger words like chaque jour, tous les jours, souvent, toujours signal habit.",
+    explanation: "'Chaque jour, il marchait' expresses a repeated, habitual action: a classic use of the imparfait. Trigger words like chaque jour, tous les jours, souvent, toujours signal habit.",
   },
   {
     question: "Which sentence correctly uses the imparfait for a mental/emotional state?",
@@ -65,7 +65,7 @@ const questions = [
     question: "Which word is a trigger for the imparfait?",
     options: ["soudain", "hier", "tout à coup", "autrefois"],
     correct: 3,
-    explanation: "'Autrefois' (in the old days / formerly) signals habitual or ongoing past states — classic imparfait territory. 'Soudain', 'hier', and 'tout à coup' signal single completed events (passé composé).",
+    explanation: "'Autrefois' (in the old days / formerly) signals habitual or ongoing past states: classic imparfait territory. 'Soudain', 'hier', and 'tout à coup' signal single completed events (passé composé).",
   },
   {
     question: "Which sentence shows the imparfait used for background description?",
@@ -76,7 +76,7 @@ const questions = [
       "Il allait neiger.",
     ],
     correct: 1,
-    explanation: "'Il neigeait et le ciel était gris' — both verbs are in the imparfait, painting a background picture. This is the classic 'stage-setting' use of the imparfait in narratives.",
+    explanation: "'Il neigeait et le ciel était gris': both verbs are in the imparfait, painting a background picture. This is the classic 'stage-setting' use of the imparfait in narratives.",
   },
   {
     question: "A student uses 'chaque soir' in a sentence. Which tense should follow?",
@@ -93,13 +93,13 @@ const questions = [
       "A future plan.",
     ],
     correct: 2,
-    explanation: "Si + imparfait (travaillais) → conditionnel (réussirais). This structure expresses a hypothetical: 'If you worked more, you would succeed.' The si clause always uses imparfait — never conditionnel.",
+    explanation: "Si + imparfait (travaillais) → conditionnel (réussirais). This structure expresses a hypothetical: 'If you worked more, you would succeed.' The si clause always uses imparfait: never conditionnel.",
   },
   {
     question: "How do you express 'He was looking for his keys' as an ongoing past action?",
     options: ["Il cherchait ses clés.", "Il a cherché ses clés.", "Il cherche ses clés.", "Il va chercher ses clés."],
     correct: 0,
-    explanation: "Il cherchait ses clés — the imparfait shows an ongoing, unfinished action in the past (he was in the process of searching). Passé composé (il a cherché) would imply the search is completed.",
+    explanation: "Il cherchait ses clés: the imparfait shows an ongoing, unfinished action in the past (he was in the process of searching). Passé composé (il a cherché) would imply the search is completed.",
   },
 ];
 
@@ -107,7 +107,7 @@ export default function Unit4Lesson2Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/school-french-support" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/school-french-support" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← School French Support
         </Link>
 
@@ -116,7 +116,7 @@ export default function Unit4Lesson2Page() {
             <p className="text-xs font-bold uppercase tracking-widest text-[#9D174D]">Unit 4 · Lesson 2</p>
             <h1 className="mt-3 text-5xl font-black tracking-tight md:text-6xl">Uses of L'imparfait</h1>
             <p className="mt-4 text-lg leading-8 text-[#526173]">
-              The imparfait is not simply "the other past tense" — it has four distinct uses. Understanding when to reach for the imparfait (rather than the passé composé) is one of the most important skills in French grammar.
+              The imparfait is not simply "the other past tense": it has four distinct uses. Understanding when to reach for the imparfait (rather than the passé composé) is one of the most important skills in French grammar.
             </p>
             <div className="mt-4 space-y-2 text-sm text-[#526173]">
               <p><strong className="text-[#0B1F3A]">Use 1:</strong> Ongoing background actions or descriptions ("the sky was blue", "she was reading")</p>
@@ -144,7 +144,7 @@ export default function Unit4Lesson2Page() {
         </div>
 
         <div className="mt-12">
-          <FlashCardDeck cards={cards} title="Imparfait in context — the four uses" />
+          <FlashCardDeck cards={cards} title="Imparfait in context: the four uses" />
         </div>
 
         <div className="mt-12 rounded-2xl bg-[#0B1F3A] p-6 text-white">

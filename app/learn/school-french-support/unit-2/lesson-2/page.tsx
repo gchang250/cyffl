@@ -5,14 +5,14 @@ import FillInTheBlank from "@/components/FillInTheBlank";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const irReCards = [
-  { front: "finir", back: "to finish — je finis", subtext: "-ir verbs: remove -ir → fin-, add: -is, -is, -it, -issons, -issez, -issent." },
-  { front: "choisir", back: "to choose — je choisis", subtext: "Qu'est-ce que tu choisis? — What are you choosing?" },
-  { front: "réussir", back: "to succeed / pass — je réussis", subtext: "Réussir à un examen — to pass a test." },
-  { front: "grandir", back: "to grow up — je grandis", subtext: "Les enfants grandissent vite. — Children grow up fast." },
-  { front: "rougir", back: "to blush — je rougis", subtext: "Elle rougit facilement. — She blushes easily." },
-  { front: "obéir", back: "to obey — j'obéis", subtext: "Obéir à ses parents. — To obey one's parents." },
-  { front: "vendre", back: "to sell — je vends", subtext: "-re verbs: remove -re → vend-, add: -s, -s, -, -ons, -ez, -ent." },
-  { front: "répondre", back: "to answer — je réponds", subtext: "Réponds à la question! — Answer the question!" },
+  { front: "finir", back: "to finish: je finis", subtext: "-ir verbs: remove -ir → fin-, add: -is, -is, -it, -issons, -issez, -issent." },
+  { front: "choisir", back: "to choose: je choisis", subtext: "Qu'est-ce que tu choisis?: What are you choosing?" },
+  { front: "réussir", back: "to succeed / pass: je réussis", subtext: "Réussir à un examen: to pass a test." },
+  { front: "grandir", back: "to grow up: je grandis", subtext: "Les enfants grandissent vite.: Children grow up fast." },
+  { front: "rougir", back: "to blush: je rougis", subtext: "Elle rougit facilement.: She blushes easily." },
+  { front: "obéir", back: "to obey: j'obéis", subtext: "Obéir à ses parents.: To obey one's parents." },
+  { front: "vendre", back: "to sell: je vends", subtext: "-re verbs: remove -re → vend-, add: -s, -s, -, -ons, -ez, -ent." },
+  { front: "répondre", back: "to answer: je réponds", subtext: "Réponds à la question!: Answer the question!" },
 ];
 
 const pairs = [
@@ -49,7 +49,7 @@ const questions = [
     question: "Which sentence correctly conjugates 'réussir' for 'ils'?",
     options: ["ils réussient", "ils réussent", "ils réusissent", "ils réussissent"],
     correct: 3,
-    explanation: "Ils réussissent — the -iss- infix is added: réuss- + issent. The pattern applies to all regular -ir verbs.",
+    explanation: "Ils réussissent: the -iss- infix is added: réuss- + issent. The pattern applies to all regular -ir verbs.",
   },
   {
     question: "Which of these is a regular -re verb?",
@@ -67,7 +67,7 @@ const questions = [
     question: "How do you say 'She succeeds in the exam'?",
     options: ["Elle réussit à l'examen.", "Elle réussite à l'examen.", "Elle réussit l'examen.", "Elle réussit en l'examen."],
     correct: 0,
-    explanation: "Réussir à = to succeed in / to pass. Elle réussit à l'examen. Note: réussit (no extra -e) — il/elle -ir verbs end in -it. Don't write 'réussite' (that's a noun meaning 'success').",
+    explanation: "Réussir à = to succeed in / to pass. Elle réussit à l'examen. Note: réussit (no extra -e): il/elle -ir verbs end in -it. Don't write 'réussite' (that's a noun meaning 'success').",
   },
   {
     question: "What is the 'nous' form of 'répondre'?",
@@ -77,7 +77,7 @@ const questions = [
   },
   {
     question: "A student writes 'ils grandissent.' Is this the correct form of 'grandir' for ils?",
-    options: ["No — it should be ils grandent.", "No — it should be ils grandient.", "Yes — -ir verbs take -issent for ils.", "No — it should be ils grandissons."],
+    options: ["No: it should be ils grandent.", "No: it should be ils grandient.", "Yes: -ir verbs take -issent for ils.", "No: it should be ils grandissons."],
     correct: 2,
     explanation: "Ils grandissent is correct. Regular -ir verbs insert -iss- before plural endings: ils finissent, ils grandissent, ils réussissent. The -issons form is for nous.",
   },
@@ -87,7 +87,7 @@ export default function Unit2Lesson2Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/school-french-support" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/school-french-support" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← School French Support
         </Link>
 
@@ -118,15 +118,15 @@ export default function Unit2Lesson2Page() {
           </div>
         </div>
 
-        <div className="mt-12 rounded-[2rem] border-2 border-[#FEF3C7] bg-white p-6">
+        <div className="mt-12 rounded-2xl border-2 border-[#FEF3C7] bg-white p-6">
           <p className="text-xs font-bold uppercase tracking-widest text-[#D97706]">Common mistakes — -ir and -re verbs</p>
           <div className="mt-4 space-y-3 text-sm">
             {[
-              { wrong: "il réussite à l'examen", right: "il réussit — 'réussite' is a noun (success). The verb is réussit (no extra -e)." },
-              { wrong: "ils finient", right: "ils finissent — -ir verbs take -issent, not -ient. The -iss- infix is always there for plural forms." },
-              { wrong: "il vends", right: "il vend — the il/elle form of -re verbs drops the -re and adds NOTHING. No -s added." },
-              { wrong: "nous choisisons", right: "nous choisissons — the infix is -iss-, not -is-. The full endings are: -issons / -issez / -issent." },
-              { wrong: "tu répond", right: "tu réponds — for je and tu forms of -re verbs, add -s: je vends, tu vends, je réponds, tu réponds." },
+              { wrong: "il réussite à l'examen", right: "il réussit: 'réussite' is a noun (success). The verb is réussit (no extra -e)." },
+              { wrong: "ils finient", right: "ils finissent: -ir verbs take -issent, not -ient. The -iss- infix is always there for plural forms." },
+              { wrong: "il vends", right: "il vend: the il/elle form of -re verbs drops the -re and adds NOTHING. No -s added." },
+              { wrong: "nous choisisons", right: "nous choisissons: the infix is -iss-, not -is-. The full endings are: -issons / -issez / -issent." },
+              { wrong: "tu répond", right: "tu réponds: for je and tu forms of -re verbs, add -s: je vends, tu vends, je réponds, tu réponds." },
             ].map((m) => (
               <div key={m.wrong} className="grid gap-1 rounded-xl border border-[#FDE68A] bg-[#FEFCE8] p-3">
                 <p className="text-[#B45309]">✗ {m.wrong}</p>
@@ -154,7 +154,7 @@ export default function Unit2Lesson2Page() {
 
         <div className="mt-16 flex items-center justify-between gap-4">
           <Link href="/learn/school-french-support/unit-2/lesson-1" className="rounded-full border border-[#E7DAB9] bg-white px-5 py-2.5 text-sm font-black text-[#526173] transition hover:-translate-y-0.5">← Previous</Link>
-          <Link href="/learn/school-french-support/unit-2/lesson-3" className="rounded-full bg-[#2563EB] px-5 py-2.5 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Next lesson →</Link>
+          <Link href="/learn/school-french-support/unit-2/lesson-3" className="rounded-full bg-[#D62828] px-5 py-2.5 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">Next lesson →</Link>
         </div>
       </section>
     </main>

@@ -5,18 +5,18 @@ import FillInTheBlank from "@/components/FillInTheBlank";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const cards = [
-  { front: "parler — je", back: "je parlais", subtext: "Quand j'étais jeune, je parlais beaucoup. — When I was young, I talked a lot." },
-  { front: "parler — tu", back: "tu parlais", subtext: "Tu parlais français à l'école. — You spoke French at school." },
-  { front: "parler — il/elle", back: "il/elle parlait", subtext: "Elle parlait doucement. — She was speaking softly." },
-  { front: "parler — nous", back: "nous parlions", subtext: "Nous parlions tous les soirs. — We used to talk every evening." },
-  { front: "parler — vous", back: "vous parliez", subtext: "Vous parliez trop vite. — You were speaking too fast." },
-  { front: "parler — ils/elles", back: "ils/elles parlaient", subtext: "Ils parlaient en même temps. — They were talking at the same time." },
-  { front: "finir — je", back: "je finissais", subtext: "Je finissais toujours mes devoirs. — I always used to finish my homework." },
-  { front: "avoir — il", back: "il avait", subtext: "Il avait l'air fatigué. — He looked tired." },
-  { front: "aller — nous", back: "nous allions", subtext: "Nous allions à la plage chaque été. — We used to go to the beach every summer." },
-  { front: "faire — tu", back: "tu faisais", subtext: "Qu'est-ce que tu faisais? — What were you doing?" },
-  { front: "avoir — vous", back: "vous aviez", subtext: "Vous aviez raison. — You were right." },
-  { front: "aller — ils", back: "ils allaient", subtext: "Ils allaient au parc le week-end. — They used to go to the park at weekends." },
+  { front: "parler: je", back: "je parlais", subtext: "Quand j'étais jeune, je parlais beaucoup.: When I was young, I talked a lot." },
+  { front: "parler: tu", back: "tu parlais", subtext: "Tu parlais français à l'école.: You spoke French at school." },
+  { front: "parler: il/elle", back: "il/elle parlait", subtext: "Elle parlait doucement.: She was speaking softly." },
+  { front: "parler: nous", back: "nous parlions", subtext: "Nous parlions tous les soirs.: We used to talk every evening." },
+  { front: "parler: vous", back: "vous parliez", subtext: "Vous parliez trop vite.: You were speaking too fast." },
+  { front: "parler: ils/elles", back: "ils/elles parlaient", subtext: "Ils parlaient en même temps.: They were talking at the same time." },
+  { front: "finir: je", back: "je finissais", subtext: "Je finissais toujours mes devoirs.: I always used to finish my homework." },
+  { front: "avoir: il", back: "il avait", subtext: "Il avait l'air fatigué.: He looked tired." },
+  { front: "aller: nous", back: "nous allions", subtext: "Nous allions à la plage chaque été.: We used to go to the beach every summer." },
+  { front: "faire: tu", back: "tu faisais", subtext: "Qu'est-ce que tu faisais?: What were you doing?" },
+  { front: "avoir: vous", back: "vous aviez", subtext: "Vous aviez raison.: You were right." },
+  { front: "aller: ils", back: "ils allaient", subtext: "Ils allaient au parc le week-end.: They used to go to the park at weekends." },
 ];
 
 const pairs = [
@@ -101,7 +101,7 @@ export default function Unit4Lesson1Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/school-french-support" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/school-french-support" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← School French Support
         </Link>
 

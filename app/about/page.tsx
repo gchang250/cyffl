@@ -4,7 +4,7 @@ const values = [
   {
     title: "Canadian",
     description:
-      "We teach the French that actually comes up in Canada — Quebec expressions, government forms, bilingual job postings, university applications. Not just classroom grammar.",
+      "We teach the French that actually comes up in Canada: Quebec expressions, government forms, bilingual job postings, university applications. Not just classroom grammar.",
   },
   {
     title: "Accessible",
@@ -56,7 +56,7 @@ export default function AboutPage() {
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
                 href="/learn"
-                className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5"
+                className="rounded-full bg-[#D62828] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5"
               >
                 Start learning
               </Link>
@@ -69,7 +69,7 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="rounded-[2rem] bg-[#0B1F3A] p-8 text-white">
+          <div className="rounded-2xl bg-[#0B1F3A] p-8 text-white">
             <p className="text-sm font-bold text-[#C9A44C]">Our mission</p>
             <p className="mt-4 text-3xl font-black leading-tight">
               French built for Canadian life.
@@ -103,7 +103,7 @@ export default function AboutPage() {
               </p>
               <p>
                 That gap matters. Canada has two official languages, and French
-                opens real doors — federal jobs, Quebec universities, bilingual
+                opens real doors: federal jobs, Quebec universities, bilingual
                 workplaces, and the ability to participate in half the country's
                 public life. According to Statistics Canada, English-French
                 bilingualism among youth is far lower outside Quebec (roughly
@@ -122,7 +122,7 @@ export default function AboutPage() {
 
         {/* Stats */}
         <section className="mt-16">
-          <div className="rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+          <div className="rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
             <div className="max-w-3xl">
               <p className="text-sm font-black uppercase tracking-widest text-[#C9A44C]">
                 The gap
@@ -142,9 +142,9 @@ export default function AboutPage() {
               {stats.map((stat) => (
                 <div
                   key={stat.label}
-                  className="rounded-[1.5rem] border border-[#E7DAB9] bg-[#FFFDF7] p-6"
+                  className="rounded-2xl border border-[#E7DAB9] bg-[#FFFDF7] p-6"
                 >
-                  <p className="text-4xl font-black text-[#2563EB]">
+                  <p className="text-4xl font-black text-[#D62828]">
                     {stat.number}
                   </p>
                   <p className="mt-2 font-black">{stat.label}</p>
@@ -172,7 +172,7 @@ export default function AboutPage() {
             {values.map((v) => (
               <div
                 key={v.title}
-                className="rounded-[1.75rem] border border-[#E7DAB9] bg-white p-6 shadow-sm"
+                className="rounded-2xl border border-[#E7DAB9] bg-white p-6 shadow-sm"
               >
                 <h3 className="text-xl font-black">{v.title}</h3>
                 <p className="mt-3 leading-7 text-[#526173]">{v.description}</p>
@@ -182,7 +182,7 @@ export default function AboutPage() {
         </section>
 
         {/* CTA */}
-        <section className="mt-20 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm md:p-12">
+        <section className="mt-20 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm md:p-12">
           <div className="grid items-center gap-8 md:grid-cols-[1fr_auto]">
             <div>
               <h2 className="text-3xl font-black tracking-tight">

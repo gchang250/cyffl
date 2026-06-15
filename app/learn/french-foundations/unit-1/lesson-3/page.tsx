@@ -73,7 +73,7 @@ const quiz = [
     question: "After answering 'ça va bien,' it's polite to add:",
     options: ["Au revoir!", "Bonjour!", "Et toi?", "Merci beaucoup."],
     correct: 2,
-    explanation: "Et toi? (And you?) turns the question back to the other person. Always ask back — it shows you're interested in them too.",
+    explanation: "Et toi? (And you?) turns the question back to the other person. Always ask back: it shows you're interested in them too.",
   },
   {
     question: "You're talking to your teacher. They ask how you're doing. You reply very well. What's the polite response?",
@@ -90,7 +90,7 @@ const quiz = [
       "Ça va? is only used in Quebec",
     ],
     correct: 1,
-    explanation: "Both ask 'how are you?' — 'Ça va?' is the ultra-casual shortcut, and 'Comment ça va?' is slightly fuller. 'Comment allez-vous?' is the formal version used with strangers or in professional contexts.",
+    explanation: "Both ask 'how are you?': 'Ça va?' is the ultra-casual shortcut, and 'Comment ça va?' is slightly fuller. 'Comment allez-vous?' is the formal version used with strangers or in professional contexts.",
   },
   {
     question: "A classmate replies 'Ça va mal' when you ask how they're doing. This means:",
@@ -101,16 +101,16 @@ const quiz = [
   {
     question: "In Quebec, you might hear 'Ça va-tu?' What does the '-tu' do?",
     options: [
-      "It means 'you' — it's the subject pronoun",
+      "It means 'you': it's the subject pronoun",
       "It's a Quebec French interrogative particle that signals a yes/no question",
       "It means 'I' in Quebec French",
-      "It's a mistake — this isn't correct French",
+      "It's a mistake: this isn't correct French",
     ],
     correct: 1,
     explanation: "In informal Quebec French, '-tu' (pronounced 'tu') is added after a verb to turn a statement into a yes/no question. 'Ça va-tu?' = 'Is it going okay?' It's not standard French, but you'll hear it constantly in Quebec.",
   },
   {
-    question: "Complete this exchange: 'Bonjour! Comment ça va?' — '_____'",
+    question: "Complete this exchange: 'Bonjour! Comment ça va?': '_____'",
     options: [
       "'Bonjour!' (just greet back)",
       "'Au revoir, très bien.'",
@@ -128,7 +128,7 @@ export default function Lesson3Page() {
       <section className="mx-auto max-w-6xl px-6 py-16">
         <Link
           href="/learn/french-foundations"
-          className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]"
+          className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]"
         >
           ← French Foundations
         </Link>
@@ -203,7 +203,7 @@ export default function Lesson3Page() {
         </section>
 
         {/* Done */}
-        <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <section className="mt-16 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
           
           <h2 className="mt-3 text-3xl font-black">
             You can greet, introduce yourself, and check in, all in French.
@@ -221,7 +221,7 @@ export default function Lesson3Page() {
             </Link>
             <Link
               href="/learn/french-foundations/unit-1/test"
-              className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]"
+              className="rounded-full bg-[#D62828] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#B91C1C]"
             >
               Take the unit test →
             </Link>

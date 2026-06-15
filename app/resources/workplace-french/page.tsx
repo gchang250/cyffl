@@ -25,13 +25,13 @@ const jobPostingRows: [string, string, string][] = [
   ["Faire parvenir votre candidature à", "Send your application to", "Followed by email address or portal link"],
   ["Date limite de candidature", "Application deadline", "Also: date de clôture"],
   ["Conditions de travail avantageuses", "Advantageous working conditions", "Usually signals good benefits package"],
-  ["Assurances collectives", "Group insurance benefits", "Covers health, dental, disability — employer-provided"],
+  ["Assurances collectives", "Group insurance benefits", "Covers health, dental, disability: employer-provided"],
 ];
 
 const coverLetterRows: [string, string][] = [
-  ["Opening — introduce yourself", "Je me permets de poser ma candidature au poste de [titre], tel qu'affiché sur [plateforme]."],
-  ["Motivation — why this role", "Ce poste correspond parfaitement à mes aspirations professionnelles, notamment en raison de..."],
-  ["Motivation — why this company", "L'engagement de votre organisation envers [valeur] m'a particulièrement interpellé(e)."],
+  ["Opening: introduce yourself", "Je me permets de poser ma candidature au poste de [titre], tel qu'affiché sur [plateforme]."],
+  ["Motivation: why this role", "Ce poste correspond parfaitement à mes aspirations professionnelles, notamment en raison de..."],
+  ["Motivation: why this company", "L'engagement de votre organisation envers [valeur] m'a particulièrement interpellé(e)."],
   ["Relevant experience", "Au cours de mes [X] années d'expérience en [domaine], j'ai acquis des compétences solides en..."],
   ["Specific achievement", "Dans mon poste actuel chez [employeur], j'ai réussi à [accomplissement concret]."],
   ["Bilingualism", "Je maîtrise le français et l'anglais à l'oral et à l'écrit, ce qui me permettrait de contribuer pleinement dans un milieu bilingue."],
@@ -39,17 +39,17 @@ const coverLetterRows: [string, string][] = [
   ["Enthusiasm", "C'est avec enthousiasme que j'envisage de contribuer à votre organisation."],
   ["Availability for interview", "Je suis disponible pour une entrevue à votre convenance et demeure joignable au [numéro]."],
   ["Enclosing CV", "Vous trouverez ci-joint mon curriculum vitae ainsi que [lettre de recommandation / portfolio / autres documents]."],
-  ["Closing — formal", "Dans l'attente de votre réponse, veuillez agréer, Madame, Monsieur, l'expression de mes salutations distinguées."],
-  ["Closing — semi-formal", "Je vous remercie de l'attention portée à ma candidature et reste à votre disposition pour tout renseignement complémentaire."],
+  ["Closing: formal", "Dans l'attente de votre réponse, veuillez agréer, Madame, Monsieur, l'expression de mes salutations distinguées."],
+  ["Closing: semi-formal", "Je vous remercie de l'attention portée à ma candidature et reste à votre disposition pour tout renseignement complémentaire."],
 ];
 
 const emailSubjectRows: [string, string][] = [
   ["Follow-up after meeting", "Suivi de notre réunion du [date]"],
   ["Question about a project", "Question concernant [sujet/projet]"],
-  ["Sending a document", "Envoi du rapport — [titre]"],
+  ["Sending a document", "Envoi du rapport: [titre]"],
   ["Absence notification", "Absence du [date] au [date]"],
-  ["Introduction", "Présentation — [votre prénom], [rôle]"],
-  ["Request for information", "Demande de renseignements — [sujet]"],
+  ["Introduction", "Présentation: [votre prénom], [rôle]"],
+  ["Request for information", "Demande de renseignements: [sujet]"],
   ["Confirming an appointment", "Confirmation du rendez-vous du [date]"],
 ];
 
@@ -96,7 +96,7 @@ export default function WorkplaceFrenchPage() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-4xl px-6 py-16">
-        <Link href="/resources" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/resources" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← Resources
         </Link>
 
@@ -168,7 +168,7 @@ export default function WorkplaceFrenchPage() {
                 ["Coordonnées", "Contact information", "Name, address, phone, email, LinkedIn"],
                 ["Profil professionnel", "Professional profile / summary", "3–4 lines at the top; tailor to each role"],
                 ["Expérience professionnelle", "Work experience", "Reverse chronological; use action verbs in past tense"],
-                ["Formation / Études", "Education / Training", "Degrees, diplomas, certificates — most recent first"],
+                ["Formation / Études", "Education / Training", "Degrees, diplomas, certificates: most recent first"],
                 ["Compétences", "Skills", "Divided into: Langues, Informatique, and domain-specific skills"],
                 ["Bénévolat", "Volunteering", "Valued in Quebec; include if relevant"],
                 ["Références disponibles sur demande", "References available upon request", "Standard closing line on a French CV"],
@@ -193,7 +193,7 @@ export default function WorkplaceFrenchPage() {
 
           <div className="mt-4 rounded-2xl bg-[#FFF8ED] border border-[#E7DAB9] p-4 text-sm text-[#526173]">
             <span className="font-black text-[#0B1F3A]">Language skills on a CV: </span>
-            Standard phrasing — Français (langue maternelle) / Anglais (niveau avancé — NCLC 10) /
+            Standard phrasing: Français (langue maternelle) / Anglais (niveau avancé: NCLC 10) /
             Espagnol (niveau intermédiaire). In bilingual federal roles, use NCLC (Niveaux de compétence
             linguistique canadiens) levels when applicable.
           </div>
@@ -291,7 +291,7 @@ export default function WorkplaceFrenchPage() {
 
           <div className="mt-4 rounded-2xl bg-[#FFF8ED] border border-[#E7DAB9] p-4 text-sm text-[#526173]">
             <span className="font-black text-[#0B1F3A]">Vous vs. tu at work: </span>
-            In Quebec workplaces, "tu" spreads faster than in European French offices — many Quebec
+            In Quebec workplaces, "tu" spreads faster than in European French offices: many Quebec
             workplaces default to "tu" even with managers. In more formal or federal bilingual environments,
             start with "vous" and follow the other person's lead.
           </div>
@@ -301,8 +301,8 @@ export default function WorkplaceFrenchPage() {
         <div className="mt-12">
           <h2 className="text-2xl font-black">Interview phrases</h2>
           <p className="mt-4 text-[#526173] leading-7">
-            French-language job interviews in Canada — especially in Quebec and for federal bilingual
-            positions — follow a structured format. These answer openers help you respond fluently to
+            French-language job interviews in Canada: especially in Quebec and for federal bilingual
+            positions: follow a structured format. These answer openers help you respond fluently to
             the most common questions.
           </p>
 
@@ -340,7 +340,7 @@ export default function WorkplaceFrenchPage() {
 
         {/* Bottom CTAs */}
         <div className="mt-16 grid gap-4 sm:grid-cols-2">
-          <div className="rounded-[2rem] border border-[#E7DAB9] bg-white p-6 shadow-sm">
+          <div className="rounded-2xl border border-[#E7DAB9] bg-white p-6 shadow-sm">
             <p className="font-black">Practise in context</p>
             <p className="mt-2 text-sm text-[#526173]">
               The Workplace &amp; Career unit walks through job applications, mock interviews, and
@@ -348,12 +348,12 @@ export default function WorkplaceFrenchPage() {
             </p>
             <Link
               href="/learn/canadian-life/unit-3/lesson-1"
-              className="mt-4 inline-block rounded-full bg-[#2563EB] px-5 py-2.5 text-sm font-black text-white transition hover:bg-[#1D4ED8]"
+              className="mt-4 inline-block rounded-full bg-[#D62828] px-5 py-2.5 text-sm font-black text-white transition hover:bg-[#B91C1C]"
             >
               Go to course →
             </Link>
           </div>
-          <div className="rounded-[2rem] border border-[#E7DAB9] bg-white p-6 shadow-sm">
+          <div className="rounded-2xl border border-[#E7DAB9] bg-white p-6 shadow-sm">
             <p className="font-black">Write a strong cover letter</p>
             <p className="mt-2 text-sm text-[#526173]">
               See a full annotated example of a French cover letter for a bilingual Canadian job posting,
@@ -361,7 +361,7 @@ export default function WorkplaceFrenchPage() {
             </p>
             <Link
               href="/resources/cover-letter"
-              className="mt-4 inline-block rounded-full bg-[#2563EB] px-5 py-2.5 text-sm font-black text-white transition hover:bg-[#1D4ED8]"
+              className="mt-4 inline-block rounded-full bg-[#D62828] px-5 py-2.5 text-sm font-black text-white transition hover:bg-[#B91C1C]"
             >
               Cover letter resource →
             </Link>

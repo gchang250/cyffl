@@ -34,7 +34,7 @@ export default function VerbsFuturAnterieurPage() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-4xl px-6 py-16">
-        <Link href="/resources" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/resources" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← Resources
         </Link>
 
@@ -46,7 +46,7 @@ export default function VerbsFuturAnterieurPage() {
             Le futur antérieur
           </h1>
           <p className="mt-4 text-lg leading-8 text-[#526173]">
-            The futur antérieur expresses an action that will be completed before another future event. Think of it as the "future perfect" — something will have been done by a certain point.
+            The futur antérieur expresses an action that will be completed before another future event. Think of it as the "future perfect": something will have been done by a certain point.
           </p>
         </div>
 
@@ -130,7 +130,7 @@ export default function VerbsFuturAnterieurPage() {
             <h2 className="text-xl font-black">Common trigger conjunctions</h2>
           </div>
           <p className="mt-3 text-sm text-[#526173]">
-            These conjunctions often introduce the futur antérieur clause. They signal that one future event must be completed before another begins. In English, the present or present perfect is used after these words — French requires the future or futur antérieur.
+            These conjunctions often introduce the futur antérieur clause. They signal that one future event must be completed before another begins. In English, the present or present perfect is used after these words: French requires the future or futur antérieur.
           </p>
           <div className="mt-5 overflow-x-auto rounded-2xl border border-[#E7DAB9] bg-white p-5">
             <table className="w-full text-sm">

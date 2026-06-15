@@ -6,12 +6,12 @@ const questions = [
     question: "What does 'atout' mean on a French job posting?",
     options: [
       "Required qualification",
-      "Asset — helpful but not mandatory",
+      "Asset: helpful but not mandatory",
       "Application deadline",
       "Salary range",
     ],
     correct: 1,
-    explanation: "'Atout' means asset — a quality that is beneficial but not required. The required qualifications are labelled 'requis' or 'exigé'.",
+    explanation: "'Atout' means asset: a quality that is beneficial but not required. The required qualifications are labelled 'requis' or 'exigé'.",
   },
   {
     question: "What is 'entrée en fonction'?",
@@ -55,7 +55,7 @@ const questions = [
       "Moi, je suis bon(ne) en...",
     ],
     correct: 1,
-    explanation: "'Fort(e) de X années d'expérience en...' means 'Drawing on X years of experience in...' — the standard confident opener for a cover letter body paragraph.",
+    explanation: "'Fort(e) de X années d'expérience en...' means 'Drawing on X years of experience in...': the standard confident opener for a cover letter body paragraph.",
   },
   {
     question: "What does 'Objet :' at the top of a French email mean?",
@@ -66,7 +66,7 @@ const questions = [
       "Carbon copy",
     ],
     correct: 2,
-    explanation: "'Objet :' is the French equivalent of 'Subject:' in email — always include it in professional French correspondence.",
+    explanation: "'Objet :' is the French equivalent of 'Subject:' in email: always include it in professional French correspondence.",
   },
   {
     question: "How do you politely disagree in a French meeting?",
@@ -77,7 +77,7 @@ const questions = [
       "C'est une mauvaise idée.",
     ],
     correct: 1,
-    explanation: "'Je comprends votre point de vue, cependant...' acknowledges the other person before redirecting — the professional French way to disagree respectfully.",
+    explanation: "'Je comprends votre point de vue, cependant...' acknowledges the other person before redirecting: the professional French way to disagree respectfully.",
   },
   {
     question: "What does 'délai' mean in a professional French context?",
@@ -88,7 +88,7 @@ const questions = [
       "A training period",
     ],
     correct: 2,
-    explanation: "'Délai' is a false friend — it doesn't just mean delay. In professional French, 'délai' means deadline or timeframe: 'Quel est le délai?' = What is the deadline?",
+    explanation: "'Délai' is a false friend: it doesn't just mean delay. In professional French, 'délai' means deadline or timeframe: 'Quel est le délai?' = What is the deadline?",
   },
   {
     question: "What does 's'épanouir' mean in a French job interview?",
@@ -104,13 +104,13 @@ const questions = [
   {
     question: "What is the STAR method called in French?",
     options: [
-      "SAVE — Situation, Action, Valeur, Effet",
-      "STAR — Situation, Tâche, Action, Résultat",
-      "FARE — Fait, Action, Résultat, Expérience",
-      "PACE — Problème, Action, Contexte, Effet",
+      "SAVE: Situation, Action, Valeur, Effet",
+      "STAR: Situation, Tâche, Action, Résultat",
+      "FARE: Fait, Action, Résultat, Expérience",
+      "PACE: Problème, Action, Contexte, Effet",
     ],
     correct: 1,
-    explanation: "The STAR method is used directly in French as Situation, Tâche, Action, Résultat — it structures answers to behavioural questions like 'Décrivez une situation difficile...'",
+    explanation: "The STAR method is used directly in French as Situation, Tâche, Action, Résultat: it structures answers to behavioural questions like 'Décrivez une situation difficile...'",
   },
 ];
 
@@ -118,7 +118,7 @@ export default function Unit3TestPage() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/canadian-life/unit-3/lesson-4" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/canadian-life/unit-3/lesson-4" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← Back to Lesson 4
         </Link>
 
@@ -150,10 +150,10 @@ export default function Unit3TestPage() {
         </div>
 
         <div className="mt-12">
-          <MultipleChoiceQuiz questions={questions} title="Unit 3 test — The Bilingual Workplace" />
+          <MultipleChoiceQuiz questions={questions} title="Unit 3 test: The Bilingual Workplace" />
         </div>
 
-        <div className="mt-12 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <div className="mt-12 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
           <p className="font-black text-lg">Ready for Unit 4?</p>
           <p className="mt-2 text-[#526173]">Unit 4 covers education in French Canada — from the Quebec cégep system and university applications to scholarships and student life vocabulary.</p>
           <div className="mt-5 flex flex-wrap gap-3">

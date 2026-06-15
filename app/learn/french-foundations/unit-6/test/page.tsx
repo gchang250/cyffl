@@ -68,7 +68,7 @@ export default function Unit6TestPage() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/french-foundations" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">← French Foundations</Link>
+        <Link href="/learn/french-foundations" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">← French Foundations</Link>
         <div className="mt-6">
           <span className="rounded-full bg-[#EDE9FE] text-[#7C3AED] px-3 py-1 text-xs font-black">Unit 6 Test</span>
           <h1 className="mt-4 text-5xl font-black tracking-tight md:text-6xl">Talking About the Past</h1>
@@ -77,12 +77,12 @@ export default function Unit6TestPage() {
         <section className="mt-12">
           <MultipleChoiceQuiz questions={questions} title="Unit 6 Test · 10 questions" />
         </section>
-        <div className="mt-12 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <div className="mt-12 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
           <p className="font-black text-lg">Ready for Unit 7?</p>
           <p className="mt-2 text-[#526173]">Unit 7 introduces the most common irregular verbs in French — verbs you'll use every day.</p>
           <div className="mt-5 flex flex-wrap gap-3">
             <Link href="/learn/french-foundations/unit-6/lesson-4" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">← Back to lesson</Link>
-            <Link href="/learn/french-foundations/unit-7/lesson-1" className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Start Unit 7 →</Link>
+            <Link href="/learn/french-foundations/unit-7/lesson-1" className="rounded-full bg-[#D62828] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">Start Unit 7 →</Link>
           </div>
         </div>
       </section>

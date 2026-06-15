@@ -36,7 +36,7 @@ const questions = [
     question: "What is the 'vous' form of 'faire'?",
     options: ["vous faisez", "vous font", "vous faisons", "vous faites"],
     correct: 3,
-    explanation: "Vous faites is irregular — one of only three -ez exceptions: vous faites, vous dites, vous êtes.",
+    explanation: "Vous faites is irregular: one of only three -ez exceptions: vous faites, vous dites, vous êtes.",
   },
   {
     question: "Which faire expression means 'to go for a walk'?",
@@ -48,7 +48,7 @@ const questions = [
     question: "What is the 'ils' form of 'pouvoir'?",
     options: ["ils pouvez", "ils pouvons", "ils peuvent", "ils pouvent"],
     correct: 2,
-    explanation: "Ils peuvent — pouvoir is irregular: je peux, tu peux, il/elle peut, nous pouvons, vous pouvez, ils/elles peuvent.",
+    explanation: "Ils peuvent: pouvoir is irregular: je peux, tu peux, il/elle peut, nous pouvons, vous pouvez, ils/elles peuvent.",
   },
   {
     question: "'Nous voulons partir tôt' means:",
@@ -68,7 +68,7 @@ export default function Unit2TestPage() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/school-french-support/unit-2/lesson-4" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/school-french-support/unit-2/lesson-4" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← Back to Lesson 4
         </Link>
 
@@ -93,12 +93,12 @@ export default function Unit2TestPage() {
           <MultipleChoiceQuiz questions={questions} title="Unit 2 test" />
         </div>
 
-        <div className="mt-12 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <div className="mt-12 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
           <p className="font-black text-lg">Ready for Unit 3?</p>
           <p className="mt-2 text-[#526173]">Unit 3 introduces the passé composé — the most important past tense in French and a key part of every school exam.</p>
           <div className="mt-5 flex flex-wrap gap-3">
             <Link href="/learn/school-french-support/unit-2/lesson-4" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">← Back to lesson</Link>
-            <Link href="/learn/school-french-support/unit-3/lesson-1" className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Start Unit 3 →</Link>
+            <Link href="/learn/school-french-support/unit-3/lesson-1" className="rounded-full bg-[#D62828] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">Start Unit 3 →</Link>
           </div>
         </div>
       </section>

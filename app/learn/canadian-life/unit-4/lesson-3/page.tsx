@@ -22,7 +22,7 @@ const cards = [
   },
   {
     front: "la subvention",
-    back: "Grant / subsidy — does not need to be repaid",
+    back: "Grant / subsidy: does not need to be repaid",
     subtext: "Unlike a loan, a subvention is non-remboursable. Often awarded by governments or foundations.",
   },
   {
@@ -32,7 +32,7 @@ const cards = [
   },
   {
     front: "le revenu familial",
-    back: "Family income — used to assess financial need",
+    back: "Family income: used to assess financial need",
     subtext: "Many need-based programs calculate your grant amount based on le revenu familial brut (gross family income).",
   },
   {
@@ -43,7 +43,7 @@ const cards = [
   {
     front: "déposer une demande",
     back: "To submit / file an application",
-    subtext: "Vous pouvez déposer une demande de bourse en ligne. — You can submit a scholarship application online.",
+    subtext: "Vous pouvez déposer une demande de bourse en ligne.: You can submit a scholarship application online.",
   },
   {
     front: "les pièces justificatives",
@@ -58,7 +58,7 @@ const cards = [
   {
     front: "le montant de la bourse",
     back: "Scholarship amount",
-    subtext: "Le montant de la bourse est de 5 000 $ par année. — The scholarship amount is $5,000 per year.",
+    subtext: "Le montant de la bourse est de 5 000 $ par année.: The scholarship amount is $5,000 per year.",
   },
   {
     front: "renouvelable / non renouvelable",
@@ -102,7 +102,7 @@ const exercises = [
     before: "Cette bourse est",
     after: "pendant trois ans, à condition de maintenir une moyenne minimale de B.",
     answer: "renouvelable",
-    hint: "Renouvelable = renewable — can be received again each year if conditions are met.",
+    hint: "Renouvelable = renewable: can be received again each year if conditions are met.",
     translation: "This scholarship is renewable for three years, provided you maintain a minimum average of B.",
   },
   {
@@ -135,7 +135,7 @@ const questions = [
       "They are the same thing in Quebec.",
     ],
     correct: 2,
-    explanation: "A 'bourse' is a scholarship, bursary, or grant — money that generally does not need to be repaid. A 'prêt étudiant' is a student loan that must be repaid after graduation.",
+    explanation: "A 'bourse' is a scholarship, bursary, or grant: money that generally does not need to be repaid. A 'prêt étudiant' is a student loan that must be repaid after graduation.",
   },
   {
     question: "What does 'renouvelable' mean for a scholarship?",
@@ -157,12 +157,12 @@ const questions = [
       "Your published academic work",
     ],
     correct: 2,
-    explanation: "'Pièces justificatives' are the supporting documents required with your application — such as transcripts, proof of enrolment, income statements, or reference letters.",
+    explanation: "'Pièces justificatives' are the supporting documents required with your application: such as transcripts, proof of enrolment, income statements, or reference letters.",
   },
   {
     question: "What does 'bourses d'excellence' mean and how do they typically differ from 'bourses de besoins'?",
     options: [
-      "They are identical — both are merit-based scholarships",
+      "They are identical: both are merit-based scholarships",
       "'Bourses d'excellence' are awarded for academic merit; 'bourses de besoins' are awarded based on financial need",
       "'Bourses d'excellence' are only for graduate students; 'bourses de besoins' are only for undergraduates",
       "'Bourses de besoins' require a higher GPA than 'bourses d'excellence'",
@@ -190,7 +190,7 @@ const questions = [
       "The scholarship covers renewable energy programs only",
     ],
     correct: 2,
-    explanation: "'Renouvelable' = renewable — the scholarship can be awarded again the following year(s), typically subject to maintaining a minimum average (e.g., 3.0/4.3 or 80%). 'Non renouvelable' means it is awarded once only. Always check if your scholarship is renewable when applying.",
+    explanation: "'Renouvelable' = renewable: the scholarship can be awarded again the following year(s), typically subject to maintaining a minimum average (e.g., 3.0/4.3 or 80%). 'Non renouvelable' means it is awarded once only. Always check if your scholarship is renewable when applying.",
   },
   {
     question: "What is a 'lettre de référence' and when is it typically required?",
@@ -209,7 +209,7 @@ export default function Unit4Lesson3Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/canadian-life" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/canadian-life" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← French for Canadian Life
         </Link>
 
@@ -218,7 +218,7 @@ export default function Unit4Lesson3Page() {
             <p className="text-xs font-bold uppercase tracking-widest text-[#7C3AED]">Unit 4 · Lesson 3</p>
             <h1 className="mt-3 text-5xl font-black tracking-tight md:text-6xl">Scholarships & Financial Aid</h1>
             <p className="mt-4 text-lg leading-8 text-[#526173]">
-              Quebec and other provinces offer extensive scholarship and financial aid programs in French. Whether you are applying to the provincial AFE, a university foundation scholarship, or a federal program, the vocabulary is consistent — and knowing it is the first step to accessing the money that's available.
+              Quebec and other provinces offer extensive scholarship and financial aid programs in French. Whether you are applying to the provincial AFE, a university foundation scholarship, or a federal program, the vocabulary is consistent: and knowing it is the first step to accessing the money that's available.
             </p>
             <p className="mt-4 text-lg leading-8 text-[#526173]">
               Many students leave scholarships on the table simply because they don't know the application process exists. This lesson gives you the vocabulary and the roadmap.
@@ -257,7 +257,7 @@ export default function Unit4Lesson3Page() {
           <div className="mt-4 grid gap-3 text-sm sm:grid-cols-2">
             {[
               {
-                name: "Gouvernement du Québec — AFE",
+                name: "Gouvernement du Québec: AFE",
                 detail: "Need-based grants and loans for Quebec residents. Apply annually at afe.gouv.qc.ca.",
               },
               {

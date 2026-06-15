@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "SLE Guide | CYFFL Resources",
   description:
-    "Quick reference for the Second Language Evaluation (SLE) — format, A/B/C levels, language profiles, test strategies, and how to prepare for federal government bilingual positions.",
+    "Quick reference for the Second Language Evaluation (SLE): format, A/B/C levels, language profiles, test strategies, and how to prepare for federal government bilingual positions.",
 };
 
 const tests = [
@@ -22,7 +22,7 @@ const tests = [
     french: "Expression écrite",
     format: "Two parts: editing + production",
     texts: "Part A: edit a document for errors · Part B: write a memo, email, or briefing note from scratch",
-    strategy: "Read the Part B scenario carefully — your role, your recipient, your purpose. Use formal register throughout. Plan before you write.",
+    strategy: "Read the Part B scenario carefully: your role, your recipient, your purpose. Use formal register throughout. Plan before you write.",
     tip: "Practice writing memos and formal emails in French. Learn standard government opening and closing formulas.",
     color: "bg-[#FEF3C7] text-[#D97706]",
   },
@@ -55,7 +55,7 @@ export default function SLEGuidePage() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-7xl px-6 py-20">
-        <Link href="/resources" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/resources" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← Resources
         </Link>
 
@@ -67,7 +67,7 @@ export default function SLEGuidePage() {
             SLE Quick Reference
           </h1>
           <p className="mt-5 text-lg leading-8 text-[#526173]">
-            The Second Language Evaluation (SLE) is the federal government&apos;s French proficiency test for bilingual positions. Three separate tests — reading, writing, and oral interaction — each graded A, B, or C.
+            The Second Language Evaluation (SLE) is the federal government&apos;s French proficiency test for bilingual positions. Three separate tests: reading, writing, and oral interaction: each graded A, B, or C.
           </p>
         </div>
 
@@ -78,7 +78,7 @@ export default function SLEGuidePage() {
 
           <div className="mt-8 grid gap-6 lg:grid-cols-3">
             {tests.map((test) => (
-              <div key={test.name} className="flex flex-col rounded-[2rem] border border-[#E7DAB9] bg-white shadow-sm overflow-hidden">
+              <div key={test.name} className="flex flex-col rounded-2xl border border-[#E7DAB9] bg-white shadow-sm overflow-hidden">
                 <div className="bg-[#0B1F3A] px-6 py-5">
                   <span className={`rounded-full px-2.5 py-0.5 text-xs font-black ${test.color}`}>{test.name}</span>
                   <h3 className="mt-2 text-lg font-black text-white">{test.french}</h3>
@@ -112,7 +112,7 @@ export default function SLEGuidePage() {
               { level: "Niveau B", label: "Intermediate", color: "bg-[#FEF3C7] text-[#D97706]", desc: "Can understand and produce most government texts and workplace conversations. The most common requirement.", examples: "Briefing notes, reports, professional emails, routine workplace discussions" },
               { level: "Niveau C", label: "Advanced", color: "bg-[#F0FDF4] text-[#16A34A]", desc: "Full professional proficiency. Handles complex, abstract, and specialized texts and conversations with ease.", examples: "Complex policy documents, nuanced debate, technical reports, strategic discussions" },
             ].map((l) => (
-              <div key={l.level} className="rounded-[1.5rem] border border-[#E7DAB9] bg-white p-5 shadow-sm">
+              <div key={l.level} className="rounded-2xl border border-[#E7DAB9] bg-white p-5 shadow-sm">
                 <span className={`rounded-full px-2.5 py-0.5 text-xs font-black ${l.color}`}>{l.level} — {l.label}</span>
                 <p className="mt-3 text-sm leading-6 text-[#526173]">{l.desc}</p>
                 <p className="mt-3 text-xs italic text-[#526173]">Examples: {l.examples}</p>
@@ -129,7 +129,7 @@ export default function SLEGuidePage() {
           </p>
           <div className="mt-6 grid gap-4 md:grid-cols-2">
             {profiles.map((p) => (
-              <div key={p.profile} className="rounded-[1.5rem] border border-[#E7DAB9] bg-white p-5 shadow-sm">
+              <div key={p.profile} className="rounded-2xl border border-[#E7DAB9] bg-white p-5 shadow-sm">
                 <div className="flex items-center gap-3">
                   <span className="rounded-full bg-[#0B1F3A] px-4 py-1.5 text-sm font-black text-white">{p.profile}</span>
                 </div>
@@ -144,11 +144,11 @@ export default function SLEGuidePage() {
         <section className="mt-16">
           <h2 className="text-3xl font-black">Government writing phrases</h2>
           <p className="mt-2 text-[#526173]">
-            Essential formulas for the SLE writing test (Part B). Examiners reward appropriate register — these phrases signal professional government French.
+            Essential formulas for the SLE writing test (Part B). Examiners reward appropriate register: these phrases signal professional government French.
           </p>
           <div className="mt-6 grid gap-5 md:grid-cols-2">
             {writingPhrases.map((section) => (
-              <div key={section.label} className="rounded-[1.5rem] border border-[#E7DAB9] bg-white p-5 shadow-sm">
+              <div key={section.label} className="rounded-2xl border border-[#E7DAB9] bg-white p-5 shadow-sm">
                 <p className="text-xs font-bold uppercase tracking-widest text-[#0B1F3A]">{section.label}</p>
                 <ul className="mt-3 space-y-2">
                   {section.examples.map((ex) => (
@@ -161,12 +161,12 @@ export default function SLEGuidePage() {
         </section>
 
         {/* Course link */}
-        <section className="mt-16 rounded-[2rem] bg-[#0B1F3A] p-8 text-white shadow-sm">
+        <section className="mt-16 rounded-2xl bg-[#0B1F3A] p-8 text-white shadow-sm">
           <div className="grid items-center gap-6 md:grid-cols-[1fr_auto]">
             <div>
               <p className="text-xl font-black">Want the full interactive course?</p>
               <p className="mt-2 text-white/70">
-                The French for Canadian Tests course covers the SLE in depth — format, levels, reading strategies, writing and oral preparation.
+                The French for Canadian Tests course covers the SLE in depth: format, levels, reading strategies, writing and oral preparation.
               </p>
             </div>
             <Link

@@ -15,8 +15,8 @@ const timeCards = [
   { front: "du matin", back: "in the morning / AM", subtext: "Il est neuf heures du matin. = 9 AM" },
   { front: "de l'après-midi", back: "in the afternoon / PM", subtext: "Il est trois heures de l'après-midi. = 3 PM" },
   { front: "du soir", back: "in the evening / PM", subtext: "Il est huit heures du soir. = 8 PM" },
-  { front: "maintenant", back: "now", subtext: "Il est maintenant midi. — It is now noon." },
-  { front: "à l'heure", back: "on time", subtext: "Le train arrive à l'heure. — The train arrives on time." },
+  { front: "maintenant", back: "now", subtext: "Il est maintenant midi.: It is now noon." },
+  { front: "à l'heure", back: "on time", subtext: "Le train arrive à l'heure.: The train arrives on time." },
 ];
 
 const pairs = [
@@ -29,8 +29,8 @@ const pairs = [
 ];
 
 const exercises = [
-  { before: "Il est six heures", after: ". (6:30)", answer: "et demie", hint: "half past — et demie", translation: "It is 6:30." },
-  { before: "Il est neuf heures", after: ". (9:15)", answer: "et quart", hint: "quarter past — et quart", translation: "It is 9:15." },
+  { before: "Il est six heures", after: ". (6:30)", answer: "et demie", hint: "half past: et demie", translation: "It is 6:30." },
+  { before: "Il est neuf heures", after: ". (9:15)", answer: "et quart", hint: "quarter past: et quart", translation: "It is 9:15." },
   { before: "Il est", after: "heures moins le quart. (7:45)", answer: "huit", hint: "8 minus quarter = 7:45", translation: "It is 7:45." },
   { before: "Il est dix heures du", after: ". (10 AM)", answer: "matin", hint: "morning = matin", translation: "It is 10 AM." },
   { before: "Il est", after: ". (noon)", answer: "midi", hint: "noon has its own word", translation: "It is noon." },
@@ -83,7 +83,7 @@ const questions = [
     question: "A class starts at 8:30 AM. How would you say this?",
     options: ["Le cours commence à huit heures et demie du matin.", "Le cours commence à huit demie heures matin.", "Le cours commence à demie huit heures matin.", "Le cours commence à huit heure et demie."],
     correct: 0,
-    explanation: "À huit heures et demie du matin — the order is: number + heures + minutes + AM/PM marker. Note 'heures' is plural for any hour other than une heure.",
+    explanation: "À huit heures et demie du matin: the order is: number + heures + minutes + AM/PM marker. Note 'heures' is plural for any hour other than une heure.",
   },
 ];
 
@@ -91,7 +91,7 @@ export default function Unit5Lesson3Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/french-foundations" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/french-foundations" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← French Foundations
         </Link>
 
@@ -114,7 +114,7 @@ export default function Unit5Lesson3Page() {
           </div>
         </div>
 
-        <div className="mt-12 rounded-[2rem] border border-[#E7DAB9] bg-white p-6 shadow-sm">
+        <div className="mt-12 rounded-2xl border border-[#E7DAB9] bg-white p-6 shadow-sm">
           <p className="text-sm font-black uppercase tracking-widest text-[#C9A44C]">The 24-hour clock (l'heure officielle)</p>
           <p className="mt-2 text-sm text-[#526173]">France and Francophone Canada use the 24-hour clock in timetables, schedules, and official contexts. Subtract 12 to convert to PM.</p>
           <div className="mt-4 grid gap-2 sm:grid-cols-2 text-sm">
@@ -156,7 +156,7 @@ export default function Unit5Lesson3Page() {
 
         <div className="mt-16 flex items-center justify-between gap-4">
           <Link href="/learn/french-foundations/unit-5/lesson-2" className="rounded-full border border-[#E7DAB9] bg-white px-5 py-2.5 text-sm font-black text-[#526173] transition hover:-translate-y-0.5">← Previous</Link>
-          <Link href="/learn/french-foundations/unit-5/lesson-4" className="rounded-full bg-[#2563EB] px-5 py-2.5 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Next lesson →</Link>
+          <Link href="/learn/french-foundations/unit-5/lesson-4" className="rounded-full bg-[#D62828] px-5 py-2.5 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">Next lesson →</Link>
         </div>
       </section>
     </main>

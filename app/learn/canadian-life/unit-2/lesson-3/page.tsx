@@ -5,16 +5,16 @@ import FillInTheBlank from "@/components/FillInTheBlank";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const cards = [
-  { front: "la déclaration de revenus", back: "tax return — the annual document filed with the government reporting income and claiming credits", subtext: "Je dois remplir ma déclaration de revenus avant le 30 avril. — I need to file my tax return before April 30." },
-  { front: "le revenu imposable", back: "taxable income — the amount of income subject to tax after deductions", subtext: "Votre revenu imposable détermine votre taux d'imposition. — Your taxable income determines your tax rate." },
-  { front: "le remboursement", back: "refund — money returned by the government when too much tax was withheld", subtext: "J'ai reçu un remboursement de 450 $ cette année. — I received a $450 refund this year." },
-  { front: "la cotisation", back: "contribution / assessment — refers to amounts contributed to programs like CPP or EI, or a tax assessment", subtext: "Les cotisations à l'assurance-emploi sont obligatoires. — EI contributions are mandatory." },
-  { front: "les crédits d'impôt", back: "tax credits — amounts that reduce the tax you owe (federal and provincial)", subtext: "Le crédit d'impôt pour les frais de scolarité peut réduire votre impôt. — The tuition tax credit can reduce your taxes." },
-  { front: "les retenues", back: "withholdings — amounts deducted from your paycheque for taxes, CPP, EI", subtext: "Les retenues apparaissent sur votre feuillet T4. — Withholdings appear on your T4 slip." },
-  { front: "le numéro d'assurance sociale (NAS)", back: "Social Insurance Number (SIN) — required on all tax forms; 9-digit federal identifier", subtext: "N'inscrivez votre NAS que sur des documents officiels. — Only put your SIN on official documents." },
-  { front: "l'assurance-emploi (AE)", back: "Employment Insurance (EI) — federal program that pays benefits when you lose your job", subtext: "Si vous perdez votre emploi, vous pouvez demander l'assurance-emploi. — If you lose your job, you can apply for EI." },
-  { front: "le Régime de pensions du Canada (RPC)", back: "Canada Pension Plan (CPP) — mandatory retirement pension plan for employees", subtext: "Les cotisations au RPC sont retenues directement sur votre salaire. — CPP contributions are deducted directly from your salary." },
-  { front: "les prestations", back: "benefits — payments received from government programs (EI, CPP, etc.)", subtext: "Vous recevrez vos prestations d'AE par dépôt direct. — You'll receive your EI benefits by direct deposit." },
+  { front: "la déclaration de revenus", back: "tax return: the annual document filed with the government reporting income and claiming credits", subtext: "Je dois remplir ma déclaration de revenus avant le 30 avril.: I need to file my tax return before April 30." },
+  { front: "le revenu imposable", back: "taxable income: the amount of income subject to tax after deductions", subtext: "Votre revenu imposable détermine votre taux d'imposition.: Your taxable income determines your tax rate." },
+  { front: "le remboursement", back: "refund: money returned by the government when too much tax was withheld", subtext: "J'ai reçu un remboursement de 450 $ cette année.: I received a $450 refund this year." },
+  { front: "la cotisation", back: "contribution / assessment: refers to amounts contributed to programs like CPP or EI, or a tax assessment", subtext: "Les cotisations à l'assurance-emploi sont obligatoires.: EI contributions are mandatory." },
+  { front: "les crédits d'impôt", back: "tax credits: amounts that reduce the tax you owe (federal and provincial)", subtext: "Le crédit d'impôt pour les frais de scolarité peut réduire votre impôt.: The tuition tax credit can reduce your taxes." },
+  { front: "les retenues", back: "withholdings: amounts deducted from your paycheque for taxes, CPP, EI", subtext: "Les retenues apparaissent sur votre feuillet T4.: Withholdings appear on your T4 slip." },
+  { front: "le numéro d'assurance sociale (NAS)", back: "Social Insurance Number (SIN): required on all tax forms; 9-digit federal identifier", subtext: "N'inscrivez votre NAS que sur des documents officiels.: Only put your SIN on official documents." },
+  { front: "l'assurance-emploi (AE)", back: "Employment Insurance (EI): federal program that pays benefits when you lose your job", subtext: "Si vous perdez votre emploi, vous pouvez demander l'assurance-emploi.: If you lose your job, you can apply for EI." },
+  { front: "le Régime de pensions du Canada (RPC)", back: "Canada Pension Plan (CPP): mandatory retirement pension plan for employees", subtext: "Les cotisations au RPC sont retenues directement sur votre salaire.: CPP contributions are deducted directly from your salary." },
+  { front: "les prestations", back: "benefits: payments received from government programs (EI, CPP, etc.)", subtext: "Vous recevrez vos prestations d'AE par dépôt direct.: You'll receive your EI benefits by direct deposit." },
 ];
 
 const pairs = [
@@ -85,13 +85,13 @@ const questions = [
       "A contribution to a pension plan",
     ],
     correct: 2,
-    explanation: "'Remboursement' means refund. When your employer withholds more tax than you owe, the government returns the difference. J'ai reçu un remboursement de 300 $ — I received a $300 refund.",
+    explanation: "'Remboursement' means refund. When your employer withholds more tax than you owe, the government returns the difference. J'ai reçu un remboursement de 300 $: I received a $300 refund.",
   },
   {
     question: "In Quebec, which slip is the provincial equivalent of the federal T4?",
     options: ["TP-1", "RL-1", "T1", "NAS"],
     correct: 1,
-    explanation: "The RL-1 (Relevé 1) is the Quebec provincial income slip issued by employers — the equivalent of the federal T4. It shows your employment income and amounts withheld for Quebec tax, QPP (Québec Pension Plan), and QPIP.",
+    explanation: "The RL-1 (Relevé 1) is the Quebec provincial income slip issued by employers: the equivalent of the federal T4. It shows your employment income and amounts withheld for Quebec tax, QPP (Québec Pension Plan), and QPIP.",
   },
   {
     question: "What does 'NAS' stand for in French?",
@@ -102,13 +102,13 @@ const questions = [
       "Nom et adresse sociale",
     ],
     correct: 1,
-    explanation: "NAS stands for 'Numéro d'assurance sociale' — the French equivalent of SIN (Social Insurance Number). This 9-digit number is your federal identifier required on all tax documents, employment forms, and benefit applications.",
+    explanation: "NAS stands for 'Numéro d'assurance sociale': the French equivalent of SIN (Social Insurance Number). This 9-digit number is your federal identifier required on all tax documents, employment forms, and benefit applications.",
   },
   {
     question: "What is a REER in French tax vocabulary?",
     options: [
       "Résumé d'emploi et revenus",
-      "Régime enregistré d'épargne-retraite — registered retirement savings plan (RRSP)",
+      "Régime enregistré d'épargne-retraite: registered retirement savings plan (RRSP)",
       "Régime d'emploi et de rentes",
       "Relevé d'évaluation et de remboursement",
     ],
@@ -154,7 +154,7 @@ export default function Unit2Lesson3Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/canadian-life" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/canadian-life" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← French for Canadian Life
         </Link>
 
@@ -163,7 +163,7 @@ export default function Unit2Lesson3Page() {
             <p className="text-xs font-bold uppercase tracking-widest text-[#2563EB]">Unit 2 · Lesson 3</p>
             <h1 className="mt-3 text-5xl font-black tracking-tight md:text-6xl">Tax Vocabulary</h1>
             <p className="mt-4 text-lg leading-8 text-[#526173]">
-              Understanding your tax return in French — whether it's a federal T1 from the CRA or a Quebec TP-1 from Revenu Québec — requires specific vocabulary. This lesson demystifies the key terms so tax season is less stressful.
+              Understanding your tax return in French: whether it's a federal T1 from the CRA or a Quebec TP-1 from Revenu Québec: requires specific vocabulary. This lesson demystifies the key terms so tax season is less stressful.
             </p>
           </div>
 
@@ -196,7 +196,7 @@ export default function Unit2Lesson3Page() {
               </div>
             </div>
             <div className="mt-4 rounded-lg bg-[#EFF6FF] p-3 text-xs text-[#2563EB]">
-              <strong>Note:</strong> Quebec residents file two separate tax returns every year — one federal (CRA) and one provincial (Revenu Québec).
+              <strong>Note:</strong> Quebec residents file two separate tax returns every year: one federal (CRA) and one provincial (Revenu Québec).
             </div>
           </div>
         </div>
@@ -254,7 +254,7 @@ export default function Unit2Lesson3Page() {
 
         <div className="mt-16 flex items-center justify-between gap-4">
           <Link href="/learn/canadian-life/unit-2/lesson-2" className="rounded-full border border-[#E7DAB9] bg-white px-5 py-2.5 text-sm font-black text-[#0B1F3A] transition hover:-translate-y-0.5">← Previous lesson</Link>
-          <Link href="/learn/canadian-life/unit-2/lesson-4" className="rounded-full bg-[#2563EB] px-5 py-2.5 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Next lesson →</Link>
+          <Link href="/learn/canadian-life/unit-2/lesson-4" className="rounded-full bg-[#D62828] px-5 py-2.5 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">Next lesson →</Link>
         </div>
       </section>
     </main>

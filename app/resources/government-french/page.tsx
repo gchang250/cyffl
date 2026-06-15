@@ -35,13 +35,13 @@ const healthcareRows: [string, string, string][] = [
   ["la carte d'assurance maladie", "health insurance card", '"Carte soleil" in Quebec'],
   ["la RAMQ", "Quebec health insurance authority", "Régie de l'assurance maladie du Québec"],
   ["l'OHIP", "Ontario Health Insurance Plan", "Ontario's provincial health card program"],
-  ["le médecin de famille", "family doctor / GP", "Can be difficult to find — many Canadians are without one"],
+  ["le médecin de famille", "family doctor / GP", "Can be difficult to find: many Canadians are without one"],
   ["l'urgence (f.)", "emergency room", "Also: la salle d'urgence"],
   ["le rendez-vous", "appointment", "Prendre un rendez-vous = to book an appointment"],
   ["l'ordonnance (f.)", "prescription", "Issued by a doctor; filled at a pharmacie"],
   ["le médicament", "medication / medicine", "Plural: les médicaments"],
   ["les soins de santé (m.pl.)", "healthcare", "Also: le système de santé"],
-  ["le CLSC", "local community health centre", "Centre local de services communautaires — Quebec only"],
+  ["le CLSC", "local community health centre", "Centre local de services communautaires: Quebec only"],
   ["les antécédents médicaux (m.pl.)", "medical history", "Required on most intake forms"],
   ["l'assurance médicaments (f.)", "drug insurance", "Mandatory in Quebec; private or RAMQ-based"],
   ["le formulaire de réclamation", "claim form", "Used for reimbursement of covered services"],
@@ -79,7 +79,7 @@ export default function GovernmentFrenchPage() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-4xl px-6 py-16">
-        <Link href="/resources" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/resources" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← Resources
         </Link>
 
@@ -284,7 +284,7 @@ export default function GovernmentFrenchPage() {
         </div>
 
         {/* Bottom CTA */}
-        <div className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-6 shadow-sm">
+        <div className="mt-16 rounded-2xl border border-[#E7DAB9] bg-white p-6 shadow-sm">
           <p className="font-black">Put this vocabulary into practice</p>
           <p className="mt-2 text-sm text-[#526173]">
             The Government &amp; Official Documents unit walks through realistic form-filling, healthcare
@@ -292,7 +292,7 @@ export default function GovernmentFrenchPage() {
           </p>
           <Link
             href="/learn/canadian-life/unit-2/lesson-1"
-            className="mt-4 inline-block rounded-full bg-[#2563EB] px-5 py-2.5 text-sm font-black text-white transition hover:bg-[#1D4ED8]"
+            className="mt-4 inline-block rounded-full bg-[#D62828] px-5 py-2.5 text-sm font-black text-white transition hover:bg-[#B91C1C]"
           >
             Go to course →
           </Link>

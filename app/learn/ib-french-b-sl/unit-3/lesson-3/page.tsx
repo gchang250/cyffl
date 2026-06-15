@@ -6,12 +6,12 @@ import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 const flashcards = [
   { front: "tout d'abord", back: "first of all / to begin with", subtext: "Opens your first argument. More formal than 'premièrement'. Use it to start a structured essay or speech." },
   { front: "de plus / en outre", back: "furthermore / moreover", subtext: "Adds a new point that supports your argument. En outre is more formal and impressive." },
-  { front: "cependant / néanmoins", back: "however / nevertheless", subtext: "Introduces a contrast or counterargument. Essential for balanced writing — shows critical thinking." },
+  { front: "cependant / néanmoins", back: "however / nevertheless", subtext: "Introduces a contrast or counterargument. Essential for balanced writing: shows critical thinking." },
   { front: "par conséquent / c'est pourquoi", back: "therefore / that is why", subtext: "Signals cause and effect. Use when you're drawing a conclusion from evidence." },
   { front: "en conclusion / pour conclure", back: "in conclusion / to conclude", subtext: "Opens your final paragraph. Required in every Paper 1 text." },
   { front: "à mon avis / selon moi", back: "in my opinion / according to me", subtext: "Introduces a personal viewpoint. Use in blogs, letters, and opinion pieces." },
-  { front: "il est indéniable que", back: "it is undeniable that", subtext: "Strong, formal opinion phrase. Shows confidence in your claim — ideal for higher-band writing." },
-  { front: "il faut reconnaître que", back: "one must acknowledge that", subtext: "Introduces a concession — useful for balanced essays and formal writing. Shows nuance." },
+  { front: "il est indéniable que", back: "it is undeniable that", subtext: "Strong, formal opinion phrase. Shows confidence in your claim: ideal for higher-band writing." },
+  { front: "il faut reconnaître que", back: "one must acknowledge that", subtext: "Introduces a concession: useful for balanced essays and formal writing. Shows nuance." },
   { front: "d'une part… d'autre part", back: "on one hand… on the other hand", subtext: "Classic structure for presenting two sides of an argument." },
   { front: "grâce à / à cause de", back: "thanks to / because of", subtext: "Grâce à (positive cause), à cause de (negative cause). Both explain cause-and-effect." },
 ];
@@ -54,7 +54,7 @@ const quiz = [
     question: "You write: 'Les jeunes passent trop de temps sur les réseaux sociaux. _____, leur concentration diminue.' Which connector fits best?",
     options: ["De plus", "Par conséquent", "Cependant", "D'une part"],
     correct: 1,
-    explanation: "Par conséquent / C'est pourquoi signals cause and effect: 'they spend too much time on social media — therefore, their concentration decreases.'",
+    explanation: "Par conséquent / C'est pourquoi signals cause and effect: 'they spend too much time on social media: therefore, their concentration decreases.'",
   },
   {
     question: "Which phrase is most effective for introducing your personal opinion in a formal Paper 1 text?",
@@ -95,7 +95,7 @@ export default function Unit3Lesson3Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/ib-french-b-sl" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/ib-french-b-sl" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← IB French B SL
         </Link>
 
@@ -108,7 +108,7 @@ export default function Unit3Lesson3Page() {
               Writing Techniques & Connectors
             </h1>
             <p className="mt-4 text-lg leading-8 text-[#526173]">
-              The connectors, opinion phrases, and argument structures that make Paper 1 writing clear, coherent, and convincing — and help you score in the higher bands.
+              The connectors, opinion phrases, and argument structures that make Paper 1 writing clear, coherent, and convincing: and help you score in the higher bands.
             </p>
           </div>
 
@@ -159,7 +159,7 @@ export default function Unit3Lesson3Page() {
         </section>
 
         {/* Scoring higher section */}
-        <section className="mt-16 rounded-[2rem] border-2 border-[#C9A44C] bg-[#FFFDF7] p-8">
+        <section className="mt-16 rounded-2xl border-2 border-[#C9A44C] bg-[#FFFDF7] p-8">
           <p className="text-xs font-bold uppercase tracking-widest text-[#C9A44C]">Scoring in the higher bands</p>
           <h2 className="mt-3 text-2xl font-black text-[#0B1F3A]">What separates a 5 from a 7.</h2>
           <p className="mt-3 leading-7 text-[#526173]">
@@ -210,16 +210,16 @@ export default function Unit3Lesson3Page() {
           </div>
         </section>
 
-        <section className="mt-8 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <section className="mt-8 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
           <h2 className="mt-3 text-3xl font-black">Paper 1 skills complete.</h2>
           <p className="mt-3 leading-7 text-[#526173]">
-            Take the Unit 3 test, then move to Unit 4 — the Individual Oral.
+            Take the Unit 3 test, then move to Unit 4: the Individual Oral.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link href="/learn/ib-french-b-sl/unit-3/lesson-2" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">
               ← Previous lesson
             </Link>
-            <Link href="/learn/ib-french-b-sl/unit-3/test" className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">
+            <Link href="/learn/ib-french-b-sl/unit-3/test" className="rounded-full bg-[#D62828] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">
               Unit 3 Test →
             </Link>
           </div>

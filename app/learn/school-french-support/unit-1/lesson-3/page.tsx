@@ -5,15 +5,15 @@ import FillInTheBlank from "@/components/FillInTheBlank";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const prepCards = [
-  { front: "à + le → au", back: "to the / at the (masculine)", subtext: "Je vais au marché. — I'm going to the market." },
-  { front: "à + les → aux", back: "to the / at the (plural)", subtext: "Il parle aux élèves. — He talks to the students." },
-  { front: "de + le → du", back: "from the / of the (masculine)", subtext: "Le livre du professeur. — The teacher's book." },
-  { front: "de + les → des", back: "from the / of the (plural)", subtext: "Les devoirs des élèves. — The students' homework." },
-  { front: "dans", back: "in, inside", subtext: "Le chat est dans la boîte. — The cat is in the box." },
-  { front: "sur", back: "on top of", subtext: "Le livre est sur la table. — The book is on the table." },
-  { front: "sous", back: "under, beneath", subtext: "Le chien est sous la chaise. — The dog is under the chair." },
-  { front: "devant", back: "in front of", subtext: "Il attend devant l'école. — He waits in front of the school." },
-  { front: "derrière", back: "behind", subtext: "La voiture est derrière la maison. — The car is behind the house." },
+  { front: "à + le → au", back: "to the / at the (masculine)", subtext: "Je vais au marché.: I'm going to the market." },
+  { front: "à + les → aux", back: "to the / at the (plural)", subtext: "Il parle aux élèves.: He talks to the students." },
+  { front: "de + le → du", back: "from the / of the (masculine)", subtext: "Le livre du professeur.: The teacher's book." },
+  { front: "de + les → des", back: "from the / of the (plural)", subtext: "Les devoirs des élèves.: The students' homework." },
+  { front: "dans", back: "in, inside", subtext: "Le chat est dans la boîte.: The cat is in the box." },
+  { front: "sur", back: "on top of", subtext: "Le livre est sur la table.: The book is on the table." },
+  { front: "sous", back: "under, beneath", subtext: "Le chien est sous la chaise.: The dog is under the chair." },
+  { front: "devant", back: "in front of", subtext: "Il attend devant l'école.: He waits in front of the school." },
+  { front: "derrière", back: "behind", subtext: "La voiture est derrière la maison.: The car is behind the house." },
   { front: "en France", back: "in France (feminine country)", subtext: "En is used with feminine countries: en France, en Italie, en Espagne." },
 ];
 
@@ -28,9 +28,9 @@ const pairs = [
 
 const exercises = [
   { before: "Elle va", after: "cinéma. (to the / masculine)", answer: "au", hint: "à + le = au", translation: "She is going to the cinema." },
-  { before: "Il vient", after: "Canada. (from — masculine country)", answer: "du", hint: "de + le = du", translation: "He comes from Canada." },
+  { before: "Il vient", after: "Canada. (from: masculine country)", answer: "du", hint: "de + le = du", translation: "He comes from Canada." },
   { before: "Le chat est", after: "la table. (under)", answer: "sous", hint: "under = sous", translation: "The cat is under the table." },
-  { before: "Nous habitons", after: "France. (in — feminine country)", answer: "en", hint: "feminine countries use en", translation: "We live in France." },
+  { before: "Nous habitons", after: "France. (in: feminine country)", answer: "en", hint: "feminine countries use en", translation: "We live in France." },
   { before: "Il y a un parc", after: "la bibliothèque. (in front of)", answer: "devant", hint: "in front of = devant", translation: "There is a park in front of the library." },
 ];
 
@@ -51,13 +51,13 @@ const questions = [
     question: "How do you say 'the students' notebooks' (les élèves → des)?",
     options: ["les cahiers du élève", "les cahiers des élèves", "les cahiers de les élèves", "les cahiers aux élèves"],
     correct: 1,
-    explanation: "De + les = des. Les cahiers des élèves — the students' notebooks. De + les always contracts to des.",
+    explanation: "De + les = des. Les cahiers des élèves: the students' notebooks. De + les always contracts to des.",
   },
   {
     question: "What does 'en face de' mean?",
     options: ["next to", "behind", "in front of", "across from / facing"],
     correct: 3,
-    explanation: "En face de = across from, facing. La pharmacie est en face de la boulangerie — the pharmacy is across from the bakery.",
+    explanation: "En face de = across from, facing. La pharmacie est en face de la boulangerie: the pharmacy is across from the bakery.",
   },
   {
     question: "Which preposition is used to go to a masculine country like Canada?",
@@ -69,7 +69,7 @@ const questions = [
     question: "How do you say 'the teacher's book' using de + le?",
     options: ["le livre de le professeur", "le livre du professeur", "le livre de professeur", "le livre au professeur"],
     correct: 1,
-    explanation: "De + le = du. Le livre du professeur = the teacher's book. 'De le' never stays as two words — it must contract to 'du.'",
+    explanation: "De + le = du. Le livre du professeur = the teacher's book. 'De le' never stays as two words: it must contract to 'du.'",
   },
   {
     question: "Where is the dog? 'Le chien est ___ la chaise.' (under)",
@@ -89,7 +89,7 @@ export default function Unit1Lesson3Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/school-french-support" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/school-french-support" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← School French Support
         </Link>
 
@@ -122,15 +122,15 @@ export default function Unit1Lesson3Page() {
           </div>
         </div>
 
-        <div className="mt-12 rounded-[2rem] border-2 border-[#FEF3C7] bg-white p-6">
+        <div className="mt-12 rounded-2xl border-2 border-[#FEF3C7] bg-white p-6">
           <p className="text-xs font-bold uppercase tracking-widest text-[#D97706]">Common mistakes — prepositions & contractions</p>
           <div className="mt-4 space-y-3 text-sm">
             {[
-              { wrong: "à le cinéma", right: "au cinéma — à + le always contracts to au. You can NEVER write 'à le'." },
-              { wrong: "dans Paris", right: "à Paris — use à (not dans) with city names. 'Dans' is for enclosed spaces: dans le sac." },
-              { wrong: "en le Canada", right: "au Canada — Canada is masculine, so use au. En is for feminine countries: en France." },
-              { wrong: "de les étudiants", right: "des étudiants — de + les always contracts to des. 'De les' never appears." },
-              { wrong: "Je vais au France", right: "Je vais en France — France is feminine, so use en, not au." },
+              { wrong: "à le cinéma", right: "au cinéma: à + le always contracts to au. You can NEVER write 'à le'." },
+              { wrong: "dans Paris", right: "à Paris: use à (not dans) with city names. 'Dans' is for enclosed spaces: dans le sac." },
+              { wrong: "en le Canada", right: "au Canada: Canada is masculine, so use au. En is for feminine countries: en France." },
+              { wrong: "de les étudiants", right: "des étudiants: de + les always contracts to des. 'De les' never appears." },
+              { wrong: "Je vais au France", right: "Je vais en France: France is feminine, so use en, not au." },
             ].map((m) => (
               <div key={m.wrong} className="grid gap-1 rounded-xl border border-[#FDE68A] bg-[#FEFCE8] p-3">
                 <p className="text-[#B45309]">✗ {m.wrong}</p>
@@ -158,7 +158,7 @@ export default function Unit1Lesson3Page() {
 
         <div className="mt-16 flex items-center justify-between gap-4">
           <Link href="/learn/school-french-support/unit-1/lesson-2" className="rounded-full border border-[#E7DAB9] bg-white px-5 py-2.5 text-sm font-black text-[#526173] transition hover:-translate-y-0.5">← Previous</Link>
-          <Link href="/learn/school-french-support/unit-1/lesson-4" className="rounded-full bg-[#2563EB] px-5 py-2.5 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Next lesson →</Link>
+          <Link href="/learn/school-french-support/unit-1/lesson-4" className="rounded-full bg-[#D62828] px-5 py-2.5 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">Next lesson →</Link>
         </div>
       </section>
     </main>

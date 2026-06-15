@@ -40,7 +40,7 @@ export default function PasseSimplePage() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-4xl px-6 py-16">
-        <Link href="/resources" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/resources" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← Resources
         </Link>
 
@@ -83,7 +83,7 @@ export default function PasseSimplePage() {
             </div>
           </div>
           <p className="mt-4 rounded-xl bg-white px-4 py-3 text-sm text-[#526173]">
-            <strong className="text-[#0B1F3A]">The bottom line:</strong> In modern spoken and written French, the passé composé has almost completely replaced the passé simple. If you see <em>il parla</em> in a text, that is not a typo — it is literary style. In your own writing, use the passé composé instead.
+            <strong className="text-[#0B1F3A]">The bottom line:</strong> In modern spoken and written French, the passé composé has almost completely replaced the passé simple. If you see <em>il parla</em> in a text, that is not a typo: it is literary style. In your own writing, use the passé composé instead.
           </p>
         </div>
 

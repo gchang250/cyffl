@@ -22,7 +22,7 @@ const cards = [
   },
   {
     front: "la cote R",
-    back: "Quebec's R-score — used for competitive university admissions",
+    back: "Quebec's R-score: used for competitive university admissions",
     subtext: "Calculated from your cégep grades adjusted for class performance. Higher = more competitive programs.",
   },
   {
@@ -135,7 +135,7 @@ const questions = [
       "L'accusé de réception is for graduate programs only.",
     ],
     correct: 1,
-    explanation: "L'accusé de réception simply confirms the university received your file — it is not an offer of admission. La lettre d'acceptation is the actual offer you accept or decline.",
+    explanation: "L'accusé de réception simply confirms the university received your file: it is not an offer of admission. La lettre d'acceptation is the actual offer you accept or decline.",
   },
   {
     question: "What does 'programme contingent' mean?",
@@ -157,12 +157,12 @@ const questions = [
       "Receiving your acceptance letter",
     ],
     correct: 2,
-    explanation: "'L'inscription' is the registration or enrolment step — it happens after you accept your offer of admission. It typically involves selecting courses and paying fees.",
+    explanation: "'L'inscription' is the registration or enrolment step: it happens after you accept your offer of admission. It typically involves selecting courses and paying fees.",
   },
   {
     question: "What is a 'lettre de motivation' and how is it different from a resume in the academic context?",
     options: [
-      "It lists your grades — same as a transcript",
+      "It lists your grades: same as a transcript",
       "It is a personal statement / letter of intent explaining why you want to study the program",
       "It is a reference letter from a professor",
       "It is a financial aid application letter",
@@ -175,11 +175,11 @@ const questions = [
     options: [
       "Your high school graduation result",
       "Your performance on a standardized national test",
-      "Your academic ranking relative to your cohort — used for university admissions in Quebec",
+      "Your academic ranking relative to your cohort: used for university admissions in Quebec",
       "The cost (coût) of tuition at your cégep",
     ],
     correct: 2,
-    explanation: "La cote R (cote de rendement au collégial) is a GPA adjusted for the strength of your cégep cohort — roughly equivalent to a class rank-adjusted GPA. It's the primary admissions criterion for competitive programs at Quebec universities.",
+    explanation: "La cote R (cote de rendement au collégial) is a GPA adjusted for the strength of your cégep cohort: roughly equivalent to a class rank-adjusted GPA. It's the primary admissions criterion for competitive programs at Quebec universities.",
   },
   {
     question: "What is 'SRAM' in the Quebec university admissions process?",
@@ -197,7 +197,7 @@ const questions = [
     options: [
       "Your application has been accepted",
       "Your application has been rejected",
-      "Your application is under review — a decision has not yet been made",
+      "Your application is under review: a decision has not yet been made",
       "You need to resubmit your application",
     ],
     correct: 2,
@@ -209,7 +209,7 @@ export default function Unit4Lesson2Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/canadian-life" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/canadian-life" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← French for Canadian Life
         </Link>
 
@@ -221,7 +221,7 @@ export default function Unit4Lesson2Page() {
               Applying to a French-language university or a bilingual Canadian university requires specific vocabulary and phrasing. The admissions process in Quebec is particularly structured, with the cote R playing a key role for competitive programs.
             </p>
             <p className="mt-4 text-lg leading-8 text-[#526173]">
-              Understanding each step — from soumettre votre demande (submitting your application) to completing l'inscription (registration) — will help you navigate the process with confidence and in the right language.
+              Understanding each step: from soumettre votre demande (submitting your application) to completing l'inscription (registration): will help you navigate the process with confidence and in the right language.
             </p>
           </div>
 

@@ -7,15 +7,15 @@ import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 const cards = [
   { front: "Je dois faire mes devoirs avant de sortir.", back: "I have to do my homework before going out.", subtext: "devoir + faire + avant de + infinitive" },
   { front: "Tu sais si elle peut venir ce soir?", back: "Do you know if she can come tonight?", subtext: "savoir + si + pouvoir" },
-  { front: "Nous venons de finir — on peut partir!", back: "We just finished — we can leave!", subtext: "venir de + pouvoir" },
+  { front: "Nous venons de finir: on peut partir!", back: "We just finished: we can leave!", subtext: "venir de + pouvoir" },
   { front: "Elle veut prendre le train mais elle ne sait pas l'horaire.", back: "She wants to take the train but she doesn't know the schedule.", subtext: "vouloir + prendre + savoir" },
-  { front: "Vous devez connaître ce restaurant — il est excellent!", back: "You have to know this restaurant — it's excellent!", subtext: "devoir + connaître" },
+  { front: "Vous devez connaître ce restaurant: il est excellent!", back: "You have to know this restaurant: it's excellent!", subtext: "devoir + connaître" },
   { front: "Ils viennent souvent ici parce qu'ils peuvent travailler tranquillement.", back: "They come here often because they can work quietly.", subtext: "venir + pouvoir" },
   { front: "Il faut faire attention en classe.", back: "One has to pay attention in class.", subtext: "il faut + infinitive = one must (impersonal obligation)" },
-  { front: "On veut partir mais on doit rester.", back: "We want to leave but we have to stay.", subtext: "vouloir vs. devoir — want vs. must" },
-  { front: "Elle vient de prendre une grande décision.", back: "She has just made a big decision.", subtext: "venir de + prendre — recent past with irregular verb" },
+  { front: "On veut partir mais on doit rester.", back: "We want to leave but we have to stay.", subtext: "vouloir vs. devoir: want vs. must" },
+  { front: "Elle vient de prendre une grande décision.", back: "She has just made a big decision.", subtext: "venir de + prendre: recent past with irregular verb" },
   { front: "Ils savent faire la cuisine et ils aiment ça.", back: "They know how to cook and they like it.", subtext: "savoir + infinitive = to know how to" },
-  { front: "Pouvez-vous me dire où se trouve la gare?", back: "Can you tell me where the station is?", subtext: "pouvoir in a polite question — very common in everyday French" },
+  { front: "Pouvez-vous me dire où se trouve la gare?", back: "Can you tell me where the station is?", subtext: "pouvoir in a polite question: very common in everyday French" },
   { front: "Je connais Paris, mais je ne sais pas où est cette rue.", back: "I know Paris, but I don't know where this street is.", subtext: "connaître (familiar with) vs. savoir (factual knowledge) in one sentence" },
 ];
 
@@ -30,7 +30,7 @@ const matchPairs = [
 
 const fillIn = [
   { before: "Je", after: "partir mais je ne peux pas encore. (vouloir)", answer: "veux", hint: "je form of vouloir", translation: "I want to leave but I can't yet." },
-  { before: "Elle", after: "de lire ce livre — elle l'a adoré. (venir de)", answer: "vient de finir", hint: "elle vient de + infinitive — just finished reading", translation: "She just finished reading this book — she loved it." },
+  { before: "Elle", after: "de lire ce livre: elle l'a adoré. (venir de)", answer: "vient de finir", hint: "elle vient de + infinitive: just finished reading", translation: "She just finished reading this book: she loved it." },
   { before: "Tu", after: "ce restaurant? Il est vraiment bon. (connaître)", answer: "connais", hint: "tu form of connaître", translation: "Do you know this restaurant? It's really good." },
   { before: "Nous", after: "faire attention en classe. (devoir)", answer: "devons", hint: "nous form of devoir", translation: "We have to pay attention in class." },
   { before: "Ils", after: "du café avant de partir. (prendre)", answer: "prennent", hint: "ils form of prendre", translation: "They're having coffee before leaving." },
@@ -91,7 +91,7 @@ export default function Unit7Lesson4Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/french-foundations" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">← French Foundations</Link>
+        <Link href="/learn/french-foundations" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">← French Foundations</Link>
         <div className="mt-6 grid gap-8 md:grid-cols-[1fr_1fr]">
           <div>
             <p className="text-xs font-bold uppercase tracking-widest text-[#C9A44C]">Unit 7 · Lesson 4</p>
@@ -119,7 +119,7 @@ export default function Unit7Lesson4Page() {
           </div>
         </div>
 
-        <div className="mt-12 rounded-[2rem] border border-[#E7DAB9] bg-white p-6 shadow-sm">
+        <div className="mt-12 rounded-2xl border border-[#E7DAB9] bg-white p-6 shadow-sm">
           <p className="text-sm font-black uppercase tracking-widest text-[#C9A44C]">All seven verbs — quick reference</p>
           <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3 text-sm">
             {[
@@ -156,15 +156,15 @@ export default function Unit7Lesson4Page() {
           <MultipleChoiceQuiz questions={quiz} title="Unit 7 review quiz" />
         </div>
 
-        <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <section className="mt-16 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
 
           <h2 className="mt-3 text-3xl font-black">You know the most important irregular verbs in French.</h2>
           <p className="mt-3 leading-7 text-[#526173]">
-            Faire, pouvoir, vouloir, devoir, savoir, connaître, venir, prendre, partir — these verbs unlock everything. Take the final unit test to finish the course.
+            Faire, pouvoir, vouloir, devoir, savoir, connaître, venir, prendre, partir: these verbs unlock everything. Take the final unit test to finish the course.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link href="/learn/french-foundations/unit-7/lesson-3" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">← Previous</Link>
-            <Link href="/learn/french-foundations/unit-7/test" className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Take the final test →</Link>
+            <Link href="/learn/french-foundations/unit-7/test" className="rounded-full bg-[#D62828] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">Take the final test →</Link>
           </div>
         </section>
       </section>

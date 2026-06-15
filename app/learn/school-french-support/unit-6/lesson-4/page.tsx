@@ -4,14 +4,14 @@ import MatchPairs from "@/components/MatchPairs";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const vocabCards = [
-  { front: "nuire à", back: "to harm / to damage — Les écrans peuvent nuire à notre concentration.", subtext: "Irregular verb. Nuire à + noun. Common in environmental/opinion texts." },
-  { front: "le réseau social", back: "social network — Les réseaux sociaux influencent nos opinions.", subtext: "Plural: les réseaux sociaux. Plural of réseau = réseaux." },
-  { front: "pourtant", back: "yet / nevertheless — Pourtant, certains avantages sont réels.", subtext: "Contrast connector; adds nuance to an argument." },
-  { front: "la prise de conscience", back: "awareness / awakening — La prise de conscience environnementale est nécessaire.", subtext: "Literally 'taking of awareness'. A key phrase in environmental writing." },
-  { front: "il est indéniable que", back: "it is undeniable that — Il est indéniable que le climat change.", subtext: "A formal phrase used to introduce an accepted fact in an argument." },
-  { front: "à condition que", back: "provided that / as long as — C'est utile à condition qu'on l'utilise bien.", subtext: "Followed by the subjunctive in formal French; in school writing, the infinitive is acceptable." },
-  { front: "la déforestation", back: "deforestation — La déforestation détruit des millions d'hectares chaque année.", subtext: "A cognate! Note the French spelling." },
-  { front: "s'engager", back: "to commit / to get involved — Chacun doit s'engager pour protéger la planète.", subtext: "A strong verb for writing about responsibility and action." },
+  { front: "nuire à", back: "to harm / to damage: Les écrans peuvent nuire à notre concentration.", subtext: "Irregular verb. Nuire à + noun. Common in environmental/opinion texts." },
+  { front: "le réseau social", back: "social network: Les réseaux sociaux influencent nos opinions.", subtext: "Plural: les réseaux sociaux. Plural of réseau = réseaux." },
+  { front: "pourtant", back: "yet / nevertheless: Pourtant, certains avantages sont réels.", subtext: "Contrast connector; adds nuance to an argument." },
+  { front: "la prise de conscience", back: "awareness / awakening: La prise de conscience environnementale est nécessaire.", subtext: "Literally 'taking of awareness'. A key phrase in environmental writing." },
+  { front: "il est indéniable que", back: "it is undeniable that: Il est indéniable que le climat change.", subtext: "A formal phrase used to introduce an accepted fact in an argument." },
+  { front: "à condition que", back: "provided that / as long as: C'est utile à condition qu'on l'utilise bien.", subtext: "Followed by the subjunctive in formal French; in school writing, the infinitive is acceptable." },
+  { front: "la déforestation", back: "deforestation: La déforestation détruit des millions d'hectares chaque année.", subtext: "A cognate! Note the French spelling." },
+  { front: "s'engager", back: "to commit / to get involved: Chacun doit s'engager pour protéger la planète.", subtext: "A strong verb for writing about responsibility and action." },
 ];
 
 const pairs = [
@@ -28,19 +28,19 @@ const questions = [
     question: "According to Text A, what positive effect can social media have?",
     options: ["It improves academic results", "It allows young people to stay connected and raise social awareness", "It replaces traditional media entirely", "It eliminates loneliness completely"],
     correct: 1,
-    explanation: "The text mentions 'il permet de rester en contact avec des amis et de partager des idées, voire de sensibiliser à des causes importantes' — staying connected and raising awareness.",
+    explanation: "The text mentions 'il permet de rester en contact avec des amis et de partager des idées, voire de sensibiliser à des causes importantes': staying connected and raising awareness.",
   },
   {
     question: "What concern does Text A raise about screen time?",
     options: ["It causes eye problems", "It leads to poor diet", "Spending too many hours on screens can harm sleep and concentration", "It makes young people forget their homework"],
     correct: 2,
-    explanation: "The text says 'passer trop de temps devant un écran peut nuire au sommeil et à la concentration' — harm to sleep and concentration.",
+    explanation: "The text says 'passer trop de temps devant un écran peut nuire au sommeil et à la concentration': harm to sleep and concentration.",
   },
   {
     question: "In Text B, what does the narrator say humans must do urgently?",
     options: ["Stop using cars entirely", "Reduce consumption, plant trees, and choose renewable energy", "Ban factories from producing goods", "Move to the countryside"],
     correct: 1,
-    explanation: "The text states we must 'réduire notre consommation, planter des arbres et choisir des sources d'énergie renouvelables' — reduce consumption, plant trees, and choose renewables.",
+    explanation: "The text states we must 'réduire notre consommation, planter des arbres et choisir des sources d'énergie renouvelables': reduce consumption, plant trees, and choose renewables.",
   },
   {
     question: "What persuasive device does Text B use to involve the reader directly?",
@@ -51,10 +51,10 @@ const questions = [
   {
     question: "What does 'nuire à' mean, and what grammatical feature does it have?",
     options: [
-      "To help with — used before nouns only.",
-      "To harm/damage — irregular verb followed by à + noun.",
-      "To know — followed by an infinitive.",
-      "To improve — used with de + noun.",
+      "To help with: used before nouns only.",
+      "To harm/damage: irregular verb followed by à + noun.",
+      "To know: followed by an infinitive.",
+      "To improve: used with de + noun.",
     ],
     correct: 1,
     explanation: "Nuire à = to harm / to damage. It's an irregular verb followed by à: nuire à la santé (harm health), nuire à l'environnement (harm the environment). Common in formal and environmental writing.",
@@ -63,15 +63,15 @@ const questions = [
     question: "Which phrase from the vocabulary introduces a widely accepted fact in an argument?",
     options: ["à mon avis", "je pense que", "il est indéniable que", "pourtant"],
     correct: 2,
-    explanation: "'Il est indéniable que' = it is undeniable that. This phrase introduces a fact the writer presents as beyond dispute. It signals objective, strong evidence — ideal for exam writing.",
+    explanation: "'Il est indéniable que' = it is undeniable that. This phrase introduces a fact the writer presents as beyond dispute. It signals objective, strong evidence: ideal for exam writing.",
   },
   {
     question: "What type of text are both texts in this lesson, and how can you tell?",
     options: [
-      "Narratives — because they tell a story with characters.",
-      "Opinion/argumentative texts — because they present a position, evidence, and counterpoints.",
-      "Descriptions — because they describe places and events.",
-      "Instructions — because they tell the reader what to do.",
+      "Narratives: because they tell a story with characters.",
+      "Opinion/argumentative texts: because they present a position, evidence, and counterpoints.",
+      "Descriptions: because they describe places and events.",
+      "Instructions: because they tell the reader what to do.",
     ],
     correct: 1,
     explanation: "Both texts are argumentative/opinion texts. Signs include: opinion phrases (selon moi, il est clair que), contrast connectors (pourtant, cependant), evidence phrases (il est indéniable que), and a call to action at the end.",
@@ -88,7 +88,7 @@ export default function Unit6Lesson4Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/school-french-support" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/school-french-support" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← School French Support
         </Link>
 
@@ -97,7 +97,7 @@ export default function Unit6Lesson4Page() {
             <p className="text-xs font-bold uppercase tracking-widest text-[#854D0E]">Unit 6 · Lesson 4</p>
             <h1 className="mt-3 text-5xl font-black tracking-tight md:text-6xl">Upper-Intermediate Texts</h1>
             <p className="mt-4 text-lg leading-8 text-[#526173]">
-              These longer texts mix tenses, include opinions, and use more complex vocabulary. Both are argumentative or opinion-based — a common type in school exams. Look for opinion markers (<em>selon moi, il est clair que, pourtant</em>), contrast connectors, and phrases that introduce evidence or consequences. You won&apos;t know every word — use your strategies.
+              These longer texts mix tenses, include opinions, and use more complex vocabulary. Both are argumentative or opinion-based — a common type in school exams. Look for opinion markers (<em>selon moi, il est clair que, pourtant</em>), contrast connectors, and phrases that introduce evidence or consequences. You won&apos;t know every word: use your strategies.
             </p>
           </div>
           <div className="rounded-2xl border border-[#E7DAB9] bg-white p-5">
@@ -153,7 +153,7 @@ export default function Unit6Lesson4Page() {
           <h2 className="text-2xl font-black">Text B — L&apos;environnement: notre responsabilité</h2>
           <div className="mt-4 rounded-2xl border border-[#E7DAB9] bg-white p-6 text-sm leading-7">
             <p>
-              Il est indéniable que notre planète traverse une crise environnementale sans précédent. Le réchauffement climatique, la déforestation massive et la pollution des océans menacent la biodiversité et la qualité de vie de millions d&apos;êtres humains. Ces problèmes ne sont pas nouveaux — on les connaît depuis des décennies — pourtant, les actions concrètes restent insuffisantes. La responsabilité est partagée: les gouvernements doivent adopter des politiques ambitieuses, mais chacun d&apos;entre nous a également un rôle à jouer. Nous pouvons réduire notre consommation, planter des arbres, choisir des sources d&apos;énergie renouvelables et soutenir des organisations engagées dans la protection de l&apos;environnement. La prise de conscience est déjà là. Ce qui manque encore, c&apos;est le passage à l&apos;action. Il n&apos;est pas trop tard — mais il faut agir maintenant.
+              Il est indéniable que notre planète traverse une crise environnementale sans précédent. Le réchauffement climatique, la déforestation massive et la pollution des océans menacent la biodiversité et la qualité de vie de millions d&apos;êtres humains. Ces problèmes ne sont pas nouveaux: on les connaît depuis des décennies: pourtant, les actions concrètes restent insuffisantes. La responsabilité est partagée: les gouvernements doivent adopter des politiques ambitieuses, mais chacun d&apos;entre nous a également un rôle à jouer. Nous pouvons réduire notre consommation, planter des arbres, choisir des sources d&apos;énergie renouvelables et soutenir des organisations engagées dans la protection de l&apos;environnement. La prise de conscience est déjà là. Ce qui manque encore, c&apos;est le passage à l&apos;action. Il n&apos;est pas trop tard: mais il faut agir maintenant.
             </p>
           </div>
           <div className="mt-4 space-y-3">
@@ -185,7 +185,7 @@ export default function Unit6Lesson4Page() {
           <MultipleChoiceQuiz questions={questions} title="Text comprehension quiz" />
         </div>
 
-        <div className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <div className="mt-16 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
 
           <p className="mt-2 text-[#526173]">You&apos;ve read and analysed French texts at three levels — from beginner daily-life texts to upper-intermediate opinion pieces. Take the test to complete Unit 6.</p>
           <div className="mt-5 flex flex-wrap gap-3">

@@ -105,19 +105,19 @@ const quiz = [
     question: "Which sentence correctly expresses 'We are thirsty'?",
     options: ["Nous sommes soif.", "Nous avons soif.", "Nous avons la soif.", "Nous buvons soif."],
     correct: 1,
-    explanation: "'Avoir soif' = to be thirsty (literally 'to have thirst'). French body-state expressions — hunger, thirst, cold, hot, fear — all use avoir, not être.",
+    explanation: "'Avoir soif' = to be thirsty (literally 'to have thirst'). French body-state expressions: hunger, thirst, cold, hot, fear: all use avoir, not être.",
   },
   {
     question: "How do you say 'She is 25 years old' in French?",
     options: ["Elle est vingt-cinq ans.", "Elle a vingt-cinq.", "Elle a vingt-cinq ans.", "Elle est âgée vingt-cinq."],
     correct: 2,
-    explanation: "Age always uses avoir + number + ans: 'Elle a vingt-cinq ans.' Never 'Elle est vingt-cinq ans' — être is not used for age in French.",
+    explanation: "Age always uses avoir + number + ans: 'Elle a vingt-cinq ans.' Never 'Elle est vingt-cinq ans': être is not used for age in French.",
   },
   {
     question: "What is the correct conjugation of avoir for 'ils/elles'?",
     options: ["ils sont", "ils ont", "ils avez", "ils avons"],
     correct: 1,
-    explanation: "Avoir: j'ai · tu as · il/elle a · nous avons · vous avez · ils/elles ont. The full conjugation must be memorized — these are all irregular.",
+    explanation: "Avoir: j'ai · tu as · il/elle a · nous avons · vous avez · ils/elles ont. The full conjugation must be memorized: these are all irregular.",
   },
   {
     question: "Translate: 'Nous avons besoin d'aide.'",
@@ -129,12 +129,12 @@ const quiz = [
     question: "Why do French people say 'j'ai chaud' instead of 'je suis chaud'?",
     options: [
       "'Je suis chaud' is actually more correct",
-      "French uses avoir for physical sensations — temperature, hunger, thirst, fear, sleep",
+      "French uses avoir for physical sensations: temperature, hunger, thirst, fear, sleep",
       "'Chaud' is an adjective so être can't be used with it",
       "It's a regional variation with no grammatical reason",
     ],
     correct: 1,
-    explanation: "French uses avoir for physical sensations: avoir chaud, avoir froid, avoir faim, avoir soif, avoir peur, avoir sommeil. These are 'avoir + noun' — states you 'have'. Note: 'je suis chaud(e)' does exist but means something else (enthusiastic about something) — another reason to memorize these phrases.",
+    explanation: "French uses avoir for physical sensations: avoir chaud, avoir froid, avoir faim, avoir soif, avoir peur, avoir sommeil. These are 'avoir + noun': states you 'have'. Note: 'je suis chaud(e)' does exist but means something else (enthusiastic about something): another reason to memorize these phrases.",
   },
 ];
 
@@ -144,7 +144,7 @@ export default function Unit2Lesson3Page() {
       <section className="mx-auto max-w-6xl px-6 py-16">
         <Link
           href="/learn/french-foundations"
-          className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]"
+          className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]"
         >
           ← French Foundations
         </Link>
@@ -242,7 +242,7 @@ export default function Unit2Lesson3Page() {
           </div>
         </section>
 
-        <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <section className="mt-16 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
           <h2 className="mt-3 text-3xl font-black">
             You know both key French verbs, être and avoir.
           </h2>
@@ -259,7 +259,7 @@ export default function Unit2Lesson3Page() {
             </Link>
             <Link
               href="/learn/french-foundations/unit-2/lesson-4"
-              className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]"
+              className="rounded-full bg-[#D62828] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#B91C1C]"
             >
               Next lesson →
             </Link>

@@ -6,19 +6,19 @@ import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 const flashcards = [
   { front: "la préparation (15 min)", back: "15-minute preparation period", subtext: "You receive the image and have 15 minutes before the oral begins. Use all of it: identify theme, plan description, note vocabulary." },
   { front: "le stimulus visuel", back: "visual stimulus / image", subtext: "The photo or image you receive. It is always linked to one of the five IB themes and illustrates a global issue." },
-  { front: "la problématique mondiale", back: "global issue", subtext: "The world problem the image illustrates — climate change, inequality, migration, etc. Identifying this is the core of the oral." },
-  { front: "décrire", back: "to describe", subtext: "The first part of the oral. You describe what you see in the image — people, setting, actions." },
+  { front: "la problématique mondiale", back: "global issue", subtext: "The world problem the image illustrates: climate change, inequality, migration, etc. Identifying this is the core of the oral." },
+  { front: "décrire", back: "to describe", subtext: "The first part of the oral. You describe what you see in the image: people, setting, actions." },
   { front: "analyser", back: "to analyse", subtext: "The second move. You explain what global issue the image represents and connect it to an IB theme." },
   { front: "le thème", back: "the theme", subtext: "One of the five IB themes. Name it explicitly: 'Cette image appartient au thème de Partager la planète.'" },
-  { front: "l'interaction (f)", back: "interaction", subtext: "The examiner-led discussion phase. You must listen, respond, and develop ideas spontaneously — not give a prepared script." },
+  { front: "l'interaction (f)", back: "interaction", subtext: "The examiner-led discussion phase. You must listen, respond, and develop ideas spontaneously: not give a prepared script." },
   { front: "les critères de notation", back: "marking criteria", subtext: "Criterion A: Language (10 pts). Criterion B: Message (10 pts). Criterion C: Interactive skills (10 pts). Total: 30 pts." },
   { front: "le registre oral", back: "spoken register", subtext: "More natural and conversational than written French. Contractions and spoken connectors (ben, donc, alors) are acceptable." },
   { front: "développer ses idées", back: "to develop / expand ideas", subtext: "Don't just answer 'oui' or 'non'. Develop every answer with an explanation, example, or personal connection." },
-  { front: "le Critère A", back: "Criterion A — Language (10 pts)", subtext: "Vocabulary range and accuracy, grammatical accuracy, and pronunciation. Show range by using complex structures and a variety of tenses." },
-  { front: "le Critère B", back: "Criterion B — Message (10 pts)", subtext: "Quality of ideas: description of the image, identification of the theme and global issue, and development of arguments. Factual accuracy is NOT assessed here." },
-  { front: "le Critère C", back: "Criterion C — Interactive skills (10 pts)", subtext: "How well you engage with the examiner. Respond spontaneously, ask for clarification if needed, and develop rather than just answer." },
-  { front: "rebondir sur une question", back: "to build on / respond to a question", subtext: "To use the examiner's question as a springboard — take their point and develop it, add an example, or introduce a new angle." },
-  { front: "demander des précisions", back: "to ask for clarification", subtext: "'Pourriez-vous préciser votre question ?' = Could you clarify your question? Asking for clarification is not penalised — it's a natural oral skill." },
+  { front: "le Critère A", back: "Criterion A: Language (10 pts)", subtext: "Vocabulary range and accuracy, grammatical accuracy, and pronunciation. Show range by using complex structures and a variety of tenses." },
+  { front: "le Critère B", back: "Criterion B: Message (10 pts)", subtext: "Quality of ideas: description of the image, identification of the theme and global issue, and development of arguments. Factual accuracy is NOT assessed here." },
+  { front: "le Critère C", back: "Criterion C: Interactive skills (10 pts)", subtext: "How well you engage with the examiner. Respond spontaneously, ask for clarification if needed, and develop rather than just answer." },
+  { front: "rebondir sur une question", back: "to build on / respond to a question", subtext: "To use the examiner's question as a springboard: take their point and develop it, add an example, or introduce a new angle." },
+  { front: "demander des précisions", back: "to ask for clarification", subtext: "'Pourriez-vous préciser votre question ?' = Could you clarify your question? Asking for clarification is not penalised: it's a natural oral skill." },
 ];
 
 const matchPairs = [
@@ -41,19 +41,19 @@ const quiz = [
     question: "The Individual Oral is worth what percentage of the IB French B SL final grade?",
     options: ["20%", "25%", "30%", "45%"],
     correct: 1,
-    explanation: "The Individual Oral (IA) is worth 25% — the same as each other component: Paper 1 (Written Production), Paper 2A (Reading), and Paper 2B (Listening). Each is 25%.",
+    explanation: "The Individual Oral (IA) is worth 25%: the same as each other component: Paper 1 (Written Production), Paper 2A (Reading), and Paper 2B (Listening). Each is 25%.",
   },
   {
     question: "After describing the image, what should you do next?",
     options: ["Wait for the examiner to ask a question", "Name the IB theme and connect the image to a global issue", "Give your personal opinion on the image", "Summarise the image in one sentence"],
     correct: 1,
-    explanation: "After the description, you must name the IB theme and explain what global issue the image illustrates. This is Criterion B — message.",
+    explanation: "After the description, you must name the IB theme and explain what global issue the image illustrates. This is Criterion B: message.",
   },
   {
     question: "The examiner asks: 'Qu'est-ce que cette image vous inspire?' You should:",
-    options: ["Recite your prepared notes exactly", "Give a one-word answer and wait", "Develop your response — explain, give an example, connect to your experience", "Ask the examiner to repeat the question"],
+    options: ["Recite your prepared notes exactly", "Give a one-word answer and wait", "Develop your response: explain, give an example, connect to your experience", "Ask the examiner to repeat the question"],
     correct: 2,
-    explanation: "Criterion C (Interactive skills) rewards spontaneous, developed responses. Develop every answer — don't just give short replies.",
+    explanation: "Criterion C (Interactive skills) rewards spontaneous, developed responses. Develop every answer: don't just give short replies.",
   },
   {
     question: "What are the three Individual Oral marking criteria?",
@@ -70,24 +70,24 @@ const quiz = [
       "Say 'je ne sais pas' and stop",
     ],
     correct: 2,
-    explanation: "Asking for clarification ('Pourriez-vous préciser?') is a natural interactive skill — it is not penalised. It shows Criterion C competency. Silence or random guessing lose marks.",
+    explanation: "Asking for clarification ('Pourriez-vous préciser?') is a natural interactive skill: it is not penalised. It shows Criterion C competency. Silence or random guessing lose marks.",
   },
   {
-    question: "Which criterion specifically assesses how well you engage with the examiner's questions — not just what you say, but how spontaneously you respond?",
-    options: ["Criterion A — Language", "Criterion B — Message", "Criterion C — Interactive skills", "All three equally"],
+    question: "Which criterion specifically assesses how well you engage with the examiner's questions: not just what you say, but how spontaneously you respond?",
+    options: ["Criterion A: Language", "Criterion B: Message", "Criterion C: Interactive skills", "All three equally"],
     correct: 2,
-    explanation: "Criterion C (Interactive skills) is specifically about engagement quality: do you respond spontaneously, develop ideas, ask for clarification when needed, and have a natural conversation — not a scripted recital.",
+    explanation: "Criterion C (Interactive skills) is specifically about engagement quality: do you respond spontaneously, develop ideas, ask for clarification when needed, and have a natural conversation: not a scripted recital.",
   },
   {
     question: "During your 15-minute preparation, you should use the time to:",
     options: [
       "Write a full script of everything you plan to say",
       "Identify the theme, plan your description, note key vocabulary, and think of global issue connections",
-      "Only look at the image — do not write anything",
+      "Only look at the image: do not write anything",
       "Memorise as many sentences as possible to recite",
     ],
     correct: 1,
-    explanation: "Use prep time to: identify the IB theme, plan a structured description (foreground → background → significance), note key vocabulary, and identify the global issue. A script is counterproductive — it kills natural interaction.",
+    explanation: "Use prep time to: identify the IB theme, plan a structured description (foreground → background → significance), note key vocabulary, and identify the global issue. A script is counterproductive: it kills natural interaction.",
   },
 ];
 
@@ -95,7 +95,7 @@ export default function Unit4Lesson1Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/ib-french-b-sl" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/ib-french-b-sl" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← IB French B SL
         </Link>
 
@@ -121,7 +121,7 @@ export default function Unit4Lesson1Page() {
                 <span className="font-black text-white">your presentation</span> (describe + analyse
                 the image), then{" "}
                 <span className="font-black text-white">discussion</span> with the examiner.
-                Don't script the second phase — it needs to feel natural.
+                Don't script the second phase: it needs to feel natural.
               </p>
             </div>
             <div className="rounded-2xl border border-[#E7DAB9] bg-white p-5">
@@ -140,11 +140,11 @@ export default function Unit4Lesson1Page() {
           <h2 className="text-2xl font-black">Key vocabulary</h2>
           <p className="mt-1 text-[#526173]">Click a card to flip it. Know the oral structure and terminology.</p>
           <div className="mt-6">
-            <FlashCardDeck cards={flashcards} title="Oral structure & preparation — key terms" />
+            <FlashCardDeck cards={flashcards} title="Oral structure & preparation: key terms" />
           </div>
         </section>
 
-        <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-6 shadow-sm">
+        <section className="mt-16 rounded-2xl border border-[#E7DAB9] bg-white p-6 shadow-sm">
           <h2 className="text-xl font-black">What the examiner is looking for — criterion by criterion</h2>
           <p className="mt-2 text-sm text-[#526173]">Each criterion targets a different dimension of your performance. Understand what gets marks.</p>
           <div className="mt-4 grid gap-4 sm:grid-cols-3">
@@ -199,7 +199,7 @@ export default function Unit4Lesson1Page() {
           </div>
         </section>
 
-        <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <section className="mt-16 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
           <h2 className="mt-3 text-3xl font-black">Oral structure locked in.</h2>
           <p className="mt-3 leading-7 text-[#526173]">
             Next: the language you need to describe images effectively.
@@ -208,7 +208,7 @@ export default function Unit4Lesson1Page() {
             <Link href="/learn/ib-french-b-sl" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">
               Back to course
             </Link>
-            <Link href="/learn/ib-french-b-sl/unit-4/lesson-2" className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">
+            <Link href="/learn/ib-french-b-sl/unit-4/lesson-2" className="rounded-full bg-[#D62828] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">
               Next lesson →
             </Link>
           </div>

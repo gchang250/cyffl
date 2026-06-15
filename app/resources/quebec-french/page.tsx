@@ -21,7 +21,7 @@ const vocabRows: [string, string, string][] = [
   ["être tanné(e)", "en avoir assez / être fatigué(e) de", "to be fed up / sick of something"],
   ["avoir de la misère", "avoir du mal / avoir des difficultés", "to have trouble / to struggle"],
   ["être game", "être partant(e) / être prêt(e)", "to be up for it / willing"],
-  ["être écoeurant(e)", "être dégoûtant(e) OR être incroyable", "disgusting — OR (Quebec slang) awesome!"],
+  ["être écoeurant(e)", "être dégoûtant(e) OR être incroyable", "disgusting: OR (Quebec slang) awesome!"],
   // Actions
   ["jaser", "bavarder / discuter", "to chat / to talk"],
   ["placoter", "potiner / jaser", "to gossip / to chitchat"],
@@ -36,22 +36,22 @@ const vocabRows: [string, string, string][] = [
   // School / work
   ["polyvalente", "lycée / collège", "high school (secondary)"],
   ["cégep", "(n/a in France)", "Quebec college (pre-university or technical)"],
-  ["baccalauréat (BAC)", "licence (3 or 4 ans en France)", "bachelor's degree — only 3 years in Quebec"],
+  ["baccalauréat (BAC)", "licence (3 or 4 ans en France)", "bachelor's degree: only 3 years in Quebec"],
   ["stage", "stage / placement", "internship / practicum"],
   // Intensifiers
   ["ben", "bien / très", "very / really (casual intensifier)"],
-  ["pas pire", "pas mal / assez bien", "pretty good (false friend — means good, not mediocre!)"],
+  ["pas pire", "pas mal / assez bien", "pretty good (false friend: means good, not mediocre!)"],
   ["vraiment correct", "parfaitement bien / très bien", "totally fine / absolutely okay"],
 ];
 
 const expressionRows: [string, string, string][] = [
   ["C'est le boutte!", "It's awesome! / It's the best!", "C'est le boutte, cette émission-là!"],
   ["C'est de valeur.", "That's a shame. / What a pity.", "C'est de valeur que tu puisses pas venir."],
-  ["Wo!", "Hold on! / Wait! / Whoa!", "Wo, wo, wo — ralentis un peu!"],
+  ["Wo!", "Hold on! / Wait! / Whoa!", "Wo, wo, wo: ralentis un peu!"],
   ["Ben là...", "Well... / Come on... / Seriously?", "Ben là, tu pouvais pas me le dire avant?"],
   ["Ça fait que...", "So... / And so... / Therefore...", "Ça fait que j'ai décidé de partir."],
   ["T'as-tu vu?", "Did you see? / Have you seen?", "T'as-tu vu le dernier film de Villeneuve?"],
-  ["Y'a pas de quoi.", "You're welcome. / Don't mention it.", "— Merci! — Y'a pas de quoi."],
+  ["Y'a pas de quoi.", "You're welcome. / Don't mention it.", "— Merci!: Y'a pas de quoi."],
   ["Avoir de la misère", "To have trouble / to struggle", "J'ai de la misère avec les maths."],
   ["Être dans le trouble", "To be in trouble", "Si tu dis ça, t'es dans le trouble."],
   ["Lâche pas!", "Don't give up! / Keep at it!", "C'est dur, mais lâche pas!"],
@@ -59,21 +59,21 @@ const expressionRows: [string, string, string][] = [
   ["Faire du pouce", "To hitchhike", "On a fait du pouce jusqu'à Québec."],
   ["Être game", "To be up for it / willing", "Es-tu game pour aller camper ce week-end?"],
   ["Passer au cash", "To pay (at the register)", "Je passe au cash et je te rejoins dehors."],
-  ["C'est parti mon kiki!", "Here we go! / Let's do this!", "C'est parti mon kiki — bonne chance à tous!"],
+  ["C'est parti mon kiki!", "Here we go! / Let's do this!", "C'est parti mon kiki: bonne chance à tous!"],
   ["Sur le bord de", "On the verge of / about to", "J'étais sur le bord de pleurer."],
   ["Aller aux vues", "To go to the movies", "On va-tu aux vues ce soir?"],
   ["Être chaud / être soûl", "To be drunk", "Il était ben chaud hier soir."],
   ["Crinquer", "To wind up / to energize / to excite", "Le café du matin me crinque!"],
   ["Magasiner", "To go shopping", "On va magasiner au centre commercial."],
   ["En masse", "Plenty / more than enough", "T'inquiète, on a du temps en masse."],
-  ["Ostie / tabarnak / câlice", "Oath-based swear words (sacres)", "Sacres are culturally specific Quebec expletives — avoid in formal contexts."],
+  ["Ostie / tabarnak / câlice", "Oath-based swear words (sacres)", "Sacres are culturally specific Quebec expletives: avoid in formal contexts."],
 ];
 
 export default function QuebecFrenchPage() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-4xl px-6 py-16">
-        <Link href="/resources" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/resources" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← Resources
         </Link>
 
@@ -184,7 +184,7 @@ export default function QuebecFrenchPage() {
                 <p className="font-black">tu elision</p>
                 <p className="mt-1 text-white/70">
                   "tu es" becomes "t'es" and "tu as" becomes "t'as" in everyday speech.
-                  This is extremely common — you will hear it constantly.
+                  This is extremely common: you will hear it constantly.
                 </p>
                 <p className="mt-2 font-black text-[#C9A44C]">T'as faim? / T'es prêt?</p>
               </div>
@@ -229,7 +229,7 @@ export default function QuebecFrenchPage() {
               <div>
                 <p className="font-black text-white">Affrication of t and d</p>
                 <p className="mt-1">
-                  Before the vowels /i/ and /u/, the consonants t and d are affricated — they gain a
+                  Before the vowels /i/ and /u/, the consonants t and d are affricated: they gain a
                   "ts" or "dz" quality. So "tu" sounds like "tsu," and "di" sounds like "dzi." This is
                   one of the most immediately recognizable features of Quebec French.
                 </p>
@@ -253,7 +253,7 @@ export default function QuebecFrenchPage() {
               Founded in 1961 and significantly strengthened by the Charter of the French Language (Bill 101 /
               Loi 101) in 1977, the Office québécois de la langue française (OQLF) is Quebec's official language
               authority. Its mandate is to define, promote, and enforce the use of French as the common public
-              language of Quebec — in government, commerce, education, and the workplace.
+              language of Quebec: in government, commerce, education, and the workplace.
             </p>
             <p>
               One of the OQLF's most visible roles is coining and promoting French-language alternatives to English
@@ -290,14 +290,14 @@ export default function QuebecFrenchPage() {
               Bill 101 (Loi sur la langue française) requires that French be the language of instruction in most
               Quebec schools, the language of the workplace for businesses with 50 or more employees, and the
               language of commercial signage. The OQLF investigates complaints and issues compliance orders.
-              Understanding this context helps explain why Quebec French has evolved so distinctly — it has an
+              Understanding this context helps explain why Quebec French has evolved so distinctly: it has an
               institutional protector that actively shapes its vocabulary.
             </p>
           </div>
         </div>
 
         {/* Bottom CTA */}
-        <div className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-6 shadow-sm">
+        <div className="mt-16 rounded-2xl border border-[#E7DAB9] bg-white p-6 shadow-sm">
           <p className="font-black">Ready to practise Quebec French in context?</p>
           <p className="mt-2 text-sm text-[#526173]">
             The Canadian Life unit covers Quebec vocabulary, culture, and real-world listening in an interactive
@@ -305,7 +305,7 @@ export default function QuebecFrenchPage() {
           </p>
           <Link
             href="/learn/canadian-life/unit-1/lesson-1"
-            className="mt-4 inline-block rounded-full bg-[#2563EB] px-5 py-2.5 text-sm font-black text-white transition hover:bg-[#1D4ED8]"
+            className="mt-4 inline-block rounded-full bg-[#D62828] px-5 py-2.5 text-sm font-black text-white transition hover:bg-[#B91C1C]"
           >
             Go to course →
           </Link>

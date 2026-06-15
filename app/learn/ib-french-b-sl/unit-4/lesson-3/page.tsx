@@ -9,11 +9,11 @@ const flashcards = [
   { front: "Il est essentiel que… (+ subjonctif)", back: "It is essential that…", subtext: "Strong, formal opinion phrase. Triggers the subjunctive: 'Il est essentiel que nous agissions maintenant.'" },
   { front: "D'après moi…", back: "As far as I'm concerned… / In my view…", subtext: "A slightly stronger version of 'à mon avis'. Good for clear takes on global issues." },
   { front: "Cela me préoccupe parce que…", back: "This concerns me because…", subtext: "Shows genuine engagement with the global issue. Examiners reward personal connection." },
-  { front: "Il faut admettre que…", back: "One must admit that…", subtext: "Introduces a concession — showing you understand the other side. Raises Criterion C." },
+  { front: "Il faut admettre que…", back: "One must admit that…", subtext: "Introduces a concession: showing you understand the other side. Raises Criterion C." },
   { front: "En ce qui concerne…", back: "Regarding… / As far as … is concerned…", subtext: "Useful for redirecting the conversation or introducing a new angle." },
   { front: "Par exemple…", back: "For example…", subtext: "Always back up an opinion with an example. The examiner expects development." },
   { front: "Si l'on considère que…", back: "If we consider that…", subtext: "Introduces evidence or context for your argument. Shows analytical thinking." },
-  { front: "C'est une question complexe.", back: "It is a complex issue.", subtext: "Acknowledges nuance. Use when an issue has multiple sides — shows intellectual maturity." },
+  { front: "C'est une question complexe.", back: "It is a complex issue.", subtext: "Acknowledges nuance. Use when an issue has multiple sides: shows intellectual maturity." },
 ];
 
 const matchPairs = [
@@ -33,7 +33,7 @@ const quiz = [
     explanation: "Start with an opinion phrase ('À mon avis'), state your position clearly, then develop with a reason. Never give a one-word answer.",
   },
   {
-    question: "Which phrase introduces a concession — showing you understand the opposing view?",
+    question: "Which phrase introduces a concession: showing you understand the opposing view?",
     options: ["'Par exemple…'", "'Il faut admettre que…'", "'À mon avis…'", "'C'est une question complexe.'"],
     correct: 1,
     explanation: "'Il faut admettre que…' (one must admit that…) introduces a concession. Showing you understand both sides raises your Criterion C interactive skills score.",
@@ -65,7 +65,7 @@ const quiz = [
       "'C'est difficile à expliquer.'",
     ],
     correct: 2,
-    explanation: "'Pour être plus précis, je dirais que…' buys time while showing sophistication. 'Ce qui me semble particulièrement important, c'est…' uses a cleft structure (ce qui…, c'est…) that signals upper-register French. Both develop the response spontaneously — exactly what Criterion C assesses.",
+    explanation: "'Pour être plus précis, je dirais que…' buys time while showing sophistication. 'Ce qui me semble particulièrement important, c'est…' uses a cleft structure (ce qui…, c'est…) that signals upper-register French. Both develop the response spontaneously: exactly what Criterion C assesses.",
   },
   {
     question: "What vocabulary do you need to discuss the IB theme 'Sharing the Planet' during the Individual Oral discussion?",
@@ -87,7 +87,7 @@ const quiz = [
       "'Je suis complètement sûr(e) que…'",
     ],
     correct: 2,
-    explanation: "'La situation est complexe : d'un côté… de l'autre…' demonstrates critical thinking and Criterion B message depth. IB examiners reward nuance — showing you understand multiple perspectives is valued much more than expressing only one strong opinion.",
+    explanation: "'La situation est complexe : d'un côté… de l'autre…' demonstrates critical thinking and Criterion B message depth. IB examiners reward nuance: showing you understand multiple perspectives is valued much more than expressing only one strong opinion.",
   },
 ];
 
@@ -95,7 +95,7 @@ export default function Unit4Lesson3Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/ib-french-b-sl" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/ib-french-b-sl" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← IB French B SL
         </Link>
 
@@ -109,7 +109,7 @@ export default function Unit4Lesson3Page() {
             </h1>
             <p className="mt-4 text-lg leading-8 text-[#526173]">
               The opinion phrases, concession language, and discussion strategies you
-              need for the examiner conversation — the 6–9 minutes where Criterion C
+              need for the examiner conversation: the 6–9 minutes where Criterion C
               interactive skills are fully tested.
             </p>
           </div>
@@ -177,7 +177,7 @@ export default function Unit4Lesson3Page() {
                   <p>« J'essaierais de convaincre… »</p>
                 </div>
               </div>
-              <Link href="/resources/verbs-conditionnel" className="mt-3 inline-block text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+              <Link href="/resources/verbs-conditionnel" className="mt-3 inline-block text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
                 Review le conditionnel →
               </Link>
             </div>
@@ -202,7 +202,7 @@ export default function Unit4Lesson3Page() {
           </div>
         </section>
 
-        <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <section className="mt-16 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
           <h2 className="mt-3 text-3xl font-black">All four units complete.</h2>
           <p className="mt-3 leading-7 text-[#526173]">
             Take the Unit 4 test and you've finished the full IB French B SL course. Good luck on your exams.
@@ -211,7 +211,7 @@ export default function Unit4Lesson3Page() {
             <Link href="/learn/ib-french-b-sl/unit-4/lesson-2" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">
               ← Previous lesson
             </Link>
-            <Link href="/learn/ib-french-b-sl/unit-4/test" className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">
+            <Link href="/learn/ib-french-b-sl/unit-4/test" className="rounded-full bg-[#D62828] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">
               Unit 4 Test →
             </Link>
           </div>

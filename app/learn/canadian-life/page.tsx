@@ -17,7 +17,7 @@ const units = [
   {
     number: "02",
     title: "Government & Official Documents",
-    description: "Healthcare, taxes, government forms — reading and writing in official French Canadian contexts.",
+    description: "Healthcare, taxes, government forms: reading and writing in official French Canadian contexts.",
     color: "bg-[#EFF6FF] text-[#2563EB]",
     testHref: "/learn/canadian-life/unit-2/test",
     lessons: [
@@ -61,7 +61,7 @@ export default function CanadianLifePage() {
       <section className="mx-auto max-w-7xl px-6 py-20">
         <Link
           href="/learn"
-          className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]"
+          className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]"
         >
           ← Back to courses
         </Link>
@@ -77,7 +77,7 @@ export default function CanadianLifePage() {
             </h1>
 
             <p className="mt-5 text-lg leading-8 text-[#526173]">
-              The French that actually comes up in Canada. Quebec expressions, government forms, bilingual job postings, and education in French Canada — four practical units, no fluff.
+              The French that actually comes up in Canada. Quebec expressions, government forms, bilingual job postings, and education in French Canada. Four practical units, no fluff.
             </p>
 
             <div className="mt-8 grid grid-cols-3 gap-3 text-center">
@@ -95,10 +95,10 @@ export default function CanadianLifePage() {
               </div>
             </div>
 
-            <div className="mt-6 rounded-[1.5rem] bg-[#0B1F3A] p-5 text-white">
+            <div className="mt-6 rounded-2xl bg-[#0B1F3A] p-5 text-white">
               <p className="text-sm font-bold text-[#C9A44C]">Goal</p>
               <p className="mt-2 font-black leading-7">
-                Navigate real Canadian life confidently in French — at work, at university, and in Quebec.
+                Navigate real Canadian life confidently in French, at work, at university, and in Quebec.
               </p>
             </div>
           </div>
@@ -107,7 +107,7 @@ export default function CanadianLifePage() {
             {units.map((unit) => (
               <div
                 key={unit.number}
-                className="rounded-[2rem] border border-[#E7DAB9] bg-white p-6 shadow-sm"
+                className="rounded-2xl border border-[#E7DAB9] bg-white p-6 shadow-sm"
               >
                 <div className="flex items-center gap-3">
                   <span className={`rounded-full px-2.5 py-0.5 text-xs font-black ${unit.color}`}>

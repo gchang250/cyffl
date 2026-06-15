@@ -7,7 +7,7 @@ const family: VocabRow[] = [
   { fr: "la mère", ipa: "[mɛʁ]", en: "mother", note: "feminine" },
   { fr: "le frère", ipa: "[fʁɛʁ]", en: "brother", note: "masculine" },
   { fr: "la sœur", ipa: "[sœʁ]", en: "sister", note: "feminine" },
-  { fr: "le fils", ipa: "[fis]", en: "son", note: "masculine — the s is silent" },
+  { fr: "le fils", ipa: "[fis]", en: "son", note: "masculine: the s is silent" },
   { fr: "la fille", ipa: "[fij]", en: "daughter / girl", note: "feminine" },
   { fr: "le grand-père", ipa: "[ɡʁɑ̃.pɛʁ]", en: "grandfather", note: "masculine" },
   { fr: "la grand-mère", ipa: "[ɡʁɑ̃.mɛʁ]", en: "grandmother", note: "feminine" },
@@ -54,7 +54,7 @@ export default function FamilyPeoplePage() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-4xl px-6 py-16">
-        <Link href="/resources" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/resources" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← Resources
         </Link>
 

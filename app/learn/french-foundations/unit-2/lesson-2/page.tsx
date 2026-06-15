@@ -5,12 +5,12 @@ import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 import MatchPairs from "@/components/MatchPairs";
 
 const conjugationCards = [
-  { front: "je suis", back: "I am", subtext: "[ʒə sɥi] — The most used form. 'Je suis étudiant(e).' Also used in fixed expressions: 'Je suis désolé(e)' (I'm sorry)." },
-  { front: "tu es", back: "you are (informal)", subtext: "[ty ɛ] — Informal you. 'Tu es fatigué(e)?' Are you tired? Never use with strangers or adults you don't know." },
-  { front: "il est / elle est", back: "he is / she is", subtext: "[il ɛ / ɛl ɛ] — Also for things: 'Il est grand' (It/He is big). Every noun in French is masculine (il) or feminine (elle)." },
-  { front: "nous sommes", back: "we are", subtext: "[nu sɔm] — Note the double -m. 'Nous sommes en retard.' In casual speech, often replaced by 'on est' (we are)." },
-  { front: "vous êtes", back: "you are (formal/plural)", subtext: "[vu zɛt] — The ê has a circumflex. Two uses: one person (formal) or multiple people. 'Vous êtes professeur?' / 'Vous êtes tous là?'" },
-  { front: "ils sont / elles sont", back: "they are", subtext: "[il sɔ̃ / ɛl sɔ̃] — ils for all-male or mixed groups; elles for all-female groups. 'Ils sont grands.' / 'Elles sont là.'" },
+  { front: "je suis", back: "I am", subtext: "[ʒə sɥi]: The most used form. 'Je suis étudiant(e).' Also used in fixed expressions: 'Je suis désolé(e)' (I'm sorry)." },
+  { front: "tu es", back: "you are (informal)", subtext: "[ty ɛ]: Informal you. 'Tu es fatigué(e)?' Are you tired? Never use with strangers or adults you don't know." },
+  { front: "il est / elle est", back: "he is / she is", subtext: "[il ɛ / ɛl ɛ]: Also for things: 'Il est grand' (It/He is big). Every noun in French is masculine (il) or feminine (elle)." },
+  { front: "nous sommes", back: "we are", subtext: "[nu sɔm]: Note the double -m. 'Nous sommes en retard.' In casual speech, often replaced by 'on est' (we are)." },
+  { front: "vous êtes", back: "you are (formal/plural)", subtext: "[vu zɛt]: The ê has a circumflex. Two uses: one person (formal) or multiple people. 'Vous êtes professeur?' / 'Vous êtes tous là?'" },
+  { front: "ils sont / elles sont", back: "they are", subtext: "[il sɔ̃ / ɛl sɔ̃]: ils for all-male or mixed groups; elles for all-female groups. 'Ils sont grands.' / 'Elles sont là.'" },
 ];
 
 const exampleCards = [
@@ -79,10 +79,10 @@ const quiz = [
   {
     question: "Your classmate says 'Tu est fatigué?' Is this correct?",
     options: [
-      "Yes — perfectly correct",
-      "No — it should be 'Tu es fatigué?'",
-      "No — it should be 'Tu sont fatigué?'",
-      "No — it should be 'Tu suis fatigué?'",
+      "Yes: perfectly correct",
+      "No: it should be 'Tu es fatigué?'",
+      "No: it should be 'Tu sont fatigué?'",
+      "No: it should be 'Tu suis fatigué?'",
     ],
     correct: 1,
     explanation: "Tu → es (not est). 'Tu est' is one of the most common errors. 'Est' is for il/elle only. Correct: 'Tu es fatigué(e)?'",
@@ -102,7 +102,7 @@ const quiz = [
     question: "You're greeting your principal: 'Vous ___ très occupé.' Fill in the blank.",
     options: ["suis", "es", "est", "êtes"],
     correct: 3,
-    explanation: "Vous → êtes. 'Êtes' has a circumflex accent on the ê — don't forget it. This applies whether 'vous' is one person (formal) or multiple people.",
+    explanation: "Vous → êtes. 'Êtes' has a circumflex accent on the ê: don't forget it. This applies whether 'vous' is one person (formal) or multiple people.",
   },
   {
     question: "There are six students: three girls and three boys. Which form of être describes them?",
@@ -112,7 +112,7 @@ const quiz = [
   },
   {
     question: "Marie says 'Je suis fatiguée.' What does the double -e tell you?",
-    options: ["She is very tired", "She is a girl — the -e marks feminine agreement", "It's a typo — should be fatigué", "She is speaking formally"],
+    options: ["She is very tired", "She is a girl: the -e marks feminine agreement", "It's a typo: should be fatigué", "She is speaking formally"],
     correct: 1,
     explanation: "In French, adjectives agree with the person they describe. A girl adds -e: fatiguée. A boy says: fatigué. This is called adjectival agreement and it applies throughout French grammar.",
   },
@@ -120,7 +120,7 @@ const quiz = [
     question: "How do you say 'Are we in the right class?' using être?",
     options: ["Nous sommes dans la bonne classe?", "Nous est dans la bonne classe?", "Nous êtes dans la bonne classe?", "Sommes-vous dans la bonne classe?"],
     correct: 0,
-    explanation: "'Nous sommes dans la bonne classe?' — with rising intonation at the end, it becomes a question. 'Dans la bonne classe' = in the right class. Note: 'bonne' goes BEFORE the noun (BAGS adjective).",
+    explanation: "'Nous sommes dans la bonne classe?': with rising intonation at the end, it becomes a question. 'Dans la bonne classe' = in the right class. Note: 'bonne' goes BEFORE the noun (BAGS adjective).",
   },
   {
     question: "A girl says 'Je suis étudiant.' What should she say instead?",
@@ -136,7 +136,7 @@ export default function Unit2Lesson2Page() {
       <section className="mx-auto max-w-6xl px-6 py-16">
         <Link
           href="/learn/french-foundations"
-          className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]"
+          className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]"
         >
           ← French Foundations
         </Link>
@@ -223,7 +223,7 @@ export default function Unit2Lesson2Page() {
           </div>
         </section>
 
-        <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <section className="mt-16 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
           <h2 className="mt-3 text-3xl font-black">
             You can conjugate être, one of French's two key verbs.
           </h2>
@@ -240,7 +240,7 @@ export default function Unit2Lesson2Page() {
             </Link>
             <Link
               href="/learn/french-foundations/unit-2/lesson-3"
-              className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]"
+              className="rounded-full bg-[#D62828] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#B91C1C]"
             >
               Next lesson →
             </Link>

@@ -59,7 +59,7 @@ const writingExpressions: Expression[] = [
     example: "Dans une certaine mesure, les deux arguments se rejoignent.",
     exampleEn: "To a certain extent, the two arguments converge.",
     usage: "formal",
-    note: "Avoids absolute claims — valued in IB analysis and any nuanced argumentation.",
+    note: "Avoids absolute claims: valued in IB analysis and any nuanced argumentation.",
   },
   {
     expression: "Loin de",
@@ -83,7 +83,7 @@ const writingExpressions: Expression[] = [
     example: "Il va sans dire que la santé est une priorité absolue.",
     exampleEn: "It goes without saying that health is an absolute priority.",
     usage: "formal",
-    note: "Paradoxically useful — you say it precisely because it needs to be said for emphasis.",
+    note: "Paradoxically useful: you say it precisely because it needs to be said for emphasis.",
   },
   {
     expression: "Quoi qu'il en soit",
@@ -131,7 +131,7 @@ const writingExpressions: Expression[] = [
     example: "Sans aucun doute, l'éducation reste la meilleure solution.",
     exampleEn: "Without a doubt, education remains the best solution.",
     usage: "both",
-    note: "Assertive — use when you're confident in the claim you're making.",
+    note: "Assertive: use when you're confident in the claim you're making.",
   },
   {
     expression: "Dans la même veine",
@@ -147,7 +147,7 @@ const writingExpressions: Expression[] = [
     example: "La situation est grave. Pour autant, il ne faut pas céder à la panique.",
     exampleEn: "The situation is serious. Even so, we must not give in to panic.",
     usage: "formal",
-    note: "A nuanced concessive — acknowledges difficulty without abandoning the main argument.",
+    note: "A nuanced concessive: acknowledges difficulty without abandoning the main argument.",
   },
   {
     expression: "En d'autres termes",
@@ -207,8 +207,8 @@ const culturalExpressions: Expression[] = [
     expression: "Revenons à nos moutons",
     literal: "let us return to our sheep",
     meaning: "Let's get back on topic / back to the point",
-    example: "Mais revenons à nos moutons — la question centrale est la suivante...",
-    exampleEn: "But let's get back on topic — the central question is the following...",
+    example: "Mais revenons à nos moutons: la question centrale est la suivante...",
+    exampleEn: "But let's get back on topic: the central question is the following...",
     usage: "both",
     note: "From the 15th-century medieval farce 'La Farce de Maître Pathelin'. One of the oldest French idioms still in everyday use.",
   },
@@ -219,7 +219,7 @@ const culturalExpressions: Expression[] = [
     example: "Ce jeune auteur a le vent en poupe depuis son premier roman.",
     exampleEn: "This young author has been on a roll since his first novel.",
     usage: "both",
-    note: "Nautical origin — the stern (poupe) is the back of a ship. Wind from behind = favourable conditions.",
+    note: "Nautical origin: the stern (poupe) is the back of a ship. Wind from behind = favourable conditions.",
   },
   {
     expression: "Ne pas y aller par quatre chemins",
@@ -241,8 +241,8 @@ const culturalExpressions: Expression[] = [
     expression: "Avoir la tête dans les nuages",
     literal: "to have one's head in the clouds",
     meaning: "To be a daydreamer / to be distracted",
-    example: "Tu as la tête dans les nuages — concentre-toi!",
-    exampleEn: "You've got your head in the clouds — focus!",
+    example: "Tu as la tête dans les nuages: concentre-toi!",
+    exampleEn: "You've got your head in the clouds: focus!",
     usage: "informal",
   },
   {
@@ -300,24 +300,24 @@ const culturalExpressions: Expression[] = [
     expression: "Se noyer dans un verre d'eau",
     literal: "to drown in a glass of water",
     meaning: "To make a mountain out of a molehill",
-    example: "Tu te noies dans un verre d'eau — ce n'est pas si grave.",
-    exampleEn: "You're making a mountain out of a molehill — it's not that serious.",
+    example: "Tu te noies dans un verre d'eau: ce n'est pas si grave.",
+    exampleEn: "You're making a mountain out of a molehill: it's not that serious.",
     usage: "informal",
   },
   {
     expression: "Il pleut des cordes",
     literal: "it is raining ropes",
     meaning: "It's raining cats and dogs",
-    example: "Prends un parapluie — il pleut des cordes dehors.",
-    exampleEn: "Take an umbrella — it's raining cats and dogs outside.",
+    example: "Prends un parapluie: il pleut des cordes dehors.",
+    exampleEn: "Take an umbrella: it's raining cats and dogs outside.",
     usage: "informal",
   },
   {
     expression: "Avoir d'autres chats à fouetter",
     literal: "to have other cats to whip",
     meaning: "To have bigger fish to fry",
-    example: "Je n'ai pas le temps pour ça — j'ai d'autres chats à fouetter.",
-    exampleEn: "I don't have time for this — I have bigger fish to fry.",
+    example: "Je n'ai pas le temps pour ça: j'ai d'autres chats à fouetter.",
+    exampleEn: "I don't have time for this: I have bigger fish to fry.",
     usage: "informal",
   },
   {
@@ -332,8 +332,8 @@ const culturalExpressions: Expression[] = [
     expression: "Il ne faut pas vendre la peau de l'ours avant de l'avoir tué",
     literal: "don't sell the bear's skin before you've killed it",
     meaning: "Don't count your chickens before they hatch",
-    example: "On n'a pas encore gagné — ne vendons pas la peau de l'ours.",
-    exampleEn: "We haven't won yet — let's not count our chickens.",
+    example: "On n'a pas encore gagné: ne vendons pas la peau de l'ours.",
+    exampleEn: "We haven't won yet: let's not count our chickens.",
     usage: "both",
     note: "One of the most famous French proverbs, popularised by La Fontaine. Can be shortened in context.",
   },
@@ -348,7 +348,7 @@ const proverbs: Proverb[] = [
   {
     proverb: "Mieux vaut tard que jamais.",
     meaning: "Better late than never.",
-    note: "Useful as a concession — even if something is overdue, it still has value.",
+    note: "Useful as a concession: even if something is overdue, it still has value.",
   },
   {
     proverb: "L'habit ne fait pas le moine.",
@@ -420,7 +420,7 @@ export default function ExpressionsPage() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-4xl px-6 py-16">
-        <Link href="/resources" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/resources" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← Resources
         </Link>
 
@@ -432,7 +432,7 @@ export default function ExpressionsPage() {
             Idiomatic expressions
           </h1>
           <p className="mt-4 text-lg leading-8 text-[#526173]">
-            French expressions that are genuinely used — in conversation, in essays, and in culture. Each entry includes a real example sentence, a usage label, and a note on when and how to use it.
+            French expressions that are genuinely used: in conversation, in essays, and in culture. Each entry includes a real example sentence, a usage label, and a note on when and how to use it.
           </p>
         </div>
 
@@ -449,7 +449,7 @@ export default function ExpressionsPage() {
         <div className="mt-12">
           <h2 className="text-2xl font-black">Expressions for writing & formal French</h2>
           <p className="mt-2 text-[#526173]">
-            These elevate formal writing — IB essays, compositions, and formal text types. They signal precision, nuance, and a strong command of the language.
+            These elevate formal writing: IB essays, compositions, and formal text types. They signal precision, nuance, and a strong command of the language.
           </p>
 
           <div className="mt-6 space-y-4">
@@ -494,7 +494,7 @@ export default function ExpressionsPage() {
         <div className="mt-16">
           <h2 className="text-2xl font-black">Everyday French expressions</h2>
           <p className="mt-2 text-[#526173]">
-            Idioms that are genuinely part of French culture — heard in conversation, in films, and in informal writing. Many have rich historical or literary origins.
+            Idioms that are genuinely part of French culture: heard in conversation, in films, and in informal writing. Many have rich historical or literary origins.
           </p>
 
           <div className="mt-6 space-y-4">
@@ -573,14 +573,14 @@ export default function ExpressionsPage() {
           </div>
         </div>
 
-        <div className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-6 shadow-sm">
+        <div className="mt-16 rounded-2xl border border-[#E7DAB9] bg-white p-6 shadow-sm">
           <p className="font-black">Looking for connectors?</p>
           <p className="mt-2 text-sm leading-6 text-[#526173]">
             If you need words like en outre, par ailleurs, néanmoins, or de surcroît to link your ideas in essays, see the connecting words reference.
           </p>
           <Link
             href="/resources/connecting-words"
-            className="mt-4 inline-block rounded-full bg-[#2563EB] px-5 py-2.5 text-sm font-black text-white transition hover:bg-[#1D4ED8]"
+            className="mt-4 inline-block rounded-full bg-[#D62828] px-5 py-2.5 text-sm font-black text-white transition hover:bg-[#B91C1C]"
           >
             See connecting words →
           </Link>

@@ -4,21 +4,21 @@ import MatchPairs from "@/components/MatchPairs";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const flashcards = [
-  { front: "les relations sociales (f pl)", back: "social relationships", subtext: "How people interact with each other — friendships, family dynamics, professional relationships. An official sub-topic." },
+  { front: "les relations sociales (f pl)", back: "social relationships", subtext: "How people interact with each other: friendships, family dynamics, professional relationships. An official sub-topic." },
   { front: "la communauté", back: "community", subtext: "A group of people sharing a place, interest, or identity. Community is a core Social Organisation sub-topic." },
-  { front: "l'engagement social (m)", back: "social engagement / civic participation", subtext: "Getting involved in society — volunteering, activism, voting, community work." },
+  { front: "l'engagement social (m)", back: "social engagement / civic participation", subtext: "Getting involved in society: volunteering, activism, voting, community work." },
   { front: "l'éducation (f)", back: "education", subtext: "Schools, universities, access to learning. One of the most tested Social Organisation sub-topics." },
-  { front: "le monde du travail", back: "the working world", subtext: "Jobs, careers, workplace dynamics, unemployment — an officially listed sub-topic." },
+  { front: "le monde du travail", back: "the working world", subtext: "Jobs, careers, workplace dynamics, unemployment: an officially listed sub-topic." },
   { front: "la loi", back: "the law", subtext: "Rules and legal systems that govern society. Pairs with 'l'ordre' in the sub-topic 'Law and order'." },
-  { front: "l'ordre (m)", back: "order", subtext: "Social order — how rules keep a society functioning. Often discussed alongside justice and rights." },
+  { front: "l'ordre (m)", back: "order", subtext: "Social order: how rules keep a society functioning. Often discussed alongside justice and rights." },
   { front: "s'organiser", back: "to organise oneself / to come together", subtext: "How groups form and structure themselves. Reflects the IB guiding principle directly." },
   { front: "le rôle de l'individu", back: "the role of the individual", subtext: "How one person fits into and contributes to a larger community or system. Directly from the IB guiding questions." },
   { front: "les inégalités sociales (f pl)", back: "social inequalities", subtext: "Gaps in access to education, work, and opportunity. Often the focus of Social Organisation Paper 2 reading texts." },
   { front: "le bénévolat", back: "volunteering / voluntary work", subtext: "Unpaid work for the benefit of others or the community. 'Faire du bénévolat' = to volunteer. A key form of civic engagement and social participation." },
   { front: "la citoyenneté", back: "citizenship", subtext: "Both legal status and active participation in civic life. 'La citoyenneté active' = engaged citizenship. Tied to rights, duties, and community." },
-  { front: "les droits et les devoirs", back: "rights and responsibilities", subtext: "The two sides of civic membership — what society owes individuals and what individuals owe society. Central to any rule-of-law discussion." },
+  { front: "les droits et les devoirs", back: "rights and responsibilities", subtext: "The two sides of civic membership: what society owes individuals and what individuals owe society. Central to any rule-of-law discussion." },
   { front: "la solidarité", back: "solidarity", subtext: "Standing together to support those in need. 'La solidarité sociale' = social solidarity. Common in texts about community, welfare, and inequality." },
-  { front: "le système éducatif", back: "the education system", subtext: "How schools, colleges, and universities are organised in a society. Education is an official Social Organisation sub-topic — expect texts on access, quality, and reform." },
+  { front: "le système éducatif", back: "the education system", subtext: "How schools, colleges, and universities are organised in a society. Education is an official Social Organisation sub-topic: expect texts on access, quality, and reform." },
 ];
 
 const matchPairs = [
@@ -57,7 +57,7 @@ const quiz = [
       "What constitutes an identity?",
     ],
     correct: 1,
-    explanation: "'What is the individual's role in the community?' — mandatory service is directly about the relationship between individuals and their communities.",
+    explanation: "'What is the individual's role in the community?': mandatory service is directly about the relationship between individuals and their communities.",
   },
   {
     question: "A news article argues that stricter sentencing reduces crime rates. Which Social Organisation sub-topic is this?",
@@ -69,7 +69,7 @@ const quiz = [
     question: "What does 'l'engagement social' mean?",
     options: ["Social media engagement", "Social inequalities", "Civic participation / social engagement", "Social relationships"],
     correct: 2,
-    explanation: "L'engagement social = civic participation or social engagement — getting involved in community life, activism, volunteering, or civic processes.",
+    explanation: "L'engagement social = civic participation or social engagement: getting involved in community life, activism, volunteering, or civic processes.",
   },
   {
     question: "A school launches a mandatory volunteer programme requiring students to contribute 20 hours per year to the community. Which Social Organisation question does this directly address?",
@@ -80,24 +80,24 @@ const quiz = [
       "How does our past shape our present?",
     ],
     correct: 1,
-    explanation: "'What role do rules and regulations play in the formation of a society?' — a mandatory programme is a rule or regulation, and the debate centres on whether such rules build better citizens or override individual freedom.",
+    explanation: "'What role do rules and regulations play in the formation of a society?': a mandatory programme is a rule or regulation, and the debate centres on whether such rules build better citizens or override individual freedom.",
   },
   {
     question: "What does 'la solidarité sociale' mean and why is it a Social Organisation concept?",
     options: [
-      "Social media — how technology connects people",
-      "Social solidarity — the practice of supporting vulnerable members of society collectively",
-      "Social status — the rank of individuals in a hierarchy",
-      "Social science — the academic study of society",
+      "Social media: how technology connects people",
+      "Social solidarity: the practice of supporting vulnerable members of society collectively",
+      "Social status: the rank of individuals in a hierarchy",
+      "Social science: the academic study of society",
     ],
     correct: 1,
-    explanation: "La solidarité sociale = social solidarity — the idea that society functions by members supporting each other, especially in times of hardship. It underpins welfare systems, community work, and civic engagement.",
+    explanation: "La solidarité sociale = social solidarity: the idea that society functions by members supporting each other, especially in times of hardship. It underpins welfare systems, community work, and civic engagement.",
   },
   {
     question: "A text compares access to higher education in different countries. Which Social Organisation sub-topic is this?",
     options: ["Law and order", "The working world", "Education", "Social relationships"],
     correct: 2,
-    explanation: "Education — specifically access to and quality of schooling at all levels — is an official Social Organisation sub-topic. Comparisons of education systems across countries are very common in Paper 2 texts.",
+    explanation: "Education: specifically access to and quality of schooling at all levels: is an official Social Organisation sub-topic. Comparisons of education systems across countries are very common in Paper 2 texts.",
   },
 ];
 
@@ -105,7 +105,7 @@ export default function Unit1Lesson4Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/ib-french-b-sl" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/ib-french-b-sl" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← IB French B SL
         </Link>
 
@@ -118,7 +118,7 @@ export default function Unit1Lesson4Page() {
               Social Organisation
             </h1>
             <p className="mt-4 text-lg leading-8 text-[#526173]">
-              Theme 4. How groups of people organise themselves — through families, communities, education, work, and the law.
+              Theme 4. How groups of people organise themselves: through families, communities, education, work, and the law.
             </p>
           </div>
 
@@ -153,11 +153,11 @@ export default function Unit1Lesson4Page() {
           <h2 className="text-2xl font-black">Vocabulary</h2>
           <p className="mt-1 text-[#526173]">Click a card to flip it.</p>
           <div className="mt-6">
-            <FlashCardDeck cards={flashcards} title="Social Organisation — key vocabulary" />
+            <FlashCardDeck cards={flashcards} title="Social Organisation: key vocabulary" />
           </div>
         </section>
 
-        <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-6 shadow-sm">
+        <section className="mt-16 rounded-2xl border border-[#E7DAB9] bg-white p-6 shadow-sm">
           <h2 className="text-xl font-black">Key phrases for discussing Social Organisation</h2>
           <p className="mt-2 text-sm text-[#526173]">Use these in Paper 1 and the IO when writing or speaking about society, community, and civic life.</p>
           <div className="mt-4 grid gap-3 sm:grid-cols-2">
@@ -193,16 +193,16 @@ export default function Unit1Lesson4Page() {
           </div>
         </section>
 
-        <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <section className="mt-16 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
           <h2 className="mt-3 text-3xl font-black">Theme 4 covered.</h2>
           <p className="mt-3 leading-7 text-[#526173]">
-            One more: Sharing the Planet — environment, rights, conflict, and globalisation.
+            One more: Sharing the Planet: environment, rights, conflict, and globalisation.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link href="/learn/ib-french-b-sl/unit-1/lesson-3" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">
               ← Previous lesson
             </Link>
-            <Link href="/learn/ib-french-b-sl/unit-1/lesson-5" className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">
+            <Link href="/learn/ib-french-b-sl/unit-1/lesson-5" className="rounded-full bg-[#D62828] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">
               Next lesson →
             </Link>
           </div>

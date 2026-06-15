@@ -5,16 +5,16 @@ import FillInTheBlank from "@/components/FillInTheBlank";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const cards = [
-  { front: "hier", back: "yesterday", subtext: "Hier, j'ai vu un film. — Yesterday, I watched a film." },
-  { front: "hier soir", back: "yesterday evening / last night", subtext: "Hier soir, nous avons mangé au restaurant. — Last night we ate at a restaurant." },
-  { front: "ce matin", back: "this morning", subtext: "Ce matin, elle est arrivée en retard. — This morning she arrived late." },
-  { front: "la semaine dernière", back: "last week", subtext: "La semaine dernière, ils sont partis en vacances. — Last week they went on holiday." },
-  { front: "le mois dernier", back: "last month", subtext: "Le mois dernier, j'ai commencé un nouveau cours. — Last month I started a new course." },
-  { front: "l'année dernière", back: "last year", subtext: "L'année dernière, nous avons visité Paris. — Last year we visited Paris." },
-  { front: "il y a deux jours", back: "two days ago", subtext: "Il y a deux jours, il a perdu ses clés. — Two days ago he lost his keys." },
-  { front: "tout à l'heure", back: "a little while ago / just now", subtext: "Je l'ai vu tout à l'heure. — I saw him just now." },
-  { front: "déjà", back: "already", subtext: "Tu as déjà fini? — Have you already finished?" },
-  { front: "il y a longtemps", back: "a long time ago", subtext: "Ça s'est passé il y a longtemps. — That happened a long time ago." },
+  { front: "hier", back: "yesterday", subtext: "Hier, j'ai vu un film.: Yesterday, I watched a film." },
+  { front: "hier soir", back: "yesterday evening / last night", subtext: "Hier soir, nous avons mangé au restaurant.: Last night we ate at a restaurant." },
+  { front: "ce matin", back: "this morning", subtext: "Ce matin, elle est arrivée en retard.: This morning she arrived late." },
+  { front: "la semaine dernière", back: "last week", subtext: "La semaine dernière, ils sont partis en vacances.: Last week they went on holiday." },
+  { front: "le mois dernier", back: "last month", subtext: "Le mois dernier, j'ai commencé un nouveau cours.: Last month I started a new course." },
+  { front: "l'année dernière", back: "last year", subtext: "L'année dernière, nous avons visité Paris.: Last year we visited Paris." },
+  { front: "il y a deux jours", back: "two days ago", subtext: "Il y a deux jours, il a perdu ses clés.: Two days ago he lost his keys." },
+  { front: "tout à l'heure", back: "a little while ago / just now", subtext: "Je l'ai vu tout à l'heure.: I saw him just now." },
+  { front: "déjà", back: "already", subtext: "Tu as déjà fini?: Have you already finished?" },
+  { front: "il y a longtemps", back: "a long time ago", subtext: "Ça s'est passé il y a longtemps.: That happened a long time ago." },
 ];
 
 const pairs = [
@@ -31,7 +31,7 @@ const exercises = [
   { before: "Ils ne sont", after: "venus ici.", answer: "jamais", hint: "ne...jamais = never. ne wraps the auxiliary: ils ne sont jamais venus", translation: "They have never come here." },
   { before: "Je n'ai", after: "compris la question.", answer: "rien", hint: "ne...rien = nothing. ne wraps auxiliary, rien follows past participle", translation: "I didn't understand anything." },
   { before: "Nous n'avons", after: "travaillé depuis lundi.", answer: "plus", hint: "ne...plus = no longer/anymore. ne wraps auxiliary: nous n'avons plus travaillé", translation: "We haven't worked since Monday." },
-  { before: "La semaine dernière, elle", after: "à une conférence. (assister)", answer: "a assisté", hint: "avoir (elle a) + past participle of assister (assisté) — time phrase at the start", translation: "Last week she attended a conference." },
+  { before: "La semaine dernière, elle", after: "à une conférence. (assister)", answer: "a assisté", hint: "avoir (elle a) + past participle of assister (assisté): time phrase at the start", translation: "Last week she attended a conference." },
 ];
 
 const questions = [
@@ -109,7 +109,7 @@ export default function Unit3Lesson4Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/school-french-support" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/school-french-support" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← School French Support
         </Link>
 
@@ -176,7 +176,7 @@ export default function Unit3Lesson4Page() {
         </div>
 
         <div className="mt-12">
-          <MatchPairs pairs={pairs} title="Time expressions — French to English" />
+          <MatchPairs pairs={pairs} title="Time expressions: French to English" />
         </div>
 
         <div className="mt-12">
@@ -187,7 +187,7 @@ export default function Unit3Lesson4Page() {
           <MultipleChoiceQuiz questions={questions} title="Negation & time expressions quiz" />
         </div>
 
-        <div className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <div className="mt-16 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
 
           <p className="mt-2 text-[#526173]">You've covered passé composé with avoir and être, irregular past participles, and negation with time expressions. Test yourself before moving on to Unit 4.</p>
           <div className="mt-5 flex flex-wrap gap-3">

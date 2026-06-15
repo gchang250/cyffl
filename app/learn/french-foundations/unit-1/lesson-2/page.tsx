@@ -4,17 +4,17 @@ import FillInTheBlank from "@/components/FillInTheBlank";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const flashcards = [
-  { front: "Je m'appelle…", back: "My name is…", subtext: "[ʒə maˈpɛl] — The standard way to give your name. Literally: 'I call myself...' More natural than 'mon nom est'. 'Je m'appelle Marc.'" },
-  { front: "Moi, c'est…", back: "I'm… (casual)", subtext: "[mwa sɛ] — Casual spoken introduction. Used constantly in everyday French. 'Moi, c'est Léa!' sounds natural and friendly between peers." },
-  { front: "Comment tu t'appelles?", back: "What's your name? (informal)", subtext: "[kɔmɑ̃ ty taˈpɛl] — Informal, for friends and classmates. Can be reordered to 'Tu t'appelles comment?' — same meaning, even more casual." },
-  { front: "Comment vous appelez-vous?", back: "What's your name? (formal)", subtext: "[kɔmɑ̃ vu zaˈple vu] — Formal. Use with adults, teachers, and professionals you've just met. The vous inversion signals respect." },
-  { front: "J'ai [X] ans.", back: "I am [X] years old.", subtext: "[ʒɛ X ɑ̃] — Always avoir (to have), never être. 'J'ai seize ans' = I have 16 years. Saying 'Je suis seize ans' is a classic beginner error." },
-  { front: "Quel âge as-tu?", back: "How old are you? (informal)", subtext: "[kɛl aʒ a ty] — Literally: 'Which age do you have?' Uses avoir. Formal: 'Quel âge avez-vous?' Ultra-casual: 'T'as quel âge?'" },
-  { front: "Je suis de…", back: "I am from…", subtext: "[ʒə sɥi də] — Your origin: where you were born or grew up. 'Je suis de Montréal.' Different from 'j'habite à', which is where you live now." },
-  { front: "D'où viens-tu?", back: "Where are you from? (informal)", subtext: "[du vjɛ̃ ty] — Uses venir (to come from). Very common. Formal: 'D'où venez-vous?' Ultra-casual: 'Tu viens d'où?'" },
-  { front: "J'habite à…", back: "I live in…", subtext: "[ʒaˈbit a] — Current location: city. 'J'habite à Paris.' Don't confuse with 'je suis de' (origin). You can be from one place but live in another." },
-  { front: "Enchanté(e)!", back: "Nice to meet you!", subtext: "[ɑ̃ʃɑ̃ˈte] — Add -e if you're a woman: enchantée. From enchanter (to enchant). Formal variant: 'Ravi(e) de vous rencontrer.'" },
-  { front: "Ravi(e) de vous rencontrer", back: "Pleased to meet you (formal)", subtext: "[ʁavi də vu ʁɑ̃kɔ̃ˈtʁe] — More formal than enchanté. Add -e for feminine: ravie. Used in professional and formal first meetings." },
+  { front: "Je m'appelle…", back: "My name is…", subtext: "[ʒə maˈpɛl]: The standard way to give your name. Literally: 'I call myself...' More natural than 'mon nom est'. 'Je m'appelle Marc.'" },
+  { front: "Moi, c'est…", back: "I'm… (casual)", subtext: "[mwa sɛ]: Casual spoken introduction. Used constantly in everyday French. 'Moi, c'est Léa!' sounds natural and friendly between peers." },
+  { front: "Comment tu t'appelles?", back: "What's your name? (informal)", subtext: "[kɔmɑ̃ ty taˈpɛl]: Informal, for friends and classmates. Can be reordered to 'Tu t'appelles comment?': same meaning, even more casual." },
+  { front: "Comment vous appelez-vous?", back: "What's your name? (formal)", subtext: "[kɔmɑ̃ vu zaˈple vu]: Formal. Use with adults, teachers, and professionals you've just met. The vous inversion signals respect." },
+  { front: "J'ai [X] ans.", back: "I am [X] years old.", subtext: "[ʒɛ X ɑ̃]: Always avoir (to have), never être. 'J'ai seize ans' = I have 16 years. Saying 'Je suis seize ans' is a classic beginner error." },
+  { front: "Quel âge as-tu?", back: "How old are you? (informal)", subtext: "[kɛl aʒ a ty]: Literally: 'Which age do you have?' Uses avoir. Formal: 'Quel âge avez-vous?' Ultra-casual: 'T'as quel âge?'" },
+  { front: "Je suis de…", back: "I am from…", subtext: "[ʒə sɥi də]: Your origin: where you were born or grew up. 'Je suis de Montréal.' Different from 'j'habite à', which is where you live now." },
+  { front: "D'où viens-tu?", back: "Where are you from? (informal)", subtext: "[du vjɛ̃ ty]: Uses venir (to come from). Very common. Formal: 'D'où venez-vous?' Ultra-casual: 'Tu viens d'où?'" },
+  { front: "J'habite à…", back: "I live in…", subtext: "[ʒaˈbit a]: Current location: city. 'J'habite à Paris.' Don't confuse with 'je suis de' (origin). You can be from one place but live in another." },
+  { front: "Enchanté(e)!", back: "Nice to meet you!", subtext: "[ɑ̃ʃɑ̃ˈte]: Add -e if you're a woman: enchantée. From enchanter (to enchant). Formal variant: 'Ravi(e) de vous rencontrer.'" },
+  { front: "Ravi(e) de vous rencontrer", back: "Pleased to meet you (formal)", subtext: "[ʁavi də vu ʁɑ̃kɔ̃ˈtʁe]: More formal than enchanté. Add -e for feminine: ravie. Used in professional and formal first meetings." },
 ];
 
 const fillIn = [
@@ -60,13 +60,13 @@ const quiz = [
     question: "How do you say 'My name is Marc' in French?",
     options: ["Je suis Marc.", "Je m'appelle Marc.", "Mon nom Marc.", "J'appelle Marc."],
     correct: 1,
-    explanation: "'Je m'appelle' literally means 'I call myself' — it's the standard French self-introduction. 'Je suis Marc' would work in some contexts but is less natural for introductions. 'J'appelle' means 'I call (someone else)'.",
+    explanation: "'Je m'appelle' literally means 'I call myself': it's the standard French self-introduction. 'Je suis Marc' would work in some contexts but is less natural for introductions. 'J'appelle' means 'I call (someone else)'.",
   },
   {
     question: "You need to tell a new doctor your age. Which is correct?",
     options: ["Je suis 16 ans.", "Je m'appelle 16 ans.", "J'ai 16 ans.", "Je fais 16 ans."],
     correct: 2,
-    explanation: "French uses avoir (to have) for age — always. 'J'ai 16 ans' = 'I have 16 years.' Never 'je suis 16 ans' — that's a very common error for English speakers.",
+    explanation: "French uses avoir (to have) for age: always. 'J'ai 16 ans' = 'I have 16 years.' Never 'je suis 16 ans': that's a very common error for English speakers.",
   },
   {
     question: "You meet a teacher for the first time. They ask your name formally. What do they say?",
@@ -77,7 +77,7 @@ const quiz = [
       "C'est quoi ton nom?",
     ],
     correct: 1,
-    explanation: "'Comment vous appelez-vous?' is the formal version. It uses vous (the respectful 'you') and inverted word order. 'Comment tu t'appelles?' is informal — fine for a classmate, not for a teacher you just met.",
+    explanation: "'Comment vous appelez-vous?' is the formal version. It uses vous (the respectful 'you') and inverted word order. 'Comment tu t'appelles?' is informal: fine for a classmate, not for a teacher you just met.",
   },
   {
     question: "Sofia (a girl) just met someone new and wants to say 'Nice to meet you!' What does she say?",
@@ -94,13 +94,13 @@ const quiz = [
       "'J'habite à' is only for temporary stays.",
     ],
     correct: 1,
-    explanation: "'Je suis de Paris' = I'm from Paris (that's where I was born/grew up). 'J'habite à Paris' = I live in Paris (right now). You can be from Lyon but live in Paris — these are different facts.",
+    explanation: "'Je suis de Paris' = I'm from Paris (that's where I was born/grew up). 'J'habite à Paris' = I live in Paris (right now). You can be from Lyon but live in Paris: these are different facts.",
   },
   {
     question: "A boy introduces himself at a formal event. Should he say 'Enchanté' or 'Enchantée'?",
-    options: ["Enchantée — it's always polite to use the longer form", "Enchanté — because he is masculine", "Both forms are identical in meaning", "Neither — boys say 'Bonjour' only"],
+    options: ["Enchantée: it's always polite to use the longer form", "Enchanté: because he is masculine", "Both forms are identical in meaning", "Neither: boys say 'Bonjour' only"],
     correct: 1,
-    explanation: "The speaker's own gender determines the form. A boy (masculine) says 'enchanté'. A girl says 'enchantée'. It's not about the listener — it's an adjective describing how the speaker feels.",
+    explanation: "The speaker's own gender determines the form. A boy (masculine) says 'enchanté'. A girl says 'enchantée'. It's not about the listener: it's an adjective describing how the speaker feels.",
   },
   {
     question: "Your French penpal writes: 'D'où viens-tu?' What are they asking?",
@@ -127,7 +127,7 @@ export default function Lesson2Page() {
       <section className="mx-auto max-w-6xl px-6 py-16">
         <Link
           href="/learn/french-foundations"
-          className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]"
+          className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]"
         >
           ← French Foundations
         </Link>
@@ -199,7 +199,7 @@ export default function Lesson2Page() {
         </section>
 
         {/* Done */}
-        <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <section className="mt-16 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
           <h2 className="mt-3 text-3xl font-black">
             You can introduce yourself in French.
           </h2>
@@ -216,7 +216,7 @@ export default function Lesson2Page() {
             </Link>
             <Link
               href="/learn/french-foundations/unit-1/lesson-3"
-              className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]"
+              className="rounded-full bg-[#D62828] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#B91C1C]"
             >
               Next lesson →
             </Link>

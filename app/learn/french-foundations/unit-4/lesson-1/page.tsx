@@ -5,13 +5,13 @@ import FillInTheBlank from "@/components/FillInTheBlank";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const flashcards = [
-  { front: "rouge", back: "red", subtext: "Un pull rouge / une robe rouge — doesn't change with gender." },
-  { front: "bleu(e)", back: "blue", subtext: "Un livre bleu / une chemise bleue — adds -e for feminine." },
+  { front: "rouge", back: "red", subtext: "Un pull rouge / une robe rouge: doesn't change with gender." },
+  { front: "bleu(e)", back: "blue", subtext: "Un livre bleu / une chemise bleue: adds -e for feminine." },
   { front: "vert(e)", back: "green", subtext: "Un stylo vert / une feuille verte." },
   { front: "jaune", back: "yellow", subtext: "Doesn't change: un bus jaune / une fleur jaune." },
   { front: "blanc / blanche", back: "white", subtext: "Irregular feminine: blanc → blanche." },
   { front: "noir(e)", back: "black", subtext: "Un chat noir / une voiture noire." },
-  { front: "orange", back: "orange", subtext: "Invariable — never changes: une robe orange." },
+  { front: "orange", back: "orange", subtext: "Invariable: never changes: une robe orange." },
   { front: "violet(te)", back: "purple", subtext: "Un stylo violet / une chemise violette." },
   { front: "rose", back: "pink", subtext: "Doesn't change: un vélo rose / une maison rose." },
   { front: "gris(e)", back: "grey", subtext: "Un manteau gris / une veste grise." },
@@ -29,11 +29,11 @@ const pairs = [
 ];
 
 const exercises = [
-  { before: "Le ciel est", after: ".", answer: "bleu", hint: "sky (masculine) — blue", translation: "The sky is blue." },
-  { before: "La fleur est", after: ".", answer: "jaune", hint: "flower (feminine) — yellow (doesn't change)", translation: "The flower is yellow." },
-  { before: "La neige est", after: ".", answer: "blanche", hint: "snow (feminine) — white (blanc → blanche)", translation: "The snow is white." },
-  { before: "Sa veste est", after: ".", answer: "grise", hint: "jacket (feminine) — grey", translation: "His/her jacket is grey." },
-  { before: "Les yeux de Marie sont", after: ".", answer: "verts", hint: "eyes (masculine plural) — green adds -s for plural", translation: "Marie's eyes are green." },
+  { before: "Le ciel est", after: ".", answer: "bleu", hint: "sky (masculine): blue", translation: "The sky is blue." },
+  { before: "La fleur est", after: ".", answer: "jaune", hint: "flower (feminine): yellow (doesn't change)", translation: "The flower is yellow." },
+  { before: "La neige est", after: ".", answer: "blanche", hint: "snow (feminine): white (blanc → blanche)", translation: "The snow is white." },
+  { before: "Sa veste est", after: ".", answer: "grise", hint: "jacket (feminine): grey", translation: "His/her jacket is grey." },
+  { before: "Les yeux de Marie sont", after: ".", answer: "verts", hint: "eyes (masculine plural): green adds -s for plural", translation: "Marie's eyes are green." },
 ];
 
 const questions = [
@@ -41,7 +41,7 @@ const questions = [
     question: "Which color adjective is invariable (never changes form)?",
     options: ["vert", "blanc", "orange", "gris"],
     correct: 2,
-    explanation: "Orange and marron are invariable — they never add -e or -s endings.",
+    explanation: "Orange and marron are invariable: they never add -e or -s endings.",
   },
   {
     question: "What is the feminine form of 'blanc'?",
@@ -77,7 +77,7 @@ const questions = [
     question: "Which statement about 'marron' is correct?",
     options: ["Marron adds -e for feminine nouns.", "Marron is only used for people's hair.", "Marron never changes form.", "Marron means red in French."],
     correct: 2,
-    explanation: "Marron is an invariable adjective — it never changes. Un sac marron, une table marron, des chaussures marron. Same form for all genders and numbers.",
+    explanation: "Marron is an invariable adjective: it never changes. Un sac marron, une table marron, des chaussures marron. Same form for all genders and numbers.",
   },
   {
     question: "You see 'les yeux bleus.' What does this describe?",
@@ -91,7 +91,7 @@ export default function Unit4Lesson1Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/french-foundations" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/french-foundations" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← French Foundations
         </Link>
 
@@ -111,7 +111,7 @@ export default function Unit4Lesson1Page() {
           </div>
         </div>
 
-        <div className="mt-12 rounded-[2rem] border border-[#E7DAB9] bg-white p-6 shadow-sm">
+        <div className="mt-12 rounded-2xl border border-[#E7DAB9] bg-white p-6 shadow-sm">
           <p className="text-sm font-black uppercase tracking-widest text-[#C9A44C]">Color agreement — full table</p>
           <div className="mt-4 overflow-x-auto">
             <table className="w-full text-sm">
@@ -167,7 +167,7 @@ export default function Unit4Lesson1Page() {
 
         <div className="mt-16 flex items-center justify-between gap-4">
           <Link href="/learn/french-foundations/unit-3/lesson-4" className="rounded-full border border-[#E7DAB9] bg-white px-5 py-2.5 text-sm font-black text-[#526173] transition hover:-translate-y-0.5">← Previous</Link>
-          <Link href="/learn/french-foundations/unit-4/lesson-2" className="rounded-full bg-[#2563EB] px-5 py-2.5 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Next lesson →</Link>
+          <Link href="/learn/french-foundations/unit-4/lesson-2" className="rounded-full bg-[#D62828] px-5 py-2.5 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">Next lesson →</Link>
         </div>
       </section>
     </main>

@@ -14,9 +14,9 @@ const flashcards = [
   { front: "le subjonctif", back: "subjunctive (doubt / wish / necessity)", subtext: "Triggered by 'il faut que', 'bien que', 'pour que'. Signals uncertainty or necessity." },
   { front: "la voix passive", back: "passive voice", subtext: "'La décision a été prise par le gouvernement.' = The decision was made by the government. Common in formal texts." },
   { front: "le discours indirect", back: "reported / indirect speech", subtext: "'Il a dit qu'il viendrait.' = He said he would come. Tense shifts back one step in indirect speech." },
-  { front: "le plus-que-parfait", back: "pluperfect (had done)", subtext: "'Ils avaient déjà parti.' — An action completed before another past action. Signals cause-and-effect in complex texts." },
+  { front: "le plus-que-parfait", back: "pluperfect (had done)", subtext: "'Ils avaient déjà parti.': An action completed before another past action. Signals cause-and-effect in complex texts." },
   { front: "lequel / laquelle / lesquels", back: "which (relative pronoun for prepositions)", subtext: "Used after prepositions: 'le projet auquel il travaille' = the project on which he is working. Signals a complex sentence structure." },
-  { front: "la nominalisation", back: "nominalisation", subtext: "Turning a verb into a noun: 'produire' → 'la production'. Very common in formal texts — 'la mise en place' instead of 'mettre en place'." },
+  { front: "la nominalisation", back: "nominalisation", subtext: "Turning a verb into a noun: 'produire' → 'la production'. Very common in formal texts: 'la mise en place' instead of 'mettre en place'." },
   { front: "le gérondif", back: "gerund / present participle (en + -ant)", subtext: "'En travaillant, il a appris.' = By working, he learned. Signals simultaneous action or cause. Common in formal and journalistic French." },
   { front: "la proposition subordonnée", back: "subordinate clause", subtext: "A dependent clause introduced by que, qui, dont, si, parce que, etc. Long sentences in Paper 2 texts are usually a main clause + one or more subordinate clauses." },
 ];
@@ -35,7 +35,7 @@ const quiz = [
     question: "Choose the correct relative pronoun: 'C'est le programme _____ a été lancé l'année dernière.'",
     options: ["que", "dont", "qui", "où"],
     correct: 2,
-    explanation: "Qui replaces the subject — 'the programme that was launched'. The programme is the subject of 'a été lancé'.",
+    explanation: "Qui replaces the subject: 'the programme that was launched'. The programme is the subject of 'a été lancé'.",
   },
   {
     question: "Choose the correct relative pronoun: 'Voici le rapport _____ nous avons besoin.'",
@@ -47,13 +47,13 @@ const quiz = [
     question: "A text says 'En 2018, les émissions de carbone avaient augmenté de 3%.' The tense used is:",
     options: ["Passé composé", "Imparfait", "Plus-que-parfait", "Conditionnel"],
     correct: 2,
-    explanation: "Avaient augmenté is the plus-que-parfait (had increased) — used for an action completed before another past action.",
+    explanation: "Avaient augmenté is the plus-que-parfait (had increased): used for an action completed before another past action.",
   },
   {
     question: "You read: 'Il a dit qu'il viendrait demain.' This is an example of:",
     options: ["Passive voice", "Indirect speech", "The conditional", "The subjunctive"],
     correct: 1,
-    explanation: "Le discours indirect (reported speech) — 'viendrait' is the conditional in indirect speech, shifted from 'je viendrai'.",
+    explanation: "Le discours indirect (reported speech): 'viendrait' is the conditional in indirect speech, shifted from 'je viendrai'.",
   },
   {
     question: "Which sentence uses the imparfait correctly?",
@@ -64,13 +64,13 @@ const quiz = [
   {
     question: "You read: 'Le rapport avait été rédigé avant la réunion.' What tense is 'avait été rédigé' and what does it tell you?",
     options: [
-      "Passé composé — the report was written at the meeting",
-      "Plus-que-parfait — the report was written before another past event (the meeting)",
-      "Conditionnel — the report would have been written",
-      "Subjonctif passé — the report might have been written",
+      "Passé composé: the report was written at the meeting",
+      "Plus-que-parfait: the report was written before another past event (the meeting)",
+      "Conditionnel: the report would have been written",
+      "Subjonctif passé: the report might have been written",
     ],
     correct: 1,
-    explanation: "Avait été rédigé is the plus-que-parfait (pluperfect) passive — the report had been drafted (before the meeting). The plus-que-parfait signals an action completed before another past action.",
+    explanation: "Avait été rédigé is the plus-que-parfait (pluperfect) passive: the report had been drafted (before the meeting). The plus-que-parfait signals an action completed before another past action.",
   },
   {
     question: "A sentence reads: 'Le problème auquel nous faisons face est grave.' What does 'auquel' tell you?",
@@ -81,13 +81,13 @@ const quiz = [
       "'Auquel' introduces a time clause",
     ],
     correct: 1,
-    explanation: "Auquel = à + lequel. 'Faire face à' requires 'à', so the relative pronoun is 'auquel' (masculine singular). This is a more complex structure than qui/que/dont — but very common in formal texts.",
+    explanation: "Auquel = à + lequel. 'Faire face à' requires 'à', so the relative pronoun is 'auquel' (masculine singular). This is a more complex structure than qui/que/dont: but very common in formal texts.",
   },
   {
     question: "A text uses 'En améliorant les conditions de travail, les entreprises augmentent la productivité.' What structure is this?",
     options: [
       "Infinitive clause",
-      "Gérondif (en + -ant) — expressing how or by what means",
+      "Gérondif (en + -ant): expressing how or by what means",
       "Passive voice",
       "Indirect speech",
     ],
@@ -100,7 +100,7 @@ export default function Unit2Lesson2Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/ib-french-b-sl" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/ib-french-b-sl" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← IB French B SL
         </Link>
 
@@ -125,7 +125,7 @@ export default function Unit2Lesson2Page() {
                 When you hit a long sentence, look for the{" "}
                 <span className="font-black text-white">relative pronoun</span> first
                 (qui, que, dont, où). It tells you exactly which noun the clause is
-                describing — and that unlocks the whole sentence.
+                describing: and that unlocks the whole sentence.
               </p>
             </div>
             <div className="rounded-2xl border border-[#E7DAB9] bg-white p-5">
@@ -148,7 +148,7 @@ export default function Unit2Lesson2Page() {
           </div>
         </section>
 
-        <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-6 shadow-sm">
+        <section className="mt-16 rounded-2xl border border-[#E7DAB9] bg-white p-6 shadow-sm">
           <h2 className="text-xl font-black">Unlocking long sentences: a strategy</h2>
           <p className="mt-2 text-sm text-[#526173]">Paper 2 texts use complex sentences. Break them down in this order:</p>
           <ol className="mt-4 space-y-3 text-sm">
@@ -187,16 +187,16 @@ export default function Unit2Lesson2Page() {
           </div>
         </section>
 
-        <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <section className="mt-16 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
           <h2 className="mt-3 text-3xl font-black">Grammar for reading locked in.</h2>
           <p className="mt-3 leading-7 text-[#526173]">
-            Next: listening comprehension — how to approach audio texts and what to listen for.
+            Next: listening comprehension: how to approach audio texts and what to listen for.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link href="/learn/ib-french-b-sl/unit-2/lesson-1" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">
               ← Previous lesson
             </Link>
-            <Link href="/learn/ib-french-b-sl/unit-2/lesson-3" className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">
+            <Link href="/learn/ib-french-b-sl/unit-2/lesson-3" className="rounded-full bg-[#D62828] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">
               Next lesson →
             </Link>
           </div>

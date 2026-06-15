@@ -12,7 +12,7 @@ const strategyCards = [
   { front: "Read the questions first", back: "If there are comprehension questions, read them before the text. They tell you what to look for.", subtext: "You will read the text more efficiently if you already know what information you need." },
   { front: "Identify the text type", back: "Is it a story (narrative)? A description? An argument or opinion piece? Each type has its own language.", subtext: "Narratives have time markers (d'abord, ensuite). Arguments have opinion phrases (selon moi, il est clair que)." },
   { front: "Word family strategy", back: "Use root words to decode unknowns: if you know 'travailler' (to work), you can guess 'travailleur' (worker) and 'travail' (work).", subtext: "French words in the same family often share their first 4-5 letters." },
-  { front: "Don't translate word-for-word", back: "Focus on getting the overall meaning, not translating every word. Aim for understanding, not perfection.", subtext: "Reading for gist is a skill — accept that some words will remain unclear and keep moving." },
+  { front: "Don't translate word-for-word", back: "Focus on getting the overall meaning, not translating every word. Aim for understanding, not perfection.", subtext: "Reading for gist is a skill: accept that some words will remain unclear and keep moving." },
 ];
 
 const pairs = [
@@ -27,11 +27,11 @@ const pairs = [
 ];
 
 const exercises = [
-  { before: "Le titre d'un texte vous donne des", after: "sur le sujet principal. (context clues — fill in the French word for 'clues')", answer: "indices", hint: "The French word for 'clues' or 'hints' is 'indices'.", translation: "The title of a text gives you clues about the main topic." },
+  { before: "Le titre d'un texte vous donne des", after: "sur le sujet principal. (context clues: fill in the French word for 'clues')", answer: "indices", hint: "The French word for 'clues' or 'hints' is 'indices'.", translation: "The title of a text gives you clues about the main topic." },
   { before: "Les mots qui ressemblent à des mots anglais s'appellent des", after: ". (cognates)", answer: "congénères", hint: "The term for words similar across languages is 'congénères' or 'mots apparentés'.", translation: "Words that resemble English words are called cognates." },
   { before: "Un mot répété plusieurs fois est probablement une", after: "importante du texte. (key idea)", answer: "idée", hint: "The French word for 'idea' is 'idée'.", translation: "A word repeated several times is probably an important idea in the text." },
   { before: "Avant de lire le texte, lisez d'abord les", after: "de compréhension. (questions)", answer: "questions", hint: "Questions is the same in French!", translation: "Before reading the text, first read the comprehension questions." },
-  { before: "Une librairie est un magasin qui vend des livres, pas une", after: ". (library — French word)", answer: "bibliothèque", hint: "The French word for library is 'bibliothèque'.", translation: "A librairie is a bookshop that sells books, not a library." },
+  { before: "Une librairie est un magasin qui vend des livres, pas une", after: ". (library: French word)", answer: "bibliothèque", hint: "The French word for library is 'bibliothèque'.", translation: "A librairie is a bookshop that sells books, not a library." },
 ];
 
 const questions = [
@@ -63,7 +63,7 @@ const questions = [
     question: "What does 'sensible' mean in French?",
     options: ["sensible (having common sense)", "sensitive", "sensational", "significant"],
     correct: 1,
-    explanation: "Sensible in French means 'sensitive' — it's a false friend (faux ami). The English meaning 'having good sense' is expressed as 'raisonnable' or 'sensé' in French.",
+    explanation: "Sensible in French means 'sensitive': it's a false friend (faux ami). The English meaning 'having good sense' is expressed as 'raisonnable' or 'sensé' in French.",
   },
   {
     question: "Why is it useful to identify the text type before reading?",
@@ -77,10 +77,10 @@ const questions = [
     explanation: "Each text type (narrative, argument, description, email) has characteristic language. A narrative uses past tenses and time markers; an argument uses opinion phrases and connectors. Knowing the type helps you predict vocabulary.",
   },
   {
-    question: "What does 'rester' mean — and how is it a false friend?",
+    question: "What does 'rester' mean: and how is it a false friend?",
     options: [
-      "To rest — same as English.",
-      "To stay — not to rest (reposer = to rest).",
+      "To rest: same as English.",
+      "To stay: not to rest (reposer = to rest).",
       "To remain behind something.",
       "To restart an action.",
     ],
@@ -104,7 +104,7 @@ export default function Unit6Lesson1Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/school-french-support" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/school-french-support" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← School French Support
         </Link>
 
@@ -138,7 +138,7 @@ export default function Unit6Lesson1Page() {
         <div className="mt-12 rounded-2xl bg-[#0B1F3A] p-6 text-white">
           <p className="font-black text-lg">Vocabulary building tip</p>
           <p className="mt-3 leading-7 text-[#CBD5E1]">
-            When you see an unknown word, attack it with three tools in order: <strong className="text-white">(1) Context</strong> — what do the surrounding words suggest? <strong className="text-white">(2) Word family</strong> — do you recognise the root? (e.g. <em>travail</em> → <em>travailler</em> → <em>travailleur</em>). <strong className="text-white">(3) Cognates</strong> — does it look like an English or Spanish word? Using all three together, you can often decode a word without a dictionary.
+            When you see an unknown word, attack it with three tools in order: <strong className="text-white">(1) Context</strong> — what do the surrounding words suggest? <strong className="text-white">(2) Word family</strong> — do you recognise the root? (e.g. <em>travail</em> → <em>travailler</em> → <em>travailleur</em>). <strong className="text-white">(3) Cognates</strong>: does it look like an English or Spanish word? Using all three together, you can often decode a word without a dictionary.
           </p>
         </div>
 

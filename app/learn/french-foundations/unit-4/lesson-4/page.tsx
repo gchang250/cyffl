@@ -26,7 +26,7 @@ const pairs = [
 
 const exercises = [
   { before: "", after: "habites-tu? (where)", answer: "Où", hint: "where", translation: "Where do you live?" },
-  { before: "", after: "est-ce que tu t'appelles? (what)", answer: "Comment", hint: "How/What — Comment t'appelles-tu? is a set phrase", translation: "What is your name?" },
+  { before: "", after: "est-ce que tu t'appelles? (what)", answer: "Comment", hint: "How/What: Comment t'appelles-tu? is a set phrase", translation: "What is your name?" },
   { before: "", after: "de soeurs as-tu? (how many)", answer: "Combien", hint: "how many/much", translation: "How many sisters do you have?" },
   { before: "", after: "est-ce que tu étudies le français? (why)", answer: "Pourquoi", hint: "why", translation: "Why do you study French?" },
   { before: "", after: "parle-t-il français? (who)", answer: "Qui", hint: "who (as subject)", translation: "Who speaks French?" },
@@ -61,7 +61,7 @@ const questions = [
     question: "What is the difference between 'où' (with accent) and 'ou' (no accent)?",
     options: ["They mean the same thing.", "'Où' = where; 'ou' = or", "'Où' = or; 'ou' = where", "One is formal, one is informal."],
     correct: 1,
-    explanation: "'Où' (with grave accent) = where. 'Ou' (no accent) = or. Accents change meaning in French — this is an important spelling distinction.",
+    explanation: "'Où' (with grave accent) = where. 'Ou' (no accent) = or. Accents change meaning in French: this is an important spelling distinction.",
   },
   {
     question: "How do you ask 'Why are you studying French?' using 'pourquoi' and 'est-ce que'?",
@@ -76,7 +76,7 @@ const questions = [
   },
   {
     question: "What does 'Quel(le)' agree with?",
-    options: ["The subject of the sentence", "The noun it modifies", "The verb tense", "Nothing — it never changes"],
+    options: ["The subject of the sentence", "The noun it modifies", "The verb tense", "Nothing: it never changes"],
     correct: 1,
     explanation: "Quel agrees with the noun it describes: quel (m.), quelle (f.), quels (m.pl.), quelles (f.pl.). Quelle heure? (heure is feminine). Quel film? (film is masculine).",
   },
@@ -84,12 +84,12 @@ const questions = [
     question: "A student asks 'Comment est-ce que s'appelles-tu?' What's wrong?",
     options: [
       "Comment should be Quel.",
-      "You cannot combine est-ce que with inversion — choose one method.",
+      "You cannot combine est-ce que with inversion: choose one method.",
       "S'appelles has the wrong ending.",
       "Nothing is wrong.",
     ],
     correct: 1,
-    explanation: "Don't combine est-ce que and inversion — they are two separate methods. Either: 'Comment est-ce que tu t'appelles?' OR 'Comment t'appelles-tu?' — not both together.",
+    explanation: "Don't combine est-ce que and inversion: they are two separate methods. Either: 'Comment est-ce que tu t'appelles?' OR 'Comment t'appelles-tu?': not both together.",
   },
 ];
 
@@ -97,7 +97,7 @@ export default function Unit4Lesson4Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/french-foundations" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/french-foundations" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← French Foundations
         </Link>
 
@@ -126,15 +126,15 @@ export default function Unit4Lesson4Page() {
           </div>
         </div>
 
-        <div className="mt-12 rounded-[2rem] border-2 border-[#FEF3C7] bg-white p-6">
+        <div className="mt-12 rounded-2xl border-2 border-[#FEF3C7] bg-white p-6">
           <p className="text-xs font-bold uppercase tracking-widest text-[#D97706]">Common mistakes — asking questions</p>
           <div className="mt-4 space-y-3 text-sm">
             {[
-              { wrong: "Comment est-ce que t'appelles-tu?", right: "Comment t'appelles-tu? OR Comment est-ce que tu t'appelles? — Never combine inversion and est-ce que." },
-              { wrong: "Où est-ce que tu vas? — said as 'Où tu vas?'", right: "Both are acceptable, but 'Où tu vas?' is informal (intonation only). For exams, use est-ce que or inversion." },
-              { wrong: "Combien livres as-tu?", right: "Combien de livres as-tu? — Combien requires de before a noun." },
-              { wrong: "Ou habites-tu? (no accent)", right: "Où habites-tu? (accent) — ou without accent means 'or'. Always add the accent for 'where'." },
-              { wrong: "Pourquoi tu parles? (mixing styles)", right: "Pourquoi est-ce que tu parles? OR Pourquoi parles-tu? — Don't mix the three question methods within one question." },
+              { wrong: "Comment est-ce que t'appelles-tu?", right: "Comment t'appelles-tu? OR Comment est-ce que tu t'appelles?: Never combine inversion and est-ce que." },
+              { wrong: "Où est-ce que tu vas?: said as 'Où tu vas?'", right: "Both are acceptable, but 'Où tu vas?' is informal (intonation only). For exams, use est-ce que or inversion." },
+              { wrong: "Combien livres as-tu?", right: "Combien de livres as-tu?: Combien requires de before a noun." },
+              { wrong: "Ou habites-tu? (no accent)", right: "Où habites-tu? (accent): ou without accent means 'or'. Always add the accent for 'where'." },
+              { wrong: "Pourquoi tu parles? (mixing styles)", right: "Pourquoi est-ce que tu parles? OR Pourquoi parles-tu?: Don't mix the three question methods within one question." },
             ].map((m) => (
               <div key={m.wrong} className="grid gap-1 rounded-xl border border-[#FDE68A] bg-[#FEFCE8] p-3">
                 <p className="text-[#B45309]">✗ {m.wrong}</p>
@@ -160,7 +160,7 @@ export default function Unit4Lesson4Page() {
           <MultipleChoiceQuiz questions={questions} title="Asking questions quiz" />
         </div>
 
-        <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <section className="mt-16 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
 
           <h2 className="mt-3 text-3xl font-black">You can describe the world in French.</h2>
           <p className="mt-3 leading-7 text-[#526173]">
@@ -168,7 +168,7 @@ export default function Unit4Lesson4Page() {
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link href="/learn/french-foundations/unit-4/lesson-3" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">← Previous</Link>
-            <Link href="/learn/french-foundations/unit-4/test" className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Take the unit test →</Link>
+            <Link href="/learn/french-foundations/unit-4/test" className="rounded-full bg-[#D62828] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">Take the unit test →</Link>
           </div>
         </section>
       </section>

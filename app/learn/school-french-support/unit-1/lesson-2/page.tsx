@@ -5,8 +5,8 @@ import FillInTheBlank from "@/components/FillInTheBlank";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const adjectiveCards = [
-  { front: "grand / grande", back: "big, tall", subtext: "un grand garçon / une grande fille — add -e for feminine." },
-  { front: "petit / petite", back: "small, short", subtext: "un petit chat / une petite souris — add -e for feminine." },
+  { front: "grand / grande", back: "big, tall", subtext: "un grand garçon / une grande fille: add -e for feminine." },
+  { front: "petit / petite", back: "small, short", subtext: "un petit chat / une petite souris: add -e for feminine." },
   { front: "beau / belle", back: "beautiful, handsome", subtext: "Irregular: beau (m) → belle (f). Beaux (m.pl) / belles (f.pl)." },
   { front: "nouveau / nouvelle", back: "new", subtext: "Irregular: nouveau (m) → nouvelle (f). Goes BEFORE the noun." },
   { front: "vieux / vieille", back: "old", subtext: "Irregular: vieux (m) → vieille (f). Goes BEFORE the noun." },
@@ -73,11 +73,11 @@ const questions = [
     question: "Which adjective has the same form in both masculine and feminine singular?",
     options: ["grand", "beau", "français", "sympa"],
     correct: 3,
-    explanation: "Sympa is invariable — it doesn't change for gender or number: un prof sympa, une élève sympa. Grand, beau, and français all have distinct feminine forms.",
+    explanation: "Sympa is invariable: it doesn't change for gender or number: un prof sympa, une élève sympa. Grand, beau, and français all have distinct feminine forms.",
   },
   {
     question: "A student writes 'un vieux voiture.' What is wrong?",
-    options: ["Vieux should come after the noun.", "Voiture is feminine — it should be 'une vieille voiture.'", "Vieux is not a real adjective.", "Une should be used, not un."],
+    options: ["Vieux should come after the noun.", "Voiture is feminine: it should be 'une vieille voiture.'", "Vieux is not a real adjective.", "Une should be used, not un."],
     correct: 1,
     explanation: "Voiture is feminine → use une, and the feminine form of vieux is vieille: une vieille voiture. Using vieux with a feminine noun is a very common error.",
   },
@@ -87,7 +87,7 @@ export default function Unit1Lesson2Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/school-french-support" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/school-french-support" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← School French Support
         </Link>
 
@@ -120,15 +120,15 @@ export default function Unit1Lesson2Page() {
           </div>
         </div>
 
-        <div className="mt-12 rounded-[2rem] border-2 border-[#FEF3C7] bg-white p-6">
+        <div className="mt-12 rounded-2xl border-2 border-[#FEF3C7] bg-white p-6">
           <p className="text-xs font-bold uppercase tracking-widest text-[#D97706]">Common mistakes — adjective agreement</p>
           <div className="mt-4 space-y-3 text-sm">
             {[
-              { wrong: "un vieux voiture", right: "une vieille voiture — voiture is feminine; vieux → vieille." },
-              { wrong: "une beau fille", right: "une belle fille — beau → belle before feminine nouns." },
-              { wrong: "les filles heureux", right: "les filles heureuses — feminine plural: heureux → heureuses." },
-              { wrong: "un nouveau problème intéressants", right: "un nouveau problème intéressant — adjectives must agree with the noun in both gender AND number." },
-              { wrong: "une livre intéressant", right: "un livre intéressant — livre is masculine, so use un and intéressant." },
+              { wrong: "un vieux voiture", right: "une vieille voiture: voiture is feminine; vieux → vieille." },
+              { wrong: "une beau fille", right: "une belle fille: beau → belle before feminine nouns." },
+              { wrong: "les filles heureux", right: "les filles heureuses: feminine plural: heureux → heureuses." },
+              { wrong: "un nouveau problème intéressants", right: "un nouveau problème intéressant: adjectives must agree with the noun in both gender AND number." },
+              { wrong: "une livre intéressant", right: "un livre intéressant: livre is masculine, so use un and intéressant." },
             ].map((m) => (
               <div key={m.wrong} className="grid gap-1 rounded-xl border border-[#FDE68A] bg-[#FEFCE8] p-3">
                 <p className="text-[#B45309]">✗ {m.wrong}</p>
@@ -156,7 +156,7 @@ export default function Unit1Lesson2Page() {
 
         <div className="mt-16 flex items-center justify-between gap-4">
           <Link href="/learn/school-french-support/unit-1/lesson-1" className="rounded-full border border-[#E7DAB9] bg-white px-5 py-2.5 text-sm font-black text-[#526173] transition hover:-translate-y-0.5">← Previous</Link>
-          <Link href="/learn/school-french-support/unit-1/lesson-3" className="rounded-full bg-[#2563EB] px-5 py-2.5 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Next lesson →</Link>
+          <Link href="/learn/school-french-support/unit-1/lesson-3" className="rounded-full bg-[#D62828] px-5 py-2.5 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">Next lesson →</Link>
         </div>
       </section>
     </main>

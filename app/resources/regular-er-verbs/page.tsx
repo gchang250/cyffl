@@ -87,7 +87,7 @@ export default function RegularErVerbsPage() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-4xl px-6 py-16">
-        <Link href="/resources" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/resources" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← Resources
         </Link>
 
@@ -180,14 +180,14 @@ export default function RegularErVerbsPage() {
           <FillInTheBlank exercises={fillExercises} title="Conjugate the verb" />
         </div>
 
-        <div className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-6 shadow-sm">
+        <div className="mt-16 rounded-2xl border border-[#E7DAB9] bg-white p-6 shadow-sm">
           <p className="font-black">Want to practise interactively?</p>
           <p className="mt-2 text-sm text-[#526173]">
             The French Foundations course covers all of this with flashcards, quizzes, and exercises.
           </p>
           <Link
             href="/learn/french-foundations/unit-4/lesson-3"
-            className="mt-4 inline-block rounded-full bg-[#2563EB] px-5 py-2.5 text-sm font-black text-white transition hover:bg-[#1D4ED8]"
+            className="mt-4 inline-block rounded-full bg-[#D62828] px-5 py-2.5 text-sm font-black text-white transition hover:bg-[#B91C1C]"
           >
             Go to course →
           </Link>

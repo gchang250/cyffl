@@ -23,7 +23,7 @@ const etre: [string, string, string][] = [
 
 const uses: { title: string; example: string; note: string }[] = [
   {
-    title: "Hypothetical past — what would have happened",
+    title: "Hypothetical past: what would have happened",
     example: "Si j'avais étudié, j'aurais réussi.",
     note: "If I had studied, I would have passed. The plus-que-parfait sets the condition; the conditionnel passé gives the result. This is the most common use.",
   },
@@ -40,7 +40,7 @@ const uses: { title: string; example: string; note: string }[] = [
   {
     title: "Unconfirmed news (journalistic conditional)",
     example: "Le président aurait signé l'accord hier soir.",
-    note: "The president reportedly signed the agreement last night. The conditionnel passé signals the information is not yet confirmed — very common in French news writing.",
+    note: "The president reportedly signed the agreement last night. The conditionnel passé signals the information is not yet confirmed: very common in French news writing.",
   },
 ];
 
@@ -48,7 +48,7 @@ export default function ConditionnelPassePage() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-4xl px-6 py-16">
-        <Link href="/resources" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/resources" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← Resources
         </Link>
 
@@ -60,7 +60,7 @@ export default function ConditionnelPassePage() {
             Le conditionnel passé
           </h1>
           <p className="mt-4 text-lg leading-8 text-[#526173]">
-            The conditionnel passé means &ldquo;would have done.&rdquo; It is used for hypothetical past events, regrets, reproaches, and — in journalism — to signal unverified information.
+            The conditionnel passé means &ldquo;would have done.&rdquo; It is used for hypothetical past events, regrets, reproaches, and: in journalism: to signal unverified information.
           </p>
         </div>
 

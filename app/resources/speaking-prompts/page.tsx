@@ -14,7 +14,7 @@ const aboutYourself = [
   {
     french: "Décris ta personnalité en trois adjectifs.",
     english: "Describe your personality in three adjectives.",
-    tip: "Remember adjective agreement — add -e for feminine, -s for plural. Je suis + adjective works perfectly.",
+    tip: "Remember adjective agreement: add -e for feminine, -s for plural. Je suis + adjective works perfectly.",
   },
   {
     french: "Quelle est l'importance de la famille dans ta vie ?",
@@ -80,7 +80,7 @@ const opinions = [
   {
     french: "Quel endroit voudrais-tu visiter et pourquoi ?",
     english: "What place would you like to visit and why?",
-    tip: "Je voudrais visiter... parce que... Describe what appeals to you — the culture, food, landscape, history.",
+    tip: "Je voudrais visiter... parce que... Describe what appeals to you: the culture, food, landscape, history.",
   },
 ];
 
@@ -116,7 +116,7 @@ export default function SpeakingPromptsPage() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-4xl px-6 py-16">
-        <Link href="/resources" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/resources" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← Resources
         </Link>
 

@@ -5,25 +5,25 @@ import FillInTheBlank from "@/components/FillInTheBlank";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const expressionCards = [
-  { front: "J'aime…", back: "I like…", subtext: "[ʒɛm] — Versatile. Use with le/la/les: 'J'aime la musique.' or with an infinitive: 'J'aime danser.' Both work!" },
-  { front: "J'adore…", back: "I love…", subtext: "[ʒaˈdɔʁ] — Stronger than j'aime. French people use it freely — saying 'j'adore le chocolat' is perfectly normal, not overdramatic." },
-  { front: "J'aime bien…", back: "I quite like…", subtext: "[ʒɛm bjɛ̃] — Softer than j'adore. Confusingly, j'aime bien is LESS strong than j'aime alone. 'Bien' tones it down to 'I quite like, I'm fond of.'" },
-  { front: "Je n'aime pas…", back: "I don't like…", subtext: "[ʒə nɛm pa] — Ne contracts to n' before aime (vowel): 'je n'aime pas.' Milder than je déteste. Polite way to express dislike." },
-  { front: "Je déteste…", back: "I hate…", subtext: "[ʒə deˈtɛst] — The strongest negative. Use it to express strong dislike. More intense than 'je n'aime pas' — use sparingly in formal settings." },
-  { front: "Je préfère…", back: "I prefer…", subtext: "[ʒə pʁeˈfɛʁ] — Use to compare: 'Je préfère A à B' (I prefer A to B). 'Je préfère la musique au sport.' Au = à + le (contraction)." },
+  { front: "J'aime…", back: "I like…", subtext: "[ʒɛm]: Versatile. Use with le/la/les: 'J'aime la musique.' or with an infinitive: 'J'aime danser.' Both work!" },
+  { front: "J'adore…", back: "I love…", subtext: "[ʒaˈdɔʁ]: Stronger than j'aime. French people use it freely: saying 'j'adore le chocolat' is perfectly normal, not overdramatic." },
+  { front: "J'aime bien…", back: "I quite like…", subtext: "[ʒɛm bjɛ̃]: Softer than j'adore. Confusingly, j'aime bien is LESS strong than j'aime alone. 'Bien' tones it down to 'I quite like, I'm fond of.'" },
+  { front: "Je n'aime pas…", back: "I don't like…", subtext: "[ʒə nɛm pa]: Ne contracts to n' before aime (vowel): 'je n'aime pas.' Milder than je déteste. Polite way to express dislike." },
+  { front: "Je déteste…", back: "I hate…", subtext: "[ʒə deˈtɛst]: The strongest negative. Use it to express strong dislike. More intense than 'je n'aime pas': use sparingly in formal settings." },
+  { front: "Je préfère…", back: "I prefer…", subtext: "[ʒə pʁeˈfɛʁ]: Use to compare: 'Je préfère A à B' (I prefer A to B). 'Je préfère la musique au sport.' Au = à + le (contraction)." },
 ];
 
 const hobbyCards = [
-  { front: "la musique", back: "music", subtext: "[la myˈzik] — J'adore la musique. Used with aimer/adorer, always with 'la'." },
-  { front: "le sport", back: "sport", subtext: "[lə spɔʁ] — Generic 'sport'. For a specific sport: le football, le tennis, la natation." },
-  { front: "la lecture", back: "reading", subtext: "[la lɛkˈtyʁ] — From lire (to read). J'aime la lecture = I like reading. Or: J'aime lire (I like to read)." },
-  { front: "les films", back: "movies", subtext: "[le film] — Plural. J'adore les films d'action. (I love action movies.) Also: le cinéma (the cinema / movies as art form)." },
-  { front: "la cuisine", back: "cooking", subtext: "[la kɥiˈzin] — Both cooking (activity) and kitchen (room). 'J'aime la cuisine française' = I like French cooking." },
-  { front: "le dessin", back: "drawing", subtext: "[lə dɛˈsɛ̃] — From dessiner (to draw). Compare: la peinture (painting), l'art (art)." },
-  { front: "la danse", back: "dancing", subtext: "[la dɑ̃s] — J'adore la danse. Also: danser (verb) — 'J'aime danser.'" },
-  { front: "les jeux vidéo", back: "video games", subtext: "[le ʒø viˈde.o] — Masculine plural. J'aime les jeux vidéo. Note: 'jeu' (one game), 'jeux' (plural — the x is the plural marker)." },
-  { front: "le voyage", back: "travel", subtext: "[lə vwaˈjaʒ] — J'adore le voyage. Also: voyager (verb). 'J'aime voyager' = I like to travel." },
-  { front: "la natation", back: "swimming", subtext: "[la nataˈsjɔ̃] — Sport/activity noun. Note: jouer au sport vs. faire de la natation (you do/practice swimming, not 'play' it)." },
+  { front: "la musique", back: "music", subtext: "[la myˈzik]: J'adore la musique. Used with aimer/adorer, always with 'la'." },
+  { front: "le sport", back: "sport", subtext: "[lə spɔʁ]: Generic 'sport'. For a specific sport: le football, le tennis, la natation." },
+  { front: "la lecture", back: "reading", subtext: "[la lɛkˈtyʁ]: From lire (to read). J'aime la lecture = I like reading. Or: J'aime lire (I like to read)." },
+  { front: "les films", back: "movies", subtext: "[le film]: Plural. J'adore les films d'action. (I love action movies.) Also: le cinéma (the cinema / movies as art form)." },
+  { front: "la cuisine", back: "cooking", subtext: "[la kɥiˈzin]: Both cooking (activity) and kitchen (room). 'J'aime la cuisine française' = I like French cooking." },
+  { front: "le dessin", back: "drawing", subtext: "[lə dɛˈsɛ̃]: From dessiner (to draw). Compare: la peinture (painting), l'art (art)." },
+  { front: "la danse", back: "dancing", subtext: "[la dɑ̃s]: J'adore la danse. Also: danser (verb): 'J'aime danser.'" },
+  { front: "les jeux vidéo", back: "video games", subtext: "[le ʒø viˈde.o]: Masculine plural. J'aime les jeux vidéo. Note: 'jeu' (one game), 'jeux' (plural: the x is the plural marker)." },
+  { front: "le voyage", back: "travel", subtext: "[lə vwaˈjaʒ]: J'adore le voyage. Also: voyager (verb). 'J'aime voyager' = I like to travel." },
+  { front: "la natation", back: "swimming", subtext: "[la nataˈsjɔ̃]: Sport/activity noun. Note: jouer au sport vs. faire de la natation (you do/practice swimming, not 'play' it)." },
 ];
 
 const matchPairs = [
@@ -71,7 +71,7 @@ const quiz = [
     question: "How do you say 'I love music' in French?",
     options: ["Je préfère la musique.", "J'aime bien la musique.", "J'adore la musique.", "Je déteste la musique."],
     correct: 2,
-    explanation: "'J'adore' expresses strong love/enthusiasm. 'J'aime bien' is softer — closer to 'I'm fond of.' 'Je préfère' = I prefer (comparatives). 'Je déteste' = I hate. Use j'adore when you genuinely love something.",
+    explanation: "'J'adore' expresses strong love/enthusiasm. 'J'aime bien' is softer: closer to 'I'm fond of.' 'Je préfère' = I prefer (comparatives). 'Je déteste' = I hate. Use j'adore when you genuinely love something.",
   },
   {
     question: "How do you say 'I don't like cooking'?",
@@ -89,11 +89,11 @@ const quiz = [
     options: [
       "They mean exactly the same thing.",
       "J'aime bien is stronger than j'aime.",
-      "J'aime bien is actually softer — 'I quite like' rather than 'I like'.",
+      "J'aime bien is actually softer: 'I quite like' rather than 'I like'.",
       "J'aime bien is formal, j'aime is casual.",
     ],
     correct: 2,
-    explanation: "Counterintuitively, 'j'aime bien' is WEAKER than 'j'aime'. 'Bien' softens the feeling to 'I'm fond of / I quite like.' J'adore > j'aime > j'aime bien — in that order of strength.",
+    explanation: "Counterintuitively, 'j'aime bien' is WEAKER than 'j'aime'. 'Bien' softens the feeling to 'I'm fond of / I quite like.' J'adore > j'aime > j'aime bien: in that order of strength.",
   },
   {
     question: "Your classmate texts you: 'T'aimes la lecture?' What do they want to know?",
@@ -104,7 +104,7 @@ const quiz = [
       "Is reading hard?",
     ],
     correct: 0,
-    explanation: "'T'aimes' is an ultra-casual contraction of 'tu aimes' — common in texts and speech. 'La lecture' = reading (the activity). A full, slightly more formal version: 'Tu aimes la lecture?'",
+    explanation: "'T'aimes' is an ultra-casual contraction of 'tu aimes': common in texts and speech. 'La lecture' = reading (the activity). A full, slightly more formal version: 'Tu aimes la lecture?'",
   },
   {
     question: "How do you say 'I prefer swimming to drawing'?",
@@ -132,13 +132,13 @@ const quiz = [
     question: "How does 'aimer' conjugate for 'il/elle'?",
     options: ["il aime", "il aimes", "il aimons", "il aimez"],
     correct: 0,
-    explanation: "Il/elle → aime. -er verbs follow the pattern: je -e, tu -es, il/elle -e. The endings for je, il, and elle all sound identical — 'aime' — but are spelled differently for tu (aimes).",
+    explanation: "Il/elle → aime. -er verbs follow the pattern: je -e, tu -es, il/elle -e. The endings for je, il, and elle all sound identical: 'aime': but are spelled differently for tu (aimes).",
   },
   {
     question: "You want to say 'I quite like travel.' Which expression fits best?",
     options: ["J'adore le voyage.", "Je déteste le voyage.", "J'aime bien le voyage.", "Je n'aime pas le voyage."],
     correct: 2,
-    explanation: "'J'aime bien' = I quite like / I'm fond of. It's softer than 'j'adore' (I love it!) but positive. Perfect for moderate enthusiasm. 'J'aime le voyage' would also work — 'bien' just softens it slightly.",
+    explanation: "'J'aime bien' = I quite like / I'm fond of. It's softer than 'j'adore' (I love it!) but positive. Perfect for moderate enthusiasm. 'J'aime le voyage' would also work: 'bien' just softens it slightly.",
   },
 ];
 
@@ -148,7 +148,7 @@ export default function Unit3Lesson4Page() {
       <section className="mx-auto max-w-6xl px-6 py-16">
         <Link
           href="/learn/french-foundations"
-          className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]"
+          className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]"
         >
           ← French Foundations
         </Link>
@@ -225,7 +225,7 @@ export default function Unit3Lesson4Page() {
           </div>
         </section>
 
-        <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <section className="mt-16 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
           
           <h2 className="mt-3 text-3xl font-black">
             You know numbers, calendar vocab, family, and how to express opinions.
@@ -242,7 +242,7 @@ export default function Unit3Lesson4Page() {
             </Link>
             <Link
               href="/learn/french-foundations/unit-3/test"
-              className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]"
+              className="rounded-full bg-[#D62828] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#B91C1C]"
             >
               Take the unit test →
             </Link>

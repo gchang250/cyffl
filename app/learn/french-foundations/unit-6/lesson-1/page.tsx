@@ -5,18 +5,18 @@ import FillInTheBlank from "@/components/FillInTheBlank";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const cards = [
-  { front: "manger", back: "mangé — J'ai mangé une pizza." },
-  { front: "parler", back: "parlé — Elle a parlé au prof." },
-  { front: "regarder", back: "regardé — Nous avons regardé un film." },
-  { front: "écouter", back: "écouté — Tu as écouté la chanson?" },
-  { front: "finir", back: "fini — Ils ont fini leurs devoirs." },
-  { front: "choisir", back: "choisi — J'ai choisi le rouge." },
-  { front: "attendre", back: "attendu — Vous avez attendu longtemps?" },
-  { front: "répondre", back: "répondu — Il a répondu à la question." },
-  { front: "avoir", back: "eu — J'ai eu un problème." },
-  { front: "faire", back: "fait — Qu'est-ce que tu as fait?" },
-  { front: "voir", back: "vu — J'ai vu un bon film." },
-  { front: "prendre", back: "pris — Elle a pris le bus." },
+  { front: "manger", back: "mangé: J'ai mangé une pizza." },
+  { front: "parler", back: "parlé: Elle a parlé au prof." },
+  { front: "regarder", back: "regardé: Nous avons regardé un film." },
+  { front: "écouter", back: "écouté: Tu as écouté la chanson?" },
+  { front: "finir", back: "fini: Ils ont fini leurs devoirs." },
+  { front: "choisir", back: "choisi: J'ai choisi le rouge." },
+  { front: "attendre", back: "attendu: Vous avez attendu longtemps?" },
+  { front: "répondre", back: "répondu: Il a répondu à la question." },
+  { front: "avoir", back: "eu: J'ai eu un problème." },
+  { front: "faire", back: "fait: Qu'est-ce que tu as fait?" },
+  { front: "voir", back: "vu: J'ai vu un bon film." },
+  { front: "prendre", back: "pris: Elle a pris le bus." },
 ];
 
 const pairs = [
@@ -91,7 +91,7 @@ export default function Unit6Lesson1Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/french-foundations" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">← French Foundations</Link>
+        <Link href="/learn/french-foundations" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">← French Foundations</Link>
         <div className="mt-6 grid gap-8 md:grid-cols-[1fr_1fr]">
           <div>
             <p className="text-xs font-bold uppercase tracking-widest text-[#C9A44C]">Unit 6 · Lesson 1</p>
@@ -153,7 +153,7 @@ export default function Unit6Lesson1Page() {
 
         <div className="mt-16 flex items-center justify-between gap-4">
           <Link href="/learn/french-foundations/unit-5/test" className="rounded-full border border-[#E7DAB9] bg-white px-5 py-2.5 text-sm font-black text-[#526173] transition hover:-translate-y-0.5">← Previous</Link>
-          <Link href="/learn/french-foundations/unit-6/lesson-2" className="rounded-full bg-[#2563EB] px-5 py-2.5 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">Next lesson →</Link>
+          <Link href="/learn/french-foundations/unit-6/lesson-2" className="rounded-full bg-[#D62828] px-5 py-2.5 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">Next lesson →</Link>
         </div>
       </section>
     </main>

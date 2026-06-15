@@ -6,7 +6,7 @@ import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 // The SLE Written Expression test is 65 multiple-choice questions (90 min).
 // Two question types: (1) fill-in-the-blank and (2) error identification.
 // It does NOT require producing a memo or email from scratch.
-// Texts used: emails, memos, bulletins, reports — government register throughout.
+// Texts used: emails, memos, bulletins, reports: government register throughout.
 
 const flashcards = [
   { front: "complétez la phrase", back: "complete the sentence (fill-in-the-blank)", subtext: "The most common SLE writing question type. A sentence or short paragraph has one blank, and you choose the best word or phrase from four options. Grammar, register, and vocabulary are all tested." },
@@ -15,16 +15,16 @@ const flashcards = [
   { front: "la concordance des temps", back: "sequence of tenses / tense agreement", subtext: "Using the correct tense relative to the main clause. 'Il a dit qu'il viendra' (wrong in formal writing) → 'Il a dit qu'il viendrait' (reported speech requires conditional). Tense errors are heavily tested at Level C." },
   { front: "le mauvais registre", back: "wrong register", subtext: "Using an informal word in a formal government document. 'Le boss a confirmé...' (wrong) → 'Le directeur a confirmé...' Mixing registers is a classic Level B trap." },
   { front: "la préposition incorrecte", back: "wrong preposition", subtext: "'Conformément avec la politique' (wrong) → 'Conformément à la politique' (correct). Preposition errors are common: conformément à, par rapport à, en vue de, à l'égard de." },
-  { front: "le pléonasme", back: "redundancy / pleonasm", subtext: "'une courte bref résumé' (wrong — bref already means short) → 'un bref résumé'. Government writing values precision; redundancy is an error." },
-  { front: "le participe passé", back: "past participle (agreement)", subtext: "'Les décisions que le ministre a pris' (wrong — pris must agree with 'les décisions', feminine plural preceding COD) → 'Les décisions que le ministre a prises'. This agreement rule is heavily tested." },
-  { front: "le choix lexical", back: "word choice / lexical error", subtext: "Choosing the wrong word for the context. 'Cette mesure est effectuée' vs 'Cette mesure est prise' — the verb matters. Government French uses specific collocations: prendre une décision, adopter une politique, mettre en œuvre des mesures." },
-  { front: "la structure de la phrase", back: "sentence structure", subtext: "'C'est une question dont il faut tenir compte de.' (wrong — dont already includes 'de': tenir compte DE → dont) → 'C'est une question dont il faut tenir compte.' Double prepositions are a classic trap." },
+  { front: "le pléonasme", back: "redundancy / pleonasm", subtext: "'une courte bref résumé' (wrong: bref already means short) → 'un bref résumé'. Government writing values precision; redundancy is an error." },
+  { front: "le participe passé", back: "past participle (agreement)", subtext: "'Les décisions que le ministre a pris' (wrong: pris must agree with 'les décisions', feminine plural preceding COD) → 'Les décisions que le ministre a prises'. This agreement rule is heavily tested." },
+  { front: "le choix lexical", back: "word choice / lexical error", subtext: "Choosing the wrong word for the context. 'Cette mesure est effectuée' vs 'Cette mesure est prise': the verb matters. Government French uses specific collocations: prendre une décision, adopter une politique, mettre en œuvre des mesures." },
+  { front: "la structure de la phrase", back: "sentence structure", subtext: "'C'est une question dont il faut tenir compte de.' (wrong: dont already includes 'de': tenir compte DE → dont) → 'C'est une question dont il faut tenir compte.' Double prepositions are a classic trap." },
 ];
 
 const matchPairs = [
   { left: "complétez la phrase", right: "fill-in-the-blank question type" },
   { left: "choisissez la version correcte", right: "error identification question type" },
-  { left: "l'accord en genre et en nombre", right: "agreement — gender and number" },
+  { left: "l'accord en genre et en nombre", right: "agreement: gender and number" },
   { left: "la concordance des temps", right: "tense agreement / sequence" },
   { left: "le mauvais registre", right: "wrong register" },
   { left: "le participe passé", right: "past participle agreement" },
@@ -57,10 +57,10 @@ const quiz = [
   {
     question: "Error identification: 'C'est un problème dont il faut en tenir compte.' What is wrong?",
     options: [
-      "Wrong tense — should use the subjunctive",
-      "Double preposition — 'dont' already includes 'de', so 'en' is redundant",
-      "Wrong subject — 'il' should be 'on'",
-      "Wrong verb — 'tenir' should be 'prendre'",
+      "Wrong tense: should use the subjunctive",
+      "Double preposition: 'dont' already includes 'de', so 'en' is redundant",
+      "Wrong subject: 'il' should be 'on'",
+      "Wrong verb: 'tenir' should be 'prendre'",
     ],
     correct: 1,
     explanation: "'Tenir compte DE quelque chose' → relative pronoun 'dont' = de + lequel. So 'dont il faut tenir compte' is complete. Adding 'en' (also replacing 'de + thing') creates a double preposition: 'dont il faut en tenir compte' is wrong. Correct: 'C'est un problème dont il faut tenir compte.'",
@@ -74,7 +74,7 @@ const quiz = [
       "à laquelle on réfère",
     ],
     correct: 1,
-    explanation: "'La politique dont il est question' = the policy in question / the policy referred to. 'Dont' replaces 'de + noun' and 'il est question de quelque chose' uses 'de'. This is a standard government phrase — 'la politique dont il est question demeure en vigueur' = the policy in question remains in force.",
+    explanation: "'La politique dont il est question' = the policy in question / the policy referred to. 'Dont' replaces 'de + noun' and 'il est question de quelque chose' uses 'de'. This is a standard government phrase: 'la politique dont il est question demeure en vigueur' = the policy in question remains in force.",
   },
   {
     question: "Error identification: 'Les employés qui ont participé à la réunion a exprimé leurs préoccupations.' What is wrong?",
@@ -85,7 +85,7 @@ const quiz = [
       "Préoccupations should be masculine",
     ],
     correct: 1,
-    explanation: "'Les employés… ont exprimé' — the subject is 'les employés' (plural), so the verb must be 'ont' (plural), not 'a' (singular). The relative clause 'qui ont participé à la réunion' is not the subject — it's a modifier. This verb agreement error is a classic SLE writing test trap.",
+    explanation: "'Les employés… ont exprimé': the subject is 'les employés' (plural), so the verb must be 'ont' (plural), not 'a' (singular). The relative clause 'qui ont participé à la réunion' is not the subject: it's a modifier. This verb agreement error is a classic SLE writing test trap.",
   },
   {
     question: "Choose the phrase that correctly completes: 'Le projet a été approuvé _____ aux restrictions budgétaires.' (despite / notwithstanding)",
@@ -102,7 +102,7 @@ const quiz = [
       "Identify whether a text is formal or informal",
     ],
     correct: 1,
-    explanation: "The SLE written expression error identification section presents sentences with potential errors and asks you to identify the error — or confirm there is none. It tests grammar accuracy including agreement, tense, relative pronouns, and prepositions at levels A, B, and C.",
+    explanation: "The SLE written expression error identification section presents sentences with potential errors and asks you to identify the error: or confirm there is none. It tests grammar accuracy including agreement, tense, relative pronouns, and prepositions at levels A, B, and C.",
   },
 ];
 
@@ -110,7 +110,7 @@ export default function SLELesson3Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/canadian-french-tests" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/canadian-french-tests" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← French for Canadian Tests
         </Link>
 
@@ -120,10 +120,10 @@ export default function SLELesson3Page() {
               Unit 1 · Lesson 3
             </p>
             <h1 className="mt-3 text-5xl font-black tracking-tight md:text-6xl">
-              Written Expression — What the Test Actually Is
+              Written Expression: What the Test Actually Is
             </h1>
             <p className="mt-4 text-lg leading-8 text-[#526173]">
-              The SLE writing test is <strong>entirely multiple choice</strong> — 65 questions in 90 minutes. You are not asked to write a memo from scratch. You choose the best word to complete a sentence, or identify which version of a sentence has no errors.
+              The SLE writing test is <strong>entirely multiple choice</strong>: 65 questions in 90 minutes. You are not asked to write a memo from scratch. You choose the best word to complete a sentence, or identify which version of a sentence has no errors.
             </p>
           </div>
 
@@ -159,7 +159,7 @@ export default function SLELesson3Page() {
           <h2 className="text-2xl font-black">Key vocabulary and error types</h2>
           <p className="mt-1 text-[#526173]">Flip each card to understand the error type and how to spot it.</p>
           <div className="mt-6">
-            <FlashCardDeck cards={flashcards} title="SLE Written Expression — question types & error categories" />
+            <FlashCardDeck cards={flashcards} title="SLE Written Expression: question types & error categories" />
           </div>
         </section>
 
@@ -175,20 +175,20 @@ export default function SLELesson3Page() {
           <h2 className="text-2xl font-black">Practice questions</h2>
           <p className="mt-1 text-[#526173]">These replicate the two real question types you will face on test day.</p>
           <div className="mt-6">
-            <MultipleChoiceQuiz questions={quiz} title="Written expression — fill-in-blank & error ID" />
+            <MultipleChoiceQuiz questions={quiz} title="Written expression: fill-in-blank & error ID" />
           </div>
         </section>
 
-        <section className="mt-16 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <section className="mt-16 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
           <h2 className="mt-3 text-3xl font-black">Written Expression understood.</h2>
           <p className="mt-3 leading-7 text-[#526173]">
-            Next: the SLE reading test — comprehending government documents under time pressure.
+            Next: the SLE reading test: comprehending government documents under time pressure.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link href="/learn/canadian-french-tests/unit-1/lesson-2" className="rounded-full border border-[#C9A44C] bg-white px-6 py-3 text-sm font-black text-[#0B1F3A] shadow-sm transition hover:-translate-y-0.5">
               ← Previous lesson
             </Link>
-            <Link href="/learn/canadian-french-tests/unit-1/lesson-4" className="rounded-full bg-[#2563EB] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#1D4ED8]">
+            <Link href="/learn/canadian-french-tests/unit-1/lesson-4" className="rounded-full bg-[#D62828] px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#B91C1C]">
               Next lesson →
             </Link>
           </div>

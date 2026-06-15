@@ -17,23 +17,23 @@ const questions = [
     question: "What does 'S.O.' mean on a Canadian government form?",
     options: [
       "Signé officiellement",
-      "Sans objet — not applicable (N/A)",
+      "Sans objet: not applicable (N/A)",
       "Section obligatoire",
       "Soumis officiellement",
     ],
     correct: 1,
-    explanation: "'S.O.' stands for 'sans objet' — the French equivalent of N/A (not applicable). Use it when a question on a government form doesn't apply to your situation.",
+    explanation: "'S.O.' stands for 'sans objet': the French equivalent of N/A (not applicable). Use it when a question on a government form doesn't apply to your situation.",
   },
   {
     question: "What does 'CLSC' stand for, and what is it?",
     options: [
-      "Centre légal de soins cliniques — a private specialist clinic",
-      "Centre local de services communautaires — a Quebec community health centre",
+      "Centre légal de soins cliniques: a private specialist clinic",
+      "Centre local de services communautaires: a Quebec community health centre",
       "Commission de liaison des services de santé canadiens",
       "Clinique locale de soins chirurgicaux",
     ],
     correct: 1,
-    explanation: "CLSC stands for Centre local de services communautaires. These are Quebec community health centres that provide primary care, mental health support, social services, and more — often without requiring an appointment for basic needs.",
+    explanation: "CLSC stands for Centre local de services communautaires. These are Quebec community health centres that provide primary care, mental health support, social services, and more: often without requiring an appointment for basic needs.",
   },
   {
     question: "Which document is the Quebec provincial equivalent of the federal T4?",
@@ -50,18 +50,18 @@ const questions = [
       "Official stamps from a notary",
     ],
     correct: 1,
-    explanation: "'Pièces justificatives' are supporting documents — proof you attach to an application such as a birth certificate, proof of address, or recent paycheque. You'll see this on virtually every government application form.",
+    explanation: "'Pièces justificatives' are supporting documents: proof you attach to an application such as a birth certificate, proof of address, or recent paycheque. You'll see this on virtually every government application form.",
   },
   {
     question: "What is 'l'assurance-emploi' (AE)?",
     options: [
       "Private health insurance",
       "Quebec health insurance (RAMQ)",
-      "Employment Insurance — a federal benefit when you lose your job",
+      "Employment Insurance: a federal benefit when you lose your job",
       "A mandatory pension plan",
     ],
     correct: 2,
-    explanation: "'L'assurance-emploi' (AE) is Employment Insurance (EI) — a federal program that provides temporary income support when you lose your job through no fault of your own. Contributions are deducted from every Canadian paycheque.",
+    explanation: "'L'assurance-emploi' (AE) is Employment Insurance (EI): a federal program that provides temporary income support when you lose your job through no fault of your own. Contributions are deducted from every Canadian paycheque.",
   },
   {
     question: "In a French formal letter, where does 'Objet:' appear?",
@@ -94,18 +94,18 @@ const questions = [
       "Merci et bonne journée,",
     ],
     correct: 2,
-    explanation: "'Veuillez agréer, Madame, Monsieur, l'expression de mes salutations distinguées' is the standard full formal closing in French — equivalent to 'Yours faithfully.' It's used when writing to someone you don't know.",
+    explanation: "'Veuillez agréer, Madame, Monsieur, l'expression de mes salutations distinguées' is the standard full formal closing in French: equivalent to 'Yours faithfully.' It's used when writing to someone you don't know.",
   },
   {
     question: "What does 'accusé de réception' mean?",
     options: [
       "A court document",
-      "Acknowledgment of receipt — confirmation that something was received",
+      "Acknowledgment of receipt: confirmation that something was received",
       "A form to fill out at reception",
       "An accusation in legal proceedings",
     ],
     correct: 1,
-    explanation: "'Accusé de réception' means acknowledgment of receipt — a confirmation that a document or application was received. You'll often see: 'Vous recevrez un accusé de réception par courriel.' — You will receive an acknowledgment by email.",
+    explanation: "'Accusé de réception' means acknowledgment of receipt: a confirmation that a document or application was received. You'll often see: 'Vous recevrez un accusé de réception par courriel.': You will receive an acknowledgment by email.",
   },
 ];
 
@@ -113,7 +113,7 @@ export default function Unit2TestPage() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/canadian-life/unit-2/lesson-4" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/canadian-life/unit-2/lesson-4" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← Back to Lesson 4
         </Link>
 
@@ -136,7 +136,7 @@ export default function Unit2TestPage() {
                 "Writing Formal Requests",
               ].map((item, i) => (
                 <li key={item} className="flex items-center gap-2">
-                  <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#2563EB] text-xs font-black text-white">{i + 1}</span>
+                  <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#D62828] text-xs font-black text-white">{i + 1}</span>
                   {item}
                 </li>
               ))}
@@ -148,7 +148,7 @@ export default function Unit2TestPage() {
           <MultipleChoiceQuiz questions={questions} title="Unit 2 test" />
         </div>
 
-        <div className="mt-12 rounded-[2rem] border border-[#E7DAB9] bg-white p-8 shadow-sm">
+        <div className="mt-12 rounded-2xl border border-[#E7DAB9] bg-white p-8 shadow-sm">
           <p className="text-lg font-black">Ready for Unit 3?</p>
           <p className="mt-2 text-[#526173]">Unit 3 covers the bilingual workplace — reading job postings, writing a French CV and cover letter, communicating at work, and handling a French-language job interview.</p>
           <div className="mt-5 flex flex-wrap gap-3">

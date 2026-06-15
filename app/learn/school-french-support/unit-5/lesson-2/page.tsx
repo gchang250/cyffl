@@ -5,16 +5,16 @@ import FillInTheBlank from "@/components/FillInTheBlank";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const selfDescriptionCards = [
-  { front: "Je m'appelle…", back: "My name is… — Je m'appelle Sophie.", subtext: "Use this to introduce your name. Never 'Je suis Sophie' in a formal intro." },
-  { front: "J'ai … ans.", back: "I am … years old. — J'ai seize ans.", subtext: "French uses avoir (to have) for age, not être (to be)." },
-  { front: "Je suis canadien(ne).", back: "I am Canadian. — Nationality adjectives agree with gender.", subtext: "Add -ne for feminine: canadienne, française, britannique." },
-  { front: "J'habite à…", back: "I live in… — J'habite à Montréal.", subtext: "Use à for cities: j'habite à Toronto. Use en/au/aux for countries." },
+  { front: "Je m'appelle…", back: "My name is…: Je m'appelle Sophie.", subtext: "Use this to introduce your name. Never 'Je suis Sophie' in a formal intro." },
+  { front: "J'ai … ans.", back: "I am … years old.: J'ai seize ans.", subtext: "French uses avoir (to have) for age, not être (to be)." },
+  { front: "Je suis canadien(ne).", back: "I am Canadian.: Nationality adjectives agree with gender.", subtext: "Add -ne for feminine: canadienne, française, britannique." },
+  { front: "J'habite à…", back: "I live in…: J'habite à Montréal.", subtext: "Use à for cities: j'habite à Toronto. Use en/au/aux for countries." },
   { front: "J'ai … frère(s) et … sœur(s).", back: "I have … brother(s) and … sister(s).", subtext: "J'ai un frère et deux sœurs. Use je suis fils/fille unique if no siblings." },
   { front: "Je vais au collège / au lycée.", back: "I go to middle school / high school.", subtext: "Or name your school: Je vais à l'école Sainte-Marie." },
-  { front: "J'aime … / Je n'aime pas …", back: "I like … / I don't like … — J'aime la musique.", subtext: "Use definite article after aimer: j'aime le football, j'aime les films." },
-  { front: "Mon passe-temps préféré, c'est…", back: "My favourite hobby is… — Mon passe-temps préféré, c'est la lecture.", subtext: "A sophisticated alternative to J'aime + infinitive." },
-  { front: "Je joue au / à la / aux…", back: "I play… — Je joue au tennis. Je joue aux échecs.", subtext: "Use jouer à for sports and games. Contract à + le → au, à + les → aux." },
-  { front: "Je fais du / de la / des…", back: "I do… — Je fais du sport. Je fais de la natation.", subtext: "Use faire de for activities. Du = de + le, de la for feminine, des for plural." },
+  { front: "J'aime … / Je n'aime pas …", back: "I like … / I don't like …: J'aime la musique.", subtext: "Use definite article after aimer: j'aime le football, j'aime les films." },
+  { front: "Mon passe-temps préféré, c'est…", back: "My favourite hobby is…: Mon passe-temps préféré, c'est la lecture.", subtext: "A sophisticated alternative to J'aime + infinitive." },
+  { front: "Je joue au / à la / aux…", back: "I play…: Je joue au tennis. Je joue aux échecs.", subtext: "Use jouer à for sports and games. Contract à + le → au, à + les → aux." },
+  { front: "Je fais du / de la / des…", back: "I do…: Je fais du sport. Je fais de la natation.", subtext: "Use faire de for activities. Du = de + le, de la for feminine, des for plural." },
 ];
 
 const pairs = [
@@ -30,8 +30,8 @@ const exercises = [
   { before: "Je", after: "Luc. (name)", answer: "m'appelle", hint: "Use s'appeler: je m'appelle, tu t'appelles.", translation: "My name is Luc." },
   { before: "J'", after: "quinze ans. (age)", answer: "ai", hint: "French uses avoir for age.", translation: "I am fifteen years old." },
   { before: "J'", after: "à Québec. (to live)", answer: "habite", hint: "habiter à + city name.", translation: "I live in Quebec City." },
-  { before: "Je", after: "du football le samedi. (to play → faire de)", answer: "fais", hint: "faire du sport — use faire de for activities.", translation: "I play football on Saturdays." },
-  { before: "J'aime la musique, mais je n'", after: "pas les maths. (to like — negation)", answer: "aime", hint: "ne + aimer + pas. The ne contracts before a vowel.", translation: "I like music, but I don't like maths." },
+  { before: "Je", after: "du football le samedi. (to play → faire de)", answer: "fais", hint: "faire du sport: use faire de for activities.", translation: "I play football on Saturdays." },
+  { before: "J'aime la musique, mais je n'", after: "pas les maths. (to like: negation)", answer: "aime", hint: "ne + aimer + pas. The ne contracts before a vowel.", translation: "I like music, but I don't like maths." },
 ];
 
 const questions = [
@@ -99,7 +99,7 @@ export default function Unit5Lesson2Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/school-french-support" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/school-french-support" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← School French Support
         </Link>
 

@@ -5,18 +5,18 @@ import FillInTheBlank from "@/components/FillInTheBlank";
 import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 
 const cards = [
-  { front: "parler", back: "parlé — spoken", subtext: "J'ai parlé avec mon ami hier. — I spoke with my friend yesterday." },
-  { front: "manger", back: "mangé — eaten", subtext: "Elle a mangé une pomme ce matin. — She ate an apple this morning." },
-  { front: "regarder", back: "regardé — watched", subtext: "Nous avons regardé un film. — We watched a film." },
-  { front: "écouter", back: "écouté — listened", subtext: "Tu as écouté la radio? — Did you listen to the radio?" },
-  { front: "travailler", back: "travaillé — worked", subtext: "Ils ont travaillé toute la journée. — They worked all day." },
-  { front: "finir", back: "fini — finished", subtext: "J'ai fini mes devoirs. — I finished my homework." },
-  { front: "choisir", back: "choisi — chosen", subtext: "Elle a choisi une robe rouge. — She chose a red dress." },
-  { front: "répondre", back: "répondu — answered", subtext: "Il a répondu à la question. — He answered the question." },
-  { front: "vendre", back: "vendu — sold", subtext: "Ils ont vendu leur voiture. — They sold their car." },
-  { front: "attendre", back: "attendu — waited", subtext: "Nous avons attendu le bus. — We waited for the bus." },
-  { front: "remplir", back: "rempli — filled", subtext: "Tu as rempli le formulaire? — Did you fill in the form?" },
-  { front: "aimer", back: "aimé — liked/loved", subtext: "J'ai aimé ce livre. — I liked this book." },
+  { front: "parler", back: "parlé: spoken", subtext: "J'ai parlé avec mon ami hier.: I spoke with my friend yesterday." },
+  { front: "manger", back: "mangé: eaten", subtext: "Elle a mangé une pomme ce matin.: She ate an apple this morning." },
+  { front: "regarder", back: "regardé: watched", subtext: "Nous avons regardé un film.: We watched a film." },
+  { front: "écouter", back: "écouté: listened", subtext: "Tu as écouté la radio?: Did you listen to the radio?" },
+  { front: "travailler", back: "travaillé: worked", subtext: "Ils ont travaillé toute la journée.: They worked all day." },
+  { front: "finir", back: "fini: finished", subtext: "J'ai fini mes devoirs.: I finished my homework." },
+  { front: "choisir", back: "choisi: chosen", subtext: "Elle a choisi une robe rouge.: She chose a red dress." },
+  { front: "répondre", back: "répondu: answered", subtext: "Il a répondu à la question.: He answered the question." },
+  { front: "vendre", back: "vendu: sold", subtext: "Ils ont vendu leur voiture.: They sold their car." },
+  { front: "attendre", back: "attendu: waited", subtext: "Nous avons attendu le bus.: We waited for the bus." },
+  { front: "remplir", back: "rempli: filled", subtext: "Tu as rempli le formulaire?: Did you fill in the form?" },
+  { front: "aimer", back: "aimé: liked/loved", subtext: "J'ai aimé ce livre.: I liked this book." },
 ];
 
 const pairs = [
@@ -74,7 +74,7 @@ const questions = [
       "Il pas a mangé.",
     ],
     correct: 2,
-    explanation: "Negation wraps the auxiliary: ne + auxiliary + pas + past participle. Il n'a pas mangé — ne contracts to n' before a vowel.",
+    explanation: "Negation wraps the auxiliary: ne + auxiliary + pas + past participle. Il n'a pas mangé: ne contracts to n' before a vowel.",
   },
   {
     question: "What is the past participle of 'travailler'?",
@@ -90,7 +90,7 @@ const questions = [
   },
   {
     question: "With avoir in the passé composé, when does the past participle agree with something?",
-    options: ["Always with the subject", "Never — it stays unchanged", "With the subject only when it's feminine", "With a preceding direct object"],
+    options: ["Always with the subject", "Never: it stays unchanged", "With the subject only when it's feminine", "With a preceding direct object"],
     correct: 3,
     explanation: "With avoir, the past participle normally stays unchanged. BUT it does agree with a direct object that precedes the verb: Les livres qu'elle a lus (the books she read). At this level, the key rule is: with avoir, the past participle does NOT agree with the subject.",
   },
@@ -98,7 +98,7 @@ const questions = [
     question: "How do you say 'Did you listen to the radio?'",
     options: ["Tu as écouté la radio?", "Tu es écouté la radio?", "Tu as écouter la radio?", "Tu avais écouté la radio?"],
     correct: 0,
-    explanation: "Écouter → past participle: écouté. Auxiliary: avoir. Tu as écouté la radio? Questions in passé composé use the same structure — just raise your voice.",
+    explanation: "Écouter → past participle: écouté. Auxiliary: avoir. Tu as écouté la radio? Questions in passé composé use the same structure: just raise your voice.",
   },
 ];
 
@@ -106,7 +106,7 @@ export default function Unit3Lesson1Page() {
   return (
     <main className="min-h-screen bg-[#FFFDF7] text-[#0B1F3A]">
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <Link href="/learn/school-french-support" className="text-sm font-black text-[#2563EB] hover:text-[#1D4ED8]">
+        <Link href="/learn/school-french-support" className="text-sm font-black text-[#D62828] hover:text-[#B91C1C]">
           ← School French Support
         </Link>
 
