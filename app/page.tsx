@@ -60,6 +60,21 @@ const weeklyWords = [
   { word: "le prestataire", pos: "n.m.", meaning: "benefit recipient, service provider (government context)", example: "Les prestataires de l'aide sociale doivent renouveler leur demande chaque trimestre." },
   { word: "prévaloir", pos: "v.", meaning: "to prevail, to take precedence", example: "En cas de contradiction, la version française prévaut sur la version anglaise." },
   { word: "la mise en candidature", pos: "n.f.", meaning: "nomination, candidacy submission", example: "La période de mise en candidature se termine le 30 juin." },
+  { word: "le courriel", pos: "n.m.", meaning: "email (the official Quebec/Canadian French term)", example: "Veuillez nous contacter par courriel à l'adresse indiquée sur notre site." },
+  { word: "la relâche", pos: "n.f.", meaning: "school break (Quebec term for March break or spring break)", example: "Les enfants ont une semaine de relâche en mars." },
+  { word: "le chalet", pos: "n.m.", meaning: "cottage, cabin (quintessentially Canadian summer tradition)", example: "On passe le long weekend au chalet dans les Laurentides." },
+  { word: "le concours", pos: "n.m.", meaning: "competition; specifically a government job competition", example: "Elle a réussi le concours et obtenu un poste à la fonction publique fédérale." },
+  { word: "le congé férié", pos: "n.m.", meaning: "statutory holiday, public holiday", example: "La fête du Canada est un congé férié partout au pays." },
+  { word: "l'infolettre", pos: "n.f.", meaning: "newsletter (Quebec coinage, widely used in institutions)", example: "Abonnez-vous à notre infolettre pour recevoir les dernières nouvelles." },
+  { word: "le guichet", pos: "n.m.", meaning: "service counter, teller window, ATM", example: "Présentez-vous au guichet du bureau des passeports avec vos documents." },
+  { word: "achaler", pos: "v.", meaning: "to bother, to pester, to annoy (Quebec informal)", example: "Arrête de m'achaler, je suis en train de travailler." },
+  { word: "correct", pos: "adj.", meaning: "fine, okay, decent — much milder than the English 'correct' (Quebec)", example: "T'es correct? — Oui, ça va, merci." },
+  { word: "le magasinage", pos: "n.m.", meaning: "shopping (Quebec term; France says 'les courses' or 'le shopping')", example: "On fait du magasinage au centre commercial ce samedi." },
+  { word: "la tuque", pos: "n.f.", meaning: "winter hat, toque — a Canadian winter essential", example: "N'oublie pas ta tuque, il fait moins quinze dehors." },
+  { word: "se dépanner", pos: "v.", meaning: "to help out in a pinch, to get by with what's available", example: "Il m'a dépanné en me prêtant son auto pour la matinée." },
+  { word: "la politique", pos: "n.f.", meaning: "policy (government or institutional); also politics", example: "La politique de confidentialité de l'organisme a été mise à jour ce mois-ci." },
+  { word: "le plan d'action", pos: "n.m.", meaning: "action plan (extremely common in Canadian government and nonprofits)", example: "Le plan d'action gouvernemental prévoit des investissements sur cinq ans." },
+  { word: "la permanence", pos: "n.f.", meaning: "permanent status, tenure (in employment or a union context)", example: "Après trois ans, elle a obtenu sa permanence au sein de la fonction publique." },
 ];
 
 const weeklyExpressions = [
@@ -83,6 +98,16 @@ const weeklyExpressions = [
   { expression: "Tenir parole", meaning: "To keep one's word, to follow through on a promise" },
   { expression: "Avoir le compas dans l'oeil", meaning: "To have a great eye for proportion or detail" },
   { expression: "Battre le fer pendant qu'il est chaud", meaning: "To strike while the iron is hot" },
+  { expression: "Ça adonne bien", meaning: "That works out well, good timing (Quebec)" },
+  { expression: "C'est de valeur", meaning: "That's a shame, too bad (Quebec)" },
+  { expression: "Lâche pas", meaning: "Don't give up, hang in there (Quebec)" },
+  { expression: "Être dans le jus", meaning: "To be swamped, overwhelmed with work (Quebec)" },
+  { expression: "Avoir le feu vert", meaning: "To get the green light, to receive approval" },
+  { expression: "Tirer son épingle du jeu", meaning: "To hold one's own, to come out ahead in a difficult situation" },
+  { expression: "Mettre les points sur les i", meaning: "To spell it out clearly, to be precise and leave no ambiguity" },
+  { expression: "Ça ne donne rien", meaning: "It's pointless, it won't help, there's no use (Quebec)" },
+  { expression: "Se virer de bord", meaning: "To turn things around, to change direction entirely (Quebec)" },
+  { expression: "Passer au cash", meaning: "To face the consequences, to pay the price (Quebec informal)" },
 ];
 
 export default function HomePage() {
