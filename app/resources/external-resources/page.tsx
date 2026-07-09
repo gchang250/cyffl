@@ -16,7 +16,7 @@ const categories = [
       {
         name: "Radio-Canada",
         url: "https://ici.radio-canada.ca",
-        description: "Canada's French public broadcaster. News, articles, and video: in Canadian French. The closest thing to an SLE reading text you'll find for free.",
+        description: "Canada's French public broadcaster. News, articles, and video: in Canadian French. One of the best sources for authentic, high-quality Canadian French articles.",
         level: "B1–C1",
         flag: "🍁 Canadian French",
       },
@@ -163,7 +163,7 @@ const categories = [
       {
         name: "Termium Plus",
         url: "https://www.btb.termiumplus.gc.ca",
-        description: "The Government of Canada's official terminology database: bilingual French/English, with government and legal vocabulary. Invaluable for SLE preparation and federal workplace French.",
+        description: "The Government of Canada's official terminology database: bilingual French/English, with government and legal vocabulary. Invaluable for federal workplace French.",
         level: "B2–C2",
         flag: "🍁 Government French",
       },

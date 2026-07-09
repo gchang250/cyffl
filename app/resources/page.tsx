@@ -231,24 +231,6 @@ const categories: ResourceCategory[] = [
       },
     ],
   },
-  {
-    title: "Canadian Test Prep",
-    color: "bg-[#FEF3C7] text-[#D97706] border-[#FDE68A]",
-    items: [
-      {
-        label: "SLE quick reference",
-        description:
-          "Second Language Evaluation guide for federal government bilingual jobs: the three tests, A/B/C levels, language profiles, and writing formulas.",
-        href: "/resources/sle-guide",
-      },
-      {
-        label: "TEF Canada guide",
-        description:
-          "TEF Canada and TCF Canada reference for immigration: CLB levels, Express Entry CRS points, section formats, and writing register guide.",
-        href: "/resources/tef-canada-guide",
-      },
-    ],
-  },
 ];
 
 function ResourceCard({ item }: { item: ResourceItem }) {

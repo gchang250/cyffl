@@ -328,12 +328,11 @@ export default function WorkplaceFrenchPage() {
           </div>
 
           <div className="mt-4 rounded-2xl bg-[#0B1F3A] p-5 text-white">
-            <p className="font-black text-[#C9A44C]">Federal bilingual positions (CBC/BBB)</p>
+            <p className="font-black text-[#C9A44C]">Federal bilingual positions</p>
             <p className="mt-3 text-sm text-white/80">
-              Many federal government roles in Canada require proficiency in both official languages, tested
-              through the Public Service Commission's Second Language Evaluation (SLE). Designations include
-              CBC (reading C, writing B, oral interaction C) and BBB. Knowing workplace French vocabulary
-              directly helps you prepare for the oral interaction component.
+              Many federal government roles in Canada require proficiency in both official languages.
+              Developing a strong command of workplace French vocabulary and professional communication is essential
+              for candidates seeking to enter or advance in the public service.
             </p>
           </div>
         </div>

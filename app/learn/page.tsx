@@ -33,14 +33,6 @@ const courses = [
       "Prepare for Paper 2, Paper 1, and the Individual Oral. All five core themes, reading and listening strategies, text types, and oral discussion language.",
     lessonCount: "14 lessons · 4 unit tests",
   },
-  {
-    title: "French for Canadian Tests",
-    level: "Intermediate to Advanced",
-    href: "/learn/canadian-french-tests",
-    description:
-      "Build the French that gets you through the SLE (government jobs) and TEF Canada (immigration). Government vocabulary, formal grammar, opinion phrases, and letter-writing register.",
-    lessonCount: "10 lessons · 2 unit tests",
-  },
 ];
 
 export default function LearnPage() {
@@ -53,13 +45,13 @@ export default function LearnPage() {
             Pick your path.
           </h1>
           <p className="mt-5 text-lg leading-8 text-[#526173]">
-            Whether you&apos;re starting from zero, reviewing for school, prepping for IB, pursuing a government job, or immigrating to Canada, there&apos;s a course for where you are.
+            Whether you&apos;re starting from zero, reviewing for school, prepping for IB, or building French skills for everyday Canadian life, there&apos;s a course for where you are.
           </p>
         </div>
 
         <div className="mt-12 grid gap-4 md:grid-cols-2">
-          {courses.map((course, i) => (
-            <div key={course.title} className={`flex flex-col rounded-2xl border border-[#E7DAB9] bg-white p-7${i === courses.length - 1 ? " md:col-span-2" : ""}`}>
+          {courses.map((course) => (
+            <div key={course.title} className="flex flex-col rounded-2xl border border-[#E7DAB9] bg-white p-7">
               <p className="text-xs font-bold uppercase tracking-widest text-[#526173]">
                 {course.level}
               </p>

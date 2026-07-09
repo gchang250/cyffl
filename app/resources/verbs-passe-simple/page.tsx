@@ -76,7 +76,7 @@ export default function PasseSimplePage() {
             <div>
               <p className="font-black text-[#0B1F3A]">You do NOT need to produce it for:</p>
               <ul className="mt-2 space-y-1 text-[#526173]">
-                {["Everyday conversation", "Workplace and professional French", "SLE (federal government tests)", "TEF Canada / TCF Canada", "IB French B SL", "Email, texting, social media"].map(t => (
+                {["Everyday conversation", "Workplace and professional French", "IB French B SL", "Email, texting, social media"].map(t => (
                   <li key={t} className="flex items-start gap-2"><span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#526173]" />{t}</li>
                 ))}
               </ul>

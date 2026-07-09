@@ -123,15 +123,15 @@ const questions = [
     explanation: "'Souhaitée' = desired / preferred: it would help your application but isn't blocking. 'Exigée' = required / mandatory: you must have it to apply. 'Bilinguisme exigé' means the employer will reject applications without it; 'bilinguisme souhaité' means it's an asset.",
   },
   {
-    question: "A job posting for a federal position lists 'Profil linguistique: CBC'. What does this mean for bilingualism?",
+    question: "What does 'télétravail' mean on a Canadian job posting?",
     options: [
-      "You only need French, at level C",
-      "English at level C, French at level B, English reading at level C",
-      "You need a bilingual proficiency: English at Level C, French at Level B, the written component at Level C",
-      "The position is broadcast on CBC",
+      "Work involving telecommunications only",
+      "Remote work / working from home",
+      "Overtime work",
+      "Part-time work",
     ],
-    correct: 2,
-    explanation: "CBC is the federal bilingual profile: English oral = C (advanced), French reading = B (intermediate), French written = C (advanced). Federal public service jobs each have a language profile code like BBB, CBC, or CCC: indicating the required level in each of the three SLE components.",
+    correct: 1,
+    explanation: "'Télétravail' means remote work or working from home. It is widely used in Canada for positions that do not require physical presence in the office.",
   },
   {
     question: "A job posting closes with 'Nous remercions tous les candidats de leur intérêt.' What does this signal?",

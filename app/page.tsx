@@ -28,11 +28,6 @@ const offerings = [
     href: "/learn/canadian-life",
   },
   {
-    title: "French for Canadian Tests",
-    description: "Government vocabulary and exam strategy for the SLE and TEF Canada.",
-    href: "/learn/canadian-french-tests",
-  },
-  {
     title: "All Courses",
     description: "Structured French from zero to advanced, including IB prep, school support, grammar, and verb tenses.",
     href: "/learn",
@@ -206,11 +201,13 @@ export default function HomePage() {
           <h2 className="text-2xl font-black">Courses &amp; services</h2>
 
           <div className="mt-8 grid gap-4 sm:grid-cols-2">
-            {offerings.map((item) => (
+            {offerings.map((item, i) => (
               <Link
                 key={item.title}
                 href={item.href}
-                className="group flex flex-col rounded-2xl border border-[#E7DAB9] bg-white p-7 transition hover:-translate-y-0.5 hover:shadow-md"
+                className={`group flex flex-col rounded-2xl border border-[#E7DAB9] bg-white p-7 transition hover:-translate-y-0.5 hover:shadow-md ${
+                  i === offerings.length - 1 ? "sm:col-span-2" : ""
+                }`}
               >
                 <h3 className="font-black group-hover:text-[#D62828]">
                   {item.title} →
