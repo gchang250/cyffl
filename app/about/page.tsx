@@ -111,6 +111,16 @@ export default function AboutPage() {
                 that gap.
               </p>
               <p>
+                Compounding this gap is a severe, nationwide shortage of qualified
+                French teachers. With studies cited by the University of Toronto
+                projecting a national deficit of up to 10,000 French as a Second
+                Language (FSL) and French Immersion teachers, schools across
+                Canada—especially in Ontario and Western provinces—are struggling
+                to hire qualified staff, often relying on underqualified instructors
+                to fill the void. In this environment, free, high-quality resources
+                are not just helpful; they are essential.
+              </p>
+              <p>
                 So we built the course we wished existed: one that starts with
                 grammar fundamentals but ends with the French you actually need
                 in Canada. Quebec expressions, government vocabulary, workplace
@@ -155,10 +165,33 @@ export default function AboutPage() {
               ))}
             </div>
 
+            <div className="mt-8 rounded-2xl border border-[#E7DAB9] bg-[#FFFDF7] p-6 md:p-8">
+              <div className="grid gap-6 md:grid-cols-[1fr_2fr] items-center">
+                <div>
+                  <p className="text-4xl font-black text-[#D62828]">
+                    ~10,000
+                  </p>
+                  <p className="mt-2 font-black text-lg">Teacher Shortfall</p>
+                  <p className="mt-1 text-sm text-[#526173]">
+                    Estimated national deficit of qualified French teachers.
+                  </p>
+                </div>
+                <div className="border-t border-[#E7DAB9] pt-6 md:border-t-0 md:border-l md:pt-0 md:pl-8">
+                  <h3 className="font-black text-lg mb-2">The French Teacher Crisis</h3>
+                  <p className="text-sm leading-6 text-[#526173]">
+                    Canada is facing a critical shortage of qualified French educators. 
+                    Studies highlight a nationwide deficit of up to 10,000 FSL and French Immersion teachers, 
+                    with over one-third of schools reporting significant recruitment difficulties. In provinces like 
+                    Ontario and Western Canada, boards are frequently forced to pull teachers from specialized subjects 
+                    or rely on underqualified staff to cover classrooms.
+                  </p>
+                </div>
+              </div>
+            </div>
+
             <div className="mt-6 rounded-2xl border border-[#E7DAB9] bg-[#FFF8ED] p-5 text-sm leading-6 text-[#526173]">
               <span className="font-black text-[#0B1F3A]">Sources: </span>
-              Statistics Canada language data and the Department of Justice
-              Canada's explanation of official language rights in Canada.
+              Statistics Canada language data, the Department of Justice Canada's explanation of official language rights in Canada, and French teacher recruitment reports from the University of Toronto.
             </div>
           </div>
         </section>
