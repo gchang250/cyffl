@@ -115,7 +115,7 @@ export default function AboutPage() {
                 French teachers. With studies cited by the University of Toronto
                 projecting a national deficit of up to 10,000 French as a Second
                 Language (FSL) and French Immersion teachers, schools across
-                Canada—especially in Ontario and Western provinces—are struggling
+                Canada, especially in Ontario and Western provinces, are struggling
                 to hire qualified staff, often relying on underqualified instructors
                 to fill the void. In this environment, free, high-quality resources
                 are not just helpful; they are essential.
