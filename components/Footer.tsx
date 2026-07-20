@@ -38,6 +38,18 @@ export default function Footer() {
           </p>
         </div>
       </div>
+
+      <div className="mx-auto mt-8 flex max-w-7xl flex-col gap-2 border-t border-[#E7DAB9] pt-6 text-sm sm:flex-row sm:items-center sm:justify-between">
+        <p>&copy; {new Date().getFullYear()} CYFFL. All rights reserved.</p>
+        <div className="flex gap-5">
+          <Link href="/privacy" className="hover:text-[#0B1F3A]">
+            Privacy Policy
+          </Link>
+          <Link href="/terms" className="hover:text-[#0B1F3A]">
+            Terms of Service
+          </Link>
+        </div>
+      </div>
     </footer>
   );
 }
