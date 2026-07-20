@@ -46,9 +46,13 @@ export default function PrivacyPage() {
                 <span className="font-semibold text-[#0B1F3A]">
                   Information you give us.
                 </span>{" "}
-                If you contact us or apply to volunteer or request tutoring, we
-                collect what you choose to send, such as your name, email
-                address, and message.
+                When you request tutoring or apply to volunteer, you complete a
+                form that asks for details such as your name, email address, and
+                mailing address, along with information about your grade level or
+                the support you are looking for. If you email us directly, we
+                also receive whatever you choose to include in your message. We
+                use this information to respond to you and to match students with
+                volunteer tutors.
               </li>
               <li>
                 <span className="font-semibold text-[#0B1F3A]">
@@ -93,10 +97,15 @@ export default function PrivacyPage() {
           <Clause title="5. Third-party services">
             <p>
               We rely on trusted third-party providers to operate the site, such
-              as hosting, analytics, and text-to-speech services. These providers
-              process data only as needed to provide their services and are
-              expected to protect it. Their handling of data is governed by their
-              own privacy policies.
+              as hosting, analytics, and text-to-speech services. Their handling
+              of data is governed by their own privacy policies.
+            </p>
+            <p>
+              Our tutoring and volunteer forms are hosted on Google Forms. When
+              you submit one, the information you provide, including your name,
+              email address, and mailing address, is collected and stored through
+              Google on our behalf, subject to Google&rsquo;s privacy policy. We
+              access these responses only to coordinate tutoring and volunteering.
             </p>
           </Clause>
 
